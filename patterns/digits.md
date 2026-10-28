@@ -1,5 +1,7 @@
 # Pattern: extract digits
 
+![352 is split into remaining digits and one last digit at each step.](../assets/digit-extraction.svg)
+
 ## Visual model: split off one digit
 
 | Number before | Remaining part after integer division by 10 | Detached digit (remainder 10) |

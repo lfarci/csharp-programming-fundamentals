@@ -1,5 +1,7 @@
 # Pattern: traverse and build text
 
+![Character cells with a cursor moving through cat!; positions differ from characters.](../assets/string-traversal.svg)
+
 ## Picture: a sequence of positions
 
 For these first exercises, use simple text such as ASCII letters and spaces.

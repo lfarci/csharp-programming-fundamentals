@@ -1,5 +1,7 @@
 # Patterns: counter, accumulator, running product
 
+![A total box changes from 0 to 4 to 13 to 15 as input values 4, 9, 2 are added.](../assets/accumulator.svg)
+
 ## Visual model: a running summary
 
 For values 4, 9, 2, think of a result box whose contents are replaced after each item:

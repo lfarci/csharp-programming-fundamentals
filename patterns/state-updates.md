@@ -1,5 +1,7 @@
 # Pattern: update multiple pieces of state
 
+![Memory snapshots show calculate next, then shift previous and current.](../assets/state-updates.svg)
+
 ## Visual model: take a snapshot before moving
 
 | Action | previous box | current box | next box |
