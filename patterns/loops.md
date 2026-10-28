@@ -1,5 +1,20 @@
 # Pattern: loop mechanics
 
+## Visual model: the test controls entry
+
+```mermaid
+flowchart TD
+    A["Initialize the state"] --> B{"Continue?"}
+    B -- Yes --> C["Do one unit of work"]
+    C --> D["Update the state"]
+    D --> B
+    B -- No --> E["Use the final result"]
+```
+
+The condition is checked **before** each pass, including the first. A loop can run zero times. The update must move this particular algorithm toward its stopping rule.
+
+For “print 1 through 4”, start at 1, continue while at most 4, print, add 1. After printing 4, the value becomes 5; the final test is false and 5 is not printed. An if makes a choice once; a loop returns to its test.
+
 **Mental model:** repeat an action while a condition allows it. Every terminating loop needs a way to eventually stop.
 
 ```csharp

@@ -8,6 +8,8 @@ For each new pattern:
 4. **Adapt:** Change a requirement, such as counting even values instead of all values.
 5. **Recognize:** Try an unlabeled mixed challenge and decide which patterns apply.
 
+Use [From a problem statement to an algorithm](problem-solving.md) for a worked example, diagram conventions and a reusable paper worksheet.
+
 ## Before coding
 
 Write down:

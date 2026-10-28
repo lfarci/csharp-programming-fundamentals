@@ -1,5 +1,17 @@
 # Pattern: extract digits
 
+![352 is split into remaining digits and one last digit at each step.](../assets/digit-extraction.svg)
+
+## Visual model: split off one digit
+
+| Number before | Remaining part after integer division by 10 | Detached digit (remainder 10) |
+| ---: | ---: | ---: |
+| 352 | 35 | 2 |
+| 35 | 3 | 5 |
+| 3 | 0 | 3 |
+
+At every split: **old number = remaining part × 10 + detached digit**. The order of processing is 2, 5, 3: right to left. A sum ignores order; constructing reversed digits does not. Keep the original number in another box if you need it later.
+
 **Mental model:** peel the last digit from a nonnegative integer, process it, and repeat with the remaining number.
 
 ```csharp

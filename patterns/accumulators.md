@@ -1,5 +1,31 @@
 # Patterns: counter, accumulator, running product
 
+![A total box changes from 0 to 4 to 13 to 15 as input values 4, 9, 2 are added.](../assets/accumulator.svg)
+
+## Visual model: a running summary
+
+For values 4, 9, 2, think of a result box whose contents are replaced after each item:
+
+| Moment | Current item | Already processed | Still to visit | Total box |
+| --- | ---: | --- | --- | ---: |
+| Start | — | none | 4, 9, 2 | 0 |
+| After item 1 | 4 | 4 | 9, 2 | 4 |
+| After item 2 | 9 | 4, 9 | 2 | 13 |
+| After item 3 | 2 | 4, 9, 2 | none | 15 |
+
+**Meaning of the box:** the sum of the items already processed. Read an update as “new total = old total + current item”.
+
+| What the question asks | Initial box | Update for a qualifying item |
+| --- | --- | --- |
+| How many? | count = 0 | count ← count + 1 |
+| How much in total? | total = 0 | total ← total + item |
+| Product? | product = 1 | product ← product × item |
+| Keep some text? | result = "" | result ← result + character |
+
+For 4, 9, 2, counting all items produces **3**, summing produces **15**. Same traversal, different summary. For a condition, rejected items leave the box unchanged.
+
+**Paper drill:** trace 3, 5, 2, first counting values above 2, then summing them. Predict 2 and 8. Explain why the update differs. Memorize the initial value and update only after you can explain the box.
+
 **Mental model:** keep a value that summarizes everything processed so far.
 
 ## Sum accumulator

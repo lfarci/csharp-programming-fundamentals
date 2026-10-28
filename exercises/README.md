@@ -46,6 +46,16 @@ Work in order within a stage. **Easy / Medium / Hard** reflects a true beginner'
 | R02 | Find largest | Easy | For `{-5,-2,-9}`, output -2; assume a nonempty array. |
 | R03 | Count matches | Medium | For `{2,4,2,5,2}` and target 2, output 3. |
 
+## T — Text (after basic traversal)
+
+For these exercises, use ASCII letters and spaces. Before coding, draw indexed character cells and trace your result.
+
+| ID | Exercise | Difficulty | Goal |
+| --- | --- | --- | --- |
+| T01 | Count a letter | Easy | Count lowercase 'a' in "banana": 3. Also test "" and "BANANA": 0. |
+| T02 | Remove spaces | Easy | Build text without ordinary spaces: "a b c" → "abc"; "" → ""; "   " → "". |
+| T03 | Count and keep | Medium | For "a1 b2!", count ASCII digits and build their text in input order: count 2, text "12". For "abc": 0 and "". |
+
 ## M — Mixed assessments (do not reveal patterns ahead of time)
 
 | ID | Exercise | Difficulty | Goal |

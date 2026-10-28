@@ -1,5 +1,18 @@
 # Pattern: update multiple pieces of state
 
+![Memory snapshots show calculate next, then shift previous and current.](../assets/state-updates.svg)
+
+## Visual model: take a snapshot before moving
+
+| Action | previous box | current box | next box |
+| --- | ---: | ---: | ---: |
+| Old state | 2 | 3 | — |
+| Calculate next from both old values | 2 | 3 | 5 |
+| Copy current into previous | 3 | 3 | 5 |
+| Copy next into current | 3 | 5 | 5 |
+
+Read assignments from top to bottom. They do not happen simultaneously. The temporary box preserves 5 while the other boxes move. If you overwrite previous with 3 before calculating next, you get 3 + 3 = 6 instead of 5.
+
 **Mental model:** each iteration advances from the current state to the next one. Sometimes the next state depends on *both* old values.
 
 Fibonacci starts with `0, 1`; every following value is the sum of the previous two.
