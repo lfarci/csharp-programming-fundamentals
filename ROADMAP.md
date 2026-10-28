@@ -8,16 +8,16 @@ This is a **path of skills, not a calendar**. Spend about 20–40 minutes per se
 
 ```mermaid
 flowchart TD
-    A["1 · Talk to the computer<br/>Read, store and display"] --> B["2 · Make decisions<br/>Compare and choose"]
-    B --> C["3 · Repeat an action<br/>Count up, count down"]
-    C --> D["4 · Keep a running result<br/>Count, sum and multiply"]
-    D --> E["5 · Stop at the right time<br/>Validate input and build a menu"]
-    E --> F["6 · Draw with loops<br/>Rows, columns and shapes"]
-    F --> G["7 · Reuse a recipe<br/>Methods, inputs and results"]
-    G --> H["8 · Work with collections<br/>Arrays and text"]
-    H --> I["9 · Take numbers apart<br/>Digits and repeated division"]
-    I --> J["10 · Remember changing state<br/>Build Fibonacci step by step"]
-    J --> K["11 · Solve unfamiliar problems<br/>Combine and explain"]
+    A["1 · Talk to the computer — Read, store and display"] --> B["2 · Make decisions — Compare and choose"]
+    B --> C["3 · Repeat an action — Count up, count down"]
+    C --> D["4 · Keep a running result — Count, sum and multiply"]
+    D --> E["5 · Stop at the right time — Validate input and build a menu"]
+    E --> F["6 · Draw with loops — Rows, columns and shapes"]
+    F --> G["7 · Reuse a recipe — Methods, inputs and results"]
+    G --> H["8 · Work with collections — Arrays and text"]
+    H --> I["9 · Take numbers apart — Digits and repeated division"]
+    I --> J["10 · Remember changing state — Build Fibonacci step by step"]
+    J --> K["11 · Solve unfamiliar problems — Combine and explain"]
 ```
 
 The order below is our teaching choice. Microsoft Learn supplies language references and supporting lessons; it does not prescribe this exact sequence. **Tracing, debugging and testing belong to every stage.**
