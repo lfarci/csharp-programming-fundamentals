@@ -116,7 +116,7 @@ Copy these prompts onto paper for any exercise:
 - Explain how to choose the larger of two numbers, including equal numbers. Draw the choice and trace both branches.
 - For a rectangle's width and height, describe how to calculate perimeter and area. Explain why no repetition is needed.
 - Use the worked price example, then change “above 10” to “at least 10”. Predict which trace row changes before recalculating.
-- Design a way to count spaces in a short text using the [string model](../patterns/strings.md). Write the trace before code.
+- Design a way to count spaces in a short text using the [string model](../cookbook/12-string-building.md). Write the trace before code.
 
 ## Guidance for the helper
 
