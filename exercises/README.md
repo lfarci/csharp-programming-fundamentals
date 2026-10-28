@@ -1,22 +1,22 @@
 # 📚 Exercise inventory
 
-One table for **every** exercise: our own exercises, *The C# Player's Guide* (PG) challenges, Project Euler and the teacher's topics.
+One table for **every** exercise: our own original exercises, a few Project Euler milestones and the teacher's topics.
 Each custom exercise adds **one** new difficulty. Pick the next one whose prerequisites you have done.
 
 - 🟢 **Guided** — small steps, hints help a lot.  🔵 **Independent** — same idea, alone.  🟣 **Challenge** — new problem, combine recipes.
 - ⭐ to ⭐⭐⭐ = effort for a true beginner.
 - Solutions are in [`solutions/`](../solutions/README.md). Try first, look later.
-- Book challenges are tracked in [C# Quest Tracker](https://lfarci.github.io/csharp-quest-tracker/), not here.
+- 📖 *The C# Player's Guide* is a **parallel track**, not part of this list: read the book level named in each [roadmap](../ROADMAP.md) step alongside it. Its challenges are tracked in [C# Quest Tracker](https://lfarci.github.io/csharp-quest-tracker/).
+- 🔎 Before any exercise, read it with [How to read an exercise](../docs/reading-an-exercise.md).
 
 ## Counts
 
 | Source | Exercises |
 | --- | ---: |
 | Custom (this repo) | 55 |
-| Player's Guide | 24 |
 | Project Euler | 5 |
 | Teacher topic | 3 |
-| **Total** | **87** |
+| **Total** | **63** |
 
 Custom by level: 🟢 15 guided · 🔵 27 independent · 🟣 13 challenge.
 
@@ -173,37 +173,6 @@ Full exercise-by-exercise graph: [dependency-graph.md](dependency-graph.md).
 | --- | --- | --- | --- | --- | --- | --- |
 | N01 | [Armstrong with methods](N01-armstrong-with-methods.md) | 🟣 Challenge | ⭐⭐⭐ | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | M02 | Custom |
 
-## The C# Player's Guide (5th edition)
-
-Statements are in the book (not copied here). Links go to the official solutions: open them **after** trying.
-
-| ID | Challenge | Level | Roadmap step | Skills | Before | ⭐ |
-| --- | --- | --- | --- | --- | --- | --- |
-| PG03a | [Hello World!](https://csharpplayersguide.com/solutions/5th-edition/hello-world) | L3 | 1 · Hello World | console output | — | ⭐ |
-| PG03b | [What Comes Next](https://csharpplayersguide.com/solutions/5th-edition/what-comes-next) | L3 | 1 · Hello World | console output | — | ⭐ |
-| PG03c | [Consolas and Telim](https://csharpplayersguide.com/solutions/5th-edition/consolas-and-telim) | L3 | 1 · Hello World | console input/output | — | ⭐ |
-| PG04 | [The Thing Namer 3000](https://csharpplayersguide.com/solutions/5th-edition/thing-namer-3000) | L4 | 1 · Hello World | comments, reading code | — | ⭐ |
-| PG06a | [The Variable Shop](https://csharpplayersguide.com/solutions/5th-edition/variable-shop) | L6 | 2 · Variables | types | — | ⭐ |
-| PG06b | [The Variable Shop Returns](https://csharpplayersguide.com/solutions/5th-edition/variable-shop-returns) | L6 | 2 · Variables | types | — | ⭐ |
-| PG07a | [The Triangle Farmer](https://csharpplayersguide.com/solutions/5th-edition/triangle-farmer) | L7 | 2 · Variables | expressions | — | ⭐ |
-| PG07b | [The Four Sisters and the Duckbear](https://csharpplayersguide.com/solutions/5th-edition/four-sisters-and-the-duckbear) | L7 | 2 · Variables | `/` and `%` | — | ⭐⭐ |
-| PG07c | [The Dominion of Kings](https://csharpplayersguide.com/solutions/5th-edition/dominion-of-kings) | L7 | 2 · Variables | expressions | — | ⭐ |
-| PG08 | [The Defense of Consolas](https://csharpplayersguide.com/solutions/5th-edition/defense-of-consolas) | L8 | 2 · Variables | `%`, console colors | — | ⭐⭐ |
-| PG09a | [Repairing the Clocktower](https://csharpplayersguide.com/solutions/5th-edition/repairing-the-clocktower) | L9 | 3 · Conditions | `if`, `%` | — | ⭐ |
-| PG09b | [The Watchtower](https://csharpplayersguide.com/solutions/5th-edition/watchtower) | L9 | 3 · Conditions | `if`/`else if`, `&&` | — | ⭐⭐ |
-| PG10a | [Buying Inventory](https://csharpplayersguide.com/solutions/5th-edition/buying-inventory) | L10 | 3 · Conditions | `switch` | — | ⭐ |
-| PG10b | [Discounted Inventory](https://csharpplayersguide.com/solutions/5th-edition/discounted-inventory) | L10 | 3 · Conditions | `switch`, `if` | — | ⭐⭐ |
-| PG11a | [The Prototype](https://csharpplayersguide.com/solutions/5th-edition/the-prototype) | L11 | 4 · Loops | input validation loop, guessing loop | L03 | ⭐⭐ |
-| PG11b | [The Magic Cannon](https://csharpplayersguide.com/solutions/5th-edition/the-magic-cannon) | L11 | 4 · Loops | counter loop + `%` filters | L03 | ⭐⭐ |
-| PG12a | [The Replicator of D'To](https://csharpplayersguide.com/solutions/5th-edition/replicator-of-dto) | L12 | 6 · Arrays | array traversal, copy | R01 | ⭐⭐ |
-| PG12b | [The Laws of Freach](https://csharpplayersguide.com/solutions/5th-edition/laws-of-freach) | L12 | 6 · Arrays | `foreach`, min, average | R01 | ⭐⭐ |
-| PG13a | [Taking a Number](https://csharpplayersguide.com/solutions/5th-edition/taking-a-number) | L13 | 10 · Methods | methods, input validation | M01 | ⭐⭐ |
-| PG13b | [Countdown](https://csharpplayersguide.com/solutions/5th-edition/countdown) | L13 | 10 · Methods | recursion (optional) | M01 | ⭐⭐⭐ |
-| PG32 | [Lists of Commands](https://csharpplayersguide.com/solutions/5th-edition/lists-of-commands) | L32 | 9 · Collections | `List<T>` (needs classes) | — | ⭐⭐⭐ |
-| PG35 | [Excepti's Game](https://csharpplayersguide.com/solutions/5th-edition/exceptis-game) | L35 | 7 · Exceptions | `try`/`catch` (needs classes) | — | ⭐⭐⭐ |
-| PG18 | [Vin Fletcher's Arrows](https://csharpplayersguide.com/solutions/5th-edition/vin-fletchers-arrows) | L18 | 11 · OO | classes, fields | — | ⭐⭐ |
-| PG24 | [The Point](https://csharpplayersguide.com/solutions/5th-edition/the-point) | L24 | 11 · OO | classes, constructors | — | ⭐⭐ |
-
 ## Project Euler (milestones, not daily homework)
 
 | ID | Problem | Roadmap step | Skills | Do first | ⭐ |
@@ -230,7 +199,8 @@ Exact statements are not copied here. Use them as **assessments** once the prere
 
 1. Go back to the recipe in the [cookbook](../cookbook/README.md).
 2. Solve a smaller example on paper and fill a trace table.
-3. Open **one** hint. Wait. Try again.
-4. Still stuck? Do the exercise listed in *Before*.
+3. Use the unstuck techniques in [How to read an exercise](../docs/reading-an-exercise.md#5-when-you-are-stuck).
+4. Open **one** hint. Wait. Try again.
+5. Still stuck? Do the exercise listed in *Before*.
 
 See also [How to practice](../docs/how-to-practice.md).

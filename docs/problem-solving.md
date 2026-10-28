@@ -2,6 +2,8 @@
 
 An algorithm is a precise sequence of steps. You can design and test it on paper before choosing a programming language.
 
+> 🔎 Short on time? The practical, step-by-step version (trigger words → recipes, worksheet, unstuck techniques, worked Armstrong example) is [How to read an exercise](reading-an-exercise.md). This page explains the *why* in more depth.
+
 ## 1. Read for a contract
 
 Read once for the story, then again for the rules. Underline the **input**, circle the **required result**, and list constraints and boundary words: “each”, “only”, “until”, “inclusive”, “at least”. Do not choose a loop just because the statement contains “each”.
@@ -99,7 +101,7 @@ Only now choose C# variables and syntax. Trace the code on the same input and co
 
 ## A reusable worksheet
 
-Copy these prompts onto paper for any exercise:
+Copy these prompts onto paper for any exercise. A fill-in markdown version is in [How to read an exercise § 4](reading-an-exercise.md#4-the-worksheet-copy-it).
 
 1. In my own words, the task is…
 2. Inputs, outputs, constraints, and unclear points…
