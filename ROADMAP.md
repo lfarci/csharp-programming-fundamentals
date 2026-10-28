@@ -23,11 +23,11 @@ flowchart TD
     C --> D
     F --> G
     F -.-> J["Optional · Digits and changing state"]
-    G --> J
+    G -.-> J
     J -.-> I
 ```
 
-Solid arrows show the core route. The optional branch adds number puzzles after the core loop skills; it is not a prerequisite for every final project.
+Solid arrows show the core route; dotted arrows show optional extensions. Start digits and state updates after stop 5. Only Armstrong requires the nested-loop practice from stop 6; the optional branch is not a prerequisite for the core final projects.
 
 ## Stops and checkpoints
 
@@ -35,19 +35,19 @@ Exercise IDs link to sections of the [exercise inventory](exercises/README.md). 
 
 | Stop | C# tools to learn | Thinking pattern and practice | Ready to move on when… |
 | --- | --- | --- | --- |
-| **0 · Run and inspect** | Console project, top-level statements, `Console.WriteLine`, compiler messages | Execute instructions in order; predict a short program; change its output; fix a missing semicolon. **B01** | You can create/run a program and explain the difference between a compiler error and a wrong answer. |
-| **1 · Store and calculate** | `int`, `double`, `decimal`, `bool`, `string`; assignment; arithmetic; interpolation | Input → transformation → output. Build a receipt and a temperature converter. Compare integer and fractional division. **B02–B03** | You can trace reassignment, choose a suitable type, and explain why `5 / 2` is 2. |
-| **2 · Make decisions** | Comparisons, `%`, `&&`, `\|\|`, `!`, `if` / `else if` / `else`; blocks and scope | Split a problem into cases. Check parity, choose a ticket price, validate a range. **C01–C03** | You can explain which branch runs and test values below, at, and above a boundary. |
-| **3 · Repeat and stop** | `for`, `while`, `do` / `while`; loop bounds; `Console.ReadLine`, `int.TryParse` | Repeat an action; identify what changes and why it stops. Count down, print a times table, ask again after invalid input. **L01–L04, L06** | You can trace every iteration, avoid off-by-one errors, and justify your loop choice. |
-| **4 · Count and combine** | `++`, `+=`, `*=`; conditions inside loops | Counter, sum, product, conditional accumulation. Count entries until zero, add a series, compute factorial, then track two totals. **L05, A01–A06** | You can explain why sums start at 0 and products at 1, and keep initialization outside the loop. |
-| **5 · Process arrays and text** | `int[]`, indexing from 0, `Length`, `foreach`, indexed `for`; string characters | Traverse, search, count, find a maximum, build a modified result. **R01–R06** | You distinguish positions from values, handle an empty input deliberately, and use `foreach` when positions are unnecessary. |
-| **6 · Draw with rows and columns** | Nested loops, `Console.Write` vs `WriteLine`; row/column conditions; then `int[,]` and `GetLength` | Repeat once per row, then once per cell. Draw a rectangle, triangle, hollow frame, and checkerboard; then total grid rows. **G01–G05** | You can explain the inner loop resetting for every row and why a height × width rectangle visits height × width cells. |
-| **7 · Reuse steps with methods** | Parameters, return types, `return`, local scope; simple local functions | Decompose a working solution: separate calculation from console interaction. Extract `Sum`, `Factorial`, and a rectangle printer. **F01–F03** | You can call a method with different inputs, explain its contract, and distinguish returning from printing. |
-| **8 · Solve unfamiliar problems** | Combine familiar tools; debug and check results | Plan inputs, outputs, examples, state, and stopping conditions before coding. Build a score report or drawing menu; attempt **M01**, then optional **M02–M03**. | You can solve two fresh variations without step-by-step hints, including one on another day. |
+| **0 · Run and inspect** | Console project, top-level statements, `Console.WriteLine`, compiler messages | Execute instructions in order; predict a short program; change its output; fix a missing semicolon. **[B01](exercises/README.md#b--first-programs-and-values)** | You can create/run a program and explain the difference between a compiler error and a wrong answer. |
+| **1 · Store and calculate** | `int`, `double`, `decimal`, `bool`, `string`; assignment; arithmetic; interpolation | Input → transformation → output. Build a receipt and a temperature converter. Compare integer and fractional division. **[B02–B03](exercises/README.md#b--first-programs-and-values)** | You can trace reassignment, choose a suitable type, and explain why `5 / 2` is 2. |
+| **2 · Make decisions** | Comparisons, `%`, `&&`, `\|\|`, `!`, `if` / `else if` / `else`; blocks and scope | Split a problem into cases. Check parity, choose a ticket price, validate a range. **[C01–C03](exercises/README.md#c--decisions)** | You can explain which branch runs and test values below, at, and above a boundary. |
+| **3 · Repeat and stop** | `for`, `while`, `do` / `while`; loop bounds; `Console.ReadLine`, `int.TryParse` | Repeat an action; identify what changes and why it stops. Count down, print a times table, ask again after invalid input. **[L01–L04](exercises/README.md#l--loop-mechanics), [L06](exercises/README.md#l--loop-mechanics)** | You can trace every iteration, avoid off-by-one errors, and justify your loop choice. |
+| **4 · Count and combine** | `++`, `+=`, `*=`; conditions inside loops | Counter, sum, product, conditional accumulation. Count entries until zero, add a series, compute factorial, then track two totals. **[L05](exercises/README.md#l--loop-mechanics), [A01–A06](exercises/README.md#a--counters-and-accumulators)** | You can explain why sums start at 0 and products at 1, and keep initialization outside the loop. |
+| **5 · Process arrays and text** | `int[]`, indexing from 0, `Length`, `foreach`, indexed `for`; string characters | Traverse, search, count, find a maximum, build a modified result. **[R01–R06](exercises/README.md#r--arrays)** | You distinguish positions from values, handle an empty input deliberately, and use `foreach` when positions are unnecessary. |
+| **6 · Draw with rows and columns** | Nested loops, `Console.Write` vs `WriteLine`; row/column conditions; then `int[,]` and `GetLength` | Repeat once per row, then once per cell. Draw a rectangle, triangle, hollow frame, and checkerboard; then total grid rows. **[G01–G05](exercises/README.md#g--drawings-and-grids)** | You can explain the inner loop resetting for every row and why a height × width rectangle visits height × width cells. |
+| **7 · Reuse steps with methods** | Parameters, return types, `return`, local scope; simple local functions | Decompose a working solution: separate calculation from console interaction. Extract `Sum`, `Factorial`, and a rectangle printer. **[F01–F03](exercises/README.md#f--reusable-steps)** | You can call a method with different inputs, explain its contract, and distinguish returning from printing. |
+| **8 · Solve unfamiliar problems** | Combine familiar tools; debug and check results | Plan inputs, outputs, examples, state, and stopping conditions before coding. Build a score report or drawing menu; attempt **[M01](exercises/README.md#m--mixed-assessments-do-not-reveal-patterns-ahead-of-time)**, then optional **[M02–M03](exercises/README.md#m--mixed-assessments-do-not-reveal-patterns-ahead-of-time)**. | You can solve two fresh variations without step-by-step hints, including one on another day. |
 
 Start with fixed values so input handling does not obscure the algorithm. Introduce interactive numeric input at stop 3: `TryParse` distinguishes a valid integer from invalid text; range checks are a separate decision. Do not introduce `try` / `catch` just to read the first number.
 
-Already know the basics? Try B03, C03, and L01–L02 without help. Enter at the first checkpoint you cannot explain independently.
+Already know the basics? Try [B03](exercises/README.md#b--first-programs-and-values), [C03](exercises/README.md#c--decisions), and [L01–L02](exercises/README.md#l--loop-mechanics) without help. Enter at the first checkpoint you cannot explain independently.
 
 ## Choosing a loop by the problem
 
@@ -63,7 +63,7 @@ These are choices based on intent, not rigid rules. `break` and `continue` can c
 
 ## The visual milestone: a terminal drawing studio
 
-Build G01–G04 incrementally. Draw on paper first, label rows and columns starting at zero, then decide which character belongs in each cell.
+Build [G01–G04](exercises/README.md#g--drawings-and-grids) incrementally. Draw on paper first, label rows and columns starting at zero, then decide which character belongs in each cell.
 
 | Build | Rule to discover | Example dimensions | Check |
 | --- | --- | --- | --- |
@@ -72,7 +72,7 @@ Build G01–G04 incrementally. Draw on paper first, label rows and columns start
 | Hollow frame | Print `*` on the first/last row or column; spaces inside | height 3, width 5 | First/last rows full; middle row has 2 stars |
 | Checkerboard | Choose a character from the parity of row + column | height 4, width 6 | Adjacent cells differ horizontally and vertically |
 
-**A drawing does not need a stored 2D array.** First generate characters directly with nested loops. Introduce a 2D array in G05 when the task needs stored cell values. Later, methods can turn each drawing into a reusable command.
+**A drawing does not need a stored 2D array.** First generate characters directly with nested loops. Introduce a 2D array in [G05](exercises/README.md#g--drawings-and-grids) when the task needs stored cell values. Later, methods can turn each drawing into a reusable command.
 
 ## Optional number-puzzle branch
 
@@ -80,11 +80,11 @@ Follow this branch after stop 5; take Armstrong after the nested-loop practice i
 
 | Pattern | Prerequisites | Practice and boundary |
 | --- | --- | --- |
-| [Digit extraction](patterns/digits.md) | Integer division, remainder, `while`, accumulation | D01–D04 → M02. Work with nonnegative integers; zero has one digit. |
-| [State updates](patterns/state-updates.md) | Assignment, temporary values, bounded loops | S01–S02 → optional Euler #2. Compute the next value before overwriting the old ones. |
-| Combine digit count, integer powers, and a sum | Digit extraction, product accumulator, nested repetition | M03: Armstrong numbers. Preserve the original number and test zero explicitly. |
+| [Digit extraction](patterns/digits.md) | Integer division, remainder, `while`, accumulation | [D01–D04](exercises/README.md#d--digit-manipulation) → [M02](exercises/README.md#m--mixed-assessments-do-not-reveal-patterns-ahead-of-time). Work with nonnegative integers; zero has one digit. |
+| [State updates](patterns/state-updates.md) | Assignment, temporary values, bounded loops | [S01–S02](exercises/README.md#s--variable-state) → optional Euler #2. Compute the next value before overwriting the old ones. |
+| Combine digit count, integer powers, and a sum | Digit extraction, product accumulator, nested repetition | [M03](exercises/README.md#m--mixed-assessments-do-not-reveal-patterns-ahead-of-time): Armstrong numbers. Preserve the original number and test zero explicitly. |
 
-Factorial belongs at stop 4: it needs a running product, not digit extraction or Fibonacci. Keep numeric inputs small enough for the chosen type; A04 uses `int` and 0 ≤ N ≤ 12. For an initial Fibonacci exercise, use 0 ≤ N ≤ 20. Overflow can become a separate lesson later.
+Factorial belongs at stop 4: it needs a running product, not digit extraction or Fibonacci. Keep numeric inputs small enough for the chosen type; [A04](exercises/README.md#a--counters-and-accumulators) uses `int` and 0 ≤ N ≤ 12. For an initial Fibonacci exercise, use 0 ≤ N ≤ 20. Overflow can become a separate lesson later.
 
 ## Final builds: choose one
 
