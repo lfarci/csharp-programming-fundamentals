@@ -1,31 +1,51 @@
-# C# Programming Fundamentals
+# C# Programming Fundamentals 🎮
 
-A beginner-friendly, **pattern-first** path to learning C#, solving problems independently, and making sense of loops and algorithms.
+A friendly, **recipe-first** companion for a beginner C# course: a clear path, reusable loop recipes, and many small exercises that each add **one** new difficulty.
 
-This is **not** a second textbook or an exercise tracker. Use *The C# Player's Guide* (5th edition) to learn concepts and [C# Quest Tracker](https://lfarci.github.io/csharp-quest-tracker/) to track the book's challenges. This repo provides small reusable recipes, targeted practice, and a route from basic loops to harder problems.
+> Main book: *The C# Player's Guide*, 5th edition. Book challenges are tracked in [C# Quest Tracker](https://lfarci.github.io/csharp-quest-tracker/) — this repo does **not** track progress.
 
-## Start here
+## 🧭 Where do I go?
 
-1. Start with [From a problem statement to an algorithm](docs/problem-solving.md): examples, decomposition, diagrams and paper traces, before C# syntax. Then read [How to practice](docs/how-to-practice.md).
-2. Follow the [learning path](ROADMAP.md). Begin with the diagnostic, then loops, counters, and accumulators.
-3. Learn one [pattern](cookbook/README.md) at a time.
-4. Solve exercises in [the inventory](exercises/README.md), starting with the small ones. Write and run your own C# console programs.
-5. Attempt mixed challenges *without being told which pattern to use*.
+| I want to… | Go to |
+| --- | --- |
+| See the whole path, week by week | 🗺️ [**ROADMAP**](ROADMAP.md) |
+| Learn the reusable loop recipes | 🍳 [**Cookbook**](cookbook/README.md) — 12 recipes + [how to combine them](cookbook/combining-recipes.md) |
+| Pick an exercise | 📚 [**Exercise inventory**](exercises/README.md) (55 custom + book + Project Euler + teacher topics) |
+| See which exercise comes before which | 🕸️ [Dependency graph](exercises/dependency-graph.md) |
+| Write and run my code | ✏️ [practice/](practice/README.md) (one console project) |
+| Check my answer (after trying!) | 🔑 [solutions/](solutions/README.md) |
+| Learn how to attack a problem | 🧠 [From a problem statement to an algorithm](docs/problem-solving.md) · [How to practice](docs/how-to-practice.md) |
 
-**You do not need** LINQ, classes, recursion, unit tests, or advanced syntax for the initial exercises.
+## 🚀 Start here (today)
+
+1. Open the [ROADMAP](ROADMAP.md) and read **§2 "Where are we now?"** and **§5 Catch-up plan**.
+2. Session 1: do [L01](exercises/L01-trace-a-loop.md) and [L02](exercises/L02-boundaries.md) **on paper**, then [A01](exercises/A01-sum-1-to-n.md).
+3. Before each exercise, read its recipe in the [cookbook](cookbook/README.md) and fill a trace table.
+
+```mermaid
+flowchart LR
+    R["🗺️ Roadmap<br/>which step?"] --> C["🍳 Cookbook<br/>which recipe?"]
+    C --> P["📝 Paper<br/>trace table"]
+    P --> X["✏️ Exercise<br/>code it alone"]
+    X --> H{"stuck?"}
+    H -- yes --> HI["💡 one hint"] --> X
+    H -- no --> M["✅ Mastery check<br/>another day"]
+    M --> R
+```
 
 ## Principles
 
-- Understand before memorizing: predict each loop's output and trace variable changes on paper.
-- Progress from one idea to two ideas to an unfamiliar problem.
-- Solve independently first; hints come before solutions.
-- A problem is mastered when you can explain it and independently solve a different variation later.
-- If a challenge is too hard, go back to the missing pattern. Difficulty is information, not failure.
+- **Loops are a means, recipes are the goal.** Count, add up, find the biggest, take digits apart, draw a shape.
+- **Paper first:** predict the output and trace the variables before running the code.
+- **One new difficulty at a time:** guided → independent → challenge.
+- **Hints before solutions.** A topic is mastered when you solve a *new variation* alone, on another day.
+- **No shortcuts** in the loop exercises: no LINQ, no `Math.Pow`, no ready-made helpers. The loop *is* the exercise.
 
 ## Sources
 
-- [The C# Player's Guide](https://csharpplayersguide.com/): main learning resource. Book exercise descriptions are **not** reproduced here.
-- [Project Euler](https://projecteuler.net/archives): occasional optional challenges after prerequisite patterns.
-- University assignments: used to identify areas needing practice; their statements are not included without permission.
+- [The C# Player's Guide](https://csharpplayersguide.com/) — main book. Book statements are **not** copied here; the inventory links to the [official solutions page](https://csharpplayersguide.com/solutions/5th-edition).
+- [Microsoft Learn — C# docs](https://learn.microsoft.com/en-us/dotnet/csharp/) — linked from every roadmap step.
+- [Project Euler](https://projecteuler.net/archives) — a few optional milestones (#1, #6, #2, #4, #5).
+- University teacher exercises (factorial, Fibonacci, Armstrong) — used as assessments; statements not copied.
 
-All original exercise prompts here are independent educational material. External titles and links are references, not copied problem statements.
+All custom exercises are original. Visuals are Mermaid diagrams (rendered by GitHub) and the SVGs in [`assets/`](assets/).

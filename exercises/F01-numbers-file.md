@@ -1,0 +1,72 @@
+# F01 · Save numbers to a file
+
+| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| --- | --- | --- | --- | --- | --- |
+| Independent | ⭐⭐ | 5 · Files | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Array traversal](../cookbook/11-array-traversal.md), [Accumulator](../cookbook/02-accumulator.md) | [L05](L05-until-zero.md), [R01](R01-sum-an-array.md) | Custom |
+
+## 🎯 Goal
+
+Read numbers until 0 and save them (one per line) in `numbers.txt`. Then read the file back and print how many lines it has and the sum.
+
+## 🧪 Examples
+
+The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+
+**Example 1** — input: `4`, `7`, `1`, `0`
+
+```text
+Lines: 3
+Sum: 12
+```
+
+**Example 2** — input: `0`
+
+```text
+Lines: 0
+Sum: 0
+```
+
+## ⚠️ Edge cases to test
+
+- No number → an empty file.
+
+## 📏 Rules
+
+- `File.WriteAllLines` / `File.ReadAllLines`. No LINQ. Use a `List<string>` or build the text yourself.
+- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+
+## 🗺️ Before coding
+
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+
+## 💡 Hints (open one at a time)
+
+<details><summary>Hint 1</summary>
+
+Collect the lines in a `List<string>` (or a string with `\n`), then write once.
+
+</details>
+
+<details><summary>Hint 2</summary>
+
+`string[] lines = File.ReadAllLines("numbers.txt");` gives an array → [array traversal](../cookbook/11-array-traversal.md).
+
+</details>
+
+<details><summary>Hint 3</summary>
+
+Each line is text: `int.Parse(line)`.
+
+</details>
+
+## ✅ Mastery check
+
+Solve this variation **alone**, on another day:
+
+When the program starts, if the file exists, first print the numbers saved last time.
+
+## 🔑 Solution
+
+Only after a real try: [F01-numbers-file](../solutions/F01-numbers-file.cs). Your solution can be different and still correct!
+
+⬅️ [Back to the inventory](README.md)
