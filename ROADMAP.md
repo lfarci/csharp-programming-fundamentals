@@ -1,128 +1,279 @@
-# Your C# learning adventure
+# 🗺️ Your C# roadmap
 
-Build small things, understand how they work, then combine what you know.
+Welcome! This page is the map. Follow the path one step at a time.
+You do not need to be fast. You need to be able to **explain** what your code does.
 
-This is a **path of skills, not a calendar**. Spend about 20–40 minutes per session. Start at the earliest checkpoint you cannot yet complete independently. Already comfortable with variables and conditions? Check stages 1–2 briefly, then begin at stage 3.
+There are **two tracks** that walk side by side:
 
-## The path
+- 🧱 **Language track** – the C# tools: variables, `if`, loops, arrays, files, methods, classes… (this follows the university course).
+- 🧠 **Thinking track** – the *recipes* that solve problems: count, add up, find the biggest, take a number apart, draw a shape… Loops are only the *means*. The recipes are the *goal*.
+
+> **Book:** *The C# Player's Guide*, 5th edition (PG) stays the main book. Each step tells you which **PG level** to read.
+> Track the book challenges in [C# Quest Tracker](https://lfarci.github.io/csharp-quest-tracker/). This repo does not track progress.
+
+## 1. The path at a glance
 
 ```mermaid
 flowchart TD
-    A["1 · Talk to the computer — Read, store and display"] --> B["2 · Make decisions — Compare and choose"]
-    B --> C["3 · Repeat an action — Count up, count down"]
-    C --> D["4 · Keep a running result — Count, sum and multiply"]
-    D --> E["5 · Stop at the right time — Validate input and build a menu"]
-    E --> F["6 · Draw with loops — Rows, columns and shapes"]
-    F --> G["7 · Reuse a recipe — Methods, inputs and results"]
-    G --> H["8 · Work with collections — Arrays and text"]
-    H --> I["9 · Take numbers apart — Digits and repeated division"]
-    I --> J["10 · Remember changing state — Build Fibonacci step by step"]
-    J --> K["11 · Solve unfamiliar problems — Combine and explain"]
+    S(["🚀 Start"]) --> B1
+    subgraph LANG["🧱 Language track (university weeks)"]
+        direction TB
+        B1["1 · Hello World<br/>W1 · PG L3-4"] --> B2["2 · Variables & expressions<br/>W2 · PG L5-8"]
+        B2 --> B3["3 · Conditions<br/>W3 · PG L9-10"]
+        B3 --> B4["4 · Loops<br/>W4 · PG L11"]
+        B4 --> B5["5 · Files<br/>W5 · PG L39"]
+        B5 --> B6["6 · Arrays<br/>W6 · PG L12"]
+        B6 --> CU["🛟 Catch-up week<br/>2-6 Nov"]
+        CU --> B7["7 · Exceptions<br/>W7 · PG L35"]
+        B7 --> B8["8 · Recap<br/>W8"]
+        B8 --> B9["9 · Collections<br/>W9 · PG L32"]
+        B9 --> B10["10 · Methods<br/>W10 · PG L13"]
+        B10 --> B11["11 · Objects & classes<br/>W11-12 · PG L15-24"]
+    end
+    subgraph THINK["🧠 Thinking track (recipes)"]
+        direction TB
+        T1["Input → compute → output"] --> T2["Choose with if"]
+        T2 --> T3["Counter loop"]
+        T3 --> T4["Accumulators<br/>sum · count · product"]
+        T4 --> T5["Draw 2D shapes<br/>nested loops"]
+        T5 --> T6["Take digits apart<br/>% 10 and / 10"]
+        T6 --> T7["Remember changing state<br/>Fibonacci"]
+        T7 --> T8["Search with a flag<br/>primes"]
+        T8 --> T9["Combine recipes<br/>Armstrong · palindromes"]
+    end
+    B1 -.-> T1
+    B3 -.-> T2
+    B4 -.-> T3
+    B4 -.-> T4
+    B6 -.-> T8
+    CU -.-> T9
+    B11 --> E(["🏁 Ready for bigger programs"])
 ```
 
-The order below is our teaching choice. Microsoft Learn supplies language references and supporting lessons; it does not prescribe this exact sequence. **Tracing, debugging and testing belong to every stage.**
+Dotted arrows show *when* a thinking step becomes possible. The thinking track is where most of the practice happens.
 
-## Stage checkpoints
+## 2. Where are we now? (28 October 2026)
 
-Exercises marked **planned** describe the next inventory additions; they are not published exercise sheets yet. Existing IDs link to the [exercise inventory](exercises/README.md).
+```mermaid
+gantt
+    title University course and catch-up plan
+    dateFormat YYYY-MM-DD
+    axisFormat %d/%m
+    section Course
+    Hello World            :done, 2026-09-21, 5d
+    Variables & expressions :done, 2026-09-28, 5d
+    Conditions             :done, 2026-10-05, 5d
+    Loops                  :done, 2026-10-12, 5d
+    Files                  :done, 2026-10-19, 5d
+    Arrays                 :active, 2026-10-26, 5d
+    No class (catch-up)    :crit, 2026-11-02, 5d
+    Exceptions             :2026-11-09, 5d
+    Recap                  :2026-11-16, 5d
+    Collections            :2026-11-23, 5d
+    Methods                :2026-11-30, 5d
+    OO part 1              :2026-12-07, 5d
+    OO part 2              :2026-12-14, 5d
+    section Practice here
+    Loop rescue (steps 4a-4d)   :crit, 2026-10-29, 2026-11-06
+    Digits, Fibonacci, Armstrong :2026-11-02, 2026-11-10
+    Arrays practice             :2026-11-05, 2026-11-13
+```
 
-| Stage | What you will make | C# tools | Recipe you learn | Ready to continue when... |
+The course is now on **arrays**, but loops are the real gap. The plan: use the free week (2–6 Nov) to rebuild loops with the recipes. See [§5 Catch-up plan](#5-catch-up-plan-29-oct--10-nov).
+
+## 3. The steps
+
+Each step has: what you learn, the PG level, the Microsoft Learn docs, the recipes, the exercises, and a **"ready when"** check.
+Exercise IDs link to the [exercise inventory](exercises/README.md). Recipes link to the [cookbook](cookbook/README.md).
+
+### Step 1 · Hello World — week 1 (21/9)
+
+- **Learn:** what a program is, `Console.WriteLine`, `Console.Write`, `Console.ReadLine`, running a program.
+- **PG:** Level 3 (Hello World), Level 4 (comments).
+- **Docs:** [Tutorial: Hello World](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world) · [`Console.ReadLine`](https://learn.microsoft.com/en-us/dotnet/api/system.console.readline) · [Learn path: first steps with C#](https://learn.microsoft.com/en-us/training/paths/csharp-first-steps/)
+- **Exercises:** PG *Hello World!*, *What Comes Next*, *Consolas and Telim* · B01
+- ✅ **Ready when:** you can write a program that asks for your name and greets you, from a blank file.
+
+### Step 2 · Variables, types & expressions — week 2 (28/9)
+
+- **Learn:** `int`, `double`, `string`, `bool`; assigning; `+ - * /`; **integer division** and the **remainder `%`**; converting text to a number (`int.Parse`); string interpolation `$"..."`.
+- **PG:** Levels 5–8 (Variables, Type system, Math, Console 2.0).
+- **Docs:** [Tutorial: numbers in C#](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp) · [Built-in types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types) · [Arithmetic operators (`/`, `%`)](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators) · [String interpolation](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated)
+- **Recipe:** *input → compute → output*.
+- **Exercises:** PG *The Variable Shop*, *The Triangle Farmer*, *The Four Sisters and the Duckbear*, *The Dominion of Kings*, *The Defense of Consolas* · B02, B03
+- ✅ **Ready when:** you can say what `17 / 5` and `17 % 5` give (3 and 2) and why. *This is the secret key for the digit recipes later.*
+
+### Step 3 · Conditions — week 3 (05/10)
+
+- **Learn:** `if` / `else if` / `else`, comparisons `== != < <= > >=`, `&&`, `||`, `!`, `switch`.
+- **PG:** Level 9 (Decision making), Level 10 (Switches).
+- **Docs:** [Selection statements (`if`, `switch`)](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements) · [Comparison operators](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/comparison-operators) · [Boolean logical operators](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/boolean-logical-operators) · [Tutorial: branches and loops](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/branches-and-loops)
+- **Recipe:** *classify a value* (even/odd with `% 2`, ranges with `&&`).
+- **Exercises:** PG *Repairing the Clocktower*, *The Watchtower*, *Buying Inventory*, *Discounted Inventory* · C01–C03
+- ✅ **Ready when:** you can test every branch of your `if`, including the boundary value (for example exactly 18 in an age check).
+
+### Step 4 · Loops — week 4 (12/10) ⭐ the big one
+
+Loops get **four small sub-steps**. Do not jump to Fibonacci or Armstrong before 4a–4c feel easy.
+
+```mermaid
+flowchart LR
+    A["4a · Repeat & count<br/>L01-L08"] --> B["4b · Keep a running result<br/>A01-A10"]
+    B --> C["4c · Draw in 2D<br/>G01-G06"]
+    B --> D["4d · Digits · state · search<br/>D01-D06 · S01-S03 · P01-P02"]
+    C --> E["🏆 Combine<br/>M01-M02"]
+    D --> E
+```
+
+- **Learn:** `for`, `while`, `do … while`, `break`, `continue`; tracing a loop on paper.
+- **PG:** Level 11 (Looping).
+- **Docs:** [Iteration statements (`for`, `foreach`, `while`, `do`)](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements) · [Jump statements (`break`, `continue`)](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/jump-statements) · [Learn module: `for` loops](https://learn.microsoft.com/en-us/training/modules/csharp-for/) · [Learn module: `do-while` and `while`](https://learn.microsoft.com/en-us/training/modules/csharp-do-while/) · [Learn path: add logic to console apps](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-3/)
+- **Recipes:** [counter loop](cookbook/01-counter-loop.md), [accumulator](cookbook/02-accumulator.md), [conditional accumulator](cookbook/03-conditional-accumulator.md), [min/max tracker](cookbook/04-min-max.md), [flag/search](cookbook/05-flag-search.md), [digit extraction](cookbook/06-digit-extraction.md), [state update](cookbook/07-state-update.md), [nested grid](cookbook/08-nested-grid.md), [input validation](cookbook/09-input-validation.md), [sentinel loop](cookbook/10-sentinel-loop.md).
+- **Exercises:** PG *The Prototype*, *The Magic Cannon* · L01–L08 · A01–A10 · G01–G06 · D01–D06 · S01–S03 · P01–P02 · M01–M02 · Project Euler #1, #6, #2.
+- ✅ **Ready when:** you can solve factorial, Fibonacci and the Armstrong check from a blank file **and** explain your trace table.
+
+### Step 5 · Files — week 5 (19/10)
+
+- **Learn:** write lines to a text file, read them back (`File.WriteAllLines`, `File.ReadAllLines`, `File.Exists`).
+- **PG:** Level 39 (*The Long Game*). It is late in the book: read only the file part.
+- **Docs:** [`File` class](https://learn.microsoft.com/en-us/dotnet/api/system.io.file) · [How to read text from a file](https://learn.microsoft.com/en-us/dotnet/standard/io/how-to-read-text-from-a-file)
+- **Recipe:** reading a file gives you an array of lines → use [array traversal](cookbook/11-array-traversal.md) + [accumulator](cookbook/02-accumulator.md).
+- **Exercises:** F01 · PG *The Long Game* (later, it needs classes).
+- ✅ **Ready when:** you can save numbers to a file, read them back and add them up.
+
+### Step 6 · Arrays — week 6 (26/10) ← *you are here*
+
+- **Learn:** create an array, index from `0`, `.Length`, loop over it with `for` and `foreach`.
+- **PG:** Level 12 (Arrays).
+- **Docs:** [Arrays](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays) · [Iteration statements (`foreach`)](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements)
+- **Recipes:** [array traversal](cookbook/11-array-traversal.md) — *every loop recipe from step 4 works on arrays too!* [string building](cookbook/12-string-building.md) for text.
+- **Exercises:** PG *The Replicator of D'To*, *The Laws of Freach* · R01–R05 · T01–T03
+- ✅ **Ready when:** you can explain the difference between `i` (the position) and `values[i]` (the value).
+
+### 🛟 Catch-up week — 2–6 November (no class)
+
+The best moment to fix loops for good. See [§5](#5-catch-up-plan-29-oct--10-nov).
+
+### Step 7 · Exceptions — week 7 (09/11)
+
+- **Learn:** what a crash is, `try` / `catch`, `int.TryParse` as a way to avoid crashes.
+- **PG:** Level 35 (Error handling and exceptions).
+- **Docs:** [Exceptions (fundamentals)](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/) · [`try`/`catch` statements](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/exception-handling-statements) · [`int.TryParse`](https://learn.microsoft.com/en-us/dotnet/api/system.int32.tryparse)
+- **Recipe:** [input validation loop](cookbook/09-input-validation.md) (+ `try`/`catch`).
+- **Exercises:** E01 · PG *Excepti's Game* (later, it uses classes).
+- ✅ **Ready when:** typing `abc` instead of a number does not crash your program.
+
+### Step 8 · Recap — week 8 (16/11)
+
+Redo one exercise per recipe **without hints**: A04, G05, D04, S02, R02, M01. Then try Project Euler #2. Missed one? Go back to that recipe.
+
+### Step 9 · Collections — week 9 (23/11)
+
+- **Learn:** `List<T>` that can grow (`Add`, `Remove`, `Count`), loop over it with `foreach`.
+- **PG:** Level 32 (*Lists of Commands* uses `List<T>`).
+- **Docs:** [Tutorial: collections (List)](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/list-collection) · [`List<T>`](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) · [Collections overview](https://learn.microsoft.com/en-us/dotnet/standard/collections/)
+- **Recipes:** same as arrays + [sentinel loop](cookbook/10-sentinel-loop.md) to fill the list.
+- **Exercises:** K01
+- ✅ **Ready when:** you can explain when to pick an array (fixed size) and when a `List` (it grows).
+
+### Step 10 · Methods — week 10 (30/11)
+
+- **Learn:** give a recipe a name: parameters, `return`, `void`.
+- **PG:** Level 13 (Methods: *Taking a Number*, *Countdown*).
+- **Docs:** [Methods](https://learn.microsoft.com/en-us/dotnet/csharp/methods) · [Learn path: create methods](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-5/)
+- **Recipe:** one recipe = one method (`CountDigits`, `Power`, `IsArmstrong`).
+- **Exercises:** PG *Taking a Number*, *Countdown* · N01
+- ✅ **Ready when:** you can turn your Armstrong solution into 3 small methods.
+
+### Step 11 · Objects & classes — weeks 11–12 (07/12, 14/12)
+
+- **Learn:** class = a blueprint; object = one thing built from it; fields, constructors, methods, properties.
+- **PG:** Levels 15–24 (Objects, Enums, Tuples, Classes, Information hiding, Properties, Static…).
+- **Docs:** [Object-oriented programming in C#](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/) · [Classes](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/classes)
+- **Exercises:** PG *Simula's Test*, *Simula's Soup*, *Vin Fletcher's Arrows*, *Vin's Trouble*, *The Properties of Arrows*, *Arrow Factories*, *The Point*, *The Color*, *The Card*, *The Locked Door*, *The Password Validator*.
+- ✅ **Ready when:** you can write a small `Point` class and explain what `new` does.
+
+## 4. Which loop should I use?
+
+A loop is a tool. First say **what repeats** and **what makes it stop**. Then pick the loop.
+
+```mermaid
+flowchart TD
+    Q{"Do I loop over<br/>every item of an array,<br/>list or string?"}
+    Q -- "Yes, and I only need the values" --> FE["foreach"]
+    Q -- "Yes, but I need the position i" --> FOR1["for (int i = 0; i #lt; a.Length; i++)"]
+    Q -- No --> K{"Do I know how many<br/>times BEFORE the loop starts?"}
+    K -- "Yes (1 to N, 10 times, width)" --> FOR2["for"]
+    K -- "No, I stop when something happens" --> O{"Must the body run<br/>at least once?<br/>(ask, then check)"}
+    O -- Yes --> DW["do … while"]
+    O -- No --> WH["while"]
+```
+
+| Loop | Use it when… | Typical exercise |
+| --- | --- | --- |
+| `for` | you know the number of turns (count from 1 to N, draw `width` stars) | sum 1..N, factorial, multiplication table |
+| `while` | you stop when a condition changes and maybe run **zero** times | digits (`while (n > 0)`), Fibonacci up to a limit |
+| `do … while` | you must do it **once** before you can check | ask for input until it is valid, menus |
+| `foreach` | you visit every item and do not need its position | sum of an array, count letters in a string |
+
+These are good defaults, not laws. Every `for` can be written as a `while`.
+
+## 5. Catch-up plan (29 Oct – 10 Nov)
+
+About **30–45 minutes per session**. Move on only when the "ready" check works *without help*. Repeating a session is normal.
+
+| # | When | Focus | Recipes | Do these |
 | --- | --- | --- | --- | --- |
-| **1. Read, store and display** | A greeting, temperature converter, small bill calculator (**planned**) | Console input/output; `int`, `double`, `decimal`, `string`, `bool`; assignment; arithmetic; conversion | Input → calculation → output | You can explain each variable, update its value and predict a short straight-line program. |
-| **2. Compare and choose** | Even/odd checker, ticket price, largest of three values (**planned**) | Comparisons; `if/else`; `&&`, `||`, `!`; remainder `%` | Classify a value; combine conditions | You can choose examples covering every branch, including equality and boundary values. |
-| **3. Repeat a predictable action** | Count up/down; multiplication table (L01–L04) | `for`; initialization, condition, update; scope | Walk through a range | You can trace every iteration, explain `<` versus `<=`, and make the loop terminate. |
-| **4. Keep a running result** | Sum 1…N, count multiples, sum even values, factorial, two totals (A01–A05) | A result variable outside the loop; conditional updates | Counter; sum; running product; filter then accumulate | You can choose the initial value and explain what the result means after each iteration. |
-| **5. Repeat until something happens** | Input validation, sum until zero, guessing game, repeating menu (**planned**); L05 for sentinel counting | `while`, `do/while`; `int.TryParse`; `switch` for a menu | Sentinel; retry; stop condition | You can say what makes the loop stop, exclude a sentinel from results and handle a first input that immediately stops. |
-| **6. Draw rows and columns** | Solid rectangle → right triangle → hollow rectangle → checkerboard (**planned**) | Nested `for`; `Console.Write` / `WriteLine`; coordinate conditions | Outer loop chooses a row; inner loop visits columns | You can trace a 2×3 drawing, reset the column loop each row and explain where each newline belongs. |
-| **7. Give a recipe a name** | Turn earlier calculations and drawings into methods (**planned**) | Parameters; return values; `void`; local variables | Separate input, calculation and display; compose small operations | You can call one calculation with different inputs and explain returned values versus printed output. |
-| **8. Process arrays and text** | Sum, maximum, occurrence count (R01–R03); reverse an array and count vowels (**planned**) | Arrays; zero-based indexes; `Length`; `for`, `foreach`; string traversal | Traverse; search; track a best value | You can distinguish index and value, avoid out-of-range access and explain how an empty collection changes the task. |
-| **9. Take a number apart** | Last digit → remove digit → digit count → digit sum (D01–D04); reverse digits (**planned**) | Integer `/`; `%`; working copy; `while` or `do/while` | Extract → process → remove | You can trace 352 → 35 → 3 → 0, preserve the original input and treat zero as a one-digit number. |
-| **10. Remember previous values** | Trace two moving values; generate Fibonacci without an array (S01–S02) | Temporary variables; ordered assignments | Calculate next → shift previous/current | You can explain why overwriting a value too early loses information, and handle N=0, 1 and 2. |
-| **11. Combine recipes independently** | Multiples challenge, numeric palindrome, Armstrong (M01–M03); small grade analyser or console drawing tool (**planned**) | Previously learned tools | Decompose → select patterns → combine → verify | Given only a prompt, you can explain a plan, implement it and test normal and edge cases without a solution template. |
+| 1 | Thu 29/10 | 🔍 Diagnose: trace on paper | counter loop | L01, L02, then A01 on paper first |
+| 2 | Fri 30/10 | `for` / `while`, boundaries | counter loop | L03, L04, L06 |
+| 3 | Mon 2/11 | Accumulators | accumulator | A01, A02, A04 (factorial) |
+| 4 | Tue 3/11 | Loop + `if` | conditional accumulator | A03, A08, Project Euler #1 |
+| 5 | Wed 4/11 | Draw in 2D 🎨 | nested grid | G01, G02, G03, G05 |
+| 6 | Thu 5/11 | Stop when… | sentinel, validation, min/max | L05, L07, A06, A09 |
+| 7 | Fri 6/11 | Take digits apart | digit extraction | D01, D02, D03, D04 |
+| 8 | Sat 7/11 | Changing state | state update | S01, S02 (Fibonacci) |
+| 9 | Sun 8/11 | Combine 🏆 | digit + accumulator + compare | A07 (power), D05, M01 (Armstrong) |
+| 10 | Mon 9/11 | Arrays with the same recipes | array traversal | R01, R02, R03, PG *The Replicator of D'To*, *The Laws of Freach* |
+| 11 | Tue 10/11 | Mini test (no hints) | mixed | one of D06 / P01 / S03, chosen by the coach |
 
-## A loop is a tool: choose it for the job
+Session shape: **5 min** recall · **10 min** paper trace · **20 min** code alone · **5 min** explain. See [How to practice](docs/how-to-practice.md).
 
-| Your intention | A good first choice | Example |
-| --- | --- | --- |
-| Visit a range or repeat a known number of times | `for` | Print 1…10; draw 6 columns; multiply factors 1…N. |
-| Repeat while a condition holds; possibly zero times | `while` | Remove digits until none remain; accept values until a sentinel. |
-| Do the action once before checking whether to repeat | `do/while` | Show a menu at least once or ask for input again. |
-| Visit each item without needing its position | `foreach` | Sum the values in an array. |
-| Need a position, neighbouring items or to replace array elements | Indexed `for` | Reverse an array or compare adjacent values. |
+## 6. Shortcuts to the teacher's problems
 
-These are useful defaults, not exclusive rules. First describe **what repeats and what stops it**; then choose the syntax.
+If a teacher exercise is due *now*, these are the minimum steps:
 
-## The recipes behind the exercises
+```mermaid
+flowchart LR
+    L03["L03 count up"] --> A01["A01 sum 1..N"] --> A04["A04 factorial"]
+    L03 --> S01["S01 trace a, b"] --> S02["S02 Fibonacci"] --> S03["S03 even Fibonacci<br/>(Euler #2)"]
+    A01 --> A07["A07 power"]
+    L06["L06 even numbers"] --> D01["D01 last digit"] --> D03["D03 count digits"] --> D04["D04 digit sum"]
+    D04 --> M01["M01 Armstrong"]
+    D03 --> M01
+    A07 --> M01
+    M01 --> M02["M02 all Armstrong<br/>numbers in a range"]
+```
 
-| Recipe | What the remembered value means | Starting point | Gradual practice |
-| --- | --- | --- | --- |
-| Counter | How many items matched so far | `count = 0` | Count all inputs → count even inputs → count target occurrences. |
-| Sum accumulator | Total of processed values | `total = 0` | Sum 1…N → sum only even values → average using a sum and a count. |
-| Product accumulator | Product of processed factors | `product = 1` | Multiply a few factors → factorial → integer powers. |
-| Best value so far | Largest/smallest processed value | First item of a nonempty sequence | Maximum of three → maximum of an array, including all-negative values. |
-| Search flag | Whether a match has been found | `found = false` | Find a target → detect whether any value violates a rule. |
-| Nested traversal | Current row and current column | Restart columns for every row | Rectangle → triangle → border → checkerboard. |
-| Digit processing | Unprocessed part of a number | A copy of the original | Extract one digit → sum digits → reverse digits. |
-| Moving state | Values needed to calculate the next step | Problem-specific initial values | Trace assignments → Fibonacci. |
+- **Factorial** = a [product accumulator](cookbook/02-accumulator.md) (start at **1**!).
+- **Fibonacci** = a [state update](cookbook/07-state-update.md) with `previous`, `current`, `next`.
+- **Armstrong** = [count digits](cookbook/06-digit-extraction.md) + [extract digits](cookbook/06-digit-extraction.md) + power via a [product accumulator](cookbook/02-accumulator.md) + sum + compare. See [Combining recipes](cookbook/combining-recipes.md).
 
-Use the existing [pattern cookbook](patterns/README.md) for loops, accumulation, digits, state and array traversal. Search and nested-loop recipes are planned additions.
+## 7. Make the maths visible first
 
-**Important distinctions:** an average needs both sum and count, and requires a decision when count is zero. A maximum should not start at zero if all inputs may be negative. A factorial starts with a product of 1, so 0! is 1. Keep factorial exercises within 0…12 for `int`; define safe input limits for powers and Fibonacci too.
+The goal is to practise *programming*, not to guess maths. Always write the definition and a tiny example on paper:
 
-## Make the maths visible before coding
+- **Sum:** 1 + 2 + 3 + 4 = 10.
+- **Factorial:** 4! = 1 × 2 × 3 × 4 = 24, and 0! = 1. With `int`, stay at N ≤ 12.
+- **Power:** 3⁴ = 3 × 3 × 3 × 3 = 81, and x⁰ = 1.
+- **Fibonacci:** 0, 1, 1, 2, 3, 5, 8… each value = the two before added together.
+- **Armstrong:** 153 = 1³ + 5³ + 3³ (3 digits → power 3). 9474 = 9⁴ + 4⁴ + 7⁴ + 4⁴ (4 digits → power 4).
+- **Prime:** a number ≥ 2 that only divides by 1 and itself. 7 is prime, 9 is not (9 = 3 × 3).
+- **Palindrome:** reads the same both ways: 1221, "kayak".
 
-Every maths-based exercise should state its definition, a tiny worked example and valid inputs. The learner should be practising programming rather than guessing the maths.
+## 8. Extra resources (only when stuck)
 
-- **Sum:** 1 + 2 + 3 + 4 = 10. Add one value each iteration.
-- **Factorial:** 4! = 1 × 2 × 3 × 4 = 24; 0! = 1. Reuse a running product.
-- **Integer power:** 3⁴ = 3 × 3 × 3 × 3 = 81. Start with nonnegative exponents and define exponent zero as returning 1 for these exercises.
-- **Fibonacci:** define F₀=0 and F₁=1; each next value is the sum of the previous two. Distinguish “print the first N values” from “return the value at position N”.
-- **Armstrong:** 153 = 1³ + 5³ + 3³. The exponent is the number of digits, not always 3. Practise integer powers and digit counting before combining them.
+- *The C# Player's Guide*: official [solutions for the 5th edition](https://csharpplayersguide.com/solutions/5th-edition) (look **after** trying).
+- [Exercism C# track](https://exercism.org/tracks/csharp): extra practice with tests, once the steps above feel OK.
+- Project Euler: [#1](https://projecteuler.net/problem=1), [#6](https://projecteuler.net/problem=6), [#2](https://projecteuler.net/problem=2), [#4](https://projecteuler.net/problem=4), [#5](https://projecteuler.net/problem=5) — milestones, not daily homework.
 
-For Armstrong, first check one candidate. Searching a whole interval comes later: it adds another loop around the candidate check.
-
-## A visual bridge: from one line to a drawing
-
-Before nested loops, print a single row of 4 stars. Then repeat that row 3 times. Only then vary the number or content of columns.
-
-| Drawing challenge | Row rule | Column / character rule |
-| --- | --- | --- |
-| Solid rectangle | Repeat for the requested height | Print the requested width of stars. |
-| Right triangle | Rows numbered 1…height | Row r contains r stars. |
-| Hollow rectangle | Visit every row | Print a star on the first/last row or first/last column; otherwise a space. |
-| Checkerboard | Visit every row | Choose one of two characters using the parity of row + column. |
-
-**Drawing a grid does not require a 2D array.** First generate characters directly. Later, store a small grid in a rectangular array and revisit the same row/column traversal if the course needs it. Third dimensions and more complex shapes are optional extensions.
-
-## How to use each stage
-
-1. **Predict:** read a tiny example and say what it will output.
-2. **Trace:** record the changing variables on paper.
-3. **Modify:** change one rule in a working example.
-4. **Build:** solve a small prompt from a blank file.
-5. **Transfer:** solve a different-looking problem using the same recipe, then explain the choice.
-
-Use [How to practice](docs/how-to-practice.md). A checkpoint is passed through independent work and explanation, then a fresh variation in a later session. Finishing one familiar exercise is not enough.
-
-For each loop, ask: **What changes? What do I remember? When do I stop?** Test the smallest allowed input, a typical input and a boundary. Use a debugger or temporary output to inspect values.
-
-## Where to begin right now
-
-For the current difficulties, briefly verify stages 1–2, then focus on **3 → 4 → 5**. Add stage 6 as visual practice once single loops are comfortable. Do not wait to finish the entire roadmap before returning to university assignments:
-
-- **Factorial:** stages 3–4; add stage 7 if a method is required.
-- **Fibonacci:** stages 3–4 and the state recipe in stage 10; arrays are not required.
-- **Armstrong:** stage 4 plus digit processing and integer powers; methods help separate the steps.
-
-This is a prerequisite shortcut for urgent assignments, not an instruction to skip the foundations.
-
-## Supporting resources
-
-- [Microsoft Learn: first steps with C#](https://learn.microsoft.com/en-us/training/paths/csharp-first-steps/) for variables, console interaction, arithmetic and decisions.
-- [Microsoft Learn: add logic to C# console applications](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-3/) for conditions, scope and loops.
-- [C# iteration reference](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements/) to check the behaviour of `for`, `foreach`, `while` and `do/while`.
-- [Microsoft Learn: create methods](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-5/) as supporting lessons for stage 7.
-- *The C# Player's Guide*, 5th edition remains the main book. Choose chapters matching the stage; track its challenges in [C# Quest Tracker](https://lfarci.github.io/csharp-quest-tracker/).
-- Project Euler is **optional transfer practice**, after learning the recipes: [#1](https://projecteuler.net/problem=1) after conditional sums, [#6](https://projecteuler.net/problem=6) after two accumulators, [#2](https://projecteuler.net/problem=2) after Fibonacci.
-
-Classes, inheritance, LINQ, recursion and advanced syntax are outside this initial fundamentals path. Add them later when the course or a project calls for them.
+Not in this path (yet): LINQ, recursion, inheritance details, async. They come later when the course needs them.
