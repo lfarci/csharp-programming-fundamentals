@@ -31,23 +31,23 @@ Solid arrows show the core route; dotted arrows show optional extensions. Start 
 
 ## Stops and checkpoints
 
-Exercise IDs link to sections of the [exercise inventory](exercises/README.md). These are practice prompts, not completed lessons or solutions.
+Exercise IDs link to sections of the [exercise inventory](exercises/README.md). Linked IDs refer only to existing inventory exercises. Other practice ideas describe milestones in this roadmap; they are not new inventory entries, completed lessons, or solutions.
 
 | Stop | C# tools to learn | Thinking pattern and practice | Ready to move on when… |
 | --- | --- | --- | --- |
-| **0 · Run and inspect** | Console project, top-level statements, `Console.WriteLine`, compiler messages | Execute instructions in order; predict a short program; change its output; fix a missing semicolon. **[B01](exercises/README.md#b--first-programs-and-values)** | You can create/run a program and explain the difference between a compiler error and a wrong answer. |
-| **1 · Store and calculate** | `int`, `double`, `decimal`, `bool`, `string`; assignment; arithmetic; interpolation | Input → transformation → output. Build a receipt and a temperature converter. Compare integer and fractional division. **[B02–B03](exercises/README.md#b--first-programs-and-values)** | You can trace reassignment, choose a suitable type, and explain why `5 / 2` is 2. |
-| **2 · Make decisions** | Comparisons, `%`, `&&`, `\|\|`, `!`, `if` / `else if` / `else`; blocks and scope | Split a problem into cases. Check parity, choose a ticket price, validate a range. **[C01–C03](exercises/README.md#c--decisions)** | You can explain which branch runs and test values below, at, and above a boundary. |
-| **3 · Repeat and stop** | `for`, `while`, `do` / `while`; loop bounds; `Console.ReadLine`, `int.TryParse` | Repeat an action; identify what changes and why it stops. Count down, print a times table, ask again after invalid input. **[L01–L04](exercises/README.md#l--loop-mechanics), [L06](exercises/README.md#l--loop-mechanics)** | You can trace every iteration, avoid off-by-one errors, and justify your loop choice. |
-| **4 · Count and combine** | `++`, `+=`, `*=`; conditions inside loops | Counter, sum, product, conditional accumulation. Count entries until zero, add a series, compute factorial, then track two totals. **[L05](exercises/README.md#l--loop-mechanics), [A01–A06](exercises/README.md#a--counters-and-accumulators)** | You can explain why sums start at 0 and products at 1, and keep initialization outside the loop. |
-| **5 · Process arrays and text** | `int[]`, indexing from 0, `Length`, `foreach`, indexed `for`; string characters | Traverse, search, count, find a maximum, build a modified result. **[R01–R06](exercises/README.md#r--arrays)** | You distinguish positions from values, handle an empty input deliberately, and use `foreach` when positions are unnecessary. |
-| **6 · Draw with rows and columns** | Nested loops, `Console.Write` vs `WriteLine`; row/column conditions; then `int[,]` and `GetLength` | Repeat once per row, then once per cell. Draw a rectangle, triangle, hollow frame, and checkerboard; then total grid rows. **[G01–G05](exercises/README.md#g--drawings-and-grids)** | You can explain the inner loop resetting for every row and why a height × width rectangle visits height × width cells. |
-| **7 · Reuse steps with methods** | Parameters, return types, `return`, local scope; simple local functions | Decompose a working solution: separate calculation from console interaction. Extract `Sum`, `Factorial`, and a rectangle printer. **[F01–F03](exercises/README.md#f--reusable-steps)** | You can call a method with different inputs, explain its contract, and distinguish returning from printing. |
+| **0 · Run and inspect** | Console project, top-level statements, `Console.WriteLine`, compiler messages | Execute instructions in order; predict a short program; change its output; fix a missing semicolon. | You can create/run a program and explain the difference between a compiler error and a wrong answer. |
+| **1 · Store and calculate** | `int`, `double`, `decimal`, `bool`, `string`; assignment; arithmetic; interpolation | Input → transformation → output. Build a receipt and a temperature converter. Compare integer and fractional division. | You can trace reassignment, choose a suitable type, and explain why `5 / 2` is 2. |
+| **2 · Make decisions** | Comparisons, `%`, `&&`, `\|\|`, `!`, `if` / `else if` / `else`; blocks and scope | Split a problem into cases. Check parity, choose a ticket price, validate a range. | You can explain which branch runs and test values below, at, and above a boundary. |
+| **3 · Repeat and stop** | `for`, `while`, `do` / `while`; loop bounds; `Console.ReadLine`, `int.TryParse` | Repeat an action; identify what changes and why it stops. Count down, print a times table, ask again after invalid input. **[L01–L04](exercises/README.md#l--loop-mechanics)** | You can trace every iteration, avoid off-by-one errors, and justify your loop choice. |
+| **4 · Count and combine** | `++`, `+=`, `*=`; conditions inside loops | Counter, sum, product, conditional accumulation. Count entries until zero, add a series, compute factorial, then track two totals. **[L05](exercises/README.md#l--loop-mechanics), [A01–A05](exercises/README.md#a--counters-and-accumulators)** | You can explain why sums start at 0 and products at 1, and keep initialization outside the loop. |
+| **5 · Process arrays and text** | `int[]`, indexing from 0, `Length`, `foreach`, indexed `for`; string characters | Traverse, search, count, find a maximum, build a modified result. **[R01–R03](exercises/README.md#r--arrays)** | You distinguish positions from values, handle an empty input deliberately, and use `foreach` when positions are unnecessary. |
+| **6 · Draw with rows and columns** | Nested loops, `Console.Write` vs `WriteLine`; row/column conditions; then `int[,]` and `GetLength` | Repeat once per row, then once per cell. Draw a rectangle, triangle, hollow frame, and checkerboard; then total grid rows. | You can explain the inner loop resetting for every row and why a height × width rectangle visits height × width cells. |
+| **7 · Reuse steps with methods** | Parameters, return types, `return`, local scope; simple local functions | Decompose a working solution: separate calculation from console interaction. Extract `Sum`, `Factorial`, and a rectangle printer. | You can call a method with different inputs, explain its contract, and distinguish returning from printing. |
 | **8 · Solve unfamiliar problems** | Combine familiar tools; debug and check results | Plan inputs, outputs, examples, state, and stopping conditions before coding. Build a score report or drawing menu; attempt **[M01](exercises/README.md#m--mixed-assessments-do-not-reveal-patterns-ahead-of-time)**, then optional **[M02–M03](exercises/README.md#m--mixed-assessments-do-not-reveal-patterns-ahead-of-time)**. | You can solve two fresh variations without step-by-step hints, including one on another day. |
 
 Start with fixed values so input handling does not obscure the algorithm. Introduce interactive numeric input at stop 3: `TryParse` distinguishes a valid integer from invalid text; range checks are a separate decision. Do not introduce `try` / `catch` just to read the first number.
 
-Already know the basics? Try [B03](exercises/README.md#b--first-programs-and-values), [C03](exercises/README.md#c--decisions), and [L01–L02](exercises/README.md#l--loop-mechanics) without help. Enter at the first checkpoint you cannot explain independently.
+Already know the basics? Try the temperature conversion and range-checking ideas above, then [L01–L02](exercises/README.md#l--loop-mechanics), without help. Enter at the first checkpoint you cannot explain independently.
 
 ## Choosing a loop by the problem
 
@@ -63,7 +63,7 @@ These are choices based on intent, not rigid rules. `break` and `continue` can c
 
 ## The visual milestone: a terminal drawing studio
 
-Build [G01–G04](exercises/README.md#g--drawings-and-grids) incrementally. Draw on paper first, label rows and columns starting at zero, then decide which character belongs in each cell.
+Build the four drawings below incrementally. Draw on paper first, label rows and columns starting at zero, then decide which character belongs in each cell.
 
 | Build | Rule to discover | Example dimensions | Check |
 | --- | --- | --- | --- |
@@ -72,7 +72,7 @@ Build [G01–G04](exercises/README.md#g--drawings-and-grids) incrementally. Draw
 | Hollow frame | Print `*` on the first/last row or column; spaces inside | height 3, width 5 | First/last rows full; middle row has 2 stars |
 | Checkerboard | Choose a character from the parity of row + column | height 4, width 6 | Adjacent cells differ horizontally and vertically |
 
-**A drawing does not need a stored 2D array.** First generate characters directly with nested loops. Introduce a 2D array in [G05](exercises/README.md#g--drawings-and-grids) when the task needs stored cell values. Later, methods can turn each drawing into a reusable command.
+**A drawing does not need a stored 2D array.** First generate characters directly with nested loops. Introduce a 2D array when the task needs stored cell values, such as calculating row totals. Later, methods can turn each drawing into a reusable command.
 
 ## Optional number-puzzle branch
 
