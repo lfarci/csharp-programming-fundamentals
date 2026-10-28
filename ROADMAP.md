@@ -24,3 +24,9 @@ This is a **sequence of skills, not a calendar**. University assignments come fi
 - Teacher factorial/Fibonacci/Armstrong problems: revisit as mixed assessments once their prerequisites are mastered.
 
 Use [the exercise inventory](exercises/README.md) to pick the next problem. Do not treat the sequence as a race.
+
+## A parallel strand: learning to think through a problem
+
+At every stage, practice the [problem-solving method](docs/problem-solving.md): restate the contract, solve a small example, split responsibilities, draw decisions, trace, check boundaries, then translate to C#. Include straight calculations and simple choices as well as loops.
+
+Alongside array traversal, use [strings](patterns/strings.md) and T01–T03 to transfer the same ideas to characters. Readiness means explaining why a recipe fits and adapting its state/update rule, as well as reproducing its syntax.
