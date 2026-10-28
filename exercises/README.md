@@ -73,4 +73,4 @@ For these exercises, use ASCII letters and spaces. Before coding, draw indexed c
 
 ## When stuck
 
-See [How to practice](../docs/how-to-practice.md) and the [pattern cookbook](../patterns/README.md). Work a smaller example on paper, trace variables, then request a hint. Do not start with an answer key.
+See [How to practice](../docs/how-to-practice.md) and the [pattern cookbook](../cookbook/README.md). Work a smaller example on paper, trace variables, then request a hint. Do not start with an answer key.
