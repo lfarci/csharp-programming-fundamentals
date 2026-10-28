@@ -7,7 +7,7 @@ This is **not** a second textbook or an exercise tracker. Use *The C# Player's G
 ## Start here
 
 1. Read [How to practice](docs/how-to-practice.md).
-2. Follow the [learning path](ROADMAP.md). Begin with variables and decisions, then use loops to calculate, process arrays, and draw in the terminal. Use the checkpoints to skip skills you already know.
+2. Follow the [learning path](ROADMAP.md). Begin with the diagnostic, then loops, counters, and accumulators.
 3. Learn one [pattern](patterns/README.md) at a time.
 4. Solve exercises in [the inventory](exercises/README.md), starting with the small ones. Write and run your own C# console programs.
 5. Attempt mixed challenges *without being told which pattern to use*.
