@@ -1,76 +1,236 @@
-# Exercise inventory
+# 📚 Exercise inventory
 
-Work in order within a stage. **Easy / Medium / Hard** reflects a true beginner's likely effort, not a formal grade. All custom prompts below are original. Use a simple C# console project of your choice; keep code solutions separate from this inventory.
+One table for **every** exercise: our own exercises, *The C# Player's Guide* (PG) challenges, Project Euler and the teacher's topics.
+Each custom exercise adds **one** new difficulty. Pick the next one whose prerequisites you have done.
 
-## L — Loop mechanics
+- 🟢 **Guided** — small steps, hints help a lot.  🔵 **Independent** — same idea, alone.  🟣 **Challenge** — new problem, combine recipes.
+- ⭐ to ⭐⭐⭐ = effort for a true beginner.
+- Solutions are in [`solutions/`](../solutions/README.md). Try first, look later.
+- Book challenges are tracked in [C# Quest Tracker](https://lfarci.github.io/csharp-quest-tracker/), not here.
 
-| ID | Exercise | Difficulty | Goal |
-| --- | --- | --- | --- |
-| L01 | Trace a loop | Easy | Predict the output and make a trace table for `for (int i = 2; i <= 8; i += 2)` printing `i`. |
-| L02 | Boundaries | Easy | Predict how many times loops with `i < 5` and `i <= 5` run, starting at 1 and increasing by 1. |
-| L03 | Count up and down | Easy | Read positive N; print 1 to N, then N to 1. For N=4: 1,2,3,4 and 4,3,2,1. |
-| L04 | Multiplication table | Easy | Read N; print N×1 through N×10. For N=3: 3, 6, …, 30. |
-| L05 | Until zero | Medium | Repeatedly read integers; stop only when the user enters 0. Print how many **nonzero** integers were entered. |
+## Counts
 
-## A — Counters and accumulators
+| Source | Exercises |
+| --- | ---: |
+| Custom (this repo) | 55 |
+| Player's Guide | 24 |
+| Project Euler | 5 |
+| Teacher topic | 3 |
+| **Total** | **87** |
 
-| ID | Exercise | Difficulty | Goal |
-| --- | --- | --- | --- |
-| A01 | Sum 1 to N | Easy | For N=5, output 15. Use a loop, not the arithmetic-series formula. |
-| A02 | Count multiples of 3 | Easy | Count values from 1 to N inclusive divisible by 3. For N=10, output 3. |
-| A03 | Sum even values | Easy | Sum even values from 1 to N inclusive. For N=6, output 12. |
-| A04 | Factorial | Medium | Compute N! for 0 ≤ N ≤ 12 using a loop. For N=0, output 1; N=5, output 120. |
-| A05 | Two accumulators | Medium | For 1 to N compute separately the sum of values and the sum of their squares. For N=3, outputs 6 and 14. |
+Custom by level: 🟢 15 guided · 🔵 27 independent · 🟣 13 challenge.
 
-## D — Digit manipulation
+## Map of the families
 
-| ID | Exercise | Difficulty | Goal |
-| --- | --- | --- | --- |
-| D01 | Last digit | Easy | Given nonnegative N, print `N % 10`. For 352, output 2. |
-| D02 | Remove last digit | Easy | Given nonnegative N, print the result of integer division by 10. For 352, output 35. |
-| D03 | Count digits | Medium | Count decimal digits of nonnegative N using division. For 0, output 1; for 352, output 3. |
-| D04 | Digit sum | Medium | Add the decimal digits of nonnegative N. For 352, output 10; for 0, output 0. |
+```mermaid
+flowchart LR
+    B["B · Basics"] --> C["C · Conditions"] --> L["L · Loop mechanics"]
+    L --> A["A · Accumulators"]
+    A --> G["G · 2D drawings"]
+    A --> D["D · Digits"]
+    L --> S["S · State"]
+    A --> P["P · Search & primes"]
+    D --> M["M · Combine: Armstrong"]
+    A --> M
+    A --> R["R · Arrays"] --> T["T · Text"]
+    R --> F["F · Files"]
+    L --> E["E · Exceptions"]
+    R --> K["K · Collections"]
+    M --> N["N · Methods"]
+```
 
-## S — Variable state
+Full exercise-by-exercise graph: [dependency-graph.md](dependency-graph.md).
 
-| ID | Exercise | Difficulty | Goal |
-| --- | --- | --- | --- |
-| S01 | Trace updates | Medium | Starting with `a=1`, `b=2`, repeat three times: `next=a+b; a=b; b=next;`. Record all values after each iteration. |
-| S02 | Fibonacci | Hard | Print the first N Fibonacci values, starting at 0, 1. For N=6: 0, 1, 1, 2, 3, 5. |
+## Custom exercises
 
-## R — Arrays
+### B · Basics: input → compute → output (Step 1–2)
 
-| ID | Exercise | Difficulty | Goal |
-| --- | --- | --- | --- |
-| R01 | Sum an array | Easy | For `{4,9,2}`, output 15 using a loop. |
-| R02 | Find largest | Easy | For `{-5,-2,-9}`, output -2; assume a nonempty array. |
-| R03 | Count matches | Medium | For `{2,4,2,5,2}` and target 2, output 3. |
+| ID | Exercise | Level | ⭐ | Recipes | Before | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| B01 | [Hello you](B01-hello-you.md) | 🟢 Guided | ⭐ | — | — | Custom |
+| B02 | [Rectangle calculator](B02-rectangle-calculator.md) | 🟢 Guided | ⭐ | — | B01 | Custom |
+| B03 | [Seconds to hours, minutes, seconds](B03-seconds-to-hms.md) | 🔵 Independent | ⭐⭐ | — | B02 | Custom |
 
-## T — Text (after basic traversal)
+### C · Conditions (Step 3)
 
-For these exercises, use ASCII letters and spaces. Before coding, draw indexed character cells and trace your result.
+| ID | Exercise | Level | ⭐ | Recipes | Before | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| C01 | [Even or odd](C01-even-or-odd.md) | 🟢 Guided | ⭐ | — | B02 | Custom |
+| C02 | [Largest of three](C02-largest-of-three.md) | 🔵 Independent | ⭐⭐ | [Min/max](../cookbook/04-min-max.md) | C01 | Custom |
+| C03 | [Ticket price](C03-ticket-price.md) | 🔵 Independent | ⭐⭐ | — | C01 | Custom |
 
-| ID | Exercise | Difficulty | Goal |
-| --- | --- | --- | --- |
-| T01 | Count a letter | Easy | Count lowercase 'a' in "banana": 3. Also test "" and "BANANA": 0. |
-| T02 | Remove spaces | Easy | Build text without ordinary spaces: "a b c" → "abc"; "" → ""; "   " → "". |
-| T03 | Count and keep | Medium | For "a1 b2!", count ASCII digits and build their text in input order: count 2, text "12". For "abc": 0 and "". |
+### L · Loop mechanics (Step 4a)
 
-## M — Mixed assessments (do not reveal patterns ahead of time)
+| ID | Exercise | Level | ⭐ | Recipes | Before | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| L01 | [Trace a loop (paper)](L01-trace-a-loop.md) | 🟢 Guided | ⭐ | [Counter loop](../cookbook/01-counter-loop.md) | C01 | Custom · 📝 paper |
+| L02 | [Boundaries: < or <= ? (paper)](L02-boundaries.md) | 🟢 Guided | ⭐ | [Counter loop](../cookbook/01-counter-loop.md) | L01 | Custom · 📝 paper |
+| L03 | [Count up and down](L03-count-up-and-down.md) | 🟢 Guided | ⭐ | [Counter loop](../cookbook/01-counter-loop.md) | L01 | Custom |
+| L04 | [Multiplication table](L04-multiplication-table.md) | 🔵 Independent | ⭐ | [Counter loop](../cookbook/01-counter-loop.md) | L03 | Custom |
+| L05 | [Until zero](L05-until-zero.md) | 🔵 Independent | ⭐⭐ | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Accumulator](../cookbook/02-accumulator.md) | L03 | Custom |
+| L06 | [Even numbers](L06-even-numbers.md) | 🟢 Guided | ⭐ | [Counter loop](../cookbook/01-counter-loop.md) | L03 | Custom |
+| L07 | [Ask until valid](L07-ask-until-valid.md) | 🔵 Independent | ⭐⭐ | [Input validation](../cookbook/09-input-validation.md) | L05, C03 | Custom |
+| L08 | [Guess the number](L08-guess-the-number.md) | 🟣 Challenge | ⭐⭐ | [Input validation](../cookbook/09-input-validation.md), [Accumulator](../cookbook/02-accumulator.md) | L07 | Custom |
 
-| ID | Exercise | Difficulty | Goal |
-| --- | --- | --- | --- |
-| M01 | Multiples challenge | Medium | For integers below N, calculate the sum of values divisible by 3 or 5, counting each number only once. Try N=10 before [Project Euler #1](https://projecteuler.net/problem=1). |
-| M02 | Number palindrome | Hard | Determine if a nonnegative integer reads the same forwards and backwards, without converting to text. For 1221: true; for 123: false. |
-| M03 | Armstrong number | Hard | For a nonnegative integer, check whether it equals the sum of its digits each raised to the total digit count. For 153: true; for 154: false. First implement an integer-power loop; handle 0 explicitly. |
+### A · Accumulators (Step 4b)
 
-## External milestones
+| ID | Exercise | Level | ⭐ | Recipes | Before | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| A01 | [Sum from 1 to N](A01-sum-1-to-n.md) | 🟢 Guided | ⭐ | [Counter loop](../cookbook/01-counter-loop.md), [Accumulator](../cookbook/02-accumulator.md) | L03 | Custom |
+| A02 | [Count multiples of 3](A02-count-multiples-of-3.md) | 🟢 Guided | ⭐ | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | A01, C01 | Custom |
+| A03 | [Sum of the even numbers](A03-sum-even-values.md) | 🔵 Independent | ⭐ | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | A02 | Custom |
+| A04 | [Factorial](A04-factorial.md) | 🔵 Independent | ⭐⭐ | [Accumulator](../cookbook/02-accumulator.md) | A01 | Custom · teacher: Factorial |
+| A05 | [Two accumulators: sum and squares](A05-sum-square-difference.md) | 🔵 Independent | ⭐⭐ | [Accumulator](../cookbook/02-accumulator.md) | A01 | Custom → PE #6 |
+| A06 | [Average until zero](A06-average-until-zero.md) | 🔵 Independent | ⭐⭐ | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Accumulator](../cookbook/02-accumulator.md) | L05, A01 | Custom |
+| A07 | [Integer power](A07-integer-power.md) | 🔵 Independent | ⭐⭐ | [Accumulator](../cookbook/02-accumulator.md) | A04 | Custom |
+| A08 | [Multiples of 3 or 5](A08-multiples-of-3-or-5.md) | 🟣 Challenge | ⭐⭐ | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | A03 | Custom → PE #1 |
+| A09 | [Smallest and largest until zero](A09-min-and-max-until-zero.md) | 🔵 Independent | ⭐⭐ | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Min/max](../cookbook/04-min-max.md) | A06, C02 | Custom |
+| A10 | [Sum of a series](A10-sum-of-a-series.md) | 🟣 Challenge | ⭐⭐ | [Accumulator](../cookbook/02-accumulator.md) | A01 | Custom |
 
-- *The C# Player's Guide*, 5th ed., Level 11: **The Prototype** (p. 88), **The Magic Cannon** (p. 89).
-- Level 12: **The Replicator of D’To** (p. 94), **The Laws of Freach** (p. 95).
-- [Project Euler #1](https://projecteuler.net/problem=1) after A03/M01; [#6](https://projecteuler.net/problem=6) after A05; [#2](https://projecteuler.net/problem=2) after S02.
-- Teacher exercises: factorial, Fibonacci, Armstrong; compare exact requirements with the course sheets before marking them equivalent.
+### G · 2D drawings (nested loops) (Step 4c)
+
+| ID | Exercise | Level | ⭐ | Recipes | Before | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| G01 | [Draw a rectangle](G01-rectangle.md) | 🟢 Guided | ⭐ | [Nested grid](../cookbook/08-nested-grid.md) | L03 | Custom |
+| G02 | [Draw a right triangle](G02-right-triangle.md) | 🔵 Independent | ⭐⭐ | [Nested grid](../cookbook/08-nested-grid.md) | G01 | Custom |
+| G03 | [Multiplication grid](G03-multiplication-grid.md) | 🔵 Independent | ⭐⭐ | [Nested grid](../cookbook/08-nested-grid.md) | G01, L04 | Custom |
+| G04 | [Hollow rectangle](G04-hollow-rectangle.md) | 🔵 Independent | ⭐⭐ | [Nested grid](../cookbook/08-nested-grid.md) | G01 | Custom |
+| G05 | [Checkerboard](G05-checkerboard.md) | 🟣 Challenge | ⭐⭐ | [Nested grid](../cookbook/08-nested-grid.md) | G04, C01 | Custom |
+| G06 | [Pyramid](G06-pyramid.md) | 🟣 Challenge | ⭐⭐⭐ | [Nested grid](../cookbook/08-nested-grid.md) | G02 | Custom |
+
+### D · Digits (Step 4d)
+
+| ID | Exercise | Level | ⭐ | Recipes | Before | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| D01 | [Last digit](D01-last-digit.md) | 🟢 Guided | ⭐ | [Digit extraction](../cookbook/06-digit-extraction.md) | B03 | Custom |
+| D02 | [Remove the last digit](D02-remove-last-digit.md) | 🟢 Guided | ⭐ | [Digit extraction](../cookbook/06-digit-extraction.md) | D01 | Custom |
+| D03 | [Count the digits](D03-count-digits.md) | 🔵 Independent | ⭐⭐ | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | D02, L05 | Custom |
+| D04 | [Sum of the digits](D04-digit-sum.md) | 🔵 Independent | ⭐⭐ | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | D03 | Custom |
+| D05 | [Reverse a number](D05-reverse-a-number.md) | 🔵 Independent | ⭐⭐ | [Digit extraction](../cookbook/06-digit-extraction.md) | D04 | Custom |
+| D06 | [Palindrome number](D06-palindrome-number.md) | 🟣 Challenge | ⭐⭐⭐ | [Digit extraction](../cookbook/06-digit-extraction.md) | D05 | Custom |
+
+### S · Changing state (Step 4d)
+
+| ID | Exercise | Level | ⭐ | Recipes | Before | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| S01 | [Trace two changing variables (paper)](S01-trace-updates.md) | 🟢 Guided | ⭐ | [State update](../cookbook/07-state-update.md) | L01 | Custom · 📝 paper |
+| S02 | [Fibonacci](S02-fibonacci.md) | 🔵 Independent | ⭐⭐⭐ | [State update](../cookbook/07-state-update.md) | S01, A01 | Custom · teacher: Fibonacci |
+| S03 | [Even Fibonacci sum](S03-even-fibonacci-sum.md) | 🟣 Challenge | ⭐⭐⭐ | [State update](../cookbook/07-state-update.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | S02, A03 | Custom → PE #2 |
+
+### P · Search & primes (Step 4d)
+
+| ID | Exercise | Level | ⭐ | Recipes | Before | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| P01 | [Is it prime?](P01-is-it-prime.md) | 🔵 Independent | ⭐⭐ | [Flag/search](../cookbook/05-flag-search.md) | A02 | Custom |
+| P02 | [All primes up to N](P02-primes-up-to-n.md) | 🟣 Challenge | ⭐⭐⭐ | [Counter loop](../cookbook/01-counter-loop.md), [Flag/search](../cookbook/05-flag-search.md), [Accumulator](../cookbook/02-accumulator.md) | P01 | Custom |
+
+### M · Combine (mixed) (Step 4)
+
+| ID | Exercise | Level | ⭐ | Recipes | Before | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| M01 | [Armstrong number](M01-armstrong-number.md) | 🟣 Challenge | ⭐⭐⭐ | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | D03, D04, A07 | Custom · teacher: Armstrong |
+| M02 | [All Armstrong numbers in a range](M02-armstrong-numbers-in-a-range.md) | 🟣 Challenge | ⭐⭐⭐ | [Counter loop](../cookbook/01-counter-loop.md), [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | M01 | Custom |
+
+### R · Arrays (Step 6)
+
+| ID | Exercise | Level | ⭐ | Recipes | Before | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| R01 | [Sum of an array](R01-sum-an-array.md) | 🟢 Guided | ⭐ | [Array traversal](../cookbook/11-array-traversal.md), [Accumulator](../cookbook/02-accumulator.md) | A01 | Custom |
+| R02 | [Largest value in an array](R02-largest-in-an-array.md) | 🔵 Independent | ⭐⭐ | [Array traversal](../cookbook/11-array-traversal.md), [Min/max](../cookbook/04-min-max.md) | R01, C02 | Custom |
+| R03 | [Count matches in an array](R03-count-matches.md) | 🔵 Independent | ⭐ | [Array traversal](../cookbook/11-array-traversal.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | R01, A02 | Custom |
+| R04 | [Find the position](R04-find-the-position.md) | 🔵 Independent | ⭐⭐ | [Array traversal](../cookbook/11-array-traversal.md), [Flag/search](../cookbook/05-flag-search.md) | R03 | Custom |
+| R05 | [Reverse an array](R05-reverse-an-array.md) | 🟣 Challenge | ⭐⭐ | [Array traversal](../cookbook/11-array-traversal.md) | R01 | Custom |
+
+### T · Text (Step 6)
+
+| ID | Exercise | Level | ⭐ | Recipes | Before | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| T01 | [Count a letter](T01-count-a-letter.md) | 🟢 Guided | ⭐ | [Build a string](../cookbook/12-string-building.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | R03 | Custom |
+| T02 | [Remove spaces](T02-remove-spaces.md) | 🔵 Independent | ⭐ | [Build a string](../cookbook/12-string-building.md) | T01 | Custom |
+| T03 | [Count and keep the digits](T03-count-and-keep-digits.md) | 🟣 Challenge | ⭐⭐ | [Build a string](../cookbook/12-string-building.md), [Accumulator](../cookbook/02-accumulator.md) | T02 | Custom |
+
+### F · Files (Step 5)
+
+| ID | Exercise | Level | ⭐ | Recipes | Before | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| F01 | [Save numbers to a file](F01-numbers-file.md) | 🔵 Independent | ⭐⭐ | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Array traversal](../cookbook/11-array-traversal.md), [Accumulator](../cookbook/02-accumulator.md) | L05, R01 | Custom |
+
+### E · Exceptions (Step 7)
+
+| ID | Exercise | Level | ⭐ | Recipes | Before | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| E01 | [Safe number reader](E01-safe-number-reader.md) | 🔵 Independent | ⭐⭐ | [Input validation](../cookbook/09-input-validation.md) | L07 | Custom |
+
+### K · Collections (Step 9)
+
+| ID | Exercise | Level | ⭐ | Recipes | Before | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| K01 | [Shopping list](K01-shopping-list.md) | 🔵 Independent | ⭐⭐ | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Array traversal](../cookbook/11-array-traversal.md) | R01, L05 | Custom |
+
+### N · Methods (Step 10)
+
+| ID | Exercise | Level | ⭐ | Recipes | Before | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| N01 | [Armstrong with methods](N01-armstrong-with-methods.md) | 🟣 Challenge | ⭐⭐⭐ | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | M02 | Custom |
+
+## The C# Player's Guide (5th edition)
+
+Statements are in the book (not copied here). Links go to the official solutions: open them **after** trying.
+
+| ID | Challenge | Level | Roadmap step | Skills | Before | ⭐ |
+| --- | --- | --- | --- | --- | --- | --- |
+| PG03a | [Hello World!](https://csharpplayersguide.com/solutions/5th-edition/hello-world) | L3 | 1 · Hello World | console output | — | ⭐ |
+| PG03b | [What Comes Next](https://csharpplayersguide.com/solutions/5th-edition/what-comes-next) | L3 | 1 · Hello World | console output | — | ⭐ |
+| PG03c | [Consolas and Telim](https://csharpplayersguide.com/solutions/5th-edition/consolas-and-telim) | L3 | 1 · Hello World | console input/output | — | ⭐ |
+| PG04 | [The Thing Namer 3000](https://csharpplayersguide.com/solutions/5th-edition/thing-namer-3000) | L4 | 1 · Hello World | comments, reading code | — | ⭐ |
+| PG06a | [The Variable Shop](https://csharpplayersguide.com/solutions/5th-edition/variable-shop) | L6 | 2 · Variables | types | — | ⭐ |
+| PG06b | [The Variable Shop Returns](https://csharpplayersguide.com/solutions/5th-edition/variable-shop-returns) | L6 | 2 · Variables | types | — | ⭐ |
+| PG07a | [The Triangle Farmer](https://csharpplayersguide.com/solutions/5th-edition/triangle-farmer) | L7 | 2 · Variables | expressions | — | ⭐ |
+| PG07b | [The Four Sisters and the Duckbear](https://csharpplayersguide.com/solutions/5th-edition/four-sisters-and-the-duckbear) | L7 | 2 · Variables | `/` and `%` | — | ⭐⭐ |
+| PG07c | [The Dominion of Kings](https://csharpplayersguide.com/solutions/5th-edition/dominion-of-kings) | L7 | 2 · Variables | expressions | — | ⭐ |
+| PG08 | [The Defense of Consolas](https://csharpplayersguide.com/solutions/5th-edition/defense-of-consolas) | L8 | 2 · Variables | `%`, console colors | — | ⭐⭐ |
+| PG09a | [Repairing the Clocktower](https://csharpplayersguide.com/solutions/5th-edition/repairing-the-clocktower) | L9 | 3 · Conditions | `if`, `%` | — | ⭐ |
+| PG09b | [The Watchtower](https://csharpplayersguide.com/solutions/5th-edition/watchtower) | L9 | 3 · Conditions | `if`/`else if`, `&&` | — | ⭐⭐ |
+| PG10a | [Buying Inventory](https://csharpplayersguide.com/solutions/5th-edition/buying-inventory) | L10 | 3 · Conditions | `switch` | — | ⭐ |
+| PG10b | [Discounted Inventory](https://csharpplayersguide.com/solutions/5th-edition/discounted-inventory) | L10 | 3 · Conditions | `switch`, `if` | — | ⭐⭐ |
+| PG11a | [The Prototype](https://csharpplayersguide.com/solutions/5th-edition/the-prototype) | L11 | 4 · Loops | input validation loop, guessing loop | L03 | ⭐⭐ |
+| PG11b | [The Magic Cannon](https://csharpplayersguide.com/solutions/5th-edition/the-magic-cannon) | L11 | 4 · Loops | counter loop + `%` filters | L03 | ⭐⭐ |
+| PG12a | [The Replicator of D'To](https://csharpplayersguide.com/solutions/5th-edition/replicator-of-dto) | L12 | 6 · Arrays | array traversal, copy | R01 | ⭐⭐ |
+| PG12b | [The Laws of Freach](https://csharpplayersguide.com/solutions/5th-edition/laws-of-freach) | L12 | 6 · Arrays | `foreach`, min, average | R01 | ⭐⭐ |
+| PG13a | [Taking a Number](https://csharpplayersguide.com/solutions/5th-edition/taking-a-number) | L13 | 10 · Methods | methods, input validation | M01 | ⭐⭐ |
+| PG13b | [Countdown](https://csharpplayersguide.com/solutions/5th-edition/countdown) | L13 | 10 · Methods | recursion (optional) | M01 | ⭐⭐⭐ |
+| PG32 | [Lists of Commands](https://csharpplayersguide.com/solutions/5th-edition/lists-of-commands) | L32 | 9 · Collections | `List<T>` (needs classes) | — | ⭐⭐⭐ |
+| PG35 | [Excepti's Game](https://csharpplayersguide.com/solutions/5th-edition/exceptis-game) | L35 | 7 · Exceptions | `try`/`catch` (needs classes) | — | ⭐⭐⭐ |
+| PG18 | [Vin Fletcher's Arrows](https://csharpplayersguide.com/solutions/5th-edition/vin-fletchers-arrows) | L18 | 11 · OO | classes, fields | — | ⭐⭐ |
+| PG24 | [The Point](https://csharpplayersguide.com/solutions/5th-edition/the-point) | L24 | 11 · OO | classes, constructors | — | ⭐⭐ |
+
+## Project Euler (milestones, not daily homework)
+
+| ID | Problem | Roadmap step | Skills | Do first | ⭐ |
+| --- | --- | --- | --- | --- | --- |
+| PE1 | [Project Euler #1: Multiples of 3 or 5](https://projecteuler.net/problem=1) | 4 · Loops | conditional accumulator | A08 | ⭐⭐ |
+| PE6 | [Project Euler #6: Sum square difference](https://projecteuler.net/problem=6) | 4 · Loops | two accumulators | A05 | ⭐⭐ |
+| PE2 | [Project Euler #2: Even Fibonacci numbers](https://projecteuler.net/problem=2) | 4 · Loops | state update + filter | S03 | ⭐⭐⭐ |
+| PE4 | [Project Euler #4: Largest palindrome product](https://projecteuler.net/problem=4) | 8 · Recap | nested loops + palindrome + max | D06, G03 | ⭐⭐⭐ |
+| PE5 | [Project Euler #5: Smallest multiple](https://projecteuler.net/problem=5) | 8 · Recap | flag/search + `while` | P01 | ⭐⭐⭐ |
+
+Tip: always start with a small version (below 10, up to 100) where you can check the answer by hand.
+
+## Teacher topics
+
+Exact statements are not copied here. Use them as **assessments** once the prerequisites are done.
+
+| ID | Topic | Matching exercises | Recipes | Note |
+| --- | --- | --- | --- | --- |
+| TCH1 | Factorial (teacher) | A04 | product accumulator | Compare the exact teacher statement with A04 |
+| TCH2 | Fibonacci (teacher) | S02 | state update | Compare with S02 / S03 |
+| TCH3 | Armstrong numbers (teacher test) | M01 | digits + power + sum | Compare with M01 / M02 |
 
 ## When stuck
 
-See [How to practice](../docs/how-to-practice.md) and the [pattern cookbook](../cookbook/README.md). Work a smaller example on paper, trace variables, then request a hint. Do not start with an answer key.
+1. Go back to the recipe in the [cookbook](../cookbook/README.md).
+2. Solve a smaller example on paper and fill a trace table.
+3. Open **one** hint. Wait. Try again.
+4. Still stuck? Do the exercise listed in *Before*.
+
+See also [How to practice](../docs/how-to-practice.md).

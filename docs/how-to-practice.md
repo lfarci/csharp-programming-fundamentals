@@ -34,3 +34,26 @@ A pattern is *ready* when the learner can solve two variations without step-by-s
 ## Constraints for the first stages
 
 Use simple top-level console code with variables, conditionals and loops. No LINQ, recursion, clever formulas, array helpers, or complicated abstractions to bypass the intended exercise. Where input is requested, a fixed test value is fine while learning the algorithm.
+
+## For the coach: 5 questions when she is stuck
+
+Ask, don't tell:
+
+1. What must the program **produce**? Show me on a tiny example.
+2. Which **recipe** does this look like? (Use the [decision diagram](../cookbook/README.md).)
+3. What must you **remember** between two turns of the loop? What does it start at?
+4. When should the loop **stop**?
+5. What **changes** on each turn? Let's fill the trace table together for 2 turns.
+
+A good exercise for the coach: give working code and ask her to **predict** its output before running it. It separates "reading loops" from "inventing an algorithm".
+
+## Loop mastery checklist
+
+- [ ] Trace a `for` loop on paper and predict its output (L01, L02)
+- [ ] Write a loop from a blank file (L03, L04)
+- [ ] Use an accumulator for a sum and a product (A01, A04)
+- [ ] Combine an `if` with a loop (A02, A03, A08)
+- [ ] Draw a shape with nested loops (G02, G05)
+- [ ] Extract digits with `% 10` and `/ 10` (D03, D04)
+- [ ] Explain and write Fibonacci alone (S01, S02)
+- [ ] Solve a new mixed problem without step-by-step help (M01, P02, D06)
