@@ -4,6 +4,8 @@ A **recipe** is a small piece of code you can recognize and reuse. Almost every 
 
 Learn them like cooking: first follow the recipe exactly, then change one ingredient, then invent your own dish.
 
+> 🔎 Not sure which recipe an exercise needs? First read the statement with [How to read an exercise](../docs/reading-an-exercise.md): its **trigger words** table points to the right recipe.
+
 ## The 12 recipes
 
 | # | Recipe | Recognize it when you read… | Box(es) to keep | Loop |

@@ -57,17 +57,18 @@ FAM = [("B","Basics: input → compute → output","Step 1–2"),("C","Condition
 ("F","Files","Step 5"),("E","Exceptions","Step 7"),("K","Collections","Step 9"),("N","Methods","Step 10")]
 lvl_icon = {"Guided":"🟢 Guided","Independent":"🔵 Independent","Challenge":"🟣 Challenge"}
 out = ["# 📚 Exercise inventory", "",
-"One table for **every** exercise: our own exercises, *The C# Player's Guide* (PG) challenges, Project Euler and the teacher's topics.",
+"One table for **every** exercise: our own original exercises, a few Project Euler milestones and the teacher's topics.",
 "Each custom exercise adds **one** new difficulty. Pick the next one whose prerequisites you have done.", "",
 "- 🟢 **Guided** — small steps, hints help a lot.  🔵 **Independent** — same idea, alone.  🟣 **Challenge** — new problem, combine recipes.",
 "- ⭐ to ⭐⭐⭐ = effort for a true beginner.",
 "- Solutions are in [`solutions/`](../solutions/README.md). Try first, look later.",
-"- Book challenges are tracked in [C# Quest Tracker](https://lfarci.github.io/csharp-quest-tracker/), not here.", ""]
+"- 📖 *The C# Player's Guide* is a **parallel track**, not part of this list: read the book level named in each [roadmap](../ROADMAP.md) step alongside it. Its challenges are tracked in [C# Quest Tracker](https://lfarci.github.io/csharp-quest-tracker/).",
+"- 🔎 Before any exercise, read it with [How to read an exercise](../docs/reading-an-exercise.md).", ""]
 from collections import Counter
 cnt = Counter(); lv = Counter(e["level"] for e in E)
 for x in X: cnt[x["source"].split(" L")[0].split(" #")[0]] += 1
 out += ["## Counts", "", "| Source | Exercises |", "| --- | ---: |", f"| Custom (this repo) | {len(E)} |"]
-for k in ["Player's Guide","Project Euler","Teacher topic"]: out.append(f"| {k} | {cnt[k]} |")
+for k in ["Project Euler","Teacher topic"]: out.append(f"| {k} | {cnt[k]} |")
 out += [f"| **Total** | **{len(E)+len(X)}** |", "",
         f"Custom by level: 🟢 {lv['Guided']} guided · 🔵 {lv['Independent']} independent · 🟣 {lv['Challenge']} challenge.", ""]
 out += ["## Map of the families", "", "```mermaid", "flowchart LR"]
@@ -88,13 +89,7 @@ for f, name, step in FAM:
         if e.get("paper"): s += " · 📝 paper"
         out.append(f"| {e['id']} | [{e['title']}]({fname(e)}.md) | {lvl_icon[e['level']]} | {stars(e['stars'])} | {rlinks(e)} | {', '.join(e['pre']) or '—'} | {s} |")
     out.append("")
-out += ["## The C# Player's Guide (5th edition)", "",
-"Statements are in the book (not copied here). Links go to the official solutions: open them **after** trying.", "",
-"| ID | Challenge | Level | Roadmap step | Skills | Before | ⭐ |", "| --- | --- | --- | --- | --- | --- | --- |"]
-for x in X:
-    if x["source"].startswith("Player"):
-        out.append(f"| {x['id']} | [{x['title']}]({x['url']}) | {x['source'].split(' ')[-1]} | {x['step']} | {x['skills']} | {x['pre'] or '—'} | {stars(x['stars'])} |")
-out += ["", "## Project Euler (milestones, not daily homework)", "", "| ID | Problem | Roadmap step | Skills | Do first | ⭐ |", "| --- | --- | --- | --- | --- | --- |"]
+out += ["## Project Euler (milestones, not daily homework)", "", "| ID | Problem | Roadmap step | Skills | Do first | ⭐ |", "| --- | --- | --- | --- | --- | --- |"]
 for x in X:
     if x["source"].startswith("Project"):
         out.append(f"| {x['id']} | [{x['source']}: {x['title']}]({x['url']}) | {x['step']} | {x['skills']} | {x['pre']} | {stars(x['stars'])} |")
@@ -105,7 +100,7 @@ for x in X:
     if x["source"].startswith("Teacher"):
         out.append(f"| {x['id']} | {x['title']} | {x['pre']} | {x['skills']} | {x['note']} |")
 out += ["", "## When stuck", "", "1. Go back to the recipe in the [cookbook](../cookbook/README.md).", "2. Solve a smaller example on paper and fill a trace table.",
-        "3. Open **one** hint. Wait. Try again.", "4. Still stuck? Do the exercise listed in *Before*.", "", "See also [How to practice](../docs/how-to-practice.md)."]
+        "3. Use the unstuck techniques in [How to read an exercise](../docs/reading-an-exercise.md#5-when-you-are-stuck).", "4. Open **one** hint. Wait. Try again.", "5. Still stuck? Do the exercise listed in *Before*.", "", "See also [How to practice](../docs/how-to-practice.md)."]
 open(f"{ROOT}/exercises/README.md","w").write("\n".join(out)+"\n")
 
 # ---------- dependency graph ----------

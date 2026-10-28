@@ -337,40 +337,9 @@ static bool IsArmstrong(int n)
 ''')
 
 # ---------- external exercises ----------
-PG = "https://csharpplayersguide.com/solutions/5th-edition"
 X = []
 def ext(id, title, source, level, step, skills, pre, stars, url=None, note=""):
     X.append(dict(id=id, title=title, source=source, level=level, step=step, skills=skills, pre=pre, stars=stars, url=url, note=note))
-
-pg = [
- ("PG03a","Hello World!",3,"1 · Hello World","console output",1,"hello-world"),
- ("PG03b","What Comes Next",3,"1 · Hello World","console output",1,"what-comes-next"),
- ("PG03c","Consolas and Telim",3,"1 · Hello World","console input/output",1,"consolas-and-telim"),
- ("PG04","The Thing Namer 3000",4,"1 · Hello World","comments, reading code",1,"thing-namer-3000"),
- ("PG06a","The Variable Shop",6,"2 · Variables","types",1,"variable-shop"),
- ("PG06b","The Variable Shop Returns",6,"2 · Variables","types",1,"variable-shop-returns"),
- ("PG07a","The Triangle Farmer",7,"2 · Variables","expressions",1,"triangle-farmer"),
- ("PG07b","The Four Sisters and the Duckbear",7,"2 · Variables","`/` and `%`",2,"four-sisters-and-the-duckbear"),
- ("PG07c","The Dominion of Kings",7,"2 · Variables","expressions",1,"dominion-of-kings"),
- ("PG08","The Defense of Consolas",8,"2 · Variables","`%`, console colors",2,"defense-of-consolas"),
- ("PG09a","Repairing the Clocktower",9,"3 · Conditions","`if`, `%`",1,"repairing-the-clocktower"),
- ("PG09b","The Watchtower",9,"3 · Conditions","`if`/`else if`, `&&`",2,"watchtower"),
- ("PG10a","Buying Inventory",10,"3 · Conditions","`switch`",1,"buying-inventory"),
- ("PG10b","Discounted Inventory",10,"3 · Conditions","`switch`, `if`",2,"discounted-inventory"),
- ("PG11a","The Prototype",11,"4 · Loops","input validation loop, guessing loop",2,"the-prototype"),
- ("PG11b","The Magic Cannon",11,"4 · Loops","counter loop + `%` filters",2,"the-magic-cannon"),
- ("PG12a","The Replicator of D'To",12,"6 · Arrays","array traversal, copy",2,"replicator-of-dto"),
- ("PG12b","The Laws of Freach",12,"6 · Arrays","`foreach`, min, average",2,"laws-of-freach"),
- ("PG13a","Taking a Number",13,"10 · Methods","methods, input validation",2,"taking-a-number"),
- ("PG13b","Countdown",13,"10 · Methods","recursion (optional)",3,"countdown"),
- ("PG32","Lists of Commands",32,"9 · Collections","`List<T>` (needs classes)",3,"lists-of-commands"),
- ("PG35","Excepti's Game",35,"7 · Exceptions","`try`/`catch` (needs classes)",3,"exceptis-game"),
- ("PG18","Vin Fletcher's Arrows",18,"11 · OO","classes, fields",2,"vin-fletchers-arrows"),
- ("PG24","The Point",24,"11 · OO","classes, constructors",2,"the-point"),
-]
-pre_map = {"4 · Loops":"L03","6 · Arrays":"R01","10 · Methods":"M01"}
-for i,t,lvl,step,sk,st,slug in pg:
-    ext(i, t, f"Player's Guide L{lvl}", "Book", step, sk, pre_map.get(step,""), st, f"{PG}/{slug}")
 
 ext("PE1","Multiples of 3 or 5","Project Euler #1","Challenge","4 · Loops","conditional accumulator","A08",2,"https://projecteuler.net/problem=1")
 ext("PE6","Sum square difference","Project Euler #6","Challenge","4 · Loops","two accumulators","A05",2,"https://projecteuler.net/problem=6")

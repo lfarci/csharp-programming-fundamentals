@@ -2,7 +2,9 @@
 
 A friendly, **recipe-first** companion for a beginner C# course: a clear path, reusable loop recipes, and many small exercises that each add **one** new difficulty.
 
-> Main book: *The C# Player's Guide*, 5th edition. Book challenges are tracked in [C# Quest Tracker](https://lfarci.github.io/csharp-quest-tracker/) — this repo does **not** track progress.
+> 📖 **Parallel track:** *The C# Player's Guide*, 5th edition. Each roadmap step tells you which level to read alongside it. Book challenges are **not** repeated here (track them in [C# Quest Tracker](https://lfarci.github.io/csharp-quest-tracker/)). This repo is about **problem-solving techniques** and **original exercises**.
+
+> 🔎 **New here? Start with [How to read an exercise](docs/reading-an-exercise.md)** — what to look for in a statement, how to organize your ideas, and what to do when you are stuck.
 
 ## 🧭 Where do I go?
 
@@ -10,7 +12,8 @@ A friendly, **recipe-first** companion for a beginner C# course: a clear path, r
 | --- | --- |
 | See the whole path, week by week | 🗺️ [**ROADMAP**](ROADMAP.md) |
 | Learn the reusable loop recipes | 🍳 [**Cookbook**](cookbook/README.md) — 12 recipes + [how to combine them](cookbook/combining-recipes.md) |
-| Pick an exercise | 📚 [**Exercise inventory**](exercises/README.md) (55 custom + book + Project Euler + teacher topics) |
+| Understand an exercise before coding | 🔎 [**How to read an exercise**](docs/reading-an-exercise.md) (+ fill-in worksheet) |
+| Pick an exercise | 📚 [**Exercise inventory**](exercises/README.md) (55 original + Project Euler + teacher topics) |
 | See which exercise comes before which | 🕸️ [Dependency graph](exercises/dependency-graph.md) |
 | Write and run my code | ✏️ [practice/](practice/README.md) (one console project) |
 | Check my answer (after trying!) | 🔑 [solutions/](solutions/README.md) |
@@ -20,7 +23,7 @@ A friendly, **recipe-first** companion for a beginner C# course: a clear path, r
 
 1. Open the [ROADMAP](ROADMAP.md) and read **§2 "Where are we now?"** and **§5 Catch-up plan**.
 2. Session 1: do [L01](exercises/L01-trace-a-loop.md) and [L02](exercises/L02-boundaries.md) **on paper**, then [A01](exercises/A01-sum-1-to-n.md).
-3. Before each exercise, read its recipe in the [cookbook](cookbook/README.md) and fill a trace table.
+3. Before each exercise, fill the [reading worksheet](docs/reading-an-exercise.md#4-the-worksheet-copy-it), read its recipe in the [cookbook](cookbook/README.md) and fill a trace table.
 
 ```mermaid
 flowchart LR
@@ -43,7 +46,7 @@ flowchart LR
 
 ## Sources
 
-- [The C# Player's Guide](https://csharpplayersguide.com/) — main book. Book statements are **not** copied here; the inventory links to the [official solutions page](https://csharpplayersguide.com/solutions/5th-edition).
+- [The C# Player's Guide](https://csharpplayersguide.com/) — parallel reading track only. Its challenges are **not** listed or copied here.
 - [Microsoft Learn — C# docs](https://learn.microsoft.com/en-us/dotnet/csharp/) — linked from every roadmap step.
 - [Project Euler](https://projecteuler.net/archives) — a few optional milestones (#1, #6, #2, #4, #5).
 - University teacher exercises (factorial, Fibonacci, Armstrong) — used as assessments; statements not copied.
