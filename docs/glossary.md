@@ -15,6 +15,7 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **`char`** | One single character, written with single quotes. | `'a'` |
 | **Condition** | A question with a yes/no (`true`/`false`) answer, used by `if` and loops. | `n > 0` |
 | **Counter** | A *variable* that goes up (or down) by 1 on each turn. | `i++` |
+| **Debug** | Find and fix a *bug*: run the check, read what fails, trace that example on paper, change as little as you can. The 🐞 exercises train it. | |
 | **Edge case** | An unusual input that must still work: 0, 1, a negative number, empty text. | N = 0 |
 | **Exception** | An error that stops the program (a crash), unless you catch it with `try`/`catch`. | typing `abc` for `int.Parse` |
 | **Flag** | A `bool` *variable* that remembers "did it happen yet?". See [recipe 5](../cookbook/05-flag-search.md). | `bool found = false;` |
@@ -28,6 +29,8 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **Mastery check** | A new variation of an exercise you solve alone, on another day, to prove you learned it. | |
 | **Method** | A named piece of code you can call again and again. It gets its **input** through *parameters* and gives back its **result** with `return`. Most exercises ask you to fill in one. | `static int SumTo(int n) { … return sum; }` |
 | **Parameter** | An input of a *method*, written between the brackets. The caller gives its value. | `n` in `SumTo(int n)` |
+| **Parsons problem** | An exercise where all the lines of code are given, mixed up. You put them in the right order. The 🧩 exercises are Parsons problems. | |
+| **Predict** | Say what code will print **before** you run it. Then run it and compare. | |
 | **Return** | Gives the result of a *method* back to the code that called it, and ends the method. | `return sum;` |
 | **Unit test** | Code that calls your *method* with an example and checks the result. `./ex check` runs them for you. | `SumTo(5)` must give `15` |
 | **Modulo (`%`)** | The remainder of a division. | `17 % 5` is `2`, `352 % 10` is `2` |
@@ -38,6 +41,7 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **Sentinel** | A special value that means "stop", like 0. See [recipe 10](../cookbook/10-sentinel-loop.md). | "enter 0 to stop" |
 | **Solution** | One possible correct code for an exercise. Yours can be different and still be right. | |
 | **String** | Text, written with double quotes. | `"Hello"` |
+| **Subgoal** | One named step of a pattern, like "create the box" or "update the box". Each recipe lists its subgoals; say their names while you code. | "Crown the first value" |
 | **Terminal** | A window where you type commands like `dotnet run`. | |
 | **Trace table** | A table on paper with one row per *iteration*, showing each *variable*'s value. | |
 | **Variable** | A named place in memory that holds one value. Also called a *box* here. | `int age = 20;` |

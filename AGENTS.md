@@ -4,7 +4,8 @@ A C# loop **rescue course** for one true beginner (a university student, Program
 
 Deeper reference, reached only when the branch fires:
 
-- Writing or reviewing learner text → [docs/writing-guide.md](docs/writing-guide.md) (teaching, plain-language and accessibility rules, with sources).
+- Who the learner is → [docs/learner-persona.md](docs/learner-persona.md). Read it before writing any learner page.
+- Writing or reviewing learner text → [docs/writing-guide.md](docs/writing-guide.md) (teaching rules, the 6-step lesson format, exercise types, plain-language and accessibility rules, with sources).
 - Adding or changing an exercise → skill [.agents/skills/add-exercise](.agents/skills/add-exercise/SKILL.md).
 - Reviewing the repo → skill [.agents/skills/review-content](.agents/skills/review-content/SKILL.md).
 
@@ -13,7 +14,7 @@ Deeper reference, reached only when the branch fires:
 - `ROADMAP.md`: two tracks aligned to university weeks (W1 Hello World, W2 variables, W3 conditions, W4 loops, W5 files, W6 arrays, 2–6 Nov no class, W7 exceptions, W8 recap, W9 collections, W10 methods, W11–12 objects). It also holds the dated "you are here" callout and the catch-up plan: update both when the date moves on.
 - `cookbook/`: 12 loop **recipes** + decision diagram + `combining-recipes.md`.
 - `exercises/`, `solutions/*.cs`, `tools/starters/`, `tools/exercises.json`, `tests/Practice.Tests/Generated.cs`, `docs/progress-checklist.md`: **generated**. Never hand-edit them.
-- `tools/generator/`: the single source of truth for every exercise (`data1.py` → `data4.py` statements, chained imports; `data5.py` the method each exercise asks for; `gen.py` renders).
+- `tools/generator/`: the single source of truth for every exercise (`data1.py` → `data4.py` statements, chained imports; `data5.py` the method each exercise asks for; `data6.py` ladder, 🧩 Parsons and 🐞 debugging exercises; `gen.py` renders).
 - `docs/`: learner guides (getting started, reading an exercise, problem solving, practice, glossary) + the writing guide.
 - `practice/`: **her** project. `./ex start` copies a starter here and never overwrites; nothing else writes here. `Program.cs` and `Practice.csproj` are plumbing she never edits (they run the current exercise via `tools/ex/Runner.cs`).
 - `./ex` (`ex`, `ex.cmd` → `tools/ex`): start, check, run, next, list. `tests/Practice.Tests`: xUnit v3 tests behind `./ex check`, also visible in Test Explorer (`CSharpFundamentals.sln`).
@@ -21,6 +22,8 @@ Deeper reference, reached only when the branch fires:
 ## Pedagogy (the rubric)
 
 - **One new difficulty** per exercise: everything else in it is covered by its `pre` exercises. Levels fade the help: 🟢 Guided → 🔵 Independent → 🟣 Challenge.
+- **Read before write**: every new recipe gets predict → trace → complete (or 🧩 arrange) before a blank file, and a 🐞 debugging task that plants one of its common mistakes.
+- **Objectives first**: every ROADMAP step starts with a 🎯 objectives line using checkable verbs (trace, write, find the bug); its exercises must train exactly those.
 - **Order holds**: each `pre` sits at the same roadmap step or earlier (one known exception: F01 waits for R01, because `File.ReadAllLines` returns an array), and every plan (roadmap sessions, README start, recap) lists an exercise only after its `pre`.
 - **Hand-written loops**: no LINQ, no `Math.Pow`, no `Array.Reverse`/`string.Join`/`.Contains` shortcuts. Solutions use only what the exercise's roadmap step has taught (files at step 5 build text with `+=`; `List<T>` waits for step 9).
 - **Hints** in `<details>`, smallest nudge first; Guided exercises carry at least 2. Every exercise has a **mastery check**: a *new variation* solved alone another day ("do it again" is not a variation).
@@ -35,7 +38,7 @@ Deeper reference, reached only when the branch fires:
 
 **Exercise** (rendered by `gen.py`): breadcrumb, `# ID · Title`, a header table (Level, Difficulty, Roadmap step, Recipes, Do these first, Source), then 🎯 Goal, 🧪 Examples, ⚠️ Edge cases, 📏 Rules, 🗺️ Before coding, 💡 Hints, ✅ Mastery check, 🔑 Solution, Previous/Next.
 
-**IDs**: one family letter + two digits, ordered by difficulty. B basics, C conditions, L loop mechanics, A accumulators, G 2D drawings, D digits, S state, P search & primes, M combine, R arrays, T text, F files, E exceptions, K collections, N methods. Family order and the step it maps to live in `FAM` in `gen.py`. `paper=True` makes a paper exercise with an answer key in `solutions/ID.md`.
+**IDs**: one family letter + two digits, ordered by difficulty. B basics, C conditions, L loop mechanics, A accumulators, G 2D drawings, D digits, S state, P search & primes, M combine, R arrays, T text, F files, E exceptions, K collections, N methods. Family order and the step it maps to live in `FAM` in `gen.py`. `paper=True` makes a paper exercise with an answer key in `solutions/ID.md`. `task="parsons"` (starter = the solution lines, shuffled and commented) and `task="debug"` (starter = compiling code with 1–2 planted bugs) use a starter string that begins with `NOTE_P` (`//! `), kept as is. `sort="G001"` places a bridge exercise elsewhere in the path than its ID (L09 sits just before G01).
 
 **Exercise shape**: one file, one `public static class ID_PascalName` in namespace `Practice`.
 
@@ -43,7 +46,7 @@ Deeper reference, reached only when the branch fires:
 - *Program exercise* (no entry): input loops, menus, files. She writes `public static void Run()`; the tests feed the example input and match printed lines as *line endings* (prompts from `Console.Write` share the line), so results go on their own `WriteLine`.
 - Methods are allowed from week 1, framed as "input = parameters, result = return"; unit-test vocabulary stays behind `./ex check` until week 10.
 
-**Recipe** (`cookbook/NN-name.md`): breadcrumb, `# Recipe N · Name — tagline`, one-line quote, then 🔎 Recognize it, 🧠 The idea (diagram), 📝 Template, 🔬 Trace table, ⚠️ Common mistakes, 🏋️ Mini exercises (linked IDs), ➡️ Next.
+**Recipe** (`cookbook/NN-name.md`): breadcrumb, `# Recipe N · Name — tagline`, one-line quote, a 🧭 "how this page works" line, then the 6 lesson steps of `docs/writing-guide.md#2-lesson-format`: 🎯 1 · Goal (one sentence), 🔮 2 · Predict (working example, answer in `<details>`), 🔬 3 · Trace it (table of the *same* example), 🧩 4 · The pattern (numbered **subgoal labels**, then 🔎 Recognize it, 🧠 The idea with diagram, 📝 Template as `###`), ✍️ 5 · Complete it (blanks `____` or lines to arrange, answer in `<details>`), 🏋️ 6 · Your turn (linked IDs, then ### 🐞 Debug it with one bug and the answer in `<details>`, then ### ⚠️ Common mistakes), ➡️ Next.
 
 **Mermaid**: `flowchart TD` for decisions, `LR` for sequences; labels in `"quotes"` with `<br/>`; write `#lt;` / `#gt;` for `<` / `>`; first two lines `accTitle:` and `accDescr:` (a full text version of the diagram).
 

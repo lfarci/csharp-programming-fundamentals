@@ -54,6 +54,12 @@ flowchart LR
     M01["M01<br/>Armstrong number"]:::chall
     class M01 teacher
     M02["M02<br/>All Armstrong numbers in a range"]:::chall
+    L09["L09<br/>Draw one row"]:::guided
+    L10["L10<br/>Numbers on one line"]:::indep
+    A11["A11<br/>Arrange the lines: sum of squares"]:::guided
+    G07["G07<br/>Arrange the lines: a square"]:::guided
+    A12["A12<br/>Fix the bugs: count multiples of 7"]:::guided
+    D07["D07<br/>Fix the bugs: digit sum"]:::indep
     L01 --> L02
     L01 --> L03
     L03 --> L04
@@ -72,7 +78,7 @@ flowchart LR
     A03 --> A08
     A06 --> A09
     A01 --> A10
-    L03 --> G01
+    L09 --> G01
     G01 --> G02
     G01 --> G03
     L04 --> G03
@@ -96,6 +102,12 @@ flowchart LR
     D04 --> M01
     A07 --> M01
     M01 --> M02
+    L03 --> L09
+    L09 --> L10
+    L03 --> A11
+    L09 --> G07
+    A02 --> A12
+    D04 --> D07
 ```
 
 ## Before loops (steps 1–3)
@@ -114,6 +126,7 @@ flowchart LR
     C01["C01<br/>Even or odd"]:::guided
     C02["C02<br/>Largest of three"]:::indep
     C03["C03<br/>Ticket price"]:::indep
+    C04["C04<br/>Grade from a score"]:::indep
     L01["L01<br/>Trace a loop (paper)"]:::guided
     L03["L03<br/>Count up and down"]:::guided
     B01 --> B02
@@ -121,6 +134,7 @@ flowchart LR
     B02 --> C01
     C01 --> C02
     C01 --> C03
+    C03 --> C04
     C01 --> L01
     L01 --> L03
 ```
@@ -147,6 +161,7 @@ flowchart LR
     E01["E01<br/>Safe number reader"]:::indep
     K01["K01<br/>Shopping list"]:::indep
     N01["N01<br/>Armstrong with methods"]:::chall
+    R06["R06<br/>Fix the bugs: largest value"]:::indep
     A01["A01<br/>Sum from 1 to N"]:::guided
     A02["A02<br/>Count multiples of 3"]:::guided
     C02["C02<br/>Largest of three"]:::indep
@@ -169,6 +184,7 @@ flowchart LR
     R01 --> K01
     L05 --> K01
     M02 --> N01
+    R02 --> R06
     A01 --> A02
     L05 --> L07
 ```

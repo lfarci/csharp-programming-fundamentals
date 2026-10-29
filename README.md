@@ -29,12 +29,13 @@ A friendly companion for a beginner C# course. You learn **loop recipes** and pr
 | See the whole path, week by week | 🗺️ [**ROADMAP**](ROADMAP.md) |
 | Learn the reusable loop recipes | 🍳 [**Cookbook**](cookbook/README.md) — 12 recipes + [how to combine them](cookbook/combining-recipes.md) |
 | Understand an exercise before coding | 🔎 [**How to read an exercise**](docs/reading-an-exercise.md) (+ fill-in worksheet) |
-| Pick an exercise | 📚 [**Exercise inventory**](exercises/README.md) (55 original + Project Euler + teacher topics) |
+| Pick an exercise | 📚 [**Exercise inventory**](exercises/README.md) (63 original + Project Euler + teacher topics) |
 | See which exercise comes before which | 🕸️ [Dependency graph](exercises/dependency-graph.md) |
 | Get set up, start and check an exercise | 🚀 [Getting started](docs/getting-started.md) · ✏️ [Practice folder](practice/README.md) |
 | Check my answer (after trying!) | 🔑 [Solutions](solutions/README.md) |
 | Track what I have done | ✅ [Progress checklist](docs/progress-checklist.md) |
 | Understand a word | 📖 [Glossary](docs/glossary.md) |
+| Write or review pages (coaches) | 🧑‍🎓 [Learner persona](docs/learner-persona.md) · ✍️ [Writing guide](docs/writing-guide.md) |
 | Learn how to attack a problem | 🧠 [From a problem statement to an algorithm](docs/problem-solving.md) · [How to practice](docs/how-to-practice.md) |
 
 ## 🔁 Every session

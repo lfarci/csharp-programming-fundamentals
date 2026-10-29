@@ -74,4 +74,4 @@ Only after a real try: [open the solution for C03](../solutions/C03_TicketPrice.
 
 ---
 
-⬅️ Previous: [C02 · Largest of three](C02-largest-of-three.md) · 📚 [All exercises](README.md) · Next: [L01 · Trace a loop (paper)](L01-trace-a-loop.md) ➡️
+⬅️ Previous: [C02 · Largest of three](C02-largest-of-three.md) · 📚 [All exercises](README.md) · Next: [C04 · Grade from a score](C04-grade-from-a-score.md) ➡️

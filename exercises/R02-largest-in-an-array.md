@@ -74,4 +74,4 @@ Only after a real try: [open the solution for R02](../solutions/R02_LargestInAnA
 
 ---
 
-⬅️ Previous: [R01 · Sum of an array](R01-sum-an-array.md) · 📚 [All exercises](README.md) · Next: [R03 · Count matches in an array](R03-count-matches.md) ➡️
+⬅️ Previous: [R01 · Sum of an array](R01-sum-an-array.md) · 📚 [All exercises](README.md) · Next: [R06 · Fix the bugs: largest value](R06-fix-largest-value.md) ➡️

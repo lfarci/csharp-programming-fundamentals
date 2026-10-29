@@ -73,4 +73,4 @@ Only after a real try: [open the solution for A03](../solutions/A03_SumEvenValue
 
 ---
 
-⬅️ Previous: [A02 · Count multiples of 3](A02-count-multiples-of-3.md) · 📚 [All exercises](README.md) · Next: [A04 · Factorial](A04-factorial.md) ➡️
+⬅️ Previous: [A12 · Fix the bugs: count multiples of 7](A12-fix-count-multiples-of-7.md) · 📚 [All exercises](README.md) · Next: [A04 · Factorial](A04-factorial.md) ➡️

@@ -15,8 +15,43 @@ How we write for a **struggling beginner**. Every rule below comes from a source
 | **Arrange-the-lines tasks are welcome** for a new recipe (give the lines, mixed up). | Lower load than a blank page, same thinking. | Parsons problems (6) |
 | **Hints one at a time, solutions far away.** | Minimal guidance does not work for novices, but too much help removes the thinking. | (2) |
 | **Mastery = a new variation, alone, another day.** | Spaced, independent retrieval shows real learning. | (5) |
+| **Write for one person.** Check every page against the [learner persona](learner-persona.md). | A concrete learner keeps lessons at the right level and pace. | Learner personas (15, 21) |
+| **Start each step with objectives** that use verbs you can check ("trace", "write", "find the bug"), not "understand". | Objectives decide the exercises, and the exercises check the objectives. | SMART objectives, backward design (15, 20) |
+| **Ask for a prediction before running code**, and write it down. | Watching a demo without predicting does not help learning. | (23 tip 4), PRIMM (17) |
+| **Label the subgoals** of a pattern with short reusable names. | Labels show novices what two problems have in common. | (19, 23 tip 6) |
+| **Give at least two examples per pattern**, in different contexts. | Learners then see the structure, not the surface. | Worked examples (18) |
+| **Practise debugging on purpose** with small, planted bugs and real failing checks. | Novices spend most of their time fixing mistakes, and textbooks leave this out. | (23 tips 3, 9), RPF principles (16) |
+| **Check understanding often**, with small tasks that each target a known misconception. | Formative assessment finds mistakes before they settle. | (22), RPF "challenge misconceptions" (16) |
+| **No "just" or "simply"**, and never imply that some people are born programmers. | There is no "geek gene": skill comes from practice. | (23 tip 1), (15) |
 
-## 2. Plain language
+## 2. Lesson format
+
+Every cookbook recipe follows the same **6 steps**, in this order. Same order on every page means less to think about (COGA (9)).
+
+| # | Step | What it holds | Why | Source |
+| ---: | --- | --- | --- | --- |
+| 1 | 🎯 **Goal** | One concrete goal, in one sentence. | One new difficulty at a time. | (1, 20) |
+| 2 | 🔮 **Predict** | A small **working** example. She predicts the output; the answer is in `<details>`. | Read before write; predictions make running code useful. | PRIMM (4, 17), (23 tip 4) |
+| 3 | 🔬 **Trace it** | A trace table of the same example. | Tracing is its own skill, and comes before writing. | (5), RPF "read and explore code first" (16) |
+| 4 | 🧩 **The pattern** | Labelled subgoals, trigger words, the idea (with a diagram and its text), the template. | Subgoal labels help transfer to new problems. | (18, 19, 23 tip 6) |
+| 5 | ✍️ **Complete it** | A **partly written** variation: fill in the blanks, or arrange the lines (Parsons). Answer in `<details>`. | Fading: less help, same thinking. | (3, 6, 18), (23 tip 10) |
+| 6 | 🏋️ **Your turn** | Exercise IDs to do alone in a real file, **plus** a small 🐞 debugging task (answer in `<details>`) and the common mistakes. | Independent practice, then debugging on purpose. | (2, 22, 23) |
+
+A recipe page does **not** repeat the full exercise: it links to it by ID.
+
+## 3. Exercise types
+
+| Type | Icon | What she does | When to use it | Source |
+| --- | --- | --- | --- | --- |
+| Paper trace | ✏️ | Predict and trace, no computer. | Before the first exercise of a new loop idea. | PRIMM (4, 17) |
+| Arrange the lines (Parsons) | 🧩 | All lines are in the starter file, mixed up and commented out. She orders them. | The first exercise of a recipe, when a blank file is too much. | (6, 23 tip 10) |
+| Write a method | ▶️ | Fill in one method; `./ex check` tests it. | Most exercises. | (3, 5) |
+| Fix the bugs | 🐞 | The starter compiles but has 1–2 planted bugs. `./ex check` shows which example fails. | Right after the matching "write" exercise. Bugs must be the *common mistakes* of the recipe. | (22, 23 tips 3, 9) |
+| Mastery check | ✅ | A new variation, alone, another day. | End of every exercise. | (5) |
+
+The path also follows the order of two well-known beginner courses. Conditions come before loops. Loops come in small steps: simple loops, then loops with conditions, then nested loops after one-line loops. Methods come in once the loops are solid: see the University of Helsinki *Python Programming MOOC* (24) and Microsoft Learn *Get started with C#* (25). That is why one-row drawings (L09, L10) come before 2D grids (G01).
+
+## 4. Plain language
 
 | Rule | Source |
 | --- | --- |
@@ -27,7 +62,7 @@ How we write for a **struggling beginner**. Every rule below comes from a source
 | Use lists and tables instead of long paragraphs. | (8), COGA (9) |
 | Give concrete examples with real numbers. | COGA (9) |
 
-## 3. Accessible pages
+## 5. Accessible pages
 
 | Rule | Source |
 | --- | --- |
@@ -39,7 +74,7 @@ How we write for a **struggling beginner**. Every rule below comes from a source
 | Same navigation on every page: breadcrumb on top, Previous/Next at the bottom. | WCAG 3.2.3 (10), COGA (9) |
 | Hidden content (hints) uses `<details>`, which works with the keyboard and screen readers. | COGA (9) |
 
-## 4. Sources
+## 6. Sources
 
 1. Paas, Tuovinen, Tabbers, Van Gerven (2003). *Cognitive Load Measurement as a Means to Advance Cognitive Load Theory.* Educational Psychologist. <https://doi.org/10.1207/S15326985EP3801_8>
 2. Kirschner, Sweller, Clark (2006). *Why Minimal Guidance During Instruction Does Not Work.* Educational Psychologist. <https://doi.org/10.1207/s15326985ep4102_1>
@@ -55,6 +90,17 @@ How we write for a **struggling beginner**. Every rule below comes from a source
 12. Mermaid, *Accessibility options.* <https://mermaid.js.org/config/accessibility.html>
 13. GitHub Docs, *Creating diagrams for GitHub Docs.* <https://docs.github.com/en/contributing/writing-for-github-docs/creating-diagrams-for-github-docs>
 14. GitHub Docs, *Style guide.* <https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide>
+15. Greg Wilson (2019). *Teaching Tech Together*, chapters "A Lesson Design Process" (learner personas, learning objectives) and "Cognitive Architecture" (faded examples, Parsons problems). <https://teachtogether.tech/en/index.html#s:process>
+16. Raspberry Pi Foundation, *Our computing pedagogy* (12 principles). <https://www.raspberrypi.org/teach/pedagogy>
+17. Raspberry Pi Foundation, *Pedagogy Quick Read: PRIMM*. <https://static.raspberrypi.org/files/curriculum/quickreads/11-Pedagogy_Summary_PRIMM_V4_2023.pdf>
+18. Raspberry Pi Foundation, *Pedagogy Quick Read: Worked examples* (at least two examples, fading, subgoal labels). <https://static.raspberrypi.org/files/curriculum/quickreads/2-Pedagogy_Summary_Worked_Examples_V6_2023.pdf>
+19. Raspberry Pi Foundation, *Pedagogy Quick Read: Subgoal labels*. <https://static.raspberrypi.org/files/curriculum/quickreads/QR_31_Subgoal_Labels_29_11_2026.pdf>
+20. The Carpentries, *Collaborative Lesson Development Training: Defining lesson objectives*. <https://carpentries.github.io/lesson-development-training/objectives.html>
+21. The Carpentries, *Collaborative Lesson Development Training: Learner profiles*. <https://carpentries.github.io/lesson-development-training/profiles.html>
+22. The Carpentries, *Collaborative Lesson Development Training: Formative assessment*. <https://carpentries.github.io/lesson-development-training/formative-assessment.html>
+23. Brown, Wilson (2018). *Ten quick tips for teaching programming.* PLOS Computational Biology. <https://doi.org/10.1371/journal.pcbi.1006023>
+24. University of Helsinki, *Python Programming MOOC 2024* (order of topics). <https://programming-24.mooc.fi/>
+25. Microsoft Learn, *Get started with C#* learning paths (order of topics). <https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-1/>
 
 ---
 

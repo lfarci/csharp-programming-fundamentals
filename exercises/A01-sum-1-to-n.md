@@ -79,4 +79,4 @@ Only after a real try: [open the solution for A01](../solutions/A01_Sum1ToN.cs).
 
 ---
 
-⬅️ Previous: [L08 · Guess the number](L08-guess-the-number.md) · 📚 [All exercises](README.md) · Next: [A02 · Count multiples of 3](A02-count-multiples-of-3.md) ➡️
+⬅️ Previous: [A11 · Arrange the lines: sum of squares](A11-arrange-sum-of-squares.md) · 📚 [All exercises](README.md) · Next: [A02 · Count multiples of 3](A02-count-multiples-of-3.md) ➡️

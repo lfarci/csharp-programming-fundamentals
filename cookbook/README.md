@@ -73,11 +73,15 @@ Then translate the card into C#. If you can't fill line 5, you are not ready to 
 
 ## How every recipe page is built
 
-1. 🔎 **Recognize it** — trigger words in an exercise.
-2. 🧠 **The idea** — a picture (Mermaid diagram) and the boxes to keep.
-3. 📝 **Template** — the C# skeleton to adapt.
-4. 🔬 **Trace table** — what happens turn by turn.
-5. ⚠️ **Common mistakes**.
-6. 🏋️ **Mini exercises** — IDs from the [inventory](../exercises/README.md).
+Every recipe is one short lesson, always in the same 6 steps. Do them in order, with a pen:
+
+1. 🎯 **Goal** — what you will be able to do, in one sentence.
+2. 🔮 **Predict** — read a small working program and write down what it prints. Then check.
+3. 🔬 **Trace it** — follow the same program turn by turn in a table.
+4. 🧩 **The pattern** — the steps with names (*subgoals*), the trigger words, a diagram and the template.
+5. ✍️ **Complete it** — fill the blanks or put mixed-up lines in order. Then check.
+6. 🏋️ **Your turn** — exercises to do alone, a small 🐞 bug to find, and the common mistakes.
+
+Some exercises are special: 🧩 **arrange the lines** (all the code is given, mixed up) and 🐞 **fix the bugs** (the code is given, with mistakes). Both are checked by `./ex check` like the others.
 
 For reading a problem statement in general, see [From a problem statement to an algorithm](../docs/problem-solving.md).

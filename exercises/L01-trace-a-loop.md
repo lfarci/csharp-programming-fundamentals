@@ -62,4 +62,4 @@ Only after a real try: [open the solution for L01](../solutions/L01-trace-a-loop
 
 ---
 
-⬅️ Previous: [C03 · Ticket price](C03-ticket-price.md) · 📚 [All exercises](README.md) · Next: [L02 · Boundaries: < or <= ? (paper)](L02-boundaries.md) ➡️
+⬅️ Previous: [C04 · Grade from a score](C04-grade-from-a-score.md) · 📚 [All exercises](README.md) · Next: [L02 · Boundaries: < or <= ? (paper)](L02-boundaries.md) ➡️
