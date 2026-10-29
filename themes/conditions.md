@@ -2,7 +2,7 @@
 
 # Conditions
 
-Choose between cases with `if`.
+Make decisions with Boolean expressions and `if`.
 
 ## After this theme you can
 
@@ -33,11 +33,10 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 <div class="learn-box">
 
-**Learn the theory** (before or beside the exercises)
+**Learn the theory on Microsoft Learn** ([Part 1: Write your first code using C#](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-1/))
 
-- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 9: Decision Making, Level 10: Switches
-- **Microsoft Learn:** [Add decision logic to your code in C#](https://learn.microsoft.com/en-us/training/modules/csharp-if-elseif-else/) · [Evaluate Boolean expressions to make decisions in C#](https://learn.microsoft.com/en-us/training/modules/csharp-evaluate-boolean-expressions/) · [Branch the flow of code using the switch-case construct in C#](https://learn.microsoft.com/en-us/training/modules/csharp-switch-case/)
-- **Video:** [Branching, Ifs, and Conditional Logic](https://learn.microsoft.com/en-us/shows/csharp-for-beginners/branching-ifs-and-conditional-logic-csharp-for-beginners/)
+- **Modules:** [Add decision logic to your code in C#](https://learn.microsoft.com/en-us/training/modules/csharp-if-elseif-else/) (Part 1) · [Evaluate Boolean expressions to make decisions in C#](https://learn.microsoft.com/en-us/training/modules/csharp-evaluate-boolean-expressions/) (Part 3) · [Branch the flow of code using the switch-case construct in C#](https://learn.microsoft.com/en-us/training/modules/csharp-switch-case/) (Part 3)
+- **Video (C# Fundamentals for Absolute Beginners):** [The if Decision Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/the-if-decision-statement/) · [Enumerations and the Switch Decision Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/enumerations-and-the-switch-decision-statement/)
 - **Reference:** [Selection statements](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements)
 
 </div>

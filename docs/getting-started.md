@@ -144,7 +144,7 @@ Want a backup of your code on GitHub? Make your own copy (a **fork**):
 
 ## Learn the theory
 
-This course is for practice. For the theory, use the book *The C# Player's Guide* or the free Microsoft Learn modules and videos. Each theme page says which part to read. See [Learn](../learn/README.md).
+This course is for practice. The theory comes from **Microsoft Learn**, free: the 6 parts of *Get started with C#* and the video series *C# Fundamentals for Absolute Beginners*. Each theme page says which module and video to use. See [Learn](../learn/README.md).
 
 ## Hints and solutions
 

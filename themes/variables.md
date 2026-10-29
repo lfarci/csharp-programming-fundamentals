@@ -2,7 +2,7 @@
 
 # Variables and expressions
 
-Store values, compute with them, turn text into numbers.
+Store values in variables, compute with operators, convert text to numbers.
 
 ## After this theme you can
 
@@ -31,11 +31,10 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 <div class="learn-box">
 
-**Learn the theory** (before or beside the exercises)
+**Learn the theory on Microsoft Learn** ([Part 1: Write your first code using C#](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-1/))
 
-- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 5: Variables, Level 6: The C# Type System, Level 7: Math, Level 8: Console 2.0
-- **Microsoft Learn:** [Store data with variables in C#](https://learn.microsoft.com/en-us/training/modules/csharp-literals-variables/) · [Perform basic operations on numbers in C#](https://learn.microsoft.com/en-us/training/modules/csharp-basic-operations/) · [Convert data types using casting and conversion techniques in C#](https://learn.microsoft.com/en-us/training/modules/csharp-convert-cast/)
-- **Video:** [Numbers, Integers, and Math](https://learn.microsoft.com/en-us/shows/csharp-for-beginners/numbers-integers-and-math-csharp-for-beginners/) · [Numbers, Precision, Casting, Doubles, and More](https://learn.microsoft.com/en-us/shows/csharp-for-beginners/numbers-precision-casting-doubles-and-more-csharp-for-beginners/)
+- **Modules:** [Store data with variables in C#](https://learn.microsoft.com/en-us/training/modules/csharp-literals-variables/) (Part 1) · [Perform basic operations on numbers in C#](https://learn.microsoft.com/en-us/training/modules/csharp-basic-operations/) (Part 1) · [Choose the correct data type in your C# code](https://learn.microsoft.com/en-us/training/modules/csharp-choose-data-type/) (Part 4) · [Convert data types using casting and conversion techniques in C#](https://learn.microsoft.com/en-us/training/modules/csharp-convert-cast/) (Part 4)
+- **Video (C# Fundamentals for Absolute Beginners):** [Understanding Data Types and Variables](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/understanding-data-types-and-variables/) · [Operators, Expressions, and Statements](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/operators-expressions-and-statements/)
 - **Reference:** [Tutorial: numbers in C#](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp) · [Arithmetic operators](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators)
 
 </div>

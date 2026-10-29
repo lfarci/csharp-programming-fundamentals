@@ -4927,7 +4927,7 @@
   "cases": [],
   "checkHint": "",
   "theme": "Exceptions",
-  "themeOrder": 13,
+  "themeOrder": 15,
   "drills": [],
   "examples": [
    {
@@ -4955,7 +4955,7 @@
   "cases": [],
   "checkHint": "",
   "theme": "Collections",
-  "themeOrder": 14,
+  "themeOrder": 13,
   "drills": [],
   "examples": [
    {
@@ -5049,7 +5049,7 @@
   ],
   "checkHint": "",
   "theme": "Methods",
-  "themeOrder": 15,
+  "themeOrder": 14,
   "drills": [],
   "examples": [
    {

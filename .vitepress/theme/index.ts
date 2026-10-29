@@ -7,7 +7,7 @@ import ExercisesOverview from './ExercisesOverview.vue'
 import RoadmapPath from './RoadmapPath.vue'
 import ProgressSummary from './ProgressSummary.vue'
 import LearnCards from './LearnCards.vue'
-import BuyBook from './BuyBook.vue'
+import MsLearnPath from './MsLearnPath.vue'
 import HomeVideo from './HomeVideo.vue'
 import './custom.css'
 
@@ -20,5 +20,5 @@ export default {
     app.component('RoadmapPath', RoadmapPath)
     app.component('ProgressSummary', ProgressSummary)
     app.component('LearnCards', LearnCards)
-    app.component('BuyBook', BuyBook) },
+    app.component('MsLearnPath', MsLearnPath) },
 }

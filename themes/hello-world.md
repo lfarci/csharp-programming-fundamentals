@@ -30,11 +30,10 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 <div class="learn-box">
 
-**Learn the theory** (before or beside the exercises)
+**Learn the theory on Microsoft Learn** ([Part 1: Write your first code using C#](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-1/))
 
-- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 3: Hello World: Your First Program, Level 4: Comments
-- **Microsoft Learn:** [Write your first C# code](https://learn.microsoft.com/en-us/training/modules/csharp-write-first/)
-- **Video:** [Hello World!](https://learn.microsoft.com/en-us/shows/csharp-for-beginners/hello-world-csharp-for-beginners/) · [Hello World, Introducing Strings!](https://learn.microsoft.com/en-us/shows/csharp-for-beginners/hello-world-introducing-strings-csharp-for-beginners/)
+- **Modules:** [Write your first C# code](https://learn.microsoft.com/en-us/training/modules/csharp-write-first/) (Part 1) · [Install and configure Visual Studio Code](https://learn.microsoft.com/en-us/training/modules/install-configure-visual-studio-code/) (Part 2)
+- **Video (C# Fundamentals for Absolute Beginners):** [Creating Your First C# Program](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/creating-your-first-c-program/) · [Understanding Your First C# Program](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/understanding-your-first-c-program/)
 - **Reference:** [Tutorial: Hello World](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world)
 
 </div>

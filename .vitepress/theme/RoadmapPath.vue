@@ -23,7 +23,8 @@ const parts = computed(() => {
 <template>
   <div class="path">
     <section v-for="p in parts" :key="p.name" class="part">
-      <h2 :id="p.name.toLowerCase().replace(/ /g, '-')" class="part-name">{{ p.name }}</h2>
+      <div class="cpf-kicker part-kicker">{{ p.name.split(': ')[0] }}</div>
+      <h2 :id="p.name.split(': ')[1].toLowerCase().replace(/ /g, '-')" class="part-name">{{ p.name.split(': ')[1] }}</h2>
       <ol class="steps">
         <li v-for="t in p.themes" :key="t.slug" :class="{ complete: t.total && t.n === t.total }">
           <span class="dot" aria-hidden="true">{{ t.num }}</span>
@@ -41,7 +42,8 @@ const parts = computed(() => {
 </template>
 
 <style scoped>
-.part-name { border-top: none; margin: 28px 0 8px; padding-top: 0; font-size: 20px; color: var(--vp-c-brand-1); }
+.part-kicker { margin-top: 32px; }
+.part-name { border-top: none; margin: 2px 0 10px; padding-top: 0; font-size: 20px; color: var(--vp-c-brand-1); }
 .steps { list-style: none; padding: 0; margin: 0; position: relative; }
 .steps li { position: relative; padding-left: 52px; margin: 0 0 12px; }
 .steps li::before { content: ''; position: absolute; left: 17px; top: 36px; bottom: -14px; width: 2px; background: var(--vp-c-divider); }

@@ -103,7 +103,6 @@ export default defineConfig({
       ] },
       { text: 'Learn', items: [
         { text: 'Learn the theory', link: '/learn/' },
-        { text: "The C# Player's Guide", link: '/learn/players-guide' },
         { text: 'Microsoft Learn', link: '/learn/microsoft-learn' },
         { text: 'Extra exercises', link: '/learn/quest-tracker' },
       ] },

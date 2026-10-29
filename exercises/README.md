@@ -13,9 +13,9 @@ Start one with `./ex start A04`, check it with `./ex check`. New here? Read [Get
 | # | Theme | What you practise | Exercises |
 | ---: | --- | --- | ---: |
 | 1 | [Hello World](../themes/hello-world.md) | Print text and read what the user types. | 1 |
-| 2 | [Variables and expressions](../themes/variables.md) | Store values, compute with them, turn text into numbers. | 2 |
-| 3 | [Conditions](../themes/conditions.md) | Choose between cases with `if`. | 4 |
-| 4 | [Loops: repeat and count](../themes/loops-repeat.md) | Make the computer repeat something, and trace it on paper. | 17 |
+| 2 | [Variables and expressions](../themes/variables.md) | Store values in variables, compute with operators, convert text to numbers. | 2 |
+| 3 | [Conditions](../themes/conditions.md) | Make decisions with Boolean expressions and `if`. | 4 |
+| 4 | [Loops: repeat and count](../themes/loops-repeat.md) | Repeat code with iteration statements (`for`, `while`), and trace them on paper. | 17 |
 | 5 | [Loops: keep a running result](../themes/loops-running-result.md) | Add up, count or multiply while you loop. | 22 |
 | 6 | [Loops: draw in 2D](../themes/loops-2d.md) | Draw rows and columns with a loop inside a loop. | 16 |
 | 7 | [Loops: take digits apart](../themes/loops-digits.md) | Read the digits of a number one by one with `% 10` and `/ 10`. | 12 |
@@ -24,9 +24,9 @@ Start one with `./ex start A04`, check it with `./ex check`. New here? Read [Get
 | 10 | [Combine recipes](../themes/combine.md) | Glue two or three recipes together, like the Armstrong check. | 2 |
 | 11 | [Arrays and text](../themes/arrays.md) | Keep many values in one variable, and work on text letter by letter. | 9 |
 | 12 | [Files](../themes/files.md) | Save lines to a file and read them back. | 1 |
-| 13 | [Exceptions](../themes/exceptions.md) | Stop bad input from crashing your program. | 1 |
-| 14 | [Collections](../themes/collections.md) | Use a `List` that can grow. | 1 |
-| 15 | [Methods](../themes/methods.md) | Give a recipe a name: parameters and `return`. | 1 |
+| 13 | [Collections](../themes/collections.md) | Use a `List` that can grow. | 1 |
+| 14 | [Methods](../themes/methods.md) | Give a recipe a name: a method with parameters and a return value. | 1 |
+| 15 | [Exceptions](../themes/exceptions.md) | Stop bad input from crashing your program. | 1 |
 
 </div>
 

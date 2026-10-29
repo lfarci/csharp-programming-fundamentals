@@ -1,8 +1,8 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › Theme 15 of 15
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › Theme 14 of 15
 
 # Methods
 
-Give a recipe a name: parameters and `return`.
+Give a recipe a name: a method with parameters and a return value.
 
 ## After this theme you can
 
@@ -29,10 +29,10 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 <div class="learn-box">
 
-**Learn the theory** (before or beside the exercises)
+**Learn the theory on Microsoft Learn** ([Part 5: Create methods in C# console applications](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-5/))
 
-- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 13: Methods
-- **Microsoft Learn:** [Write your first C# method](https://learn.microsoft.com/en-us/training/modules/write-first-c-sharp-method/) · [Create C# methods with parameters](https://learn.microsoft.com/en-us/training/modules/create-c-sharp-methods-parameters/) · [Create C# methods that return values](https://learn.microsoft.com/en-us/training/modules/create-c-sharp-methods-return-values/)
+- **Modules:** [Write your first C# method](https://learn.microsoft.com/en-us/training/modules/write-first-c-sharp-method/) (Part 5) · [Create C# methods with parameters](https://learn.microsoft.com/en-us/training/modules/create-c-sharp-methods-parameters/) (Part 5) · [Create C# methods that return values](https://learn.microsoft.com/en-us/training/modules/create-c-sharp-methods-return-values/) (Part 5) · [Write reusable code in C#](https://learn.microsoft.com/en-us/training/modules/csharp-reusable-code/) (Part 2)
+- **Video (C# Fundamentals for Absolute Beginners):** [Defining and Calling Methods](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/defining-and-calling-methods/)
 - **Reference:** [Methods](https://learn.microsoft.com/en-us/dotnet/csharp/methods)
 
 </div>
@@ -43,4 +43,4 @@ You can turn your Armstrong solution into 3 small methods.
 
 ---
 
-Previous: [Collections](collections.md) · [Roadmap](../ROADMAP.md)
+Previous: [Collections](collections.md) · [Roadmap](../ROADMAP.md) · Next: [Exceptions](exceptions.md)

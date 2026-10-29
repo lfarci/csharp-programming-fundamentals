@@ -11,6 +11,7 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **Accumulator** | A *variable* that collects a result while the *loop* runs: a sum, a count, a product. See [recipe 2](../cookbook/02-accumulator.md). | `sum += i;` |
 | **Algorithm** | The list of steps that solves a problem, written in plain words before the code. | "Add each number to the total." |
 | **Array** | A row of boxes with a fixed size. Each box has a position (an *index*) starting at 0. | `int[] values = { 4, 9, 2 };` |
+| **Boolean expression** | A question in code whose answer is `true` or `false`. Microsoft Learn uses this name; `if` and loops test one. | `n % 2 == 0` |
 | **Boundary** | The first or last value a *loop* or `if` must handle, where mistakes happen most. | Is 10 included in "1 to 10"? |
 | **Box** | Our friendly word for a *variable*: a named place that holds one value. | `int count = 0;` |
 | **Bug** | A mistake in the code. The program runs, but does the wrong thing, or crashes. | |
@@ -29,12 +30,14 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **Input** | What the program reads (from the keyboard or a file). | `Console.ReadLine()` |
 | **Integer division** | `/` between two `int` values: the part after the decimal point is thrown away. | `17 / 5` is `3` |
 | **Iteration** | One turn of a *loop*. A loop from 1 to 5 does 5 iterations. | |
-| **Learning path** | On Microsoft Learn, a group of short lessons (*modules*) on one subject, in order. See [Microsoft Learn](../learn/microsoft-learn.md). | "Add logic to C# console applications" |
-| **Level** | (1) How much help an exercise gives: Guided, Independent, Challenge. (2) A chapter of the book *The C# Player's Guide*. See [the book](../learn/players-guide.md). | Level 11: Looping |
+| **Iteration statement** | Microsoft Learn's name for a *loop*: `for`, `while`, `do … while`, `foreach`. Each turn is one *iteration*. | `for (int i = 0; i < 3; i++)` |
+| **Learning path** | On Microsoft Learn, a group of short lessons (*modules*) on one subject, in order. This course follows the 6 parts of *Get started with C#*. See [Microsoft Learn](../learn/microsoft-learn.md). | "Add logic to C# console applications" |
+| **Level** | How much help an exercise gives: Guided, Independent, Challenge. | Guided |
 | **LINQ** | A C# toolbox that does loops for you (`.Sum()`, `.Max()`…). Not used here: you learn to write the loop yourself. | |
 | **Loop** | Code that repeats: `for`, `while`, `do … while`, `foreach`. | `for (int i = 1; i <= n; i++)` |
 | **Mastery check** | A new variation of an exercise you solve alone, on another day, to prove you learned it. | |
 | **Method** | A named piece of code you can call again and again. It gets its **input** through *parameters* and gives back its **result** with `return`. Most exercises ask you to fill in one. | `static int SumTo(int n) { … return sum; }` |
+| **Microsoft Learn** | Microsoft's free website of lessons. This course follows its 6 parts of *Get started with C#*. See [Microsoft Learn](../learn/microsoft-learn.md). | |
 | **Module** | One short lesson on Microsoft Learn: you read, then try code in the browser. | "Write your first C# code" |
 | **Modulo (`%`)** | The remainder of a division. | `17 % 5` is `2`, `352 % 10` is `2` |
 | **Nested loop** | A *loop* inside another loop. See [recipe 8](../cookbook/08-nested-grid.md). | rows and columns |
@@ -46,6 +49,8 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **Recipe** | A small code pattern that solves a common kind of problem. See the [cookbook](../cookbook/README.md). | counter loop, accumulator |
 | **Repository (repo)** | The online folder that holds this whole course on GitHub. | this website |
 | **Return** | Gives the result of a *method* back to the code that called it, and ends the method. | `return sum;` |
+| **Return value** | The result a *method* gives back with `return`. | `SumTo(3)` returns `6` |
+| **Selection statement** | Microsoft Learn's name for code that chooses: `if`, `else`, `switch`. | `if (n > 0)` |
 | **Sentinel** | A special value that means "stop", like 0. See [recipe 10](../cookbook/10-sentinel-loop.md). | "enter 0 to stop" |
 | **Solution** | One possible correct code for an exercise. Yours can be different and still be right. | |
 | **String** | Text, written with double quotes. | `"Hello"` |
@@ -57,7 +62,7 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **Trace table** | A table on paper with one row per *iteration*, showing each *variable*'s value. | |
 | **Unit test** | Code that calls your *method* with an example and checks the result. `./ex check` runs them for you. | `SumTo(5)` must give `15` |
 | **Variable** | A named place in memory that holds one value. Also called a *box* here. | `int age = 20;` |
-| **XP** | Experience points. The *C# Quest Tracker* gives XP for each book challenge you finish, like in a game. See [Extra exercises](../learn/quest-tracker.md). | |
+| **XP** | Experience points. The *C# Quest Tracker* gives XP for each challenge you finish, like in a game. See [Extra exercises](../learn/quest-tracker.md). | |
 
 ---
 

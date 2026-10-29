@@ -64,8 +64,9 @@ test('The home page has the logo, the favicon and a playable demo video', async 
   expect((await request.get(video!)).status()).toBe(200)
 })
 
-test('The book page links to the official site and shows no affiliate note while none is set', async ({ page }) => {
-  await page.goto('learn/players-guide')
-  await expect(page.getByRole('link', { name: 'Buy the book' })).toHaveAttribute('href', /csharpplayersguide\.com|amazon|gumroad/)
-  await expect(page.locator('.disclosure')).toHaveCount(0)
+test('The Microsoft Learn page lists the 6 parts with their themes', async ({ page }) => {
+  await page.goto('learn/microsoft-learn')
+  await expect(page.locator('.steps > li')).toHaveCount(6)
+  await expect(page.getByRole('link', { name: 'Add logic to C# console applications' })).toHaveAttribute('href', /get-started-c-sharp-part-3/)
+  await expect(page.locator('.steps .theme').first()).toBeVisible()
 })

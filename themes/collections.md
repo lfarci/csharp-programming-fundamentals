@@ -1,4 +1,4 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › Theme 14 of 15
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › Theme 13 of 15
 
 # Collections
 
@@ -30,11 +30,10 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 <div class="learn-box">
 
-**Learn the theory** (before or beside the exercises)
+**Learn the theory on Microsoft Learn** ([Part 2: Create and run simple C# console applications](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-2/))
 
-- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 32: Some Useful Types
-- **Microsoft Learn:** [Organize data with arrays and lists in C#](https://learn.microsoft.com/en-us/training/modules/csharp-arrays-lists/)
-- **Video:** [Arrays, Lists, Indexing, and Foreach](https://learn.microsoft.com/en-us/shows/csharp-for-beginners/arrays-lists-indexing-and-foreach-csharp-for-beginners/)
+- **Modules:** [Organize data with arrays and lists in C#](https://learn.microsoft.com/en-us/training/modules/csharp-arrays-lists/) (Part 2)
+- **Video (C# Fundamentals for Absolute Beginners):** [Working with Collections](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/working-with-collections/)
 - **Reference:** [Collections tutorial](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/list-collection)
 
 </div>
@@ -45,4 +44,4 @@ You can explain when to pick an array (fixed size) and when a list (it grows).
 
 ---
 
-Previous: [Exceptions](exceptions.md) · [Roadmap](../ROADMAP.md) · Next: [Methods](methods.md)
+Previous: [Files](files.md) · [Roadmap](../ROADMAP.md) · Next: [Methods](methods.md)
