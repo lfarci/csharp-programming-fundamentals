@@ -45,7 +45,7 @@ flowchart LR
     M --> N["N · Methods"]
 ```
 
-Full exercise-by-exercise graph: [dependency-graph.md](dependency-graph.md).
+See the full [graph of every exercise and its prerequisites](dependency-graph.md).
 
 ## Custom exercises
 

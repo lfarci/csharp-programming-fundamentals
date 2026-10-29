@@ -89,7 +89,7 @@ out += ['    B["B · Basics"] --> C["C · Conditions"] --> L["L · Loop mechanic
         '    A --> P["P · Search & primes"]', '    D --> M["M · Combine: Armstrong"]', '    A --> M',
         '    A --> R["R · Arrays"] --> T["T · Text"]', '    R --> F["F · Files"]', '    L --> E["E · Exceptions"]',
         '    R --> K["K · Collections"]', '    M --> N["N · Methods"]', "```", "",
-        "Full exercise-by-exercise graph: [dependency-graph.md](dependency-graph.md).", ""]
+        "See the full [graph of every exercise and its prerequisites](dependency-graph.md).", ""]
 out += ["## Custom exercises", ""]
 for f, name, step in FAM:
     rows = [e for e in E if e["id"].startswith(f)]
