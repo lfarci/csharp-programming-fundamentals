@@ -7,7 +7,7 @@ A friendly companion for a beginner C# course. You learn **loop recipes** and pr
 
 ## Start here
 
-![Terminal demo, about 70 seconds: clone the course, ./ex start L11, ./ex check says NOT YET with what was expected and what the code printed, a first for loop misses the last number, the fix i <= b makes ./ex check say DONE, then ./ex progress and ./ex next.](docs/assets/demo.gif)
+![VS Code demo, about two minutes: in the integrated terminal ./ex start L11 creates the file in practice/, ./ex check says NOT YET with what was expected and what the code printed, the test file is plain C#, a first for loop typed in the editor misses the last number, the fix i <= b makes ./ex check say DONE, then ./ex progress and ./ex next.](docs/assets/demo.gif)
 
 1. Get the course: `git clone https://github.com/lfarci/csharp-programming-fundamentals.git` (or fork it first if you want your own copy on GitHub). Details in [**Getting started**](docs/getting-started.md#2-get-the-files-on-your-computer).
    - You write **only** in `practice/`, through `./ex start`, `./ex check`, `./ex run` and `./ex next`. Never edit `Program.cs`, project files, `tests/` or `solutions/`.

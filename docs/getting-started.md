@@ -66,7 +66,7 @@ In **VS Code** or a **codespace** you can also click: menu **Terminal › Run Ta
 
 What one exercise looks like, from start to DONE:
 
-![Terminal demo, about 70 seconds: clone the course, ./ex start L11, ./ex check says NOT YET with what was expected and what the code printed, a first for loop misses the last number, the fix i <= b makes ./ex check say DONE, then ./ex progress and ./ex next.](assets/demo.gif)
+![VS Code demo, about two minutes: in the integrated terminal ./ex start L11 creates the file in practice/, ./ex check says NOT YET with what was expected and what the code printed, the test file is plain C#, a first for loop typed in the editor misses the last number, the fix i <= b makes ./ex check say DONE, then ./ex progress and ./ex next.](assets/demo.gif)
 
 | Command | What it does |
 | --- | --- |
