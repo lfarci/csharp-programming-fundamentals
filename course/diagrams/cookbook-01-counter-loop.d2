@@ -1,0 +1,15 @@
+# Diagram source. Render: internal/tools/diagrams.sh
+...@_style
+direction: down
+
+A: "1 · Start\ni = 1" {class: step}
+B: "2 · Test\ni <= n ?" {class: ask}
+C: "3 · Work\nprint i" {class: step}
+D: "4 · Step\ni = i + 1" {class: step}
+E: "Done: after the loop" {class: end}
+
+A -> B
+B -> C: "yes"
+C -> D
+D -> B
+B -> E: "no"

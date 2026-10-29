@@ -1,0 +1,10 @@
+# Diagram source. Render: internal/tools/diagrams.sh
+...@_style
+direction: right
+
+O: "outer: candidate = 2..N\nrecipe 1" {class: step}
+I: "inner: is it prime?\nrecipe 5 (flag)" {class: step}
+P: "if isPrime: print\ncount++ (recipe 2)" {class: step}
+
+O -> I
+I -> P

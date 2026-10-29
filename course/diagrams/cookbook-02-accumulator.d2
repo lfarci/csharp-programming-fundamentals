@@ -1,0 +1,13 @@
+# Diagram source. Render: internal/tools/diagrams.sh
+...@_style
+direction: down
+
+A: "sum = 0\n(BEFORE the loop)" {class: step}
+B: "more values?" {class: ask}
+C: "sum = sum + value" {class: step}
+D: "print sum\n(AFTER the loop)" {class: step}
+
+A -> B
+B -> C: "yes"
+C -> B
+B -> D: "no"

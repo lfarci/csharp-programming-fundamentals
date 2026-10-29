@@ -12,7 +12,8 @@ practice/*_*.cs
 practice/.done
 practice/PROGRESS.md
 node_modules/
-.vitepress/cache/
-.vitepress/dist/
+internal/site/.vitepress/cache/
+internal/site/.vitepress/dist/
 test-results/
 playwright-report/
+TestResults/

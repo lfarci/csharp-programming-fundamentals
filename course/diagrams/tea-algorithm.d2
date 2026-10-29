@@ -1,0 +1,14 @@
+# An everyday algorithm: make a cup of tea. Render: internal/tools/diagrams.sh
+...@_style
+direction: right
+
+a: "1. Boil water" {class: step}
+b: "2. Put a tea bag\nin the cup" {class: step}
+c: "3. Pour the water" {class: step}
+d: "Strong enough?" {class: ask}
+w: "Wait 1 minute" {class: note}
+e: "4. Remove the bag" {class: end}
+a -> b -> c -> d
+d -> e: yes
+d -> w: no
+w -> d

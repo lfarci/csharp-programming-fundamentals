@@ -12,13 +12,13 @@
     {
       "label": "Exercise: start",
       "type": "shell",
-      "command": "dotnet run --project tools/ex -v q -- start ${input:exercise}",
+      "command": "dotnet run --project internal/tools/ex -v q -- start ${input:exercise}",
       "problemMatcher": []
     },
     {
       "label": "Exercise: check",
       "type": "shell",
-      "command": "dotnet run --project tools/ex -v q -- check ${input:exercise}",
+      "command": "dotnet run --project internal/tools/ex -v q -- check ${input:exercise}",
       "group": {
         "kind": "test",
         "isDefault": true
@@ -28,7 +28,7 @@
     {
       "label": "Exercise: run",
       "type": "shell",
-      "command": "dotnet run --project tools/ex -v q -- run ${input:exercise}",
+      "command": "dotnet run --project internal/tools/ex -v q -- run ${input:exercise}",
       "group": {
         "kind": "build",
         "isDefault": true
@@ -38,13 +38,13 @@
     {
       "label": "Exercise: next",
       "type": "shell",
-      "command": "dotnet run --project tools/ex -v q -- next",
+      "command": "dotnet run --project internal/tools/ex -v q -- next",
       "problemMatcher": []
     },
     {
       "label": "Exercise: list",
       "type": "shell",
-      "command": "dotnet run --project tools/ex -v q -- list",
+      "command": "dotnet run --project internal/tools/ex -v q -- list",
       "problemMatcher": []
     },
     {

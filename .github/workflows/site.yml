@@ -24,19 +24,20 @@ jobs:
         with:
           node-version: "24"
           cache: npm
-      - run: npm ci
+          cache-dependency-path: internal/package-lock.json
+      - run: npm ci --prefix internal
       - name: Sync code format (same as ./ex progress)
-        run: node tools/check-site-sync.ts
+        run: node internal/tools/check-site-sync.ts
       - name: Build the site (fails on dead links)
-        run: npm run docs:build
+        run: npm run --prefix internal docs:build
       - name: Install the test browser
-        run: npx playwright install --with-deps chromium
+        run: npm exec --prefix internal -- playwright install --with-deps chromium
       - name: Progress ticks work in a real browser (Mark as done, reload, import)
-        run: npm run test:site
+        run: npm run --prefix internal test:site
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         if: github.event_name != 'pull_request'
         with:
-          path: .vitepress/dist
+          path: internal/site/.vitepress/dist
 
   deploy:
     name: Deploy to GitHub Pages
