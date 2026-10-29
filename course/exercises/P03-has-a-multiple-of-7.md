@@ -7,7 +7,7 @@ next:
   link: /exercises/P04-has-an-even-digit
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops.md#search-and-combine) › P03
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops-search-and-combine.md) › P03
 
 # P03 · Has a multiple of 7
 

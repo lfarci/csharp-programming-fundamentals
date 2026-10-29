@@ -7,7 +7,7 @@ next:
   link: /exercises/L18-squares
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L17
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops-count.md) › L17
 
 # L17 · Count down by 2
 

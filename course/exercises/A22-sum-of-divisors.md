@@ -7,7 +7,7 @@ next:
   link: /exercises/A12-fix-count-multiples-of-7
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops.md#keep-only-some) › A22
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops-keep-only-some.md) › A22
 
 # A22 · Sum of the divisors
 

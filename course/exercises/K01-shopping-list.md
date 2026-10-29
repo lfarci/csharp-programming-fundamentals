@@ -7,7 +7,7 @@ next:
   link: /themes/methods
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Files and lists](../themes/arrays.md#files-and-lists) › K01
+[Home](../../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Files and lists](../themes/arrays-files-and-lists.md) › K01
 
 # K01 · Shopping list
 

@@ -7,7 +7,7 @@ next:
   link: /exercises/C04-grade-from-a-score
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [Conditions](../themes/basics.md#conditions) › C03
+[Home](../../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [Conditions](../themes/basics-conditions.md) › C03
 
 # C03 · Ticket price
 

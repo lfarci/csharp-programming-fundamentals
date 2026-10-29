@@ -7,7 +7,7 @@ next:
   link: /exercises/L10-numbers-on-one-line
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw rows and grids](../themes/loops.md#draw-rows-and-grids) › L09
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw rows and grids](../themes/loops-draw-rows-and-grids.md) › L09
 
 # L09 · Draw one row
 

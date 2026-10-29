@@ -7,7 +7,7 @@ next:
   link: /exercises/D11-largest-digit
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D12
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops-digits.md) › D12
 
 # D12 · Product of the digits
 

@@ -7,7 +7,7 @@ next:
   link: /exercises/L17-count-down-by-2
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L06
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops-count.md) › L06
 
 # L06 · Even numbers
 

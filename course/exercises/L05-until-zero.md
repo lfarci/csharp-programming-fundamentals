@@ -7,7 +7,7 @@ next:
   link: /exercises/A06-average-until-zero
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Until the user stops](../themes/loops.md#until-the-user-stops) › L05
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Until the user stops](../themes/loops-until-the-user-stops.md) › L05
 
 # L05 · Until zero
 

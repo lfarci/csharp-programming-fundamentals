@@ -7,7 +7,7 @@ next:
   link: /exercises/D05-reverse-a-number
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D07
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops-digits.md) › D07
 
 # D07 · Fix: digit sum
 

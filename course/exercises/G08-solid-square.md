@@ -7,7 +7,7 @@ next:
   link: /exercises/G01-rectangle
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw rows and grids](../themes/loops.md#draw-rows-and-grids) › G08
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw rows and grids](../themes/loops-draw-rows-and-grids.md) › G08
 
 # G08 · Solid square
 

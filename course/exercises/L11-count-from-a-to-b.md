@@ -7,7 +7,7 @@ next:
   link: /exercises/L12-count-down
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L11
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops-count.md) › L11
 
 # L11 · Count from a to b
 

@@ -7,7 +7,7 @@ next:
   link: /exercises/K01-shopping-list
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Files and lists](../themes/arrays.md#files-and-lists) › F01
+[Home](../../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Files and lists](../themes/arrays-files-and-lists.md) › F01
 
 # F01 · Save numbers to a file
 

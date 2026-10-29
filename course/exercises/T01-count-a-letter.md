@@ -7,7 +7,7 @@ next:
   link: /exercises/T02-remove-spaces
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Text](../themes/arrays.md#text) › T01
+[Home](../../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Text](../themes/arrays-text.md) › T01
 
 # T01 · Count a letter
 

@@ -7,7 +7,7 @@ next:
   link: /exercises/A20-powers-of-2
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A18
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops-add-up.md) › A18
 
 # A18 · Sum of cubes
 

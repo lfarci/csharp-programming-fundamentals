@@ -7,7 +7,7 @@ next:
   link: /exercises/S04-doubling
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Changing values](../themes/loops.md#changing-values) › S01
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Changing values](../themes/loops-changing-values.md) › S01
 
 # S01 · Trace two variables
 

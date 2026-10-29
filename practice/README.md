@@ -15,6 +15,7 @@ On Windows, type `.\ex` instead of `./ex`. Full guide: [Getting started](../cour
 
 ## Tips
 
+- Read the exercise on the [website](https://lfarci.github.io/csharp-programming-fundamentals/exercises/) (the files in `course/` look raw in VS Code; <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd> shows a preview), and write your code here in VS Code.
 - Before typing, fill the [recipe card](../course/cookbook/README.md) and a trace table on paper.
 - Use the debugger (VS Code: **Run › Start Debugging** on "Debug the current exercise") or a temporary `Console.WriteLine` to *watch* the variables change.
 - You never need to edit `Program.cs` or `Practice.csproj`.

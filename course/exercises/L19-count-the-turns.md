@@ -7,7 +7,7 @@ next:
   link: /exercises/A11-arrange-sum-of-squares
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › L19
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops-add-up.md) › L19
 
 # L19 · Count the turns
 

@@ -7,7 +7,7 @@ next:
   link: /exercises/A14-sum-odd-numbers
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A13
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops-add-up.md) › A13
 
 # A13 · Sum from a to b
 

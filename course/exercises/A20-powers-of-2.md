@@ -7,7 +7,7 @@ next:
   link: /exercises/A19-product-from-a-to-b
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A20
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops-add-up.md) › A20
 
 # A20 · Power of 2
 

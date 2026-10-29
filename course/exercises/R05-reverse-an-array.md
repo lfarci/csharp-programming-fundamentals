@@ -7,7 +7,7 @@ next:
   link: /exercises/T01-count-a-letter
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Arrays](../themes/arrays.md#arrays) › R05
+[Home](../../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Arrays](../themes/arrays-arrays.md) › R05
 
 # R05 · Reverse an array
 

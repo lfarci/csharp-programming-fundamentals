@@ -7,7 +7,7 @@ next:
   link: /exercises/L06-even-numbers
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L16
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops-count.md) › L16
 
 # L16 · Odd numbers
 

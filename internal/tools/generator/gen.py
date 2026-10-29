@@ -112,7 +112,8 @@ TH_LIST = {x["slug"]: [e for e in ORDER if e["theme"] == x["slug"]] for x in THE
 def where(e):
     th, gr = GROUP[e["id"]]; lst = TH_LIST[th["slug"]]; gl = [x for x in lst if x["group"] == gr["slug"]]
     return th, gr, lst.index(e) + 1, len(lst), gl.index(e) + 1, len(gl)
-def gref(th, gr, up="../"): return f"{up}themes/{th['slug']}.md#{gr['slug']}"
+def gpage(th, gr): return f"{th['slug']}-{gr['slug']}"   # one page per group: themes/loops-count.md -> /themes/loops-count
+def gref(th, gr, up="../"): return f"{up}themes/{gpage(th, gr)}.md"
 def neighbours(e):
     """Previous/Next inside the theme, in course order; at the ends, the theme pages."""
     th = GROUP[e["id"]][0]; lst = TH_LIST[th["slug"]]; i = lst.index(e); k = THEMES.index(th)
@@ -207,7 +208,7 @@ def site_ex(e):
 site = {"exercises": [site_ex(e) for e in ORDER],
         "drillSets": [{"name": n, "recipe": r, "ids": ids} for n, r, ids in DRILLS],
         "themes": [{"slug": x["slug"], "title": x["title"], "part": x["part"], "summary": x["summary"], "link": f"/themes/{x['slug']}",
-                    "groups": [{"slug": g_["slug"], "title": g_["title"], "link": f"/themes/{x['slug']}#{g_['slug']}"} for g_ in x["groups"]]} for x in THEMES]}
+                    "groups": [{"slug": g_["slug"], "title": g_["title"], "link": f"/themes/{x['slug']}-{g_['slug']}"} for g_ in x["groups"]]} for x in THEMES]}
 json.dump(site, open(f"{ROOT}/internal/site/.vitepress/course.json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 
 # ---------- tests: one plain xUnit file per exercise ----------

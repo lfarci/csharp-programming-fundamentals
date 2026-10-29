@@ -7,7 +7,7 @@ next:
   link: /exercises/L19-count-the-turns
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L04
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops-count.md) › L04
 
 # L04 · Multiplication table
 

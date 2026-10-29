@@ -7,7 +7,7 @@ next:
   link: /exercises/L16-odd-numbers
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L14
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops-count.md) › L14
 
 # L14 · Count by 5
 

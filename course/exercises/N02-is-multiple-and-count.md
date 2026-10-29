@@ -7,7 +7,7 @@ next:
   link: /exercises/N01-armstrong-with-methods
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Methods and errors](../themes/methods.md) › [Methods](../themes/methods.md#methods) › N02
+[Home](../../README.md) › [Exercises](README.md) › [Methods and errors](../themes/methods.md) › [Methods](../themes/methods-methods.md) › N02
 
 # N02 · A method that calls one
 

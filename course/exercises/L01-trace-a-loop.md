@@ -7,7 +7,7 @@ next:
   link: /exercises/L02-boundaries
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L01
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops-count.md) › L01
 
 # L01 · Trace a loop
 

@@ -3124,12 +3124,12 @@
     {
      "slug": "first-programs",
      "title": "First programs",
-     "link": "/themes/basics#first-programs"
+     "link": "/themes/basics-first-programs"
     },
     {
      "slug": "conditions",
      "title": "Conditions",
-     "link": "/themes/basics#conditions"
+     "link": "/themes/basics-conditions"
     }
    ]
   },
@@ -3143,47 +3143,47 @@
     {
      "slug": "count",
      "title": "Count",
-     "link": "/themes/loops#count"
+     "link": "/themes/loops-count"
     },
     {
      "slug": "add-up",
      "title": "Add up",
-     "link": "/themes/loops#add-up"
+     "link": "/themes/loops-add-up"
     },
     {
      "slug": "keep-only-some",
      "title": "Keep only some",
-     "link": "/themes/loops#keep-only-some"
+     "link": "/themes/loops-keep-only-some"
     },
     {
      "slug": "until-the-user-stops",
      "title": "Until the user stops",
-     "link": "/themes/loops#until-the-user-stops"
+     "link": "/themes/loops-until-the-user-stops"
     },
     {
      "slug": "draw-rows-and-grids",
      "title": "Draw rows and grids",
-     "link": "/themes/loops#draw-rows-and-grids"
+     "link": "/themes/loops-draw-rows-and-grids"
     },
     {
      "slug": "draw-shapes",
      "title": "Draw shapes",
-     "link": "/themes/loops#draw-shapes"
+     "link": "/themes/loops-draw-shapes"
     },
     {
      "slug": "digits",
      "title": "Digits",
-     "link": "/themes/loops#digits"
+     "link": "/themes/loops-digits"
     },
     {
      "slug": "changing-values",
      "title": "Changing values",
-     "link": "/themes/loops#changing-values"
+     "link": "/themes/loops-changing-values"
     },
     {
      "slug": "search-and-combine",
      "title": "Search and combine",
-     "link": "/themes/loops#search-and-combine"
+     "link": "/themes/loops-search-and-combine"
     }
    ]
   },
@@ -3197,17 +3197,17 @@
     {
      "slug": "arrays",
      "title": "Arrays",
-     "link": "/themes/arrays#arrays"
+     "link": "/themes/arrays-arrays"
     },
     {
      "slug": "text",
      "title": "Text",
-     "link": "/themes/arrays#text"
+     "link": "/themes/arrays-text"
     },
     {
      "slug": "files-and-lists",
      "title": "Files and lists",
-     "link": "/themes/arrays#files-and-lists"
+     "link": "/themes/arrays-files-and-lists"
     }
    ]
   },
@@ -3221,12 +3221,12 @@
     {
      "slug": "methods",
      "title": "Methods",
-     "link": "/themes/methods#methods"
+     "link": "/themes/methods-methods"
     },
     {
      "slug": "errors",
      "title": "Errors",
-     "link": "/themes/methods#errors"
+     "link": "/themes/methods-errors"
     }
    ]
   }

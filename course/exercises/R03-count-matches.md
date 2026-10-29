@@ -7,7 +7,7 @@ next:
   link: /exercises/R02-largest-in-an-array
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Arrays](../themes/arrays.md#arrays) › R03
+[Home](../../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Arrays](../themes/arrays-arrays.md) › R03
 
 # R03 · Count matches
 

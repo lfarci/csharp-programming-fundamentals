@@ -7,7 +7,7 @@ next:
   link: /exercises/G02-right-triangle
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw rows and grids](../themes/loops.md#draw-rows-and-grids) › G03
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw rows and grids](../themes/loops-draw-rows-and-grids.md) › G03
 
 # G03 · Multiplication grid
 

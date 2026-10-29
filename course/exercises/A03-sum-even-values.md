@@ -7,7 +7,7 @@ next:
   link: /exercises/A17-sum-multiples-of-k
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops.md#keep-only-some) › A03
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops-keep-only-some.md) › A03
 
 # A03 · Sum of the even numbers
 

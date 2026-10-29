@@ -7,7 +7,7 @@ next:
   link: /exercises/L08-guess-the-number
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Until the user stops](../themes/loops.md#until-the-user-stops) › L07
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Until the user stops](../themes/loops-until-the-user-stops.md) › L07
 
 # L07 · Ask until valid
 

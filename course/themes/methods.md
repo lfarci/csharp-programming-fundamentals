@@ -37,38 +37,8 @@ Do the groups in order, and the exercises of a group from top to bottom. Tick ea
 
 <div class="gh-only">
 
-1. [Methods](#methods): Give a recipe a name. (2 exercises)
-2. [Errors](#errors): Bad input must not crash the program. (2 exercises)
-
-</div>
-
-## Methods
-
-Give a recipe a name.
-
-<ThemeExercises theme="methods" group="methods" />
-
-<div class="gh-only">
-
-| ID | Exercise | Kind | Level | Effort |
-| --- | --- | --- | --- | --- |
-| N02 | [A method that calls one](../exercises/N02-is-multiple-and-count.md) | write code | Guided | easy |
-| N01 | [Armstrong with methods](../exercises/N01-armstrong-with-methods.md) | write code | Challenge | hard |
-
-</div>
-
-## Errors
-
-Bad input must not crash the program. Lesson: [Recipe 9 · Input validation](../cookbook/09-input-validation.md).
-
-<ThemeExercises theme="methods" group="errors" />
-
-<div class="gh-only">
-
-| ID | Exercise | Kind | Level | Effort |
-| --- | --- | --- | --- | --- |
-| E02 | [Parse or zero](../exercises/E02-parse-or-zero.md) | write code | Guided | easy |
-| E01 | [Safe number reader](../exercises/E01-safe-number-reader.md) | write code | Independent | medium |
+1. [Methods](methods-methods.md): Give a recipe a name. (2 exercises)
+2. [Errors](methods-errors.md): Bad input must not crash the program. (2 exercises)
 
 </div>
 

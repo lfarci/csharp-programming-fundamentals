@@ -7,7 +7,7 @@ next:
   link: /exercises/D12-product-of-digits
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D10
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops-digits.md) › D10
 
 # D10 · Count one digit
 

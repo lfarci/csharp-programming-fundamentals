@@ -7,7 +7,7 @@ next:
   link: /exercises/A09-min-and-max-until-zero
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Until the user stops](../themes/loops.md#until-the-user-stops) › A06
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Until the user stops](../themes/loops-until-the-user-stops.md) › A06
 
 # A06 · Average until zero
 

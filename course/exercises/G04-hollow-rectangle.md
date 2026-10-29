@@ -7,7 +7,7 @@ next:
   link: /exercises/G13-diagonal
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw shapes](../themes/loops.md#draw-shapes) › G04
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw shapes](../themes/loops-draw-shapes.md) › G04
 
 # G04 · Hollow rectangle
 

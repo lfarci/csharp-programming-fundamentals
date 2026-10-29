@@ -7,7 +7,7 @@ next:
   link: /exercises/S05-nth-fibonacci
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Changing values](../themes/loops.md#changing-values) › S02
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Changing values](../themes/loops-changing-values.md) › S02
 
 # S02 · Fibonacci
 

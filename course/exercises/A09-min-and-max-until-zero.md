@@ -7,7 +7,7 @@ next:
   link: /exercises/L07-ask-until-valid
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Until the user stops](../themes/loops.md#until-the-user-stops) › A09
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Until the user stops](../themes/loops-until-the-user-stops.md) › A09
 
 # A09 · Min and max until zero
 

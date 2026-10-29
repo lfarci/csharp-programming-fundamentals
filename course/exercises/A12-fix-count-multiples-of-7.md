@@ -7,7 +7,7 @@ next:
   link: /exercises/A03-sum-even-values
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops.md#keep-only-some) › A12
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops-keep-only-some.md) › A12
 
 # A12 · Fix: multiples of 7
 

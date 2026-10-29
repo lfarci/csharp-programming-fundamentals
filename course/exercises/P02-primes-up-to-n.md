@@ -7,7 +7,7 @@ next:
   link: /exercises/M01-armstrong-number
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops.md#search-and-combine) › P02
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops-search-and-combine.md) › P02
 
 # P02 · All primes up to N
 

@@ -7,7 +7,7 @@ next:
   link: /exercises/A21-count-divisors
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops.md#keep-only-some) › A16
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops-keep-only-some.md) › A16
 
 # A16 · Count multiples of 5
 

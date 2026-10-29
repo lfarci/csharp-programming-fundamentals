@@ -48,6 +48,8 @@ The course folder has 3 folders. Only one is yours:
 
 VS Code opens `course/` and `internal/` **read-only** (a lock in the tab), so you cannot change them by mistake. If you still change one, `./ex check` warns you and tells you how to undo it: `git restore <path>`.
 
+> **Tip: read on the website, write in VS Code.** Read the exercise pages on the [website](https://lfarci.github.io/csharp-programming-fundamentals/): it shows them with cards, tables and progress ticks. The Markdown files in `course/` are the source of the website, so in VS Code they look raw (or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd> for the Markdown preview). Write your code in `practice/`, in VS Code.
+
 ## Start your first exercise
 
 Pick an exercise, for example [A04 · Factorial](../exercises/A04-factorial.md), and type:

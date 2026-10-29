@@ -7,7 +7,7 @@ next:
   link: /exercises/D10-count-a-digit
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D09
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops-digits.md) › D09
 
 # D09 · Count the even digits
 

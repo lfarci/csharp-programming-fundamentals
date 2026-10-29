@@ -7,7 +7,7 @@ next:
   link: /exercises/S03-even-fibonacci-sum
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Changing values](../themes/loops.md#changing-values) › S05
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Changing values](../themes/loops-changing-values.md) › S05
 
 # S05 · N-th Fibonacci
 

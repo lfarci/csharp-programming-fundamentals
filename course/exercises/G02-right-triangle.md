@@ -7,7 +7,7 @@ next:
   link: /exercises/G10-row-number-triangle
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw shapes](../themes/loops.md#draw-shapes) › G02
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw shapes](../themes/loops-draw-shapes.md) › G02
 
 # G02 · Draw a right triangle
 

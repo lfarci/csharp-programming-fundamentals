@@ -18,7 +18,7 @@ out = ["[Home](../../README.md) › Exercises", "", "# Exercises", "",
        "<ExercisesOverview />", "", '<div class="gh-only">', "",
        "| # | Theme | Groups | Exercises |", "| ---: | --- | --- | ---: |"]
 for x in THEMES:
-    out.append(f"| {NUM[x['slug']]} | [{x['title']}](../themes/{x['slug']}.md) | " + ", ".join(f"[{g_['title']}](../themes/{x['slug']}.md#{g_['slug']}) ({len(g_['ids'])})" for g_ in x["groups"]) + f" | {len(TH_EX[x['slug']])} |")
+    out.append(f"| {NUM[x['slug']]} | [{x['title']}](../themes/{x['slug']}.md) | " + ", ".join(f"[{g_['title']}](../themes/{gpage(x, g_)}.md) ({len(g_['ids'])})" for g_ in x["groups"]) + f" | {len(TH_EX[x['slug']])} |")
 out += ["", "</div>", "",
         "## Levels", "", "- **Guided**: small steps, the hints help a lot.", "- **Independent**: the same idea, alone.", "- **Challenge**: a new problem; combine recipes.", "",
         "## Drill sets (same pattern, many times)", "",
@@ -68,11 +68,7 @@ for k, x in enumerate(THEMES):
           "## After this theme you can", ""] + [f"- {o}" for o in x["objectives"]] + ["",
           "## The groups", "", "Do the groups in order, and the exercises of a group from top to bottom. Tick each one when `./ex check` says DONE.", "",
           f'<ThemeGroups theme="{s}" />', "", '<div class="gh-only">', ""]
-    L += [f"{i_}. [{g_['title']}](#{g_['slug']}): {g_['about']} ({len(g_['ids'])} exercises)" for i_, g_ in enumerate(x["groups"], 1)] + ["", "</div>", ""]
-    for i_, g_ in enumerate(x["groups"], 1):
-        L += [f"## {g_['title']}", "", g_["about"] + (f" Lesson: {recipe_link(g_['recipe'])}." if g_["recipe"] else ""), "",
-              f'<ThemeExercises theme="{s}" group="{g_["slug"]}" />', "", '<div class="gh-only">', "",
-              "| ID | Exercise | Kind | Level | Effort |", "| --- | --- | --- | --- | --- |"] + [ex_row(e) for e in gex(g_)] + ["", "</div>", ""]
+    L += [f"{i_}. [{g_['title']}]({gpage(x, g_)}.md): {g_['about']} ({len(g_['ids'])} exercises)" for i_, g_ in enumerate(x["groups"], 1)] + ["", "</div>", ""]
     L += ["## Ready for the next theme when", "", f"{x['ready'][0].upper()}{x['ready'][1:]}", "", "---", ""]
     nav_ = []
     if k: nav_.append(f"Previous: [{THEMES[k-1]['title']}]({THEMES[k-1]['slug']}.md)")
@@ -80,6 +76,25 @@ for k, x in enumerate(THEMES):
     if k < len(THEMES) - 1: nav_.append(f"Next: [{THEMES[k+1]['title']}]({THEMES[k+1]['slug']}.md)")
     L += [" · ".join(nav_), ""]
     open(f"{ROOT}/course/themes/{s}.md", "w").write("\n".join(L))
+    # one page per group: the table of its exercises, the lesson, Previous/Next group
+    G = x["groups"]
+    for i_, g_ in enumerate(G):
+        if i_: pv = (f"{G[i_-1]['title']}", f"{gpage(x, G[i_-1])}.md")
+        else: pv = (x["title"], f"{s}.md")
+        if i_ < len(G) - 1: nx = (f"{G[i_+1]['title']}", f"{gpage(x, G[i_+1])}.md")
+        elif k < len(THEMES) - 1: nx = (f"Next theme: {THEMES[k+1]['title']}", f"{THEMES[k+1]['slug']}.md")
+        else: nx = ("Roadmap", "../ROADMAP.md")
+        fm = lambda t_, l_: f"  text: {json.dumps(t_, ensure_ascii=False)}\n  link: /themes/{l_[:-3]}" if not l_.startswith("..") else f"  text: {json.dumps(t_, ensure_ascii=False)}\n  link: /ROADMAP"
+        P = ["---", "prev:\n" + fm(*pv), "next:\n" + fm(*nx), "---", "",
+             f"[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [{x['title']}]({s}.md) › Group {i_+1} of {len(G)}", "",
+             f"# {x['title']} · {g_['title']}", "", g_["about"] + (f" Lesson: {recipe_link(g_['recipe'])}." if g_["recipe"] else ""), ""]
+        if i_ == 0: P += [f'<LearnCard theme="{s}" />', ""]
+        P += ["Do the exercises from top to bottom. Tick each one when `./ex check` says DONE.", "",
+              f'<ThemeExercises theme="{s}" group="{g_["slug"]}" />', "", '<div class="gh-only">', "",
+              "| ID | Exercise | Kind | Level | Effort |", "| --- | --- | --- | --- | --- |"] + [ex_row(e) for e in gex(g_)] + ["", "</div>", "", "---", "",
+              " · ".join([f"Previous: [{pv[0]}]({pv[1]})"] + ([f"[{x['title']}]({s}.md)"] if i_ else []) + [f"Next: [{nx[0]}]({nx[1]})"]), ""]
+        open(f"{ROOT}/course/themes/{gpage(x, g_)}.md", "w").write("\n".join(P))
+
 
 # ---------- ROADMAP.md ----------
 R = ["[Home](../README.md) › Roadmap", "", "# Roadmap", "",
@@ -90,7 +105,7 @@ R = ["[Home](../README.md) › Roadmap", "", "# Roadmap", "",
      "<RoadmapPath />", "", '<div class="gh-only">', ""]
 R += ["| # | Part | Theme | Groups | Exercises |", "| --- | --- | --- | --- | --- |"]
 for x in THEMES:
-    R.append(f"| {NUM[x['slug']]} | {x['part']} | [{x['title']}](themes/{x['slug']}.md) | " + ", ".join(f"[{g_['title']}](themes/{x['slug']}.md#{g_['slug']})" for g_ in x["groups"]) + f" | {len(TH_EX[x['slug']])} |")
+    R.append(f"| {NUM[x['slug']]} | {x['part']} | [{x['title']}](themes/{x['slug']}.md) | " + ", ".join(f"[{g_['title']}](themes/{gpage(x, g_)}.md)" for g_ in x["groups"]) + f" | {len(TH_EX[x['slug']])} |")
 R.append("")
 R += ["</div>", "", "## After the roadmap", "", "Objects and classes come next in most courses. There are no exercises for them here yet: follow your course or Microsoft Learn, and come back to the [cookbook](cookbook/README.md) when a method needs a loop.", "",
       "---", "", "[Home](../README.md) · Next: [Getting started](docs/getting-started.md)", ""]

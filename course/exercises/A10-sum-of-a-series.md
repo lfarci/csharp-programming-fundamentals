@@ -7,7 +7,7 @@ next:
   link: /exercises/A02-count-multiples-of-3
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A10
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops-add-up.md) › A10
 
 # A10 · Sum of a series
 

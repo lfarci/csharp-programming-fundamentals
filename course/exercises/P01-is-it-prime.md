@@ -7,7 +7,7 @@ next:
   link: /exercises/P02-primes-up-to-n
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops.md#search-and-combine) › P01
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops-search-and-combine.md) › P01
 
 # P01 · Is it prime?
 

@@ -7,7 +7,7 @@ next:
   link: /exercises/C01-even-or-odd
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [First programs](../themes/basics.md#first-programs) › B03
+[Home](../../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [First programs](../themes/basics-first-programs.md) › B03
 
 # B03 · Seconds to h, min, s
 

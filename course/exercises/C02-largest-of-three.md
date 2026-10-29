@@ -7,7 +7,7 @@ next:
   link: /exercises/C03-ticket-price
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [Conditions](../themes/basics.md#conditions) › C02
+[Home](../../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [Conditions](../themes/basics-conditions.md) › C02
 
 # C02 · Largest of three
 

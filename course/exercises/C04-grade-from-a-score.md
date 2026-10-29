@@ -7,7 +7,7 @@ next:
   link: /themes/loops
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [Conditions](../themes/basics.md#conditions) › C04
+[Home](../../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [Conditions](../themes/basics-conditions.md) › C04
 
 # C04 · Grade from a score
 

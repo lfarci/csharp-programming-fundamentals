@@ -7,7 +7,7 @@ next:
   link: /exercises/C02-largest-of-three
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [Conditions](../themes/basics.md#conditions) › C01
+[Home](../../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [Conditions](../themes/basics-conditions.md) › C01
 
 # C01 · Even or odd
 

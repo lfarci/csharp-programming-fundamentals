@@ -7,7 +7,7 @@ next:
   link: /exercises/L09-draw-a-row
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Until the user stops](../themes/loops.md#until-the-user-stops) › L08
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Until the user stops](../themes/loops-until-the-user-stops.md) › L08
 
 # L08 · Guess the number
 

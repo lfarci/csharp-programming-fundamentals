@@ -7,7 +7,7 @@ next:
   link: /exercises/G06-pyramid
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw shapes](../themes/loops.md#draw-shapes) › G05
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw shapes](../themes/loops-draw-shapes.md) › G05
 
 # G05 · Checkerboard
 

@@ -7,7 +7,7 @@ next:
   link: /exercises/G12-upside-down-triangle
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw shapes](../themes/loops.md#draw-shapes) › G11
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw shapes](../themes/loops-draw-shapes.md) › G11
 
 # G11 · Counting triangle
 

@@ -7,7 +7,7 @@ next:
   link: /exercises/A01-sum-1-to-n
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A11
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops-add-up.md) › A11
 
 # A11 · Arrange: sum of squares
 

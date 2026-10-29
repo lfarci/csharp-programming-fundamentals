@@ -7,7 +7,7 @@ next:
   link: /exercises/B02-rectangle-calculator
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [First programs](../themes/basics.md#first-programs) › B01
+[Home](../../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [First programs](../themes/basics-first-programs.md) › B01
 
 # B01 · Hello you
 

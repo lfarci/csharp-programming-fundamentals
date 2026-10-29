@@ -7,7 +7,7 @@ next:
   link: /exercises/E02-parse-or-zero
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Methods and errors](../themes/methods.md) › [Methods](../themes/methods.md#methods) › N01
+[Home](../../README.md) › [Exercises](README.md) › [Methods and errors](../themes/methods.md) › [Methods](../themes/methods-methods.md) › N01
 
 # N01 · Armstrong with methods
 
