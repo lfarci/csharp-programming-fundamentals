@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › G12
+[Home](../README.md) › [Exercises](README.md) › [Loops: draw in 2D](../themes/loops-2d.md) › G12
 
 # G12 · Upside-down triangle
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | easy | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [G02](G02-right-triangle.md), [L12](L12-count-down.md) | Custom |
+| Guided | easy | [Loops: draw in 2D](../themes/loops-2d.md) | [Nested grid](../cookbook/08-nested-grid.md) | [G02](G02-right-triangle.md), [L12](L12-count-down.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Print a triangle whose first row has `height` stars, then one less on each row.
 ./ex check G12     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** fill in this method in the file. The *parameters* are its input; what it **prints** is its result (it has no `return`).
 

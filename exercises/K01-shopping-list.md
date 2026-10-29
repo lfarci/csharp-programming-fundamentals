@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › K01
+[Home](../README.md) › [Exercises](README.md) › [Collections](../themes/collections.md) › K01
 
 # K01 · Shopping list
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | medium | 9 · Collections | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Array traversal](../cookbook/11-array-traversal.md) | [R01](R01-sum-an-array.md), [L05](L05-until-zero.md) | Custom |
+| Independent | medium | [Collections](../themes/collections.md) | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Array traversal](../cookbook/11-array-traversal.md) | [R01](R01-sum-an-array.md), [L05](L05-until-zero.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Read items until the user types `done`. Store them in a `List<string>`. Print th
 ./ex check K01     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 

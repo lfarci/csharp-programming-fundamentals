@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › L02
+[Home](../README.md) › [Exercises](README.md) › [Loops: repeat and count](../themes/loops-repeat.md) › L02
 
 # L02 · Boundaries: < or <= ? (paper)
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | easy | 4a · Repeat & count | [Counter loop](../cookbook/01-counter-loop.md) | [L01](L01-trace-a-loop.md) | Custom |
+| Guided | easy | [Loops: repeat and count](../themes/loops-repeat.md) | [Counter loop](../cookbook/01-counter-loop.md) | [L01](L01-trace-a-loop.md) | Custom |
 
 ## Goal
 

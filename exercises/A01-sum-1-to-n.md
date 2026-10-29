@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › A01
+[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A01
 
 # A01 · Sum from 1 to N
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | easy | 4b · Running result | [Counter loop](../cookbook/01-counter-loop.md), [Accumulator](../cookbook/02-accumulator.md) | [L03](L03-count-up-and-down.md) | Custom |
+| Guided | easy | [Loops: keep a running result](../themes/loops-running-result.md) | [Counter loop](../cookbook/01-counter-loop.md), [Accumulator](../cookbook/02-accumulator.md) | [L03](L03-count-up-and-down.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Give back the sum 1 + 2 + … + n.
 ./ex check A01     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
 

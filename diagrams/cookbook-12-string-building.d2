@@ -1,0 +1,16 @@
+# Diagram source. Render: tools/diagrams.sh
+...@_style
+direction: down
+
+A: "result = empty text" {class: step}
+B: "more characters?" {class: ask}
+C: "keep this one?" {class: ask}
+D: "result += character" {class: step}
+E: "print result" {class: step}
+
+A -> B
+B -> C: "yes"
+C -> D: "yes"
+C -> B: "no"
+D -> B
+B -> E: "no"

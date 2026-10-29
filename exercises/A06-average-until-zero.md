@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › A06
+[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A06
 
 # A06 · Average until zero
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | medium | 4b · Running result | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Accumulator](../cookbook/02-accumulator.md) | [L05](L05-until-zero.md), [A01](A01-sum-1-to-n.md) | Custom |
+| Independent | medium | [Loops: keep a running result](../themes/loops-running-result.md) | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Accumulator](../cookbook/02-accumulator.md) | [L05](L05-until-zero.md), [A01](A01-sum-1-to-n.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Read whole numbers until 0. Print their average. If no number was entered, print
 ./ex check A06     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 
@@ -83,7 +83,7 @@ Check `count == 0` **after** the loop.
 
 Solve this variation **alone**, on another day:
 
-Also print how many numbers were above the average. (Why is that hard without an array? → step 6!)
+Also print how many numbers were above the average. (Why is that hard without an array? You will see in the Arrays theme.)
 
 ## Solution
 

@@ -4,8 +4,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-dotnettools.csdevkit",
-        "bierner.markdown-mermaid"
+        "ms-dotnettools.csdevkit"
       ],
       "settings": {
         "workbench.startupEditor": "readme"

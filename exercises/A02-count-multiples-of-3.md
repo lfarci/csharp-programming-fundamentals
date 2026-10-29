@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › A02
+[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A02
 
 # A02 · Count multiples of 3
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | easy | 4b · Running result | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A01](A01-sum-1-to-n.md), [C01](C01-even-or-odd.md) | Custom |
+| Guided | easy | [Loops: keep a running result](../themes/loops-running-result.md) | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A01](A01-sum-1-to-n.md), [C01](C01-even-or-odd.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Count how many numbers from 1 to n (included) are divisible by 3.
 ./ex check A02     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
 

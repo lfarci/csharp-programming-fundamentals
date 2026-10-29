@@ -9,30 +9,7 @@ Hard exercises are just **small recipes glued together**. The skill is to **cut*
 > A number is an *Armstrong number* if it equals the sum of its digits, each raised to the power **number of digits**.
 > 153 → 3 digits → 1³ + 5³ + 3³ = 1 + 125 + 27 = **153** (yes) · 154 → 1 + 125 + 64 = 190 (no)
 
-```mermaid
-flowchart TD
-    accTitle: Armstrong check for 153
-    accDescr: Armstrong check for n equal to 153. Step 1 counts the digits: 3. Step 2 takes each digit: 3, then 5, then 1. Step 3 raises each digit to the power 3 with a product. Step 4 adds the powers: 27 plus 125 plus 1 is 153. Step 5 compares the sum with n: equal means Armstrong, different means not Armstrong.
-    N["n = 153"] --> STEP1
-    subgraph STEP1["① Count the digits · recipe 6 + counter"]
-        C1["digits = 3"]
-    end
-    STEP1 --> STEP2
-    subgraph STEP2["② For each digit · recipe 6"]
-        D1["digit = 3, then 5, then 1"]
-        subgraph STEP3["③ Power · recipe 2 (product)"]
-            P1["power = digit × digit × digit"]
-        end
-        D1 --> STEP3
-    end
-    STEP2 --> STEP4
-    subgraph STEP4["④ Add the powers · recipe 2 (sum)"]
-        S1["sum = 27 + 125 + 1 = 153"]
-    end
-    STEP4 --> STEP5{"⑤ Compare<br/>sum == n ?"}
-    STEP5 -- yes --> Y["Armstrong "]
-    STEP5 -- no --> X["not Armstrong "]
-```
+![Armstrong check for 153. Armstrong check for n equal to 153. Step 1 counts the digits: 3. Step 2 takes each digit: 3, then 5, then 1. Step 3 raises each digit to the power 3 with a product. Step 4 adds the powers: 27 plus 125 plus 1 is 153. Step 5 compares the sum with n: equal means Armstrong, different means not Armstrong.](../diagrams/cookbook-combining-recipes-1.svg)
 
 **The 4 building blocks, each one practised alone first:**
 
@@ -108,12 +85,7 @@ Trace table for 153 (`digits` = 3):
 | Is this candidate prime? | [5 · flag / search](05-flag-search.md) (inner) |
 | Print it / count it | `if (isPrime)` + [2 · counter](02-accumulator.md) |
 
-```mermaid
-flowchart LR
-    accTitle: All primes up to N
-    accDescr: An outer counter loop runs candidate from 2 to N. Inside, a flag search checks if the candidate is prime. If it is, print it and add 1 to a count.
-    O["outer: candidate = 2..N<br/>recipe 1"] --> I["inner: is it prime?<br/>recipe 5 (flag)"] --> P["if isPrime: print<br/>count++ (recipe 2)"]
-```
+![All primes up to N. An outer counter loop runs candidate from 2 to N. Inside, a flag search checks if the candidate is prime. If it is, print it and add 1 to a count.](../diagrams/cookbook-combining-recipes-2.svg)
 
 ## Example 4 · Project Euler #1 (multiples of 3 or 5 below 1000)
 
@@ -129,7 +101,7 @@ Counter loop 1..999 + filter `i % 3 == 0 || i % 5 == 0` + sum = [recipe 3](03-co
 2. Next to each line, write the recipe name.
 3. Code and test **one block at a time** (print intermediate values!).
 4. Glue the blocks. Re-test with the tiny example.
-5. Later (week 10): turn each block into a **method**.
+5. Later (theme 15, Methods): turn each block into a **method**.
 
 ---
 

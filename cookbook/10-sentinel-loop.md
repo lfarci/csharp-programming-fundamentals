@@ -1,4 +1,4 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 10 · Sentinel loop
+[Home](../README.md) › [Cookbook](README.md) › Recipe 10 · Sentinel loop
 
 # Recipe 10 · Sentinel loop — "stop when the user types 0"
 
@@ -71,16 +71,7 @@ Trigger words: **"until the user enters 0"**, **"enter -1 to stop"**, **"until a
 You don't know how many values will come, so `for` does not fit. Use `while (true)` + `break`, or "read before the loop, read again at the end".
 Combine it with any other recipe: count, sum, average, min/max…
 
-```mermaid
-flowchart TD
-    accTitle: Sentinel loop
-    accDescr: Start the boxes at 0. Read a value. If it is 0, the sentinel, stop and use the boxes. Otherwise update the boxes and read the next value.
-    A["boxes: count = 0, sum = 0"] --> B["read a value"]
-    B --> C{"value == 0 ?<br/>(sentinel)"}
-    C -- yes --> E["stop: use the boxes"]
-    C -- no --> D["count++<br/>sum += value"]
-    D --> B
-```
+![Sentinel loop. Start the boxes at 0. Read a value. If it is 0, the sentinel, stop and use the boxes. Otherwise update the boxes and read the next value.](../diagrams/cookbook-10-sentinel-loop.svg)
 
 ### Template
 

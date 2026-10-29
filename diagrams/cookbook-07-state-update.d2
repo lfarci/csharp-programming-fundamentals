@@ -1,0 +1,14 @@
+# Diagram source. Render: tools/diagrams.sh
+...@_style
+direction: right
+
+P1: "previous = 2" {class: step}
+C1: "current = 3" {class: step}
+P2: "previous = 3" {class: step}
+C2: "current = 5" {class: step}
+N: "next = 2 + 3 = 5" {class: step}
+
+P1 -> N: "+"
+C1 -> N: "+"
+C1 -> P2: "slides to"
+N -> C2: "slides to"

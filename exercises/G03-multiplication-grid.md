@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › G03
+[Home](../README.md) › [Exercises](README.md) › [Loops: draw in 2D](../themes/loops-2d.md) › G03
 
 # G03 · Multiplication grid
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | medium | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [G01](G01-rectangle.md), [L04](L04-multiplication-table.md), [G14](G14-numbers-in-columns.md) | Custom |
+| Independent | medium | [Loops: draw in 2D](../themes/loops-2d.md) | [Nested grid](../cookbook/08-nested-grid.md) | [G01](G01-rectangle.md), [L04](L04-multiplication-table.md), [G14](G14-numbers-in-columns.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Print an n×n grid where the cell at row `r` and column `c` contains `r × c`. E
 ./ex check G03     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** fill in this method in the file. The *parameters* are its input; what it **prints** is its result (it has no `return`).
 

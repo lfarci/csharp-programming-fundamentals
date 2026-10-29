@@ -1,0 +1,24 @@
+# Diagram source. Render: tools/diagrams.sh
+...@_style
+direction: down
+
+A: "row = 1" {class: step}
+B: "row <= height ?" {class: ask}
+C: "col = 1" {class: step}
+D: "col <= width ?" {class: ask}
+E: "Console.Write('*')" {class: step}
+F: "col++" {class: step}
+G: "Console.WriteLine()\nnew line" {class: step}
+H: "row++" {class: step}
+I: "picture done" {class: end}
+
+A -> B
+B -> C: "yes"
+C -> D
+D -> E: "yes"
+E -> F
+F -> D
+D -> G: "no"
+G -> H
+H -> B
+B -> I: "no"

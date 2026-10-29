@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › D12
+[Home](../README.md) › [Exercises](README.md) › [Loops: take digits apart](../themes/loops-digits.md) › D12
 
 # D12 · Product of the digits
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | easy | 4d · Digits | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [D04](D04-digit-sum.md) | Custom |
+| Guided | easy | [Loops: take digits apart](../themes/loops-digits.md) | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [D04](D04-digit-sum.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Give back the product of the digits of n (n > 0): 234 → 2 × 3 × 4 = 24.
 ./ex check D12     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
 

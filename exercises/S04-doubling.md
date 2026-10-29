@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › S04
+[Home](../README.md) › [Exercises](README.md) › [Loops: remember changing values](../themes/loops-state.md) › S04
 
 # S04 · Doubling
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | easy | 4d · State | [State update](../cookbook/07-state-update.md) | [L11](L11-count-from-a-to-b.md) | Custom |
+| Guided | easy | [Loops: remember changing values](../themes/loops-state.md) | [State update](../cookbook/07-state-update.md) | [L11](L11-count-from-a-to-b.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Print `count` values: `start`, then each value doubled (`3, 6, 12`).
 ./ex check S04     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** fill in this method in the file. The *parameters* are its input; what it **prints** is its result (it has no `return`).
 

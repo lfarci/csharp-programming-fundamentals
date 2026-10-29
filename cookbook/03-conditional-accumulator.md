@@ -1,4 +1,4 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 3 · Conditional accumulator
+[Home](../README.md) › [Cookbook](README.md) › Recipe 3 · Conditional accumulator
 
 # Recipe 3 · Conditional accumulator — filter, then accumulate
 
@@ -66,17 +66,7 @@ Pattern of the sentence: *"sum / count the X **that** Y"* → the *that* part is
 
 Every value is **visited**, but only the ones that pass the **filter** change the box.
 
-```mermaid
-flowchart TD
-    accTitle: Conditional accumulator
-    accDescr: Set count to 0. For each value, test the filter. If it passes, update the box. Either way, go to the next value. At the end, use the box.
-    A["count = 0"] --> B{"more values?"}
-    B -- yes --> C{"value passes<br/>the filter?"}
-    C -- yes --> D["count++ / sum += value"]
-    C -- no --> B
-    D --> B
-    B -- no --> E["print the box"]
-```
+![Conditional accumulator. Set count to 0. For each value, test the filter. If it passes, update the box. Either way, go to the next value. At the end, use the box.](../diagrams/cookbook-03-conditional-accumulator.svg)
 
 Useful filters (using `%`, the remainder):
 

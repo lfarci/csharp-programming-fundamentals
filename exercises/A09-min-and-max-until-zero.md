@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › A09
+[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A09
 
 # A09 · Smallest and largest until zero
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | medium | 4b · Running result | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Min/max](../cookbook/04-min-max.md) | [A06](A06-average-until-zero.md), [C02](C02-largest-of-three.md) | Custom |
+| Independent | medium | [Loops: keep a running result](../themes/loops-running-result.md) | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Min/max](../cookbook/04-min-max.md) | [A06](A06-average-until-zero.md), [C02](C02-largest-of-three.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Read whole numbers until 0. Print the smallest and the largest. If no number was
 ./ex check A09     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 

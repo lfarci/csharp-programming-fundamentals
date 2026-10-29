@@ -1,4 +1,4 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 6 · Digit extraction
+[Home](../README.md) › [Cookbook](README.md) › Recipe 6 · Digit extraction
 
 # Recipe 6 · Digit extraction — `% 10` and `/ 10`
 
@@ -64,7 +64,7 @@ Any time you must look at the digits of an `int` **without** turning it into tex
 
 ### The idea
 
-Two tools from step 2 (variables & expressions):
+Two tools from the Variables and expressions theme:
 
 | Expression | Meaning | 352 gives |
 | --- | --- | ---: |
@@ -74,17 +74,7 @@ Two tools from step 2 (variables & expressions):
 At every step: **old number = remaining part × 10 + last digit** (352 = 35 × 10 + 2).
 Digits come out **right to left**: 2, then 5, then 3.
 
-```mermaid
-flowchart TD
-    accTitle: Digit extraction
-    accDescr: Copy n into remaining. While remaining is above 0: digit is remaining modulo 10, use the digit, then divide remaining by 10. When remaining is 0, stop.
-    A["remaining = n<br/>(work on a COPY)"] --> B{"remaining #gt; 0 ?"}
-    B -- yes --> C["digit = remaining % 10"]
-    C --> D["use digit<br/>(count it, add it, …)"]
-    D --> E["remaining = remaining / 10"]
-    E --> B
-    B -- no --> F["use the result"]
-```
+![Digit extraction. Copy n into remaining. While remaining is above 0: digit is remaining modulo 10, use the digit, then divide remaining by 10. When remaining is 0, stop.](../diagrams/cookbook-06-digit-extraction.svg)
 
 We use `while`, because we do not know the number of digits in advance.
 

@@ -1,4 +1,4 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 2 · Accumulator
+[Home](../README.md) › [Cookbook](README.md) › Recipe 2 · Accumulator
 
 # Recipe 2 · Accumulator — sum, count, product
 
@@ -85,15 +85,7 @@ The box means: *"the result for everything I have seen so far"*.
 
 Why does a product start at **1**? Because 0 × anything = 0. 1 is the "neutral" number for ×, like 0 is for +.
 
-```mermaid
-flowchart TD
-    accTitle: Accumulator
-    accDescr: Set sum to 0 before the loop. While there are more values, add the value to sum. When there are no more values, print sum after the loop.
-    A["sum = 0<br/>(BEFORE the loop)"] --> B{"more values?"}
-    B -- yes --> C["sum = sum + value"]
-    C --> B
-    B -- no --> D["print sum<br/>(AFTER the loop)"]
-```
+![Accumulator. Set sum to 0 before the loop. While there are more values, add the value to sum. When there are no more values, print sum after the loop.](../diagrams/cookbook-02-accumulator.svg)
 
 ### Template
 

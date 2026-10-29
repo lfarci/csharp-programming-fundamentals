@@ -1,0 +1,15 @@
+# Diagram source. Render: tools/diagrams.sh
+...@_style
+direction: down
+
+A: "ask for a number" {class: step}
+B: "read the text" {class: step}
+C: "is it a number\nAND in range?" {class: ask}
+D: "print an error message" {class: step}
+E: "use the number " {class: step}
+
+A -> B
+B -> C
+C -> D: "no"
+D -> A
+C -> E: "yes"

@@ -1,6 +1,5 @@
 // Website built from the repo Markdown (single source). Preview: npm run docs:dev
 import { defineConfig } from 'vitepress'
-import { withMermaid } from 'vitepress-plugin-mermaid'
 import fs from 'node:fs'
 import path from 'node:path'
 import course from './course.json' with { type: 'json' }
@@ -8,7 +7,7 @@ import course from './course.json' with { type: 'json' }
 const REPO = 'https://github.com/lfarci/csharp-programming-fundamentals'
 const ROOT = path.resolve(__dirname, '..')
 // Not part of the site (machinery, agent notes). Links to them go to GitHub.
-const EXCLUDE = ['node_modules/**', 'tools/**', 'tests/**', '.agents/**', '.github/**', 'AGENTS.md', 'CLAUDE.md',
+const EXCLUDE = ['README.md', 'node_modules/**', 'diagrams/**', 'public/**', 'tools/**', 'tests/**', '.agents/**', '.github/**', 'AGENTS.md', 'CLAUDE.md',
   'practice/PROGRESS.md', 'docs/writing-guide.md', 'docs/learner-persona.md']
 const excluded = (rel: string) =>
   EXCLUDE.some((g) => (g.endsWith('/**') ? rel.startsWith(g.slice(0, -2)) : rel === g))
@@ -22,6 +21,11 @@ function githubLinks(md: any) {
     if (href && !/^[a-z]+:|^#|^\//i.test(href) && env.relativePath) {
       const [file, hash] = href.split('#')
       let rel = path.posix.normalize(path.posix.join(path.posix.dirname(env.relativePath), decodeURI(file)))
+      // The repo README is the GitHub front page; on the site, "Home" is home.md (the site root).
+      if (rel === 'README.md') {
+        t.attrSet('href', '/' + (hash ? '#' + hash : ''))
+        return base ? base(tokens, idx, opts, env, self) : self.renderToken(tokens, idx, opts)
+      }
       const abs = path.join(ROOT, rel)
       if (fs.existsSync(abs) && fs.statSync(abs).isDirectory()) {
         if (fs.existsSync(path.join(abs, 'README.md')) && !excluded(rel + '/README.md')) {
@@ -38,17 +42,21 @@ function githubLinks(md: any) {
   }
 }
 
-// Sidebar: exercises grouped by roadmap step, in course order.
-const steps: Record<string, any[]> = {}
-for (const e of course.exercises) (steps[e.step] ??= []).push({ text: `${e.id} ${e.title}`, link: e.link })
+// Sidebar: one Exercises section, one sub-section per theme (in course order). Titles only; the ID is small.
+const themeItems = course.themes.map((t) => ({
+  text: t.title, collapsed: true, link: t.link,
+  items: course.exercises.filter((e) => e.theme === t.slug)
+    .map((e) => ({ text: `${e.title} <span class="sb-id">${e.id}</span>`, link: e.link })),
+}))
 
-export default withMermaid(defineConfig({
-  title: 'C# Programming Fundamentals',
+export default defineConfig({
+  title: 'C# Fundamentals',
+  head: [['link', { rel: 'icon', href: 'data:,' }]],
   description: 'Loops, step by step: recipes, exercises and drills for beginners.',
   base: '/csharp-programming-fundamentals/',
   srcDir: '.',
   srcExclude: EXCLUDE,
-  rewrites: { 'README.md': 'index.md', ':dir/README.md': ':dir/index.md' },
+  rewrites: { 'home.md': 'index.md', ':dir/README.md': ':dir/index.md' },
   cleanUrls: true,
   lastUpdated: false,
   ignoreDeadLinks: false,
@@ -58,6 +66,7 @@ export default withMermaid(defineConfig({
       { text: 'Start here', link: '/docs/getting-started' },
       { text: 'Roadmap', link: '/ROADMAP' },
       { text: 'Exercises', link: '/exercises/' },
+      { text: 'Cookbook', link: '/cookbook/' },
       { text: 'My progress', link: '/progress' },
     ],
     search: { provider: 'local' },
@@ -69,27 +78,29 @@ export default withMermaid(defineConfig({
       { text: 'Start here', items: [
         { text: 'Home', link: '/' },
         { text: 'Getting started', link: '/docs/getting-started' },
-        { text: 'How to read an exercise', link: '/docs/reading-an-exercise' },
-        { text: 'Problem solving', link: '/docs/problem-solving' },
-        { text: 'Glossary', link: '/docs/glossary' },
+        { text: 'Roadmap', link: '/ROADMAP' },
+        { text: 'My progress', link: '/progress' },
       ] },
-      { text: 'Roadmap', items: [{ text: 'The plan, week by week', link: '/ROADMAP' }, { text: 'My progress', link: '/progress' }] },
-      { text: 'Drill sets', items: [{ text: 'Same pattern, many times', link: '/exercises/#drill-sets-same-pattern-many-times' }] },
-      { text: 'Exercises', collapsed: false, items: [
+      { text: 'Exercises', items: [
         { text: 'All exercises', link: '/exercises/' },
-        ...Object.entries(steps).map(([s, items]) => ({ text: `Step ${s}`, collapsed: true, items })),
+        { text: 'Drill sets', link: '/exercises/#drill-sets-same-pattern-many-times' },
+        ...themeItems,
       ] },
       { text: 'Cookbook', collapsed: true, items: [
         { text: 'All recipes', link: '/cookbook/' },
-        ...fs.readdirSync(path.join(ROOT, 'cookbook')).filter((f) => f !== 'README.md' && f.endsWith('.md')).sort()
-          .map((f) => ({ text: fs.readFileSync(path.join(ROOT, 'cookbook', f), 'utf8').match(/^# (.+)$/m)?.[1] ?? f,
+        { text: 'Which loop should I use?', link: '/cookbook/which-loop' },
+        ...fs.readdirSync(path.join(ROOT, 'cookbook')).filter((f) => /^\d\d-.*\.md$/.test(f)).sort()
+          .map((f) => ({ text: fs.readFileSync(path.join(ROOT, 'cookbook', f), 'utf8').match(/^# Recipe \d+ · ([^—\n]+)/m)?.[1].trim() ?? f,
             link: `/cookbook/${f.replace(/\.md$/, '')}` })),
+        { text: 'Combining recipes', link: '/cookbook/combining-recipes' },
+        { text: 'The maths', link: '/cookbook/the-maths' },
       ] },
-      { text: 'How to practice', items: [
+      { text: 'How to learn', items: [
+        { text: 'How to read an exercise', link: '/docs/reading-an-exercise' },
+        { text: 'Solving a problem', link: '/docs/problem-solving' },
         { text: 'How to practice', link: '/docs/how-to-practice' },
-        { text: 'Progress checklist (paper)', link: '/docs/progress-checklist' },
+        { text: 'Glossary', link: '/docs/glossary' },
       ] },
     ],
   },
-  mermaid: {},
-}))
+})

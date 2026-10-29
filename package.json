@@ -5,11 +5,11 @@
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "test:site": "playwright test"
   },
   "devDependencies": {
-    "mermaid": "11.17.2",
-    "vitepress": "1.6.4",
-    "vitepress-plugin-mermaid": "2.0.17"
+    "@playwright/test": "1.64.1",
+    "vitepress": "1.6.4"
   }
 }

@@ -1,4 +1,4 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 8 · Nested loops
+[Home](../README.md) › [Cookbook](README.md) › Recipe 8 · Nested loops
 
 # Recipe 8 · Nested loops — draw 2D grids
 
@@ -72,21 +72,7 @@ Trigger words: **"draw"**, **"rectangle"**, **"triangle"**, **"pyramid"**, **"gr
 - The **inner** loop walks along that row: `col`, printing **without** a newline (`Console.Write`).
 - **After** the inner loop: one `Console.WriteLine()` to go to the next line.
 
-```mermaid
-flowchart TD
-    accTitle: Nested grid
-    accDescr: Outer loop on row from 1 to height. For each row, inner loop on col from 1 to width prints one character. After the inner loop, go to a new line and add 1 to row.
-    A["row = 1"] --> B{"row #lt;= height ?"}
-    B -- yes --> C["col = 1"]
-    C --> D{"col #lt;= width ?"}
-    D -- yes --> E["Console.Write('*')"]
-    E --> F["col++"]
-    F --> D
-    D -- no --> G["Console.WriteLine()<br/>new line"]
-    G --> H["row++"]
-    H --> B
-    B -- no --> I(["picture done"])
-```
+![Nested grid. Outer loop on row from 1 to height. For each row, inner loop on col from 1 to width prints one character. After the inner loop, go to a new line and add 1 to row.](../diagrams/cookbook-08-nested-grid.svg)
 
 **The secret:** the shape is decided by **what the inner loop does in row `row`**. Write a small table "row → what is printed" before coding:
 

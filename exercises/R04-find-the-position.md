@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › R04
+[Home](../README.md) › [Exercises](README.md) › [Arrays and text](../themes/arrays.md) › R04
 
 # R04 · Find the position
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | medium | 6 · Arrays | [Array traversal](../cookbook/11-array-traversal.md), [Flag/search](../cookbook/05-flag-search.md) | [R03](R03-count-matches.md) | Custom |
+| Independent | medium | [Arrays and text](../themes/arrays.md) | [Array traversal](../cookbook/11-array-traversal.md), [Flag/search](../cookbook/05-flag-search.md) | [R03](R03-count-matches.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Give back the **first** index where `target` is, or -1 if it is not in the array
 ./ex check R04     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
 

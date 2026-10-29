@@ -1,4 +1,4 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 12 · Build a string
+[Home](../README.md) › [Cookbook](README.md) › Recipe 12 · Build a string
 
 # Recipe 12 · Build a string — traverse text, keep a result
 
@@ -95,17 +95,7 @@ Two kinds of result:
 | how many letters…? | `count = 0` | `if (c == 'a') count++;` |
 | a new text | `result = ""` | `if (keep) result += c;` |
 
-```mermaid
-flowchart TD
-    accTitle: Build a string
-    accDescr: Start with empty text. For each character, decide whether to keep it. If yes, add it to the result. At the end, print the result.
-    A["result = empty text"] --> B{"more characters?"}
-    B -- yes --> C{"keep this one?"}
-    C -- yes --> D["result += character"]
-    C -- no --> B
-    D --> B
-    B -- no --> E["print result"]
-```
+![Build a string. Start with empty text. For each character, decide whether to keep it. If yes, add it to the result. At the end, print the result.](../diagrams/cookbook-12-string-building.svg)
 
 ### Template
 

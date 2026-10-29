@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › D11
+[Home](../README.md) › [Exercises](README.md) › [Loops: take digits apart](../themes/loops-digits.md) › D11
 
 # D11 · Largest digit
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | medium | 4d · Digits | [Digit extraction](../cookbook/06-digit-extraction.md), [Min/max](../cookbook/04-min-max.md) | [D04](D04-digit-sum.md), [C02](C02-largest-of-three.md) | Custom |
+| Independent | medium | [Loops: take digits apart](../themes/loops-digits.md) | [Digit extraction](../cookbook/06-digit-extraction.md), [Min/max](../cookbook/04-min-max.md) | [D04](D04-digit-sum.md), [C02](C02-largest-of-three.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Give back the largest digit of n (n > 0).
 ./ex check D11     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
 

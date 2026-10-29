@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › L16
+[Home](../README.md) › [Exercises](README.md) › [Loops: repeat and count](../themes/loops-repeat.md) › L16
 
 # L16 · Odd numbers
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | easy | 4a · Repeat & count | [Counter loop](../cookbook/01-counter-loop.md) | [L11](L11-count-from-a-to-b.md) | Custom |
+| Guided | easy | [Loops: repeat and count](../themes/loops-repeat.md) | [Counter loop](../cookbook/01-counter-loop.md) | [L11](L11-count-from-a-to-b.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Print the odd numbers 1, 3, 5, … up to n, one per line.
 ./ex check L16     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** fill in this method in the file. The *parameters* are its input; what it **prints** is its result (it has no `return`).
 

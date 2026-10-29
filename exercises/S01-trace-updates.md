@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › S01
+[Home](../README.md) › [Exercises](README.md) › [Loops: remember changing values](../themes/loops-state.md) › S01
 
 # S01 · Trace two changing variables (paper)
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | easy | 4d · State | [State update](../cookbook/07-state-update.md) | [L01](L01-trace-a-loop.md) | Custom |
+| Guided | easy | [Loops: remember changing values](../themes/loops-state.md) | [State update](../cookbook/07-state-update.md) | [L01](L01-trace-a-loop.md) | Custom |
 
 ## Goal
 

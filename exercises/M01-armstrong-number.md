@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › M01
+[Home](../README.md) › [Exercises](README.md) › [Combine recipes](../themes/combine.md) › M01
 
 # M01 · Armstrong number
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Challenge | hard | 4 · Combine | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [D03](D03-count-digits.md), [D04](D04-digit-sum.md), [A07](A07-integer-power.md) | Custom · teacher topic: Armstrong |
+| Challenge | hard | [Combine recipes](../themes/combine.md) | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [D03](D03-count-digits.md), [D04](D04-digit-sum.md), [A07](A07-integer-power.md) | Custom · teacher topic: Armstrong |
 
 ## Goal
 
@@ -17,7 +17,7 @@ An Armstrong number equals the sum of its digits, each raised to the power **num
 ./ex check M01     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
 

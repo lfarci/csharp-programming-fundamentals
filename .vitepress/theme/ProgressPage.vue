@@ -7,11 +7,10 @@ import { done, encode, exportJson, importText, load, setDone, storageOk } from '
 onMounted(load)
 const all = course.exercises
 const count = computed(() => all.filter((e) => done.value[e.id]).length)
-const steps = computed(() => {
-  const m = new Map<string, typeof all>()
-  for (const e of all) m.set(e.step, [...(m.get(e.step) ?? []), e])
-  return [...m].map(([step, list]) => ({ step, list, n: list.filter((e) => done.value[e.id]).length }))
-})
+const themes = computed(() => course.themes.map((t) => {
+  const list = all.filter((e) => e.theme === t.slug)
+  return { theme: t.title, link: t.link, list, n: list.filter((e) => done.value[e.id]).length }
+}))
 const drills = computed(() => course.drillSets.map((d) => ({ ...d, n: d.ids.filter((id) => done.value[id]).length })))
 const next = computed(() => all.find((e) => !done.value[e.id]))
 const byId = Object.fromEntries(all.map((e) => [e.id, e]))
@@ -45,12 +44,12 @@ function copy() { navigator.clipboard?.writeText(code.value); message.value = 'S
     <p v-else>Everything is done. Well done.</p>
     <p v-if="!storageOk" class="warn">This browser does not let the site save progress. Export a backup before you close the tab.</p>
 
-    <h2 id="by-roadmap-step">By roadmap step</h2>
+    <h2 id="by-theme">By theme</h2>
     <table>
-      <thead><tr><th>Step</th><th>Done</th><th>Exercises</th></tr></thead>
+      <thead><tr><th>Theme</th><th>Done</th><th>Exercises</th></tr></thead>
       <tbody>
-        <tr v-for="s in steps" :key="s.step">
-          <td>{{ s.step }}</td><td>{{ s.n }} of {{ s.list.length }}</td>
+        <tr v-for="s in themes" :key="s.theme">
+          <td><a :href="withBase(s.link)">{{ s.theme }}</a></td><td>{{ s.n }} of {{ s.list.length }}</td>
           <td><span v-for="e in s.list" :key="e.id" class="chip" :class="{ on: done[e.id] }">
             <a :href="withBase(e.link)" :title="e.title">{{ e.id }}</a>{{ done[e.id] ? ' done' : '' }}</span></td>
         </tr>

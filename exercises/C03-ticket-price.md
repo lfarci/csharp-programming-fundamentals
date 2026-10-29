@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › C03
+[Home](../README.md) › [Exercises](README.md) › [Conditions](../themes/conditions.md) › C03
 
 # C03 · Ticket price
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | medium | 3 · Conditions | — | [C01](C01-even-or-odd.md) | Custom |
+| Independent | medium | [Conditions](../themes/conditions.md) | — | [C01](C01-even-or-odd.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ A cinema ticket costs 5 for children under 12, 7 for people aged 65 or more, and
 ./ex check C03     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
 
@@ -46,7 +46,7 @@ Your method must give these results. `./ex check` tests all of them.
 
 ## Before coding
 
-Fill the [reading worksheet](../docs/reading-an-exercise.md#4-the-worksheet-copy-it): what goes in? what comes out? a tiny example by hand?
+Fill the [reading worksheet](../docs/reading-an-exercise.md#the-template): what goes in? what comes out? a tiny example by hand?
 
 ## Hints (open one at a time)
 

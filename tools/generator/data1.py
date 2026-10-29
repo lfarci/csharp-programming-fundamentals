@@ -1,7 +1,7 @@
 E = []
 def ex(**k): E.append(k)
 
-ex(id="B01", slug="hello-you", title="Hello you", level="Guided", stars=1, step="1 · Hello World", recipes=[], pre=[],
+ex(id="B01", slug="hello-you", title="Hello you", level="Guided", stars=1, theme="hello-world", recipes=[], pre=[],
    goal="Ask the user for their name and greet them.",
    examples=[(["Ada"], ["Hello, Ada!"]), (["Sam"], ["Hello, Sam!"])],
    edge=["An empty name: what does your program print? (`Hello, !` is OK for now.)"],
@@ -14,7 +14,7 @@ string name = Console.ReadLine()!;
 Console.WriteLine($"Hello, {name}!");
 ''')
 
-ex(id="B02", slug="rectangle-calculator", title="Rectangle calculator", level="Guided", stars=1, step="2 · Variables & expressions", recipes=[], pre=["B01"],
+ex(id="B02", slug="rectangle-calculator", title="Rectangle calculator", level="Guided", stars=1, theme="variables", recipes=[], pre=["B01"],
    goal="Read the width and the height of a rectangle (whole numbers). Print its area and its perimeter.",
    examples=[(["4","3"], ["Area: 12","Perimeter: 14"]), (["5","5"], ["Area: 25","Perimeter: 20"])],
    edge=["A width of 0 gives an area of 0."],
@@ -34,7 +34,7 @@ Console.WriteLine($"Area: {area}");
 Console.WriteLine($"Perimeter: {perimeter}");
 ''')
 
-ex(id="B03", slug="seconds-to-hms", title="Seconds to hours, minutes, seconds", level="Independent", stars=2, step="2 · Variables & expressions", recipes=[], pre=["B02"],
+ex(id="B03", slug="seconds-to-hms", title="Seconds to hours, minutes, seconds", level="Independent", stars=2, theme="variables", recipes=[], pre=["B02"],
    goal="Read a number of seconds. Print it as hours, minutes and seconds. This trains `/` and `%`, the key tools of the digit recipe later.",
    examples=[(["3725"], ["1 h 2 min 5 s"]), (["59"], ["0 h 0 min 59 s"]), (["7200"], ["2 h 0 min 0 s"])],
    edge=["0 seconds → `0 h 0 min 0 s`."],
@@ -54,7 +54,7 @@ int seconds = rest % 60;
 Console.WriteLine($"{hours} h {minutes} min {seconds} s");
 ''')
 
-ex(id="C01", slug="even-or-odd", title="Even or odd", level="Guided", stars=1, step="3 · Conditions", recipes=[], pre=["B02"],
+ex(id="C01", slug="even-or-odd", title="Even or odd", level="Guided", stars=1, theme="conditions", recipes=[], pre=["B02"],
    goal="Read a whole number and say if it is even or odd.",
    examples=[(["7"], ["7 is odd"]), (["0"], ["0 is even"]), (["-4"], ["-4 is even"])],
    edge=["0 is even.", "Negative numbers: `-3 % 2` is `-1`, not `1`!"],
@@ -75,7 +75,7 @@ else
 }
 ''')
 
-ex(id="C02", slug="largest-of-three", title="Largest of three", level="Independent", stars=2, step="3 · Conditions", recipes=["04"], pre=["C01"],
+ex(id="C02", slug="largest-of-three", title="Largest of three", level="Independent", stars=2, theme="conditions", recipes=["04"], pre=["C01"],
    goal="Read three whole numbers and print the largest one.",
    examples=[(["3","9","5"], ["Largest: 9"]), (["-1","-7","-3"], ["Largest: -1"]), (["4","4","2"], ["Largest: 4"])],
    edge=["Two equal values.", "All negative values."],
@@ -104,7 +104,7 @@ if (c > largest)
 Console.WriteLine($"Largest: {largest}");
 ''')
 
-ex(id="C03", slug="ticket-price", title="Ticket price", level="Independent", stars=2, step="3 · Conditions", recipes=[], pre=["C01"],
+ex(id="C03", slug="ticket-price", title="Ticket price", level="Independent", stars=2, theme="conditions", recipes=[], pre=["C01"],
    goal="A cinema ticket costs 5 for children under 12, 7 for people aged 65 or more, and 10 for everyone else. Read an age and print the price.",
    examples=[(["11"], ["Price: 5"]), (["12"], ["Price: 10"]), (["64"], ["Price: 10"]), (["65"], ["Price: 7"])],
    edge=["The boundaries 11/12 and 64/65: test them all!"],
@@ -132,7 +132,7 @@ else
 Console.WriteLine($"Price: {price}");
 ''')
 
-ex(id="L01", slug="trace-a-loop", title="Trace a loop (paper)", level="Guided", stars=1, step="4a · Repeat & count", recipes=["01"], pre=["C01"], paper=True,
+ex(id="L01", slug="trace-a-loop", title="Trace a loop (paper)", level="Guided", stars=1, theme="loops-repeat", recipes=["01"], pre=["C01"], paper=True,
    goal="Without running it, predict the output of this loop and fill a trace table.\n\n```csharp\nfor (int i = 2; i <= 8; i += 2)\n{\n    Console.WriteLine(i);\n}\n```\n\nTable columns: `turn`, `i at start`, `i <= 8?`, `output`, `i after step`.",
    examples=[], edge=["What is the value of `i` when the loop stops? Is it printed?"],
    constraints=["Paper and pen only. Run the code **after** to check."],
@@ -151,7 +151,7 @@ Output: `2 4 6 8` (one per line). The loop stops with `i = 10`, which is **not**
 
 Mastery check: `10 7 4 1` (then `i = -2`, test `-2 > 0` is false).""")
 
-ex(id="L02", slug="boundaries", title="Boundaries: < or <= ? (paper)", level="Guided", stars=1, step="4a · Repeat & count", recipes=["01"], pre=["L01"], paper=True,
+ex(id="L02", slug="boundaries", title="Boundaries: < or <= ? (paper)", level="Guided", stars=1, theme="loops-repeat", recipes=["01"], pre=["L01"], paper=True,
    goal="How many times does each loop run? What is the last value printed? Answer on paper first.\n\n```csharp\nfor (int i = 1; i < 5; i++) Console.WriteLine(i);   // loop A\nfor (int i = 1; i <= 5; i++) Console.WriteLine(i);  // loop B\nfor (int i = 0; i < 5; i++) Console.WriteLine(i);   // loop C\nfor (int i = 5; i >= 1; i--) Console.WriteLine(i);  // loop D\nint k = 10;\nwhile (k < 5) { Console.WriteLine(k); k++; }         // loop E\n```",
    examples=[], edge=["Loop E: can a loop run zero times?"],
    constraints=["Paper first. Then run to check."],
@@ -168,7 +168,7 @@ ex(id="L02", slug="boundaries", title="Boundaries: < or <= ? (paper)", level="Gu
 
 Rule of thumb: `for (int i = 0; i < n; i++)` and `for (int i = 1; i <= n; i++)` both run **n** times.""")
 
-ex(id="L03", slug="count-up-and-down", title="Count up and down", level="Guided", stars=1, step="4a · Repeat & count", recipes=["01"], pre=["L01"],
+ex(id="L03", slug="count-up-and-down", title="Count up and down", level="Guided", stars=1, theme="loops-repeat", recipes=["01"], pre=["L01"],
    goal="Read a positive number N. Print the numbers from 1 to N on one line, then from N down to 1 on a second line.",
    examples=[(["4"], ["1 2 3 4","4 3 2 1"]), (["1"], ["1","1"])],
    edge=["N = 1."],
@@ -193,7 +193,7 @@ for (int i = n; i >= 1; i--)
 Console.WriteLine();
 ''')
 
-ex(id="L04", slug="multiplication-table", title="Multiplication table", level="Independent", stars=1, step="4a · Repeat & count", recipes=["01"], pre=["L03"],
+ex(id="L04", slug="multiplication-table", title="Multiplication table", level="Independent", stars=1, theme="loops-repeat", recipes=["01"], pre=["L03"],
    goal="Read a number N and print its multiplication table from 1 to 10.",
    examples=[(["3"], ["3 x 1 = 3","3 x 2 = 6","3 x 10 = 30"]), (["7"], ["7 x 7 = 49"])],
    edge=["N = 0 → all results are 0."],
@@ -210,7 +210,7 @@ for (int i = 1; i <= 10; i++)
 }
 ''')
 
-ex(id="L05", slug="until-zero", title="Until zero", level="Independent", stars=2, step="4a · Repeat & count", recipes=["10","02"], pre=["L03"],
+ex(id="L05", slug="until-zero", title="Until zero", level="Independent", stars=2, theme="loops-repeat", recipes=["10","02"], pre=["L03"],
    goal="Read whole numbers one by one. Stop when the user types 0. Print how many **non-zero** numbers were entered.",
    examples=[(["5","-2","8","0"], ["You entered 3 numbers."]), (["0"], ["You entered 0 numbers."])],
    edge=["The first number is already 0.", "Negative numbers count too."],
@@ -233,7 +233,7 @@ while (true)
 Console.WriteLine($"You entered {count} numbers.");
 ''')
 
-ex(id="L06", slug="even-numbers", title="Even numbers", level="Guided", stars=1, step="4a · Repeat & count", recipes=["01"], pre=["L03"],
+ex(id="L06", slug="even-numbers", title="Even numbers", level="Guided", stars=1, theme="loops-repeat", recipes=["01"], pre=["L03"],
    goal="Read N. Print all even numbers from 2 to N on one line.",
    examples=[(["9"], ["2 4 6 8"]), (["10"], ["2 4 6 8 10"]), (["1"], [""])],
    edge=["N = 1 → nothing is printed.", "N is even → N is printed too."],
@@ -257,7 +257,7 @@ Console.WriteLine();
 // }
 ''')
 
-ex(id="L07", slug="ask-until-valid", title="Ask until valid", level="Independent", stars=2, step="4a · Repeat & count", recipes=["09"], pre=["L05","C03"],
+ex(id="L07", slug="ask-until-valid", title="Ask until valid", level="Independent", stars=2, theme="loops-repeat", recipes=["09"], pre=["L05","C03"],
    goal="Ask for a number between 1 and 10. If the text is not a number, or is out of range, print `Invalid, try again.` and ask again. At the end print `You chose X`.",
    examples=[(["abc","42","7"], ["Invalid, try again.","Invalid, try again.","You chose 7"]), (["1"], ["You chose 1"])],
    edge=["`abc` must not crash the program.", "1 and 10 are valid; 0 and 11 are not."],
@@ -283,7 +283,7 @@ while (!valid);
 Console.WriteLine($"You chose {number}");
 ''')
 
-ex(id="L08", slug="guess-the-number", title="Guess the number", level="Challenge", stars=2, step="4a · Repeat & count", recipes=["09","02"], pre=["L07"],
+ex(id="L08", slug="guess-the-number", title="Guess the number", level="Challenge", stars=2, theme="loops-repeat", recipes=["09","02"], pre=["L07"],
    goal="The secret number is 42. The user guesses until correct. After each wrong guess, print `Higher!` or `Lower!`. At the end print `Correct! You needed N tries.`",
    examples=[(["50","30","42"], ["Lower!","Higher!","Correct! You needed 3 tries."]), (["42"], ["Correct! You needed 1 tries."])],
    edge=["Right at the first try."],

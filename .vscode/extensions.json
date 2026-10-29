@@ -1,6 +1,5 @@
 {
   "recommendations": [
-    "ms-dotnettools.csdevkit",
-    "bierner.markdown-mermaid"
+    "ms-dotnettools.csdevkit"
   ]
 }

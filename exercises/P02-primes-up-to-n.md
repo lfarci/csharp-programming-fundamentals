@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › P02
+[Home](../README.md) › [Exercises](README.md) › [Loops: search](../themes/loops-search.md) › P02
 
 # P02 · All primes up to N
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Challenge | hard | 4d · Search | [Counter loop](../cookbook/01-counter-loop.md), [Flag/search](../cookbook/05-flag-search.md), [Accumulator](../cookbook/02-accumulator.md) | [P01](P01-is-it-prime.md) | Custom |
+| Challenge | hard | [Loops: search](../themes/loops-search.md) | [Counter loop](../cookbook/01-counter-loop.md), [Flag/search](../cookbook/05-flag-search.md), [Accumulator](../cookbook/02-accumulator.md) | [P01](P01-is-it-prime.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Read N. Print all prime numbers from 2 to N on one line, then how many there are
 ./ex check P02     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 

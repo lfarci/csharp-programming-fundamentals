@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › S02
+[Home](../README.md) › [Exercises](README.md) › [Loops: remember changing values](../themes/loops-state.md) › S02
 
 # S02 · Fibonacci
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | hard | 4d · State | [State update](../cookbook/07-state-update.md) | [S01](S01-trace-updates.md), [A01](A01-sum-1-to-n.md) | Custom · teacher topic: Fibonacci |
+| Independent | hard | [Loops: remember changing values](../themes/loops-state.md) | [State update](../cookbook/07-state-update.md) | [S01](S01-trace-updates.md), [A01](A01-sum-1-to-n.md) | Custom · teacher topic: Fibonacci |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Read N. Print the first N Fibonacci numbers on one line, starting with 0 and 1. 
 ./ex check S02     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 

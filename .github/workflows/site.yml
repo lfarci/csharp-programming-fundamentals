@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   build:
-    name: Website builds (no dead links)
+    name: Website builds (no dead links, progress test)
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -29,6 +29,10 @@ jobs:
         run: node tools/check-site-sync.ts
       - name: Build the site (fails on dead links)
         run: npm run docs:build
+      - name: Install the test browser
+        run: npx playwright install --with-deps chromium
+      - name: Progress ticks work in a real browser (Mark as done, reload, import)
+        run: npm run test:site
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         if: github.event_name != 'pull_request'
         with:

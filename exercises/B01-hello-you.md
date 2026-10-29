@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › B01
+[Home](../README.md) › [Exercises](README.md) › [Hello World](../themes/hello-world.md) › B01
 
 # B01 · Hello you
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | easy | 1 · Hello World | — | — | Custom |
+| Guided | easy | [Hello World](../themes/hello-world.md) | — | — | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Ask the user for their name and greet them.
 ./ex check B01     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 
@@ -48,7 +48,7 @@ Hello, Sam!
 
 ## Before coding
 
-Fill the [reading worksheet](../docs/reading-an-exercise.md#4-the-worksheet-copy-it): what goes in? what comes out? a tiny example by hand?
+Fill the [reading worksheet](../docs/reading-an-exercise.md#the-template): what goes in? what comes out? a tiny example by hand?
 
 ## Hints (open one at a time)
 

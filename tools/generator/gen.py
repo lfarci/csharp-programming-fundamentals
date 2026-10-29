@@ -5,6 +5,7 @@ from data5 import M, GOALS, RULES, HINTS
 import data6  # noqa: F401  (adds ladder, Parsons and debugging exercises to E and M)
 from data7 import DRILLS  # drill bank: same-pattern repetition
 from data6 import NOTE_P
+from themes import THEMES, BYSLUG
 import re
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 RECIPES = {"01":("Counter loop","01-counter-loop"),"02":("Accumulator","02-accumulator"),"03":("Conditional accumulator","03-conditional-accumulator"),
@@ -82,6 +83,7 @@ byid = {e["id"]: e for e in E}
 for e in E:  # guard: every prerequisite must exist
     missing = [p for p in e["pre"] if p not in byid]
     if missing: sys.exit(f"{e['id']}: unknown prerequisite(s) {missing}")
+    if e.get("theme") not in BYSLUG: sys.exit(f"{e['id']}: unknown theme {e.get('theme')!r} (see themes.py)")
 def fname(e): return f'{e["id"]}-{e["slug"]}'
 def stars(n): return {1: "easy", 2: "medium", 3: "hard"}[n]
 def rlinks(e, base="../cookbook/"):
@@ -107,15 +109,16 @@ for e in E:
     src = "Custom"
     if e.get("teacher"): src += f" · teacher topic: {e['teacher']}"
     if e.get("euler"): src += f" · prepares [Project Euler #{e['euler']}](https://projecteuler.net/problem={e['euler']})"
-    L = ["[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › " + e["id"], "", f"# {e['id']} · {e['title']}", "",
-         f"| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |", "| --- | --- | --- | --- | --- | --- |",
-         f"| {e['level']} | {stars(e['stars'])} | {e['step']} | {rlinks(e)} | {plinks(e)} | {src} |", "",
+    th = BYSLUG[e["theme"]]
+    L = [f"[Home](../README.md) › [Exercises](README.md) › [{th['title']}](../themes/{th['slug']}.md) › " + e["id"], "", f"# {e['id']} · {e['title']}", "",
+         f"| Level | Difficulty | Theme | Recipes | Do these first | Source |", "| --- | --- | --- | --- | --- | --- |",
+         f"| {e['level']} | {stars(e['stars'])} | [{th['title']}](../themes/{th['slug']}.md) | {rlinks(e)} | {plinks(e)} | {src} |", "",
          "## Goal", "", GOALS.get(e["id"], e["goal"]), ""]
     if paper:
         L += ["## Start and check", "", "This one is on **paper**: no code to write. When you are done, compare with the answer key (link at the bottom).", ""]
     else:
         L += ["## Start and check", "", "```bash", f"./ex start {e['id']}     # creates practice/{cls(e)}.cs (never overwrites your work)", f"./ex check {e['id']}     # tests your code with the examples below", "```", "",
-              f"On Windows, type `.\\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).", ""]
+              f"On Windows, type `.\\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).", ""]
         if e.get("task") == "parsons":
             L += ["**Your job:** the file already holds **all** the lines you need, mixed up and turned into comments (`//`). Put them in order and remove the `//`. No new code to invent: this trains *reading* the pattern.", ""]
         elif e.get("task") == "debug":
@@ -140,7 +143,7 @@ for e in E:
     if e.get("note"): L += [f"> {e['note']}", ""]
     L += ["## Edge cases to test", ""] + [f"- {x}" for x in e["edge"]] + [""]
     L += ["## Rules", ""] + [f"- {x}" for x in RULES.get(e["id"], e["constraints"])] + ["- No LINQ and no ready-made helpers: you write every step yourself.", ""]
-    L += ["## Before coding", "", ("Fill the [reading worksheet](../docs/reading-an-exercise.md#4-the-worksheet-copy-it): what goes in? what comes out? a tiny example by hand?" if not e["recipes"] else "Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?"), ""]
+    L += ["## Before coding", "", ("Fill the [reading worksheet](../docs/reading-an-exercise.md#the-template): what goes in? what comes out? a tiny example by hand?" if not e["recipes"] else "Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?"), ""]
     L += ["## Hints (open one at a time)", ""]
     for i, h in enumerate(HINTS.get(e["id"], e["hints"]), 1):
         L += [f"<details><summary>Hint {i}</summary>", "", h, "", "</details>", ""]
@@ -162,16 +165,17 @@ cj = [{"id": e["id"], "name": fname(e), "class": cls(e), "title": e["title"], "p
        "methods": [parse_sig(sig)[1] for sig, _, _ in M[e["id"]]["methods"]] if e["id"] in M else [],
        "cases": [jcase(*c) for c in M[e["id"]]["cases"]] if e["id"] in M else [],
        "checkHint": e.get("check_hint", ""),
-       "step": e["step"], "drills": [n for n, _, ids in DRILLS if e["id"] in ids],
+       "theme": BYSLUG[e["theme"]]["title"], "themeOrder": [x["slug"] for x in THEMES].index(e["theme"]) + 1, "drills": [n for n, _, ids in DRILLS if e["id"] in ids],
        "examples": [{"input": inp, "expected": [o for o in out if o.strip()]} for inp, out in (e["examples"] or [])]}
       for e in ORDER]
 json.dump(cj, open(f"{ROOT}/tools/exercises.json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 # data for the website (.vitepress): sidebar, "Mark as done", progress page
 os.makedirs(f"{ROOT}/.vitepress", exist_ok=True)
-site = {"exercises": [{"id": e["id"], "title": e["title"], "link": f"/exercises/{fname(e)}", "step": e["step"],
+site = {"exercises": [{"id": e["id"], "title": e["title"], "link": f"/exercises/{fname(e)}", "theme": e["theme"],
                        "level": e["level"], "paper": bool(e.get("paper")),
                        "drills": [n for n, _, ids in DRILLS if e["id"] in ids]} for e in ORDER],
-        "drillSets": [{"name": n, "recipe": r, "ids": ids} for n, r, ids in DRILLS]}
+        "drillSets": [{"name": n, "recipe": r, "ids": ids} for n, r, ids in DRILLS],
+        "themes": [{"slug": x["slug"], "title": x["title"], "part": x["part"], "summary": x["summary"], "link": f"/themes/{x['slug']}"} for x in THEMES]}
 json.dump(site, open(f"{ROOT}/.vitepress/course.json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 
 # ---------- tests: one plain xUnit file per exercise ----------
@@ -234,101 +238,5 @@ for old in glob.glob(f"{TD}/*.cs"): os.remove(old)
 for e in ORDER:
     if not e.get("paper"): open(f"{TD}/{cls(e)}Tests.cs", "w").write(test_file(e))
 
-# ---------- inventory ----------
-FAM = [("B","Basics: input → compute → output","Step 1–2"),("C","Conditions","Step 3"),("L","Loop mechanics","Step 4a"),
-("A","Accumulators","Step 4b"),("G","2D drawings (nested loops)","Step 4c"),("D","Digits","Step 4d"),("S","Changing state","Step 4d"),
-("P","Search & primes","Step 4d"),("M","Combine (mixed)","Step 4"),("R","Arrays","Step 6"),("T","Text","Step 6"),
-("F","Files","Step 5"),("E","Exceptions","Step 7"),("K","Collections","Step 9"),("N","Methods","Step 10")]
-lvl_icon = {"Guided":"Guided","Independent":"Independent","Challenge":"Challenge"}
-out = ["[Home](../README.md) › [Roadmap](../ROADMAP.md) › Exercises", "", "# Exercise inventory", "", "Track what you have done with the [progress checklist](../docs/progress-checklist.md).", "",
-"One table for **every** exercise: our own original exercises, a few Project Euler milestones and the teacher's topics.",
-"Each custom exercise adds **one** new difficulty. Pick the next one whose prerequisites you have done.", "",
-"- **Guided** — small steps, hints help a lot.  **Independent** — same idea, alone.  **Challenge** — new problem, combine recipes.",
-"- Effort for a true beginner: easy, medium or hard.",
-"- Solutions are in [`solutions/`](../solutions/README.md). Try first, look later.",
-"- *The C# Player's Guide* is a **parallel track**, not part of this list: read the book level named in each [roadmap](../ROADMAP.md) step alongside it. Its challenges are tracked in [C# Quest Tracker](https://lfarci.github.io/csharp-quest-tracker/).",
-"- Before any exercise, read it with [How to read an exercise](../docs/reading-an-exercise.md).", ""]
-from collections import Counter
-cnt = Counter(); lv = Counter(e["level"] for e in E)
-for x in X: cnt[x["source"].split(" L")[0].split(" #")[0]] += 1
-out += ["## Counts", "", "| Source | Exercises |", "| --- | ---: |", f"| Custom (this repo) | {len(E)} |"]
-for k in ["Project Euler","Teacher topic"]: out.append(f"| {k} | {cnt[k]} |")
-out += [f"| **Total** | **{len(E)+len(X)}** |", "",
-        f"Custom by level: {lv['Guided']} guided · {lv['Independent']} independent · {lv['Challenge']} challenge.", ""]
-out += ["## Map of the families", "", "```mermaid", "flowchart LR", "    accTitle: Map of the exercise families", "    accDescr: Basics lead to conditions, then loop mechanics. Loop mechanics lead to accumulators, state and exceptions. Accumulators lead to 2D drawings, digits, search and primes, combine, and arrays. Digits lead to combine, which leads to methods. Arrays lead to text, files and collections."]
-out += ['    B["B · Basics"] --> C["C · Conditions"] --> L["L · Loop mechanics"]',
-        '    L --> A["A · Accumulators"]', '    A --> G["G · 2D drawings"]', '    A --> D["D · Digits"]', '    L --> S["S · State"]',
-        '    A --> P["P · Search & primes"]', '    D --> M["M · Combine: Armstrong"]', '    A --> M',
-        '    A --> R["R · Arrays"] --> T["T · Text"]', '    R --> F["F · Files"]', '    L --> E["E · Exceptions"]',
-        '    R --> K["K · Collections"]', '    M --> N["N · Methods"]', "```", "",
-        "See the full [graph of every exercise and its prerequisites](dependency-graph.md).", ""]
-out += ["## Drill sets (same pattern, many times)", "",
-        "Want to practise one pattern today? Do the exercises of **one row**, in order, in one or two short sessions. They change only small details, so your brain sees the **same pattern** again and again. Check each one with `./ex check` before the next.", "",
-        "| Drill | Recipe | Exercises, in order |", "| --- | --- | --- |"]
-for name, r, ids in DRILLS:
-    for i in ids: assert i in byid, f"drill set lists unknown exercise {i}"
-    out.append(f"| {name} | [{RECIPES[r][0]}](../cookbook/{RECIPES[r][1]}.md) | " + " → ".join(f"[{i}]({fname(byid[i])}.md)" for i in ids) + " |")
-out += ["", "Tip: if one feels hard, do the one before it again. If one feels easy, skip ahead. See [How to practice](../docs/how-to-practice.md#drill-sets).", ""]
-out += ["## Custom exercises", ""]
-for f, name, step in FAM:
-    rows = [e for e in ORDER if e["id"].startswith(f)]
-    out += [f"### {f} · {name} ({step})", "", "| ID | Exercise | Level | Effort | Recipes | Before | Source |", "| --- | --- | --- | --- | --- | --- | --- |"]
-    for e in rows:
-        s = "Custom"
-        if e.get("teacher"): s += f" · teacher: {e['teacher']}"
-        if e.get("euler"): s += f" → PE #{e['euler']}"
-        if e.get("paper"): s += " · paper"
-        if e.get("task") == "parsons": s += " · arrange the lines"
-        if e.get("task") == "debug": s += " · fix the bugs"
-        out.append(f"| {e['id']} | [{e['title']}]({fname(e)}.md) | {lvl_icon[e['level']]} | {stars(e['stars'])} | {rlinks(e)} | {', '.join(e['pre']) or '—'} | {s} |")
-    out.append("")
-out += ["## Project Euler (milestones, not daily homework)", "", "| ID | Problem | Roadmap step | Skills | Do first | Effort |", "| --- | --- | --- | --- | --- | --- |"]
-for x in X:
-    if x["source"].startswith("Project"):
-        out.append(f"| {x['id']} | [{x['source']}: {x['title']}]({x['url']}) | {x['step']} | {x['skills']} | {x['pre']} | {stars(x['stars'])} |")
-out += ["", "Tip: always start with a small version (below 10, up to 100) where you can check the answer by hand.", "",
-        "## Teacher topics", "", "Exact statements are not copied here. Use them as **assessments** once the prerequisites are done.", "",
-        "| ID | Topic | Matching exercises | Recipes | Note |", "| --- | --- | --- | --- | --- |"]
-for x in X:
-    if x["source"].startswith("Teacher"):
-        out.append(f"| {x['id']} | {x['title']} | {x['pre']} | {x['skills']} | {x['note']} |")
-out += ["", "## When stuck", "", "1. Go back to the recipe in the [cookbook](../cookbook/README.md).", "2. Solve a smaller example on paper and fill a trace table.",
-        "3. Use the unstuck techniques in [How to read an exercise](../docs/reading-an-exercise.md#5-when-you-are-stuck).", "4. Open **one** hint. Wait. Try again.", "5. Still stuck? Do the exercise listed in *Before*.", "", "See also [How to practice](../docs/how-to-practice.md)."]
-open(f"{ROOT}/exercises/README.md","w").write("\n".join(out)+"\n")
-
-# ---------- progress checklist ----------
-pc = ["[Home](../README.md) › Progress checklist", "", "# My progress checklist", "",
-      "Print this page, or copy it into a notes file. Tick a box when it is true **without help**.", "",
-      "For each exercise: **Solved** = it works and matches the examples. **Mastered** = you also solved the mastery check alone, on another day.", ""]
-for f_, name, step in FAM:
-    rows = [e for e in ORDER if e["id"].startswith(f_)]
-    if not rows: continue
-    pc += [f"## {f_} · {name} ({step})", ""]
-    for e in rows:
-        pc += [f"- [ ] [{e['id']} · {e['title']}](../exercises/{fname(e)}.md) solved", "  - [ ] mastered (another day, alone)"]
-    pc.append("")
-pc += ["## Milestones", "", "- [ ] I can trace a loop on paper (L01, L02).", "- [ ] I can solve factorial, Fibonacci and Armstrong from a blank file.",
-       "- [ ] I can explain every line of my code to someone else.", "", "---", "", "[Home](../README.md) · [All exercises](../exercises/README.md)", ""]
-open(f"{ROOT}/docs/progress-checklist.md","w").write("\n".join(pc))
-
-# ---------- dependency graph ----------
-g = ["[Home](../README.md) › [Exercises](README.md) › Dependency graph", "", "# Exercise dependency graph", "", "An arrow `X → Y` means: do X before Y. Colours: green = guided, blue = independent, purple = challenge. Thick border = teacher topic. The same information is in the [inventory](README.md) tables, as text.", ""]
-def graph(ids, title):
-    s = [f"## {title}", "", "```mermaid", "flowchart LR", f"    accTitle: {title}", "    accDescr: Each box is one exercise. An arrow from X to Y means do X before Y. The same order is written as text in the Before column of the inventory.",
-         "    classDef guided fill:#d8f5d0,stroke:#2e7d32", "    classDef indep fill:#d6e8ff,stroke:#1565c0", "    classDef chall fill:#ead9ff,stroke:#6a1b9a",
-         "    classDef teacher stroke-width:4px"]
-    for i in ids:
-        e = byid[i]; cls = {"Guided":"guided","Independent":"indep","Challenge":"chall"}[e["level"]]
-        s.append(f'    {i}["{i}<br/>{e["title"].replace(chr(34),"")}"]:::{cls}')
-        if e.get("teacher"): s.append(f"    class {i} teacher")
-    for i in ids:
-        for p in byid[i]["pre"]:
-            if p in ids: s.append(f"    {p} --> {i}")
-    return s + ["```", ""]
-loopids = [e["id"] for e in E if e["id"][0] in "LADSPMG"]
-g += graph(loopids, "Loops: from counting to Armstrong (step 4)")
-g += graph([e["id"] for e in E if e["id"][0] in "BC"] + ["L01","L03"], "Before loops (steps 1–3)")
-g += graph([e["id"] for e in E if e["id"][0] in "RTFEKN"] + ["A01","A02","C02","L05","L07","M02"], "After loops (steps 5–10)")
-g += ["---", "", "[All exercises](README.md) · [Roadmap](../ROADMAP.md)", ""]
-open(f"{ROOT}/exercises/dependency-graph.md","w").write("\n".join(g))
+exec(open(os.path.join(os.path.dirname(__file__), 'pages.py'), encoding='utf-8').read())
 print("generated", len(E), "exercises,", len(tests), "example runs,", sum(len(m["cases"]) for m in M.values()), "method cases")
