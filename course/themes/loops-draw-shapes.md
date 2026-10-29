@@ -7,7 +7,7 @@ next:
   link: /themes/loops-digits
 ---
 
-[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Loops](loops.md) › Group 6 of 9
+[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Loops](loops.md) › Draw shapes
 
 # Loops · Draw shapes
 

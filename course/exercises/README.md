@@ -10,12 +10,12 @@ Start one with `./ex start A04`, check it with `./ex check`. New here? Read [Get
 
 <div class="gh-only">
 
-| # | Theme | Groups | Exercises |
-| ---: | --- | --- | ---: |
-| 1 | [Basics](../themes/basics.md) | [First programs](../themes/basics-first-programs.md) (3), [Conditions](../themes/basics-conditions.md) (4) | 7 |
-| 2 | [Loops](../themes/loops.md) | [Count](../themes/loops-count.md) (13), [Add up](../themes/loops-add-up.md) (12), [Keep only some](../themes/loops-keep-only-some.md) (9), [Until the user stops](../themes/loops-until-the-user-stops.md) (5), [Draw rows and grids](../themes/loops-draw-rows-and-grids.md) (8), [Draw shapes](../themes/loops-draw-shapes.md) (8), [Digits](../themes/loops-digits.md) (12), [Changing values](../themes/loops-changing-values.md) (5), [Search and combine](../themes/loops-search-and-combine.md) (9) | 81 |
-| 3 | [Arrays, text and lists](../themes/arrays.md) | [Arrays](../themes/arrays-arrays.md) (6), [Text](../themes/arrays-text.md) (3), [Files and lists](../themes/arrays-files-and-lists.md) (2) | 11 |
-| 4 | [Methods and errors](../themes/methods.md) | [Methods](../themes/methods-methods.md) (2), [Errors](../themes/methods-errors.md) (2) | 4 |
+| Theme | Groups | Exercises |
+| --- | --- | ---: |
+| [Basics](../themes/basics.md) | [First programs](../themes/basics-first-programs.md) (3), [Conditions](../themes/basics-conditions.md) (4) | 7 |
+| [Loops](../themes/loops.md) | [Count](../themes/loops-count.md) (13), [Add up](../themes/loops-add-up.md) (12), [Keep only some](../themes/loops-keep-only-some.md) (9), [Until the user stops](../themes/loops-until-the-user-stops.md) (5), [Draw rows and grids](../themes/loops-draw-rows-and-grids.md) (8), [Draw shapes](../themes/loops-draw-shapes.md) (8), [Digits](../themes/loops-digits.md) (12), [Changing values](../themes/loops-changing-values.md) (5), [Search and combine](../themes/loops-search-and-combine.md) (9) | 81 |
+| [Arrays, text and lists](../themes/arrays.md) | [Arrays](../themes/arrays-arrays.md) (6), [Text](../themes/arrays-text.md) (3), [Files and lists](../themes/arrays-files-and-lists.md) (2) | 11 |
+| [Methods and errors](../themes/methods.md) | [Methods](../themes/methods-methods.md) (2), [Errors](../themes/methods-errors.md) (2) | 4 |
 
 </div>
 
