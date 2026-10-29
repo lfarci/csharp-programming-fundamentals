@@ -60,6 +60,38 @@ flowchart LR
     G07["G07<br/>Arrange the lines: a square"]:::guided
     A12["A12<br/>Fix the bugs: count multiples of 7"]:::guided
     D07["D07<br/>Fix the bugs: digit sum"]:::indep
+    L11["L11<br/>Count from a to b"]:::guided
+    L12["L12<br/>Count down"]:::guided
+    L13["L13<br/>Count by 3"]:::guided
+    L14["L14<br/>Count by 5"]:::guided
+    L15["L15<br/>Count by any step"]:::indep
+    L16["L16<br/>Odd numbers"]:::guided
+    L17["L17<br/>Count down by 2"]:::guided
+    L18["L18<br/>Square numbers"]:::guided
+    L19["L19<br/>Count the turns"]:::guided
+    A13["A13<br/>Sum from a to b"]:::guided
+    A14["A14<br/>Sum the odd numbers"]:::guided
+    A15["A15<br/>Count the even numbers"]:::guided
+    A16["A16<br/>Count multiples of 5"]:::guided
+    A17["A17<br/>Sum the multiples of k"]:::indep
+    A18["A18<br/>Sum of cubes"]:::guided
+    A19["A19<br/>Product from a to b"]:::guided
+    A20["A20<br/>Power of 2"]:::guided
+    A21["A21<br/>Count the divisors"]:::guided
+    A22["A22<br/>Sum of the divisors"]:::guided
+    G08["G08<br/>Solid square"]:::guided
+    G09["G09<br/>Rows of numbers"]:::guided
+    G10["G10<br/>Triangle of row numbers"]:::guided
+    G11["G11<br/>Counting triangle"]:::guided
+    G12["G12<br/>Upside-down triangle"]:::guided
+    G13["G13<br/>Diagonal"]:::indep
+    D08["D08<br/>First digit"]:::guided
+    D09["D09<br/>Count the even digits"]:::guided
+    D10["D10<br/>Count one digit"]:::guided
+    D11["D11<br/>Largest digit"]:::indep
+    D12["D12<br/>Product of the digits"]:::guided
+    S04["S04<br/>Doubling"]:::guided
+    S05["S05<br/>The n-th Fibonacci number"]:::indep
     L01 --> L02
     L01 --> L03
     L03 --> L04
@@ -108,6 +140,42 @@ flowchart LR
     L09 --> G07
     A02 --> A12
     D04 --> D07
+    L03 --> L11
+    L11 --> L12
+    L11 --> L13
+    L13 --> L14
+    L14 --> L15
+    L11 --> L16
+    L12 --> L17
+    L11 --> L18
+    L11 --> L19
+    A01 --> A13
+    A01 --> A14
+    L16 --> A14
+    A02 --> A15
+    A15 --> A16
+    A03 --> A17
+    A16 --> A17
+    A11 --> A18
+    A04 --> A19
+    A04 --> A20
+    A16 --> A21
+    A21 --> A22
+    G01 --> G08
+    G08 --> G09
+    G02 --> G10
+    G10 --> G11
+    G02 --> G12
+    L12 --> G12
+    G08 --> G13
+    G04 --> G13
+    D03 --> D08
+    D04 --> D09
+    D09 --> D10
+    D04 --> D11
+    D04 --> D12
+    L11 --> S04
+    S02 --> S05
 ```
 
 ## Before loops (steps 1–3)

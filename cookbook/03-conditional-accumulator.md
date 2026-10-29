@@ -137,6 +137,8 @@ Now alone, in a real file (`./ex start ID`, then `./ex check`):
 
 🐞 Debugging exercise: [**A12**](../exercises/A12-fix-count-multiples-of-7.md) Fix the bugs: count multiples of 7.
 
+🔁 **Want more of the same?** Do the drill set for this recipe in the [exercise inventory](../exercises/README.md#-drill-sets-same-pattern-many-times): 5 to 12 short exercises that use exactly this pattern.
+
 ### 🐞 Debug it
 
 This code has **one** bug. Find it on paper: trace a small example.

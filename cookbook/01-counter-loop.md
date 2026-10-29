@@ -140,6 +140,8 @@ Now alone, in a real file (`./ex start ID`, then `./ex check`):
 2. [**L04**](../exercises/L04-multiplication-table.md) Print the multiplication table of N (`N x 1` … `N x 10`).
 3. [**L06**](../exercises/L06-even-numbers.md) Print only the even numbers from 2 to N (two ways: `i += 2`, or `i++` with an `if`).
 
+🔁 **Want more of the same?** Do the drill set for this recipe in the [exercise inventory](../exercises/README.md#-drill-sets-same-pattern-many-times): 5 to 12 short exercises that use exactly this pattern.
+
 ### 🐞 Debug it
 
 This code has **one** bug. Find it on paper: trace a small example.

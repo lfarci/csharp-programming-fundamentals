@@ -79,4 +79,4 @@ Only after a real try: [open the solution for S03](../solutions/S03_EvenFibonacc
 
 ---
 
-⬅️ Previous: [S02 · Fibonacci](S02-fibonacci.md) · 📚 [All exercises](README.md) · Next: [P01 · Is it prime?](P01-is-it-prime.md) ➡️
+⬅️ Previous: [S05 · The n-th Fibonacci number](S05-nth-fibonacci.md) · 📚 [All exercises](README.md) · Next: [P01 · Is it prime?](P01-is-it-prime.md) ➡️

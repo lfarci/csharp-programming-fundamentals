@@ -682,6 +682,310 @@
   ]
  },
  {
+  "id": "L11",
+  "name": "L11-count-from-a-to-b",
+  "class": "L11_CountFromAToB",
+  "title": "Count from a to b",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "PrintFromTo"
+  ],
+  "cases": [
+   {
+    "method": "PrintFromTo",
+    "args": [
+     3,
+     6
+    ],
+    "expected": "3\n4\n5\n6\n"
+   },
+   {
+    "method": "PrintFromTo",
+    "args": [
+     5,
+     5
+    ],
+    "expected": "5\n"
+   },
+   {
+    "method": "PrintFromTo",
+    "args": [
+     -2,
+     1
+    ],
+    "expected": "-2\n-1\n0\n1\n"
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "L12",
+  "name": "L12-count-down",
+  "class": "L12_CountDown",
+  "title": "Count down",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountDown"
+  ],
+  "cases": [
+   {
+    "method": "CountDown",
+    "args": [
+     4
+    ],
+    "expected": "4\n3\n2\n1\n"
+   },
+   {
+    "method": "CountDown",
+    "args": [
+     1
+    ],
+    "expected": "1\n"
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "L13",
+  "name": "L13-count-by-3",
+  "class": "L13_CountBy3",
+  "title": "Count by 3",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountBy3"
+  ],
+  "cases": [
+   {
+    "method": "CountBy3",
+    "args": [
+     10
+    ],
+    "expected": "3\n6\n9\n"
+   },
+   {
+    "method": "CountBy3",
+    "args": [
+     3
+    ],
+    "expected": "3\n"
+   },
+   {
+    "method": "CountBy3",
+    "args": [
+     12
+    ],
+    "expected": "3\n6\n9\n12\n"
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "L14",
+  "name": "L14-count-by-5",
+  "class": "L14_CountBy5",
+  "title": "Count by 5",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountBy5"
+  ],
+  "cases": [
+   {
+    "method": "CountBy5",
+    "args": [
+     22
+    ],
+    "expected": "5\n10\n15\n20\n"
+   },
+   {
+    "method": "CountBy5",
+    "args": [
+     5
+    ],
+    "expected": "5\n"
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "L15",
+  "name": "L15-count-by-step",
+  "class": "L15_CountByStep",
+  "title": "Count by any step",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountByStep"
+  ],
+  "cases": [
+   {
+    "method": "CountByStep",
+    "args": [
+     2,
+     7
+    ],
+    "expected": "2\n4\n6\n"
+   },
+   {
+    "method": "CountByStep",
+    "args": [
+     4,
+     12
+    ],
+    "expected": "4\n8\n12\n"
+   },
+   {
+    "method": "CountByStep",
+    "args": [
+     1,
+     3
+    ],
+    "expected": "1\n2\n3\n"
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "L16",
+  "name": "L16-odd-numbers",
+  "class": "L16_OddNumbers",
+  "title": "Odd numbers",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "PrintOdds"
+  ],
+  "cases": [
+   {
+    "method": "PrintOdds",
+    "args": [
+     7
+    ],
+    "expected": "1\n3\n5\n7\n"
+   },
+   {
+    "method": "PrintOdds",
+    "args": [
+     8
+    ],
+    "expected": "1\n3\n5\n7\n"
+   },
+   {
+    "method": "PrintOdds",
+    "args": [
+     1
+    ],
+    "expected": "1\n"
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "L17",
+  "name": "L17-count-down-by-2",
+  "class": "L17_CountDownBy2",
+  "title": "Count down by 2",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountDownBy2"
+  ],
+  "cases": [
+   {
+    "method": "CountDownBy2",
+    "args": [
+     9
+    ],
+    "expected": "9\n7\n5\n3\n1\n"
+   },
+   {
+    "method": "CountDownBy2",
+    "args": [
+     6
+    ],
+    "expected": "6\n4\n2\n"
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "L18",
+  "name": "L18-squares",
+  "class": "L18_Squares",
+  "title": "Square numbers",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "PrintSquares"
+  ],
+  "cases": [
+   {
+    "method": "PrintSquares",
+    "args": [
+     4
+    ],
+    "expected": "1\n4\n9\n16\n"
+   },
+   {
+    "method": "PrintSquares",
+    "args": [
+     1
+    ],
+    "expected": "1\n"
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "L19",
+  "name": "L19-count-the-turns",
+  "class": "L19_CountTheTurns",
+  "title": "Count the turns",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountTurns"
+  ],
+  "cases": [
+   {
+    "method": "CountTurns",
+    "args": [
+     1,
+     5
+    ],
+    "expected": 5
+   },
+   {
+    "method": "CountTurns",
+    "args": [
+     3,
+     3
+    ],
+    "expected": 1
+   },
+   {
+    "method": "CountTurns",
+    "args": [
+     4,
+     10
+    ],
+    "expected": 7
+   },
+   {
+    "method": "CountTurns",
+    "args": [
+     5,
+     4
+    ],
+    "expected": 0
+   }
+  ],
+  "examples": []
+ },
+ {
   "id": "A11",
   "name": "A11-arrange-sum-of-squares",
   "class": "A11_ArrangeSumOfSquares",
@@ -1374,6 +1678,402 @@
   ]
  },
  {
+  "id": "A13",
+  "name": "A13-sum-from-a-to-b",
+  "class": "A13_SumFromAToB",
+  "title": "Sum from a to b",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SumFromTo"
+  ],
+  "cases": [
+   {
+    "method": "SumFromTo",
+    "args": [
+     3,
+     5
+    ],
+    "expected": 12
+   },
+   {
+    "method": "SumFromTo",
+    "args": [
+     1,
+     4
+    ],
+    "expected": 10
+   },
+   {
+    "method": "SumFromTo",
+    "args": [
+     7,
+     7
+    ],
+    "expected": 7
+   },
+   {
+    "method": "SumFromTo",
+    "args": [
+     5,
+     4
+    ],
+    "expected": 0
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "A14",
+  "name": "A14-sum-odd-numbers",
+  "class": "A14_SumOddNumbers",
+  "title": "Sum the odd numbers",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SumOfOdds"
+  ],
+  "cases": [
+   {
+    "method": "SumOfOdds",
+    "args": [
+     5
+    ],
+    "expected": 9
+   },
+   {
+    "method": "SumOfOdds",
+    "args": [
+     6
+    ],
+    "expected": 9
+   },
+   {
+    "method": "SumOfOdds",
+    "args": [
+     1
+    ],
+    "expected": 1
+   },
+   {
+    "method": "SumOfOdds",
+    "args": [
+     0
+    ],
+    "expected": 0
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "A15",
+  "name": "A15-count-even-numbers",
+  "class": "A15_CountEvenNumbers",
+  "title": "Count the even numbers",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountEvens"
+  ],
+  "cases": [
+   {
+    "method": "CountEvens",
+    "args": [
+     10
+    ],
+    "expected": 5
+   },
+   {
+    "method": "CountEvens",
+    "args": [
+     7
+    ],
+    "expected": 3
+   },
+   {
+    "method": "CountEvens",
+    "args": [
+     1
+    ],
+    "expected": 0
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "A16",
+  "name": "A16-count-multiples-of-5",
+  "class": "A16_CountMultiplesOf5",
+  "title": "Count multiples of 5",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountMultiplesOf5"
+  ],
+  "cases": [
+   {
+    "method": "CountMultiplesOf5",
+    "args": [
+     20
+    ],
+    "expected": 4
+   },
+   {
+    "method": "CountMultiplesOf5",
+    "args": [
+     4
+    ],
+    "expected": 0
+   },
+   {
+    "method": "CountMultiplesOf5",
+    "args": [
+     26
+    ],
+    "expected": 5
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "A17",
+  "name": "A17-sum-multiples-of-k",
+  "class": "A17_SumMultiplesOfK",
+  "title": "Sum the multiples of k",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SumMultiplesOf"
+  ],
+  "cases": [
+   {
+    "method": "SumMultiplesOf",
+    "args": [
+     3,
+     10
+    ],
+    "expected": 18
+   },
+   {
+    "method": "SumMultiplesOf",
+    "args": [
+     5,
+     20
+    ],
+    "expected": 50
+   },
+   {
+    "method": "SumMultiplesOf",
+    "args": [
+     4,
+     3
+    ],
+    "expected": 0
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "A18",
+  "name": "A18-sum-of-cubes",
+  "class": "A18_SumOfCubes",
+  "title": "Sum of cubes",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SumOfCubes"
+  ],
+  "cases": [
+   {
+    "method": "SumOfCubes",
+    "args": [
+     3
+    ],
+    "expected": 36
+   },
+   {
+    "method": "SumOfCubes",
+    "args": [
+     1
+    ],
+    "expected": 1
+   },
+   {
+    "method": "SumOfCubes",
+    "args": [
+     4
+    ],
+    "expected": 100
+   },
+   {
+    "method": "SumOfCubes",
+    "args": [
+     0
+    ],
+    "expected": 0
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "A19",
+  "name": "A19-product-from-a-to-b",
+  "class": "A19_ProductFromAToB",
+  "title": "Product from a to b",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "ProductFromTo"
+  ],
+  "cases": [
+   {
+    "method": "ProductFromTo",
+    "args": [
+     2,
+     4
+    ],
+    "expected": 24
+   },
+   {
+    "method": "ProductFromTo",
+    "args": [
+     3,
+     3
+    ],
+    "expected": 3
+   },
+   {
+    "method": "ProductFromTo",
+    "args": [
+     1,
+     5
+    ],
+    "expected": 120
+   },
+   {
+    "method": "ProductFromTo",
+    "args": [
+     5,
+     4
+    ],
+    "expected": 1
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "A20",
+  "name": "A20-powers-of-2",
+  "class": "A20_PowersOf2",
+  "title": "Power of 2",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "PowerOf2"
+  ],
+  "cases": [
+   {
+    "method": "PowerOf2",
+    "args": [
+     3
+    ],
+    "expected": 8
+   },
+   {
+    "method": "PowerOf2",
+    "args": [
+     0
+    ],
+    "expected": 1
+   },
+   {
+    "method": "PowerOf2",
+    "args": [
+     10
+    ],
+    "expected": 1024
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "A21",
+  "name": "A21-count-divisors",
+  "class": "A21_CountDivisors",
+  "title": "Count the divisors",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountDivisors"
+  ],
+  "cases": [
+   {
+    "method": "CountDivisors",
+    "args": [
+     6
+    ],
+    "expected": 4
+   },
+   {
+    "method": "CountDivisors",
+    "args": [
+     7
+    ],
+    "expected": 2
+   },
+   {
+    "method": "CountDivisors",
+    "args": [
+     1
+    ],
+    "expected": 1
+   },
+   {
+    "method": "CountDivisors",
+    "args": [
+     12
+    ],
+    "expected": 6
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "A22",
+  "name": "A22-sum-of-divisors",
+  "class": "A22_SumOfDivisors",
+  "title": "Sum of the divisors",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SumOfDivisors"
+  ],
+  "cases": [
+   {
+    "method": "SumOfDivisors",
+    "args": [
+     6
+    ],
+    "expected": 12
+   },
+   {
+    "method": "SumOfDivisors",
+    "args": [
+     7
+    ],
+    "expected": 8
+   },
+   {
+    "method": "SumOfDivisors",
+    "args": [
+     1
+    ],
+    "expected": 1
+   }
+  ],
+  "examples": []
+ },
+ {
   "id": "L09",
   "name": "L09-draw-a-row",
   "class": "L09_DrawARow",
@@ -1524,6 +2224,64 @@
   ]
  },
  {
+  "id": "G08",
+  "name": "G08-solid-square",
+  "class": "G08_SolidSquare",
+  "title": "Solid square",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DrawSquare"
+  ],
+  "cases": [
+   {
+    "method": "DrawSquare",
+    "args": [
+     3
+    ],
+    "expected": "***\n***\n***\n"
+   },
+   {
+    "method": "DrawSquare",
+    "args": [
+     1
+    ],
+    "expected": "*\n"
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "G09",
+  "name": "G09-number-rows",
+  "class": "G09_NumberRows",
+  "title": "Rows of numbers",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DrawNumberRows"
+  ],
+  "cases": [
+   {
+    "method": "DrawNumberRows",
+    "args": [
+     4,
+     2
+    ],
+    "expected": "1234\n1234\n"
+   },
+   {
+    "method": "DrawNumberRows",
+    "args": [
+     3,
+     3
+    ],
+    "expected": "123\n123\n123\n"
+   }
+  ],
+  "examples": []
+ },
+ {
   "id": "G02",
   "name": "G02-right-triangle",
   "class": "G02_RightTriangle",
@@ -1570,6 +2328,90 @@
     ]
    }
   ]
+ },
+ {
+  "id": "G10",
+  "name": "G10-row-number-triangle",
+  "class": "G10_RowNumberTriangle",
+  "title": "Triangle of row numbers",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DrawRowTriangle"
+  ],
+  "cases": [
+   {
+    "method": "DrawRowTriangle",
+    "args": [
+     3
+    ],
+    "expected": "1\n22\n333\n"
+   },
+   {
+    "method": "DrawRowTriangle",
+    "args": [
+     1
+    ],
+    "expected": "1\n"
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "G11",
+  "name": "G11-counting-triangle",
+  "class": "G11_CountingTriangle",
+  "title": "Counting triangle",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DrawCountingTriangle"
+  ],
+  "cases": [
+   {
+    "method": "DrawCountingTriangle",
+    "args": [
+     4
+    ],
+    "expected": "1\n12\n123\n1234\n"
+   },
+   {
+    "method": "DrawCountingTriangle",
+    "args": [
+     1
+    ],
+    "expected": "1\n"
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "G12",
+  "name": "G12-upside-down-triangle",
+  "class": "G12_UpsideDownTriangle",
+  "title": "Upside-down triangle",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DrawUpsideDown"
+  ],
+  "cases": [
+   {
+    "method": "DrawUpsideDown",
+    "args": [
+     3
+    ],
+    "expected": "***\n**\n*\n"
+   },
+   {
+    "method": "DrawUpsideDown",
+    "args": [
+     1
+    ],
+    "expected": "*\n"
+   }
+  ],
+  "examples": []
  },
  {
   "id": "G03",
@@ -1664,6 +2506,34 @@
     ]
    }
   ]
+ },
+ {
+  "id": "G13",
+  "name": "G13-diagonal",
+  "class": "G13_Diagonal",
+  "title": "Diagonal",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DrawDiagonal"
+  ],
+  "cases": [
+   {
+    "method": "DrawDiagonal",
+    "args": [
+     3
+    ],
+    "expected": "*..\n.*.\n..*\n"
+   },
+   {
+    "method": "DrawDiagonal",
+    "args": [
+     1
+    ],
+    "expected": "*\n"
+   }
+  ],
+  "examples": []
  },
  {
   "id": "G05",
@@ -1954,6 +2824,48 @@
   ]
  },
  {
+  "id": "D08",
+  "name": "D08-first-digit",
+  "class": "D08_FirstDigit",
+  "title": "First digit",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "FirstDigit"
+  ],
+  "cases": [
+   {
+    "method": "FirstDigit",
+    "args": [
+     352
+    ],
+    "expected": 3
+   },
+   {
+    "method": "FirstDigit",
+    "args": [
+     7
+    ],
+    "expected": 7
+   },
+   {
+    "method": "FirstDigit",
+    "args": [
+     1000
+    ],
+    "expected": 1
+   },
+   {
+    "method": "FirstDigit",
+    "args": [
+     90
+    ],
+    "expected": 9
+   }
+  ],
+  "examples": []
+ },
+ {
   "id": "D04",
   "name": "D04-digit-sum",
   "class": "D04_DigitSum",
@@ -2019,6 +2931,163 @@
     ]
    }
   ]
+ },
+ {
+  "id": "D09",
+  "name": "D09-count-even-digits",
+  "class": "D09_CountEvenDigits",
+  "title": "Count the even digits",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountEvenDigits"
+  ],
+  "cases": [
+   {
+    "method": "CountEvenDigits",
+    "args": [
+     2468
+    ],
+    "expected": 4
+   },
+   {
+    "method": "CountEvenDigits",
+    "args": [
+     135
+    ],
+    "expected": 0
+   },
+   {
+    "method": "CountEvenDigits",
+    "args": [
+     1234
+    ],
+    "expected": 2
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "D10",
+  "name": "D10-count-a-digit",
+  "class": "D10_CountADigit",
+  "title": "Count one digit",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountDigit"
+  ],
+  "cases": [
+   {
+    "method": "CountDigit",
+    "args": [
+     1717,
+     7
+    ],
+    "expected": 2
+   },
+   {
+    "method": "CountDigit",
+    "args": [
+     123,
+     9
+    ],
+    "expected": 0
+   },
+   {
+    "method": "CountDigit",
+    "args": [
+     555,
+     5
+    ],
+    "expected": 3
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "D11",
+  "name": "D11-largest-digit",
+  "class": "D11_LargestDigit",
+  "title": "Largest digit",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "LargestDigit"
+  ],
+  "cases": [
+   {
+    "method": "LargestDigit",
+    "args": [
+     3829
+    ],
+    "expected": 9
+   },
+   {
+    "method": "LargestDigit",
+    "args": [
+     111
+    ],
+    "expected": 1
+   },
+   {
+    "method": "LargestDigit",
+    "args": [
+     5
+    ],
+    "expected": 5
+   },
+   {
+    "method": "LargestDigit",
+    "args": [
+     2061
+    ],
+    "expected": 6
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "D12",
+  "name": "D12-product-of-digits",
+  "class": "D12_ProductOfDigits",
+  "title": "Product of the digits",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "ProductOfDigits"
+  ],
+  "cases": [
+   {
+    "method": "ProductOfDigits",
+    "args": [
+     234
+    ],
+    "expected": 24
+   },
+   {
+    "method": "ProductOfDigits",
+    "args": [
+     5
+    ],
+    "expected": 5
+   },
+   {
+    "method": "ProductOfDigits",
+    "args": [
+     105
+    ],
+    "expected": 0
+   },
+   {
+    "method": "ProductOfDigits",
+    "args": [
+     1111
+    ],
+    "expected": 1
+   }
+  ],
+  "examples": []
  },
  {
   "id": "D07",
@@ -2222,6 +3291,36 @@
   "examples": []
  },
  {
+  "id": "S04",
+  "name": "S04-doubling",
+  "class": "S04_Doubling",
+  "title": "Doubling",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "PrintDoubling"
+  ],
+  "cases": [
+   {
+    "method": "PrintDoubling",
+    "args": [
+     1,
+     5
+    ],
+    "expected": "1\n2\n4\n8\n16\n"
+   },
+   {
+    "method": "PrintDoubling",
+    "args": [
+     3,
+     3
+    ],
+    "expected": "3\n6\n12\n"
+   }
+  ],
+  "examples": []
+ },
+ {
   "id": "S02",
   "name": "S02-fibonacci",
   "class": "S02_Fibonacci",
@@ -2256,6 +3355,48 @@
     ]
    }
   ]
+ },
+ {
+  "id": "S05",
+  "name": "S05-nth-fibonacci",
+  "class": "S05_NthFibonacci",
+  "title": "The n-th Fibonacci number",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "Fibonacci"
+  ],
+  "cases": [
+   {
+    "method": "Fibonacci",
+    "args": [
+     0
+    ],
+    "expected": 0
+   },
+   {
+    "method": "Fibonacci",
+    "args": [
+     1
+    ],
+    "expected": 1
+   },
+   {
+    "method": "Fibonacci",
+    "args": [
+     6
+    ],
+    "expected": 8
+   },
+   {
+    "method": "Fibonacci",
+    "args": [
+     10
+    ],
+    "expected": 55
+   }
+  ],
+  "examples": []
  },
  {
   "id": "S03",

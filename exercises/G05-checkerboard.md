@@ -71,4 +71,4 @@ Only after a real try: [open the solution for G05](../solutions/G05_Checkerboard
 
 ---
 
-⬅️ Previous: [G04 · Hollow rectangle](G04-hollow-rectangle.md) · 📚 [All exercises](README.md) · Next: [G06 · Pyramid](G06-pyramid.md) ➡️
+⬅️ Previous: [G13 · Diagonal](G13-diagonal.md) · 📚 [All exercises](README.md) · Next: [G06 · Pyramid](G06-pyramid.md) ➡️

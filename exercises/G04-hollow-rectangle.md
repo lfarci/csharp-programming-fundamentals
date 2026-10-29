@@ -71,4 +71,4 @@ Only after a real try: [open the solution for G04](../solutions/G04_HollowRectan
 
 ---
 
-⬅️ Previous: [G03 · Multiplication grid](G03-multiplication-grid.md) · 📚 [All exercises](README.md) · Next: [G05 · Checkerboard](G05-checkerboard.md) ➡️
+⬅️ Previous: [G03 · Multiplication grid](G03-multiplication-grid.md) · 📚 [All exercises](README.md) · Next: [G13 · Diagonal](G13-diagonal.md) ➡️

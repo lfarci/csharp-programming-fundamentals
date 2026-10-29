@@ -7,7 +7,9 @@ A friendly companion for a beginner C# course. You learn **loop recipes** and pr
 
 ## 🚀 Start here
 
-1. Read [**Getting started**](docs/getting-started.md): clone the repo, start an exercise, check it, use hints and solutions.
+1. Get the course: `git clone https://github.com/lfarci/csharp-programming-fundamentals.git` (or fork it first if you want your own copy on GitHub). Details in [**Getting started**](docs/getting-started.md#2-get-the-files-on-your-computer).
+   - You write **only** in `practice/`, through `./ex start`, `./ex check`, `./ex run` and `./ex next`. Never edit `Program.cs`, project files, `tests/` or `solutions/`.
+   - Before each session: `git pull` to get new exercises. Your own files are never overwritten.
 2. Read [**How to read an exercise**](docs/reading-an-exercise.md) (10 minutes).
 3. Do your first exercises: [L01](exercises/L01-trace-a-loop.md) and [L02](exercises/L02-boundaries.md) on paper. Then, in a terminal:
 

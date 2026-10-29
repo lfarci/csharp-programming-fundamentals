@@ -135,6 +135,8 @@ Now alone, in a real file (`./ex start ID`, then `./ex check`):
 2. [**S02**](../exercises/S02-fibonacci.md) Print the first N Fibonacci numbers.
 3. [**S03**](../exercises/S03-even-fibonacci-sum.md) Sum the even Fibonacci numbers up to a limit → [Project Euler #2](https://projecteuler.net/problem=2).
 
+🔁 **Want more of the same?** Do the drill set for this recipe in the [exercise inventory](../exercises/README.md#-drill-sets-same-pattern-many-times): 5 to 12 short exercises that use exactly this pattern.
+
 ### 🐞 Debug it
 
 This code has **one** bug. Find it on paper: trace a small example.
