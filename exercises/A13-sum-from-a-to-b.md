@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › A13
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › A13
 
 # A13 · Sum from a to b
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 4b · Running result | [Accumulator](../cookbook/02-accumulator.md) | [A01](A01-sum-1-to-n.md) | Custom |
+| Guided | easy | 4b · Running result | [Accumulator](../cookbook/02-accumulator.md) | [A01](A01-sum-1-to-n.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Give back a + (a+1) + … + b.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start A13     # creates practice/A13_SumFromAToB.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `int SumFromTo(int a, int b)`: input = a, an int (whole number), b, an int (whole number); result = an int (whole number), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -34,20 +34,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `SumFromTo(7, 7)` | `7` |
 | `SumFromTo(5, 4)` | `0` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - `a` bigger than `b`: 0.
 
-## 📏 Rules
+## Rules
 
 - Write the loop yourself.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -61,16 +61,16 @@ A01 with the loop starting at `a`.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Sum the numbers from `b` down to `a`.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for A13](../solutions/A13_SumFromAToB.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [A10 · Sum of a series](A10-sum-of-a-series.md) · 📚 [All exercises](README.md) · Next: [A14 · Sum the odd numbers](A14-sum-odd-numbers.md) ➡️
+Previous: [A10 · Sum of a series](A10-sum-of-a-series.md) · [All exercises](README.md) · Next: [A14 · Sum the odd numbers](A14-sum-odd-numbers.md)

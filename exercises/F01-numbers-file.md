@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › F01
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › F01
 
 # F01 · Save numbers to a file
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐⭐ | 5 · Files | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Array traversal](../cookbook/11-array-traversal.md), [Accumulator](../cookbook/02-accumulator.md) | [L05](L05-until-zero.md), [R01](R01-sum-an-array.md) | Custom |
+| Independent | medium | 5 · Files | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Array traversal](../cookbook/11-array-traversal.md), [Accumulator](../cookbook/02-accumulator.md) | [L05](L05-until-zero.md), [R01](R01-sum-an-array.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Read numbers until 0 and save them (one per line) in `numbers.txt`. Then read the file back and print how many lines it has and the sum.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start F01     # creates practice/F01_NumbersFile.cs (never overwrites your work)
@@ -21,7 +21,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 
-## 🧪 Examples
+## Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
 
@@ -39,20 +39,20 @@ Lines: 0
 Sum: 0
 ```
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - No number → an empty file.
 
-## 📏 Rules
+## Rules
 
 - Save with `File.WriteAllText`, read back with `File.ReadAllLines`. Build the text yourself with `+=` (lists come in step 9).
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -72,16 +72,16 @@ Each line is text: `int.Parse(line)`.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 When the program starts, if the file exists, first print the numbers saved last time.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for F01](../solutions/F01_NumbersFile.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [T03 · Count and keep the digits](T03-count-and-keep-digits.md) · 📚 [All exercises](README.md) · Next: [E01 · Safe number reader](E01-safe-number-reader.md) ➡️
+Previous: [T03 · Count and keep the digits](T03-count-and-keep-digits.md) · [All exercises](README.md) · Next: [E01 · Safe number reader](E01-safe-number-reader.md)

@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › L09
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › L09
 
 # L09 · Draw one row
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 4c · Draw in 2D | [Counter loop](../cookbook/01-counter-loop.md), [Nested grid](../cookbook/08-nested-grid.md) | [L03](L03-count-up-and-down.md) | Custom |
+| Guided | easy | 4c · Draw in 2D | [Counter loop](../cookbook/01-counter-loop.md), [Nested grid](../cookbook/08-nested-grid.md) | [L03](L03-count-up-and-down.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Print `width` stars **on one line**, then end the line. `DrawRow(5)` prints `*****`. This is the inside of every 2D drawing.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start L09     # creates practice/L09_DrawARow.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `void DrawRow(int width)`: input = width, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -33,20 +33,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `DrawRow(1)` | prints:<br>`*` |
 | `DrawRow(0)` | prints:<br>`` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - `DrawRow(0)` prints only the line break.
 
-## 📏 Rules
+## Rules
 
 - Use `Console.Write` inside the loop and **one** `Console.WriteLine()` after it.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -60,16 +60,16 @@ The loop runs `width` times. Where does the line break go: inside or after the l
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Write `DrawDashes(int width)` that prints `-*-*-` style rows: a dash at odd positions, a star at even ones.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for L09](../solutions/L09_DrawARow.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [A22 · Sum of the divisors](A22-sum-of-divisors.md) · 📚 [All exercises](README.md) · Next: [L10 · Numbers on one line](L10-numbers-on-one-line.md) ➡️
+Previous: [A22 · Sum of the divisors](A22-sum-of-divisors.md) · [All exercises](README.md) · Next: [L10 · Numbers on one line](L10-numbers-on-one-line.md)

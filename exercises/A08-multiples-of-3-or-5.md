@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › A08
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › A08
 
 # A08 · Multiples of 3 or 5
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Challenge | ⭐⭐ | 4b · Running result | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A03](A03-sum-even-values.md) | Custom · prepares [Project Euler #1](https://projecteuler.net/problem=1) |
+| Challenge | medium | 4b · Running result | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A03](A03-sum-even-values.md) | Custom · prepares [Project Euler #1](https://projecteuler.net/problem=1) |
 
-## 🎯 Goal
+## Goal
 
 Give back the sum of all numbers **below** n that are multiples of 3 or 5.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start A08     # creates practice/A08_MultiplesOf3Or5.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `int SumOfMultiples(int n)`: input = n, an int (whole number); result = an int (whole number), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -34,21 +34,21 @@ Your method must give these results. `./ex check` tests all of them.
 | `SumOfMultiples(1)` | `0` |
 | `SumOfMultiples(16)` | `60` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - 15 is a multiple of 3 **and** 5: count it once.
 - "below N" → N itself is not included.
 
-## 📏 Rules
+## Rules
 
 - One loop, one `if` with `||`.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -68,16 +68,16 @@ Filter: `i % 3 == 0 || i % 5 == 0`.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Solve [Project Euler #1](https://projecteuler.net/problem=1) (N = 1000).
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for A08](../solutions/A08_MultiplesOf3Or5.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [A07 · Integer power](A07-integer-power.md) · 📚 [All exercises](README.md) · Next: [A09 · Smallest and largest until zero](A09-min-and-max-until-zero.md) ➡️
+Previous: [A07 · Integer power](A07-integer-power.md) · [All exercises](README.md) · Next: [A09 · Smallest and largest until zero](A09-min-and-max-until-zero.md)

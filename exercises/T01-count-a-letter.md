@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › T01
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › T01
 
 # T01 · Count a letter
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 6 · Arrays | [Build a string](../cookbook/12-string-building.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [R03](R03-count-matches.md) | Custom |
+| Guided | easy | 6 · Arrays | [Build a string](../cookbook/12-string-building.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [R03](R03-count-matches.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Give back how many times `letter` appears in `text` (case-sensitive).
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start T01     # creates practice/T01_CountALetter.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `int CountLetter(string text, char letter)`: input = text, a string (text), letter, a char (one character); result = an int (whole number), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -33,21 +33,21 @@ Your method must give these results. `./ex check` tests all of them.
 | `CountLetter("BANANA", 'a')` | `0` |
 | `CountLetter("", 'a')` | `0` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - Empty text.
 - `'A'` is not `'a'`.
 
-## 📏 Rules
+## Rules
 
 - `foreach (char c in text)`. No LINQ.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -61,16 +61,16 @@ Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start v
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Count all vowels (a, e, i, o, u) in a text.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for T01](../solutions/T01_CountALetter.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [R05 · Reverse an array](R05-reverse-an-array.md) · 📚 [All exercises](README.md) · Next: [T02 · Remove spaces](T02-remove-spaces.md) ➡️
+Previous: [R05 · Reverse an array](R05-reverse-an-array.md) · [All exercises](README.md) · Next: [T02 · Remove spaces](T02-remove-spaces.md)

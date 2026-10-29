@@ -1,12 +1,12 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › S01
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › S01
 
 # S01 · Trace two changing variables (paper)
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 4d · State | [State update](../cookbook/07-state-update.md) | [L01](L01-trace-a-loop.md) | Custom |
+| Guided | easy | 4d · State | [State update](../cookbook/07-state-update.md) | [L01](L01-trace-a-loop.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Without running it, fill a trace table (`turn`, `next`, `a`, `b`) for this code. Then run it to check.
 
@@ -24,24 +24,24 @@ for (int i = 1; i <= 3; i++)
 
 Then swap the two middle lines (`b = next;` before `a = b;`). What changes? Why?
 
-## ✏️ Start and check
+## Start and check
 
 This one is on **paper**: no code to write. When you are done, compare with the answer key (link at the bottom).
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - Order of the assignments.
 
-## 📏 Rules
+## Rules
 
 - Paper first.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -55,16 +55,16 @@ Turn 1: next = 1 + 2 = 3, then a = 2, then b = 3.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Predict the output when `a = 0` and `b = 1` and the loop runs 6 times. Which famous sequence is it?
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for S01](../solutions/S01-trace-updates.md). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [D06 · Palindrome number](D06-palindrome-number.md) · 📚 [All exercises](README.md) · Next: [S04 · Doubling](S04-doubling.md) ➡️
+Previous: [D06 · Palindrome number](D06-palindrome-number.md) · [All exercises](README.md) · Next: [S04 · Doubling](S04-doubling.md)

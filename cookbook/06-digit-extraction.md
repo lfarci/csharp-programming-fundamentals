@@ -1,18 +1,18 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 6 · Digit extraction
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 6 · Digit extraction
 
 # Recipe 6 · Digit extraction — `% 10` and `/ 10`
 
-> Peel a number like an onion 🧅: take the **last digit**, then **remove** it, until nothing is left.
+> Peel a number like an onion : take the **last digit**, then **remove** it, until nothing is left.
 
 ![352 is split into remaining digits and one last digit at each step.](../assets/digit-extraction.svg)
 
-🧭 **How this page works:** 1 goal → predict → trace → the pattern → complete it → your turn. Do the steps in order, with a pen. See [why](../docs/writing-guide.md#2-lesson-format).
+**How this page works:** 1 goal → predict → trace → the pattern → complete it → your turn. Do the steps in order, with a pen. See [why](../docs/writing-guide.md#2-lesson-format).
 
-## 🎯 1 · Goal
+## 1 · Goal
 
 Take an `int` apart digit by digit with `% 10` (last digit) and `/ 10` (remove it).
 
-## 🔮 2 · Predict
+## 2 · Predict
 
 Read this code. **Before** you run it, write down what it prints.
 
@@ -33,7 +33,7 @@ It prints `10` (2 + 5 + 3). The digits come out **right to left**.
 
 </details>
 
-## 🔬 3 · Trace it
+## 3 · Trace it
 
 Trace table: digit sum of 352. Cover the table, fill your own, then compare.
 
@@ -45,7 +45,7 @@ Trace table: digit sum of 352. Cover the table, fill your own, then compare.
 
 Reverse 352: `reversed` goes 0 → 2 → 25 → **253**.
 
-## 🧩 4 · The pattern
+## 4 · The pattern
 
 ### Subgoals (the steps, with names you can reuse)
 
@@ -57,12 +57,12 @@ Reverse 352: `reversed` goes 0 → 2 → 25 → **253**.
 
 Say the subgoal names out loud when you write the code. They are the same in every exercise that uses this recipe.
 
-### 🔎 Recognize it
+### Recognize it
 
 Trigger words: **"digits"**, **"sum of the digits"**, **"number of digits"**, **"reverse the number"**, **"palindrome number"**, **"Armstrong"**, **"contains the digit 7"**.
 Any time you must look at the digits of an `int` **without** turning it into text.
 
-### 🧠 The idea
+### The idea
 
 Two tools from step 2 (variables & expressions):
 
@@ -88,7 +88,7 @@ flowchart TD
 
 We use `while`, because we do not know the number of digits in advance.
 
-### 📝 Template
+### Template
 
 ```csharp
 int remaining = n;              // keep n untouched, you may need it later!
@@ -109,7 +109,7 @@ Classic uses of the same loop:
 | reverse the number | `reversed = 0` | `reversed = reversed * 10 + digit` |
 | contains a 7? | `found = false` | `if (digit == 7) found = true` |
 
-## ✍️ 5 · Complete it
+## 5 · Complete it
 
 Part of the code is given. Fill in the rest on paper.
 
@@ -131,7 +131,7 @@ return count;
 
 </details>
 
-## 🏋️ 6 · Your turn
+## 6 · Your turn
 
 Now alone, in a real file (`./ex start ID`, then `./ex check`):
 
@@ -139,11 +139,11 @@ Now alone, in a real file (`./ex start ID`, then `./ex check`):
 2. [**D04**](../exercises/D04-digit-sum.md) Sum of the digits of N.
 3. [**D05**](../exercises/D05-reverse-a-number.md) Reverse N (1230 → 321) → then [**D06**](../exercises/D06-palindrome-number.md) palindrome number.
 
-🐞 Debugging exercise: [**D07**](../exercises/D07-fix-digit-sum.md) Fix the bugs: digit sum.
+Debugging exercise: [**D07**](../exercises/D07-fix-digit-sum.md) Fix the bugs: digit sum.
 
-🔁 **Want more of the same?** Do the drill set for this recipe in the [exercise inventory](../exercises/README.md#-drill-sets-same-pattern-many-times): 5 to 12 short exercises that use exactly this pattern.
+**Want more of the same?** Do the drill set for this recipe in the [exercise inventory](../exercises/README.md#drill-sets-same-pattern-many-times): 5 to 12 short exercises that use exactly this pattern.
 
-### 🐞 Debug it
+### Debug it
 
 This code has **one** bug. Find it on paper: trace a small example.
 
@@ -165,7 +165,7 @@ Trace it: 0 + 3 × 10 = 30, then 30 + 2 × 10 = 50, then 50 + 1 × 10 = 60. The 
 
 </details>
 
-### ⚠️ Common mistakes
+### Common mistakes
 
 - **Destroying `n`**: if you write `n /= 10`, the original is gone (you need it for palindrome and Armstrong). Work on a copy.
 - **Zero:** `while (remaining > 0)` runs 0 times for `n = 0`, but 0 has **1** digit. Handle it (use `do … while`, or an `if`).
@@ -173,4 +173,4 @@ Trace it: 0 + 3 × 10 = 30, then 30 + 2 × 10 = 50, then 50 + 1 × 10 = 60. The 
 - Using `double`: `352.0 / 10` is 35.2, not 35. Use `int`.
 - Negative numbers: out of scope for the first exercises (or use `Math.Abs`).
 
-➡️ Next: [Recipe 7 · State update](07-state-update.md)
+Next: [Recipe 7 · State update](07-state-update.md)

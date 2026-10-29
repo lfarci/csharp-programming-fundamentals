@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › C01
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › C01
 
 # C01 · Even or odd
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 3 · Conditions | — | [B02](B02-rectangle-calculator.md) | Custom |
+| Guided | easy | 3 · Conditions | — | [B02](B02-rectangle-calculator.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Give back `true` if `n` is even, `false` if it is odd.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start C01     # creates practice/C01_EvenOrOdd.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `bool IsEven(int n)`: input = n, an int (whole number); result = a bool (true or false), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -34,21 +34,21 @@ Your method must give these results. `./ex check` tests all of them.
 | `IsEven(-4)` | `true` |
 | `IsEven(-3)` | `false` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - 0 is even.
 - Negative numbers: `-3 % 2` is `-1`, not `1`!
 
-## 📏 Rules
+## Rules
 
 - Use `%` and `if`/`else`.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [reading worksheet](../docs/reading-an-exercise.md#4-the-worksheet-copy-it): what goes in? what comes out? a tiny example by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -62,16 +62,16 @@ A number is even when the remainder of the division by 2 is 0.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Say if a number is a multiple of 3, of 5, of both, or of none.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for C01](../solutions/C01_EvenOrOdd.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [B03 · Seconds to hours, minutes, seconds](B03-seconds-to-hms.md) · 📚 [All exercises](README.md) · Next: [C02 · Largest of three](C02-largest-of-three.md) ➡️
+Previous: [B03 · Seconds to hours, minutes, seconds](B03-seconds-to-hms.md) · [All exercises](README.md) · Next: [C02 · Largest of three](C02-largest-of-three.md)

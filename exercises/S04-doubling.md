@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › S04
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › S04
 
 # S04 · Doubling
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 4d · State | [State update](../cookbook/07-state-update.md) | [L11](L11-count-from-a-to-b.md) | Custom |
+| Guided | easy | 4d · State | [State update](../cookbook/07-state-update.md) | [L11](L11-count-from-a-to-b.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Print `count` values: `start`, then each value doubled (`3, 6, 12`).
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start S04     # creates practice/S04_Doubling.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `void PrintDoubling(int start, int count)`: input = start, an int (whole number), count, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -32,20 +32,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `PrintDoubling(1, 5)` | prints:<br>`1`<br>`2`<br>`4`<br>`8`<br>`16` |
 | `PrintDoubling(3, 3)` | prints:<br>`3`<br>`6`<br>`12` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - count = 0: nothing.
 
-## 📏 Rules
+## Rules
 
 - Write the loop yourself.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -59,16 +59,16 @@ Each turn: print it, then `value = value * 2;`.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Each value is the previous one plus 3.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for S04](../solutions/S04_Doubling.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [S01 · Trace two changing variables (paper)](S01-trace-updates.md) · 📚 [All exercises](README.md) · Next: [S02 · Fibonacci](S02-fibonacci.md) ➡️
+Previous: [S01 · Trace two changing variables (paper)](S01-trace-updates.md) · [All exercises](README.md) · Next: [S02 · Fibonacci](S02-fibonacci.md)

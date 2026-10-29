@@ -1,13 +1,13 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Combining recipes
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Combining recipes
 
-# 🧩 Combining recipes
+# Combining recipes
 
 Hard exercises are just **small recipes glued together**. The skill is to **cut** the problem into recipes you already know.
 
 ## Example 1 · Armstrong number (the teacher's test)
 
 > A number is an *Armstrong number* if it equals the sum of its digits, each raised to the power **number of digits**.
-> 153 → 3 digits → 1³ + 5³ + 3³ = 1 + 125 + 27 = **153** ✅ · 154 → 1 + 125 + 64 = 190 ❌
+> 153 → 3 digits → 1³ + 5³ + 3³ = 1 + 125 + 27 = **153** (yes) · 154 → 1 + 125 + 64 = 190 (no)
 
 ```mermaid
 flowchart TD
@@ -30,8 +30,8 @@ flowchart TD
         S1["sum = 27 + 125 + 1 = 153"]
     end
     STEP4 --> STEP5{"⑤ Compare<br/>sum == n ?"}
-    STEP5 -- yes --> Y["Armstrong ✅"]
-    STEP5 -- no --> X["not Armstrong ❌"]
+    STEP5 -- yes --> Y["Armstrong "]
+    STEP5 -- no --> X["not Armstrong "]
 ```
 
 **The 4 building blocks, each one practised alone first:**
@@ -88,11 +88,11 @@ Trace table for 153 (`digits` = 3):
 | 15 | 5 | 125 | 152 |
 | 1 | 1 | 1 | **153** |
 
-`sum == n` → ✅. Next level: put all of this inside a counter loop from 100 to 999 to **find every** Armstrong number (M02), then into methods (N01).
+`sum == n` → . Next level: put all of this inside a counter loop from 100 to 999 to **find every** Armstrong number (M02), then into methods (N01).
 
 ## Example 2 · Palindrome number
 
-1221 → reversed is 1221 → same → palindrome ✅.
+1221 → reversed is 1221 → same → palindrome .
 
 | Block | Recipe |
 | --- | --- |
@@ -133,4 +133,4 @@ Counter loop 1..999 + filter `i % 3 == 0 || i % 5 == 0` + sum = [recipe 3](03-co
 
 ---
 
-⬅️ [Recipe 12 · Build a string](12-string-building.md) · 🍳 [Cookbook](README.md) · Next: [Exercises](../exercises/README.md) ➡️
+[Recipe 12 · Build a string](12-string-building.md) · [Cookbook](README.md) · Next: [Exercises](../exercises/README.md)

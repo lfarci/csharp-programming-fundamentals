@@ -1,7 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <!-- Tests every exercise in practice/ with the examples from tools/exercises.json (generated).
-       Learner: ./ex check A04.   CI: EXERCISE_ASSEMBLY=<path to Solutions.dll> dotnet test tests/Practice.Tests -->
+  <!-- One test file per exercise, in Exercises/. Example: Exercises/A04_FactorialTests.cs tests practice/A04_Factorial.cs.
+       Learner: ./ex check A04
+       CI:      tools/check-exercises.sh (runs the same tests on solutions/ and on the starters) -->
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <RollForward>Major</RollForward>
@@ -9,6 +10,9 @@
     <Nullable>enable</Nullable>
     <OutputType>Exe</OutputType>
     <IsPackable>false</IsPackable>
+    <!-- The code under test: your practice/ folder. CI points these at solutions/ or at a copy of the starters. -->
+    <ExerciseProject Condition="'$(ExerciseProject)' == ''">$(MSBuildThisFileDirectory)..\..\practice\Practice.csproj</ExerciseProject>
+    <ExerciseDir Condition="'$(ExerciseDir)' == ''">$([System.IO.Path]::GetDirectoryName($(ExerciseProject)))</ExerciseDir>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,9 +23,21 @@
 
   <ItemGroup>
     <Using Include="Xunit" />
-    <ProjectReference Include="..\..\practice\Practice.csproj" />
-    <Content Include="..\..\tools\exercises.json" Link="exercises.json" CopyToOutputDirectory="PreserveNewest" />
+    <ProjectReference Include="$(ExerciseProject)" />
     <Content Include="xunit.runner.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
+
+  <!-- Build only the tests of exercises that exist in the code under test:
+       Exercises/A04_FactorialTests.cs is compiled only if practice/A04_Factorial.cs exists.
+       So an exercise you have not started never breaks the others.
+       With ./ex check A04 (OnlyExercise=A04_Factorial), only the A04 tests are built. -->
+  <Target Name="OnlyStartedExercises" BeforeTargets="BeforeBuild">
+    <ItemGroup>
+      <_ExerciseTest Include="@(Compile)" Condition="$([System.String]::new('%(Compile.Filename)').EndsWith('Tests'))" />
+      <_ExerciseTest Update="@(_ExerciseTest)" Exercise="$([System.String]::new('%(Filename)').Replace('Tests', ''))" />
+      <_SkipTest Include="@(_ExerciseTest)" Condition="!Exists('$(ExerciseDir)\%(Exercise).cs') Or ('$(OnlyExercise)' != '' And '%(Exercise)' != '$(OnlyExercise)')" />
+      <Compile Remove="@(_SkipTest)" />
+    </ItemGroup>
+  </Target>
 
 </Project>

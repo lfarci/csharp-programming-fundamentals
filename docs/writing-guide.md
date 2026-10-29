@@ -1,6 +1,6 @@
-🏠 [Home](../README.md) › ✍️ Writing guide (for coaches and agents)
+[Home](../README.md) › Writing guide (for coaches and agents)
 
-# ✍️ Writing guide
+# Writing guide
 
 How we write for a **struggling beginner**. Every rule below comes from a source listed at the end; numbers in brackets, like (2), point to that list. [AGENTS.md](../AGENTS.md) turns these rules into the review rubric.
 
@@ -9,7 +9,7 @@ How we write for a **struggling beginner**. Every rule below comes from a source
 | Rule | Why | Source |
 | --- | --- | --- |
 | **One new difficulty per exercise.** Everything else in it is already known. | Working memory is small. Two new ideas at once overload it. | Cognitive load theory (1, 2) |
-| **Worked example first, then fade the help.** Recipe page (full example) → 🟢 Guided (hints do most of the steps) → 🔵 Independent → 🟣 Challenge. | Beginners learn more from studied examples than from solving alone; help is removed step by step. | Worked examples, fading (3, 2) |
+| **Worked example first, then fade the help.** Recipe page (full example) → Guided (hints do most of the steps) → Independent → Challenge. | Beginners learn more from studied examples than from solving alone; help is removed step by step. | Worked examples, fading (3, 2) |
 | **Read code before writing code.** Predict, trace, then modify, then make. Paper exercises (L01, L02, S01) come first. | Reading and tracing are separate skills that come before writing. | PRIMM (4), theory of instruction (5) |
 | **Name the plan.** Recipes have a name, trigger words and a template. | Novices lack "plans"; naming them makes them reusable. | Theory of instruction (5) |
 | **Arrange-the-lines tasks are welcome** for a new recipe (give the lines, mixed up). | Lower load than a blank page, same thinking. | Parsons problems (6) |
@@ -33,24 +33,24 @@ Every cookbook recipe follows the same **6 steps**, in this order. Same order on
 
 | # | Step | What it holds | Why | Source |
 | ---: | --- | --- | --- | --- |
-| 1 | 🎯 **Goal** | One concrete goal, in one sentence. | One new difficulty at a time. | (1, 20) |
-| 2 | 🔮 **Predict** | A small **working** example. She predicts the output; the answer is in `<details>`. | Read before write; predictions make running code useful. | PRIMM (4, 17), (23 tip 4) |
-| 3 | 🔬 **Trace it** | A trace table of the same example. | Tracing is its own skill, and comes before writing. | (5), RPF "read and explore code first" (16) |
-| 4 | 🧩 **The pattern** | Labelled subgoals, trigger words, the idea (with a diagram and its text), the template. | Subgoal labels help transfer to new problems. | (18, 19, 23 tip 6) |
-| 5 | ✍️ **Complete it** | A **partly written** variation: fill in the blanks, or arrange the lines (Parsons). Answer in `<details>`. | Fading: less help, same thinking. | (3, 6, 18), (23 tip 10) |
-| 6 | 🏋️ **Your turn** | Exercise IDs to do alone in a real file, **plus** a small 🐞 debugging task (answer in `<details>`) and the common mistakes. | Independent practice, then debugging on purpose. | (2, 22, 23) |
+| 1 | **Goal** | One concrete goal, in one sentence. | One new difficulty at a time. | (1, 20) |
+| 2 | **Predict** | A small **working** example. She predicts the output; the answer is in `<details>`. | Read before write; predictions make running code useful. | PRIMM (4, 17), (23 tip 4) |
+| 3 | **Trace it** | A trace table of the same example. | Tracing is its own skill, and comes before writing. | (5), RPF "read and explore code first" (16) |
+| 4 | **The pattern** | Labelled subgoals, trigger words, the idea (with a diagram and its text), the template. | Subgoal labels help transfer to new problems. | (18, 19, 23 tip 6) |
+| 5 | **Complete it** | A **partly written** variation: fill in the blanks, or arrange the lines (Parsons). Answer in `<details>`. | Fading: less help, same thinking. | (3, 6, 18), (23 tip 10) |
+| 6 | **Your turn** | Exercise IDs to do alone in a real file, **plus** a small debugging task (answer in `<details>`) and the common mistakes. | Independent practice, then debugging on purpose. | (2, 22, 23) |
 
 A recipe page does **not** repeat the full exercise: it links to it by ID.
 
 ## 3. Exercise types
 
-| Type | Icon | What she does | When to use it | Source |
-| --- | --- | --- | --- | --- |
-| Paper trace | ✏️ | Predict and trace, no computer. | Before the first exercise of a new loop idea. | PRIMM (4, 17) |
-| Arrange the lines (Parsons) | 🧩 | All lines are in the starter file, mixed up and commented out. She orders them. | The first exercise of a recipe, when a blank file is too much. | (6, 23 tip 10) |
-| Write a method | ▶️ | Fill in one method; `./ex check` tests it. | Most exercises. | (3, 5) |
-| Fix the bugs | 🐞 | The starter compiles but has 1–2 planted bugs. `./ex check` shows which example fails. | Right after the matching "write" exercise. Bugs must be the *common mistakes* of the recipe. | (22, 23 tips 3, 9) |
-| Mastery check | ✅ | A new variation, alone, another day. | End of every exercise. | (5) |
+| Type | What she does | When to use it | Source |
+| --- | --- | --- | --- |
+| Paper trace | Predict and trace, no computer. | Before the first exercise of a new loop idea. | PRIMM (4, 17) |
+| Arrange the lines (Parsons) | All lines are in the starter file, mixed up and commented out. She orders them. | The first exercise of a recipe, when a blank file is too much. | (6, 23 tip 10) |
+| Write a method | Fill in one method; `./ex check` tests it. | Most exercises. | (3, 5) |
+| Fix the bugs | The starter compiles but has 1–2 planted bugs. `./ex check` shows which example fails. | Right after the matching "write" exercise. Bugs must be the *common mistakes* of the recipe. | (22, 23 tips 3, 9) |
+| Mastery check | A new variation, alone, another day. | End of every exercise. | (5) |
 
 The path also follows the order of two well-known beginner courses. Conditions come before loops. Loops come in small steps: simple loops, then loops with conditions, then nested loops after one-line loops. Methods come in once the loops are solid: see the University of Helsinki *Python Programming MOOC* (24) and Microsoft Learn *Get started with C#* (25). That is why one-row drawings (L09, L10) come before 2D grids (G01).
 
@@ -71,7 +71,7 @@ The path also follows the order of two well-known beginner courses. Conditions c
 | --- | --- |
 | Every image has **alt text** that says what the image shows (not "image of"). SVGs in `assets/` have a `<title>`. | WCAG 1.1.1 (10), W3C images tutorial (11) |
 | Every Mermaid diagram has `accTitle` and `accDescr`, and the same information is also written as text nearby. | Mermaid accessibility (12), GitHub Docs diagrams (13) |
-| Colour and emoji never carry meaning alone. Next to 🟢 we write "Guided". | WCAG 1.4.1 (10) |
+| **No emoji**, anywhere: pages, headings, diagrams, code comments, `./ex` output. Use words ("Guided", "OK", "NOT YET", "done"). Colour never carries meaning alone. | WCAG 1.4.1 (10), plain language (7, 8): emoji are noise for many readers and are read aloud oddly by screen readers. |
 | Link text says where it goes ("open the solution for A01"), never "here" or a bare file name. | WCAG 2.4.4 (10), GitHub Docs style (14) |
 | Headings in order (`#`, then `##`, then `###`), one `#` per page. | WCAG 1.3.1, 2.4.6 (10) |
 | Same navigation on every page: breadcrumb on top, Previous/Next at the bottom. | WCAG 3.2.3 (10), COGA (9) |
@@ -110,4 +110,4 @@ The path also follows the order of two well-known beginner courses. Conditions c
 
 ---
 
-⬅️ [Home](../README.md) · [AGENTS.md](../AGENTS.md)
+[Home](../README.md) · [AGENTS.md](../AGENTS.md)

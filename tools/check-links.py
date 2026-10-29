@@ -52,6 +52,6 @@ if external:
         if code == 404 or not isinstance(code, int):
             bad.append(f"external {u}: {code}")
 
-for b in bad: print("❌", b)
-print(f"{'✅' if not bad else '❌'} links checked ({len(urls)} external {'checked' if external else 'skipped'}), {len(bad)} problem(s)")
+for b in bad: print("FAIL:", b)
+print(f"{'OK:' if not bad else 'FAIL:'} links checked ({len(urls)} external {'checked' if external else 'skipped'}), {len(bad)} problem(s)")
 sys.exit(1 if bad else 0)

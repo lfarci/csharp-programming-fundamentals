@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › G03
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › G03
 
 # G03 · Multiplication grid
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐⭐ | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [G01](G01-rectangle.md), [L04](L04-multiplication-table.md), [G14](G14-numbers-in-columns.md) | Custom |
+| Independent | medium | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [G01](G01-rectangle.md), [L04](L04-multiplication-table.md), [G14](G14-numbers-in-columns.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Print an n×n grid where the cell at row `r` and column `c` contains `r × c`. Each number takes 4 characters (right-aligned).
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start G03     # creates practice/G03_MultiplicationGrid.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `void DrawGrid(int n)`: input = n, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -32,20 +32,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `DrawGrid(4)` | prints:<br>`   1   2   3   4`<br>`   2   4   6   8`<br>`   3   6   9  12`<br>`   4   8  12  16` |
 | `DrawGrid(1)` | prints:<br>`   1` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - N = 1 → one cell.
 
-## 📏 Rules
+## Rules
 
 - Nested loops.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -59,16 +59,16 @@ Right-align on 4 characters, like in [G14](G14-numbers-in-columns.md): `Console.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Only print the cells where `c <= r` (a triangle of numbers).
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for G03](../solutions/G03_MultiplicationGrid.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [G14 · Numbers in columns](G14-numbers-in-columns.md) · 📚 [All exercises](README.md) · Next: [G04 · Hollow rectangle](G04-hollow-rectangle.md) ➡️
+Previous: [G14 · Numbers in columns](G14-numbers-in-columns.md) · [All exercises](README.md) · Next: [G04 · Hollow rectangle](G04-hollow-rectangle.md)

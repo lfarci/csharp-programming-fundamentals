@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › C03
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › C03
 
 # C03 · Ticket price
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐⭐ | 3 · Conditions | — | [C01](C01-even-or-odd.md) | Custom |
+| Independent | medium | 3 · Conditions | — | [C01](C01-even-or-odd.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 A cinema ticket costs 5 for children under 12, 7 for people aged 65 or more, and 10 for everyone else. Give back the price for `age`.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start C03     # creates practice/C03_TicketPrice.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `int Price(int age)`: input = age, an int (whole number); result = an int (whole number), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -35,20 +35,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `Price(65)` | `7` |
 | `Price(0)` | `5` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - The boundaries 11/12 and 64/65: test them all!
 
-## 📏 Rules
+## Rules
 
 - Use `if` / `else if` / `else`.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [reading worksheet](../docs/reading-an-exercise.md#4-the-worksheet-copy-it): what goes in? what comes out? a tiny example by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -62,16 +62,16 @@ Three categories → three branches.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Add a rule: on Wednesday (ask the day as a number 1-7) everybody pays 6.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for C03](../solutions/C03_TicketPrice.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [C02 · Largest of three](C02-largest-of-three.md) · 📚 [All exercises](README.md) · Next: [C04 · Grade from a score](C04-grade-from-a-score.md) ➡️
+Previous: [C02 · Largest of three](C02-largest-of-three.md) · [All exercises](README.md) · Next: [C04 · Grade from a score](C04-grade-from-a-score.md)

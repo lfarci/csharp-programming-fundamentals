@@ -1,6 +1,6 @@
-🏠 [Home](../README.md) › ✅ Progress checklist
+[Home](../README.md) › Progress checklist
 
-# ✅ My progress checklist
+# My progress checklist
 
 Print this page, or copy it into a notes file. Tick a box when it is true **without help**.
 
@@ -251,4 +251,4 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
 
 ---
 
-⬅️ [Home](../README.md) · 📚 [All exercises](../exercises/README.md)
+[Home](../README.md) · [All exercises](../exercises/README.md)

@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 12 · Build a string
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 12 · Build a string
 
 # Recipe 12 · Build a string — traverse text, keep a result
 
 > A string is an array of characters. Visit them like [array traversal](11-array-traversal.md), and grow a result string like an [accumulator](02-accumulator.md).
 
-🧭 **How this page works:** 1 goal → predict → trace → the pattern → complete it → your turn. Do the steps in order, with a pen. See [why](../docs/writing-guide.md#2-lesson-format).
+**How this page works:** 1 goal → predict → trace → the pattern → complete it → your turn. Do the steps in order, with a pen. See [why](../docs/writing-guide.md#2-lesson-format).
 
-## 🎯 1 · Goal
+## 1 · Goal
 
 Visit every character of a text and count, test or keep characters to build a new string.
 
-## 🔮 2 · Predict
+## 2 · Predict
 
 Read this code. **Before** you run it, write down what it prints.
 
@@ -33,7 +33,7 @@ It prints `3`. Note the single quotes: `'a'` is one `char`, `"a"` is a `string`.
 
 </details>
 
-## 🔬 3 · Trace it
+## 3 · Trace it
 
 Cover the tables, fill your own, then compare.
 
@@ -58,7 +58,7 @@ Remove the spaces from `"a b"`:
 | space | no | `"a"` |
 | `b` | yes | **`"ab"`** |
 
-## 🧩 4 · The pattern
+## 4 · The pattern
 
 ### Subgoals (the steps, with names you can reuse)
 
@@ -70,11 +70,11 @@ Remove the spaces from `"a b"`:
 
 Say the subgoal names out loud when you write the code. They are the same in every exercise that uses this recipe.
 
-### 🔎 Recognize it
+### Recognize it
 
 Trigger words: **"each letter"**, **"count the vowels"**, **"remove the spaces"**, **"reverse the word"**, **"keep only the digits"**, **"build a line of…"**, **"join with commas"**.
 
-### 🧠 The idea
+### The idea
 
 ![Character cells with a cursor moving through cat!; positions differ from characters.](../assets/string-traversal.svg)
 
@@ -107,7 +107,7 @@ flowchart TD
     B -- no --> E["print result"]
 ```
 
-### 📝 Template
+### Template
 
 ```csharp
 string result = "";
@@ -134,7 +134,7 @@ Console.WriteLine(line);   // 1, 2, 3
 
 Reverse: `for (int i = text.Length - 1; i >= 0; i--) result += text[i];`
 
-## ✍️ 5 · Complete it
+## 5 · Complete it
 
 Part of the code is given. Fill in the rest on paper.
 
@@ -156,7 +156,7 @@ foreach (char c in text)
 
 </details>
 
-## 🏋️ 6 · Your turn
+## 6 · Your turn
 
 Now alone, in a real file (`./ex start ID`, then `./ex check`):
 
@@ -164,7 +164,7 @@ Now alone, in a real file (`./ex start ID`, then `./ex check`):
 2. [**T02**](../exercises/T02-remove-spaces.md) Remove spaces.
 3. [**T03**](../exercises/T03-count-and-keep-digits.md) Count the digits in a text and keep them.
 
-### 🐞 Debug it
+### Debug it
 
 This code has **one** bug. Find it on paper: trace a small example.
 
@@ -186,7 +186,7 @@ foreach (char c in text)
 
 </details>
 
-### ⚠️ Common mistakes
+### Common mistakes
 
 - `'a'` (a `char`) vs `"a"` (a `string`).
 - Comparing case: `'A' != 'a'`. Use `char.ToLower(c)` if case does not matter.
@@ -194,4 +194,4 @@ foreach (char c in text)
 - Forgetting the empty text: `""` must give `0` or `""`, not a crash.
 - A trailing separator `1, 2, 3, ` → add the separator only *between* items.
 
-⬅️ Back to the [cookbook](README.md).
+Back to the [cookbook](README.md).

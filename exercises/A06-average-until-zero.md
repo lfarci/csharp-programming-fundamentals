@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › A06
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › A06
 
 # A06 · Average until zero
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐⭐ | 4b · Running result | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Accumulator](../cookbook/02-accumulator.md) | [L05](L05-until-zero.md), [A01](A01-sum-1-to-n.md) | Custom |
+| Independent | medium | 4b · Running result | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Accumulator](../cookbook/02-accumulator.md) | [L05](L05-until-zero.md), [A01](A01-sum-1-to-n.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Read whole numbers until 0. Print their average. If no number was entered, print `No numbers.`
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start A06     # creates practice/A06_AverageUntilZero.cs (never overwrites your work)
@@ -21,7 +21,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 
-## 🧪 Examples
+## Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
 
@@ -43,23 +43,23 @@ Average: 1.5
 No numbers.
 ```
 
-> ℹ️ On a computer set to French/Dutch, `1.5` may print as `1,5`. Both are correct.
+> On a computer set to French/Dutch, `1.5` may print as `1,5`. Both are correct.
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - First value 0 → never divide by 0!
 - The average can have decimals.
 
-## 📏 Rules
+## Rules
 
 - Sentinel loop + two boxes (`sum`, `count`).
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -79,16 +79,16 @@ Check `count == 0` **after** the loop.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Also print how many numbers were above the average. (Why is that hard without an array? → step 6!)
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for A06](../solutions/A06_AverageUntilZero.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [A05 · Two accumulators: sum and squares](A05-sum-square-difference.md) · 📚 [All exercises](README.md) · Next: [A07 · Integer power](A07-integer-power.md) ➡️
+Previous: [A05 · Two accumulators: sum and squares](A05-sum-square-difference.md) · [All exercises](README.md) · Next: [A07 · Integer power](A07-integer-power.md)

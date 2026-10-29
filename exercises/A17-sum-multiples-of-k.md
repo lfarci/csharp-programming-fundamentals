@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › A17
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › A17
 
 # A17 · Sum the multiples of k
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐⭐ | 4b · Running result | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A03](A03-sum-even-values.md), [A16](A16-count-multiples-of-5.md) | Custom |
+| Independent | medium | 4b · Running result | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A03](A03-sum-even-values.md), [A16](A16-count-multiples-of-5.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Give back the sum of the numbers from 1 to n that are divisible by k (k ≥ 1).
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start A17     # creates practice/A17_SumMultiplesOfK.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `int SumMultiplesOf(int k, int n)`: input = k, an int (whole number), n, an int (whole number); result = an int (whole number), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -33,20 +33,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `SumMultiplesOf(5, 20)` | `50` |
 | `SumMultiplesOf(4, 3)` | `0` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - k bigger than n: 0.
 
-## 📏 Rules
+## Rules
 
 - Write the loop yourself.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -60,16 +60,16 @@ Like A03, with `k` instead of 2.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Count them instead of adding them.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for A17](../solutions/A17_SumMultiplesOfK.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [A16 · Count multiples of 5](A16-count-multiples-of-5.md) · 📚 [All exercises](README.md) · Next: [A18 · Sum of cubes](A18-sum-of-cubes.md) ➡️
+Previous: [A16 · Count multiples of 5](A16-count-multiples-of-5.md) · [All exercises](README.md) · Next: [A18 · Sum of cubes](A18-sum-of-cubes.md)

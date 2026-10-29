@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › G10
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › G10
 
 # G10 · Triangle of row numbers
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [G02](G02-right-triangle.md) | Custom |
+| Guided | easy | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [G02](G02-right-triangle.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Print a triangle where row r is the digit r, written r times: `1`, `22`, `333`.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start G10     # creates practice/G10_RowNumberTriangle.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `void DrawRowTriangle(int height)`: input = height, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -32,20 +32,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `DrawRowTriangle(3)` | prints:<br>`1`<br>`22`<br>`333` |
 | `DrawRowTriangle(1)` | prints:<br>`1` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - height = 1: `1`.
 
-## 📏 Rules
+## Rules
 
 - Write the loop yourself.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -59,16 +59,16 @@ Print `row` instead of `*`.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Print `1`, `12`, `123` instead.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for G10](../solutions/G10_RowNumberTriangle.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [G02 · Draw a right triangle](G02-right-triangle.md) · 📚 [All exercises](README.md) · Next: [G11 · Counting triangle](G11-counting-triangle.md) ➡️
+Previous: [G02 · Draw a right triangle](G02-right-triangle.md) · [All exercises](README.md) · Next: [G11 · Counting triangle](G11-counting-triangle.md)

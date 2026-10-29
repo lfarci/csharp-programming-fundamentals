@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › D04
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › D04
 
 # D04 · Sum of the digits
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐⭐ | 4d · Digits | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [D03](D03-count-digits.md) | Custom |
+| Independent | medium | 4d · Digits | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [D03](D03-count-digits.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Give back the sum of the digits of n (n ≥ 0).
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start D04     # creates practice/D04_DigitSum.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `int DigitSum(int n)`: input = n, an int (whole number); result = an int (whole number), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -34,20 +34,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `DigitSum(9999)` | `36` |
 | `DigitSum(7)` | `7` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - 0 → 0.
 
-## 📏 Rules
+## Rules
 
 - A loop with `% 10` and `/ 10`. No string.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -61,16 +61,16 @@ Three lines in the loop: take the digit, add it, remove it.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Repeat the digit sum until one digit is left (9875 → 29 → 11 → 2).
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for D04](../solutions/D04_DigitSum.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [D08 · First digit](D08-first-digit.md) · 📚 [All exercises](README.md) · Next: [D09 · Count the even digits](D09-count-even-digits.md) ➡️
+Previous: [D08 · First digit](D08-first-digit.md) · [All exercises](README.md) · Next: [D09 · Count the even digits](D09-count-even-digits.md)

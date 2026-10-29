@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › A03
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › A03
 
 # A03 · Sum of the even numbers
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐ | 4b · Running result | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A02](A02-count-multiples-of-3.md) | Custom |
+| Independent | easy | 4b · Running result | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A02](A02-count-multiples-of-3.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Give back the sum of the even numbers from 1 to n.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start A03     # creates practice/A03_SumEvenValues.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `int SumOfEvens(int n)`: input = n, an int (whole number); result = an int (whole number), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -34,20 +34,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `SumOfEvens(1)` | `0` |
 | `SumOfEvens(10)` | `30` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - N = 1 → 0.
 
-## 📏 Rules
+## Rules
 
 - Loop + `if` + accumulator.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -61,16 +61,16 @@ The box is `sum`, not `count`: inside the `if`, write `sum += i;` instead of `co
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Print the sum of the even numbers AND the sum of the odd numbers with **one** loop.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for A03](../solutions/A03_SumEvenValues.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [A12 · Fix the bugs: count multiples of 7](A12-fix-count-multiples-of-7.md) · 📚 [All exercises](README.md) · Next: [A04 · Factorial](A04-factorial.md) ➡️
+Previous: [A12 · Fix the bugs: count multiples of 7](A12-fix-count-multiples-of-7.md) · [All exercises](README.md) · Next: [A04 · Factorial](A04-factorial.md)

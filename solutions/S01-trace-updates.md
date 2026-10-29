@@ -1,4 +1,4 @@
-🏠 [Home](../README.md) › 🔑 [Solutions](README.md) › S01
+[Home](../README.md) › [Solutions](README.md) › S01
 
 # Answer key · S01 Trace two changing variables (paper)
 
@@ -12,4 +12,4 @@ With the lines swapped (`b = next; a = b;`): turn 1 → b = 3, then a = 3 (the *
 
 Mastery check: `a` and `b` go through 1 1, 1 2, 2 3, 3 5, 5 8, 8 13 → it is the **Fibonacci** sequence.
 
-⬅️ [Back to the exercise](../exercises/S01-trace-updates.md)
+[Back to the exercise](../exercises/S01-trace-updates.md)

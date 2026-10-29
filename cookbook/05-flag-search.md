@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 5 · Flag / search
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 5 · Flag / search
 
 # Recipe 5 · Flag / search — "is there at least one?"
 
 > A `bool` box that starts at one answer and **flips** when you find proof of the other answer.
 
-🧭 **How this page works:** 1 goal → predict → trace → the pattern → complete it → your turn. Do the steps in order, with a pen. See [why](../docs/writing-guide.md#2-lesson-format).
+**How this page works:** 1 goal → predict → trace → the pattern → complete it → your turn. Do the steps in order, with a pen. See [why](../docs/writing-guide.md#2-lesson-format).
 
-## 🎯 1 · Goal
+## 1 · Goal
 
 Answer a **yes/no** question about many values with a `bool` box (a *flag*) that flips when you find proof.
 
-## 🔮 2 · Predict
+## 2 · Predict
 
 Read this code. **Before** you run it, write down what it prints.
 
@@ -34,7 +34,7 @@ It prints `False`: `9 % 3` is 0, so 3 is a divisor. The loop stops early with `b
 
 </details>
 
-## 🔬 3 · Trace it
+## 3 · Trace it
 
 Trace table: is 9 prime?. Cover the table, fill your own, then compare.
 
@@ -45,7 +45,7 @@ Trace table: is 9 prime?. Cover the table, fill your own, then compare.
 
 Is 7 prime? d = 2: 7 % 2 = 1 · then 3 × 3 = 9 > 7 → stop. `isPrime` stays **true**.
 
-## 🧩 4 · The pattern
+## 4 · The pattern
 
 ### Subgoals (the steps, with names you can reuse)
 
@@ -57,12 +57,12 @@ Is 7 prime? d = 2: 7 % 2 = 1 · then 3 × 3 = 9 > 7 → stop. `isPrime` stays **
 
 Say the subgoal names out loud when you write the code. They are the same in every exercise that uses this recipe.
 
-### 🔎 Recognize it
+### Recognize it
 
 Trigger words: **"is there"**, **"does it contain"**, **"find"**, **"check if"**, **"is it prime"**, **"all of them…?"**, **"at least one"**, **"position of"**.
 The answer is **yes/no** (or a position) → you need a flag.
 
-### 🧠 The idea
+### The idea
 
 - *"Is there at least one…?"* → start `found = false`; one match → `found = true`.
 - *"Are they all…?"* → start `allOk = true`; one counter-example → `allOk = false`.
@@ -76,7 +76,7 @@ flowchart TD
     accDescr: Set found to false. While there are more values and nothing is found, test each value. If it is the one searched for, set found to true. At the end, use found.
     A["found = false"] --> B{"more values<br/>AND not found?"}
     B -- yes --> C{"value is<br/>what I search?"}
-    C -- yes --> D["found = true 🚩"]
+    C -- yes --> D["found = true "]
     C -- no --> B
     D --> B
     B -- no --> E{"found?"}
@@ -84,7 +84,7 @@ flowchart TD
     E -- no --> G["print no"]
 ```
 
-### 📝 Template
+### Template
 
 ```csharp
 bool found = false;
@@ -115,7 +115,7 @@ for (int d = 2; d * d <= n; d++)   // d <= n - 1 also works, slower
 }
 ```
 
-## ✍️ 5 · Complete it
+## 5 · Complete it
 
 Part of the code is given. Fill in the rest on paper.
 
@@ -138,7 +138,7 @@ return found;
 
 </details>
 
-## 🏋️ 6 · Your turn
+## 6 · Your turn
 
 Now alone, in a real file (`./ex start ID`, then `./ex check`):
 
@@ -146,7 +146,7 @@ Now alone, in a real file (`./ex start ID`, then `./ex check`):
 2. [**P01**](../exercises/P01-is-it-prime.md) Is N prime?
 3. [**P02**](../exercises/P02-primes-up-to-n.md) Print all primes up to N (a flag loop **inside** a counter loop).
 
-### 🐞 Debug it
+### Debug it
 
 This code has **one** bug. Find it on paper: trace a small example.
 
@@ -173,11 +173,11 @@ The `else` **erases** the match: after 7, the value 1 sets `found` back to `fals
 
 </details>
 
-### ⚠️ Common mistakes
+### Common mistakes
 
 - **Deciding too early:** an `else { found = false; }` inside the loop erases a match found before. The "no" answer can only be given **after** the loop.
 - Printing "not found" on every turn instead of once at the end.
 - Forgetting 0 and 1 for primes.
 - Returning `index` 0 to mean "not found" (0 is a valid position!). Use -1.
 
-➡️ Next: [Recipe 6 · Digit extraction](06-digit-extraction.md)
+Next: [Recipe 6 · Digit extraction](06-digit-extraction.md)

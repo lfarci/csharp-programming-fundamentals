@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › K01
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › K01
 
 # K01 · Shopping list
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐⭐ | 9 · Collections | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Array traversal](../cookbook/11-array-traversal.md) | [R01](R01-sum-an-array.md), [L05](L05-until-zero.md) | Custom |
+| Independent | medium | 9 · Collections | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Array traversal](../cookbook/11-array-traversal.md) | [R01](R01-sum-an-array.md), [L05](L05-until-zero.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Read items until the user types `done`. Store them in a `List<string>`. Print them numbered, then the total.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start K01     # creates practice/K01_ShoppingList.cs (never overwrites your work)
@@ -21,7 +21,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 
-## 🧪 Examples
+## Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
 
@@ -40,20 +40,20 @@ Total: 3 items
 Total: 0 items
 ```
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - `done` right away.
 
-## 📏 Rules
+## Rules
 
 - `List<string>`, `Add`, `Count`.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -73,16 +73,16 @@ Numbering: a `for` loop with `i + 1`.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Do not add an item that is already in the list (`items.Contains(item)`).
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for K01](../solutions/K01_ShoppingList.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [E01 · Safe number reader](E01-safe-number-reader.md) · 📚 [All exercises](README.md) · Next: [N01 · Armstrong with methods](N01-armstrong-with-methods.md) ➡️
+Previous: [E01 · Safe number reader](E01-safe-number-reader.md) · [All exercises](README.md) · Next: [N01 · Armstrong with methods](N01-armstrong-with-methods.md)

@@ -1,47 +1,62 @@
 #!/usr/bin/env bash
-# 1. Reference solutions pass every example (method cases + program runs).
-# 2. Every starter compiles, and no starter already passes all its examples (else the tests are too weak).
-# 3. One exercise builds alone, even when another practice file is broken.
-# 4. The ./ex tool builds and lists the exercises.
+# Checks every exercise with its own test file (tests/Practice.Tests/Exercises/<Exercise>Tests.cs):
+# 1. Every non-paper exercise has a test file, and the reference solutions (solutions/) pass ALL tests.
+# 2. Every starter (tools/starters/) compiles, and each exercise fails at least one test before any code is written.
+# 3. One exercise builds alone, even when another practice file is broken (what ./ex check uses).
+# 4. The ./ex tool works: list, start, check (NOT YET, then OK), progress.
 set -euo pipefail
 cd "$(dirname "$0")/.."
+root=$PWD
 tmp=$(mktemp -d)
 q=(-nologo -v q -clp:NoSummary)
+run_tests() { dotnet "$1/Practice.Tests.dll" -noLogo -noColor -xml "$2" > "$2.log" 2>&1 || true; }
 
-dotnet build tests/Practice.Tests "${q[@]}"
-tests="dotnet tests/Practice.Tests/bin/Debug/net8.0/Practice.Tests.dll -noLogo -noColor"
+echo "Every exercise has a test file"
+python3 - <<'PY'
+import json, os, sys
+missing = [e["id"] for e in json.load(open("tools/exercises.json"))
+           if e["kind"] != "paper" and not os.path.exists(f"tests/Practice.Tests/Exercises/{e['class']}Tests.cs")]
+if missing: sys.exit("FAIL: no test file for " + ", ".join(missing))
+print("OK: every exercise has its test file")
+PY
 
-echo "▶ Reference solutions"
-dotnet build solutions "${q[@]}" -o "$tmp/solutions"
-EXERCISE_ASSEMBLY="$tmp/solutions/Solutions.dll" $tests -xml "$tmp/solutions.xml" > "$tmp/solutions.log" 2>&1 || { grep -E "\[FAIL\]" -A6 "$tmp/solutions.log"; echo "❌ some reference solutions fail their examples"; exit 1; }
-grep -E "Total:" "$tmp/solutions.log"
-if grep -q 'result="Skip"' "$tmp/solutions.xml"; then echo "❌ some exercises have no reference solution"; exit 1; fi
-echo "✅ reference solutions pass every example"
+echo "Reference solutions pass every test"
+dotnet build tests/Practice.Tests "${q[@]}" -p:ExerciseProject="$root/solutions/Solutions.csproj" -o "$tmp/sol"
+run_tests "$tmp/sol" "$tmp/sol.xml"
+python3 - "$tmp/sol.xml" <<'PY'
+import json, sys, xml.etree.ElementTree as T
+tests = list(T.parse(sys.argv[1]).getroot().iter("test"))
+bad = [t.get("name") for t in tests if t.get("result") != "Pass"]
+want = sum(len(e["cases"]) or len(e["examples"]) for e in json.load(open("tools/exercises.json")) if e["kind"] != "paper")
+if bad: sys.exit("FAIL: the reference solution does not pass:\n  " + "\n  ".join(bad))
+if len(tests) != want: sys.exit(f"FAIL: {len(tests)} tests ran, {want} expected (a test file is missing or not compiled)")
+print(f"OK: reference solutions pass all {len(tests)} tests")
+PY
 
-echo "▶ Starters"
+echo "Starters compile and fail before any code is written"
 mkdir -p "$tmp/repo/tools/ex"
-cp -r practice "$tmp/repo/practice"; rm -rf "$tmp/repo/practice"/{bin,obj}
+cp -r practice "$tmp/repo/practice"; rm -rf "$tmp/repo/practice"/{bin,obj} "$tmp/repo/practice"/*_*.cs
 cp tools/ex/Runner.cs "$tmp/repo/tools/ex/"
 cp tools/starters/*.cs "$tmp/repo/practice/"
-dotnet build "$tmp/repo/practice" "${q[@]}" -o "$tmp/starters"
-EXERCISE_ASSEMBLY="$tmp/starters/Practice.dll" $tests -xml "$tmp/starters.xml" > /dev/null 2>&1 || true
-python3 - "$tmp/starters.xml" <<'PY'
+dotnet build tests/Practice.Tests "${q[@]}" -p:ExerciseProject="$tmp/repo/practice/Practice.csproj" -o "$tmp/start"
+run_tests "$tmp/start" "$tmp/start.xml"
+python3 - "$tmp/start.xml" <<'PY'
 import sys, xml.etree.ElementTree as T, collections
 res = collections.defaultdict(list)
 for t in T.parse(sys.argv[1]).getroot().iter("test"):
     res[t.get("type")].append(t.get("result"))
 weak = [c for c, r in res.items() if all(x == "Pass" for x in r)]
-if weak:
-    sys.exit("❌ these starters already pass all examples (add a case the TODO version fails): " + ", ".join(weak))
-print(f"✅ {len(res)} starters compile and none passes before the learner writes code")
+if weak: sys.exit("FAIL: these starters already pass all tests (add a case the starter fails): " + ", ".join(weak))
+print(f"OK: {len(res)} starters compile and fail before the learner writes code")
 PY
 
-echo "▶ One exercise at a time"
+echo "One exercise at a time"
 echo "int broken = ;" > "$tmp/repo/practice/A01_Sum1ToN.cs"
-dotnet build "$tmp/repo/practice" "${q[@]}" -p:OnlyExercise=A04_Factorial -o "$tmp/only" > "$tmp/only.log" 2>&1 || { cat "$tmp/only.log"; echo "❌ a broken file in another exercise blocks ./ex check"; exit 1; }
-echo "✅ a broken file in another exercise does not block ./ex check"
+dotnet build tests/Practice.Tests "${q[@]}" -p:ExerciseProject="$tmp/repo/practice/Practice.csproj" -p:OnlyExercise=A04_Factorial -o "$tmp/only" > "$tmp/only.log" 2>&1 || { cat "$tmp/only.log"; echo "FAIL: a broken file in another exercise blocks ./ex check"; exit 1; }
+echo "OK: a broken file in another exercise does not block ./ex check"
 
-echo "▶ ./ex"
-dotnet build tools/ex "${q[@]}"
-dotnet run --project tools/ex --no-build -- list > /dev/null
-echo "✅ ./ex works"
+# restore the normal build of the test project (the builds above changed its project reference)
+dotnet build tests/Practice.Tests "${q[@]}" > /dev/null
+
+echo "./ex"
+tools/check-ex.sh

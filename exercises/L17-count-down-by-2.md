@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › L17
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › L17
 
 # L17 · Count down by 2
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 4a · Repeat & count | [Counter loop](../cookbook/01-counter-loop.md) | [L12](L12-count-down.md) | Custom |
+| Guided | easy | 4a · Repeat & count | [Counter loop](../cookbook/01-counter-loop.md) | [L12](L12-count-down.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Print n, n−2, n−4, … while the number is at least 1, one per line.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start L17     # creates practice/L17_CountDownBy2.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `void CountDownBy2(int n)`: input = n, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -32,20 +32,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `CountDownBy2(9)` | prints:<br>`9`<br>`7`<br>`5`<br>`3`<br>`1` |
 | `CountDownBy2(6)` | prints:<br>`6`<br>`4`<br>`2` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - n = 1: one line.
 
-## 📏 Rules
+## Rules
 
 - Write the loop yourself.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -59,16 +59,16 @@ Test `i >= 1`.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Count down by 3 from n.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for L17](../solutions/L17_CountDownBy2.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [L16 · Odd numbers](L16-odd-numbers.md) · 📚 [All exercises](README.md) · Next: [L18 · Square numbers](L18-squares.md) ➡️
+Previous: [L16 · Odd numbers](L16-odd-numbers.md) · [All exercises](README.md) · Next: [L18 · Square numbers](L18-squares.md)

@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › G13
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › G13
 
 # G13 · Diagonal
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐⭐ | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [G08](G08-solid-square.md), [G04](G04-hollow-rectangle.md) | Custom |
+| Independent | medium | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [G08](G08-solid-square.md), [G04](G04-hollow-rectangle.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Print a `size` × `size` square of `.` with `*` on the diagonal (where row equals column).
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start G13     # creates practice/G13_Diagonal.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `void DrawDiagonal(int size)`: input = size, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -32,20 +32,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `DrawDiagonal(3)` | prints:<br>`*..`<br>`.*.`<br>`..*` |
 | `DrawDiagonal(1)` | prints:<br>`*` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - size = 1: `*`.
 
-## 📏 Rules
+## Rules
 
 - Write the loop yourself.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -59,16 +59,16 @@ G08 square, with an `if` inside the inner loop.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Put the `*` on the other diagonal (`row + col == size + 1`).
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for G13](../solutions/G13_Diagonal.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [G04 · Hollow rectangle](G04-hollow-rectangle.md) · 📚 [All exercises](README.md) · Next: [G05 · Checkerboard](G05-checkerboard.md) ➡️
+Previous: [G04 · Hollow rectangle](G04-hollow-rectangle.md) · [All exercises](README.md) · Next: [G05 · Checkerboard](G05-checkerboard.md)

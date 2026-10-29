@@ -507,7 +507,7 @@ GOALS = {
  "D06": "Give back `true` if n reads the same in both directions (n ≥ 0).",
  "S03": "Add up the **even** Fibonacci numbers that are **not greater** than `limit`, and give back the sum.",
  "P01": "Give back `true` if n is a prime number (≥ 2 and only divisible by 1 and itself).",
- "M01": "An Armstrong number equals the sum of its digits, each raised to the power **number of digits**. Give back `true` if n is one. Example: 153 → 3 digits → 1³ + 5³ + 3³ = 153 ✅.",
+ "M01": "An Armstrong number equals the sum of its digits, each raised to the power **number of digits**. Give back `true` if n is one. Example: 153 → 3 digits → 1³ + 5³ + 3³ = 153, so yes.",
  "N01": "Split the Armstrong check into three small methods: `CountDigits`, `Power` and `IsArmstrong` (which uses the other two).",
  "R01": "Give back the sum of all values in the array.",
  "R02": "Give back the **position** (index) of the largest value in the array (the first one if it appears twice). The array has at least 1 value.",

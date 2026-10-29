@@ -1,11 +1,11 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › How to read an exercise
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › How to read an exercise
 
-# 🔎 How to read an exercise
+# How to read an exercise
 
 Most "I can't do loops" moments are really "I did not understand the question yet".
 Reading a statement is a **skill**, and you can learn it like a recipe. This page shows you how.
 
-> 📌 Related: [From a problem statement to an algorithm](problem-solving.md) explains the ideas in more depth. This page is the practical, step-by-step version you use **every time**.
+> Related: [From a problem statement to an algorithm](problem-solving.md) explains the ideas in more depth. This page is the practical, step-by-step version you use **every time**.
 
 ## The process at a glance
 
@@ -13,18 +13,18 @@ Reading a statement is a **skill**, and you can learn it like a recipe. This pag
 flowchart TD
     accTitle: Reading an exercise
     accDescr: Steps: 1 read once for the story. 2 read again with a pencil for inputs, output, rules and examples. 3 say it in your own words. 4 solve small examples by hand; if you cannot, shrink the problem and try again. 5 find trigger words and recipes. 6 write steps in plain language and a trace table. 7 translate to C#; if the result differs from the paper trace, print variables and find the first different line. 8 test the edge cases. Done.
-    S(["📄 New exercise"]) --> R1["1 · Read once, for the story"]
+    S(["New exercise"]) --> R1["1 · Read once, for the story"]
     R1 --> R2["2 · Read again with a pencil:<br/>inputs · output · rules · examples"]
     R2 --> W["3 · Say it in my own words"]
     W --> H["4 · Solve small examples by hand"]
     H --> Q{"Can I get the<br/>expected answer by hand?"}
-    Q -- no --> U["🛟 Get unstuck:<br/>shrink the problem"] --> H
+    Q -- no --> U["Get unstuck:<br/>shrink the problem"] --> H
     Q -- yes --> T["5 · Trigger words → recipes<br/>(cookbook)"]
     T --> P["6 · Steps in plain language<br/>+ trace table"]
     P --> C["7 · Translate to C#"]
     C --> X{"Same result as<br/>my paper trace?"}
     X -- no --> D["Print variables,<br/>find the first different line"] --> P
-    X -- yes --> E["8 · Test the edge cases"] --> F(["✅ Done"])
+    X -- yes --> E["8 · Test the edge cases"] --> F(["Done"])
 ```
 
 ## 1. What to look for when you read
@@ -33,14 +33,14 @@ Read the statement **twice**. The first time, just for the story. The second tim
 
 | Look for | Ask yourself | Example (A01 "sum 1 to N") |
 | --- | --- | --- |
-| 📥 **Inputs** | What do I receive? From where (keyboard, array, file)? What type? | one whole number `N` from the keyboard |
-| 📤 **Output** | What exactly must I show? One number? Many lines? A yes/no sentence? | one number: `1 + 2 + … + N` |
-| 📏 **Constraints** | Which values are allowed? `N ≥ 0`? Only positive? "inclusive"? | `N ≥ 0` |
-| 🧪 **Examples** | What does each example teach me? Can I recompute it myself? | `N = 4` → `10` |
-| ⚠️ **Edge cases** | Smallest value? Zero? Negative? Empty? Only one value? | `N = 0` → `0` |
-| 🚫 **Forbidden** | What am I **not** allowed to use? (`Math.Pow`, LINQ, arrays…) | no formula, use a loop |
+| **Inputs** | What do I receive? From where (keyboard, array, file)? What type? | one whole number `N` from the keyboard |
+| **Output** | What exactly must I show? One number? Many lines? A yes/no sentence? | one number: `1 + 2 + … + N` |
+| **Constraints** | Which values are allowed? `N ≥ 0`? Only positive? "inclusive"? | `N ≥ 0` |
+| **Examples** | What does each example teach me? Can I recompute it myself? | `N = 4` → `10` |
+| **Edge cases** | Smallest value? Zero? Negative? Empty? Only one value? | `N = 0` → `0` |
+| **Forbidden** | What am I **not** allowed to use? (`Math.Pow`, LINQ, arrays…) | no formula, use a loop |
 
-💡 **Output vs. intermediate values:** "print the sum" means *one* line at the end, not a line inside each turn of the loop. Check the examples to be sure.
+**Output vs. intermediate values:** "print the sum" means *one* line at the end, not a line inside each turn of the loop. Check the examples to be sure.
 
 ### Trigger words → recipes
 
@@ -61,7 +61,7 @@ Some words are clues. They tell you which [cookbook](../cookbook/README.md) reci
 | "array", "list", "each element", "the values" | visit each value | [11 · Array traversal](../cookbook/11-array-traversal.md) |
 | "build a line", "separated by commas", "text" | grow a string | [12 · String building](../cookbook/12-string-building.md) |
 
-⚠️ A trigger word is a **clue, not a rule**. Always confirm with a small example by hand. Many exercises need **two or three** recipes together — see [combining recipes](../cookbook/combining-recipes.md).
+A trigger word is a **clue, not a rule**. Always confirm with a small example by hand. Many exercises need **two or three** recipes together — see [combining recipes](../cookbook/combining-recipes.md).
 
 ## 2. Organize your ideas before coding
 
@@ -77,9 +77,9 @@ Some words are clues. They tell you which [cookbook](../cookbook/README.md) reci
 
 | Question | Why it matters |
 | --- | --- |
-| 🧠 **What do I remember between two turns of the loop?** | These are your variables declared **before** the loop (total, count, best, previous…). |
-| 🛑 **When does the loop stop?** | This is your loop condition. Check the last value: `<` or `<=`? |
-| 🔁 **What changes each time?** | Something must move toward the end (`i++`, `n /= 10`, a new input…), or the loop never stops. |
+| **What do I remember between two turns of the loop?** | These are your variables declared **before** the loop (total, count, best, previous…). |
+| **When does the loop stop?** | This is your loop condition. Check the last value: `<` or `<=`? |
+| **What changes each time?** | Something must move toward the end (`i++`, `n /= 10`, a new input…), or the loop never stops. |
 
 ## 4. The worksheet (copy it)
 
@@ -128,7 +128,7 @@ Copy this into a file (for example `practice/notes.md`) or onto paper, and fill 
 | start |  |  |  |
 
 ## 9. After coding
-- Same result as my trace? 
+- Same result as my trace?
 - Edge cases tested?
 ```
 
@@ -136,13 +136,13 @@ Copy this into a file (for example `practice/notes.md`) or onto paper, and fill 
 
 Being stuck is normal. It is a signal to make the problem **smaller**, not to look at the solution.
 
-- 🔬 **Shrink the problem.** Try N = 1, then N = 2, then N = 3. Small numbers show the pattern.
-- 🪜 **Solve a simpler version first.** Armstrong too hard? First just *print each digit*. Then *count the digits*. Then *add them*. Each one is a small exercise you know.
-- 🖨️ **Print your variables.** Add `Console.WriteLine($"i={i} total={total}");` inside the loop and compare with your trace table. Find the **first** line where they differ.
-- ❓ **Ask the three guiding questions** again (§ 3).
-- 🍳 **Re-read the recipe** in the cookbook and copy its shape.
-- 💡 **Open one hint**, then close the page and try for 10 more minutes.
-- 🧩 **Do the exercise listed in "Do these first"** in the inventory — it trains the missing piece.
+- **Shrink the problem.** Try N = 1, then N = 2, then N = 3. Small numbers show the pattern.
+- **Solve a simpler version first.** Armstrong too hard? First just *print each digit*. Then *count the digits*. Then *add them*. Each one is a small exercise you know.
+- **Print your variables.** Add `Console.WriteLine($"i={i} total={total}");` inside the loop and compare with your trace table. Find the **first** line where they differ.
+- **Ask the three guiding questions** again (§ 3).
+- **Re-read the recipe** in the cookbook and copy its shape.
+- **Open one hint**, then close the page and try for 10 more minutes.
+- **Do the exercise listed in "Do these first"** in the inventory — it trains the missing piece.
 
 ## 6. Worked example: Armstrong number
 
@@ -150,17 +150,17 @@ Let's go from the statement to the code, using the steps above. (This is exercis
 
 ### The statement
 
-> Read N ≥ 0. An Armstrong number equals the sum of its digits, each raised to the power **number of digits**. Say if N is one. 153 → 1³ + 5³ + 3³ = 153 ✅. No `Math.Pow`.
+> Read N ≥ 0. An Armstrong number equals the sum of its digits, each raised to the power **number of digits**. Say if N is one. 153 → 1³ + 5³ + 3³ = 153 . No `Math.Pow`.
 
 ### 1. Reading
 
 | Look for | Found |
 | --- | --- |
-| 📥 Inputs | one whole number N, from the keyboard |
-| 📤 Output | one sentence: "N is an Armstrong number" or "N is not an Armstrong number" |
-| 📏 Constraints | N ≥ 0 |
-| 🚫 Forbidden | `Math.Pow` → I must compute powers with a loop |
-| ⚠️ Edge cases | 0 (one digit: 0¹ = 0 ✅), one-digit numbers (always ✅), 10 (1² + 0² = 1 ❌) |
+| Inputs | one whole number N, from the keyboard |
+| Output | one sentence: "N is an Armstrong number" or "N is not an Armstrong number" |
+| Constraints | N ≥ 0 |
+| Forbidden | `Math.Pow` → I must compute powers with a loop |
+| Edge cases | 0 (one digit: 0¹ = 0 ), one-digit numbers (always ), 10 (1² + 0² = 1 ) |
 
 **In my own words:** "Count the digits of N. Raise every digit to that count. Add the results. Is the total equal to N?"
 
@@ -168,7 +168,7 @@ Let's go from the statement to the code, using the steps above. (This is exercis
 
 - Digits: 1, 5, 3 → **3** digits.
 - 3³ = 27, 5³ = 125, 1³ = 1 → total = 153.
-- 153 = 153 → ✅ yes.
+- 153 = 153 → yes.
 
 What did I remember? **the number of digits**, **the running total**, and **what is left of the number**.
 
@@ -211,7 +211,7 @@ flowchart LR
 | 1 | 153 → 15 | 3 | 27 | 27 |
 | 2 | 15 → 1 | 5 | 125 | 152 |
 | 3 | 1 → 0 | 1 | 1 | 153 |
-| stop (remaining = 0) | 0 | | | **153 = N ✅** |
+| stop (remaining = 0) | 0 | | | **153 = N, so yes** |
 
 Guiding questions: I **remember** `digits`, `sum`, `remaining`. The loop **stops** when `remaining` is 0. Each turn, `remaining` **changes** (`/ 10`).
 
@@ -268,4 +268,4 @@ else
 
 Next: [M02 · Armstrong numbers in a range](../exercises/M02-armstrong-numbers-in-a-range.md) — the same recipe inside one more loop.
 
-⬅️ [Back to the README](../README.md) · 🗺️ [Roadmap](../ROADMAP.md) · 🍳 [Cookbook](../cookbook/README.md)
+[Back to the README](../README.md) · [Roadmap](../ROADMAP.md) · [Cookbook](../cookbook/README.md)

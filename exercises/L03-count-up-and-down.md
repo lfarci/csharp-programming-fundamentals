@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › L03
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › L03
 
 # L03 · Count up and down
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 4a · Repeat & count | [Counter loop](../cookbook/01-counter-loop.md) | [L01](L01-trace-a-loop.md) | Custom |
+| Guided | easy | 4a · Repeat & count | [Counter loop](../cookbook/01-counter-loop.md) | [L01](L01-trace-a-loop.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Read a positive number N. Print the numbers from 1 to N on one line, then from N down to 1 on a second line.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start L03     # creates practice/L03_CountUpAndDown.cs (never overwrites your work)
@@ -21,7 +21,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 
-## 🧪 Examples
+## Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
 
@@ -39,20 +39,20 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 1
 ```
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - N = 1.
 
-## 📏 Rules
+## Rules
 
 - Two loops. Use `Console.Write` to stay on the same line.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -72,16 +72,16 @@ Loop 2: start `n`, test `i >= 1`, step `i--`.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Print the odd numbers from N down to 1.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for L03](../solutions/L03_CountUpAndDown.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [L02 · Boundaries: < or <= ? (paper)](L02-boundaries.md) · 📚 [All exercises](README.md) · Next: [L04 · Multiplication table](L04-multiplication-table.md) ➡️
+Previous: [L02 · Boundaries: < or <= ? (paper)](L02-boundaries.md) · [All exercises](README.md) · Next: [L04 · Multiplication table](L04-multiplication-table.md)

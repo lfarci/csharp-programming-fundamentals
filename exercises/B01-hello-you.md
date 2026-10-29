@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › B01
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › B01
 
 # B01 · Hello you
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 1 · Hello World | — | — | Custom |
+| Guided | easy | 1 · Hello World | — | — | Custom |
 
-## 🎯 Goal
+## Goal
 
 Ask the user for their name and greet them.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start B01     # creates practice/B01_HelloYou.cs (never overwrites your work)
@@ -21,7 +21,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 
-## 🧪 Examples
+## Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
 
@@ -37,20 +37,20 @@ Hello, Ada!
 Hello, Sam!
 ```
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - An empty name: what does your program print? (`Hello, !` is OK for now.)
 
-## 📏 Rules
+## Rules
 
 - Use `Console.Write`, `Console.ReadLine` and `Console.WriteLine`.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [reading worksheet](../docs/reading-an-exercise.md#4-the-worksheet-copy-it): what goes in? what comes out? a tiny example by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -64,16 +64,16 @@ Glue text together with `+`, or use interpolation: `$"Hello, {name}!"`.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Ask for a first name **and** a city, and print `Ada lives in Brussels.`
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for B01](../solutions/B01_HelloYou.cs). Your solution can be different and still correct!
 
 ---
 
-📚 [All exercises](README.md) · Next: [B02 · Rectangle calculator](B02-rectangle-calculator.md) ➡️
+[All exercises](README.md) · Next: [B02 · Rectangle calculator](B02-rectangle-calculator.md)

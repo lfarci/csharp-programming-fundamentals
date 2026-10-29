@@ -1,4 +1,4 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 7 · State update with several variables
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 7 · State update with several variables
 
 # Recipe 7 · State update with several variables — Fibonacci
 
@@ -6,13 +6,13 @@
 
 ![Memory snapshots show calculate next, then shift previous and current.](../assets/state-updates.svg)
 
-🧭 **How this page works:** 1 goal → predict → trace → the pattern → complete it → your turn. Do the steps in order, with a pen. See [why](../docs/writing-guide.md#2-lesson-format).
+**How this page works:** 1 goal → predict → trace → the pattern → complete it → your turn. Do the steps in order, with a pen. See [why](../docs/writing-guide.md#2-lesson-format).
 
-## 🎯 1 · Goal
+## 1 · Goal
 
 Compute a sequence where each value depends on the **previous two**, by sliding two boxes forward in the right order.
 
-## 🔮 2 · Predict
+## 2 · Predict
 
 Read this code. **Before** you run it, write down what it prints.
 
@@ -34,7 +34,7 @@ It prints `0 1 1 2 3 5` (one per line).
 
 </details>
 
-## 🔬 3 · Trace it
+## 3 · Trace it
 
 Trace table: first 6 Fibonacci numbers. Cover the table, fill your own, then compare.
 
@@ -49,7 +49,7 @@ Trace table: first 6 Fibonacci numbers. Cover the table, fill your own, then com
 
 Output: `0 1 1 2 3 5`.
 
-## 🧩 4 · The pattern
+## 4 · The pattern
 
 ### Subgoals (the steps, with names you can reuse)
 
@@ -61,11 +61,11 @@ Output: `0 1 1 2 3 5`.
 
 Say the subgoal names out loud when you write the code. They are the same in every exercise that uses this recipe.
 
-### 🔎 Recognize it
+### Recognize it
 
 Trigger words: **"each term is the sum of the two previous"**, **"Fibonacci"**, **"sequence"**, **"the next value depends on…"**, **"compare with the previous one"**, **"interest each year"**.
 
-### 🧠 The idea
+### The idea
 
 Fibonacci: 0, 1, 1, 2, 3, 5, 8, 13… Each value = the two before it added.
 You only need to remember **two** boxes: `previous` and `current`. Each turn does **3 moves in this order**:
@@ -92,9 +92,9 @@ flowchart LR
     N -- "slides to" --> C2
 ```
 
-Think of a **conveyor belt** 🎢: the values move one place to the left each turn.
+Think of a **conveyor belt** : the values move one place to the left each turn.
 
-### 📝 Template
+### Template
 
 ```csharp
 long previous = 0;
@@ -110,7 +110,7 @@ for (int i = 0; i < n; i++)
 
 Stop at a limit instead of a count (Project Euler #2) → `while (previous <= limit)`.
 
-## ✍️ 5 · Complete it
+## 5 · Complete it
 
 Part of the code is given. Fill in the rest on paper.
 
@@ -127,7 +127,7 @@ Part of the code is given. Fill in the rest on paper.
 
 </details>
 
-## 🏋️ 6 · Your turn
+## 6 · Your turn
 
 Now alone, in a real file (`./ex start ID`, then `./ex check`):
 
@@ -135,9 +135,9 @@ Now alone, in a real file (`./ex start ID`, then `./ex check`):
 2. [**S02**](../exercises/S02-fibonacci.md) Print the first N Fibonacci numbers.
 3. [**S03**](../exercises/S03-even-fibonacci-sum.md) Sum the even Fibonacci numbers up to a limit → [Project Euler #2](https://projecteuler.net/problem=2).
 
-🔁 **Want more of the same?** Do the drill set for this recipe in the [exercise inventory](../exercises/README.md#-drill-sets-same-pattern-many-times): 5 to 12 short exercises that use exactly this pattern.
+**Want more of the same?** Do the drill set for this recipe in the [exercise inventory](../exercises/README.md#drill-sets-same-pattern-many-times): 5 to 12 short exercises that use exactly this pattern.
 
-### 🐞 Debug it
+### Debug it
 
 This code has **one** bug. Find it on paper: trace a small example.
 
@@ -159,11 +159,11 @@ for (int i = 0; i < 6; i++)
 
 </details>
 
-### ⚠️ Common mistakes
+### Common mistakes
 
 - **Wrong order:** `previous = current;` before computing `next` → you lost the old `previous` (you get 3 + 3 = 6 instead of 5).
 - No `next` (temporary) variable at all.
 - Mixing up "the first N values" and "the value at position N". Read the statement and write the first 6 values on paper.
 - `int` overflows after the 46th value → use `long`.
 
-➡️ Next: [Recipe 8 · Nested loops for 2D grids](08-nested-grid.md)
+Next: [Recipe 8 · Nested loops for 2D grids](08-nested-grid.md)

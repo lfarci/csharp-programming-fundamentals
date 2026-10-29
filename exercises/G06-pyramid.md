@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › G06
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › G06
 
 # G06 · Pyramid
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Challenge | ⭐⭐⭐ | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [G02](G02-right-triangle.md) | Custom |
+| Challenge | hard | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [G02](G02-right-triangle.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Print a centered pyramid of `*`, `height` rows high.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start G06     # creates practice/G06_Pyramid.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `void DrawPyramid(int height)`: input = height, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -32,20 +32,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `DrawPyramid(3)` | prints:<br>`  *`<br>` ***`<br>`*****` |
 | `DrawPyramid(1)` | prints:<br>`*` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - Height 1.
 
-## 📏 Rules
+## Rules
 
 - Nested loops: **two** inner loops (spaces, then stars).
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -65,16 +65,16 @@ Inside the row loop: first a loop for the spaces, then a loop for the stars, the
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Draw a diamond (a pyramid, then the same pyramid upside down).
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for G06](../solutions/G06_Pyramid.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [G05 · Checkerboard](G05-checkerboard.md) · 📚 [All exercises](README.md) · Next: [D01 · Last digit](D01-last-digit.md) ➡️
+Previous: [G05 · Checkerboard](G05-checkerboard.md) · [All exercises](README.md) · Next: [D01 · Last digit](D01-last-digit.md)
