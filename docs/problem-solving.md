@@ -1,10 +1,10 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › From a problem statement to an algorithm
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › From a problem statement to an algorithm
 
 # From a problem statement to an algorithm
 
 An algorithm is a precise sequence of steps. You can design and test it on paper before choosing a programming language.
 
-> 🔎 Short on time? The practical, step-by-step version (trigger words → recipes, worksheet, unstuck techniques, worked Armstrong example) is [How to read an exercise](reading-an-exercise.md). This page explains the *why* in more depth.
+> Short on time? The practical, step-by-step version (trigger words → recipes, worksheet, unstuck techniques, worked Armstrong example) is [How to read an exercise](reading-an-exercise.md). This page explains the *why* in more depth.
 
 ## 1. Read to find what goes in and what comes out
 
@@ -132,4 +132,4 @@ See [the 5 questions when she is stuck](how-to-practice.md#for-the-coach-5-quest
 
 ---
 
-⬅️ [How to read an exercise](reading-an-exercise.md) · [How to practice](how-to-practice.md) ➡️
+[How to read an exercise](reading-an-exercise.md) · [How to practice](how-to-practice.md)

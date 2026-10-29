@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › M01
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › M01
 
 # M01 · Armstrong number
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Challenge | ⭐⭐⭐ | 4 · Combine | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [D03](D03-count-digits.md), [D04](D04-digit-sum.md), [A07](A07-integer-power.md) | Custom · teacher topic: Armstrong |
+| Challenge | hard | 4 · Combine | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [D03](D03-count-digits.md), [D04](D04-digit-sum.md), [A07](A07-integer-power.md) | Custom · teacher topic: Armstrong |
 
-## 🎯 Goal
+## Goal
 
-An Armstrong number equals the sum of its digits, each raised to the power **number of digits**. Give back `true` if n is one. Example: 153 → 3 digits → 1³ + 5³ + 3³ = 153 ✅.
+An Armstrong number equals the sum of its digits, each raised to the power **number of digits**. Give back `true` if n is one. Example: 153 → 3 digits → 1³ + 5³ + 3³ = 153, so yes.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start M01     # creates practice/M01_ArmstrongNumber.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `bool IsArmstrong(int n)`: input = n, an int (whole number); result = a bool (true or false), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -36,21 +36,21 @@ Your method must give these results. `./ex check` tests all of them.
 | `IsArmstrong(10)` | `false` |
 | `IsArmstrong(370)` | `true` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - Every 1-digit number is an Armstrong number (5¹ = 5).
 - The power is the number of digits, **not always 3**.
 
-## 📏 Rules
+## Rules
 
 - No string, no `Math.Pow`. Reuse D03 (count), D04 (digits) and A07 (power).
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -70,16 +70,16 @@ The power is a small product loop **inside** the digit loop: `power = 1; for (i 
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Two days later, from a blank file: say if N is a *Disarium* number. Each digit is raised to its **position** from the left (89 = 8¹ + 9² = 89, 135 = 1¹ + 3² + 5³ = 135).
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for M01](../solutions/M01_ArmstrongNumber.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [P02 · All primes up to N](P02-primes-up-to-n.md) · 📚 [All exercises](README.md) · Next: [M02 · All Armstrong numbers in a range](M02-armstrong-numbers-in-a-range.md) ➡️
+Previous: [P02 · All primes up to N](P02-primes-up-to-n.md) · [All exercises](README.md) · Next: [M02 · All Armstrong numbers in a range](M02-armstrong-numbers-in-a-range.md)

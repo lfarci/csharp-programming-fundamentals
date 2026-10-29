@@ -21,7 +21,7 @@ namespace Practice
                 Console.WriteLine($"Exercise {id.ToUpperInvariant()} is not started yet. Start it with:  ./ex start {id.ToUpperInvariant()}");
                 return;
             }
-            Console.WriteLine($"▶ Running {type.Name}  (type the input, press Enter after each value)");
+            Console.WriteLine($"Running {type.Name}  (type the input, press Enter after each value)");
             Console.WriteLine();
             MethodInfo? run = type.GetMethod("Run", BindingFlags.Public | BindingFlags.Static, Type.EmptyTypes);
             if (run != null)

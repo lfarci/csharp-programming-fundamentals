@@ -1,4 +1,4 @@
-🏠 [Home](../README.md) › 🔑 [Solutions](README.md) › L02
+[Home](../README.md) › [Solutions](README.md) › L02
 
 # Answer key · L02 Boundaries: < or <= ? (paper)
 
@@ -12,4 +12,4 @@
 
 Rule of thumb: `for (int i = 0; i < n; i++)` and `for (int i = 1; i <= n; i++)` both run **n** times.
 
-⬅️ [Back to the exercise](../exercises/L02-boundaries.md)
+[Back to the exercise](../exercises/L02-boundaries.md)

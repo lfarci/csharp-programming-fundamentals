@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 10 · Sentinel loop
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 10 · Sentinel loop
 
 # Recipe 10 · Sentinel loop — "stop when the user types 0"
 
 > Read values **until a special stop value** (the *sentinel*) arrives. The sentinel is **not** part of the data.
 
-🧭 **How this page works:** 1 goal → predict → trace → the pattern → complete it → your turn. Do the steps in order, with a pen. See [why](../docs/writing-guide.md#2-lesson-format).
+**How this page works:** 1 goal → predict → trace → the pattern → complete it → your turn. Do the steps in order, with a pen. See [why](../docs/writing-guide.md#2-lesson-format).
 
-## 🎯 1 · Goal
+## 1 · Goal
 
 Read values until a special **stop value** arrives, and process every value except the stop value.
 
-## 🔮 2 · Predict
+## 2 · Predict
 
 Read this code. **Before** you run it, write down what it prints.
 
@@ -37,7 +37,7 @@ It prints `3 values, sum 12`. The 0 stops the loop and is **not** counted.
 
 </details>
 
-## 🔬 3 · Trace it
+## 3 · Trace it
 
 Trace table: inputs 4, 7, 1, 0. Cover the table, fill your own, then compare.
 
@@ -50,7 +50,7 @@ Trace table: inputs 4, 7, 1, 0. Cover the table, fill your own, then compare.
 
 Average = 12 / 3 = 4. If the very first value is 0 → count is 0 → **no average** (do not divide by 0!).
 
-## 🧩 4 · The pattern
+## 4 · The pattern
 
 ### Subgoals (the steps, with names you can reuse)
 
@@ -62,11 +62,11 @@ Average = 12 / 3 = 4. If the very first value is 0 → count is 0 → **no avera
 
 Say the subgoal names out loud when you write the code. They are the same in every exercise that uses this recipe.
 
-### 🔎 Recognize it
+### Recognize it
 
 Trigger words: **"until the user enters 0"**, **"enter -1 to stop"**, **"until an empty line"**, **"type quit to finish"**, **"you don't know how many numbers"**.
 
-### 🧠 The idea
+### The idea
 
 You don't know how many values will come, so `for` does not fit. Use `while (true)` + `break`, or "read before the loop, read again at the end".
 Combine it with any other recipe: count, sum, average, min/max…
@@ -82,7 +82,7 @@ flowchart TD
     D --> B
 ```
 
-### 📝 Template
+### Template
 
 Version A – `while (true)` + `break` (easiest to read):
 
@@ -112,7 +112,7 @@ while (value != 0)
 }
 ```
 
-## ✍️ 5 · Complete it
+## 5 · Complete it
 
 Part of the code is given. Fill in the rest on paper.
 
@@ -139,7 +139,7 @@ while (true)
 
 </details>
 
-## 🏋️ 6 · Your turn
+## 6 · Your turn
 
 Now alone, in a real file (`./ex start ID`, then `./ex check`):
 
@@ -147,7 +147,7 @@ Now alone, in a real file (`./ex start ID`, then `./ex check`):
 2. [**A06**](../exercises/A06-average-until-zero.md) Average of numbers until 0.
 3. [**A09**](../exercises/A09-min-and-max-until-zero.md) Smallest and largest until 0 (combine with [recipe 4](04-min-max.md)).
 
-### 🐞 Debug it
+### Debug it
 
 This code has **one** bug. Find it on paper: trace a small example.
 
@@ -171,10 +171,10 @@ while (true)
 
 </details>
 
-### ⚠️ Common mistakes
+### Common mistakes
 
 - Counting or adding the sentinel itself.
 - Forgetting to read again inside the loop (version B) → infinite loop.
 - Dividing by `count` when `count == 0`.
 
-➡️ Next: [Recipe 11 · Array traversal](11-array-traversal.md)
+Next: [Recipe 11 · Array traversal](11-array-traversal.md)

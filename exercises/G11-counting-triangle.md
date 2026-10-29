@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › G11
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › G11
 
 # G11 · Counting triangle
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [G10](G10-row-number-triangle.md) | Custom |
+| Guided | easy | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [G10](G10-row-number-triangle.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Print a triangle where row r is `12…r`: `1`, `12`, `123`.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start G11     # creates practice/G11_CountingTriangle.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `void DrawCountingTriangle(int height)`: input = height, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -32,20 +32,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `DrawCountingTriangle(4)` | prints:<br>`1`<br>`12`<br>`123`<br>`1234` |
 | `DrawCountingTriangle(1)` | prints:<br>`1` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - height = 1: `1`.
 
-## 📏 Rules
+## Rules
 
 - Write the loop yourself.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -59,16 +59,16 @@ Inner loop: `col` from 1 to `row`.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Print the same triangle upside down.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for G11](../solutions/G11_CountingTriangle.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [G10 · Triangle of row numbers](G10-row-number-triangle.md) · 📚 [All exercises](README.md) · Next: [G12 · Upside-down triangle](G12-upside-down-triangle.md) ➡️
+Previous: [G10 · Triangle of row numbers](G10-row-number-triangle.md) · [All exercises](README.md) · Next: [G12 · Upside-down triangle](G12-upside-down-triangle.md)

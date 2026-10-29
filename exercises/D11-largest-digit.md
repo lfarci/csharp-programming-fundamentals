@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › D11
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › D11
 
 # D11 · Largest digit
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐⭐ | 4d · Digits | [Digit extraction](../cookbook/06-digit-extraction.md), [Min/max](../cookbook/04-min-max.md) | [D04](D04-digit-sum.md), [C02](C02-largest-of-three.md) | Custom |
+| Independent | medium | 4d · Digits | [Digit extraction](../cookbook/06-digit-extraction.md), [Min/max](../cookbook/04-min-max.md) | [D04](D04-digit-sum.md), [C02](C02-largest-of-three.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Give back the largest digit of n (n > 0).
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start D11     # creates practice/D11_LargestDigit.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `int LargestDigit(int n)`: input = n, an int (whole number); result = an int (whole number), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -34,20 +34,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `LargestDigit(5)` | `5` |
 | `LargestDigit(2061)` | `6` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - One digit: itself.
 
-## 📏 Rules
+## Rules
 
 - Write the loop yourself.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -61,16 +61,16 @@ A digit is never below 0, so `max = 0` is a safe start.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Give back the smallest digit.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for D11](../solutions/D11_LargestDigit.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [D10 · Count one digit](D10-count-a-digit.md) · 📚 [All exercises](README.md) · Next: [D12 · Product of the digits](D12-product-of-digits.md) ➡️
+Previous: [D10 · Count one digit](D10-count-a-digit.md) · [All exercises](README.md) · Next: [D12 · Product of the digits](D12-product-of-digits.md)

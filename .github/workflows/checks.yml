@@ -35,8 +35,8 @@ jobs:
           key: nuget-${{ runner.os }}-${{ hashFiles('**/*.csproj') }}
       - name: Run the exercise tests against the reference solutions and the starters
         run: tools/check-exercises.sh
-      - name: dotnet test works (IDE Test Explorer path)
-        run: dotnet test tests/Practice.Tests
+      - name: dotnet test works on the reference solutions (IDE Test Explorer path)
+        run: dotnet test tests/Practice.Tests -p:ExerciseProject=$PWD/solutions/Solutions.csproj
 
   generator:
     name: Generated files are up to date
@@ -47,6 +47,8 @@ jobs:
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: "3.12"
+      - name: No emoji in tracked files
+        run: python3 tools/check-no-emoji.py
       - name: Re-run the generator
         run: python3 tools/generator/gen.py
       - name: Fail if generated files changed

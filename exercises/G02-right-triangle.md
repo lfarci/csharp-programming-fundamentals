@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › G02
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › G02
 
 # G02 · Draw a right triangle
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐⭐ | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [G01](G01-rectangle.md) | Custom |
+| Independent | medium | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [G01](G01-rectangle.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Print a right triangle of `height` rows: row 1 has 1 star, row 2 has 2 stars, …
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start G02     # creates practice/G02_RightTriangle.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `void DrawTriangle(int height)`: input = height, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -32,20 +32,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `DrawTriangle(4)` | prints:<br>`*`<br>`**`<br>`***`<br>`****` |
 | `DrawTriangle(1)` | prints:<br>`*` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - Height 1.
 
-## 📏 Rules
+## Rules
 
 - Nested loops.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -59,16 +59,16 @@ Only the **test** of the inner loop changes compared to G01: `col <= row`.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Draw it upside down (4 stars, then 3, 2, 1).
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for G02](../solutions/G02_RightTriangle.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [G09 · Rows of numbers](G09-number-rows.md) · 📚 [All exercises](README.md) · Next: [G10 · Triangle of row numbers](G10-row-number-triangle.md) ➡️
+Previous: [G09 · Rows of numbers](G09-number-rows.md) · [All exercises](README.md) · Next: [G10 · Triangle of row numbers](G10-row-number-triangle.md)

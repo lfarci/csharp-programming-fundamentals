@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › D08
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › D08
 
 # D08 · First digit
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 4d · Digits | [Digit extraction](../cookbook/06-digit-extraction.md) | [D03](D03-count-digits.md) | Custom |
+| Guided | easy | 4d · Digits | [Digit extraction](../cookbook/06-digit-extraction.md) | [D03](D03-count-digits.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Give back the first (leftmost) digit of n (n ≥ 0).
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start D08     # creates practice/D08_FirstDigit.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `int FirstDigit(int n)`: input = n, an int (whole number); result = an int (whole number), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -34,20 +34,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `FirstDigit(1000)` | `1` |
 | `FirstDigit(90)` | `9` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - One digit: n itself.
 
-## 📏 Rules
+## Rules
 
 - Write the loop yourself.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -61,16 +61,16 @@ Stop when only one digit is left: `while (n >= 10)`.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Give back the second digit from the left.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for D08](../solutions/D08_FirstDigit.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [D03 · Count the digits](D03-count-digits.md) · 📚 [All exercises](README.md) · Next: [D04 · Sum of the digits](D04-digit-sum.md) ➡️
+Previous: [D03 · Count the digits](D03-count-digits.md) · [All exercises](README.md) · Next: [D04 · Sum of the digits](D04-digit-sum.md)

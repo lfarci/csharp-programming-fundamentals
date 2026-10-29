@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › L14
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › L14
 
 # L14 · Count by 5
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 4a · Repeat & count | [Counter loop](../cookbook/01-counter-loop.md) | [L13](L13-count-by-3.md) | Custom |
+| Guided | easy | 4a · Repeat & count | [Counter loop](../cookbook/01-counter-loop.md) | [L13](L13-count-by-3.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Print 5, 10, 15, … up to n, one per line.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start L14     # creates practice/L14_CountBy5.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `void CountBy5(int n)`: input = n, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -32,20 +32,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `CountBy5(22)` | prints:<br>`5`<br>`10`<br>`15`<br>`20` |
 | `CountBy5(5)` | prints:<br>`5` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - n = 4: nothing.
 
-## 📏 Rules
+## Rules
 
 - Write the loop yourself.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -59,16 +59,16 @@ Start at 5, step `i += 5`.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Count by 10 up to n.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for L14](../solutions/L14_CountBy5.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [L13 · Count by 3](L13-count-by-3.md) · 📚 [All exercises](README.md) · Next: [L15 · Count by any step](L15-count-by-step.md) ➡️
+Previous: [L13 · Count by 3](L13-count-by-3.md) · [All exercises](README.md) · Next: [L15 · Count by any step](L15-count-by-step.md)

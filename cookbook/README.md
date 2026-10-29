@@ -1,12 +1,12 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 Cookbook
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › Cookbook
 
-# 🍳 The loop cookbook
+# The loop cookbook
 
 A **recipe** is a small piece of code you can recognize and reuse. Almost every beginner exercise is **one recipe**, or **two or three recipes glued together**.
 
 Learn them like cooking: first follow the recipe exactly, then change one ingredient, then invent your own dish.
 
-> 🔎 Not sure which recipe an exercise needs? First read the statement with [How to read an exercise](../docs/reading-an-exercise.md): its **trigger words** table points to the right recipe.
+> Not sure which recipe an exercise needs? First read the statement with [How to read an exercise](../docs/reading-an-exercise.md): its **trigger words** table points to the right recipe.
 
 ## The 12 recipes
 
@@ -27,7 +27,7 @@ Learn them like cooking: first follow the recipe exactly, then change one ingred
 
 Then read **[Combining recipes](combining-recipes.md)**: Armstrong, palindromes, primes, Project Euler #1.
 
-## 🧭 How to pick a recipe
+## How to pick a recipe
 
 Read the exercise. Underline the **result** it asks for. Then follow the arrows.
 
@@ -35,7 +35,7 @@ Read the exercise. Underline the **result** it asks for. Then follow the arrows.
 flowchart TD
     accTitle: How to pick a recipe
     accDescr: Decision tree. A picture of rows and columns: nested loops. Read input until it is OK: input validation. Values until a stop value: sentinel loop plus another recipe. Work on digits: digit extraction plus another recipe. Next value depends on previous ones: state update. Otherwise by kind of answer: a list of values, counter loop; one total, count or product, accumulator, or conditional accumulator if only some values; biggest or smallest, min max; yes or no or a position, flag search; a new text, build a string.
-    START(["📄 Read the exercise.<br/>What must I produce?"]) --> Q1{"A picture made of<br/>rows and columns?"}
+    START(["Read the exercise.<br/>What must I produce?"]) --> Q1{"A picture made of<br/>rows and columns?"}
     Q1 -- yes --> R8["8 · Nested loops"]
     Q1 -- no --> Q2{"Must I read input<br/>until it is OK?"}
     Q2 -- yes --> R9["9 · Input validation"]
@@ -57,7 +57,7 @@ flowchart TD
 
 Values stored in an **array**, a **list** or a **file**? Use [11 · Array traversal](11-array-traversal.md) to visit them, and the recipe from the diagram for the work.
 
-## 🗂️ Recipe card (the same 5 questions every time)
+## Recipe card (the same 5 questions every time)
 
 Before writing code, fill this card on paper:
 
@@ -75,13 +75,13 @@ Then translate the card into C#. If you can't fill line 5, you are not ready to 
 
 Every recipe is one short lesson, always in the same 6 steps. Do them in order, with a pen:
 
-1. 🎯 **Goal** — what you will be able to do, in one sentence.
-2. 🔮 **Predict** — read a small working program and write down what it prints. Then check.
-3. 🔬 **Trace it** — follow the same program turn by turn in a table.
-4. 🧩 **The pattern** — the steps with names (*subgoals*), the trigger words, a diagram and the template.
-5. ✍️ **Complete it** — fill the blanks or put mixed-up lines in order. Then check.
-6. 🏋️ **Your turn** — exercises to do alone, a small 🐞 bug to find, and the common mistakes.
+1. **Goal** — what you will be able to do, in one sentence.
+2. **Predict** — read a small working program and write down what it prints. Then check.
+3. **Trace it** — follow the same program turn by turn in a table.
+4. **The pattern** — the steps with names (*subgoals*), the trigger words, a diagram and the template.
+5. **Complete it** — fill the blanks or put mixed-up lines in order. Then check.
+6. **Your turn** — exercises to do alone, a small bug to find, and the common mistakes.
 
-Some exercises are special: 🧩 **arrange the lines** (all the code is given, mixed up) and 🐞 **fix the bugs** (the code is given, with mistakes). Both are checked by `./ex check` like the others.
+Some exercises are special: **arrange the lines** (all the code is given, mixed up) and **fix the bugs** (the code is given, with mistakes). Both are checked by `./ex check` like the others.
 
 For reading a problem statement in general, see [From a problem statement to an algorithm](../docs/problem-solving.md).

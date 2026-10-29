@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › L16
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › L16
 
 # L16 · Odd numbers
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 4a · Repeat & count | [Counter loop](../cookbook/01-counter-loop.md) | [L11](L11-count-from-a-to-b.md) | Custom |
+| Guided | easy | 4a · Repeat & count | [Counter loop](../cookbook/01-counter-loop.md) | [L11](L11-count-from-a-to-b.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Print the odd numbers 1, 3, 5, … up to n, one per line.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start L16     # creates practice/L16_OddNumbers.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `void PrintOdds(int n)`: input = n, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -33,20 +33,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `PrintOdds(8)` | prints:<br>`1`<br>`3`<br>`5`<br>`7` |
 | `PrintOdds(1)` | prints:<br>`1` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - n even: the last number is n − 1.
 
-## 📏 Rules
+## Rules
 
 - Write the loop yourself.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -60,16 +60,16 @@ Compare with L06 (even numbers): only the start changes.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Print the odd numbers from n down to 1.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for L16](../solutions/L16_OddNumbers.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [L15 · Count by any step](L15-count-by-step.md) · 📚 [All exercises](README.md) · Next: [L17 · Count down by 2](L17-count-down-by-2.md) ➡️
+Previous: [L15 · Count by any step](L15-count-by-step.md) · [All exercises](README.md) · Next: [L17 · Count down by 2](L17-count-down-by-2.md)

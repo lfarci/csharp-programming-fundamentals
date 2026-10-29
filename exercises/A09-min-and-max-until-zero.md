@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › A09
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › A09
 
 # A09 · Smallest and largest until zero
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐⭐ | 4b · Running result | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Min/max](../cookbook/04-min-max.md) | [A06](A06-average-until-zero.md), [C02](C02-largest-of-three.md) | Custom |
+| Independent | medium | 4b · Running result | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Min/max](../cookbook/04-min-max.md) | [A06](A06-average-until-zero.md), [C02](C02-largest-of-three.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Read whole numbers until 0. Print the smallest and the largest. If no number was entered, print `No numbers.`
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start A09     # creates practice/A09_MinAndMaxUntilZero.cs (never overwrites your work)
@@ -21,7 +21,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 
-## 🧪 Examples
+## Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
 
@@ -45,21 +45,21 @@ Max: -3
 No numbers.
 ```
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - Only negative numbers → max must not be 0!
 - Only one number → min = max.
 
-## 📏 Rules
+## Rules
 
 - No array, no list.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -79,16 +79,16 @@ Or start with `min = int.MaxValue` and `max = int.MinValue`.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Also print the **position** (1st, 2nd, …) of the largest number.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for A09](../solutions/A09_MinAndMaxUntilZero.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [A08 · Multiples of 3 or 5](A08-multiples-of-3-or-5.md) · 📚 [All exercises](README.md) · Next: [A10 · Sum of a series](A10-sum-of-a-series.md) ➡️
+Previous: [A08 · Multiples of 3 or 5](A08-multiples-of-3-or-5.md) · [All exercises](README.md) · Next: [A10 · Sum of a series](A10-sum-of-a-series.md)

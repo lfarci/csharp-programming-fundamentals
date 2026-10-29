@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › P01
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › P01
 
 # P01 · Is it prime?
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐⭐ | 4d · Search | [Flag/search](../cookbook/05-flag-search.md) | [A02](A02-count-multiples-of-3.md) | Custom |
+| Independent | medium | 4d · Search | [Flag/search](../cookbook/05-flag-search.md) | [A02](A02-count-multiples-of-3.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Give back `true` if n is a prime number (≥ 2 and only divisible by 1 and itself).
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start P01     # creates practice/P01_IsItPrime.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `bool IsPrime(int n)`: input = n, an int (whole number); result = a bool (true or false), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -36,21 +36,21 @@ Your method must give these results. `./ex check` tests all of them.
 | `IsPrime(97)` | `true` |
 | `IsPrime(0)` | `false` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - 0 and 1 are not prime.
 - 2 is the only even prime.
 
-## 📏 Rules
+## Rules
 
 - A loop with a `bool` flag. No library.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -70,16 +70,16 @@ Do not `return true` inside the loop: you only know it is prime **after** checki
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Make it faster: stop at `d * d <= n`. Why does that work?
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for P01](../solutions/P01_IsItPrime.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [S03 · Even Fibonacci sum](S03-even-fibonacci-sum.md) · 📚 [All exercises](README.md) · Next: [P02 · All primes up to N](P02-primes-up-to-n.md) ➡️
+Previous: [S03 · Even Fibonacci sum](S03-even-fibonacci-sum.md) · [All exercises](README.md) · Next: [P02 · All primes up to N](P02-primes-up-to-n.md)

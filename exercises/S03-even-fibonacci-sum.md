@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › S03
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › S03
 
 # S03 · Even Fibonacci sum
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Challenge | ⭐⭐⭐ | 4d · State | [State update](../cookbook/07-state-update.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [S02](S02-fibonacci.md), [A03](A03-sum-even-values.md) | Custom · prepares [Project Euler #2](https://projecteuler.net/problem=2) |
+| Challenge | hard | 4d · State | [State update](../cookbook/07-state-update.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [S02](S02-fibonacci.md), [A03](A03-sum-even-values.md) | Custom · prepares [Project Euler #2](https://projecteuler.net/problem=2) |
 
-## 🎯 Goal
+## Goal
 
 Add up the **even** Fibonacci numbers that are **not greater** than `limit`, and give back the sum.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start S03     # creates practice/S03_EvenFibonacciSum.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `long EvenFibonacciSum(long limit)`: input = limit, a long (big whole number); result = a long (big whole number), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -34,20 +34,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `EvenFibonacciSum(1)` | `0` |
 | `EvenFibonacciSum(34)` | `44` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - The limit itself counts if it is an even Fibonacci number (limit 8 → 2 + 8 = 10).
 
-## 📏 Rules
+## Rules
 
 - `while` loop (you do not know how many terms).
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -67,16 +67,16 @@ Inside: `if (previous % 2 == 0) sum += previous;` then slide like S02.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Solve [Project Euler #2](https://projecteuler.net/problem=2) (limit four million). Use `long`.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for S03](../solutions/S03_EvenFibonacciSum.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [S05 · The n-th Fibonacci number](S05-nth-fibonacci.md) · 📚 [All exercises](README.md) · Next: [P01 · Is it prime?](P01-is-it-prime.md) ➡️
+Previous: [S05 · The n-th Fibonacci number](S05-nth-fibonacci.md) · [All exercises](README.md) · Next: [P01 · Is it prime?](P01-is-it-prime.md)

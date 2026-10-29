@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › L12
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › L12
 
 # L12 · Count down
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 4a · Repeat & count | [Counter loop](../cookbook/01-counter-loop.md) | [L11](L11-count-from-a-to-b.md) | Custom |
+| Guided | easy | 4a · Repeat & count | [Counter loop](../cookbook/01-counter-loop.md) | [L11](L11-count-from-a-to-b.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Print n, n−1, …, 1, one per line.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start L12     # creates practice/L12_CountDown.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `void CountDown(int n)`: input = n, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -32,20 +32,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `CountDown(4)` | prints:<br>`4`<br>`3`<br>`2`<br>`1` |
 | `CountDown(1)` | prints:<br>`1` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - `CountDown(0)` prints nothing.
 
-## 📏 Rules
+## Rules
 
 - Write the loop yourself.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -59,16 +59,16 @@ Keep going while `i >= 1`.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Count down from n to 0 (0 included).
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for L12](../solutions/L12_CountDown.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [L11 · Count from a to b](L11-count-from-a-to-b.md) · 📚 [All exercises](README.md) · Next: [L13 · Count by 3](L13-count-by-3.md) ➡️
+Previous: [L11 · Count from a to b](L11-count-from-a-to-b.md) · [All exercises](README.md) · Next: [L13 · Count by 3](L13-count-by-3.md)

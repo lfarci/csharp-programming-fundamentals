@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › C04
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › C04
 
 # C04 · Grade from a score
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐⭐ | 3 · Conditions | — | [C03](C03-ticket-price.md) | Custom |
+| Independent | medium | 3 · Conditions | — | [C03](C03-ticket-price.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Give back the grade for a score from 0 to 100: 90 or more → `"A"`, 80–89 → `"B"`, 70–79 → `"C"`, 50–69 → `"D"`, below 50 → `"F"`.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start C04     # creates practice/C04_GradeFromAScore.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `string Grade(int score)`: input = score, an int (whole number); result = a string (text), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -38,21 +38,21 @@ Your method must give these results. `./ex check` tests all of them.
 | `Grade(49)` | `"F"` |
 | `Grade(0)` | `"F"` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - Exactly 90, 80, 70 and 50: which grade? Test the borders.
 - 0 and 100.
 
-## 📏 Rules
+## Rules
 
 - Use one `if` / `else if` / `else` chain. Test the biggest border first.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [reading worksheet](../docs/reading-an-exercise.md#4-the-worksheet-copy-it): what goes in? what comes out? a tiny example by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -72,16 +72,16 @@ The last case (below 50) needs no test: a plain `else` or a final `return "F";`.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Write `Season(int month)`: 12, 1, 2 → `"winter"`, 3–5 → `"spring"`, 6–8 → `"summer"`, 9–11 → `"autumn"`.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for C04](../solutions/C04_GradeFromAScore.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [C03 · Ticket price](C03-ticket-price.md) · 📚 [All exercises](README.md) · Next: [L01 · Trace a loop (paper)](L01-trace-a-loop.md) ➡️
+Previous: [C03 · Ticket price](C03-ticket-price.md) · [All exercises](README.md) · Next: [L01 · Trace a loop (paper)](L01-trace-a-loop.md)

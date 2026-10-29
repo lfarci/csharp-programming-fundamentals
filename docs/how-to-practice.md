@@ -1,4 +1,4 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › How to practice
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › How to practice
 
 # How to practice
 
@@ -37,7 +37,7 @@ Ask for **one hint** at a time. A good helper asks you questions, gives you a sm
 
 A pattern sticks when you use it **many times in a row**, with quick feedback. That is what drill sets are for.
 
-- Pick **one** drill set in the [exercise inventory](../exercises/README.md#-drill-sets-same-pattern-many-times) (for example the counter-loop drill).
+- Pick **one** drill set in the [exercise inventory](../exercises/README.md#drill-sets-same-pattern-many-times) (for example the counter-loop drill).
 - Do 3 to 5 of its exercises in one short session, in order. Run `./ex check` after each one.
 - Each drill changes only a small detail (count by 3, then by 5). Say the recipe's subgoals out loud each time.
 - Next session, start with the last one you did, then continue. Mix in an older drill set now and then.
@@ -76,4 +76,4 @@ A good exercise for the coach: give working code and ask her to **predict** its 
 
 ---
 
-⬅️ [Home](../README.md) · [Progress checklist](progress-checklist.md) ➡️
+[Home](../README.md) · [Progress checklist](progress-checklist.md)

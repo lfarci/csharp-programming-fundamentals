@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › D03
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › D03
 
 # D03 · Count the digits
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐⭐ | 4d · Digits | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [D02](D02-remove-last-digit.md), [L05](L05-until-zero.md) | Custom |
+| Independent | medium | 4d · Digits | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [D02](D02-remove-last-digit.md), [L05](L05-until-zero.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Give back how many digits n has (n ≥ 0). 0 has 1 digit.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start D03     # creates practice/D03_CountDigits.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `int CountDigits(int n)`: input = n, an int (whole number); result = an int (whole number), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -34,20 +34,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `CountDigits(1000)` | `4` |
 | `CountDigits(7)` | `1` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - **0 has 1 digit** (a plain `while (n > 0)` loop says 0).
 
-## 📏 Rules
+## Rules
 
 - A loop. No `ToString().Length`, no `Math.Log10`.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -67,16 +67,16 @@ For 0: a `do … while` runs at least once, so it counts 1.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Count how many digits of N are even.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for D03](../solutions/D03_CountDigits.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [D02 · Remove the last digit](D02-remove-last-digit.md) · 📚 [All exercises](README.md) · Next: [D08 · First digit](D08-first-digit.md) ➡️
+Previous: [D02 · Remove the last digit](D02-remove-last-digit.md) · [All exercises](README.md) · Next: [D08 · First digit](D08-first-digit.md)

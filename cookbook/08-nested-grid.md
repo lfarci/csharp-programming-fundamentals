@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 8 · Nested loops
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 8 · Nested loops
 
-# Recipe 8 · Nested loops — draw 2D grids 🎨
+# Recipe 8 · Nested loops — draw 2D grids
 
 > One loop for the **rows**, one loop inside it for the **columns**. Like writing a page: line after line, letter after letter.
 
-🧭 **How this page works:** 1 goal → predict → trace → the pattern → complete it → your turn. Do the steps in order, with a pen. See [why](../docs/writing-guide.md#2-lesson-format).
+**How this page works:** 1 goal → predict → trace → the pattern → complete it → your turn. Do the steps in order, with a pen. See [why](../docs/writing-guide.md#2-lesson-format).
 
-## 🎯 1 · Goal
+## 1 · Goal
 
 Draw a 2D picture with a loop for the **rows** and, inside it, a loop for the **columns**.
 
-## 🔮 2 · Predict
+## 2 · Predict
 
 Read this code. **Before** you run it, write down what it prints.
 
@@ -39,7 +39,7 @@ The inner loop runs `row` times, so each row is one star longer.
 
 </details>
 
-## 🔬 3 · Trace it
+## 3 · Trace it
 
 Trace table: triangle of height 3. Cover the table, fill your own, then compare.
 
@@ -51,7 +51,7 @@ Trace table: triangle of height 3. Cover the table, fill your own, then compare.
 
 Total `Console.Write` calls: 1 + 2 + 3 = 6. The inner loop **starts again from 1** on every row.
 
-## 🧩 4 · The pattern
+## 4 · The pattern
 
 ### Subgoals (the steps, with names you can reuse)
 
@@ -62,11 +62,11 @@ Total `Console.Write` calls: 1 + 2 + 3 = 6. The inner loop **starts again from 1
 
 Say the subgoal names out loud when you write the code. They are the same in every exercise that uses this recipe.
 
-### 🔎 Recognize it
+### Recognize it
 
 Trigger words: **"draw"**, **"rectangle"**, **"triangle"**, **"pyramid"**, **"grid"**, **"board"**, **"table of tables"**, **"every pair"**, **"rows and columns"**.
 
-### 🧠 The idea
+### The idea
 
 - The **outer** loop picks a row: `row`.
 - The **inner** loop walks along that row: `col`, printing **without** a newline (`Console.Write`).
@@ -107,7 +107,7 @@ Rectangle 4x3   Triangle 4   Hollow 5x4   Checkerboard 4   Pyramid 3
                 ****         *****        .#.#
 ```
 
-### 📝 Template
+### Template
 
 ```csharp
 for (int row = 1; row <= height; row++)
@@ -120,7 +120,7 @@ for (int row = 1; row <= height; row++)
 }
 ```
 
-## ✍️ 5 · Complete it
+## 5 · Complete it
 
 Part of the code is given. Fill in the rest on paper.
 
@@ -132,7 +132,7 @@ See [G07 · Arrange the lines: a square](../exercises/G07-arrange-a-square.md): 
 
 </details>
 
-## 🏋️ 6 · Your turn
+## 6 · Your turn
 
 Now alone, in a real file (`./ex start ID`, then `./ex check`):
 
@@ -142,9 +142,9 @@ Now alone, in a real file (`./ex start ID`, then `./ex check`):
 
 Warm-ups before G01: [**L09**](../exercises/L09-draw-a-row.md) one row, [**L10**](../exercises/L10-numbers-on-one-line.md) numbers on one line, [**G07**](../exercises/G07-arrange-a-square.md) arrange a square.
 
-🔁 **Want more of the same?** Do the drill set for this recipe in the [exercise inventory](../exercises/README.md#-drill-sets-same-pattern-many-times): 5 to 12 short exercises that use exactly this pattern.
+**Want more of the same?** Do the drill set for this recipe in the [exercise inventory](../exercises/README.md#drill-sets-same-pattern-many-times): 5 to 12 short exercises that use exactly this pattern.
 
-### 🐞 Debug it
+### Debug it
 
 This code has **one** bug. Find it on paper: trace a small example.
 
@@ -165,7 +165,7 @@ for (int row = 1; row <= 2; row++)
 
 </details>
 
-### ⚠️ Common mistakes
+### Common mistakes
 
 - `Console.WriteLine("*")` inside the inner loop → one star per line.
 - `Console.WriteLine()` **inside** the inner loop instead of after it.
@@ -173,4 +173,4 @@ for (int row = 1; row <= 2; row++)
 - Declaring `col` before the outer loop → it does not restart at 1.
 - Start small: first print **one row** of 4 stars. Then repeat that row 3 times. Then change the rule.
 
-➡️ Next: [Recipe 9 · Input validation loop](09-input-validation.md)
+Next: [Recipe 9 · Input validation loop](09-input-validation.md)

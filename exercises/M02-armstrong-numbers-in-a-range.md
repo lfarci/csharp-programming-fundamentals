@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › M02
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › M02
 
 # M02 · All Armstrong numbers in a range
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Challenge | ⭐⭐⭐ | 4 · Combine | [Counter loop](../cookbook/01-counter-loop.md), [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [M01](M01-armstrong-number.md) | Custom |
+| Challenge | hard | 4 · Combine | [Counter loop](../cookbook/01-counter-loop.md), [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [M01](M01-armstrong-number.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Read a lower and an upper bound. Print every Armstrong number between them (both included).
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start M02     # creates practice/M02_ArmstrongNumbersInARange.cs (never overwrites your work)
@@ -21,7 +21,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 
-## 🧪 Examples
+## Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
 
@@ -43,20 +43,20 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 1634 8208 9474
 ```
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - Bounds included.
 
-## 📏 Rules
+## Rules
 
 - Your M01 code inside a counter loop. Beware: the inner variables must be reset for every candidate.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -76,16 +76,16 @@ Declare `digits`, `sum`, `remaining` **inside** the outer loop so they restart a
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Count how many Armstrong numbers exist below 100000.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for M02](../solutions/M02_ArmstrongNumbersInARange.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [M01 · Armstrong number](M01-armstrong-number.md) · 📚 [All exercises](README.md) · Next: [R01 · Sum of an array](R01-sum-an-array.md) ➡️
+Previous: [M01 · Armstrong number](M01-armstrong-number.md) · [All exercises](README.md) · Next: [R01 · Sum of an array](R01-sum-an-array.md)

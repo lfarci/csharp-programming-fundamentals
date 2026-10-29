@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › S02
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › S02
 
 # S02 · Fibonacci
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐⭐⭐ | 4d · State | [State update](../cookbook/07-state-update.md) | [S01](S01-trace-updates.md), [A01](A01-sum-1-to-n.md) | Custom · teacher topic: Fibonacci |
+| Independent | hard | 4d · State | [State update](../cookbook/07-state-update.md) | [S01](S01-trace-updates.md), [A01](A01-sum-1-to-n.md) | Custom · teacher topic: Fibonacci |
 
-## 🎯 Goal
+## Goal
 
 Read N. Print the first N Fibonacci numbers on one line, starting with 0 and 1. Each number is the sum of the two before it.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start S02     # creates practice/S02_Fibonacci.cs (never overwrites your work)
@@ -21,7 +21,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 
-## 🧪 Examples
+## Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
 
@@ -43,22 +43,22 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 0 1 1 2 3 5 8 13 21 34
 ```
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - N = 0 → nothing.
 - N = 1 → only 0.
 - N = 2 → 0 1.
 
-## 📏 Rules
+## Rules
 
 - No array, no recursion. Variables `previous`, `current`, `next`.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -78,16 +78,16 @@ Order: `next = previous + current; previous = current; current = next;`
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Print the N-th Fibonacci number only (position 0 is 0, position 1 is 1, position 10 is 55).
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for S02](../solutions/S02_Fibonacci.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [S04 · Doubling](S04-doubling.md) · 📚 [All exercises](README.md) · Next: [S05 · The n-th Fibonacci number](S05-nth-fibonacci.md) ➡️
+Previous: [S04 · Doubling](S04-doubling.md) · [All exercises](README.md) · Next: [S05 · The n-th Fibonacci number](S05-nth-fibonacci.md)

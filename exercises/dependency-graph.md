@@ -1,6 +1,6 @@
-🏠 [Home](../README.md) › 📚 [Exercises](README.md) › Dependency graph
+[Home](../README.md) › [Exercises](README.md) › Dependency graph
 
-# 🕸️ Exercise dependency graph
+# Exercise dependency graph
 
 An arrow `X → Y` means: do X before Y. Colours: green = guided, blue = independent, purple = challenge. Thick border = teacher topic. The same information is in the [inventory](README.md) tables, as text.
 
@@ -262,4 +262,4 @@ flowchart LR
 
 ---
 
-⬅️ [All exercises](README.md) · 🗺️ [Roadmap](../ROADMAP.md)
+[All exercises](README.md) · [Roadmap](../ROADMAP.md)

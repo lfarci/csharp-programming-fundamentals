@@ -401,7 +401,7 @@ Console.WriteLine($"Count: {count}");
 ''')
 
 ex(id="M01", slug="armstrong-number", title="Armstrong number", level="Challenge", stars=3, step="4 · Combine", recipes=["06","02"], pre=["D03","D04","A07"], teacher="Armstrong",
-   goal="Read N ≥ 0. An Armstrong number equals the sum of its digits, each raised to the power **number of digits**. Say if N is one.\n\n153 → 3 digits → 1³ + 5³ + 3³ = 153 ✅. 9474 → 4 digits → 9⁴ + 4⁴ + 7⁴ + 4⁴ = 9474 ✅.",
+   goal="Read N ≥ 0. An Armstrong number equals the sum of its digits, each raised to the power **number of digits**. Say if N is one.\n\n153 → 3 digits → 1³ + 5³ + 3³ = 153, so yes. 9474 → 4 digits → 9⁴ + 4⁴ + 7⁴ + 4⁴ = 9474 .",
    examples=[(["153"], ["153 is an Armstrong number"]), (["154"], ["154 is not an Armstrong number"]), (["9474"], ["9474 is an Armstrong number"]), (["0"], ["0 is an Armstrong number"]), (["10"], ["10 is not an Armstrong number"])],
    edge=["Every 1-digit number is an Armstrong number (5¹ = 5).", "The power is the number of digits, **not always 3**."],
    constraints=["No string, no `Math.Pow`. Reuse D03 (count), D04 (digits) and A07 (power)."],

@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › R03
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › R03
 
 # R03 · Count matches in an array
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐ | 6 · Arrays | [Array traversal](../cookbook/11-array-traversal.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [R01](R01-sum-an-array.md), [A02](A02-count-multiples-of-3.md) | Custom |
+| Independent | easy | 6 · Arrays | [Array traversal](../cookbook/11-array-traversal.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [R01](R01-sum-an-array.md), [A02](A02-count-multiples-of-3.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Give back how many times `target` appears in the array.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start R03     # creates practice/R03_CountMatches.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `int CountMatches(int[] values, int target)`: input = values, an int[] (array of whole numbers), target, an int (whole number); result = an int (whole number), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -33,20 +33,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `CountMatches(new int[] { 1, 1 }, 9)` | `0` |
 | `CountMatches(new int[0], 3)` | `0` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - Target not present → 0.
 
-## 📏 Rules
+## Rules
 
 - No LINQ (`.Count()`).
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -60,16 +60,16 @@ Conditional accumulator: `if (value == target) count++;`
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Count the values **greater** than the target.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for R03](../solutions/R03_CountMatches.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [R06 · Fix the bugs: largest value](R06-fix-largest-value.md) · 📚 [All exercises](README.md) · Next: [R04 · Find the position](R04-find-the-position.md) ➡️
+Previous: [R06 · Fix the bugs: largest value](R06-fix-largest-value.md) · [All exercises](README.md) · Next: [R04 · Find the position](R04-find-the-position.md)

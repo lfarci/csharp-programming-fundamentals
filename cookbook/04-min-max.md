@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 4 · Min / max tracker
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 4 · Min / max tracker
 
 # Recipe 4 · Min / max tracker — "the best so far"
 
 > Keep a box with **the best value seen so far**. Each new value challenges the champion.
 
-🧭 **How this page works:** 1 goal → predict → trace → the pattern → complete it → your turn. Do the steps in order, with a pen. See [why](../docs/writing-guide.md#2-lesson-format).
+**How this page works:** 1 goal → predict → trace → the pattern → complete it → your turn. Do the steps in order, with a pen. See [why](../docs/writing-guide.md#2-lesson-format).
 
-## 🎯 1 · Goal
+## 1 · Goal
 
 Find the largest (or smallest) value by keeping **the best value so far** in a box.
 
-## 🔮 2 · Predict
+## 2 · Predict
 
 Read this code. **Before** you run it, write down what it prints.
 
@@ -33,7 +33,7 @@ It prints `-2`. With `int max = 0;` it would wrongly print `0`, a value that is 
 
 </details>
 
-## 🔬 3 · Trace it
+## 3 · Trace it
 
 Trace table: -5, -2, -9. Cover the table, fill your own, then compare.
 
@@ -43,7 +43,7 @@ Trace table: -5, -2, -9. Cover the table, fill your own, then compare.
 | -2 | yes (-2 > -5) | -2 |
 | -9 | no | **-2** |
 
-## 🧩 4 · The pattern
+## 4 · The pattern
 
 ### Subgoals (the steps, with names you can reuse)
 
@@ -55,13 +55,13 @@ Trace table: -5, -2, -9. Cover the table, fill your own, then compare.
 
 Say the subgoal names out loud when you write the code. They are the same in every exercise that uses this recipe.
 
-### 🔎 Recognize it
+### Recognize it
 
 Trigger words: **"largest"**, **"smallest"**, **"maximum"**, **"minimum"**, **"highest score"**, **"best"**, **"oldest"**, **"longest word"**.
 
-### 🧠 The idea
+### The idea
 
-Think of a **king of the hill** 👑: the first value is king. Each new value fights the king; if it is bigger, it becomes the new king.
+Think of a **king of the hill** : the first value is king. Each new value fights the king; if it is bigger, it becomes the new king.
 
 ```mermaid
 flowchart TD
@@ -69,7 +69,7 @@ flowchart TD
     accDescr: Set max to the first value. For each other value, if it is bigger than max, max becomes that value. At the end, max is the biggest.
     A["max = FIRST value"] --> B{"more values?"}
     B -- yes --> C{"value #gt; max ?"}
-    C -- yes --> D["max = value 👑"]
+    C -- yes --> D["max = value "]
     C -- no --> B
     D --> B
     B -- no --> E["print max"]
@@ -77,7 +77,7 @@ flowchart TD
 
 **Start with the first value**, not with 0. If all values are negative (-5, -2, -9), a max starting at 0 would wrongly answer 0.
 
-### 📝 Template
+### Template
 
 With an array:
 
@@ -96,7 +96,7 @@ With user input (you do not know the first value yet): use a flag `bool first = 
 
 Also want **where** the best value is? Keep a second box `maxIndex` and update both together.
 
-## ✍️ 5 · Complete it
+## 5 · Complete it
 
 Part of the code is given. Fill in the rest on paper.
 
@@ -119,7 +119,7 @@ return min;
 
 </details>
 
-## 🏋️ 6 · Your turn
+## 6 · Your turn
 
 Now alone, in a real file (`./ex start ID`, then `./ex check`):
 
@@ -127,9 +127,9 @@ Now alone, in a real file (`./ex start ID`, then `./ex check`):
 2. [**R02**](../exercises/R02-largest-in-an-array.md) Largest value of an array.
 3. [**A09**](../exercises/A09-min-and-max-until-zero.md) Read numbers until 0, print the smallest and the largest.
 
-🐞 Debugging exercise: [**R06**](../exercises/R06-fix-largest-value.md) Fix the bugs: largest value.
+Debugging exercise: [**R06**](../exercises/R06-fix-largest-value.md) Fix the bugs: largest value.
 
-### 🐞 Debug it
+### Debug it
 
 This code has **one** bug. Find it on paper: trace a small example.
 
@@ -152,11 +152,11 @@ It compares with `values[0]` (the first value) instead of `max` (the best so far
 
 </details>
 
-### ⚠️ Common mistakes
+### Common mistakes
 
 - `max = 0` at the start (fails with negative numbers).
 - Using `>=` when you want the **first** position of the max (with `>=` you get the last one).
 - Resetting `max` inside the loop.
 - Empty input/array: there is no max! Decide what to print before you start.
 
-➡️ Next: [Recipe 5 · Flag / search](05-flag-search.md)
+Next: [Recipe 5 · Flag / search](05-flag-search.md)

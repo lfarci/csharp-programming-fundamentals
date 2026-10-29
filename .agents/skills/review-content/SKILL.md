@@ -12,10 +12,11 @@ A **pass** reads every learner page against the rubric in `AGENTS.md` and `docs/
    - *shortcut*: LINQ or a helper doing the loop; a book challenge listed as an exercise;
    - *scaffold gap*: Guided with fewer than 2 hints, missing edge case or mastery check;
    - *format drift*: a page that leaves the exercise or recipe format in `AGENTS.md` (recipes: all 6 lesson steps, in order, predict and trace on the same code);
-   - *persona*: a page that assumes more than [the persona](../../../docs/learner-persona.md) knows at that step, or a step without 🎯 objectives;
+   - *persona*: a page that assumes more than [the persona](../../../docs/learner-persona.md) knows at that step, or a step without objectives;
    - *thin drill*: a recipe whose `DRILLS` row has fewer than 5 exercises, or a drill that changes more than one thing from its neighbour;
-   - *no retrieval*: a new recipe without predict, complete-it or 🐞 debugging practice;
+   - *no retrieval*: a new recipe without predict, complete-it or debugging practice;
    - *plain-language*: long sentences, jargon not in the glossary, Git words on learner pages;
+   - *emoji*: any emoji or symbol standing for a word (pages, test names, `./ex` output); write the word;
    - *access*: missing alt text, `accTitle`/`accDescr`, colour-only meaning, "click here" links, skipped heading levels;
    - *navigation*: missing breadcrumb or Previous/Next, dead ends, a stale "you are here";
    - *duplicate*: one meaning written in two places that can drift apart.

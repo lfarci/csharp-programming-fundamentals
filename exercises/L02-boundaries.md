@@ -1,12 +1,12 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › L02
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › L02
 
 # L02 · Boundaries: < or <= ? (paper)
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 4a · Repeat & count | [Counter loop](../cookbook/01-counter-loop.md) | [L01](L01-trace-a-loop.md) | Custom |
+| Guided | easy | 4a · Repeat & count | [Counter loop](../cookbook/01-counter-loop.md) | [L01](L01-trace-a-loop.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 How many times does each loop run? What is the last value printed? Answer on paper first.
 
@@ -19,24 +19,24 @@ int k = 10;
 while (k < 5) { Console.WriteLine(k); k++; }         // loop E
 ```
 
-## ✏️ Start and check
+## Start and check
 
 This one is on **paper**: no code to write. When you are done, compare with the answer key (link at the bottom).
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - Loop E: can a loop run zero times?
 
-## 📏 Rules
+## Rules
 
 - Paper first. Then run to check.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -50,16 +50,16 @@ For each loop: write the first value, the last value that passes the test, and c
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Write 3 different `for` loops that all run exactly 7 times.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for L02](../solutions/L02-boundaries.md). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [L01 · Trace a loop (paper)](L01-trace-a-loop.md) · 📚 [All exercises](README.md) · Next: [L03 · Count up and down](L03-count-up-and-down.md) ➡️
+Previous: [L01 · Trace a loop (paper)](L01-trace-a-loop.md) · [All exercises](README.md) · Next: [L03 · Count up and down](L03-count-up-and-down.md)

@@ -1,9 +1,9 @@
-🏠 [Home](../README.md) › 🔑 Solutions
+[Home](../README.md) › Solutions
 
-# 🔑 Solutions
+# Solutions
 
 **Stop!** Did you really try? Did you open the hints? Did you fill a trace table?
-A solution read too early teaches less than an exercise solved with 3 hints. 🙂
+A solution read too early teaches less than an exercise solved with 3 hints.
 
 - One file per exercise: `<ID>_<Name>.cs` (C# code) or `<ID>-<name>.md` (answer key for paper exercises).
 - Your solution can be different and still be correct. Compare the **idea** (which recipe? which boxes?), not the exact words.
@@ -19,4 +19,4 @@ Every solution runs through the same tests as `./ex check` (see `tools/check-exe
 
 ---
 
-⬅️ [Home](../README.md) · 📚 [All exercises](../exercises/README.md)
+[Home](../README.md) · [All exercises](../exercises/README.md)

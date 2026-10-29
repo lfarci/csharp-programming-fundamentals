@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › L19
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › L19
 
 # L19 · Count the turns
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 4a · Repeat & count | [Counter loop](../cookbook/01-counter-loop.md), [Accumulator](../cookbook/02-accumulator.md) | [L11](L11-count-from-a-to-b.md) | Custom |
+| Guided | easy | 4a · Repeat & count | [Counter loop](../cookbook/01-counter-loop.md), [Accumulator](../cookbook/02-accumulator.md) | [L11](L11-count-from-a-to-b.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Give back how many times a loop from `a` to `b` (both included) runs. Count with a loop, not with a formula.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start L19     # creates practice/L19_CountTheTurns.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `int CountTurns(int a, int b)`: input = a, an int (whole number), b, an int (whole number); result = an int (whole number), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -34,20 +34,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `CountTurns(4, 10)` | `7` |
 | `CountTurns(5, 4)` | `0` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - `a` bigger than `b`: 0 turns.
 
-## 📏 Rules
+## Rules
 
 - Write the loop yourself.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -61,16 +61,16 @@ A counter box `turns = 0` before the loop.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 How many turns does a loop from `a` to `b` with step 2 do?
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for L19](../solutions/L19_CountTheTurns.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [L18 · Square numbers](L18-squares.md) · 📚 [All exercises](README.md) · Next: [A11 · Arrange the lines: sum of squares](A11-arrange-sum-of-squares.md) ➡️
+Previous: [L18 · Square numbers](L18-squares.md) · [All exercises](README.md) · Next: [A11 · Arrange the lines: sum of squares](A11-arrange-sum-of-squares.md)

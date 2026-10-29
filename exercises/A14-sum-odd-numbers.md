@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › A14
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › A14
 
 # A14 · Sum the odd numbers
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 4b · Running result | [Accumulator](../cookbook/02-accumulator.md) | [A01](A01-sum-1-to-n.md), [L16](L16-odd-numbers.md) | Custom |
+| Guided | easy | 4b · Running result | [Accumulator](../cookbook/02-accumulator.md) | [A01](A01-sum-1-to-n.md), [L16](L16-odd-numbers.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Give back 1 + 3 + 5 + … (the odd numbers up to n).
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start A14     # creates practice/A14_SumOddNumbers.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `int SumOfOdds(int n)`: input = n, an int (whole number); result = an int (whole number), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -34,20 +34,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `SumOfOdds(1)` | `1` |
 | `SumOfOdds(0)` | `0` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - n = 0: 0.
 
-## 📏 Rules
+## Rules
 
 - Write the loop yourself.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -61,16 +61,16 @@ Add each one to `sum`.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Do it again with `i++` and an `if (i % 2 != 0)`.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for A14](../solutions/A14_SumOddNumbers.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [A13 · Sum from a to b](A13-sum-from-a-to-b.md) · 📚 [All exercises](README.md) · Next: [A15 · Count the even numbers](A15-count-even-numbers.md) ➡️
+Previous: [A13 · Sum from a to b](A13-sum-from-a-to-b.md) · [All exercises](README.md) · Next: [A15 · Count the even numbers](A15-count-even-numbers.md)

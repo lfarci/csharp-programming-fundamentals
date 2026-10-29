@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › A04
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › A04
 
 # A04 · Factorial
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐⭐ | 4b · Running result | [Accumulator](../cookbook/02-accumulator.md) | [A01](A01-sum-1-to-n.md) | Custom · teacher topic: Factorial |
+| Independent | medium | 4b · Running result | [Accumulator](../cookbook/02-accumulator.md) | [A01](A01-sum-1-to-n.md) | Custom · teacher topic: Factorial |
 
-## 🎯 Goal
+## Goal
 
 Give back n! = 1 × 2 × … × n (0 ≤ n ≤ 20). By definition 0! = 1.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start A04     # creates practice/A04_Factorial.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `long Factorial(int n)`: input = n, an int (whole number); result = a long (big whole number), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -35,21 +35,21 @@ Your method must give these results. `./ex check` tests all of them.
 | `Factorial(12)` | `479001600` |
 | `Factorial(20)` | `2432902008176640000` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - N = 0 → 1 (the loop runs 0 times, the box keeps its start value).
 - 13! does not fit in an `int` → use `long`.
 
-## 📏 Rules
+## Rules
 
 - A loop, no recursion, no library.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -69,16 +69,16 @@ Product box. What must it start at? (Not 0!)
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Print every factorial from 0! to N! (one per line), with **one** loop.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for A04](../solutions/A04_Factorial.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [A03 · Sum of the even numbers](A03-sum-even-values.md) · 📚 [All exercises](README.md) · Next: [A05 · Two accumulators: sum and squares](A05-sum-square-difference.md) ➡️
+Previous: [A03 · Sum of the even numbers](A03-sum-even-values.md) · [All exercises](README.md) · Next: [A05 · Two accumulators: sum and squares](A05-sum-square-difference.md)

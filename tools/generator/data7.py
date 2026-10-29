@@ -402,12 +402,12 @@ return previous;""", [([0], 0), ([1], 1), ([6], 8), ([10], 55)],
 
 # ---------- drill sets (shown in exercises/README.md) ----------
 DRILLS = [
- ("🔁 Counter loop (print, count, step)", "01", ["L03", "L11", "L12", "L13", "L14", "L16", "L17", "L18", "L15", "L19", "L06"]),
- ("➕ Accumulator (sum, product)", "02", ["A11", "A01", "A13", "A14", "A18", "A04", "A19", "A20", "A07", "A10"]),
- ("🔎 Count or sum only some values", "03", ["A02", "A15", "A16", "A03", "A17", "A21", "A22", "A12", "A08"]),
- ("🎨 Nested loops (draw)", "08", ["L09", "L10", "G07", "G01", "G08", "G09", "G02", "G10", "G11", "G12", "G04", "G13", "G05"]),
- ("🔢 Digits", "06", ["D01", "D02", "D03", "D08", "D04", "D09", "D10", "D11", "D12", "D07", "D05"]),
- ("🎢 Changing state", "07", ["S01", "S04", "S02", "S05", "S03"]),
+ ("Counter loop (print, count, step)", "01", ["L03", "L11", "L12", "L13", "L14", "L16", "L17", "L18", "L15", "L19", "L06"]),
+ ("Accumulator (sum, product)", "02", ["A11", "A01", "A13", "A14", "A18", "A04", "A19", "A20", "A07", "A10"]),
+ ("Count or sum only some values", "03", ["A02", "A15", "A16", "A03", "A17", "A21", "A22", "A12", "A08"]),
+ ("Nested loops (draw)", "08", ["L09", "L10", "G07", "G01", "G08", "G09", "G02", "G10", "G11", "G12", "G04", "G13", "G05"]),
+ ("Digits", "06", ["D01", "D02", "D03", "D08", "D04", "D09", "D10", "D11", "D12", "D07", "D05"]),
+ ("Changing state", "07", ["S01", "S04", "S02", "S05", "S03"]),
 ]
 
 # ---------- G14: column formatting alone, before G03 needs it inside a grid ----------

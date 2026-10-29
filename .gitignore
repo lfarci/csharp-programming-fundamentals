@@ -9,3 +9,5 @@ practice/.current
 # Your exercise files (practice/A04_Factorial.cs, …): kept out of the course repo.
 # On your own fork, save them with: git add -f practice
 practice/*_*.cs
+practice/.done
+practice/PROGRESS.md

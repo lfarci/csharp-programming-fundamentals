@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › L04
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › L04
 
 # L04 · Multiplication table
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐ | 4a · Repeat & count | [Counter loop](../cookbook/01-counter-loop.md) | [L03](L03-count-up-and-down.md) | Custom |
+| Independent | easy | 4a · Repeat & count | [Counter loop](../cookbook/01-counter-loop.md) | [L03](L03-count-up-and-down.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Read a number N and print its multiplication table from 1 to 10.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start L04     # creates practice/L04_MultiplicationTable.cs (never overwrites your work)
@@ -21,7 +21,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 
-## 🧪 Examples
+## Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
 
@@ -39,20 +39,20 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 7 x 7 = 49
 ```
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - N = 0 → all results are 0.
 
-## 📏 Rules
+## Rules
 
 - One `for` loop.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -66,16 +66,16 @@ What changes from line to line? Only the second number (1 to 10).
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Read a second number M and print the table up to M instead of 10.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for L04](../solutions/L04_MultiplicationTable.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [L03 · Count up and down](L03-count-up-and-down.md) · 📚 [All exercises](README.md) · Next: [L05 · Until zero](L05-until-zero.md) ➡️
+Previous: [L03 · Count up and down](L03-count-up-and-down.md) · [All exercises](README.md) · Next: [L05 · Until zero](L05-until-zero.md)

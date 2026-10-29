@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 9 · Input validation loop
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 9 · Input validation loop
 
 # Recipe 9 · Input validation loop — "ask again until it is OK"
 
 > Ask, check, and **ask again** while the answer is not valid.
 
-🧭 **How this page works:** 1 goal → predict → trace → the pattern → complete it → your turn. Do the steps in order, with a pen. See [why](../docs/writing-guide.md#2-lesson-format).
+**How this page works:** 1 goal → predict → trace → the pattern → complete it → your turn. Do the steps in order, with a pen. See [why](../docs/writing-guide.md#2-lesson-format).
 
-## 🎯 1 · Goal
+## 1 · Goal
 
 Keep asking until the user types a valid answer, so the rest of the program can trust the value.
 
-## 🔮 2 · Predict
+## 2 · Predict
 
 Read this code. **Before** you run it, write down what it prints.
 
@@ -32,7 +32,7 @@ It asks 3 times. `Must be positive, try again:` appears **twice** (for 0 and -3)
 
 </details>
 
-## 🔬 3 · Trace it
+## 3 · Trace it
 
 Trace table: inputs `abc`, `42`, `7`. Cover the table, fill your own, then compare.
 
@@ -42,7 +42,7 @@ Trace table: inputs `abc`, `42`, `7`. Cover the table, fill your own, then compa
 | 2 | 42 | true (42) | no | false | Invalid, try again. |
 | 3 | 7 | true (7) | yes | **true** | (loop ends) |
 
-## 🧩 4 · The pattern
+## 4 · The pattern
 
 ### Subgoals (the steps, with names you can reuse)
 
@@ -53,11 +53,11 @@ Trace table: inputs `abc`, `42`, `7`. Cover the table, fill your own, then compa
 
 Say the subgoal names out loud when you write the code. They are the same in every exercise that uses this recipe.
 
-### 🔎 Recognize it
+### Recognize it
 
 Trigger words: **"between 1 and 10"**, **"must be positive"**, **"ask again"**, **"until the user enters a valid…"**, **"if the input is wrong…"**, **"make sure the program does not crash"**.
 
-### 🧠 The idea
+### The idea
 
 You must ask **at least once** before you can check → `do … while` is the natural fit.
 
@@ -69,12 +69,12 @@ flowchart TD
     B --> C{"is it a number<br/>AND in range?"}
     C -- no --> D["print an error message"]
     D --> A
-    C -- yes --> E["use the number ✅"]
+    C -- yes --> E["use the number "]
 ```
 
 `int.TryParse(text, out int number)` returns `true` if the text **is** a number (and puts it in `number`), `false` otherwise. No crash.
 
-### 📝 Template
+### Template
 
 ```csharp
 int number;
@@ -107,7 +107,7 @@ while (n <= 0)
 
 With exceptions (week 7): put `int.Parse` in a `try { } catch (FormatException) { }`.
 
-## ✍️ 5 · Complete it
+## 5 · Complete it
 
 Part of the code is given. Fill in the rest on paper.
 
@@ -128,7 +128,7 @@ while (mark ____ 0 || mark ____ 20);
 
 </details>
 
-## 🏋️ 6 · Your turn
+## 6 · Your turn
 
 Now alone, in a real file (`./ex start ID`, then `./ex check`):
 
@@ -136,7 +136,7 @@ Now alone, in a real file (`./ex start ID`, then `./ex check`):
 2. [**L08**](../exercises/L08-guess-the-number.md) Guess the number (keep asking until correct, say "higher"/"lower").
 3. [**E01**](../exercises/E01-safe-number-reader.md) Read a number safely with `try`/`catch`.
 
-### 🐞 Debug it
+### Debug it
 
 This code has **one** bug. Find it on paper: trace a small example.
 
@@ -155,11 +155,11 @@ No number is below 1 **and** above 10 at the same time, so the test is always fa
 
 </details>
 
-### ⚠️ Common mistakes
+### Common mistakes
 
 - Checking with `if` instead of a loop → only one second chance.
 - Reading the input **before** the loop and forgetting to read again **inside** → infinite loop.
 - Condition upside down: `while (valid)` instead of `while (!valid)`.
 - `&&` vs `||` for ranges: "between 1 and 10" is `n >= 1 && n <= 10`; "outside" is `n < 1 || n > 10`.
 
-➡️ Next: [Recipe 10 · Sentinel loop](10-sentinel-loop.md)
+Next: [Recipe 10 · Sentinel loop](10-sentinel-loop.md)

@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › A18
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › A18
 
 # A18 · Sum of cubes
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 4b · Running result | [Accumulator](../cookbook/02-accumulator.md) | [A11](A11-arrange-sum-of-squares.md) | Custom |
+| Guided | easy | 4b · Running result | [Accumulator](../cookbook/02-accumulator.md) | [A11](A11-arrange-sum-of-squares.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Give back 1³ + 2³ + … + n³.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start A18     # creates practice/A18_SumOfCubes.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `int SumOfCubes(int n)`: input = n, an int (whole number); result = an int (whole number), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -34,20 +34,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `SumOfCubes(4)` | `100` |
 | `SumOfCubes(0)` | `0` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - n = 0: 0.
 
-## 📏 Rules
+## Rules
 
 - Write the loop yourself.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -61,16 +61,16 @@ Box before, add inside, return after.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Sum 1 + 4 + 9 + … from memory, without looking at A11.
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for A18](../solutions/A18_SumOfCubes.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [A17 · Sum the multiples of k](A17-sum-multiples-of-k.md) · 📚 [All exercises](README.md) · Next: [A19 · Product from a to b](A19-product-from-a-to-b.md) ➡️
+Previous: [A17 · Sum the multiples of k](A17-sum-multiples-of-k.md) · [All exercises](README.md) · Next: [A19 · Product from a to b](A19-product-from-a-to-b.md)

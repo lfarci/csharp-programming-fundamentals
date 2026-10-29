@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › P02
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › P02
 
 # P02 · All primes up to N
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Challenge | ⭐⭐⭐ | 4d · Search | [Counter loop](../cookbook/01-counter-loop.md), [Flag/search](../cookbook/05-flag-search.md), [Accumulator](../cookbook/02-accumulator.md) | [P01](P01-is-it-prime.md) | Custom |
+| Challenge | hard | 4d · Search | [Counter loop](../cookbook/01-counter-loop.md), [Flag/search](../cookbook/05-flag-search.md), [Accumulator](../cookbook/02-accumulator.md) | [P01](P01-is-it-prime.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Read N. Print all prime numbers from 2 to N on one line, then how many there are.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start P02     # creates practice/P02_PrimesUpToN.cs (never overwrites your work)
@@ -21,7 +21,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 
-## 🧪 Examples
+## Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
 
@@ -45,20 +45,20 @@ Count: 1
 Count: 0
 ```
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - N < 2 → none.
 
-## 📏 Rules
+## Rules
 
 - Nested loops: the P01 test inside a counter loop.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -78,16 +78,16 @@ The flag must be **reset** for every candidate (declare it inside the outer loop
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Print the first N primes (not the primes up to N).
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for P02](../solutions/P02_PrimesUpToN.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [P01 · Is it prime?](P01-is-it-prime.md) · 📚 [All exercises](README.md) · Next: [M01 · Armstrong number](M01-armstrong-number.md) ➡️
+Previous: [P01 · Is it prime?](P01-is-it-prime.md) · [All exercises](README.md) · Next: [M01 · Armstrong number](M01-armstrong-number.md)

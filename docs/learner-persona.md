@@ -1,6 +1,6 @@
-🏠 [Home](../README.md) › 🧑‍🎓 Learner persona
+[Home](../README.md) › Learner persona
 
-# 🧑‍🎓 Who this course is for
+# Who this course is for
 
 Every page in this repo is written for **one** person. Before you write or review a page, read this. It keeps the level, the words and the pace right. (A *persona* is a short, concrete picture of the learner. See sources 15 and 21 in the [writing guide](writing-guide.md#6-sources).)
 
@@ -20,7 +20,7 @@ Every page in this repo is written for **one** person. Before you write or revie
 - **She loses heart when stuck for long.** Give one hint at a time, a smaller example, and a clear next step. Never write "just" or "simply".
 - **New words cost her a lot.** Explain each new word once, and add it to the [glossary](glossary.md).
 - **Blank files are the hardest part.** Start with predicting, tracing, arranging lines and filling blanks. Then a blank file.
-- **She learns from her mistakes when they are named.** The 🐞 tasks plant the [common mistakes](../cookbook/README.md) on purpose.
+- **She learns from her mistakes when they are named.** The tasks plant the [common mistakes](../cookbook/README.md) on purpose.
 - **She has little time.** One page = one goal. Each exercise should fit in one session.
 - **She knows git, not .NET tooling.** Commands are copy-paste ready (`./ex start`, `./ex check`). She never edits project files.
 
@@ -30,4 +30,4 @@ Experienced programmers learning C#, or advanced topics (LINQ, async, generics i
 
 ---
 
-⬅️ [Home](../README.md) · 🗺️ [Roadmap](../ROADMAP.md) · ✍️ [Writing guide](writing-guide.md)
+[Home](../README.md) · [Roadmap](../ROADMAP.md) · [Writing guide](writing-guide.md)

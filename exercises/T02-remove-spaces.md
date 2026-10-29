@@ -1,16 +1,16 @@
-🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › T02
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › T02
 
 # T02 · Remove spaces
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐ | 6 · Arrays | [Build a string](../cookbook/12-string-building.md) | [T01](T01-count-a-letter.md) | Custom |
+| Independent | easy | 6 · Arrays | [Build a string](../cookbook/12-string-building.md) | [T01](T01-count-a-letter.md) | Custom |
 
-## 🎯 Goal
+## Goal
 
 Give back `text` without its spaces.
 
-## ▶️ Start and check
+## Start and check
 
 ```bash
 ./ex start T02     # creates practice/T02_RemoveSpaces.cs (never overwrites your work)
@@ -23,7 +23,7 @@ On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/get
 
 - `string RemoveSpaces(string text)`: input = text, a string (text); result = a string (text), given back with return.
 
-## 🧪 Examples
+## Examples
 
 Your method must give these results. `./ex check` tests all of them.
 
@@ -33,20 +33,20 @@ Your method must give these results. `./ex check` tests all of them.
 | `RemoveSpaces("   ")` | `""` |
 | `RemoveSpaces("no-space")` | `"no-space"` |
 
-## ⚠️ Edge cases to test
+## Edge cases to test
 
 - Only spaces → empty result.
 
-## 📏 Rules
+## Rules
 
 - Build a new string with `+=`. No `Replace`.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
-## 🗺️ Before coding
+## Before coding
 
 Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
-## 💡 Hints (open one at a time)
+## Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
@@ -60,16 +60,16 @@ Keep the character when `c != ' '`.
 
 </details>
 
-## ✅ Mastery check
+## Mastery check
 
 Solve this variation **alone**, on another day:
 
 Reverse the text (`abc` → `cba`).
 
-## 🔑 Solution
+## Solution
 
 Only after a real try: [open the solution for T02](../solutions/T02_RemoveSpaces.cs). Your solution can be different and still correct!
 
 ---
 
-⬅️ Previous: [T01 · Count a letter](T01-count-a-letter.md) · 📚 [All exercises](README.md) · Next: [T03 · Count and keep the digits](T03-count-and-keep-digits.md) ➡️
+Previous: [T01 · Count a letter](T01-count-a-letter.md) · [All exercises](README.md) · Next: [T03 · Count and keep the digits](T03-count-and-keep-digits.md)
