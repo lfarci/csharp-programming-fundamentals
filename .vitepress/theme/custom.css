@@ -54,3 +54,8 @@ a.cpf-link:hover { border-color: var(--vp-c-brand-1); box-shadow: 0 4px 16px rgb
 .VPFeatures .VPFeature .title { font-size: 16px; }
 /* Navbar logo. */
 .VPNavBarTitle .logo { height: 26px; width: 26px; margin-right: 10px; }
+
+/* Certification card and buttons inside Markdown pages. */
+.vp-doc .cert { padding: 6px 20px 8px; margin: 16px 0 24px; }
+.vp-doc .cert .cert-title { font-size: 19px; font-weight: 600; margin: 0 0 4px; }
+.vp-doc a.cpf-button { color: #fff; }

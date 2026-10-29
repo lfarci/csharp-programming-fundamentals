@@ -1,6 +1,6 @@
 # Pages built from the themes (exec'd by gen.py: uses ORDER, byid, fname, stars, rlinks, RECIPES, DRILLS, X, THEMES).
 # exercises/README.md (overview), themes/<slug>.md, ROADMAP.md, docs/progress-checklist.md, diagrams/roadmap.d2.
-from learn import TRACKER, PARTS as MSL, MODULE, CERT, SERIES, EPISODES, EPISODE_ORDER, VIDEOS, TOUR, THEORY, path_url, module_url, episode_url, modules_md, episodes_md
+from learn import TRACKER, PARTS as MSL, MODULE, CERT, SERIES, EPISODES, EPISODE_ORDER, DROPPED, THUMBS, NOTES, CERT_SOURCES, VIDEOS, TOUR, THEORY, path_url, module_url, episode_url, modules_md, episodes_md
 assert set(THEORY) == {x["slug"] for x in THEMES}, "learn.py THEORY must list every theme exactly once"
 TH_EX = {x["slug"]: [e for e in ORDER if e["theme"] == x["slug"]] for x in THEMES}
 NUM = {x["slug"]: i for i, x in enumerate(THEMES, 1)}
@@ -52,7 +52,7 @@ for k, x in enumerate(THEMES):
     th = THEORY[s]
     L += ["", '<div class="learn-box">', "", f"**Learn the theory on Microsoft Learn** ([Part {th['part']}: {MSL[th['part']][0]}]({path_url(th['part'])}))", "",
           "- **Modules:** " + modules_md(th["modules"]),
-          f"- **Video ({SERIES[0]}):** " + episodes_md(th["episodes"])]
+          f"- **Video ({SERIES[0]}):** " + " · ".join(f"[{EPISODES[e_][0]}](../learn/videos/{e_}.md)" for e_ in th["episodes"])]
     if x["docs"]: L.append("- **Reference:** " + mdlinks(x["docs"]))
     L += ["", "</div>"]
     L += ["", "## Ready for the next theme when", "", f"{x['ready'][0].upper()}{x['ready'][1:]}", "", "---", ""]
@@ -117,20 +117,21 @@ EP_USED = {}
 for x in THEMES:
     for e_ in THEORY[x["slug"]]["episodes"]: EP_USED.setdefault(e_, []).append(x)
 
-LG = ["[Home](../README.md) › Learn", "", "# Learn the theory", "",
-      "This course is for **practice**: exercises, recipes and a checker. The **theory** comes from **Microsoft Learn**, free: six short learning paths and a video series. Read or watch the matching part, then do the exercises of the theme.", "",
-      "<LearnCards />", "", '<div class="gh-only">', "",
-      "- [Microsoft Learn](microsoft-learn.md): the main companion, the 6 parts, the videos and the free certification.",
-      f"- [Extra exercises](quest-tracker.md): more practice in the {TRACKER['title']}.", "", "</div>", "",
-      "## What to learn before each theme", "",
-      "| # | Theme | Microsoft Learn | Video |", "| ---: | --- | --- | --- |"]
+def ep_page(e_, up=""): return f"{up}videos/{e_}.md"
+def ex_links(x, n=3, up="../"): return ", ".join(f"[{e['id']}]({up}exercises/{fname(e)}.md)" for e in TH_EX[x["slug"]][:n])
+
+# Overview: one row per theme: theme -> Microsoft Learn -> video -> exercises (LearnFlow component)
+LG = ["[Home](../README.md) › Learn", "", "# How it fits together", "",
+      "This course is for **practice**. The **theory** comes from **Microsoft Learn**, free. For each theme, follow the line from left to right: learn the idea on Microsoft Learn, watch the video, then practise here.", "",
+      "<LearnFlow />", "", '<div class="gh-only">', ""]
 for x in THEMES:
-    th = THEORY[x["slug"]]
-    LG.append(f"| {NUM[x['slug']]} | {theme_link(x)} | [Part {th['part']}]({path_url(th['part'])}): [{MODULE[th['modules'][0]][1]}]({module_url(th['modules'][0])}) | {episodes_md(th['episodes'][:1])} |")
-LG += ["", "Each theme page has a *Learn the theory* box with all its modules and videos.", "", "---", "", "[Home](../README.md) · Next: [Microsoft Learn](microsoft-learn.md)", ""]
+    th = THEORY[x["slug"]]; m0 = th["modules"][0]; e0 = th["episodes"][0]
+    LG.append(f"- **{NUM[x['slug']]}. {theme_link(x)}**: learn [{MODULE[m0][1]}]({module_url(m0)}) (Part {MODULE[m0][0]}), watch [{EPISODES[e0][0]}]({ep_page(e0)}), then practise {ex_links(x)}")
+LG += ["", "</div>", "", "Next: the [Microsoft Learn modules](microsoft-learn.md), the [videos](videos.md), the [certification](certification.md) and [extra exercises](quest-tracker.md).", "",
+       "---", "", "[Home](../README.md) · Next: [Microsoft Learn modules](microsoft-learn.md)", ""]
 open(f"{ROOT}/learn/README.md", "w").write("\n".join(LG))
 
-LM = ["[Home](../README.md) › [Learn](README.md) › Microsoft Learn", "", "# Microsoft Learn: the main companion", "",
+LM = ["[Home](../README.md) › [Learn](README.md) › Microsoft Learn modules", "", "# Microsoft Learn modules", "",
       "Microsoft Learn teaches C# for free in **6 parts** (learning paths). Each part has short **modules**: you read a little, then try the code. This course follows the same order: after a module, do the themes listed under it.", "",
       "<MsLearnPath />", "", '<div class="gh-only">', ""]
 for n, (title, ms) in MSL.items():
@@ -140,31 +141,93 @@ for n, (title, ms) in MSL.items():
         LM.append(f"- [{t_}]({module_url(slug_)}). Then: {after}")
     LM.append("")
 LM += ["</div>", "",
-       "## The videos", "", f"[{SERIES[0]}]({SERIES[1]}): {len(EPISODES)} videos by Bob Tabor that explain each idea slowly. Watch the episode, then do the theme.", "",
-       "| Episode | Minutes | Then do |", "| --- | ---: | --- |"]
-for e_ in EPISODE_ORDER:
-    t_, mins = EPISODES[e_]
-    LM.append(f"| [{t_}]({episode_url(e_)}) | {mins} | {', '.join(theme_link(x) for x in EP_USED.get(e_, [])) or '-'} |")
-LM += ["", f"More videos, optional: [{VIDEOS[0]}]({VIDEOS[1]}).", "",
-       "## The free certification", "",
-       f"[{CERT[0]}]({CERT[1]}) is a **free** certification by freeCodeCamp and Microsoft. It is made of the same 6 parts above, you finish the 6 parts on Microsoft Learn (a trophy for each), link them to your freeCodeCamp account, then take an exam of 80 questions in one session (pass with 70%). Both accounts are free.", "",
-       "You do not need it for this course. If you want it, this course is the practice: do the themes after each part, then take the exam.", "",
+       f"Prefer videos? See [Videos](videos.md). Want a certificate? See [Certification](certification.md).", "",
        "## The docs", "", f"[{TOUR[0]}]({TOUR[1]}): the official overview of the language, for later.", "",
-       "---", "", "[Learn](README.md) · Next: [Extra exercises](quest-tracker.md)", ""]
+       "---", "", "[Learn](README.md) · Next: [Videos](videos.md)", ""]
 open(f"{ROOT}/learn/microsoft-learn.md", "w").write("\n".join(LM))
 
+# Videos: kept episodes only, grouped like the roadmap (by the group of the first theme that uses them)
+FIRST = {e_: EP_USED[e_][0] for e_ in EPISODE_ORDER}
+VG = []
+for part in PARTS:
+    eps_ = sorted([e_ for e_ in EPISODE_ORDER if FIRST[e_]["part"] == part], key=lambda e_: (NUM[FIRST[e_]["slug"]], EPISODE_ORDER.index(e_)))
+    if eps_: VG.append((part, eps_))
+VNUM = {e_: i for i, e_ in enumerate([e_ for _, es in VG for e_ in es], 1)}
+ORDERED = [e_ for _, es in VG for e_ in es]
+LV = ["[Home](../README.md) › [Learn](README.md) › Videos", "", "# Videos", "",
+      f"[{SERIES[0]}]({SERIES[1]}) is a free video series on Microsoft Learn by Bob Tabor. Pick the video of your theme: its page says what to watch for and what to practise after. Only the episodes about the fundamentals are here.", "",
+      "<VideoGallery />", "", '<div class="gh-only">', ""]
+for part, eps_ in VG:
+    LV += [f"{part.split(': ')[0]}: **{part.split(': ')[1]}**", ""]
+    for e_ in eps_:
+        LV.append(f"- **{VNUM[e_]}** [{EPISODES[e_][0]}]({ep_page(e_)}) ({EPISODES[e_][1]} min)")
+    LV.append("")
+LV += ["</div>", "", f"More videos, optional: [{VIDEOS[0]}]({VIDEOS[1]}).", "", "---", "", "[Microsoft Learn modules](microsoft-learn.md) · Next: [Certification](certification.md)", ""]
+open(f"{ROOT}/learn/videos.md", "w").write("\n".join(LV))
+
+# One page per kept episode
+os.makedirs(f"{ROOT}/learn/videos", exist_ok=True)
+for old in glob.glob(f"{ROOT}/learn/videos/*.md"): os.remove(old)
+for i, e_ in enumerate(ORDERED):
+    t_, mins = EPISODES[e_]; watch, words = NOTES[e_]
+    P = ["---", "prev: false", "next: false", "---", "", f"[Home](../../README.md) › [Learn](../README.md) › [Videos](../videos.md) › Video {VNUM[e_]}", "", f"# {t_}", "",
+         f"*{SERIES[0]}*, on Microsoft Learn. {mins} minutes.", ""]
+    if THUMBS[e_]: P += [f"[![Picture from the video: {t_}. Open the video on Microsoft Learn.]({THUMBS[e_]})]({episode_url(e_)})", ""]
+    P += [f'<p><a class="cpf-button" href="{episode_url(e_)}">Watch on Microsoft Learn</a></p>', "",
+          "## Watch for", ""] + [f"- {w}" for w in watch] + ["",
+          "## Key words", "", ", ".join(f"*{w}*" for w in words) + ". See the [glossary](../../docs/glossary.md).", "",
+          "## Practise after this", ""]
+    for x in EP_USED[e_]:
+        P.append(f"- {theme_link(x, '../../')}: start with {ex_links(x, 3, '../../')}")
+    P += ["", "---", ""]
+    nav_ = []
+    if i: nav_.append(f"Previous: [{EPISODES[ORDERED[i-1]][0]}]({ORDERED[i-1]}.md)")
+    nav_.append("[All videos](../videos.md)")
+    if i < len(ORDERED) - 1: nav_.append(f"Next: [{EPISODES[ORDERED[i+1]][0]}]({ORDERED[i+1]}.md)")
+    P += [" · ".join(nav_), ""]
+    open(f"{ROOT}/learn/videos/{e_}.md", "w").write("\n".join(P))
+
+# Certification
+LC = ["[Home](../README.md) › [Learn](README.md) › Certification", "", "# The free certification", "",
+      f'<div class="cpf-card cert"><p class="cpf-kicker">Free, by freeCodeCamp and Microsoft</p><p class="cert-title">{CERT[0]}</p><p><a class="cpf-button" href="{CERT[1]}">Open it on freeCodeCamp</a></p></div>', "",
+      "## What it is", "",
+      f"A **free** certification you can put on your CV or LinkedIn. The training is the **6 parts** of Microsoft Learn *Get started with C#* (about 35 hours), the same parts this course follows. The exam is on freeCodeCamp.", "",
+      "## How to take it", "",
+      f"1. Open [{CERT[0]}]({CERT[1]}) on freeCodeCamp. It lists the 6 courses and their modules.",
+      "2. Do each module on Microsoft Learn, then answer its short comprehension question on freeCodeCamp.",
+      "3. At the end of each part, Microsoft Learn gives you a **trophy**. Link your Microsoft Learn account to freeCodeCamp and verify the trophy there.",
+      "4. With the 6 trophies, take the **exam**: 80 multiple-choice questions, in one session.",
+      "5. Pass, and you get your certification.", "",
+      "Both websites are free. Rules can change: read the steps on freeCodeCamp before you start.", "",
+      "## How this course helps", "",
+      "- After each Microsoft Learn part, do its themes here: the [roadmap](../ROADMAP.md) is grouped the same way.",
+      "- The exercises make you **write** the loops, conditions and methods the exam asks about.",
+      "- `./ex check` tells you at once if your code works, so you practise more in less time.", "",
+      "## Sources", ""] + [f"- [{a}]({b})" for a, b in CERT_SOURCES] + ["",
+      "---", "", "[Videos](videos.md) · Next: [Extra exercises](quest-tracker.md)", ""]
+open(f"{ROOT}/learn/certification.md", "w").write("\n".join(LC))
+
 LQ = ["[Home](../README.md) › [Learn](README.md) › Extra exercises", "", f"# Extra exercises: the {TRACKER['title']}", "",
-      f"Want more practice once a theme feels easy? The [{TRACKER['title']}]({TRACKER['url']}) is a free website where you tick challenges, earn XP and level up, like a game. It follows the challenges of the book [The C# Player's Guide](https://csharpplayersguide.com/).", "",
-      "## How it works", "",
-      "- Open the tracker in your browser. No account.", "- Tick a challenge when you finish it. Your XP goes up.",
-      "- Progress is saved in this browser. Use **Settings** to export a backup and import it on another computer.", "",
-      f"[Open the {TRACKER['title']}]({TRACKER['url']}) · [Source code]({TRACKER['repo']})", "",
-      "---", "", "[Microsoft Learn](microsoft-learn.md) · [Learn](README.md)", ""]
+      f"Finished a theme and want more? The **{TRACKER['title']}** is a free website: tick challenges as you solve them, earn XP and level up, like a game.", "",
+      f"[![The {TRACKER['title']}: your level, your XP, how many challenges are done, and a searchable list of challenges.](../docs/assets/quest-tracker.jpg)]({TRACKER['url']})", "",
+      f'<p><a class="cpf-button" href="{TRACKER["url"]}">Open the {TRACKER["title"]}</a></p>', "",
+      "## What it offers", "",
+      "- A dashboard with your level, your XP and your progress bar.", "- A list of challenges you can search and filter (all, done, remaining).",
+      "- No account: progress stays in your browser. **Settings** exports a backup to move it to another computer.", "",
+      "It follows the challenges of the book [The C# Player's Guide](https://csharpplayersguide.com/).", "",
+      f"[Source code]({TRACKER['repo']})", "",
+      "---", "", "[Certification](certification.md) · [Learn](README.md)", ""]
 open(f"{ROOT}/learn/quest-tracker.md", "w").write("\n".join(LQ))
 
-# ---------- .vitepress/course.json: add the Microsoft Learn path (MsLearnPath component) ----------
+# ---------- .vitepress/course.json: Microsoft Learn data for the Learn components ----------
 _site = json.load(open(f"{ROOT}/.vitepress/course.json", encoding="utf-8"))
 _site["mslearn"] = [{"num": n, "title": title, "url": path_url(n),
                      "modules": [{"title": t_, "url": module_url(sl), "themes": [{"title": x["title"], "link": f"/themes/{x['slug']}"} for x in USED.get(sl, [])]} for t_, sl in ms]}
                     for n, (title, ms) in MSL.items()]
+_site["videos"] = [{"group": part, "episodes": [{"num": VNUM[e_], "title": EPISODES[e_][0], "minutes": EPISODES[e_][1], "page": f"/learn/videos/{e_}", "thumb": THUMBS[e_],
+                     "themes": [x["title"] for x in EP_USED[e_]]} for e_ in eps_]} for part, eps_ in VG]
+_site["flow"] = [{"num": NUM[x["slug"]], "title": x["title"], "link": f"/themes/{x['slug']}", "group": x["part"],
+                  "part": MODULE[THEORY[x["slug"]]["modules"][0]][0], "module": MODULE[THEORY[x["slug"]]["modules"][0]][1], "moduleUrl": module_url(THEORY[x["slug"]]["modules"][0]),
+                  "video": EPISODES[THEORY[x["slug"]]["episodes"][0]][0], "videoPage": f"/learn/videos/{THEORY[x['slug']]['episodes'][0]}",
+                  "exercises": len(TH_EX[x["slug"]]), "first": {"id": TH_EX[x["slug"]][0]["id"], "link": f"/exercises/{fname(TH_EX[x['slug']][0])}"}} for x in THEMES]
 json.dump(_site, open(f"{ROOT}/.vitepress/course.json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)

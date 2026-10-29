@@ -33,7 +33,7 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 **Learn the theory on Microsoft Learn** ([Part 2: Create and run simple C# console applications](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-2/))
 
 - **Modules:** [Read and write files in C#](https://learn.microsoft.com/en-us/training/modules/csharp-read-write-files/) (Part 2)
-- **Video (C# Fundamentals for Absolute Beginners):** [Working with Strings](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/working-with-strings/)
+- **Video (C# Fundamentals for Absolute Beginners):** [Working with Strings](../learn/videos/working-with-strings.md)
 - **Reference:** [File class](https://learn.microsoft.com/en-us/dotnet/api/system.io.file)
 
 </div>

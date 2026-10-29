@@ -2,16 +2,22 @@
 
 # Extra exercises: the C# Quest Tracker
 
-Want more practice once a theme feels easy? The [C# Quest Tracker](https://lfarci.github.io/csharp-quest-tracker/) is a free website where you tick challenges, earn XP and level up, like a game. It follows the challenges of the book [The C# Player's Guide](https://csharpplayersguide.com/).
+Finished a theme and want more? The **C# Quest Tracker** is a free website: tick challenges as you solve them, earn XP and level up, like a game.
 
-## How it works
+[![The C# Quest Tracker: your level, your XP, how many challenges are done, and a searchable list of challenges.](../docs/assets/quest-tracker.jpg)](https://lfarci.github.io/csharp-quest-tracker/)
 
-- Open the tracker in your browser. No account.
-- Tick a challenge when you finish it. Your XP goes up.
-- Progress is saved in this browser. Use **Settings** to export a backup and import it on another computer.
+<p><a class="cpf-button" href="https://lfarci.github.io/csharp-quest-tracker/">Open the C# Quest Tracker</a></p>
 
-[Open the C# Quest Tracker](https://lfarci.github.io/csharp-quest-tracker/) · [Source code](https://github.com/lfarci/csharp-quest-tracker)
+## What it offers
+
+- A dashboard with your level, your XP and your progress bar.
+- A list of challenges you can search and filter (all, done, remaining).
+- No account: progress stays in your browser. **Settings** exports a backup to move it to another computer.
+
+It follows the challenges of the book [The C# Player's Guide](https://csharpplayersguide.com/).
+
+[Source code](https://github.com/lfarci/csharp-quest-tracker)
 
 ---
 
-[Microsoft Learn](microsoft-learn.md) · [Learn](README.md)
+[Certification](certification.md) · [Learn](README.md)

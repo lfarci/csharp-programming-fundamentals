@@ -32,7 +32,7 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 **Learn the theory on Microsoft Learn** ([Part 5: Create methods in C# console applications](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-5/))
 
 - **Modules:** [Write your first C# method](https://learn.microsoft.com/en-us/training/modules/write-first-c-sharp-method/) (Part 5) · [Create C# methods with parameters](https://learn.microsoft.com/en-us/training/modules/create-c-sharp-methods-parameters/) (Part 5) · [Create C# methods that return values](https://learn.microsoft.com/en-us/training/modules/create-c-sharp-methods-return-values/) (Part 5) · [Write reusable code in C#](https://learn.microsoft.com/en-us/training/modules/csharp-reusable-code/) (Part 2)
-- **Video (C# Fundamentals for Absolute Beginners):** [Defining and Calling Methods](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/defining-and-calling-methods/)
+- **Video (C# Fundamentals for Absolute Beginners):** [Defining and Calling Methods](../learn/videos/defining-and-calling-methods.md)
 - **Reference:** [Methods](https://learn.microsoft.com/en-us/dotnet/csharp/methods)
 
 </div>

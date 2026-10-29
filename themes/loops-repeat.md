@@ -50,7 +50,7 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 **Learn the theory on Microsoft Learn** ([Part 3: Add logic to C# console applications](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-3/))
 
 - **Modules:** [Iterate through a code block using for statement in C#](https://learn.microsoft.com/en-us/training/modules/csharp-for/) (Part 3) · [Add looping logic to your code using the do-while and while statements in C#](https://learn.microsoft.com/en-us/training/modules/csharp-do-while/) (Part 3) · [Repeat actions with loops in C#](https://learn.microsoft.com/en-us/training/modules/csharp-repeat-actions-loops/) (Part 2)
-- **Video (C# Fundamentals for Absolute Beginners):** [for Iteration Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/for-iteration-statement/) · [While Iteration Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/while-iteration-statement/)
+- **Video (C# Fundamentals for Absolute Beginners):** [for Iteration Statement](../learn/videos/for-iteration-statement.md) · [While Iteration Statement](../learn/videos/while-iteration-statement.md)
 - **Reference:** [Iteration statements](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements)
 
 </div>

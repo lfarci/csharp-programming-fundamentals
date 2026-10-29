@@ -1,6 +1,6 @@
-[Home](../README.md) › [Learn](README.md) › Microsoft Learn
+[Home](../README.md) › [Learn](README.md) › Microsoft Learn modules
 
-# Microsoft Learn: the main companion
+# Microsoft Learn modules
 
 Microsoft Learn teaches C# for free in **6 parts** (learning paths). Each part has short **modules**: you read a little, then try the code. This course follows the same order: after a module, do the themes listed under it.
 
@@ -62,45 +62,7 @@ Microsoft Learn teaches C# for free in **6 parts** (learning paths). Each part h
 
 </div>
 
-## The videos
-
-[C# Fundamentals for Absolute Beginners](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/): 25 videos by Bob Tabor that explain each idea slowly. Watch the episode, then do the theme.
-
-| Episode | Minutes | Then do |
-| --- | ---: | --- |
-| [Course Introduction](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/course-introduction/) | 8 | - |
-| [Installing Visual Studio](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/installing-visual-studio/) | 5 | - |
-| [Creating Your First C# Program](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/creating-your-first-c-program/) | 16 | [Hello World](../themes/hello-world.md) |
-| [Understanding Your First C# Program](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/understanding-your-first-c-program/) | 17 | [Hello World](../themes/hello-world.md) |
-| [Working with Code Files, Projects, and Solutions](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/working-with-code-files-projects-and-solutions/) | 11 | - |
-| [Understanding Data Types and Variables](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/understanding-data-types-and-variables/) | 28 | [Variables and expressions](../themes/variables.md) |
-| [The if Decision Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/the-if-decision-statement/) | 23 | [Conditions](../themes/conditions.md), [Combine recipes](../themes/combine.md) |
-| [Operators, Expressions, and Statements](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/operators-expressions-and-statements/) | 15 | [Variables and expressions](../themes/variables.md), [Loops: take digits apart](../themes/loops-digits.md) |
-| [for Iteration Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/for-iteration-statement/) | 18 | [Loops: repeat and count](../themes/loops-repeat.md), [Loops: keep a running result](../themes/loops-running-result.md), [Loops: draw in 2D](../themes/loops-2d.md), [Combine recipes](../themes/combine.md) |
-| [Understanding Arrays](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/understanding-arrays/) | 17 | [Arrays and text](../themes/arrays.md) |
-| [Defining and Calling Methods](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/defining-and-calling-methods/) | 31 | [Methods](../themes/methods.md) |
-| [While Iteration Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/while-iteration-statement/) | 18 | [Loops: repeat and count](../themes/loops-repeat.md), [Loops: take digits apart](../themes/loops-digits.md), [Loops: remember changing values](../themes/loops-state.md), [Loops: search](../themes/loops-search.md) |
-| [Working with Strings](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/working-with-strings/) | 23 | [Arrays and text](../themes/arrays.md), [Files](../themes/files.md) |
-| [Working with Dates and Times](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/working-with-dates-and-times/) | 10 | - |
-| [Understanding Classes](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/understanding-classes/) | 24 | - |
-| [More About Classes and Methods](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/more-about-classes-and-methods/) | 34 | - |
-| [Understanding Namespaces and Working with the .NET Class Library](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/understanding-namespaces-and-working-with-the-dotnet-class-library/) | 17 | - |
-| [Creating and Adding References to Assemblies](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/creating-and-adding-references-to-assemblies/) | 20 | - |
-| [Understanding Scope and Accessibility Modifiers](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/understanding-scope-and-accessibility-modifiers/) | 16 | - |
-| [Enumerations and the Switch Decision Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/enumerations-and-the-switch-decision-statement/) | 13 | [Conditions](../themes/conditions.md) |
-| [Gracefully Handling Exceptions](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/gracefully-handling-exceptions/) | 21 | [Exceptions](../themes/exceptions.md) |
-| [Working with Collections](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/working-with-collections/) | 23 | [Collections](../themes/collections.md) |
-| [Working with LINQ](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/working-with-linq/) | 24 | - |
-| [Understanding Events and Event-Driven Programming](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/understanding-events-and-event-driven-programming/) | 21 | - |
-| [Where to Go from Here](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/where-to-go-from-here/) | 32 | - |
-
-More videos, optional: [C# for Beginners (Scott Hanselman and David Fowler)](https://learn.microsoft.com/en-us/shows/csharp-for-beginners/).
-
-## The free certification
-
-[Foundational C# with Microsoft](https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/) is a **free** certification by freeCodeCamp and Microsoft. It is made of the same 6 parts above, you finish the 6 parts on Microsoft Learn (a trophy for each), link them to your freeCodeCamp account, then take an exam of 80 questions in one session (pass with 70%). Both accounts are free.
-
-You do not need it for this course. If you want it, this course is the practice: do the themes after each part, then take the exam.
+Prefer videos? See [Videos](videos.md). Want a certificate? See [Certification](certification.md).
 
 ## The docs
 
@@ -108,4 +70,4 @@ You do not need it for this course. If you want it, this course is the practice:
 
 ---
 
-[Learn](README.md) · Next: [Extra exercises](quest-tracker.md)
+[Learn](README.md) · Next: [Videos](videos.md)

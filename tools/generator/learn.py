@@ -94,16 +94,27 @@ EPISODES = {  # slug: (title, minutes)
     'the-if-decision-statement': ('The if Decision Statement', 23),
 }
 
-# In the order Bob Tabor teaches them (used for the episode list on the Microsoft Learn page).
-EPISODE_ORDER = ["course-introduction", "installing-visual-studio", "creating-your-first-c-program", "understanding-your-first-c-program",
-    "working-with-code-files-projects-and-solutions", "understanding-data-types-and-variables", "the-if-decision-statement",
-    "operators-expressions-and-statements", "for-iteration-statement", "understanding-arrays", "defining-and-calling-methods",
-    "while-iteration-statement", "working-with-strings", "working-with-dates-and-times", "understanding-classes",
-    "more-about-classes-and-methods", "understanding-namespaces-and-working-with-the-dotnet-class-library",
-    "creating-and-adding-references-to-assemblies", "understanding-scope-and-accessibility-modifiers",
-    "enumerations-and-the-switch-decision-statement", "gracefully-handling-exceptions", "working-with-collections",
-    "working-with-linq", "understanding-events-and-event-driven-programming", "where-to-go-from-here"]
-assert sorted(EPISODE_ORDER) == sorted(EPISODES), "EPISODE_ORDER must list every episode once"
+# In the order Bob Tabor teaches them. Selection rule (see AGENTS.md): keep an episode only if it teaches a
+# fundamentals idea that one of our themes practises (it is listed in THEORY below). Everything else is dropped:
+DROPPED = {  # slug: why it is not on the Videos page
+    "course-introduction": "series overview, no idea to practise",
+    "installing-visual-studio": "installs Visual Studio; this course uses VS Code (see Getting started)",
+    "working-with-code-files-projects-and-solutions": "project tooling, not a fundamentals idea",
+    "working-with-dates-and-times": "no theme uses dates",
+    "understanding-classes": "classes and objects come after this course",
+    "more-about-classes-and-methods": "classes and objects come after this course",
+    "understanding-namespaces-and-working-with-the-dotnet-class-library": "too advanced for the fundamentals",
+    "creating-and-adding-references-to-assemblies": "too advanced for the fundamentals",
+    "understanding-scope-and-accessibility-modifiers": "accessibility modifiers belong with classes",
+    "working-with-linq": "LINQ is not used: you write the loops yourself",
+    "understanding-events-and-event-driven-programming": "too advanced for the fundamentals",
+    "where-to-go-from-here": "next steps after the series, no idea to practise",
+}
+EPISODE_ORDER = ["creating-your-first-c-program", "understanding-your-first-c-program", "understanding-data-types-and-variables",
+    "the-if-decision-statement", "operators-expressions-and-statements", "for-iteration-statement", "understanding-arrays",
+    "defining-and-calling-methods", "while-iteration-statement", "working-with-strings",
+    "enumerations-and-the-switch-decision-statement", "gracefully-handling-exceptions", "working-with-collections"]
+assert sorted(EPISODE_ORDER + list(DROPPED)) == sorted(EPISODES), "every episode is either kept (EPISODE_ORDER) or DROPPED, once"
 
 # Extra videos (optional): the newer C# for Beginners series.
 VIDEOS = ("C# for Beginners (Scott Hanselman and David Fowler)", "https://learn.microsoft.com/en-us/shows/csharp-for-beginners/")
@@ -139,7 +150,47 @@ for _s, _t in THEORY.items():
     assert _t["part"] in PARTS, f"{_s}: unknown Microsoft Learn part"
     assert _t["modules"] and _t["episodes"], f"{_s}: every theme needs at least one module and one episode"
     for _m in _t["modules"]: assert _m in MODULE, f"{_s}: module {_m} is not in PARTS"
-    for _e in _t["episodes"]: assert _e in EPISODES, f"{_s}: episode {_e} is not in EPISODES"
+    for _e in _t["episodes"]: assert _e in EPISODE_ORDER, f"{_s}: episode {_e} is not a kept episode (EPISODE_ORDER)"
+_used_eps = {e for t in THEORY.values() for e in t["episodes"]}
+assert _used_eps == set(EPISODE_ORDER), f"kept episodes no theme uses: {set(EPISODE_ORDER) - _used_eps}"
 
 def modules_md(slugs): return " · ".join(f"[{MODULE[m][1]}]({module_url(m)}) (Part {MODULE[m][0]})" for m in slugs)
 def episodes_md(slugs): return " · ".join(f"[{EPISODES[e][0]}]({episode_url(e)})" for e in slugs)
+
+# Official thumbnails from the show's episode API (image_url), hotlinked. None = the API image returns 404: no picture.
+THUMBS = {
+ "creating-your-first-c-program": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-08bc33cd-9b30-4544-9491-bd6d7d769c43/creating-your-first-c-program_960.jpg",
+ "understanding-your-first-c-program": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-6321880c-40b1-4d77-8cc6-e43c32c67a06/understanding-your-first-c-program_960.jpg",
+ "understanding-data-types-and-variables": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-53ebc4e6-52f1-4de8-9c72-6b6dea73eb7b/understanding-data-types-and-variables_960.jpg",
+ "the-if-decision-statement": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-6d088f29-9a6a-4daf-9955-dc6326cd0738/the-if-decision-statement_960.jpg",
+ "operators-expressions-and-statements": None,
+ "for-iteration-statement": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-d44cd0b2-b866-4b0e-ad02-ee1a7f31157c/for-iteration-statement_960.jpg",
+ "understanding-arrays": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-5e3151e9-bb9b-4068-a337-600c4bdd8cb1/understanding-arrays_960.jpg",
+ "defining-and-calling-methods": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-c407acc8-05ef-4f09-a1ee-82482fa4d0d1/defining-and-calling-methods_960.jpg",
+ "while-iteration-statement": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-4f54adb3-0479-4327-9e48-4ac4c5caf34d/while-iteration-statement_960.jpg",
+ "working-with-strings": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-02de69b5-c775-4830-934b-46344ac60ec3/working-with-strings_960.jpg",
+ "enumerations-and-the-switch-decision-statement": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-2662ad9f-3f72-49ad-84a9-7737766cf987/enumerations-and-the-switch-decision-statement_960.jpg",
+ "gracefully-handling-exceptions": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-b2a0103b-1484-415e-81a6-61a2b54a60b1/gracefully-handling-exceptions_960.jpg",
+ "working-with-collections": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-652b0c55-41da-43c3-b9fe-b987ed2a2885/working-with-collections_960.jpg"
+}
+assert set(THUMBS) == set(EPISODE_ORDER), "every kept episode needs a THUMBS entry (None if there is no official image)"
+
+# Our own short notes for each kept episode: what to watch for, and key words (glossary entries). Never copy the video.
+NOTES = {
+    "creating-your-first-c-program": (["Where the program starts running.", "How text is printed with `Console.WriteLine`.", "The video uses Visual Studio; in this course you use VS Code and `./ex`, the idea is the same."], ["Method", "Statement"]),
+    "understanding-your-first-c-program": (["Each part of the first program, line by line.", "Why every statement ends with `;`.", "What the curly braces `{ }` group together."], ["Statement", "Method"]),
+    "understanding-data-types-and-variables": (["A variable is a named box with a type.", "The difference between `int`, `double`, `string` and `bool`.", "Turning text the user typed into a number."], ["Variable", "Type"]),
+    "the-if-decision-statement": (["How an `if` tests a Boolean expression.", "When the `else` part runs.", "Comparing with `==`, `<`, `>=`."], ["Boolean expression", "Selection statement"]),
+    "operators-expressions-and-statements": (["The arithmetic operators, including `%` (remainder).", "Integer division: `7 / 2` is `3`.", "Short forms like `+=` and `++`."], ["Modulo (`%`)", "Expression"]),
+    "enumerations-and-the-switch-decision-statement": (["How `switch` picks one case among many.", "Skip the enumeration part for now: no exercise needs it."], ["Selection statement"]),
+    "for-iteration-statement": (["The three parts of a `for`: start, test, step.", "How many times the loop runs, and the value of `i` in each turn.", "Pause the video and trace the loop on paper."], ["Iteration statement", "Iteration", "Trace table"]),
+    "while-iteration-statement": (["A `while` loop repeats while its test is true.", "When to use `while` instead of `for`: you do not know the number of turns.", "How to make sure the loop stops."], ["Iteration statement", "Sentinel"]),
+    "understanding-arrays": (["Indexes start at 0.", "The last index is `Length - 1`.", "Visiting every element with a loop."], ["Array", "Index"]),
+    "working-with-strings": (["A string is text, and you can read it letter by letter.", "Building a new string from pieces.", "Common string helpers; in the exercises, write the loop yourself."], ["String"]),
+    "gracefully-handling-exceptions": (["What happens when a program crashes.", "How `try` and `catch` stop the crash.", "Why checking input with `int.TryParse` is often simpler."], ["Exception"]),
+    "working-with-collections": (["A `List` can grow, an array cannot.", "Adding items and looping over them with `foreach`.", "Skip anything about LINQ: you do the loops yourself here."], ["List", "foreach"]),
+    "defining-and-calling-methods": (["A method has a name, parameters (input) and a return value (result).", "Calling the same method with different values.", "Most exercises here are one method to fill in."], ["Method", "Parameter", "Return value"]),
+}
+assert set(NOTES) == set(EPISODE_ORDER), "every kept episode needs NOTES"
+CERT_SOURCES = [("freeCodeCamp: Earn a Free C# Certification from Microsoft and freeCodeCamp", "https://www.freecodecamp.org/news/free-microsoft-c-sharp-certification/"),
+                ("Microsoft .NET Blog: Announcing the New Foundational C# Certification with freeCodeCamp", "https://devblogs.microsoft.com/dotnet/announcing-foundational-csharp-certification/")]

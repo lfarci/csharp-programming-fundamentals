@@ -1582,5 +1582,413 @@
     }
    ]
   }
+ ],
+ "videos": [
+  {
+   "group": "MS Learn Part 1: Write your first code",
+   "episodes": [
+    {
+     "num": 1,
+     "title": "Creating Your First C# Program",
+     "minutes": 16,
+     "page": "/learn/videos/creating-your-first-c-program",
+     "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-08bc33cd-9b30-4544-9491-bd6d7d769c43/creating-your-first-c-program_960.jpg",
+     "themes": [
+      "Hello World"
+     ]
+    },
+    {
+     "num": 2,
+     "title": "Understanding Your First C# Program",
+     "minutes": 17,
+     "page": "/learn/videos/understanding-your-first-c-program",
+     "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-6321880c-40b1-4d77-8cc6-e43c32c67a06/understanding-your-first-c-program_960.jpg",
+     "themes": [
+      "Hello World"
+     ]
+    },
+    {
+     "num": 3,
+     "title": "Understanding Data Types and Variables",
+     "minutes": 28,
+     "page": "/learn/videos/understanding-data-types-and-variables",
+     "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-53ebc4e6-52f1-4de8-9c72-6b6dea73eb7b/understanding-data-types-and-variables_960.jpg",
+     "themes": [
+      "Variables and expressions"
+     ]
+    },
+    {
+     "num": 4,
+     "title": "Operators, Expressions, and Statements",
+     "minutes": 15,
+     "page": "/learn/videos/operators-expressions-and-statements",
+     "thumb": null,
+     "themes": [
+      "Variables and expressions",
+      "Loops: take digits apart"
+     ]
+    },
+    {
+     "num": 5,
+     "title": "The if Decision Statement",
+     "minutes": 23,
+     "page": "/learn/videos/the-if-decision-statement",
+     "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-6d088f29-9a6a-4daf-9955-dc6326cd0738/the-if-decision-statement_960.jpg",
+     "themes": [
+      "Conditions",
+      "Combine recipes"
+     ]
+    },
+    {
+     "num": 6,
+     "title": "Enumerations and the Switch Decision Statement",
+     "minutes": 13,
+     "page": "/learn/videos/enumerations-and-the-switch-decision-statement",
+     "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-2662ad9f-3f72-49ad-84a9-7737766cf987/enumerations-and-the-switch-decision-statement_960.jpg",
+     "themes": [
+      "Conditions"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "MS Learn Parts 2 and 3: Loops and logic",
+   "episodes": [
+    {
+     "num": 7,
+     "title": "for Iteration Statement",
+     "minutes": 18,
+     "page": "/learn/videos/for-iteration-statement",
+     "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-d44cd0b2-b866-4b0e-ad02-ee1a7f31157c/for-iteration-statement_960.jpg",
+     "themes": [
+      "Loops: repeat and count",
+      "Loops: keep a running result",
+      "Loops: draw in 2D",
+      "Combine recipes"
+     ]
+    },
+    {
+     "num": 8,
+     "title": "While Iteration Statement",
+     "minutes": 18,
+     "page": "/learn/videos/while-iteration-statement",
+     "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-4f54adb3-0479-4327-9e48-4ac4c5caf34d/while-iteration-statement_960.jpg",
+     "themes": [
+      "Loops: repeat and count",
+      "Loops: take digits apart",
+      "Loops: remember changing values",
+      "Loops: search"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "MS Learn Part 4: Work with variable data",
+   "episodes": [
+    {
+     "num": 9,
+     "title": "Understanding Arrays",
+     "minutes": 17,
+     "page": "/learn/videos/understanding-arrays",
+     "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-5e3151e9-bb9b-4068-a337-600c4bdd8cb1/understanding-arrays_960.jpg",
+     "themes": [
+      "Arrays and text"
+     ]
+    },
+    {
+     "num": 10,
+     "title": "Working with Strings",
+     "minutes": 23,
+     "page": "/learn/videos/working-with-strings",
+     "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-02de69b5-c775-4830-934b-46344ac60ec3/working-with-strings_960.jpg",
+     "themes": [
+      "Arrays and text",
+      "Files"
+     ]
+    },
+    {
+     "num": 11,
+     "title": "Working with Collections",
+     "minutes": 23,
+     "page": "/learn/videos/working-with-collections",
+     "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-652b0c55-41da-43c3-b9fe-b987ed2a2885/working-with-collections_960.jpg",
+     "themes": [
+      "Collections"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "MS Learn Part 5: Methods",
+   "episodes": [
+    {
+     "num": 12,
+     "title": "Defining and Calling Methods",
+     "minutes": 31,
+     "page": "/learn/videos/defining-and-calling-methods",
+     "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-c407acc8-05ef-4f09-a1ee-82482fa4d0d1/defining-and-calling-methods_960.jpg",
+     "themes": [
+      "Methods"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "MS Learn Part 6: Debug and handle exceptions",
+   "episodes": [
+    {
+     "num": 13,
+     "title": "Gracefully Handling Exceptions",
+     "minutes": 21,
+     "page": "/learn/videos/gracefully-handling-exceptions",
+     "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-b2a0103b-1484-415e-81a6-61a2b54a60b1/gracefully-handling-exceptions_960.jpg",
+     "themes": [
+      "Exceptions"
+     ]
+    }
+   ]
+  }
+ ],
+ "flow": [
+  {
+   "num": 1,
+   "title": "Hello World",
+   "link": "/themes/hello-world",
+   "group": "MS Learn Part 1: Write your first code",
+   "part": 1,
+   "module": "Write your first C# code",
+   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-write-first/",
+   "video": "Creating Your First C# Program",
+   "videoPage": "/learn/videos/creating-your-first-c-program",
+   "exercises": 1,
+   "first": {
+    "id": "B01",
+    "link": "/exercises/B01-hello-you"
+   }
+  },
+  {
+   "num": 2,
+   "title": "Variables and expressions",
+   "link": "/themes/variables",
+   "group": "MS Learn Part 1: Write your first code",
+   "part": 1,
+   "module": "Store data with variables in C#",
+   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-literals-variables/",
+   "video": "Understanding Data Types and Variables",
+   "videoPage": "/learn/videos/understanding-data-types-and-variables",
+   "exercises": 2,
+   "first": {
+    "id": "B02",
+    "link": "/exercises/B02-rectangle-calculator"
+   }
+  },
+  {
+   "num": 3,
+   "title": "Conditions",
+   "link": "/themes/conditions",
+   "group": "MS Learn Part 1: Write your first code",
+   "part": 1,
+   "module": "Add decision logic to your code in C#",
+   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-if-elseif-else/",
+   "video": "The if Decision Statement",
+   "videoPage": "/learn/videos/the-if-decision-statement",
+   "exercises": 4,
+   "first": {
+    "id": "C01",
+    "link": "/exercises/C01-even-or-odd"
+   }
+  },
+  {
+   "num": 4,
+   "title": "Loops: repeat and count",
+   "link": "/themes/loops-repeat",
+   "group": "MS Learn Parts 2 and 3: Loops and logic",
+   "part": 3,
+   "module": "Iterate through a code block using for statement in C#",
+   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-for/",
+   "video": "for Iteration Statement",
+   "videoPage": "/learn/videos/for-iteration-statement",
+   "exercises": 17,
+   "first": {
+    "id": "L01",
+    "link": "/exercises/L01-trace-a-loop"
+   }
+  },
+  {
+   "num": 5,
+   "title": "Loops: keep a running result",
+   "link": "/themes/loops-running-result",
+   "group": "MS Learn Parts 2 and 3: Loops and logic",
+   "part": 3,
+   "module": "Iterate through a code block using for statement in C#",
+   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-for/",
+   "video": "for Iteration Statement",
+   "videoPage": "/learn/videos/for-iteration-statement",
+   "exercises": 22,
+   "first": {
+    "id": "A11",
+    "link": "/exercises/A11-arrange-sum-of-squares"
+   }
+  },
+  {
+   "num": 6,
+   "title": "Loops: draw in 2D",
+   "link": "/themes/loops-2d",
+   "group": "MS Learn Parts 2 and 3: Loops and logic",
+   "part": 3,
+   "module": "Iterate through a code block using for statement in C#",
+   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-for/",
+   "video": "for Iteration Statement",
+   "videoPage": "/learn/videos/for-iteration-statement",
+   "exercises": 16,
+   "first": {
+    "id": "L09",
+    "link": "/exercises/L09-draw-a-row"
+   }
+  },
+  {
+   "num": 7,
+   "title": "Loops: take digits apart",
+   "link": "/themes/loops-digits",
+   "group": "MS Learn Parts 2 and 3: Loops and logic",
+   "part": 3,
+   "module": "Add looping logic to your code using the do-while and while statements in C#",
+   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-do-while/",
+   "video": "While Iteration Statement",
+   "videoPage": "/learn/videos/while-iteration-statement",
+   "exercises": 12,
+   "first": {
+    "id": "D01",
+    "link": "/exercises/D01-last-digit"
+   }
+  },
+  {
+   "num": 8,
+   "title": "Loops: remember changing values",
+   "link": "/themes/loops-state",
+   "group": "MS Learn Parts 2 and 3: Loops and logic",
+   "part": 3,
+   "module": "Control variable scope and logic using code blocks in C#",
+   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-code-blocks/",
+   "video": "While Iteration Statement",
+   "videoPage": "/learn/videos/while-iteration-statement",
+   "exercises": 5,
+   "first": {
+    "id": "S01",
+    "link": "/exercises/S01-trace-updates"
+   }
+  },
+  {
+   "num": 9,
+   "title": "Loops: search",
+   "link": "/themes/loops-search",
+   "group": "MS Learn Parts 2 and 3: Loops and logic",
+   "part": 3,
+   "module": "Add looping logic to your code using the do-while and while statements in C#",
+   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-do-while/",
+   "video": "While Iteration Statement",
+   "videoPage": "/learn/videos/while-iteration-statement",
+   "exercises": 2,
+   "first": {
+    "id": "P01",
+    "link": "/exercises/P01-is-it-prime"
+   }
+  },
+  {
+   "num": 10,
+   "title": "Combine recipes",
+   "link": "/themes/combine",
+   "group": "MS Learn Parts 2 and 3: Loops and logic",
+   "part": 3,
+   "module": "Guided project - Develop conditional branching and looping structures in C#",
+   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/guided-project-develop-conditional-branching-looping/",
+   "video": "for Iteration Statement",
+   "videoPage": "/learn/videos/for-iteration-statement",
+   "exercises": 2,
+   "first": {
+    "id": "M01",
+    "link": "/exercises/M01-armstrong-number"
+   }
+  },
+  {
+   "num": 11,
+   "title": "Arrays and text",
+   "link": "/themes/arrays",
+   "group": "MS Learn Part 4: Work with variable data",
+   "part": 2,
+   "module": "Organize data with arrays and lists in C#",
+   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-arrays-lists/",
+   "video": "Understanding Arrays",
+   "videoPage": "/learn/videos/understanding-arrays",
+   "exercises": 9,
+   "first": {
+    "id": "R01",
+    "link": "/exercises/R01-sum-an-array"
+   }
+  },
+  {
+   "num": 12,
+   "title": "Files",
+   "link": "/themes/files",
+   "group": "MS Learn Part 4: Work with variable data",
+   "part": 2,
+   "module": "Read and write files in C#",
+   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-read-write-files/",
+   "video": "Working with Strings",
+   "videoPage": "/learn/videos/working-with-strings",
+   "exercises": 1,
+   "first": {
+    "id": "F01",
+    "link": "/exercises/F01-numbers-file"
+   }
+  },
+  {
+   "num": 13,
+   "title": "Collections",
+   "link": "/themes/collections",
+   "group": "MS Learn Part 4: Work with variable data",
+   "part": 2,
+   "module": "Organize data with arrays and lists in C#",
+   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-arrays-lists/",
+   "video": "Working with Collections",
+   "videoPage": "/learn/videos/working-with-collections",
+   "exercises": 1,
+   "first": {
+    "id": "K01",
+    "link": "/exercises/K01-shopping-list"
+   }
+  },
+  {
+   "num": 14,
+   "title": "Methods",
+   "link": "/themes/methods",
+   "group": "MS Learn Part 5: Methods",
+   "part": 5,
+   "module": "Write your first C# method",
+   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/write-first-c-sharp-method/",
+   "video": "Defining and Calling Methods",
+   "videoPage": "/learn/videos/defining-and-calling-methods",
+   "exercises": 1,
+   "first": {
+    "id": "N01",
+    "link": "/exercises/N01-armstrong-with-methods"
+   }
+  },
+  {
+   "num": 15,
+   "title": "Exceptions",
+   "link": "/themes/exceptions",
+   "group": "MS Learn Part 6: Debug and handle exceptions",
+   "part": 6,
+   "module": "Review the principles of code debugging and exception handling",
+   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/review-principles-code-debugging-exception-handling-c-sharp/",
+   "video": "Gracefully Handling Exceptions",
+   "videoPage": "/learn/videos/gracefully-handling-exceptions",
+   "exercises": 1,
+   "first": {
+    "id": "E01",
+    "link": "/exercises/E01-safe-number-reader"
+   }
+  }
  ]
 }
