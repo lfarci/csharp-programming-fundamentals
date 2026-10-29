@@ -11,3 +11,6 @@ practice/.current
 practice/*_*.cs
 practice/.done
 practice/PROGRESS.md
+node_modules/
+.vitepress/cache/
+.vitepress/dist/

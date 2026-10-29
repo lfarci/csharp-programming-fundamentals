@@ -3,6 +3,8 @@
 [![Checks](https://github.com/lfarci/csharp-programming-fundamentals/actions/workflows/checks.yml/badge.svg)](https://github.com/lfarci/csharp-programming-fundamentals/actions/workflows/checks.yml)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/lfarci/csharp-programming-fundamentals?quickstart=1)
 
+**[Browse the course online](https://lfarci.github.io/csharp-programming-fundamentals/)**: every page and exercise, with search and a "Mark as done" tick saved in your browser ([My progress](progress.md)).
+
 A friendly companion for a beginner C# course. You learn **loop recipes** and practise with many small exercises. Each exercise adds **one** new difficulty.
 
 ## Start here

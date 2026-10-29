@@ -34,6 +34,7 @@ rm practice/A01_Sum1ToN.cs
 ./ex progress > out.txt                   || fail "./ex progress"
 grep -q "Progress: 1 of" out.txt          || fail "./ex progress does not count L11"
 grep -q "x L11" out.txt                   || fail "./ex progress does not mark L11 in its drill set"
+grep -q "CPF1:L11$" out.txt               || fail "./ex progress does not print the sync code CPF1:L11"
 test -f practice/PROGRESS.md              || fail "./ex progress did not write practice/PROGRESS.md"
 
 ./ex done L01 > out.txt                   || fail "./ex done L01 (paper)"

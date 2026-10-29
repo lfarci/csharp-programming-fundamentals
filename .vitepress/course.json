@@ -1,0 +1,1089 @@
+{
+ "exercises": [
+  {
+   "id": "B01",
+   "title": "Hello you",
+   "link": "/exercises/B01-hello-you",
+   "step": "1 · Hello World",
+   "level": "Guided",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "B02",
+   "title": "Rectangle calculator",
+   "link": "/exercises/B02-rectangle-calculator",
+   "step": "2 · Variables & expressions",
+   "level": "Guided",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "B03",
+   "title": "Seconds to hours, minutes, seconds",
+   "link": "/exercises/B03-seconds-to-hms",
+   "step": "2 · Variables & expressions",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "C01",
+   "title": "Even or odd",
+   "link": "/exercises/C01-even-or-odd",
+   "step": "3 · Conditions",
+   "level": "Guided",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "C02",
+   "title": "Largest of three",
+   "link": "/exercises/C02-largest-of-three",
+   "step": "3 · Conditions",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "C03",
+   "title": "Ticket price",
+   "link": "/exercises/C03-ticket-price",
+   "step": "3 · Conditions",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "C04",
+   "title": "Grade from a score",
+   "link": "/exercises/C04-grade-from-a-score",
+   "step": "3 · Conditions",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "L01",
+   "title": "Trace a loop (paper)",
+   "link": "/exercises/L01-trace-a-loop",
+   "step": "4a · Repeat & count",
+   "level": "Guided",
+   "paper": true,
+   "drills": []
+  },
+  {
+   "id": "L02",
+   "title": "Boundaries: < or <= ? (paper)",
+   "link": "/exercises/L02-boundaries",
+   "step": "4a · Repeat & count",
+   "level": "Guided",
+   "paper": true,
+   "drills": []
+  },
+  {
+   "id": "L03",
+   "title": "Count up and down",
+   "link": "/exercises/L03-count-up-and-down",
+   "step": "4a · Repeat & count",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Counter loop (print, count, step)"
+   ]
+  },
+  {
+   "id": "L04",
+   "title": "Multiplication table",
+   "link": "/exercises/L04-multiplication-table",
+   "step": "4a · Repeat & count",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "L05",
+   "title": "Until zero",
+   "link": "/exercises/L05-until-zero",
+   "step": "4a · Repeat & count",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "L06",
+   "title": "Even numbers",
+   "link": "/exercises/L06-even-numbers",
+   "step": "4a · Repeat & count",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Counter loop (print, count, step)"
+   ]
+  },
+  {
+   "id": "L07",
+   "title": "Ask until valid",
+   "link": "/exercises/L07-ask-until-valid",
+   "step": "4a · Repeat & count",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "L08",
+   "title": "Guess the number",
+   "link": "/exercises/L08-guess-the-number",
+   "step": "4a · Repeat & count",
+   "level": "Challenge",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "L11",
+   "title": "Count from a to b",
+   "link": "/exercises/L11-count-from-a-to-b",
+   "step": "4a · Repeat & count",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Counter loop (print, count, step)"
+   ]
+  },
+  {
+   "id": "L12",
+   "title": "Count down",
+   "link": "/exercises/L12-count-down",
+   "step": "4a · Repeat & count",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Counter loop (print, count, step)"
+   ]
+  },
+  {
+   "id": "L13",
+   "title": "Count by 3",
+   "link": "/exercises/L13-count-by-3",
+   "step": "4a · Repeat & count",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Counter loop (print, count, step)"
+   ]
+  },
+  {
+   "id": "L14",
+   "title": "Count by 5",
+   "link": "/exercises/L14-count-by-5",
+   "step": "4a · Repeat & count",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Counter loop (print, count, step)"
+   ]
+  },
+  {
+   "id": "L15",
+   "title": "Count by any step",
+   "link": "/exercises/L15-count-by-step",
+   "step": "4a · Repeat & count",
+   "level": "Independent",
+   "paper": false,
+   "drills": [
+    "Counter loop (print, count, step)"
+   ]
+  },
+  {
+   "id": "L16",
+   "title": "Odd numbers",
+   "link": "/exercises/L16-odd-numbers",
+   "step": "4a · Repeat & count",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Counter loop (print, count, step)"
+   ]
+  },
+  {
+   "id": "L17",
+   "title": "Count down by 2",
+   "link": "/exercises/L17-count-down-by-2",
+   "step": "4a · Repeat & count",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Counter loop (print, count, step)"
+   ]
+  },
+  {
+   "id": "L18",
+   "title": "Square numbers",
+   "link": "/exercises/L18-squares",
+   "step": "4a · Repeat & count",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Counter loop (print, count, step)"
+   ]
+  },
+  {
+   "id": "L19",
+   "title": "Count the turns",
+   "link": "/exercises/L19-count-the-turns",
+   "step": "4a · Repeat & count",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Counter loop (print, count, step)"
+   ]
+  },
+  {
+   "id": "A11",
+   "title": "Arrange the lines: sum of squares",
+   "link": "/exercises/A11-arrange-sum-of-squares",
+   "step": "4b · Running result",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A01",
+   "title": "Sum from 1 to N",
+   "link": "/exercises/A01-sum-1-to-n",
+   "step": "4b · Running result",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A02",
+   "title": "Count multiples of 3",
+   "link": "/exercises/A02-count-multiples-of-3",
+   "step": "4b · Running result",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Count or sum only some values"
+   ]
+  },
+  {
+   "id": "A12",
+   "title": "Fix the bugs: count multiples of 7",
+   "link": "/exercises/A12-fix-count-multiples-of-7",
+   "step": "4b · Running result",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Count or sum only some values"
+   ]
+  },
+  {
+   "id": "A03",
+   "title": "Sum of the even numbers",
+   "link": "/exercises/A03-sum-even-values",
+   "step": "4b · Running result",
+   "level": "Independent",
+   "paper": false,
+   "drills": [
+    "Count or sum only some values"
+   ]
+  },
+  {
+   "id": "A04",
+   "title": "Factorial",
+   "link": "/exercises/A04-factorial",
+   "step": "4b · Running result",
+   "level": "Independent",
+   "paper": false,
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A05",
+   "title": "Two accumulators: sum and squares",
+   "link": "/exercises/A05-sum-square-difference",
+   "step": "4b · Running result",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "A06",
+   "title": "Average until zero",
+   "link": "/exercises/A06-average-until-zero",
+   "step": "4b · Running result",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "A07",
+   "title": "Integer power",
+   "link": "/exercises/A07-integer-power",
+   "step": "4b · Running result",
+   "level": "Independent",
+   "paper": false,
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A08",
+   "title": "Multiples of 3 or 5",
+   "link": "/exercises/A08-multiples-of-3-or-5",
+   "step": "4b · Running result",
+   "level": "Challenge",
+   "paper": false,
+   "drills": [
+    "Count or sum only some values"
+   ]
+  },
+  {
+   "id": "A09",
+   "title": "Smallest and largest until zero",
+   "link": "/exercises/A09-min-and-max-until-zero",
+   "step": "4b · Running result",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "A10",
+   "title": "Sum of a series",
+   "link": "/exercises/A10-sum-of-a-series",
+   "step": "4b · Running result",
+   "level": "Challenge",
+   "paper": false,
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A13",
+   "title": "Sum from a to b",
+   "link": "/exercises/A13-sum-from-a-to-b",
+   "step": "4b · Running result",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A14",
+   "title": "Sum the odd numbers",
+   "link": "/exercises/A14-sum-odd-numbers",
+   "step": "4b · Running result",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A15",
+   "title": "Count the even numbers",
+   "link": "/exercises/A15-count-even-numbers",
+   "step": "4b · Running result",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Count or sum only some values"
+   ]
+  },
+  {
+   "id": "A16",
+   "title": "Count multiples of 5",
+   "link": "/exercises/A16-count-multiples-of-5",
+   "step": "4b · Running result",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Count or sum only some values"
+   ]
+  },
+  {
+   "id": "A17",
+   "title": "Sum the multiples of k",
+   "link": "/exercises/A17-sum-multiples-of-k",
+   "step": "4b · Running result",
+   "level": "Independent",
+   "paper": false,
+   "drills": [
+    "Count or sum only some values"
+   ]
+  },
+  {
+   "id": "A18",
+   "title": "Sum of cubes",
+   "link": "/exercises/A18-sum-of-cubes",
+   "step": "4b · Running result",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A19",
+   "title": "Product from a to b",
+   "link": "/exercises/A19-product-from-a-to-b",
+   "step": "4b · Running result",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A20",
+   "title": "Power of 2",
+   "link": "/exercises/A20-powers-of-2",
+   "step": "4b · Running result",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A21",
+   "title": "Count the divisors",
+   "link": "/exercises/A21-count-divisors",
+   "step": "4b · Running result",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Count or sum only some values"
+   ]
+  },
+  {
+   "id": "A22",
+   "title": "Sum of the divisors",
+   "link": "/exercises/A22-sum-of-divisors",
+   "step": "4b · Running result",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Count or sum only some values"
+   ]
+  },
+  {
+   "id": "L09",
+   "title": "Draw one row",
+   "link": "/exercises/L09-draw-a-row",
+   "step": "4c · Draw in 2D",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "L10",
+   "title": "Numbers on one line",
+   "link": "/exercises/L10-numbers-on-one-line",
+   "step": "4c · Draw in 2D",
+   "level": "Independent",
+   "paper": false,
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G07",
+   "title": "Arrange the lines: a square",
+   "link": "/exercises/G07-arrange-a-square",
+   "step": "4c · Draw in 2D",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G01",
+   "title": "Draw a rectangle",
+   "link": "/exercises/G01-rectangle",
+   "step": "4c · Draw in 2D",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G08",
+   "title": "Solid square",
+   "link": "/exercises/G08-solid-square",
+   "step": "4c · Draw in 2D",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G09",
+   "title": "Rows of numbers",
+   "link": "/exercises/G09-number-rows",
+   "step": "4c · Draw in 2D",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G02",
+   "title": "Draw a right triangle",
+   "link": "/exercises/G02-right-triangle",
+   "step": "4c · Draw in 2D",
+   "level": "Independent",
+   "paper": false,
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G10",
+   "title": "Triangle of row numbers",
+   "link": "/exercises/G10-row-number-triangle",
+   "step": "4c · Draw in 2D",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G11",
+   "title": "Counting triangle",
+   "link": "/exercises/G11-counting-triangle",
+   "step": "4c · Draw in 2D",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G12",
+   "title": "Upside-down triangle",
+   "link": "/exercises/G12-upside-down-triangle",
+   "step": "4c · Draw in 2D",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G14",
+   "title": "Numbers in columns",
+   "link": "/exercises/G14-numbers-in-columns",
+   "step": "4c · Draw in 2D",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G03",
+   "title": "Multiplication grid",
+   "link": "/exercises/G03-multiplication-grid",
+   "step": "4c · Draw in 2D",
+   "level": "Independent",
+   "paper": false,
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G04",
+   "title": "Hollow rectangle",
+   "link": "/exercises/G04-hollow-rectangle",
+   "step": "4c · Draw in 2D",
+   "level": "Independent",
+   "paper": false,
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G13",
+   "title": "Diagonal",
+   "link": "/exercises/G13-diagonal",
+   "step": "4c · Draw in 2D",
+   "level": "Independent",
+   "paper": false,
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G05",
+   "title": "Checkerboard",
+   "link": "/exercises/G05-checkerboard",
+   "step": "4c · Draw in 2D",
+   "level": "Challenge",
+   "paper": false,
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G06",
+   "title": "Pyramid",
+   "link": "/exercises/G06-pyramid",
+   "step": "4c · Draw in 2D",
+   "level": "Challenge",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "D01",
+   "title": "Last digit",
+   "link": "/exercises/D01-last-digit",
+   "step": "4d · Digits",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Digits"
+   ]
+  },
+  {
+   "id": "D02",
+   "title": "Remove the last digit",
+   "link": "/exercises/D02-remove-last-digit",
+   "step": "4d · Digits",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Digits"
+   ]
+  },
+  {
+   "id": "D03",
+   "title": "Count the digits",
+   "link": "/exercises/D03-count-digits",
+   "step": "4d · Digits",
+   "level": "Independent",
+   "paper": false,
+   "drills": [
+    "Digits"
+   ]
+  },
+  {
+   "id": "D08",
+   "title": "First digit",
+   "link": "/exercises/D08-first-digit",
+   "step": "4d · Digits",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Digits"
+   ]
+  },
+  {
+   "id": "D04",
+   "title": "Sum of the digits",
+   "link": "/exercises/D04-digit-sum",
+   "step": "4d · Digits",
+   "level": "Independent",
+   "paper": false,
+   "drills": [
+    "Digits"
+   ]
+  },
+  {
+   "id": "D09",
+   "title": "Count the even digits",
+   "link": "/exercises/D09-count-even-digits",
+   "step": "4d · Digits",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Digits"
+   ]
+  },
+  {
+   "id": "D10",
+   "title": "Count one digit",
+   "link": "/exercises/D10-count-a-digit",
+   "step": "4d · Digits",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Digits"
+   ]
+  },
+  {
+   "id": "D11",
+   "title": "Largest digit",
+   "link": "/exercises/D11-largest-digit",
+   "step": "4d · Digits",
+   "level": "Independent",
+   "paper": false,
+   "drills": [
+    "Digits"
+   ]
+  },
+  {
+   "id": "D12",
+   "title": "Product of the digits",
+   "link": "/exercises/D12-product-of-digits",
+   "step": "4d · Digits",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Digits"
+   ]
+  },
+  {
+   "id": "D07",
+   "title": "Fix the bugs: digit sum",
+   "link": "/exercises/D07-fix-digit-sum",
+   "step": "4d · Digits",
+   "level": "Independent",
+   "paper": false,
+   "drills": [
+    "Digits"
+   ]
+  },
+  {
+   "id": "D05",
+   "title": "Reverse a number",
+   "link": "/exercises/D05-reverse-a-number",
+   "step": "4d · Digits",
+   "level": "Independent",
+   "paper": false,
+   "drills": [
+    "Digits"
+   ]
+  },
+  {
+   "id": "D06",
+   "title": "Palindrome number",
+   "link": "/exercises/D06-palindrome-number",
+   "step": "4d · Digits",
+   "level": "Challenge",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "S01",
+   "title": "Trace two changing variables (paper)",
+   "link": "/exercises/S01-trace-updates",
+   "step": "4d · State",
+   "level": "Guided",
+   "paper": true,
+   "drills": [
+    "Changing state"
+   ]
+  },
+  {
+   "id": "S04",
+   "title": "Doubling",
+   "link": "/exercises/S04-doubling",
+   "step": "4d · State",
+   "level": "Guided",
+   "paper": false,
+   "drills": [
+    "Changing state"
+   ]
+  },
+  {
+   "id": "S02",
+   "title": "Fibonacci",
+   "link": "/exercises/S02-fibonacci",
+   "step": "4d · State",
+   "level": "Independent",
+   "paper": false,
+   "drills": [
+    "Changing state"
+   ]
+  },
+  {
+   "id": "S05",
+   "title": "The n-th Fibonacci number",
+   "link": "/exercises/S05-nth-fibonacci",
+   "step": "4d · State",
+   "level": "Independent",
+   "paper": false,
+   "drills": [
+    "Changing state"
+   ]
+  },
+  {
+   "id": "S03",
+   "title": "Even Fibonacci sum",
+   "link": "/exercises/S03-even-fibonacci-sum",
+   "step": "4d · State",
+   "level": "Challenge",
+   "paper": false,
+   "drills": [
+    "Changing state"
+   ]
+  },
+  {
+   "id": "P01",
+   "title": "Is it prime?",
+   "link": "/exercises/P01-is-it-prime",
+   "step": "4d · Search",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "P02",
+   "title": "All primes up to N",
+   "link": "/exercises/P02-primes-up-to-n",
+   "step": "4d · Search",
+   "level": "Challenge",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "M01",
+   "title": "Armstrong number",
+   "link": "/exercises/M01-armstrong-number",
+   "step": "4 · Combine",
+   "level": "Challenge",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "M02",
+   "title": "All Armstrong numbers in a range",
+   "link": "/exercises/M02-armstrong-numbers-in-a-range",
+   "step": "4 · Combine",
+   "level": "Challenge",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "R01",
+   "title": "Sum of an array",
+   "link": "/exercises/R01-sum-an-array",
+   "step": "6 · Arrays",
+   "level": "Guided",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "R02",
+   "title": "Largest value in an array",
+   "link": "/exercises/R02-largest-in-an-array",
+   "step": "6 · Arrays",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "R06",
+   "title": "Fix the bugs: largest value",
+   "link": "/exercises/R06-fix-largest-value",
+   "step": "6 · Arrays",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "R03",
+   "title": "Count matches in an array",
+   "link": "/exercises/R03-count-matches",
+   "step": "6 · Arrays",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "R04",
+   "title": "Find the position",
+   "link": "/exercises/R04-find-the-position",
+   "step": "6 · Arrays",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "R05",
+   "title": "Reverse an array",
+   "link": "/exercises/R05-reverse-an-array",
+   "step": "6 · Arrays",
+   "level": "Challenge",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "T01",
+   "title": "Count a letter",
+   "link": "/exercises/T01-count-a-letter",
+   "step": "6 · Arrays",
+   "level": "Guided",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "T02",
+   "title": "Remove spaces",
+   "link": "/exercises/T02-remove-spaces",
+   "step": "6 · Arrays",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "T03",
+   "title": "Count and keep the digits",
+   "link": "/exercises/T03-count-and-keep-digits",
+   "step": "6 · Arrays",
+   "level": "Challenge",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "F01",
+   "title": "Save numbers to a file",
+   "link": "/exercises/F01-numbers-file",
+   "step": "5 · Files",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "E01",
+   "title": "Safe number reader",
+   "link": "/exercises/E01-safe-number-reader",
+   "step": "7 · Exceptions",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "K01",
+   "title": "Shopping list",
+   "link": "/exercises/K01-shopping-list",
+   "step": "9 · Collections",
+   "level": "Independent",
+   "paper": false,
+   "drills": []
+  },
+  {
+   "id": "N01",
+   "title": "Armstrong with methods",
+   "link": "/exercises/N01-armstrong-with-methods",
+   "step": "10 · Methods",
+   "level": "Challenge",
+   "paper": false,
+   "drills": []
+  }
+ ],
+ "drillSets": [
+  {
+   "name": "Counter loop (print, count, step)",
+   "recipe": "01",
+   "ids": [
+    "L03",
+    "L11",
+    "L12",
+    "L13",
+    "L14",
+    "L16",
+    "L17",
+    "L18",
+    "L15",
+    "L19",
+    "L06"
+   ]
+  },
+  {
+   "name": "Accumulator (sum, product)",
+   "recipe": "02",
+   "ids": [
+    "A11",
+    "A01",
+    "A13",
+    "A14",
+    "A18",
+    "A04",
+    "A19",
+    "A20",
+    "A07",
+    "A10"
+   ]
+  },
+  {
+   "name": "Count or sum only some values",
+   "recipe": "03",
+   "ids": [
+    "A02",
+    "A15",
+    "A16",
+    "A03",
+    "A17",
+    "A21",
+    "A22",
+    "A12",
+    "A08"
+   ]
+  },
+  {
+   "name": "Nested loops (draw)",
+   "recipe": "08",
+   "ids": [
+    "L09",
+    "L10",
+    "G07",
+    "G01",
+    "G08",
+    "G09",
+    "G02",
+    "G10",
+    "G11",
+    "G12",
+    "G04",
+    "G13",
+    "G14",
+    "G03",
+    "G05"
+   ]
+  },
+  {
+   "name": "Digits",
+   "recipe": "06",
+   "ids": [
+    "D01",
+    "D02",
+    "D03",
+    "D08",
+    "D04",
+    "D09",
+    "D10",
+    "D11",
+    "D12",
+    "D07",
+    "D05"
+   ]
+  },
+  {
+   "name": "Changing state",
+   "recipe": "07",
+   "ids": [
+    "S01",
+    "S04",
+    "S02",
+    "S05",
+    "S03"
+   ]
+  }
+ ]
+}

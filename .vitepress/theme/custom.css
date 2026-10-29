@@ -1,0 +1,3 @@
+/* Plain, calm look: system fonts, one accent colour. */
+:root { --vp-font-family-base: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+.vp-doc table { display: table; width: 100%; }
