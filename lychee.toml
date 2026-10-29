@@ -7,6 +7,7 @@ accept = ["200..=299", "403", "429"]   # 403/429: sites that block bots (doi.org
 include_fragments = "anchor-only"
 exclude_path = ["node_modules", "\\.vitepress", "(^|/)bin/", "(^|/)obj/"]
 exclude = [
+  "^https://lfarci\\.github\\.io/csharp-programming-fundamentals",   # the site itself: built and deployed by site.yml
   "^https?://(dx\\.)?doi\\.org/",          # DOIs verified with the Crossref API; publishers block bots (403/500)
   "^https?://(www\\.)?tandfonline\\.com/",
   "^https://github\\.com/lfarci/csharp-programming-fundamentals/actions",  # badge/status pages
