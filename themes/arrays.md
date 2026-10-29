@@ -42,7 +42,7 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 **Learn the theory on Microsoft Learn** ([Part 4: Work with variable data in C# console applications](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-4/))
 
 - **Modules:** [Organize data with arrays and lists in C#](https://learn.microsoft.com/en-us/training/modules/csharp-arrays-lists/) (Part 2) · [Perform operations on arrays using helper methods in C#](https://learn.microsoft.com/en-us/training/modules/csharp-arrays-operations/) (Part 4) · [Modify the content of strings using built-in string data type methods in C#](https://learn.microsoft.com/en-us/training/modules/csharp-modify-content/) (Part 4) · [Format alphanumeric data for presentation in C#](https://learn.microsoft.com/en-us/training/modules/csharp-format-strings/) (Part 4)
-- **Video (C# Fundamentals for Absolute Beginners):** [Understanding Arrays](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/understanding-arrays/) · [Working with Strings](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/working-with-strings/)
+- **Video (C# Fundamentals for Absolute Beginners):** [Understanding Arrays](../learn/videos/understanding-arrays.md) · [Working with Strings](../learn/videos/working-with-strings.md)
 - **Reference:** [Arrays](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)
 
 </div>

@@ -34,7 +34,7 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 **Learn the theory on Microsoft Learn** ([Part 1: Write your first code using C#](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-1/))
 
 - **Modules:** [Store data with variables in C#](https://learn.microsoft.com/en-us/training/modules/csharp-literals-variables/) (Part 1) · [Perform basic operations on numbers in C#](https://learn.microsoft.com/en-us/training/modules/csharp-basic-operations/) (Part 1) · [Choose the correct data type in your C# code](https://learn.microsoft.com/en-us/training/modules/csharp-choose-data-type/) (Part 4) · [Convert data types using casting and conversion techniques in C#](https://learn.microsoft.com/en-us/training/modules/csharp-convert-cast/) (Part 4)
-- **Video (C# Fundamentals for Absolute Beginners):** [Understanding Data Types and Variables](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/understanding-data-types-and-variables/) · [Operators, Expressions, and Statements](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/operators-expressions-and-statements/)
+- **Video (C# Fundamentals for Absolute Beginners):** [Understanding Data Types and Variables](../learn/videos/understanding-data-types-and-variables.md) · [Operators, Expressions, and Statements](../learn/videos/operators-expressions-and-statements.md)
 - **Reference:** [Tutorial: numbers in C#](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp) · [Arithmetic operators](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators)
 
 </div>

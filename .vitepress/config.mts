@@ -88,9 +88,10 @@ export default defineConfig({
         { text: 'Roadmap', link: '/ROADMAP' },
       ] },
       { text: 'Learn', items: [
-        { text: 'Learn the theory', link: '/learn/' },
+        { text: 'Overview', link: '/learn/' },
         { text: 'Microsoft Learn modules', link: '/learn/microsoft-learn' },
         { text: 'Videos', link: '/learn/videos' },
+        { text: 'Certification', link: '/learn/certification' },
         { text: 'Extra exercises', link: '/learn/quest-tracker' },
       ] },
       { text: 'Cookbook', collapsed: true, items: [

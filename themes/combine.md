@@ -34,7 +34,7 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 **Learn the theory on Microsoft Learn** ([Part 3: Add logic to C# console applications](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-3/))
 
 - **Modules:** [Guided project - Develop conditional branching and looping structures in C#](https://learn.microsoft.com/en-us/training/modules/guided-project-develop-conditional-branching-looping/) (Part 3) · [Challenge project - Develop branching and looping structures in C#](https://learn.microsoft.com/en-us/training/modules/challenge-project-develop-branching-looping-structures-c-sharp/) (Part 3) · [Implement the Visual Studio Code debugging tools for C#](https://learn.microsoft.com/en-us/training/modules/implement-visual-studio-code-debugging-tools/) (Part 6)
-- **Video (C# Fundamentals for Absolute Beginners):** [for Iteration Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/for-iteration-statement/) · [The if Decision Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/the-if-decision-statement/)
+- **Video (C# Fundamentals for Absolute Beginners):** [for Iteration Statement](../learn/videos/for-iteration-statement.md) · [The if Decision Statement](../learn/videos/the-if-decision-statement.md)
 
 </div>
 

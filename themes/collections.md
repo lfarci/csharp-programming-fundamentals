@@ -33,7 +33,7 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 **Learn the theory on Microsoft Learn** ([Part 2: Create and run simple C# console applications](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-2/))
 
 - **Modules:** [Organize data with arrays and lists in C#](https://learn.microsoft.com/en-us/training/modules/csharp-arrays-lists/) (Part 2)
-- **Video (C# Fundamentals for Absolute Beginners):** [Working with Collections](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/working-with-collections/)
+- **Video (C# Fundamentals for Absolute Beginners):** [Working with Collections](../learn/videos/working-with-collections.md)
 - **Reference:** [Collections tutorial](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/list-collection)
 
 </div>

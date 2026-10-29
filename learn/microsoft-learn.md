@@ -62,13 +62,7 @@ Microsoft Learn teaches C# for free in **6 parts** (learning paths). Each part h
 
 </div>
 
-Prefer videos? See [Videos](videos.md): the C# Fundamentals for Absolute Beginners episodes for each theme.
-
-## The free certification
-
-[Foundational C# with Microsoft](https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/) is a **free** certification by freeCodeCamp and Microsoft. It is made of the same 6 parts above, you finish the 6 parts on Microsoft Learn (a trophy for each), link them to your freeCodeCamp account, then take an exam of 80 questions in one session (pass with 70%). Both accounts are free.
-
-You do not need it for this course. If you want it, this course is the practice: do the themes after each part, then take the exam.
+Prefer videos? See [Videos](videos.md). Want a certificate? See [Certification](certification.md).
 
 ## The docs
 

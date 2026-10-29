@@ -33,7 +33,7 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 **Learn the theory on Microsoft Learn** ([Part 6: Debug C# console applications](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-6/))
 
 - **Modules:** [Review the principles of code debugging and exception handling](https://learn.microsoft.com/en-us/training/modules/review-principles-code-debugging-exception-handling-c-sharp/) (Part 6) · [Implement exception handling in C# console applications](https://learn.microsoft.com/en-us/training/modules/implement-exception-handling-c-sharp/) (Part 6) · [Create and throw exceptions in C# console applications](https://learn.microsoft.com/en-us/training/modules/create-throw-exceptions-c-sharp/) (Part 6)
-- **Video (C# Fundamentals for Absolute Beginners):** [Gracefully Handling Exceptions](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/gracefully-handling-exceptions/)
+- **Video (C# Fundamentals for Absolute Beginners):** [Gracefully Handling Exceptions](../learn/videos/gracefully-handling-exceptions.md)
 - **Reference:** [Exceptions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/)
 
 </div>

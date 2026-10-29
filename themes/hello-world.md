@@ -33,7 +33,7 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 **Learn the theory on Microsoft Learn** ([Part 1: Write your first code using C#](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-1/))
 
 - **Modules:** [Write your first C# code](https://learn.microsoft.com/en-us/training/modules/csharp-write-first/) (Part 1) · [Install and configure Visual Studio Code](https://learn.microsoft.com/en-us/training/modules/install-configure-visual-studio-code/) (Part 2)
-- **Video (C# Fundamentals for Absolute Beginners):** [Creating Your First C# Program](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/creating-your-first-c-program/) · [Understanding Your First C# Program](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/understanding-your-first-c-program/)
+- **Video (C# Fundamentals for Absolute Beginners):** [Creating Your First C# Program](../learn/videos/creating-your-first-c-program.md) · [Understanding Your First C# Program](../learn/videos/understanding-your-first-c-program.md)
 - **Reference:** [Tutorial: Hello World](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world)
 
 </div>

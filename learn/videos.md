@@ -1,40 +1,40 @@
 [Home](../README.md) › [Learn](README.md) › Videos
 
-# Videos: C# Fundamentals for Absolute Beginners
+# Videos
 
-[C# Fundamentals for Absolute Beginners](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/) is a free video series on Microsoft Learn by Bob Tabor. It explains each idea slowly. Watch an episode, then do the themes under it. Only the episodes about the fundamentals are listed here.
+[C# Fundamentals for Absolute Beginners](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/) is a free video series on Microsoft Learn by Bob Tabor. Pick the video of your theme: its page says what to watch for and what to practise after. Only the episodes about the fundamentals are here.
 
-<VideoPath />
+<VideoGallery />
 
 <div class="gh-only">
 
 MS Learn Part 1: **Write your first code**
 
-- **1** [Creating Your First C# Program](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/creating-your-first-c-program/) (16 min). Then: [Hello World](../themes/hello-world.md)
-- **2** [Understanding Your First C# Program](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/understanding-your-first-c-program/) (17 min). Then: [Hello World](../themes/hello-world.md)
-- **3** [Understanding Data Types and Variables](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/understanding-data-types-and-variables/) (28 min). Then: [Variables and expressions](../themes/variables.md)
-- **4** [Operators, Expressions, and Statements](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/operators-expressions-and-statements/) (15 min). Then: [Variables and expressions](../themes/variables.md), [Loops: take digits apart](../themes/loops-digits.md)
-- **5** [The if Decision Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/the-if-decision-statement/) (23 min). Then: [Conditions](../themes/conditions.md), [Combine recipes](../themes/combine.md)
-- **6** [Enumerations and the Switch Decision Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/enumerations-and-the-switch-decision-statement/) (13 min). Then: [Conditions](../themes/conditions.md)
+- **1** [Creating Your First C# Program](videos/creating-your-first-c-program.md) (16 min)
+- **2** [Understanding Your First C# Program](videos/understanding-your-first-c-program.md) (17 min)
+- **3** [Understanding Data Types and Variables](videos/understanding-data-types-and-variables.md) (28 min)
+- **4** [Operators, Expressions, and Statements](videos/operators-expressions-and-statements.md) (15 min)
+- **5** [The if Decision Statement](videos/the-if-decision-statement.md) (23 min)
+- **6** [Enumerations and the Switch Decision Statement](videos/enumerations-and-the-switch-decision-statement.md) (13 min)
 
 MS Learn Parts 2 and 3: **Loops and logic**
 
-- **7** [for Iteration Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/for-iteration-statement/) (18 min). Then: [Loops: repeat and count](../themes/loops-repeat.md), [Loops: keep a running result](../themes/loops-running-result.md), [Loops: draw in 2D](../themes/loops-2d.md), [Combine recipes](../themes/combine.md)
-- **8** [While Iteration Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/while-iteration-statement/) (18 min). Then: [Loops: repeat and count](../themes/loops-repeat.md), [Loops: take digits apart](../themes/loops-digits.md), [Loops: remember changing values](../themes/loops-state.md), [Loops: search](../themes/loops-search.md)
+- **7** [for Iteration Statement](videos/for-iteration-statement.md) (18 min)
+- **8** [While Iteration Statement](videos/while-iteration-statement.md) (18 min)
 
 MS Learn Part 4: **Work with variable data**
 
-- **9** [Understanding Arrays](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/understanding-arrays/) (17 min). Then: [Arrays and text](../themes/arrays.md)
-- **10** [Working with Strings](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/working-with-strings/) (23 min). Then: [Arrays and text](../themes/arrays.md), [Files](../themes/files.md)
-- **11** [Working with Collections](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/working-with-collections/) (23 min). Then: [Collections](../themes/collections.md)
+- **9** [Understanding Arrays](videos/understanding-arrays.md) (17 min)
+- **10** [Working with Strings](videos/working-with-strings.md) (23 min)
+- **11** [Working with Collections](videos/working-with-collections.md) (23 min)
 
 MS Learn Part 5: **Methods**
 
-- **12** [Defining and Calling Methods](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/defining-and-calling-methods/) (31 min). Then: [Methods](../themes/methods.md)
+- **12** [Defining and Calling Methods](videos/defining-and-calling-methods.md) (31 min)
 
 MS Learn Part 6: **Debug and handle exceptions**
 
-- **13** [Gracefully Handling Exceptions](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/gracefully-handling-exceptions/) (21 min). Then: [Exceptions](../themes/exceptions.md)
+- **13** [Gracefully Handling Exceptions](videos/gracefully-handling-exceptions.md) (21 min)
 
 </div>
 
@@ -42,4 +42,4 @@ More videos, optional: [C# for Beginners (Scott Hanselman and David Fowler)](htt
 
 ---
 
-[Microsoft Learn modules](microsoft-learn.md) · Next: [Extra exercises](quest-tracker.md)
+[Microsoft Learn modules](microsoft-learn.md) · Next: [Certification](certification.md)

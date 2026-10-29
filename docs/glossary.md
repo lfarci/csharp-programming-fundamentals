@@ -7,7 +7,6 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | Word | Meaning | Example |
 | --- | --- | --- |
 | **`./ex`** | The course's helper command. `./ex start` creates your file, `./ex check` tests it, `./ex next` goes on. On Windows: `.\ex`. | `./ex check A04` |
-| **`char`** | One single character, written with single quotes. | `'a'` |
 | **Accumulator** | A *variable* that collects a result while the *loop* runs: a sum, a count, a product. See [recipe 2](../cookbook/02-accumulator.md). | `sum += i;` |
 | **Algorithm** | The list of steps that solves a problem, written in plain words before the code. | "Add each number to the total." |
 | **Array** | A row of boxes with a fixed size. Each box has a position (an *index*) starting at 0. | `int[] values = { 4, 9, 2 };` |
@@ -15,6 +14,7 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **Boundary** | The first or last value a *loop* or `if` must handle, where mistakes happen most. | Is 10 included in "1 to 10"? |
 | **Box** | Our friendly word for a *variable*: a named place that holds one value. | `int count = 0;` |
 | **Bug** | A mistake in the code. The program runs, but does the wrong thing, or crashes. | |
+| **`char`** | One single character, written with single quotes. | `'a'` |
 | **Clone** | Copy a *repository* from GitHub to your computer with Git. | `git clone https://github.com/...` |
 | **Condition** | A question with a yes/no (`true`/`false`) answer, used by `if` and loops. | `n > 0` |
 | **Counter** | A *variable* that goes up (or down) by 1 on each turn. | `i++` |
@@ -22,7 +22,9 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **Diagram** | A picture made of boxes and arrows that shows the steps of an *algorithm*. A diamond-like box asks a question; the arrows show the answers. | the tea diagram in Solving a problem |
 | **Edge case** | An unusual input that must still work: 0, 1, a negative number, empty text. | N = 0 |
 | **Exception** | An error that stops the program (a crash), unless you catch it with `try`/`catch`. | typing `abc` for `int.Parse` |
+| **Expression** | A piece of code that gives a value. | `a + b * 2`, `n % 10` |
 | **Flag** | A `bool` *variable* that remembers "did it happen yet?". See [recipe 5](../cookbook/05-flag-search.md). | `bool found = false;` |
+| **`foreach`** | A *loop* that visits every item of an *array* or *List*, in order, without an *index*. | `foreach (int v in values)` |
 | **Fork** | Your own copy of a *repository* on your GitHub account, to save your work online. | the **Fork** button on GitHub |
 | **Git** | A tool that keeps the history of files and copies them between GitHub and your computer. | `git pull` gets updates |
 | **Index** | The position of an item in an *array* or string. The first index is 0. | `values[0]` |
@@ -34,6 +36,7 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **Learning path** | On Microsoft Learn, a group of short lessons (*modules*) on one subject, in order. This course follows the 6 parts of *Get started with C#*. See [Microsoft Learn](../learn/microsoft-learn.md). | "Add logic to C# console applications" |
 | **Level** | How much help an exercise gives: Guided, Independent, Challenge. | Guided |
 | **LINQ** | A C# toolbox that does loops for you (`.Sum()`, `.Max()`…). Not used here: you learn to write the loop yourself. | |
+| **List** | Like an *array*, but it can grow: `Add` puts a new item at the end. | `var names = new List<string>();` |
 | **Loop** | Code that repeats: `for`, `while`, `do … while`, `foreach`. | `for (int i = 1; i <= n; i++)` |
 | **Mastery check** | A new variation of an exercise you solve alone, on another day, to prove you learned it. | |
 | **Method** | A named piece of code you can call again and again. It gets its **input** through *parameters* and gives back its **result** with `return`. Most exercises ask you to fill in one. | `static int SumTo(int n) { … return sum; }` |
@@ -53,6 +56,7 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **Selection statement** | Microsoft Learn's name for code that chooses: `if`, `else`, `switch`. | `if (n > 0)` |
 | **Sentinel** | A special value that means "stop", like 0. See [recipe 10](../cookbook/10-sentinel-loop.md). | "enter 0 to stop" |
 | **Solution** | One possible correct code for an exercise. Yours can be different and still be right. | |
+| **Statement** | One instruction of a program. Most end with `;`. | `total += i;` |
 | **String** | Text, written with double quotes. | `"Hello"` |
 | **Subgoal** | One named step of a pattern, like "create the box" or "update the box". Each recipe lists its subgoals; say their names while you code. | "Crown the first value" |
 | **Sync code** | A short line printed by `./ex progress` that lists your finished exercises. Paste it on the website's My progress page. | `CPF1:A1-4;L11` |
@@ -60,6 +64,7 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **Terminal** | A window where you type commands like `dotnet run`. | |
 | **Theme** | One chapter of the course, with its own exercises, such as *Conditions* or *Loops: draw in 2D*. The roadmap lists them in order. | Theme 4: Loops, repeat and count |
 | **Trace table** | A table on paper with one row per *iteration*, showing each *variable*'s value. | |
+| **Type** | The kind of value a *variable* holds: `int` (whole number), `double` (decimal), `string` (text), `bool` (true or false). | `int count = 0;` |
 | **Unit test** | Code that calls your *method* with an example and checks the result. `./ex check` runs them for you. | `SumTo(5)` must give `15` |
 | **Variable** | A named place in memory that holds one value. Also called a *box* here. | `int age = 20;` |
 | **XP** | Experience points. The *C# Quest Tracker* gives XP for each challenge you finish, like in a game. See [Extra exercises](../learn/quest-tracker.md). | |

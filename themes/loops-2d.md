@@ -48,7 +48,7 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 **Learn the theory on Microsoft Learn** ([Part 3: Add logic to C# console applications](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-3/))
 
 - **Modules:** [Iterate through a code block using for statement in C#](https://learn.microsoft.com/en-us/training/modules/csharp-for/) (Part 3) · [Control variable scope and logic using code blocks in C#](https://learn.microsoft.com/en-us/training/modules/csharp-code-blocks/) (Part 3)
-- **Video (C# Fundamentals for Absolute Beginners):** [for Iteration Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/for-iteration-statement/)
+- **Video (C# Fundamentals for Absolute Beginners):** [for Iteration Statement](../learn/videos/for-iteration-statement.md)
 
 </div>
 

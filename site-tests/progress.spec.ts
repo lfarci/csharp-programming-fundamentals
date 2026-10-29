@@ -71,10 +71,18 @@ test('The Microsoft Learn page lists the 6 parts with their themes', async ({ pa
   await expect(page.locator('.steps .theme').first()).toBeVisible()
 })
 
-test('The Videos page lists only the kept episodes, each with themes to practise', async ({ page }) => {
+test('The Videos gallery lists only the kept episodes, and each opens its own page', async ({ page }) => {
   await page.goto('learn/videos')
-  await expect(page.locator('.steps > li')).toHaveCount(13)
-  await expect(page.getByRole('link', { name: 'for Iteration Statement' })).toHaveAttribute('href', /csharp-fundamentals-for-absolute-beginners\/for-iteration-statement/)
+  await expect(page.locator('.gallery li')).toHaveCount(13)
   await expect(page.getByText('Working with LINQ')).toHaveCount(0)
-  for (const li of await page.locator('.steps > li').all()) await expect(li.locator('.theme').first()).toBeVisible()
+  await page.locator('.gallery a', { hasText: 'for Iteration Statement' }).click()
+  await expect(page).toHaveURL(/learn\/videos\/for-iteration-statement/)
+  await expect(page.getByRole('link', { name: 'Watch on Microsoft Learn' })).toHaveAttribute('href', /csharp-fundamentals-for-absolute-beginners\/for-iteration-statement/)
+  await expect(page.getByRole('heading', { name: 'Practise after this' })).toBeVisible()
+})
+
+test('The Learn overview links every theme to a module, a video and its exercises', async ({ page }) => {
+  await page.goto('learn/')
+  await expect(page.locator('.flow .steps > li')).toHaveCount(15)
+  await expect(page.locator('.flow .steps > li').first().locator('a')).toHaveCount(4)
 })

@@ -36,7 +36,7 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 **Learn the theory on Microsoft Learn** ([Part 1: Write your first code using C#](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-1/))
 
 - **Modules:** [Add decision logic to your code in C#](https://learn.microsoft.com/en-us/training/modules/csharp-if-elseif-else/) (Part 1) · [Evaluate Boolean expressions to make decisions in C#](https://learn.microsoft.com/en-us/training/modules/csharp-evaluate-boolean-expressions/) (Part 3) · [Branch the flow of code using the switch-case construct in C#](https://learn.microsoft.com/en-us/training/modules/csharp-switch-case/) (Part 3)
-- **Video (C# Fundamentals for Absolute Beginners):** [The if Decision Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/the-if-decision-statement/) · [Enumerations and the Switch Decision Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/enumerations-and-the-switch-decision-statement/)
+- **Video (C# Fundamentals for Absolute Beginners):** [The if Decision Statement](../learn/videos/the-if-decision-statement.md) · [Enumerations and the Switch Decision Statement](../learn/videos/enumerations-and-the-switch-decision-statement.md)
 - **Reference:** [Selection statements](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements)
 
 </div>

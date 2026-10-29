@@ -45,7 +45,7 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 **Learn the theory on Microsoft Learn** ([Part 3: Add logic to C# console applications](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-3/))
 
 - **Modules:** [Add looping logic to your code using the do-while and while statements in C#](https://learn.microsoft.com/en-us/training/modules/csharp-do-while/) (Part 3) · [Perform basic operations on numbers in C#](https://learn.microsoft.com/en-us/training/modules/csharp-basic-operations/) (Part 1)
-- **Video (C# Fundamentals for Absolute Beginners):** [While Iteration Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/while-iteration-statement/) · [Operators, Expressions, and Statements](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/operators-expressions-and-statements/)
+- **Video (C# Fundamentals for Absolute Beginners):** [While Iteration Statement](../learn/videos/while-iteration-statement.md) · [Operators, Expressions, and Statements](../learn/videos/operators-expressions-and-statements.md)
 
 </div>
 
