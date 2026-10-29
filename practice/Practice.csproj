@@ -15,7 +15,7 @@
 
   <ItemGroup>
     <InternalsVisibleTo Include="Practice.Tests" />
-    <Compile Include="..\tools\ex\Runner.cs" Link="Plumbing\Runner.cs" />
+    <Compile Include="..\internal\tools\ex\Runner.cs" Link="Plumbing\Runner.cs" />
   </ItemGroup>
 
   <!-- ./ex check A04 and ./ex run A04 build only Program.cs + that exercise's file

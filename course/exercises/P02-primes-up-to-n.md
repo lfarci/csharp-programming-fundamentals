@@ -1,0 +1,114 @@
+---
+prev:
+  text: "P01 · Is it prime?"
+  link: /exercises/P01-is-it-prime
+next:
+  text: "M01 · Armstrong number"
+  link: /exercises/M01-armstrong-number
+---
+
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops.md#search-and-combine) › P02
+
+# P02 · All primes up to N
+
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Search and combine** · exercise 7 of 9 in this group (79 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Challenge | hard | write code | [Counter loop](../cookbook/01-counter-loop.md), [Flag/search](../cookbook/05-flag-search.md), [Accumulator](../cookbook/02-accumulator.md) | [P01](P01-is-it-prime.md) |
+
+</div>
+
+## Goal
+
+Read N. Print all prime numbers from 2 to N on one line, then how many there are.
+
+## Start and check
+
+```bash
+./ex start P02     # creates practice/P02_PrimesUpToN.cs (never overwrites your work)
+./ex check P02     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
+
+**Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
+
+## Examples
+
+The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+
+**Example 1** — input: `20`
+
+```text
+2 3 5 7 11 13 17 19
+Count: 8
+```
+
+**Example 2** — input: `2`
+
+```text
+2
+Count: 1
+```
+
+**Example 3** — input: `1`
+
+```text
+Count: 0
+```
+
+## Edge cases to test
+
+- N < 2 → none.
+
+## Rules
+
+- Nested loops: the P01 test inside a counter loop.
+- No LINQ and no ready-made helpers: you write every step yourself.
+
+## Before coding
+
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
+
+## Hints (open one at a time)
+
+<details><summary>Hint 1</summary>
+
+Outer loop: `candidate` from 2 to N.
+
+</details>
+
+<details><summary>Hint 2</summary>
+
+Inner part: copy your P01 code, with `candidate` instead of `n`.
+
+</details>
+
+<details><summary>Hint 3</summary>
+
+The flag must be **reset** for every candidate (declare it inside the outer loop).
+
+</details>
+
+## Mastery check
+
+Solve this variation **alone**, on another day:
+
+Print the first N primes (not the primes up to N).
+
+## Solution
+
+Only after a real try: [open the solution for P02](../../internal/solutions/P02_PrimesUpToN.cs). Your solution can be different and still correct!
+
+---
+
+<div class="gh-only">
+
+Previous: [P01 · Is it prime?](P01-is-it-prime.md) · [Loops](../themes/loops.md) · Next: [M01 · Armstrong number](M01-armstrong-number.md)
+
+</div>

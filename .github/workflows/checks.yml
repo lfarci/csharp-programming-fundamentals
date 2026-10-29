@@ -34,9 +34,9 @@ jobs:
           path: ~/.nuget/packages
           key: nuget-${{ runner.os }}-${{ hashFiles('**/*.csproj') }}
       - name: Run the exercise tests against the reference solutions and the starters
-        run: tools/check-exercises.sh
+        run: internal/tools/check-exercises.sh
       - name: dotnet test works on the reference solutions (IDE Test Explorer path)
-        run: dotnet test tests/Practice.Tests -p:ExerciseProject=$PWD/solutions/Solutions.csproj
+        run: dotnet test internal/tests/Practice.Tests -p:ExerciseProject=$PWD/internal/solutions/Solutions.csproj
 
   generator:
     name: Generated files are up to date
@@ -48,16 +48,18 @@ jobs:
         with:
           python-version: "3.12"
       - name: No emoji in tracked files
-        run: python3 tools/check-no-emoji.py
+        run: python3 internal/tools/check-no-emoji.py
       - name: Re-run the generator
-        run: python3 tools/generator/gen.py
+        run: python3 internal/tools/generator/gen.py
       - name: Fail if generated files changed
         run: |
           git status --short
           git diff --exit-code
           test -z "$(git status --porcelain --untracked-files=all)"
       - name: Course structure (short titles, groups, level order, balance, sidebar)
-        run: python3 tools/check-structure.py
+        run: python3 internal/tools/check-structure.py
+      - name: Repo root has only the allowed entries (README, ./ex, practice/, course/, internal/, tool files)
+        run: python3 internal/tools/check-root.py
 
   diagrams:
     name: Diagrams (D2 sources match the committed SVGs)
@@ -70,7 +72,7 @@ jobs:
           curl -fsSL "https://github.com/terrastruct/d2/releases/download/${D2_VERSION}/d2-${D2_VERSION}-linux-amd64.tar.gz" | tar -xz -C /tmp
           echo "/tmp/d2-${D2_VERSION}/bin" >> "$GITHUB_PATH"
       - name: Render every diagram and compare
-        run: tools/diagrams.sh --check
+        run: internal/tools/diagrams.sh --check
 
   markdownlint:
     name: Markdown lint
@@ -79,6 +81,8 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - uses: DavidAnson/markdownlint-cli2-action@696eb3f2509270d7b882d2aa68347bc676e7af34 # v25.0.0
+        with:
+          config: internal/.markdownlint-cli2.jsonc
 
   links:
     name: Links (internal and external)
@@ -87,7 +91,7 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Internal links and anchors (GitHub heading rules)
-        run: python3 tools/check-links.py
+        run: python3 internal/tools/check-links.py
       - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: .lycheecache
@@ -96,7 +100,7 @@ jobs:
       - name: All links with lychee
         uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
-          args: --config lychee.toml --cache --max-cache-age 1d --root-dir ${{ github.workspace }} --no-progress './**/*.md'
+          args: --config internal/lychee.toml --cache --max-cache-age 1d --root-dir ${{ github.workspace }} --no-progress './**/*.md'
           fail: true
 
   spelling:
@@ -108,4 +112,4 @@ jobs:
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: "22"
-      - run: npx -y "$CSPELL" --no-progress "**/*.md"
+      - run: npx -y "$CSPELL" -c internal/cspell.json --no-progress "**/*.md"

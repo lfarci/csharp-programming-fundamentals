@@ -1,0 +1,20 @@
+# Which loop should I use? Render: internal/tools/diagrams.sh
+...@_style
+direction: down
+
+q1: "Visit every item of an\narray, a list or a string?" {class: ask}
+fe: "foreach\n(only the values)" {class: end}
+fi: "for with i\n(you need the position)" {class: end}
+q2: "Know how many turns\nbefore the loop starts?" {class: ask}
+for: "for" {class: end}
+q3: "Must the body run\nat least once?" {class: ask}
+dw: "do … while" {class: end}
+wh: "while" {class: end}
+
+q1 -> fe: "yes, values only"
+q1 -> fi: "yes, with positions"
+q1 -> q2: no
+q2 -> for: yes
+q2 -> q3: "no, stop when\nsomething happens"
+q3 -> dw: yes
+q3 -> wh: no

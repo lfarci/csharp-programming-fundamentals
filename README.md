@@ -7,7 +7,7 @@ A self-paced companion for a first C# course: small exercises on loops and the b
 
 **Read it on the website: <https://lfarci.github.io/csharp-programming-fundamentals/>** (search, progress ticks, the demo video).
 
-![VS Code demo: ./ex start L11 creates the file in practice/, ./ex check says NOT YET with what was expected and what the code printed, a first loop misses the last number, the fix makes ./ex check say DONE, then ./ex progress and ./ex next.](docs/assets/demo.gif)
+![VS Code demo: ./ex start L11 creates the file in practice/, ./ex check says NOT YET with what was expected and what the code printed, a first loop misses the last number, the fix makes ./ex check say DONE, then ./ex progress and ./ex next.](course/docs/assets/demo.gif)
 
 ## Quick start
 
@@ -18,20 +18,15 @@ cd csharp-programming-fundamentals
 ./ex check         # tests it: every example says OK or NOT YET
 ```
 
-On Windows, type `.\ex` instead of `./ex`. Full setup: [Getting started](docs/getting-started.md).
+On Windows, type `.\ex` instead of `./ex`. Full setup: [Getting started](course/docs/getting-started.md).
 
 ## What is inside
 
-| Folder or page | What it holds |
-| --- | --- |
-| [Roadmap](ROADMAP.md) | The 4 themes and their groups, in order. |
-| [`exercises/`](exercises/README.md) | Every exercise page, grouped by theme and group. |
-| [`cookbook/`](cookbook/README.md) | The 12 loop recipes and [which loop to use](cookbook/which-loop.md). |
-| [`learn/`](learn/README.md) | The theory, from Microsoft Learn (the 6 parts of *Get started with C#*), and extra exercises in the [C# Quest Tracker](https://lfarci.github.io/csharp-quest-tracker/). |
-| [`docs/`](docs/getting-started.md) | Getting started, how to read an exercise, problem solving, glossary. |
-| `practice/` | Your own code (created by `./ex start`, ignored by Git). |
-| `solutions/` | Reference solutions. Look only after a real try. |
-| `tests/`, `tools/` | The tests behind `./ex check`, the generator, the website. |
+| Folder | What it holds | Yours? |
+| --- | --- | --- |
+| [`practice/`](practice/README.md) | **Your code**, one file per exercise (created by `./ex start`, ignored by Git). | Yes, the only folder you edit |
+| [`course/`](course/README.md) | What you read: the [roadmap](course/ROADMAP.md), the [exercises](course/exercises/README.md), [learn](course/learn/README.md) (theory from Microsoft Learn), the [cookbook](course/cookbook/README.md) of loop recipes and the [study skills](course/docs/README.md). | No, read it |
+| [`internal/`](internal/README.md) | Course machinery: the tests behind `./ex check`, the reference solutions, the generator, the website. | No, never needed |
 
 ## Sources
 

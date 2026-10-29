@@ -12,9 +12,9 @@
     },
     "codespaces": {
       "openFiles": [
-        "docs/getting-started.md"
+        "course/docs/getting-started.md"
       ]
     }
   },
-  "postCreateCommand": "dotnet build tests/Practice.Tests && dotnet build tools/ex"
+  "postCreateCommand": "dotnet build internal/tests/Practice.Tests && dotnet build internal/tools/ex"
 }

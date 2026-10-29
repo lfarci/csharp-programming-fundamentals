@@ -1,0 +1,36 @@
+{
+  // practice/ is yours. Everything else is course material: VS Code opens it read-only (a lock in the tab).
+  // Maintainers: "File: Toggle Active Editor Read-only in Session", or set files.readonlyExclude in your user settings.
+  "files.readonlyInclude": {
+    "course/**": true,
+    "internal/**": true,
+    "README.md": true,
+    "ex": true,
+    "ex.cmd": true,
+    "global.json": true,
+    "CSharpFundamentals.sln": true,
+    "practice/Program.cs": true,
+    "practice/Practice.csproj": true,
+    "practice/README.md": true
+  },
+  // Build output and caches: never useful to open.
+  "files.exclude": {
+    "**/bin": true,
+    "**/obj": true,
+    "**/TestResults": true,
+    "**/node_modules": true,
+    "**/test-results": true,
+    "**/playwright-report": true,
+    "internal/site/.vitepress/cache": true,
+    "internal/site/.vitepress/dist": true
+  },
+  "search.exclude": {
+    "internal/tools/starters": true,
+    "internal/solutions": true,
+    "internal/package-lock.json": true
+  },
+  // Folders first, then files: practice/, course/ and internal/ sit together at the top.
+  "explorer.sortOrder": "foldersNestsFiles",
+  // C# Dev Kit: one solution (practice + its tests), so the Test Explorer finds the exercise tests.
+  "dotnet.defaultSolution": "CSharpFundamentals.sln"
+}

@@ -1,0 +1,12 @@
+# Diagram source. Render: internal/tools/diagrams.sh
+...@_style
+direction: right
+
+I0: "[0]\n4" {class: step}
+I1: "[1]\n9" {class: step}
+I2: "[2]\n2" {class: step}
+STOP: "i = 3 = Length\nstop" {class: end}
+
+I0 -> I1
+I1 -> I2
+I2 -> STOP

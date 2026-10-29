@@ -1,0 +1,20 @@
+# Diagram source. Render: internal/tools/diagrams.sh
+...@_style
+direction: down
+
+A: "found = false" {class: step}
+B: "more values\nAND not found?" {class: ask}
+C: "value is\nwhat I search?" {class: ask}
+D: "found = true " {class: step}
+E: "found?" {class: ask}
+F: "print yes" {class: step}
+G: "print no" {class: step}
+
+A -> B
+B -> C: "yes"
+C -> D: "yes"
+C -> B: "no"
+D -> B
+B -> E: "no"
+E -> F: "yes"
+E -> G: "no"
