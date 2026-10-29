@@ -124,7 +124,7 @@ for f_, name, step in FAM:
         pc += [f"- [ ] [{e['id']} · {e['title']}](../exercises/{fname(e)}.md) solved", "  - [ ] mastered (another day, alone)"]
     pc.append("")
 pc += ["## Milestones", "", "- [ ] I can trace a loop on paper (L01, L02).", "- [ ] I can solve factorial, Fibonacci and Armstrong from a blank file.",
-       "- [ ] I can explain every line of my code to someone else.", ""]
+       "- [ ] I can explain every line of my code to someone else.", "", "---", "", "⬅️ [Home](../README.md) · 📚 [All exercises](../exercises/README.md)", ""]
 open(f"{ROOT}/docs/progress-checklist.md","w").write("\n".join(pc))
 
 # ---------- dependency graph ----------
@@ -145,5 +145,6 @@ loopids = [e["id"] for e in E if e["id"][0] in "LADSPMG"]
 g += graph(loopids, "Loops: from counting to Armstrong (step 4)")
 g += graph([e["id"] for e in E if e["id"][0] in "BC"] + ["L01","L03"], "Before loops (steps 1–3)")
 g += graph([e["id"] for e in E if e["id"][0] in "RTFEKN"] + ["A01","A02","C02","L05","L07","M02"], "After loops (steps 5–10)")
+g += ["---", "", "⬅️ [All exercises](README.md) · 🗺️ [Roadmap](../ROADMAP.md)", ""]
 open(f"{ROOT}/exercises/dependency-graph.md","w").write("\n".join(g))
 print("generated", len(E), "exercises,", len(tests), "tests")

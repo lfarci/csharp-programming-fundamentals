@@ -17,3 +17,7 @@ Or open `practice/Practice.csproj` in Visual Studio / VS Code / Rider and press 
 - Done? Copy your code to `practice/done/<ID>.cs.txt` (the `.txt` keeps it out of the build), then compare with [`solutions/`](../solutions/README.md).
 
 **.NET 10 bonus:** you can also run a single file without a project: `dotnet run hello.cs` ([file-based apps](https://learn.microsoft.com/en-us/dotnet/core/sdk/file-based-apps)).
+
+---
+
+⬅️ [Home](../README.md) · [Getting started](../docs/getting-started.md) · 📚 [All exercises](../exercises/README.md)

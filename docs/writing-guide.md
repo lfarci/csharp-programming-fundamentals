@@ -55,3 +55,7 @@ How we write for a **struggling beginner**. Every rule below comes from a source
 12. Mermaid, *Accessibility options.* <https://mermaid.js.org/config/accessibility.html>
 13. GitHub Docs, *Creating diagrams for GitHub Docs.* <https://docs.github.com/en/contributing/writing-for-github-docs/creating-diagrams-for-github-docs>
 14. GitHub Docs, *Style guide.* <https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide>
+
+---
+
+⬅️ [Home](../README.md) · [AGENTS.md](../AGENTS.md)

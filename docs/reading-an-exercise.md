@@ -77,7 +77,7 @@ Some words are clues. They tell you which [cookbook](../cookbook/README.md) reci
 
 | Question | Why it matters |
 | --- | --- |
-| 🧠 **What do I remember between iterations?** | These are your variables declared **before** the loop (total, count, best, previous…). |
+| 🧠 **What do I remember between two turns of the loop?** | These are your variables declared **before** the loop (total, count, best, previous…). |
 | 🛑 **When does the loop stop?** | This is your loop condition. Check the last value: `<` or `<=`? |
 | 🔁 **What changes each time?** | Something must move toward the end (`i++`, `n /= 10`, a new input…), or the loop never stops. |
 
@@ -113,7 +113,7 @@ Copy this into a file (for example `practice/notes.md`) or onto paper, and fill 
 |  |  |  |
 
 ## 6. Guiding questions
-- What do I remember between iterations?
+- What do I remember between two turns of the loop?
 - When does the loop stop?
 - What changes each time?
 

@@ -166,3 +166,7 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
 - [ ] I can trace a loop on paper (L01, L02).
 - [ ] I can solve factorial, Fibonacci and Armstrong from a blank file.
 - [ ] I can explain every line of my code to someone else.
+
+---
+
+⬅️ [Home](../README.md) · 📚 [All exercises](../exercises/README.md)

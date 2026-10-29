@@ -130,3 +130,7 @@ Counter loop 1..999 + filter `i % 3 == 0 || i % 5 == 0` + sum = [recipe 3](03-co
 3. Code and test **one block at a time** (print intermediate values!).
 4. Glue the blocks. Re-test with the tiny example.
 5. Later (week 10): turn each block into a **method**.
+
+---
+
+⬅️ [Recipe 12 · Build a string](12-string-building.md) · 🍳 [Cookbook](README.md) · Next: [Exercises](../exercises/README.md) ➡️

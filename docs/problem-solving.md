@@ -6,42 +6,44 @@ An algorithm is a precise sequence of steps. You can design and test it on paper
 
 > 🔎 Short on time? The practical, step-by-step version (trigger words → recipes, worksheet, unstuck techniques, worked Armstrong example) is [How to read an exercise](reading-an-exercise.md). This page explains the *why* in more depth.
 
-## 1. Read for a contract
+## 1. Read to find what goes in and what comes out
 
-Read once for the story, then again for the rules. Underline the **input**, circle the **required result**, and list constraints and boundary words: “each”, “only”, “until”, “inclusive”, “at least”. Do not choose a loop just because the statement contains “each”.
+Read once for the story. Then read again for the rules. Underline the **input**. Circle the **result** you must give. List the small words that change everything: “each”, “only”, “until”, “inclusive”, “at least”.
+
+Careful: the word “each” does not always mean a loop.
 
 Example: **Given a list of prices, report how many prices are above 10 and their total.**
 
 | Question | Answer |
 | --- | --- |
 | What do I receive? | A list of prices |
-| What must I produce? | Two numbers: qualifying count and qualifying total |
+| What must I produce? | Two numbers: how many prices are above 10, and their total |
 | Which prices qualify? | Strictly greater than 10; 10 does not qualify |
-| What is unclear? | Currency/rounding and allowed prices; clarify if the assignment needs them |
+| What is unclear? | Euros or cents? Can a price be negative? Ask if the exercise does not say. |
 | What if none qualify? | Count 0, total 0 |
 
-Restate the task in your own words. Distinguish a total from a count, and a final result from intermediate output.
+Say the task in your own words. Is the answer a **count** (how many) or a **total** (added up)? Is it printed once at the end, or on every turn?
 
 ## 2. Solve a tiny example by hand
 
-Use prices 8, 12, 10, 15. Select 12 and 15. There are **2** qualifying prices and their total is **27**. Write this prediction before any code.
+Use prices 8, 12, 10, 15. Keep 12 and 15. That is **2** prices, and their total is **27**. Write this answer down before any code.
 
-Ask: “What did I do, and what did I need to remember?” Here: inspect a price, compare it with 10, keep a count and a total. The same algorithm should work for other lists.
+Ask: “What did I do, and what did I need to remember?” Here: look at a price, compare it with 10, keep a count and a total. The same algorithm should work for other lists.
 
-## 3. Break the problem into responsibilities
+## 3. Cut the problem into small jobs
 
-| Small problem | Rule | Information to remember |
+| Small job | Rule | What to remember |
 | --- | --- | --- |
 | Decide whether to include a price | price > 10 | Current price |
 | Count included prices | Add 1 for each match | count, initially 0 |
 | Add included prices | Add the price for each match | total, initially 0 |
 | Know when finished | No unvisited prices remain | Position in the list |
 
-These are reasoning steps; each one does not need its own method or loop. Count and total can share one traversal. Start with fixed inputs; input parsing can be added after the algorithm works.
+These are thinking steps. Each job does **not** need its own loop: count and total can share one loop. Start with fixed values in the code. Add reading from the keyboard once the idea works.
 
-## 4. Draw the decisions and repetition
+## 4. Draw the choices and the repeats
 
-Use a rounded box for start/end, a rectangle for an action, a diamond for a yes/no question, and a parallelogram for input/output. Label both decision exits. Every repeated path must return to a test, and something must make progress toward stopping.
+Shapes: rounded box = start or end. Rectangle = an action. Diamond = a yes/no question. Slanted box = input or output. Write “yes” and “no” on the two arrows of each question. Every repeat must go back to a question, and something must move toward the end.
 
 ```mermaid
 flowchart TD
@@ -59,9 +61,9 @@ flowchart TD
     O --> Z([End])
 ```
 
-The diagram describes the algorithm, not C# syntax. A straight calculation needs only actions; a choice needs a decision; repetition needs a returning path. Not every exercise needs a loop.
+The diagram shows the idea, not C# code. A simple calculation only needs actions. A choice needs a question. A repeat needs an arrow going back. Not every exercise needs a loop.
 
-## 5. Write language-independent steps
+## 5. Write the steps in plain words
 
 ```text
 count ← 0
@@ -73,49 +75,49 @@ for each price:
 report count and total
 ```
 
-Here ← means “replace the stored value”. Explain every step out loud, including what happens when the condition is false.
+Here ← means “put a new value in the box”. Explain every step out loud, also what happens when the answer to the `if` is no.
 
-## 6. Trace the algorithm as a machine would
+## 6. Trace the steps like a computer
 
-Follow the steps literally. Do not silently fix them because you know the intended answer.
+Follow the steps exactly as written. Do not fix them in your head because you know the answer.
 
 | Step | Current price | price > 10? | count before → after | total before → after |
 | --- | ---: | --- | --- | --- |
-| Initialization | — | — | — → 0 | — → 0 |
+| Start | — | — | — → 0 | — → 0 |
 | 1 | 8 | No | 0 → 0 | 0 → 0 |
 | 2 | 12 | Yes | 0 → 1 | 0 → 12 |
 | 3 | 10 | No | 1 → 1 | 12 → 12 |
 | 4 | 15 | Yes | 1 → 2 | 12 → 27 |
 | Finish | No items left | — | 2 → 2 | 27 → 27 |
 
-**Meaning to preserve:** after each step, count and total describe only the qualifying prices already visited. This is an invariant: a sentence that remains true while the algorithm runs.
+**A sentence that stays true:** after each step, count and total are about the prices above 10 **seen so far**. If you can say such a sentence, you understand your loop.
 
-For a general trace, include every value that can change, the result of each decision, and any output produced. Record initialization and the final failed loop test. For several assignments in a row, use one row per assignment if update order is confusing.
+In any trace, write every value that can change, the answer to each question, and what is printed. Write the start values, and the last test that stops the loop. Confused by the order of updates? Use one row per line of code.
 
 ## 7. Check boundaries, then write the C# code
 
 | Input | Expected count | Expected total | What it checks |
 | --- | ---: | ---: | --- |
-| Empty list | 0 | 0 | No iterations |
-| 8, 10 | 0 | 0 | No matches and strict boundary |
+| Empty list | 0 | 0 | The loop runs 0 times |
+| 8, 10 | 0 | 0 | No match; 10 is not “above 10” |
 | 12 | 1 | 12 | One match |
 | 12, 15 | 2 | 27 | All match |
 
-Only now choose C# variables and syntax. Trace the code on the same input and compare it with your paper algorithm. If they disagree, locate the **first** differing step.
+Only now write C#. Trace your code on the same input and compare with your paper. If they differ, find the **first** step where they differ.
 
 ## A reusable worksheet
 
 Copy these prompts onto paper for any exercise. A fill-in markdown version is in [How to read an exercise § 4](reading-an-exercise.md#4-the-worksheet-copy-it).
 
 1. In my own words, the task is…
-2. Inputs, outputs, constraints, and unclear points…
+2. What goes in, what comes out, the rules, what is unclear…
 3. A tiny example and its expected answer…
-4. The smaller responsibilities…
-5. What I must remember, and its initial value…
-6. Steps or a diagram, with decisions and stopping rules…
-7. A trace, including initialization and termination…
+4. The small jobs…
+5. What I must remember, and its start value…
+6. Steps or a diagram, with the questions and when it stops…
+7. A trace, from the start values to the last test…
 8. Boundary examples…
-9. C# translation, then comparison with the prediction…
+9. The C# code, then a check against my paper answer…
 
 ## Practice without syntax
 
@@ -124,6 +126,10 @@ Copy these prompts onto paper for any exercise. A fill-in markdown version is in
 - Use the worked price example, then change “above 10” to “at least 10”. Predict which trace row changes before recalculating.
 - Design a way to count spaces in a short text using the [string model](../cookbook/12-string-building.md). Write the trace before code.
 
-## Guidance for the helper
+## For the coach
 
-Ask one question at a time: “What must the result contain?”, “Show me with three items”, “What do you need to remember?”, “What changes here?”, “Why does it stop?” Let the learner draw and explain. If she is stuck, shrink the example or isolate one responsibility before supplying a solution.
+See [the 5 questions when she is stuck](how-to-practice.md#for-the-coach-5-questions-when-she-is-stuck).
+
+---
+
+⬅️ [How to read an exercise](reading-an-exercise.md) · [How to practice](how-to-practice.md) ➡️

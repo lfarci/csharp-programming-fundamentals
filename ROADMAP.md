@@ -233,7 +233,7 @@ These are good defaults, not laws. Every `for` can be written as a `while`.
 
 ## 5. Catch-up plan (29 Oct – 10 Nov)
 
-About **30–45 minutes per session**. Move on only when the "ready" check works *without help*. Repeating a session is normal.
+About **40 minutes per session**. Move on only when the "ready" check works *without help*. Repeating a session is normal.
 
 | # | When | Focus | Recipes | Do these |
 | --- | --- | --- | --- | --- |
@@ -249,7 +249,7 @@ About **30–45 minutes per session**. Move on only when the "ready" check works
 | 10 | Mon 9/11 | Arrays with the same recipes | array traversal | [R01](exercises/R01-sum-an-array.md), [R02](exercises/R02-largest-in-an-array.md), [R03](exercises/R03-count-matches.md) |
 | 11 | Tue 10/11 | Mini test (no hints) | mixed | one of [D06](exercises/D06-palindrome-number.md) / [P01](exercises/P01-is-it-prime.md) / [S03](exercises/S03-even-fibonacci-sum.md), chosen by the coach |
 
-Session shape: **5 min** recall · **10 min** paper trace · **20 min** code alone · **5 min** explain. See [How to practice](docs/how-to-practice.md).
+How to run one session: see [How to practice](docs/how-to-practice.md#a-session).
 
 ## 6. Shortcuts to the teacher's problems
 
@@ -292,3 +292,7 @@ The goal is to practise *programming*, not to guess maths. Always write the defi
 - Project Euler: [#1](https://projecteuler.net/problem=1), [#6](https://projecteuler.net/problem=6), [#2](https://projecteuler.net/problem=2), [#4](https://projecteuler.net/problem=4), [#5](https://projecteuler.net/problem=5) — milestones, not daily homework.
 
 Not in this path (yet): LINQ, recursion, inheritance details, async. They come later, when the course needs them.
+
+---
+
+⬅️ [Home](README.md) · Next: [Getting started](docs/getting-started.md) ➡️

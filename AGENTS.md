@@ -25,7 +25,8 @@ Deeper reference, reached only when the branch fires:
 - **Hints** in `<details>`, smallest nudge first; Guided exercises carry at least 2. Every exercise has a **mastery check** (a new variation, alone, another day).
 - **Solutions separate**: exercise pages link to `solutions/` only at the bottom.
 - **The book** (*The C# Player's Guide*, 5th ed.) is a **parallel reading track**: name the level to read beside a roadmap step. Its challenges stay out of exercise lists, recipe mini-exercises and plans.
-- **Plain English**: short sentences, "you", common words, concrete numbers; new words go to `docs/glossary.md`. She knows basic Git (clone, pull, commit, push): use it without explaining it, and keep CI, generator and agent detail here and in `CONTRIBUTING.md`.
+- **One home per meaning**: the session shape and coach questions live in `docs/how-to-practice.md`, check commands in this file; other pages link there.
+- **Plain English**: short sentences, "you", common words, concrete numbers; new words go to `docs/glossary.md`. Swap academic words for plain ones: *turn* (iteration), *start value* (initialization), *small job* (responsibility), *a sentence that stays true* (invariant). She knows basic Git (clone, pull, commit, push): use it without explaining it, and keep CI, generator and agent detail here and in `CONTRIBUTING.md`.
 - **Accessible**: alt text on images, `accTitle` + `accDescr` on every Mermaid diagram, meaning never in colour or emoji alone, descriptive link text, headings in order.
 - **Navigation**: every page opens with a breadcrumb (`🏠 Home › …`) and ends with Previous/Next or Back links.
 
