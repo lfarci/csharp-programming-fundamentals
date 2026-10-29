@@ -28,7 +28,15 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 - **C#:** `bool` flags; `break`.
 - **Recipes:** [Flag/search](../cookbook/05-flag-search.md)
-- **Book (optional):** *The C# Player's Guide*, Level 11.
+
+<div class="learn-box">
+
+**Learn the theory** (before or beside the exercises)
+
+- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 11: Looping
+- **Microsoft Learn:** [Add looping logic to your code using the do-while and while statements in C#](https://learn.microsoft.com/en-us/training/modules/csharp-do-while/)
+
+</div>
 
 ## Ready for the next theme when
 

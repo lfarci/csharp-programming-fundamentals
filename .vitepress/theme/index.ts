@@ -5,13 +5,20 @@ import ProgressPage from './ProgressPage.vue'
 import ThemeExercises from './ThemeExercises.vue'
 import ExercisesOverview from './ExercisesOverview.vue'
 import RoadmapPath from './RoadmapPath.vue'
+import ProgressSummary from './ProgressSummary.vue'
+import LearnCards from './LearnCards.vue'
+import BuyBook from './BuyBook.vue'
+import HomeVideo from './HomeVideo.vue'
 import './custom.css'
 
 export default {
   extends: DefaultTheme,
-  Layout: () => h(DefaultTheme.Layout, null, { 'doc-before': () => h(MarkDone) }),
+  Layout: () => h(DefaultTheme.Layout, null, { 'doc-before': () => h(MarkDone), 'home-features-before': () => h(HomeVideo) }),
   enhanceApp({ app }) { app.component('ProgressPage', ProgressPage)
     app.component('ThemeExercises', ThemeExercises)
     app.component('ExercisesOverview', ExercisesOverview)
-    app.component('RoadmapPath', RoadmapPath) },
+    app.component('RoadmapPath', RoadmapPath)
+    app.component('ProgressSummary', ProgressSummary)
+    app.component('LearnCards', LearnCards)
+    app.component('BuyBook', BuyBook) },
 }

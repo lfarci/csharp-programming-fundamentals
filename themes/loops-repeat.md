@@ -44,8 +44,17 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 - **C#:** `for`, `while`, `do … while`, `break`; tracing a loop.
 - **Recipes:** [Counter loop](../cookbook/01-counter-loop.md), [Input validation](../cookbook/09-input-validation.md), [Sentinel loop](../cookbook/10-sentinel-loop.md)
-- **Book (optional):** *The C# Player's Guide*, Level 11.
-- **Microsoft docs:** [Iteration statements](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements)
+
+<div class="learn-box">
+
+**Learn the theory** (before or beside the exercises)
+
+- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 11: Looping
+- **Microsoft Learn:** [Iterate through a code block using for statement in C#](https://learn.microsoft.com/en-us/training/modules/csharp-for/) · [Add looping logic to your code using the do-while and while statements in C#](https://learn.microsoft.com/en-us/training/modules/csharp-do-while/)
+- **Video:** [Branching and While Loops](https://learn.microsoft.com/en-us/shows/csharp-for-beginners/branching-and-while-loops-csharp-for-beginners/) · [For Loops](https://learn.microsoft.com/en-us/shows/csharp-for-beginners/for-loops-csharp-for-beginners/)
+- **Reference:** [Iteration statements](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements)
+
+</div>
 
 ## Ready for the next theme when
 

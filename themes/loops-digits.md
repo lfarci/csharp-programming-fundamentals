@@ -39,7 +39,15 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 - **C#:** `while (n > 0)`; `% 10` and `/ 10`.
 - **Recipes:** [Digit extraction](../cookbook/06-digit-extraction.md)
-- **Book (optional):** *The C# Player's Guide*, Level 11.
+
+<div class="learn-box">
+
+**Learn the theory** (before or beside the exercises)
+
+- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 7: Math, Level 11: Looping
+- **Microsoft Learn:** [Perform basic operations on numbers in C#](https://learn.microsoft.com/en-us/training/modules/csharp-basic-operations/)
+
+</div>
 
 ## Ready for the next theme when
 

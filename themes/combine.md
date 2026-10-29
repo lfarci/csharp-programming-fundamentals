@@ -28,7 +28,15 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 - **C#:** how recipes fit together.
 - **Recipes:** [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md)
-- **Book (optional):** *The C# Player's Guide*, Level 11.
+
+<div class="learn-box">
+
+**Learn the theory** (before or beside the exercises)
+
+- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 11: Looping
+- **Microsoft Learn:** [Guided project - Develop conditional branching and looping structures in C#](https://learn.microsoft.com/en-us/training/modules/guided-project-develop-conditional-branching-looping/)
+
+</div>
 
 ## Ready for the next theme when
 

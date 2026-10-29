@@ -31,30 +31,21 @@ features:
     details: "./ex start opens your file, ./ex check runs the tests and tells you, in plain words, what is still wrong."
     link: /docs/getting-started#check-your-work
     linkText: How it works
+  - title: Learn the theory
+    details: "The theory comes from great existing resources: the book The C# Player's Guide and the free Microsoft Learn modules and videos. Each theme says what to read."
+    link: /learn/
+    linkText: Learn
   - title: Your progress
-    details: Tick exercises as you finish them. See what is done in each theme, and copy your results from the terminal.
+    details: Tick exercises as you finish them, see each theme fill up, and copy your results from the terminal.
     link: /progress
     linkText: My progress
-  - title: Read an exercise
-    details: A simple template to understand a problem before you write any code.
-    link: /docs/reading-an-exercise
-    linkText: The template
-  - title: A glossary
-    details: Every new word, explained in plain language with a tiny example.
-    link: /docs/glossary
-    linkText: The glossary
+  - title: Extra exercises
+    details: "Want more? Do the book's own challenges and track them, with XP and levels, in the C# Quest Tracker."
+    link: /learn/quest-tracker
+    linkText: Extra exercises
 ---
 
 <!-- Website home page. The GitHub front page is README.md: keep the two separate. -->
-
-## See it in action
-
-You write the code in VS Code. The checker tells you what is wrong, then says DONE.
-
-<video class="home-video" controls muted playsinline preload="metadata" poster="/vscode-demo-poster.jpg" aria-label="Demo in VS Code: start an exercise, see the check fail with a clear message, fix the loop, see DONE.">
-  <source src="/vscode-demo.mp4" type="video/mp4">
-  Your browser cannot play this video. It shows VS Code: ./ex start creates the file, ./ex check says NOT YET, a small fix to the loop, then DONE.
-</video>
 
 ## How it works
 
@@ -69,6 +60,7 @@ You write the code in VS Code. The checker tells you what is wrong, then says DO
 | [Cookbook](cookbook/README.md) | The loop recipes, and which loop to use. |
 | [How to read an exercise](docs/reading-an-exercise.md) | A template to organise your ideas before coding. |
 | [Solving a problem](docs/problem-solving.md) | What an algorithm is, and how to find one. |
+| [Learn](learn/README.md) | The theory: the book, Microsoft Learn, and extra exercises. |
 | [Glossary](docs/glossary.md) | The words of programming, in plain language. |
 
 The website does not run C#. Your code runs on your own computer, in your copy of the course. [Getting started](docs/getting-started.md) shows how to set it up in about 15 minutes.

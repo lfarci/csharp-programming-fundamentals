@@ -16,7 +16,7 @@
 .VPNavBarTitle .title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 /* Diagrams: centered, never wider than the text, light card in dark mode too. */
 .vp-doc img[src$=".svg"] { display: block; margin: 16px auto; max-width: 100%; max-height: 520px; width: auto; height: auto; background: #fff; border-radius: 10px; padding: 8px; border: 1px solid var(--vp-c-divider); }
-.home-video { width: 100%; border-radius: 12px; border: 1px solid var(--vp-c-divider); box-shadow: 0 8px 30px rgba(0,0,0,.08); }
+
 .home-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 16px 0; }
 .home-grid .card { border: 1px solid var(--vp-c-divider); border-radius: 12px; padding: 16px; background: var(--vp-c-bg-soft); }
 .home-grid .card h3 { margin: 0 0 6px; font-size: 17px; }
@@ -30,3 +30,27 @@
 .VPHero .image-src { position: static; transform: none; max-width: 100%; max-height: none; border-radius: 12px; border: 1px solid var(--vp-c-divider); box-shadow: 0 12px 40px rgba(0,0,0,.12); }
 @media (min-width: 960px) { .VPHero .image { margin-top: 0; } }
 @media (max-width: 959px) { .VPHero .image { display: none !important; } }
+
+/* ---- Design system: the Roadmap look is the reference (numbered dot, card, thin bar, one blue). ---- */
+.cpf-card { display: block; border: 1px solid var(--vp-c-divider); border-radius: 12px; padding: 12px 16px; background: var(--vp-c-bg); }
+a.cpf-link { text-decoration: none !important; color: inherit !important; transition: border-color .2s, box-shadow .2s; }
+a.cpf-link:hover { border-color: var(--vp-c-brand-1); box-shadow: 0 4px 16px rgba(52, 81, 178, .10); }
+.cpf-num { flex: none; width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--vp-c-brand-1); background: var(--vp-c-bg); color: var(--vp-c-brand-1);
+  font-weight: 700; font-size: 14px; display: inline-flex; align-items: center; justify-content: center; }
+.cpf-num.on { background: var(--vp-c-brand-1); color: #fff; }
+.cpf-bar { display: block; height: 6px; border-radius: 3px; background: var(--vp-c-default-soft); overflow: hidden; }
+.cpf-bar.thick { height: 10px; border-radius: 5px; }
+.cpf-bar > span { display: block; height: 100%; background: var(--vp-c-brand-1); transition: width .3s; }
+.cpf-kicker { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--vp-c-brand-1); }
+.cpf-button { display: inline-block; background: var(--vp-c-brand-1); color: #fff !important; text-decoration: none !important; border-radius: 20px; padding: 6px 16px; font-weight: 600; font-size: 14px; }
+.cpf-button:hover { background: var(--vp-c-brand-2); }
+.dark .cpf-button { color: #1b1b1f !important; }
+/* "Learn the theory" box on theme pages (plain Markdown inside a div, so it also reads on GitHub). */
+.vp-doc .learn-box { border: 1px solid var(--vp-c-divider); border-left: 4px solid var(--vp-c-brand-1); border-radius: 12px; padding: 4px 18px; margin: 20px 0; background: var(--vp-c-bg-soft); }
+.vp-doc .learn-box ul { padding-left: 18px; }
+/* Home: feature cards in the same card style. */
+.VPFeatures .VPFeature { background: var(--vp-c-bg) !important; border: 1px solid var(--vp-c-divider); border-radius: 12px; transition: border-color .2s, box-shadow .2s; }
+.VPFeatures .VPLink:hover .VPFeature { border-color: var(--vp-c-brand-1); box-shadow: 0 4px 16px rgba(52, 81, 178, .10); }
+.VPFeatures .VPFeature .title { font-size: 16px; }
+/* Navbar logo. */
+.VPNavBarTitle .logo { height: 26px; width: 26px; margin-right: 10px; }

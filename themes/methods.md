@@ -26,8 +26,16 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 ## What to learn
 
 - **C#:** parameters, `return`, `void`.
-- **Book (optional):** *The C# Player's Guide*, Level 13.
-- **Microsoft docs:** [Methods](https://learn.microsoft.com/en-us/dotnet/csharp/methods)
+
+<div class="learn-box">
+
+**Learn the theory** (before or beside the exercises)
+
+- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 13: Methods
+- **Microsoft Learn:** [Write your first C# method](https://learn.microsoft.com/en-us/training/modules/write-first-c-sharp-method/) · [Create C# methods with parameters](https://learn.microsoft.com/en-us/training/modules/create-c-sharp-methods-parameters/) · [Create C# methods that return values](https://learn.microsoft.com/en-us/training/modules/create-c-sharp-methods-return-values/)
+- **Reference:** [Methods](https://learn.microsoft.com/en-us/dotnet/csharp/methods)
+
+</div>
 
 ## Ready for the next theme when
 

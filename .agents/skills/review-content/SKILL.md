@@ -14,6 +14,8 @@ A **pass** reads every learner page against the rubric in `AGENTS.md` and `docs/
    - *format drift*: a page that leaves the exercise or recipe format in `AGENTS.md` (recipes: all 6 lesson steps, in order, predict and trace on the same code);
    - *persona*: a page that assumes more than [the persona](../../../docs/learner-persona.md) knows in that theme, or a theme without objectives;
    - *vocabulary and weeks*: the word "step" for a theme, week numbers, dates or catch-up plans; a new term missing from the glossary; a page covering two topics;
+   - *visual identity*: a component or page that leaves the Roadmap look (`cpf-*` classes in `custom.css`) or adds a second accent colour;
+   - *Learn section*: a theme missing from `tools/generator/learn.py`, an outside link that no longer returns 200, a book level name not from the official table of contents, copied book text or challenges, or an invented affiliate ID;
    - *thin drill*: a recipe whose `DRILLS` row has fewer than 5 exercises, or a drill that changes more than one thing from its neighbour;
    - *no retrieval*: a new recipe without predict, complete-it or debugging practice;
    - *plain-language*: long sentences, jargon not in the glossary, Git words on learner pages;
