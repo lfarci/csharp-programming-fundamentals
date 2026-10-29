@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: draw in 2D](../themes/loops-2d.md) › G05
+---
+prev:
+  text: "G13 · Diagonal"
+  link: /exercises/G13-diagonal
+next:
+  text: "G06 · Pyramid"
+  link: /exercises/G06-pyramid
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw shapes](../themes/loops.md#draw-shapes) › G05
 
 # G05 · Checkerboard
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Challenge | medium | [Loops: draw in 2D](../themes/loops-2d.md) | [Nested grid](../cookbook/08-nested-grid.md) | [G04](G04-hollow-rectangle.md), [C01](C01-even-or-odd.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Draw shapes** · exercise 7 of 8 in this group (54 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Challenge | medium | write code | [Nested grid](../cookbook/08-nested-grid.md) | [G04](G04-hollow-rectangle.md), [C01](C01-even-or-odd.md) |
+
+</div>
 
 ## Goal
 
@@ -71,4 +88,8 @@ Only after a real try: [open the solution for G05](../solutions/G05_Checkerboard
 
 ---
 
-Previous: [G13 · Diagonal](G13-diagonal.md) · [All exercises](README.md) · Next: [G06 · Pyramid](G06-pyramid.md)
+<div class="gh-only">
+
+Previous: [G13 · Diagonal](G13-diagonal.md) · [Loops](../themes/loops.md) · Next: [G06 · Pyramid](G06-pyramid.md)
+
+</div>

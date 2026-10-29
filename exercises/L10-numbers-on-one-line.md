@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: draw in 2D](../themes/loops-2d.md) › L10
+---
+prev:
+  text: "L09 · Draw one row"
+  link: /exercises/L09-draw-a-row
+next:
+  text: "G07 · Arrange: a square"
+  link: /exercises/G07-arrange-a-square
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw rows and grids](../themes/loops.md#draw-rows-and-grids) › L10
 
 # L10 · Numbers on one line
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: draw in 2D](../themes/loops-2d.md) | [Counter loop](../cookbook/01-counter-loop.md), [Nested grid](../cookbook/08-nested-grid.md) | [L09](L09-draw-a-row.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Draw rows and grids** · exercise 2 of 8 in this group (41 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Counter loop](../cookbook/01-counter-loop.md), [Nested grid](../cookbook/08-nested-grid.md) | [L09](L09-draw-a-row.md) |
+
+</div>
 
 ## Goal
 
@@ -79,4 +96,8 @@ Only after a real try: [open the solution for L10](../solutions/L10_NumbersOnOne
 
 ---
 
-Previous: [L09 · Draw one row](L09-draw-a-row.md) · [All exercises](README.md) · Next: [G07 · Arrange the lines: a square](G07-arrange-a-square.md)
+<div class="gh-only">
+
+Previous: [L09 · Draw one row](L09-draw-a-row.md) · [Loops](../themes/loops.md) · Next: [G07 · Arrange: a square](G07-arrange-a-square.md)
+
+</div>

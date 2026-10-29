@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: repeat and count](../themes/loops-repeat.md) › L18
+---
+prev:
+  text: "L17 · Count down by 2"
+  link: /exercises/L17-count-down-by-2
+next:
+  text: "L15 · Count by any step"
+  link: /exercises/L15-count-by-step
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L18
 
 # L18 · Square numbers
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: repeat and count](../themes/loops-repeat.md) | [Counter loop](../cookbook/01-counter-loop.md) | [L11](L11-count-from-a-to-b.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Count** · exercise 11 of 13 in this group (11 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Counter loop](../cookbook/01-counter-loop.md) | [L11](L11-count-from-a-to-b.md) |
+
+</div>
 
 ## Goal
 
@@ -71,4 +88,8 @@ Only after a real try: [open the solution for L18](../solutions/L18_Squares.cs).
 
 ---
 
-Previous: [L17 · Count down by 2](L17-count-down-by-2.md) · [All exercises](README.md) · Next: [L19 · Count the turns](L19-count-the-turns.md)
+<div class="gh-only">
+
+Previous: [L17 · Count down by 2](L17-count-down-by-2.md) · [Loops](../themes/loops.md) · Next: [L15 · Count by any step](L15-count-by-step.md)
+
+</div>

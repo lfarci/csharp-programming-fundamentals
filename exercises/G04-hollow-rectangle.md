@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: draw in 2D](../themes/loops-2d.md) › G04
+---
+prev:
+  text: "G12 · Upside-down triangle"
+  link: /exercises/G12-upside-down-triangle
+next:
+  text: "G13 · Diagonal"
+  link: /exercises/G13-diagonal
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw shapes](../themes/loops.md#draw-shapes) › G04
 
 # G04 · Hollow rectangle
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: draw in 2D](../themes/loops-2d.md) | [Nested grid](../cookbook/08-nested-grid.md) | [G01](G01-rectangle.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Draw shapes** · exercise 5 of 8 in this group (52 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [Nested grid](../cookbook/08-nested-grid.md) | [G01](G01-rectangle.md) |
+
+</div>
 
 ## Goal
 
@@ -71,4 +88,8 @@ Only after a real try: [open the solution for G04](../solutions/G04_HollowRectan
 
 ---
 
-Previous: [G03 · Multiplication grid](G03-multiplication-grid.md) · [All exercises](README.md) · Next: [G13 · Diagonal](G13-diagonal.md)
+<div class="gh-only">
+
+Previous: [G12 · Upside-down triangle](G12-upside-down-triangle.md) · [Loops](../themes/loops.md) · Next: [G13 · Diagonal](G13-diagonal.md)
+
+</div>

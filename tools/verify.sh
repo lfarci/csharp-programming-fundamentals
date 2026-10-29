@@ -9,10 +9,10 @@ step() { echo; echo "== $1"; shift; "$@" || status=1; }
 regen() {
   # Run the generator on a copy, then compare with the working tree.
   local tmp; tmp=$(mktemp -d)
-  cp -r tools exercises solutions docs tests themes learn diagrams ROADMAP.md .vitepress "$tmp"/
+  cp -r tools exercises solutions docs tests themes learn diagrams cookbook ROADMAP.md .vitepress "$tmp"/
   python3 "$tmp/tools/generator/gen.py" >/dev/null || return 1
   local bad=0
-  for p in exercises solutions themes learn ROADMAP.md diagrams/roadmap.d2 docs/progress-checklist.md tools/starters tools/exercises.json tests/Practice.Tests/Exercises .vitepress/course.json; do
+  for p in exercises solutions themes learn ROADMAP.md diagrams/roadmap.d2 docs/progress-checklist.md docs/README.md tools/starters tools/exercises.json tests/Practice.Tests/Exercises .vitepress/course.json; do
     diff -r -x bin -x obj "$tmp/$p" "$p" >/dev/null || { echo "FAIL: $p differs from generator output"; bad=1; }
   done
   [ $bad = 0 ] && echo "OK: generator output identical to the files" ||
@@ -20,6 +20,7 @@ regen() {
 }
 
 step "Generator in sync" regen
+step "Course structure (titles, groups, levels, balance, sidebar)" python3 tools/check-structure.py
 step "Exercises: solutions pass, starters compile, ./ex works" tools/check-exercises.sh
 step "No emoji" python3 tools/check-no-emoji.py
 step "Links (internal)" python3 tools/check-links.py

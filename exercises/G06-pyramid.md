@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: draw in 2D](../themes/loops-2d.md) › G06
+---
+prev:
+  text: "G05 · Checkerboard"
+  link: /exercises/G05-checkerboard
+next:
+  text: "D01 · Last digit"
+  link: /exercises/D01-last-digit
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw shapes](../themes/loops.md#draw-shapes) › G06
 
 # G06 · Pyramid
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Challenge | hard | [Loops: draw in 2D](../themes/loops-2d.md) | [Nested grid](../cookbook/08-nested-grid.md) | [G02](G02-right-triangle.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Draw shapes** · exercise 8 of 8 in this group (55 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Challenge | hard | write code | [Nested grid](../cookbook/08-nested-grid.md) | [G02](G02-right-triangle.md) |
+
+</div>
 
 ## Goal
 
@@ -77,4 +94,8 @@ Only after a real try: [open the solution for G06](../solutions/G06_Pyramid.cs).
 
 ---
 
-Previous: [G05 · Checkerboard](G05-checkerboard.md) · [All exercises](README.md) · Next: [D01 · Last digit](D01-last-digit.md)
+<div class="gh-only">
+
+Previous: [G05 · Checkerboard](G05-checkerboard.md) · [Loops](../themes/loops.md) · Next: [D01 · Last digit](D01-last-digit.md)
+
+</div>

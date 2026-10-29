@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A03
+---
+prev:
+  text: "A12 · Fix: multiples of 7"
+  link: /exercises/A12-fix-count-multiples-of-7
+next:
+  text: "A17 · Sum the multiples of k"
+  link: /exercises/A17-sum-multiples-of-k
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops.md#keep-only-some) › A03
 
 # A03 · Sum of the even numbers
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | easy | [Loops: keep a running result](../themes/loops-running-result.md) | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A02](A02-count-multiples-of-3.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Keep only some** · exercise 7 of 9 in this group (32 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | easy | write code | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A02](A02-count-multiples-of-3.md) |
+
+</div>
 
 ## Goal
 
@@ -73,4 +90,8 @@ Only after a real try: [open the solution for A03](../solutions/A03_SumEvenValue
 
 ---
 
-Previous: [A12 · Fix the bugs: count multiples of 7](A12-fix-count-multiples-of-7.md) · [All exercises](README.md) · Next: [A04 · Factorial](A04-factorial.md)
+<div class="gh-only">
+
+Previous: [A12 · Fix: multiples of 7](A12-fix-count-multiples-of-7.md) · [Loops](../themes/loops.md) · Next: [A17 · Sum the multiples of k](A17-sum-multiples-of-k.md)
+
+</div>

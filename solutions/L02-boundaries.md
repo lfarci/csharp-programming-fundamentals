@@ -1,6 +1,6 @@
 [Home](../README.md) › [Solutions](README.md) › L02
 
-# Answer key · L02 Boundaries: < or <= ? (paper)
+# Answer key · L02 Boundaries: < or <=
 
 | Loop | Runs | Values printed | Last value |
 | --- | ---: | --- | ---: |

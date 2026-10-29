@@ -11,7 +11,7 @@ for (int i = 0; i < values.Length; i++)
 '''
 ARR_NOTE = "Input format: first how many numbers, then one number per line. Fill the array with a loop (see [array traversal](../cookbook/11-array-traversal.md))."
 
-ex(id="R01", slug="sum-an-array", title="Sum of an array", level="Guided", stars=1, theme="arrays", recipes=["11","02"], pre=["A01"],
+ex(id="R01", slug="sum-an-array", title="Sum of an array", level="Guided", stars=1, recipes=["11","02"], pre=["A01"],
    goal="Read numbers into an array, then print their sum. " + ARR_NOTE,
    examples=[(["3","4","9","2"], ["Sum: 15"]), (["1","-5"], ["Sum: -5"]), (["0"], ["Sum: 0"])],
    edge=["An empty array (0 numbers) → 0."],
@@ -27,7 +27,7 @@ foreach (int value in values)
 Console.WriteLine($"Sum: {sum}");
 ''')
 
-ex(id="R02", slug="largest-in-an-array", title="Largest value in an array", level="Independent", stars=2, theme="arrays", recipes=["11","04"], pre=["R01","C02"],
+ex(id="R02", slug="largest-in-an-array", title="Position of the largest", level="Independent", stars=2, recipes=["11","04"], pre=["R01","C02"],
    goal="Read numbers into an array (at least 1). Print the largest value and its position (index). " + ARR_NOTE,
    examples=[(["3","-5","-2","-9"], ["Largest: -2 at index 1"]), (["5","3","7","2","7","1"], ["Largest: 7 at index 1"])],
    edge=["All negative.", "The max appears twice → give the **first** position."],
@@ -49,7 +49,7 @@ for (int i = 1; i < values.Length; i++)
 Console.WriteLine($"Largest: {max} at index {maxIndex}");
 ''')
 
-ex(id="R03", slug="count-matches", title="Count matches in an array", level="Independent", stars=1, theme="arrays", recipes=["11","03"], pre=["R01","A02"],
+ex(id="R03", slug="count-matches", title="Count matches", level="Independent", stars=1, recipes=["11","03"], pre=["R01","A02"],
    goal="Read numbers into an array, then a target value. Print how many times the target appears. " + ARR_NOTE + " The last line is the target.",
    examples=[(["5","2","4","2","5","2","2"], ["2 appears 3 times"]), (["2","1","1","9"], ["9 appears 0 times"])],
    edge=["Target not present → 0."],
@@ -71,7 +71,7 @@ foreach (int value in values)
 Console.WriteLine($"{target} appears {matches} times");
 ''')
 
-ex(id="R04", slug="find-the-position", title="Find the position", level="Independent", stars=2, theme="arrays", recipes=["11","05"], pre=["R03"],
+ex(id="R04", slug="find-the-position", title="Find the position", level="Independent", stars=2, recipes=["11","05"], pre=["R03"],
    goal="Read numbers into an array, then a target. Print the **first** index where the target is, or `Not found`. " + ARR_NOTE,
    examples=[(["4","7","3","9","3","3"], ["First position: 1"]), (["4","7","3","9","3","8"], ["Not found"])],
    edge=["Target at index 0 (0 is a valid position: use -1 for \"not found\").", "Several matches → the first."],
@@ -103,7 +103,7 @@ else
 }
 ''')
 
-ex(id="R05", slug="reverse-an-array", title="Reverse an array", level="Challenge", stars=2, theme="arrays", recipes=["11"], pre=["R01"],
+ex(id="R05", slug="reverse-an-array", title="Reverse an array", level="Challenge", stars=2, recipes=["11"], pre=["R01"],
    goal="Read numbers into an array. Build a **new** array with the values in reverse order, then print it on one line. " + ARR_NOTE,
    examples=[(["4","1","2","3","4"], ["4 3 2 1"]), (["1","8"], ["8"])],
    edge=["One element.", "Odd or even length."],
@@ -125,7 +125,7 @@ foreach (int value in reversed)
 Console.WriteLine();
 ''')
 
-ex(id="T01", slug="count-a-letter", title="Count a letter", level="Guided", stars=1, theme="arrays", recipes=["12","03"], pre=["R03"],
+ex(id="T01", slug="count-a-letter", title="Count a letter", level="Guided", stars=1, recipes=["12","03"], pre=["R03"],
    goal="Read a text, then a letter. Print how many times the letter appears (case-sensitive).",
    examples=[(["banana","a"], ["a appears 3 times"]), (["BANANA","a"], ["a appears 0 times"]), (["","a"], ["a appears 0 times"])],
    edge=["Empty text.", "`'A'` is not `'a'`."],
@@ -148,7 +148,7 @@ foreach (char c in text)
 Console.WriteLine($"{letter} appears {count} times");
 ''')
 
-ex(id="T02", slug="remove-spaces", title="Remove spaces", level="Independent", stars=1, theme="arrays", recipes=["12"], pre=["T01"],
+ex(id="T02", slug="remove-spaces", title="Remove spaces", level="Independent", stars=1, recipes=["12"], pre=["T01"],
    goal="Read a text. Print it without its spaces, between square brackets.",
    examples=[(["a b c"], ["[abc]"]), (["   "], ["[]"]), (["no-space"], ["[no-space]"])],
    edge=["Only spaces → empty result."],
@@ -169,7 +169,7 @@ foreach (char c in text)
 Console.WriteLine($"[{result}]");
 ''')
 
-ex(id="T03", slug="count-and-keep-digits", title="Count and keep the digits", level="Challenge", stars=2, theme="arrays", recipes=["12","02"], pre=["T02"],
+ex(id="T03", slug="count-and-keep-digits", title="Keep the digits", level="Challenge", stars=2, recipes=["12","02"], pre=["T02"],
    goal="Read a text. Count its digit characters and build a string with only those digits, in order.",
    examples=[(["a1 b2!"], ["Digits: 2","Kept: 12"]), (["abc"], ["Digits: 0","Kept: "])],
    edge=["No digit → 0 and empty text."],
@@ -193,7 +193,7 @@ Console.WriteLine($"Digits: {count}");
 Console.WriteLine($"Kept: {kept}");
 ''')
 
-ex(id="F01", slug="numbers-file", title="Save numbers to a file", level="Independent", stars=2, theme="files", recipes=["10","11","02"], pre=["L05","R01"],
+ex(id="F01", slug="numbers-file", title="Save numbers to a file", level="Independent", stars=2, recipes=["10","11","02"], pre=["L05","R01"],
    goal="Read numbers until 0 and save them (one per line) in `numbers.txt`. Then read the file back and print how many lines it has and the sum.",
    examples=[(["4","7","1","0"], ["Lines: 3","Sum: 12"]), (["0"], ["Lines: 0","Sum: 0"])],
    edge=["No number → an empty file."],
@@ -225,7 +225,7 @@ Console.WriteLine($"Lines: {saved.Length}");
 Console.WriteLine($"Sum: {sum}");
 ''')
 
-ex(id="E01", slug="safe-number-reader", title="Safe number reader", level="Independent", stars=2, theme="exceptions", recipes=["09"], pre=["L07"],
+ex(id="E01", slug="safe-number-reader", title="Safe number reader", level="Independent", stars=2, recipes=["09"], pre=["L07"],
    goal="Ask for a whole number. Use `int.Parse` inside `try`/`catch`: if it fails, print `That is not a number.` and ask again. At the end print `Thanks: X`.",
    examples=[(["abc","12x","42"], ["That is not a number.","That is not a number.","Thanks: 42"])],
    edge=["Empty input also fails."],
@@ -250,7 +250,7 @@ while (true)
 Console.WriteLine($"Thanks: {number}");
 ''')
 
-ex(id="K01", slug="shopping-list", title="Shopping list", level="Independent", stars=2, theme="collections", recipes=["10","11"], pre=["R01","L05"],
+ex(id="K01", slug="shopping-list", title="Shopping list", level="Independent", stars=2, recipes=["10","11"], pre=["R01","L05"],
    goal="Read items until the user types `done`. Store them in a `List<string>`. Print them numbered, then the total.",
    examples=[(["milk","eggs","bread","done"], ["1. milk","2. eggs","3. bread","Total: 3 items"]), (["done"], ["Total: 0 items"])],
    edge=["`done` right away."],
@@ -277,7 +277,7 @@ for (int i = 0; i < items.Count; i++)
 Console.WriteLine($"Total: {items.Count} items");
 ''')
 
-ex(id="N01", slug="armstrong-with-methods", title="Armstrong with methods", level="Challenge", stars=3, theme="methods", recipes=["06","02"], pre=["M02"],
+ex(id="N01", slug="armstrong-with-methods", title="Armstrong with methods", level="Challenge", stars=3, recipes=["06","02"], pre=["M02"],
    goal="Rewrite M02 with three small methods: `CountDigits(int n)`, `Power(int b, int e)`, `IsArmstrong(int n)`. The main code only reads the bounds and loops.",
    examples=[(["100","999"], ["153 370 371 407"])],
    edge=["`CountDigits(0)` must return 1."],
@@ -341,11 +341,11 @@ X = []
 def ext(id, title, source, level, theme, skills, pre, stars, url=None, note=""):
     X.append(dict(id=id, title=title, source=source, level=level, theme=theme, skills=skills, pre=pre, stars=stars, url=url, note=note))
 
-ext("PE1","Multiples of 3 or 5","Project Euler #1","Challenge","loops-running-result","conditional accumulator","A08",2,"https://projecteuler.net/problem=1")
-ext("PE6","Sum square difference","Project Euler #6","Challenge","loops-running-result","two accumulators","A05",2,"https://projecteuler.net/problem=6")
-ext("PE2","Even Fibonacci numbers","Project Euler #2","Challenge","loops-running-result","state update + filter","S03",3,"https://projecteuler.net/problem=2")
-ext("PE4","Largest palindrome product","Project Euler #4","Challenge","combine","nested loops + palindrome + max","D06, G03",3,"https://projecteuler.net/problem=4")
-ext("PE5","Smallest multiple","Project Euler #5","Challenge","combine","flag/search + `while`","P01",3,"https://projecteuler.net/problem=5")
-ext("TCH1","Factorial (teacher)","Teacher topic","Assessment","loops-running-result","product accumulator","A04",2,None,"Compare the exact teacher statement with A04")
-ext("TCH2","Fibonacci (teacher)","Teacher topic","Assessment","loops-running-result","state update","S02",3,None,"Compare with S02 / S03")
-ext("TCH3","Armstrong numbers (teacher test)","Teacher topic","Assessment","loops-running-result","digits + power + sum","M01",3,None,"Compare with M01 / M02")
+ext("PE1","Multiples of 3 or 5","Project Euler #1","Challenge","loops","conditional accumulator","A08",2,"https://projecteuler.net/problem=1")
+ext("PE6","Sum square difference","Project Euler #6","Challenge","loops","two accumulators","A05",2,"https://projecteuler.net/problem=6")
+ext("PE2","Even Fibonacci numbers","Project Euler #2","Challenge","loops","state update + filter","S03",3,"https://projecteuler.net/problem=2")
+ext("PE4","Largest palindrome product","Project Euler #4","Challenge","loops","nested loops + palindrome + max","D06, G03",3,"https://projecteuler.net/problem=4")
+ext("PE5","Smallest multiple","Project Euler #5","Challenge","loops","flag/search + `while`","P01",3,"https://projecteuler.net/problem=5")
+ext("TCH1","Factorial (teacher)","Teacher topic","Assessment","loops","product accumulator","A04",2,None,"Compare the exact teacher statement with A04")
+ext("TCH2","Fibonacci (teacher)","Teacher topic","Assessment","loops","state update","S02",3,None,"Compare with S02 / S03")
+ext("TCH3","Armstrong numbers (teacher test)","Teacher topic","Assessment","loops","digits + power + sum","M01",3,None,"Compare with M01 / M02")

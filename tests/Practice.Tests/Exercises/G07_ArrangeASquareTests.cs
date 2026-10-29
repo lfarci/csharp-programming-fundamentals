@@ -1,4 +1,4 @@
-// Tests for G07 · Arrange the lines: a square
+// Tests for G07 · Arrange: a square
 // Exercise page: exercises/G07-arrange-a-square.md
 // Your code:     practice/G07_ArrangeASquare.cs
 // Run them:      ./ex check G07

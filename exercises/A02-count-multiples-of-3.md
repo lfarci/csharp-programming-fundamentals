@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A02
+---
+prev:
+  text: "A10 · Sum of a series"
+  link: /exercises/A10-sum-of-a-series
+next:
+  text: "A15 · Count the even numbers"
+  link: /exercises/A15-count-even-numbers
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops.md#keep-only-some) › A02
 
 # A02 · Count multiples of 3
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: keep a running result](../themes/loops-running-result.md) | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A01](A01-sum-1-to-n.md), [C01](C01-even-or-odd.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Keep only some** · exercise 1 of 9 in this group (26 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A01](A01-sum-1-to-n.md), [C01](C01-even-or-odd.md) |
+
+</div>
 
 ## Goal
 
@@ -74,4 +91,8 @@ Only after a real try: [open the solution for A02](../solutions/A02_CountMultipl
 
 ---
 
-Previous: [A01 · Sum from 1 to N](A01-sum-1-to-n.md) · [All exercises](README.md) · Next: [A12 · Fix the bugs: count multiples of 7](A12-fix-count-multiples-of-7.md)
+<div class="gh-only">
+
+Previous: [A10 · Sum of a series](A10-sum-of-a-series.md) · [Loops](../themes/loops.md) · Next: [A15 · Count the even numbers](A15-count-even-numbers.md)
+
+</div>

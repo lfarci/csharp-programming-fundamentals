@@ -1,10 +1,29 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: remember changing values](../themes/loops-state.md) › S03
+---
+prev:
+  text: "S05 · N-th Fibonacci"
+  link: /exercises/S05-nth-fibonacci
+next:
+  text: "P03 · Has a multiple of 7"
+  link: /exercises/P03-has-a-multiple-of-7
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Changing values](../themes/loops.md#changing-values) › S03
 
 # S03 · Even Fibonacci sum
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Challenge | hard | [Loops: remember changing values](../themes/loops-state.md) | [State update](../cookbook/07-state-update.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [S02](S02-fibonacci.md), [A03](A03-sum-even-values.md) | Custom · prepares [Project Euler #2](https://projecteuler.net/problem=2) |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Changing values** · exercise 5 of 5 in this group (72 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Challenge | hard | write code | [State update](../cookbook/07-state-update.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [S02](S02-fibonacci.md), [A03](A03-sum-even-values.md) |
+
+</div>
+
+Source: prepares [Project Euler #2](https://projecteuler.net/problem=2).
 
 ## Goal
 
@@ -79,4 +98,8 @@ Only after a real try: [open the solution for S03](../solutions/S03_EvenFibonacc
 
 ---
 
-Previous: [S05 · The n-th Fibonacci number](S05-nth-fibonacci.md) · [All exercises](README.md) · Next: [P01 · Is it prime?](P01-is-it-prime.md)
+<div class="gh-only">
+
+Previous: [S05 · N-th Fibonacci](S05-nth-fibonacci.md) · [Loops](../themes/loops.md) · Next: [P03 · Has a multiple of 7](P03-has-a-multiple-of-7.md)
+
+</div>

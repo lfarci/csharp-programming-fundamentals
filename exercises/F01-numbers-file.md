@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Files](../themes/files.md) › F01
+---
+prev:
+  text: "T03 · Keep the digits"
+  link: /exercises/T03-count-and-keep-digits
+next:
+  text: "K01 · Shopping list"
+  link: /exercises/K01-shopping-list
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Files and lists](../themes/arrays.md#files-and-lists) › F01
 
 # F01 · Save numbers to a file
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Files](../themes/files.md) | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Array traversal](../cookbook/11-array-traversal.md), [Accumulator](../cookbook/02-accumulator.md) | [L05](L05-until-zero.md), [R01](R01-sum-an-array.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Arrays, text and lists › Files and lists** · exercise 1 of 2 in this group (10 of 11 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Array traversal](../cookbook/11-array-traversal.md), [Accumulator](../cookbook/02-accumulator.md) | [L05](L05-until-zero.md), [R01](R01-sum-an-array.md) |
+
+</div>
 
 ## Goal
 
@@ -84,4 +101,8 @@ Only after a real try: [open the solution for F01](../solutions/F01_NumbersFile.
 
 ---
 
-Previous: [T03 · Count and keep the digits](T03-count-and-keep-digits.md) · [All exercises](README.md) · Next: [E01 · Safe number reader](E01-safe-number-reader.md)
+<div class="gh-only">
+
+Previous: [T03 · Keep the digits](T03-count-and-keep-digits.md) · [Arrays, text and lists](../themes/arrays.md) · Next: [K01 · Shopping list](K01-shopping-list.md)
+
+</div>

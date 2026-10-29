@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A20
+---
+prev:
+  text: "A18 · Sum of cubes"
+  link: /exercises/A18-sum-of-cubes
+next:
+  text: "A19 · Product from a to b"
+  link: /exercises/A19-product-from-a-to-b
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A20
 
 # A20 · Power of 2
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: keep a running result](../themes/loops-running-result.md) | [Accumulator](../cookbook/02-accumulator.md) | [A04](A04-factorial.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Add up** · exercise 7 of 12 in this group (20 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Accumulator](../cookbook/02-accumulator.md) | [A01](A01-sum-1-to-n.md) |
+
+</div>
 
 ## Goal
 
@@ -50,7 +67,7 @@ Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start v
 
 <details><summary>Hint 1</summary>
 
-Product box `result = 1`.
+A product box starts at 1, not 0 (0 times anything is 0): `long result = 1;`.
 
 </details>
 
@@ -72,4 +89,8 @@ Only after a real try: [open the solution for A20](../solutions/A20_PowersOf2.cs
 
 ---
 
-Previous: [A19 · Product from a to b](A19-product-from-a-to-b.md) · [All exercises](README.md) · Next: [A21 · Count the divisors](A21-count-divisors.md)
+<div class="gh-only">
+
+Previous: [A18 · Sum of cubes](A18-sum-of-cubes.md) · [Loops](../themes/loops.md) · Next: [A19 · Product from a to b](A19-product-from-a-to-b.md)
+
+</div>

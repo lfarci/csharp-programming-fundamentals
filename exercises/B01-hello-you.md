@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Hello World](../themes/hello-world.md) › B01
+---
+prev:
+  text: "Basics"
+  link: /themes/basics
+next:
+  text: "B02 · Rectangle calculator"
+  link: /exercises/B02-rectangle-calculator
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [First programs](../themes/basics.md#first-programs) › B01
 
 # B01 · Hello you
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Hello World](../themes/hello-world.md) | — | — | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Basics › First programs** · exercise 1 of 3 in this group (1 of 7 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | — | — |
+
+</div>
 
 ## Goal
 
@@ -76,4 +93,8 @@ Only after a real try: [open the solution for B01](../solutions/B01_HelloYou.cs)
 
 ---
 
-[All exercises](README.md) · Next: [B02 · Rectangle calculator](B02-rectangle-calculator.md)
+<div class="gh-only">
+
+Previous: [Basics](../themes/basics.md) · [Basics](../themes/basics.md) · Next: [B02 · Rectangle calculator](B02-rectangle-calculator.md)
+
+</div>

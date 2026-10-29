@@ -130,9 +130,14 @@ return found;
 
 Now alone, in a real file (`./ex start ID`, then `./ex check`):
 
-1. [**R04**](../exercises/R04-find-the-position.md) Find the position of a value in an array (-1 if missing).
-2. [**P01**](../exercises/P01-is-it-prime.md) Is N prime?
-3. [**P02**](../exercises/P02-primes-up-to-n.md) Print all primes up to N (a flag loop **inside** a counter loop).
+1. [**P03**](../exercises/P03-has-a-multiple-of-7.md) Is there a multiple of 7 from a to b?
+2. [**P04**](../exercises/P04-has-an-even-digit.md) Has N an even digit? (the same flag, on digits)
+3. [**P07**](../exercises/P07-all-digits-odd.md) Are all digits odd? (the flag starts true)
+4. [**P05**](../exercises/P05-first-multiple.md) The first multiple of k, or -1 (stop with `break`).
+5. [**P06**](../exercises/P06-smallest-divisor.md) The smallest divisor of N.
+6. [**P01**](../exercises/P01-is-it-prime.md) Is N prime?
+7. [**P02**](../exercises/P02-primes-up-to-n.md) Print all primes up to N (a flag loop **inside** a counter loop).
+8. Later, in Arrays: [**R04**](../exercises/R04-find-the-position.md) Find the position of a value in an array (-1 if missing).
 
 ### Debug it
 

@@ -1,4 +1,4 @@
-// Tests for R03 · Count matches in an array
+// Tests for R03 · Count matches
 // Exercise page: exercises/R03-count-matches.md
 // Your code:     practice/R03_CountMatches.cs
 // Run them:      ./ex check R03

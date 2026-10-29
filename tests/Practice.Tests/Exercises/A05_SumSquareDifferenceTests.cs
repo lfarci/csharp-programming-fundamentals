@@ -1,4 +1,4 @@
-// Tests for A05 · Two accumulators: sum and squares
+// Tests for A05 · Sum and sum of squares
 // Exercise page: exercises/A05-sum-square-difference.md
 // Your code:     practice/A05_SumSquareDifference.cs
 // Run them:      ./ex check A05

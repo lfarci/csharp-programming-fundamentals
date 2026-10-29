@@ -1,4 +1,4 @@
-// Tests for S05 · The n-th Fibonacci number
+// Tests for S05 · N-th Fibonacci
 // Exercise page: exercises/S05-nth-fibonacci.md
 // Your code:     practice/S05_NthFibonacci.cs
 // Run them:      ./ex check S05

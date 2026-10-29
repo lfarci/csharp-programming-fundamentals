@@ -3,7 +3,7 @@ prev: false
 next: false
 ---
 
-[Home](../../README.md) › [Learn](../README.md) › [Videos](../videos.md) › Video 4
+[Home](../../README.md) › [Learn](../README.md) › [Videos](../videos.md) › Video 5
 
 # Operators, Expressions, and Statements
 
@@ -23,9 +23,8 @@ next: false
 
 ## Practise after this
 
-- [Variables and expressions](../../themes/variables.md): start with [B02](../../exercises/B02-rectangle-calculator.md), [B03](../../exercises/B03-seconds-to-hms.md)
-- [Loops: take digits apart](../../themes/loops-digits.md): start with [D01](../../exercises/D01-last-digit.md), [D02](../../exercises/D02-remove-last-digit.md), [D03](../../exercises/D03-count-digits.md)
+- [Basics](../../themes/basics.md): start with [B01](../../exercises/B01-hello-you.md), [B02](../../exercises/B02-rectangle-calculator.md), [B03](../../exercises/B03-seconds-to-hms.md)
 
 ---
 
-Previous: [Understanding Data Types and Variables](understanding-data-types-and-variables.md) · [All videos](../videos.md) · Next: [The if Decision Statement](the-if-decision-statement.md)
+Previous: [The if Decision Statement](the-if-decision-statement.md) · [All videos](../videos.md) · Next: [Enumerations and the Switch Decision Statement](enumerations-and-the-switch-decision-statement.md)

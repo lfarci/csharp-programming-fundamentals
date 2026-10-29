@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A10
+---
+prev:
+  text: "A05 · Sum and sum of squares"
+  link: /exercises/A05-sum-square-difference
+next:
+  text: "A02 · Count multiples of 3"
+  link: /exercises/A02-count-multiples-of-3
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A10
 
 # A10 · Sum of a series
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Challenge | medium | [Loops: keep a running result](../themes/loops-running-result.md) | [Accumulator](../cookbook/02-accumulator.md) | [A01](A01-sum-1-to-n.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Add up** · exercise 12 of 12 in this group (25 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Challenge | medium | write code | [Accumulator](../cookbook/02-accumulator.md) | [A01](A01-sum-1-to-n.md) |
+
+</div>
 
 ## Goal
 
@@ -80,4 +97,8 @@ Only after a real try: [open the solution for A10](../solutions/A10_SumOfASeries
 
 ---
 
-Previous: [A09 · Smallest and largest until zero](A09-min-and-max-until-zero.md) · [All exercises](README.md) · Next: [A13 · Sum from a to b](A13-sum-from-a-to-b.md)
+<div class="gh-only">
+
+Previous: [A05 · Sum and sum of squares](A05-sum-square-difference.md) · [Loops](../themes/loops.md) · Next: [A02 · Count multiples of 3](A02-count-multiples-of-3.md)
+
+</div>

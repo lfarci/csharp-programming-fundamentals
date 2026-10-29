@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: repeat and count](../themes/loops-repeat.md) › L06
+---
+prev:
+  text: "L16 · Odd numbers"
+  link: /exercises/L16-odd-numbers
+next:
+  text: "L17 · Count down by 2"
+  link: /exercises/L17-count-down-by-2
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L06
 
 # L06 · Even numbers
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: repeat and count](../themes/loops-repeat.md) | [Counter loop](../cookbook/01-counter-loop.md) | [L03](L03-count-up-and-down.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Count** · exercise 9 of 13 in this group (9 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Counter loop](../cookbook/01-counter-loop.md) | [L03](L03-count-up-and-down.md) |
+
+</div>
 
 ## Goal
 
@@ -83,4 +100,8 @@ Only after a real try: [open the solution for L06](../solutions/L06_EvenNumbers.
 
 ---
 
-Previous: [L05 · Until zero](L05-until-zero.md) · [All exercises](README.md) · Next: [L07 · Ask until valid](L07-ask-until-valid.md)
+<div class="gh-only">
+
+Previous: [L16 · Odd numbers](L16-odd-numbers.md) · [Loops](../themes/loops.md) · Next: [L17 · Count down by 2](L17-count-down-by-2.md)
+
+</div>

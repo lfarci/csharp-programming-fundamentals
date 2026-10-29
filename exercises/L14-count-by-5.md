@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: repeat and count](../themes/loops-repeat.md) › L14
+---
+prev:
+  text: "L13 · Count by 3"
+  link: /exercises/L13-count-by-3
+next:
+  text: "L16 · Odd numbers"
+  link: /exercises/L16-odd-numbers
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L14
 
 # L14 · Count by 5
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: repeat and count](../themes/loops-repeat.md) | [Counter loop](../cookbook/01-counter-loop.md) | [L13](L13-count-by-3.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Count** · exercise 7 of 13 in this group (7 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Counter loop](../cookbook/01-counter-loop.md) | [L13](L13-count-by-3.md) |
+
+</div>
 
 ## Goal
 
@@ -71,4 +88,8 @@ Only after a real try: [open the solution for L14](../solutions/L14_CountBy5.cs)
 
 ---
 
-Previous: [L13 · Count by 3](L13-count-by-3.md) · [All exercises](README.md) · Next: [L15 · Count by any step](L15-count-by-step.md)
+<div class="gh-only">
+
+Previous: [L13 · Count by 3](L13-count-by-3.md) · [Loops](../themes/loops.md) · Next: [L16 · Odd numbers](L16-odd-numbers.md)
+
+</div>

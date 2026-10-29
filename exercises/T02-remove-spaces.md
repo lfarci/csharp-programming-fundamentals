@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Arrays and text](../themes/arrays.md) › T02
+---
+prev:
+  text: "T01 · Count a letter"
+  link: /exercises/T01-count-a-letter
+next:
+  text: "T03 · Keep the digits"
+  link: /exercises/T03-count-and-keep-digits
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Text](../themes/arrays.md#text) › T02
 
 # T02 · Remove spaces
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | easy | [Arrays and text](../themes/arrays.md) | [Build a string](../cookbook/12-string-building.md) | [T01](T01-count-a-letter.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Arrays, text and lists › Text** · exercise 2 of 3 in this group (8 of 11 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | easy | write code | [Build a string](../cookbook/12-string-building.md) | [T01](T01-count-a-letter.md) |
+
+</div>
 
 ## Goal
 
@@ -72,4 +89,8 @@ Only after a real try: [open the solution for T02](../solutions/T02_RemoveSpaces
 
 ---
 
-Previous: [T01 · Count a letter](T01-count-a-letter.md) · [All exercises](README.md) · Next: [T03 · Count and keep the digits](T03-count-and-keep-digits.md)
+<div class="gh-only">
+
+Previous: [T01 · Count a letter](T01-count-a-letter.md) · [Arrays, text and lists](../themes/arrays.md) · Next: [T03 · Keep the digits](T03-count-and-keep-digits.md)
+
+</div>

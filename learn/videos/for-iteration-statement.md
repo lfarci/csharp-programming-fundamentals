@@ -25,10 +25,7 @@ next: false
 
 ## Practise after this
 
-- [Loops: repeat and count](../../themes/loops-repeat.md): start with [L01](../../exercises/L01-trace-a-loop.md), [L02](../../exercises/L02-boundaries.md), [L03](../../exercises/L03-count-up-and-down.md)
-- [Loops: keep a running result](../../themes/loops-running-result.md): start with [A11](../../exercises/A11-arrange-sum-of-squares.md), [A01](../../exercises/A01-sum-1-to-n.md), [A02](../../exercises/A02-count-multiples-of-3.md)
-- [Loops: draw in 2D](../../themes/loops-2d.md): start with [L09](../../exercises/L09-draw-a-row.md), [L10](../../exercises/L10-numbers-on-one-line.md), [G07](../../exercises/G07-arrange-a-square.md)
-- [Combine recipes](../../themes/combine.md): start with [M01](../../exercises/M01-armstrong-number.md), [M02](../../exercises/M02-armstrong-numbers-in-a-range.md)
+- [Loops](../../themes/loops.md): start with [L01](../../exercises/L01-trace-a-loop.md), [L02](../../exercises/L02-boundaries.md), [L03](../../exercises/L03-count-up-and-down.md)
 
 ---
 

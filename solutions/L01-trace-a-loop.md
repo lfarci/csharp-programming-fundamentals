@@ -1,6 +1,6 @@
 [Home](../README.md) › [Solutions](README.md) › L01
 
-# Answer key · L01 Trace a loop (paper)
+# Answer key · L01 Trace a loop
 
 | Turn | `i` at start | `i <= 8`? | Output | `i` after step |
 | ---: | ---: | --- | ---: | ---: |

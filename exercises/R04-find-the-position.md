@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Arrays and text](../themes/arrays.md) › R04
+---
+prev:
+  text: "R06 · Fix: largest value"
+  link: /exercises/R06-fix-largest-value
+next:
+  text: "R05 · Reverse an array"
+  link: /exercises/R05-reverse-an-array
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Arrays](../themes/arrays.md#arrays) › R04
 
 # R04 · Find the position
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Arrays and text](../themes/arrays.md) | [Array traversal](../cookbook/11-array-traversal.md), [Flag/search](../cookbook/05-flag-search.md) | [R03](R03-count-matches.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Arrays, text and lists › Arrays** · exercise 5 of 6 in this group (5 of 11 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [Array traversal](../cookbook/11-array-traversal.md), [Flag/search](../cookbook/05-flag-search.md) | [R03](R03-count-matches.md) |
+
+</div>
 
 ## Goal
 
@@ -80,4 +97,8 @@ Only after a real try: [open the solution for R04](../solutions/R04_FindThePosit
 
 ---
 
-Previous: [R03 · Count matches in an array](R03-count-matches.md) · [All exercises](README.md) · Next: [R05 · Reverse an array](R05-reverse-an-array.md)
+<div class="gh-only">
+
+Previous: [R06 · Fix: largest value](R06-fix-largest-value.md) · [Arrays, text and lists](../themes/arrays.md) · Next: [R05 · Reverse an array](R05-reverse-an-array.md)
+
+</div>

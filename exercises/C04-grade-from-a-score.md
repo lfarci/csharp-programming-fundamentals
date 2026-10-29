@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Conditions](../themes/conditions.md) › C04
+---
+prev:
+  text: "C03 · Ticket price"
+  link: /exercises/C03-ticket-price
+next:
+  text: "Next theme: Loops"
+  link: /themes/loops
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [Conditions](../themes/basics.md#conditions) › C04
 
 # C04 · Grade from a score
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Conditions](../themes/conditions.md) | — | [C03](C03-ticket-price.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Basics › Conditions** · exercise 4 of 4 in this group (7 of 7 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | — | [C03](C03-ticket-price.md) |
+
+</div>
 
 ## Goal
 
@@ -84,4 +101,8 @@ Only after a real try: [open the solution for C04](../solutions/C04_GradeFromASc
 
 ---
 
-Previous: [C03 · Ticket price](C03-ticket-price.md) · [All exercises](README.md) · Next: [L01 · Trace a loop (paper)](L01-trace-a-loop.md)
+<div class="gh-only">
+
+Previous: [C03 · Ticket price](C03-ticket-price.md) · [Basics](../themes/basics.md) · Next: [Next theme: Loops](../themes/loops.md)
+
+</div>

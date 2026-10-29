@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: repeat and count](../themes/loops-repeat.md) › L01
+---
+prev:
+  text: "Loops"
+  link: /themes/loops
+next:
+  text: "L02 · Boundaries: < or <="
+  link: /exercises/L02-boundaries
+---
 
-# L01 · Trace a loop (paper)
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L01
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: repeat and count](../themes/loops-repeat.md) | [Counter loop](../cookbook/01-counter-loop.md) | [C01](C01-even-or-odd.md) | Custom |
+# L01 · Trace a loop
+
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Count** · exercise 1 of 13 in this group (1 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | paper | [Counter loop](../cookbook/01-counter-loop.md) | [C01](C01-even-or-odd.md) |
+
+</div>
 
 ## Goal
 
@@ -62,4 +79,8 @@ Only after a real try: [open the solution for L01](../solutions/L01-trace-a-loop
 
 ---
 
-Previous: [C04 · Grade from a score](C04-grade-from-a-score.md) · [All exercises](README.md) · Next: [L02 · Boundaries: < or <= ? (paper)](L02-boundaries.md)
+<div class="gh-only">
+
+Previous: [Loops](../themes/loops.md) · [Loops](../themes/loops.md) · Next: [L02 · Boundaries: < or <=](L02-boundaries.md)
+
+</div>

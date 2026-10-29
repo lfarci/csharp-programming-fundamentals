@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: draw in 2D](../themes/loops-2d.md) › G11
+---
+prev:
+  text: "G10 · Triangle of row numbers"
+  link: /exercises/G10-row-number-triangle
+next:
+  text: "G12 · Upside-down triangle"
+  link: /exercises/G12-upside-down-triangle
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw shapes](../themes/loops.md#draw-shapes) › G11
 
 # G11 · Counting triangle
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: draw in 2D](../themes/loops-2d.md) | [Nested grid](../cookbook/08-nested-grid.md) | [G10](G10-row-number-triangle.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Draw shapes** · exercise 3 of 8 in this group (50 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Nested grid](../cookbook/08-nested-grid.md) | [G10](G10-row-number-triangle.md) |
+
+</div>
 
 ## Goal
 
@@ -71,4 +88,8 @@ Only after a real try: [open the solution for G11](../solutions/G11_CountingTria
 
 ---
 
-Previous: [G10 · Triangle of row numbers](G10-row-number-triangle.md) · [All exercises](README.md) · Next: [G12 · Upside-down triangle](G12-upside-down-triangle.md)
+<div class="gh-only">
+
+Previous: [G10 · Triangle of row numbers](G10-row-number-triangle.md) · [Loops](../themes/loops.md) · Next: [G12 · Upside-down triangle](G12-upside-down-triangle.md)
+
+</div>

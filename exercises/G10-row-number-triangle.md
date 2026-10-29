@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: draw in 2D](../themes/loops-2d.md) › G10
+---
+prev:
+  text: "G02 · Draw a right triangle"
+  link: /exercises/G02-right-triangle
+next:
+  text: "G11 · Counting triangle"
+  link: /exercises/G11-counting-triangle
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw shapes](../themes/loops.md#draw-shapes) › G10
 
 # G10 · Triangle of row numbers
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: draw in 2D](../themes/loops-2d.md) | [Nested grid](../cookbook/08-nested-grid.md) | [G02](G02-right-triangle.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Draw shapes** · exercise 2 of 8 in this group (49 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Nested grid](../cookbook/08-nested-grid.md) | [G02](G02-right-triangle.md) |
+
+</div>
 
 ## Goal
 
@@ -71,4 +88,8 @@ Only after a real try: [open the solution for G10](../solutions/G10_RowNumberTri
 
 ---
 
-Previous: [G02 · Draw a right triangle](G02-right-triangle.md) · [All exercises](README.md) · Next: [G11 · Counting triangle](G11-counting-triangle.md)
+<div class="gh-only">
+
+Previous: [G02 · Draw a right triangle](G02-right-triangle.md) · [Loops](../themes/loops.md) · Next: [G11 · Counting triangle](G11-counting-triangle.md)
+
+</div>

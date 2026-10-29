@@ -56,6 +56,8 @@ jobs:
           git status --short
           git diff --exit-code
           test -z "$(git status --porcelain --untracked-files=all)"
+      - name: Course structure (short titles, groups, level order, balance, sidebar)
+        run: python3 tools/check-structure.py
 
   diagrams:
     name: Diagrams (D2 sources match the committed SVGs)

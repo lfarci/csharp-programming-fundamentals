@@ -9,8 +9,9 @@
   "methods": [],
   "cases": [],
   "checkHint": "",
-  "theme": "Hello World",
+  "theme": "Basics",
   "themeOrder": 1,
+  "group": "First programs",
   "drills": [],
   "examples": [
    {
@@ -85,8 +86,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Variables and expressions",
-  "themeOrder": 2,
+  "theme": "Basics",
+  "themeOrder": 1,
+  "group": "First programs",
   "drills": [],
   "examples": [
    {
@@ -115,7 +117,7 @@
   "id": "B03",
   "name": "B03-seconds-to-hms",
   "class": "B03_SecondsToHms",
-  "title": "Seconds to hours, minutes, seconds",
+  "title": "Seconds to h, min, s",
   "paper": false,
   "kind": "method",
   "methods": [
@@ -152,8 +154,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Variables and expressions",
-  "themeOrder": 2,
+  "theme": "Basics",
+  "themeOrder": 1,
+  "group": "First programs",
   "drills": [],
   "examples": [
    {
@@ -223,8 +226,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Conditions",
-  "themeOrder": 3,
+  "theme": "Basics",
+  "themeOrder": 1,
+  "group": "Conditions",
   "drills": [],
   "examples": [
    {
@@ -302,8 +306,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Conditions",
-  "themeOrder": 3,
+  "theme": "Basics",
+  "themeOrder": 1,
+  "group": "Conditions",
   "drills": [],
   "examples": [
    {
@@ -386,8 +391,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Conditions",
-  "themeOrder": 3,
+  "theme": "Basics",
+  "themeOrder": 1,
+  "group": "Conditions",
   "drills": [],
   "examples": [
    {
@@ -493,8 +499,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Conditions",
-  "themeOrder": 3,
+  "theme": "Basics",
+  "themeOrder": 1,
+  "group": "Conditions",
   "drills": [],
   "examples": []
  },
@@ -502,14 +509,15 @@
   "id": "L01",
   "name": "L01-trace-a-loop",
   "class": "L01_TraceALoop",
-  "title": "Trace a loop (paper)",
+  "title": "Trace a loop",
   "paper": true,
   "kind": "paper",
   "methods": [],
   "cases": [],
   "checkHint": "",
-  "theme": "Loops: repeat and count",
-  "themeOrder": 4,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Count",
   "drills": [],
   "examples": []
  },
@@ -517,14 +525,15 @@
   "id": "L02",
   "name": "L02-boundaries",
   "class": "L02_Boundaries",
-  "title": "Boundaries: < or <= ? (paper)",
+  "title": "Boundaries: < or <=",
   "paper": true,
   "kind": "paper",
   "methods": [],
   "cases": [],
   "checkHint": "",
-  "theme": "Loops: repeat and count",
-  "themeOrder": 4,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Count",
   "drills": [],
   "examples": []
  },
@@ -538,8 +547,9 @@
   "methods": [],
   "cases": [],
   "checkHint": "",
-  "theme": "Loops: repeat and count",
-  "themeOrder": 4,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Count",
   "drills": [
    "Counter loop (print, count, step)"
   ],
@@ -560,187 +570,6 @@
     "expected": [
      "1",
      "1"
-    ]
-   }
-  ]
- },
- {
-  "id": "L04",
-  "name": "L04-multiplication-table",
-  "class": "L04_MultiplicationTable",
-  "title": "Multiplication table",
-  "paper": false,
-  "kind": "output",
-  "methods": [],
-  "cases": [],
-  "checkHint": "",
-  "theme": "Loops: repeat and count",
-  "themeOrder": 4,
-  "drills": [],
-  "examples": [
-   {
-    "input": [
-     "3"
-    ],
-    "expected": [
-     "3 x 1 = 3",
-     "3 x 2 = 6",
-     "3 x 10 = 30"
-    ]
-   },
-   {
-    "input": [
-     "7"
-    ],
-    "expected": [
-     "7 x 7 = 49"
-    ]
-   }
-  ]
- },
- {
-  "id": "L05",
-  "name": "L05-until-zero",
-  "class": "L05_UntilZero",
-  "title": "Until zero",
-  "paper": false,
-  "kind": "output",
-  "methods": [],
-  "cases": [],
-  "checkHint": "",
-  "theme": "Loops: repeat and count",
-  "themeOrder": 4,
-  "drills": [],
-  "examples": [
-   {
-    "input": [
-     "5",
-     "-2",
-     "8",
-     "0"
-    ],
-    "expected": [
-     "You entered 3 numbers."
-    ]
-   },
-   {
-    "input": [
-     "0"
-    ],
-    "expected": [
-     "You entered 0 numbers."
-    ]
-   }
-  ]
- },
- {
-  "id": "L06",
-  "name": "L06-even-numbers",
-  "class": "L06_EvenNumbers",
-  "title": "Even numbers",
-  "paper": false,
-  "kind": "output",
-  "methods": [],
-  "cases": [],
-  "checkHint": "",
-  "theme": "Loops: repeat and count",
-  "themeOrder": 4,
-  "drills": [
-   "Counter loop (print, count, step)"
-  ],
-  "examples": [
-   {
-    "input": [
-     "9"
-    ],
-    "expected": [
-     "2 4 6 8"
-    ]
-   },
-   {
-    "input": [
-     "10"
-    ],
-    "expected": [
-     "2 4 6 8 10"
-    ]
-   },
-   {
-    "input": [
-     "1"
-    ],
-    "expected": []
-   }
-  ]
- },
- {
-  "id": "L07",
-  "name": "L07-ask-until-valid",
-  "class": "L07_AskUntilValid",
-  "title": "Ask until valid",
-  "paper": false,
-  "kind": "output",
-  "methods": [],
-  "cases": [],
-  "checkHint": "",
-  "theme": "Loops: repeat and count",
-  "themeOrder": 4,
-  "drills": [],
-  "examples": [
-   {
-    "input": [
-     "abc",
-     "42",
-     "7"
-    ],
-    "expected": [
-     "Invalid, try again.",
-     "Invalid, try again.",
-     "You chose 7"
-    ]
-   },
-   {
-    "input": [
-     "1"
-    ],
-    "expected": [
-     "You chose 1"
-    ]
-   }
-  ]
- },
- {
-  "id": "L08",
-  "name": "L08-guess-the-number",
-  "class": "L08_GuessTheNumber",
-  "title": "Guess the number",
-  "paper": false,
-  "kind": "output",
-  "methods": [],
-  "cases": [],
-  "checkHint": "",
-  "theme": "Loops: repeat and count",
-  "themeOrder": 4,
-  "drills": [],
-  "examples": [
-   {
-    "input": [
-     "50",
-     "30",
-     "42"
-    ],
-    "expected": [
-     "Lower!",
-     "Higher!",
-     "Correct! You needed 3 tries."
-    ]
-   },
-   {
-    "input": [
-     "42"
-    ],
-    "expected": [
-     "Correct! You needed 1 tries."
     ]
    }
   ]
@@ -782,8 +611,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: repeat and count",
-  "themeOrder": 4,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Count",
   "drills": [
    "Counter loop (print, count, step)"
   ],
@@ -816,8 +646,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: repeat and count",
-  "themeOrder": 4,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Count",
   "drills": [
    "Counter loop (print, count, step)"
   ],
@@ -857,8 +688,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: repeat and count",
-  "themeOrder": 4,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Count",
   "drills": [
    "Counter loop (print, count, step)"
   ],
@@ -891,8 +723,162 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: repeat and count",
-  "themeOrder": 4,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Count",
+  "drills": [
+   "Counter loop (print, count, step)"
+  ],
+  "examples": []
+ },
+ {
+  "id": "L16",
+  "name": "L16-odd-numbers",
+  "class": "L16_OddNumbers",
+  "title": "Odd numbers",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "PrintOdds"
+  ],
+  "cases": [
+   {
+    "method": "PrintOdds",
+    "args": [
+     7
+    ],
+    "expected": "1\n3\n5\n7\n"
+   },
+   {
+    "method": "PrintOdds",
+    "args": [
+     8
+    ],
+    "expected": "1\n3\n5\n7\n"
+   },
+   {
+    "method": "PrintOdds",
+    "args": [
+     1
+    ],
+    "expected": "1\n"
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Count",
+  "drills": [
+   "Counter loop (print, count, step)"
+  ],
+  "examples": []
+ },
+ {
+  "id": "L06",
+  "name": "L06-even-numbers",
+  "class": "L06_EvenNumbers",
+  "title": "Even numbers",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Count",
+  "drills": [
+   "Counter loop (print, count, step)"
+  ],
+  "examples": [
+   {
+    "input": [
+     "9"
+    ],
+    "expected": [
+     "2 4 6 8"
+    ]
+   },
+   {
+    "input": [
+     "10"
+    ],
+    "expected": [
+     "2 4 6 8 10"
+    ]
+   },
+   {
+    "input": [
+     "1"
+    ],
+    "expected": []
+   }
+  ]
+ },
+ {
+  "id": "L17",
+  "name": "L17-count-down-by-2",
+  "class": "L17_CountDownBy2",
+  "title": "Count down by 2",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountDownBy2"
+  ],
+  "cases": [
+   {
+    "method": "CountDownBy2",
+    "args": [
+     9
+    ],
+    "expected": "9\n7\n5\n3\n1\n"
+   },
+   {
+    "method": "CountDownBy2",
+    "args": [
+     6
+    ],
+    "expected": "6\n4\n2\n"
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Count",
+  "drills": [
+   "Counter loop (print, count, step)"
+  ],
+  "examples": []
+ },
+ {
+  "id": "L18",
+  "name": "L18-squares",
+  "class": "L18_Squares",
+  "title": "Square numbers",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "PrintSquares"
+  ],
+  "cases": [
+   {
+    "method": "PrintSquares",
+    "args": [
+     4
+    ],
+    "expected": "1\n4\n9\n16\n"
+   },
+   {
+    "method": "PrintSquares",
+    "args": [
+     1
+    ],
+    "expected": "1\n"
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Count",
   "drills": [
    "Counter loop (print, count, step)"
   ],
@@ -935,121 +921,48 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: repeat and count",
-  "themeOrder": 4,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Count",
   "drills": [
    "Counter loop (print, count, step)"
   ],
   "examples": []
  },
  {
-  "id": "L16",
-  "name": "L16-odd-numbers",
-  "class": "L16_OddNumbers",
-  "title": "Odd numbers",
+  "id": "L04",
+  "name": "L04-multiplication-table",
+  "class": "L04_MultiplicationTable",
+  "title": "Multiplication table",
   "paper": false,
-  "kind": "method",
-  "methods": [
-   "PrintOdds"
-  ],
-  "cases": [
-   {
-    "method": "PrintOdds",
-    "args": [
-     7
-    ],
-    "expected": "1\n3\n5\n7\n"
-   },
-   {
-    "method": "PrintOdds",
-    "args": [
-     8
-    ],
-    "expected": "1\n3\n5\n7\n"
-   },
-   {
-    "method": "PrintOdds",
-    "args": [
-     1
-    ],
-    "expected": "1\n"
-   }
-  ],
+  "kind": "output",
+  "methods": [],
+  "cases": [],
   "checkHint": "",
-  "theme": "Loops: repeat and count",
-  "themeOrder": 4,
-  "drills": [
-   "Counter loop (print, count, step)"
-  ],
-  "examples": []
- },
- {
-  "id": "L17",
-  "name": "L17-count-down-by-2",
-  "class": "L17_CountDownBy2",
-  "title": "Count down by 2",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "CountDownBy2"
-  ],
-  "cases": [
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Count",
+  "drills": [],
+  "examples": [
    {
-    "method": "CountDownBy2",
-    "args": [
-     9
+    "input": [
+     "3"
     ],
-    "expected": "9\n7\n5\n3\n1\n"
+    "expected": [
+     "3 x 1 = 3",
+     "3 x 2 = 6",
+     "3 x 10 = 30"
+    ]
    },
    {
-    "method": "CountDownBy2",
-    "args": [
-     6
+    "input": [
+     "7"
     ],
-    "expected": "6\n4\n2\n"
+    "expected": [
+     "7 x 7 = 49"
+    ]
    }
-  ],
-  "checkHint": "",
-  "theme": "Loops: repeat and count",
-  "themeOrder": 4,
-  "drills": [
-   "Counter loop (print, count, step)"
-  ],
-  "examples": []
- },
- {
-  "id": "L18",
-  "name": "L18-squares",
-  "class": "L18_Squares",
-  "title": "Square numbers",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "PrintSquares"
-  ],
-  "cases": [
-   {
-    "method": "PrintSquares",
-    "args": [
-     4
-    ],
-    "expected": "1\n4\n9\n16\n"
-   },
-   {
-    "method": "PrintSquares",
-    "args": [
-     1
-    ],
-    "expected": "1\n"
-   }
-  ],
-  "checkHint": "",
-  "theme": "Loops: repeat and count",
-  "themeOrder": 4,
-  "drills": [
-   "Counter loop (print, count, step)"
-  ],
-  "examples": []
+  ]
  },
  {
   "id": "L19",
@@ -1096,18 +1009,17 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: repeat and count",
-  "themeOrder": 4,
-  "drills": [
-   "Counter loop (print, count, step)"
-  ],
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Add up",
+  "drills": [],
   "examples": []
  },
  {
   "id": "A11",
   "name": "A11-arrange-sum-of-squares",
   "class": "A11_ArrangeSumOfSquares",
-  "title": "Arrange the lines: sum of squares",
+  "title": "Arrange: sum of squares",
   "paper": false,
   "kind": "method",
   "methods": [
@@ -1144,8 +1056,9 @@
    }
   ],
   "checkHint": "every line you need is already in the file. Check the order: the box line before the loop, the update between { and }, the return after the loop. Did you remove every // and the line return -1; ?",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Add up",
   "drills": [
    "Accumulator (sum, product)"
   ],
@@ -1192,8 +1105,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Add up",
   "drills": [
    "Accumulator (sum, product)"
   ],
@@ -1228,635 +1142,6 @@
     ],
     "expected": [
      "Sum: 0"
-    ]
-   }
-  ]
- },
- {
-  "id": "A02",
-  "name": "A02-count-multiples-of-3",
-  "class": "A02_CountMultiplesOf3",
-  "title": "Count multiples of 3",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "CountMultiplesOf3"
-  ],
-  "cases": [
-   {
-    "method": "CountMultiplesOf3",
-    "args": [
-     10
-    ],
-    "expected": 3
-   },
-   {
-    "method": "CountMultiplesOf3",
-    "args": [
-     2
-    ],
-    "expected": 0
-   },
-   {
-    "method": "CountMultiplesOf3",
-    "args": [
-     9
-    ],
-    "expected": 3
-   },
-   {
-    "method": "CountMultiplesOf3",
-    "args": [
-     0
-    ],
-    "expected": 0
-   }
-  ],
-  "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
-  "drills": [
-   "Count or sum only some values"
-  ],
-  "examples": [
-   {
-    "input": [
-     "10"
-    ],
-    "expected": [
-     "Count: 3"
-    ]
-   },
-   {
-    "input": [
-     "2"
-    ],
-    "expected": [
-     "Count: 0"
-    ]
-   },
-   {
-    "input": [
-     "9"
-    ],
-    "expected": [
-     "Count: 3"
-    ]
-   }
-  ]
- },
- {
-  "id": "A12",
-  "name": "A12-fix-count-multiples-of-7",
-  "class": "A12_FixCountMultiplesOf7",
-  "title": "Fix the bugs: count multiples of 7",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "CountMultiplesOf7"
-  ],
-  "cases": [
-   {
-    "method": "CountMultiplesOf7",
-    "args": [
-     7
-    ],
-    "expected": 1
-   },
-   {
-    "method": "CountMultiplesOf7",
-    "args": [
-     20
-    ],
-    "expected": 2
-   },
-   {
-    "method": "CountMultiplesOf7",
-    "args": [
-     6
-    ],
-    "expected": 0
-   },
-   {
-    "method": "CountMultiplesOf7",
-    "args": [
-     21
-    ],
-    "expected": 3
-   }
-  ],
-  "checkHint": "the code has 2 bugs. Trace the failing call on paper. Look at the start value of the box, then at the loop test (< or <=).",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
-  "drills": [
-   "Count or sum only some values"
-  ],
-  "examples": []
- },
- {
-  "id": "A03",
-  "name": "A03-sum-even-values",
-  "class": "A03_SumEvenValues",
-  "title": "Sum of the even numbers",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "SumOfEvens"
-  ],
-  "cases": [
-   {
-    "method": "SumOfEvens",
-    "args": [
-     6
-    ],
-    "expected": 12
-   },
-   {
-    "method": "SumOfEvens",
-    "args": [
-     7
-    ],
-    "expected": 12
-   },
-   {
-    "method": "SumOfEvens",
-    "args": [
-     1
-    ],
-    "expected": 0
-   },
-   {
-    "method": "SumOfEvens",
-    "args": [
-     10
-    ],
-    "expected": 30
-   }
-  ],
-  "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
-  "drills": [
-   "Count or sum only some values"
-  ],
-  "examples": [
-   {
-    "input": [
-     "6"
-    ],
-    "expected": [
-     "Sum: 12"
-    ]
-   },
-   {
-    "input": [
-     "7"
-    ],
-    "expected": [
-     "Sum: 12"
-    ]
-   },
-   {
-    "input": [
-     "1"
-    ],
-    "expected": [
-     "Sum: 0"
-    ]
-   }
-  ]
- },
- {
-  "id": "A04",
-  "name": "A04-factorial",
-  "class": "A04_Factorial",
-  "title": "Factorial",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "Factorial"
-  ],
-  "cases": [
-   {
-    "method": "Factorial",
-    "args": [
-     5
-    ],
-    "expected": 120
-   },
-   {
-    "method": "Factorial",
-    "args": [
-     0
-    ],
-    "expected": 1
-   },
-   {
-    "method": "Factorial",
-    "args": [
-     1
-    ],
-    "expected": 1
-   },
-   {
-    "method": "Factorial",
-    "args": [
-     12
-    ],
-    "expected": 479001600
-   },
-   {
-    "method": "Factorial",
-    "args": [
-     20
-    ],
-    "expected": 2432902008176640000
-   }
-  ],
-  "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
-  "drills": [
-   "Accumulator (sum, product)"
-  ],
-  "examples": [
-   {
-    "input": [
-     "5"
-    ],
-    "expected": [
-     "5! = 120"
-    ]
-   },
-   {
-    "input": [
-     "0"
-    ],
-    "expected": [
-     "0! = 1"
-    ]
-   },
-   {
-    "input": [
-     "12"
-    ],
-    "expected": [
-     "12! = 479001600"
-    ]
-   },
-   {
-    "input": [
-     "20"
-    ],
-    "expected": [
-     "20! = 2432902008176640000"
-    ]
-   }
-  ]
- },
- {
-  "id": "A05",
-  "name": "A05-sum-square-difference",
-  "class": "A05_SumSquareDifference",
-  "title": "Two accumulators: sum and squares",
-  "paper": false,
-  "kind": "output",
-  "methods": [],
-  "cases": [],
-  "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
-  "drills": [],
-  "examples": [
-   {
-    "input": [
-     "3"
-    ],
-    "expected": [
-     "Sum: 6",
-     "Sum of squares: 14",
-     "Difference: 22"
-    ]
-   },
-   {
-    "input": [
-     "10"
-    ],
-    "expected": [
-     "Sum: 55",
-     "Sum of squares: 385",
-     "Difference: 2640"
-    ]
-   }
-  ]
- },
- {
-  "id": "A06",
-  "name": "A06-average-until-zero",
-  "class": "A06_AverageUntilZero",
-  "title": "Average until zero",
-  "paper": false,
-  "kind": "output",
-  "methods": [],
-  "cases": [],
-  "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
-  "drills": [],
-  "examples": [
-   {
-    "input": [
-     "4",
-     "7",
-     "1",
-     "0"
-    ],
-    "expected": [
-     "Average: 4"
-    ]
-   },
-   {
-    "input": [
-     "1",
-     "2",
-     "0"
-    ],
-    "expected": [
-     "Average: 1.5"
-    ]
-   },
-   {
-    "input": [
-     "0"
-    ],
-    "expected": [
-     "No numbers."
-    ]
-   }
-  ]
- },
- {
-  "id": "A07",
-  "name": "A07-integer-power",
-  "class": "A07_IntegerPower",
-  "title": "Integer power",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "Power"
-  ],
-  "cases": [
-   {
-    "method": "Power",
-    "args": [
-     3,
-     4
-    ],
-    "expected": 81
-   },
-   {
-    "method": "Power",
-    "args": [
-     2,
-     10
-    ],
-    "expected": 1024
-   },
-   {
-    "method": "Power",
-    "args": [
-     5,
-     0
-    ],
-    "expected": 1
-   },
-   {
-    "method": "Power",
-    "args": [
-     -2,
-     3
-    ],
-    "expected": -8
-   }
-  ],
-  "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
-  "drills": [
-   "Accumulator (sum, product)"
-  ],
-  "examples": [
-   {
-    "input": [
-     "3",
-     "4"
-    ],
-    "expected": [
-     "3^4 = 81"
-    ]
-   },
-   {
-    "input": [
-     "2",
-     "10"
-    ],
-    "expected": [
-     "2^10 = 1024"
-    ]
-   },
-   {
-    "input": [
-     "5",
-     "0"
-    ],
-    "expected": [
-     "5^0 = 1"
-    ]
-   }
-  ]
- },
- {
-  "id": "A08",
-  "name": "A08-multiples-of-3-or-5",
-  "class": "A08_MultiplesOf3Or5",
-  "title": "Multiples of 3 or 5",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "SumOfMultiples"
-  ],
-  "cases": [
-   {
-    "method": "SumOfMultiples",
-    "args": [
-     10
-    ],
-    "expected": 23
-   },
-   {
-    "method": "SumOfMultiples",
-    "args": [
-     20
-    ],
-    "expected": 78
-   },
-   {
-    "method": "SumOfMultiples",
-    "args": [
-     1
-    ],
-    "expected": 0
-   },
-   {
-    "method": "SumOfMultiples",
-    "args": [
-     16
-    ],
-    "expected": 60
-   }
-  ],
-  "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
-  "drills": [
-   "Count or sum only some values"
-  ],
-  "examples": [
-   {
-    "input": [
-     "10"
-    ],
-    "expected": [
-     "Sum: 23"
-    ]
-   },
-   {
-    "input": [
-     "20"
-    ],
-    "expected": [
-     "Sum: 78"
-    ]
-   },
-   {
-    "input": [
-     "1"
-    ],
-    "expected": [
-     "Sum: 0"
-    ]
-   }
-  ]
- },
- {
-  "id": "A09",
-  "name": "A09-min-and-max-until-zero",
-  "class": "A09_MinAndMaxUntilZero",
-  "title": "Smallest and largest until zero",
-  "paper": false,
-  "kind": "output",
-  "methods": [],
-  "cases": [],
-  "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
-  "drills": [],
-  "examples": [
-   {
-    "input": [
-     "4",
-     "-2",
-     "9",
-     "0"
-    ],
-    "expected": [
-     "Min: -2",
-     "Max: 9"
-    ]
-   },
-   {
-    "input": [
-     "-5",
-     "-3",
-     "0"
-    ],
-    "expected": [
-     "Min: -5",
-     "Max: -3"
-    ]
-   },
-   {
-    "input": [
-     "0"
-    ],
-    "expected": [
-     "No numbers."
-    ]
-   }
-  ]
- },
- {
-  "id": "A10",
-  "name": "A10-sum-of-a-series",
-  "class": "A10_SumOfASeries",
-  "title": "Sum of a series",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "SeriesSum"
-  ],
-  "cases": [
-   {
-    "method": "SeriesSum",
-    "args": [
-     1
-    ],
-    "expected": 1.0
-   },
-   {
-    "method": "SeriesSum",
-    "args": [
-     2
-    ],
-    "expected": 1.5
-   },
-   {
-    "method": "SeriesSum",
-    "args": [
-     4
-    ],
-    "expected": 2.0833333333
-   }
-  ],
-  "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
-  "drills": [
-   "Accumulator (sum, product)"
-  ],
-  "examples": [
-   {
-    "input": [
-     "1"
-    ],
-    "expected": [
-     "Sum: 1.0000"
-    ]
-   },
-   {
-    "input": [
-     "2"
-    ],
-    "expected": [
-     "Sum: 1.5000"
-    ]
-   },
-   {
-    "input": [
-     "4"
-    ],
-    "expected": [
-     "Sum: 2.0833"
     ]
    }
   ]
@@ -1906,8 +1191,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Add up",
   "drills": [
    "Accumulator (sum, product)"
   ],
@@ -1954,136 +1240,11 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Add up",
   "drills": [
    "Accumulator (sum, product)"
-  ],
-  "examples": []
- },
- {
-  "id": "A15",
-  "name": "A15-count-even-numbers",
-  "class": "A15_CountEvenNumbers",
-  "title": "Count the even numbers",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "CountEvens"
-  ],
-  "cases": [
-   {
-    "method": "CountEvens",
-    "args": [
-     10
-    ],
-    "expected": 5
-   },
-   {
-    "method": "CountEvens",
-    "args": [
-     7
-    ],
-    "expected": 3
-   },
-   {
-    "method": "CountEvens",
-    "args": [
-     1
-    ],
-    "expected": 0
-   }
-  ],
-  "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
-  "drills": [
-   "Count or sum only some values"
-  ],
-  "examples": []
- },
- {
-  "id": "A16",
-  "name": "A16-count-multiples-of-5",
-  "class": "A16_CountMultiplesOf5",
-  "title": "Count multiples of 5",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "CountMultiplesOf5"
-  ],
-  "cases": [
-   {
-    "method": "CountMultiplesOf5",
-    "args": [
-     20
-    ],
-    "expected": 4
-   },
-   {
-    "method": "CountMultiplesOf5",
-    "args": [
-     4
-    ],
-    "expected": 0
-   },
-   {
-    "method": "CountMultiplesOf5",
-    "args": [
-     26
-    ],
-    "expected": 5
-   }
-  ],
-  "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
-  "drills": [
-   "Count or sum only some values"
-  ],
-  "examples": []
- },
- {
-  "id": "A17",
-  "name": "A17-sum-multiples-of-k",
-  "class": "A17_SumMultiplesOfK",
-  "title": "Sum the multiples of k",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "SumMultiplesOf"
-  ],
-  "cases": [
-   {
-    "method": "SumMultiplesOf",
-    "args": [
-     3,
-     10
-    ],
-    "expected": 18
-   },
-   {
-    "method": "SumMultiplesOf",
-    "args": [
-     5,
-     20
-    ],
-    "expected": 50
-   },
-   {
-    "method": "SumMultiplesOf",
-    "args": [
-     4,
-     3
-    ],
-    "expected": 0
-   }
-  ],
-  "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
-  "drills": [
-   "Count or sum only some values"
   ],
   "examples": []
  },
@@ -2128,8 +1289,51 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Add up",
+  "drills": [
+   "Accumulator (sum, product)"
+  ],
+  "examples": []
+ },
+ {
+  "id": "A20",
+  "name": "A20-powers-of-2",
+  "class": "A20_PowersOf2",
+  "title": "Power of 2",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "PowerOf2"
+  ],
+  "cases": [
+   {
+    "method": "PowerOf2",
+    "args": [
+     3
+    ],
+    "expected": 8
+   },
+   {
+    "method": "PowerOf2",
+    "args": [
+     0
+    ],
+    "expected": 1
+   },
+   {
+    "method": "PowerOf2",
+    "args": [
+     10
+    ],
+    "expected": 1024
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Add up",
   "drills": [
    "Accumulator (sum, product)"
   ],
@@ -2180,51 +1384,443 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Add up",
   "drills": [
    "Accumulator (sum, product)"
   ],
   "examples": []
  },
  {
-  "id": "A20",
-  "name": "A20-powers-of-2",
-  "class": "A20_PowersOf2",
-  "title": "Power of 2",
+  "id": "A04",
+  "name": "A04-factorial",
+  "class": "A04_Factorial",
+  "title": "Factorial",
   "paper": false,
   "kind": "method",
   "methods": [
-   "PowerOf2"
+   "Factorial"
   ],
   "cases": [
    {
-    "method": "PowerOf2",
+    "method": "Factorial",
     "args": [
-     3
+     5
     ],
-    "expected": 8
+    "expected": 120
    },
    {
-    "method": "PowerOf2",
+    "method": "Factorial",
     "args": [
      0
     ],
     "expected": 1
    },
    {
-    "method": "PowerOf2",
+    "method": "Factorial",
     "args": [
-     10
+     1
     ],
-    "expected": 1024
+    "expected": 1
+   },
+   {
+    "method": "Factorial",
+    "args": [
+     12
+    ],
+    "expected": 479001600
+   },
+   {
+    "method": "Factorial",
+    "args": [
+     20
+    ],
+    "expected": 2432902008176640000
    }
   ],
   "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Add up",
   "drills": [
    "Accumulator (sum, product)"
+  ],
+  "examples": [
+   {
+    "input": [
+     "5"
+    ],
+    "expected": [
+     "5! = 120"
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "0! = 1"
+    ]
+   },
+   {
+    "input": [
+     "12"
+    ],
+    "expected": [
+     "12! = 479001600"
+    ]
+   },
+   {
+    "input": [
+     "20"
+    ],
+    "expected": [
+     "20! = 2432902008176640000"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A07",
+  "name": "A07-integer-power",
+  "class": "A07_IntegerPower",
+  "title": "Integer power",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "Power"
+  ],
+  "cases": [
+   {
+    "method": "Power",
+    "args": [
+     3,
+     4
+    ],
+    "expected": 81
+   },
+   {
+    "method": "Power",
+    "args": [
+     2,
+     10
+    ],
+    "expected": 1024
+   },
+   {
+    "method": "Power",
+    "args": [
+     5,
+     0
+    ],
+    "expected": 1
+   },
+   {
+    "method": "Power",
+    "args": [
+     -2,
+     3
+    ],
+    "expected": -8
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Add up",
+  "drills": [
+   "Accumulator (sum, product)"
+  ],
+  "examples": [
+   {
+    "input": [
+     "3",
+     "4"
+    ],
+    "expected": [
+     "3^4 = 81"
+    ]
+   },
+   {
+    "input": [
+     "2",
+     "10"
+    ],
+    "expected": [
+     "2^10 = 1024"
+    ]
+   },
+   {
+    "input": [
+     "5",
+     "0"
+    ],
+    "expected": [
+     "5^0 = 1"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A05",
+  "name": "A05-sum-square-difference",
+  "class": "A05_SumSquareDifference",
+  "title": "Sum and sum of squares",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Add up",
+  "drills": [],
+  "examples": [
+   {
+    "input": [
+     "3"
+    ],
+    "expected": [
+     "Sum: 6",
+     "Sum of squares: 14",
+     "Difference: 22"
+    ]
+   },
+   {
+    "input": [
+     "10"
+    ],
+    "expected": [
+     "Sum: 55",
+     "Sum of squares: 385",
+     "Difference: 2640"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A10",
+  "name": "A10-sum-of-a-series",
+  "class": "A10_SumOfASeries",
+  "title": "Sum of a series",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SeriesSum"
+  ],
+  "cases": [
+   {
+    "method": "SeriesSum",
+    "args": [
+     1
+    ],
+    "expected": 1.0
+   },
+   {
+    "method": "SeriesSum",
+    "args": [
+     2
+    ],
+    "expected": 1.5
+   },
+   {
+    "method": "SeriesSum",
+    "args": [
+     4
+    ],
+    "expected": 2.0833333333
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Add up",
+  "drills": [
+   "Accumulator (sum, product)"
+  ],
+  "examples": [
+   {
+    "input": [
+     "1"
+    ],
+    "expected": [
+     "Sum: 1.0000"
+    ]
+   },
+   {
+    "input": [
+     "2"
+    ],
+    "expected": [
+     "Sum: 1.5000"
+    ]
+   },
+   {
+    "input": [
+     "4"
+    ],
+    "expected": [
+     "Sum: 2.0833"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A02",
+  "name": "A02-count-multiples-of-3",
+  "class": "A02_CountMultiplesOf3",
+  "title": "Count multiples of 3",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountMultiplesOf3"
+  ],
+  "cases": [
+   {
+    "method": "CountMultiplesOf3",
+    "args": [
+     10
+    ],
+    "expected": 3
+   },
+   {
+    "method": "CountMultiplesOf3",
+    "args": [
+     2
+    ],
+    "expected": 0
+   },
+   {
+    "method": "CountMultiplesOf3",
+    "args": [
+     9
+    ],
+    "expected": 3
+   },
+   {
+    "method": "CountMultiplesOf3",
+    "args": [
+     0
+    ],
+    "expected": 0
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Keep only some",
+  "drills": [
+   "Count or sum only some values"
+  ],
+  "examples": [
+   {
+    "input": [
+     "10"
+    ],
+    "expected": [
+     "Count: 3"
+    ]
+   },
+   {
+    "input": [
+     "2"
+    ],
+    "expected": [
+     "Count: 0"
+    ]
+   },
+   {
+    "input": [
+     "9"
+    ],
+    "expected": [
+     "Count: 3"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A15",
+  "name": "A15-count-even-numbers",
+  "class": "A15_CountEvenNumbers",
+  "title": "Count the even numbers",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountEvens"
+  ],
+  "cases": [
+   {
+    "method": "CountEvens",
+    "args": [
+     10
+    ],
+    "expected": 5
+   },
+   {
+    "method": "CountEvens",
+    "args": [
+     7
+    ],
+    "expected": 3
+   },
+   {
+    "method": "CountEvens",
+    "args": [
+     1
+    ],
+    "expected": 0
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Keep only some",
+  "drills": [
+   "Count or sum only some values"
+  ],
+  "examples": []
+ },
+ {
+  "id": "A16",
+  "name": "A16-count-multiples-of-5",
+  "class": "A16_CountMultiplesOf5",
+  "title": "Count multiples of 5",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountMultiplesOf5"
+  ],
+  "cases": [
+   {
+    "method": "CountMultiplesOf5",
+    "args": [
+     20
+    ],
+    "expected": 4
+   },
+   {
+    "method": "CountMultiplesOf5",
+    "args": [
+     4
+    ],
+    "expected": 0
+   },
+   {
+    "method": "CountMultiplesOf5",
+    "args": [
+     26
+    ],
+    "expected": 5
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Keep only some",
+  "drills": [
+   "Count or sum only some values"
   ],
   "examples": []
  },
@@ -2269,8 +1865,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Keep only some",
   "drills": [
    "Count or sum only some values"
   ],
@@ -2310,12 +1907,459 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: keep a running result",
-  "themeOrder": 5,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Keep only some",
   "drills": [
    "Count or sum only some values"
   ],
   "examples": []
+ },
+ {
+  "id": "A12",
+  "name": "A12-fix-count-multiples-of-7",
+  "class": "A12_FixCountMultiplesOf7",
+  "title": "Fix: multiples of 7",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountMultiplesOf7"
+  ],
+  "cases": [
+   {
+    "method": "CountMultiplesOf7",
+    "args": [
+     7
+    ],
+    "expected": 1
+   },
+   {
+    "method": "CountMultiplesOf7",
+    "args": [
+     20
+    ],
+    "expected": 2
+   },
+   {
+    "method": "CountMultiplesOf7",
+    "args": [
+     6
+    ],
+    "expected": 0
+   },
+   {
+    "method": "CountMultiplesOf7",
+    "args": [
+     21
+    ],
+    "expected": 3
+   }
+  ],
+  "checkHint": "the code has 2 bugs. Trace the failing call on paper. Look at the start value of the box, then at the loop test (< or <=).",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Keep only some",
+  "drills": [
+   "Count or sum only some values"
+  ],
+  "examples": []
+ },
+ {
+  "id": "A03",
+  "name": "A03-sum-even-values",
+  "class": "A03_SumEvenValues",
+  "title": "Sum of the even numbers",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SumOfEvens"
+  ],
+  "cases": [
+   {
+    "method": "SumOfEvens",
+    "args": [
+     6
+    ],
+    "expected": 12
+   },
+   {
+    "method": "SumOfEvens",
+    "args": [
+     7
+    ],
+    "expected": 12
+   },
+   {
+    "method": "SumOfEvens",
+    "args": [
+     1
+    ],
+    "expected": 0
+   },
+   {
+    "method": "SumOfEvens",
+    "args": [
+     10
+    ],
+    "expected": 30
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Keep only some",
+  "drills": [
+   "Count or sum only some values"
+  ],
+  "examples": [
+   {
+    "input": [
+     "6"
+    ],
+    "expected": [
+     "Sum: 12"
+    ]
+   },
+   {
+    "input": [
+     "7"
+    ],
+    "expected": [
+     "Sum: 12"
+    ]
+   },
+   {
+    "input": [
+     "1"
+    ],
+    "expected": [
+     "Sum: 0"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A17",
+  "name": "A17-sum-multiples-of-k",
+  "class": "A17_SumMultiplesOfK",
+  "title": "Sum the multiples of k",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SumMultiplesOf"
+  ],
+  "cases": [
+   {
+    "method": "SumMultiplesOf",
+    "args": [
+     3,
+     10
+    ],
+    "expected": 18
+   },
+   {
+    "method": "SumMultiplesOf",
+    "args": [
+     5,
+     20
+    ],
+    "expected": 50
+   },
+   {
+    "method": "SumMultiplesOf",
+    "args": [
+     4,
+     3
+    ],
+    "expected": 0
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Keep only some",
+  "drills": [
+   "Count or sum only some values"
+  ],
+  "examples": []
+ },
+ {
+  "id": "A08",
+  "name": "A08-multiples-of-3-or-5",
+  "class": "A08_MultiplesOf3Or5",
+  "title": "Multiples of 3 or 5",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SumOfMultiples"
+  ],
+  "cases": [
+   {
+    "method": "SumOfMultiples",
+    "args": [
+     10
+    ],
+    "expected": 23
+   },
+   {
+    "method": "SumOfMultiples",
+    "args": [
+     20
+    ],
+    "expected": 78
+   },
+   {
+    "method": "SumOfMultiples",
+    "args": [
+     1
+    ],
+    "expected": 0
+   },
+   {
+    "method": "SumOfMultiples",
+    "args": [
+     16
+    ],
+    "expected": 60
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Keep only some",
+  "drills": [
+   "Count or sum only some values"
+  ],
+  "examples": [
+   {
+    "input": [
+     "10"
+    ],
+    "expected": [
+     "Sum: 23"
+    ]
+   },
+   {
+    "input": [
+     "20"
+    ],
+    "expected": [
+     "Sum: 78"
+    ]
+   },
+   {
+    "input": [
+     "1"
+    ],
+    "expected": [
+     "Sum: 0"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "L05",
+  "name": "L05-until-zero",
+  "class": "L05_UntilZero",
+  "title": "Until zero",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Until the user stops",
+  "drills": [],
+  "examples": [
+   {
+    "input": [
+     "5",
+     "-2",
+     "8",
+     "0"
+    ],
+    "expected": [
+     "You entered 3 numbers."
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "You entered 0 numbers."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A06",
+  "name": "A06-average-until-zero",
+  "class": "A06_AverageUntilZero",
+  "title": "Average until zero",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Until the user stops",
+  "drills": [],
+  "examples": [
+   {
+    "input": [
+     "4",
+     "7",
+     "1",
+     "0"
+    ],
+    "expected": [
+     "Average: 4"
+    ]
+   },
+   {
+    "input": [
+     "1",
+     "2",
+     "0"
+    ],
+    "expected": [
+     "Average: 1.5"
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "No numbers."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A09",
+  "name": "A09-min-and-max-until-zero",
+  "class": "A09_MinAndMaxUntilZero",
+  "title": "Min and max until zero",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Until the user stops",
+  "drills": [],
+  "examples": [
+   {
+    "input": [
+     "4",
+     "-2",
+     "9",
+     "0"
+    ],
+    "expected": [
+     "Min: -2",
+     "Max: 9"
+    ]
+   },
+   {
+    "input": [
+     "-5",
+     "-3",
+     "0"
+    ],
+    "expected": [
+     "Min: -5",
+     "Max: -3"
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "No numbers."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "L07",
+  "name": "L07-ask-until-valid",
+  "class": "L07_AskUntilValid",
+  "title": "Ask until valid",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Until the user stops",
+  "drills": [],
+  "examples": [
+   {
+    "input": [
+     "abc",
+     "42",
+     "7"
+    ],
+    "expected": [
+     "Invalid, try again.",
+     "Invalid, try again.",
+     "You chose 7"
+    ]
+   },
+   {
+    "input": [
+     "1"
+    ],
+    "expected": [
+     "You chose 1"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "L08",
+  "name": "L08-guess-the-number",
+  "class": "L08_GuessTheNumber",
+  "title": "Guess the number",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Until the user stops",
+  "drills": [],
+  "examples": [
+   {
+    "input": [
+     "50",
+     "30",
+     "42"
+    ],
+    "expected": [
+     "Lower!",
+     "Higher!",
+     "Correct! You needed 3 tries."
+    ]
+   },
+   {
+    "input": [
+     "42"
+    ],
+    "expected": [
+     "Correct! You needed 1 tries."
+    ]
+   }
+  ]
  },
  {
   "id": "L09",
@@ -2351,8 +2395,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: draw in 2D",
-  "themeOrder": 6,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Draw rows and grids",
   "drills": [
    "Nested loops (draw)"
   ],
@@ -2392,8 +2437,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: draw in 2D",
-  "themeOrder": 6,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Draw rows and grids",
   "drills": [
    "Nested loops (draw)"
   ],
@@ -2403,7 +2449,7 @@
   "id": "G07",
   "name": "G07-arrange-a-square",
   "class": "G07_ArrangeASquare",
-  "title": "Arrange the lines: a square",
+  "title": "Arrange: a square",
   "paper": false,
   "kind": "method",
   "methods": [
@@ -2426,8 +2472,44 @@
    }
   ],
   "checkHint": "every line is already in the file. The inner for (col) goes inside the outer for (row). Console.WriteLine(); goes after the inner loop's }, still inside the outer loop. Did you remove every // ?",
-  "theme": "Loops: draw in 2D",
-  "themeOrder": 6,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Draw rows and grids",
+  "drills": [
+   "Nested loops (draw)"
+  ],
+  "examples": []
+ },
+ {
+  "id": "G08",
+  "name": "G08-solid-square",
+  "class": "G08_SolidSquare",
+  "title": "Solid square",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DrawSquare"
+  ],
+  "cases": [
+   {
+    "method": "DrawSquare",
+    "args": [
+     3
+    ],
+    "expected": "***\n***\n***\n"
+   },
+   {
+    "method": "DrawSquare",
+    "args": [
+     1
+    ],
+    "expected": "*\n"
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Draw rows and grids",
   "drills": [
    "Nested loops (draw)"
   ],
@@ -2462,8 +2544,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: draw in 2D",
-  "themeOrder": 6,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Draw rows and grids",
   "drills": [
    "Nested loops (draw)"
   ],
@@ -2490,40 +2573,6 @@
     ]
    }
   ]
- },
- {
-  "id": "G08",
-  "name": "G08-solid-square",
-  "class": "G08_SolidSquare",
-  "title": "Solid square",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "DrawSquare"
-  ],
-  "cases": [
-   {
-    "method": "DrawSquare",
-    "args": [
-     3
-    ],
-    "expected": "***\n***\n***\n"
-   },
-   {
-    "method": "DrawSquare",
-    "args": [
-     1
-    ],
-    "expected": "*\n"
-   }
-  ],
-  "checkHint": "",
-  "theme": "Loops: draw in 2D",
-  "themeOrder": 6,
-  "drills": [
-   "Nested loops (draw)"
-  ],
-  "examples": []
  },
  {
   "id": "G09",
@@ -2554,12 +2603,102 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: draw in 2D",
-  "themeOrder": 6,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Draw rows and grids",
   "drills": [
    "Nested loops (draw)"
   ],
   "examples": []
+ },
+ {
+  "id": "G14",
+  "name": "G14-numbers-in-columns",
+  "class": "G14_NumbersInColumns",
+  "title": "Numbers in columns",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "PrintInColumns"
+  ],
+  "cases": [
+   {
+    "method": "PrintInColumns",
+    "args": [
+     3
+    ],
+    "expected": "  10  20  30\n"
+   },
+   {
+    "method": "PrintInColumns",
+    "args": [
+     1
+    ],
+    "expected": "  10\n"
+   },
+   {
+    "method": "PrintInColumns",
+    "args": [
+     12
+    ],
+    "expected": "  10  20  30  40  50  60  70  80  90 100 110 120\n"
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Draw rows and grids",
+  "drills": [
+   "Nested loops (draw)"
+  ],
+  "examples": []
+ },
+ {
+  "id": "G03",
+  "name": "G03-multiplication-grid",
+  "class": "G03_MultiplicationGrid",
+  "title": "Multiplication grid",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DrawGrid"
+  ],
+  "cases": [
+   {
+    "method": "DrawGrid",
+    "args": [
+     4
+    ],
+    "expected": "   1   2   3   4\n   2   4   6   8\n   3   6   9  12\n   4   8  12  16\n"
+   },
+   {
+    "method": "DrawGrid",
+    "args": [
+     1
+    ],
+    "expected": "   1\n"
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Draw rows and grids",
+  "drills": [
+   "Nested loops (draw)"
+  ],
+  "examples": [
+   {
+    "input": [
+     "4"
+    ],
+    "expected": [
+     "   1   2   3   4",
+     "   2   4   6   8",
+     "   3   6   9  12",
+     "   4   8  12  16"
+    ]
+   }
+  ]
  },
  {
   "id": "G02",
@@ -2588,8 +2727,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: draw in 2D",
-  "themeOrder": 6,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Draw shapes",
   "drills": [
    "Nested loops (draw)"
   ],
@@ -2642,8 +2782,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: draw in 2D",
-  "themeOrder": 6,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Draw shapes",
   "drills": [
    "Nested loops (draw)"
   ],
@@ -2676,8 +2817,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: draw in 2D",
-  "themeOrder": 6,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Draw shapes",
   "drills": [
    "Nested loops (draw)"
   ],
@@ -2710,99 +2852,13 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: draw in 2D",
-  "themeOrder": 6,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Draw shapes",
   "drills": [
    "Nested loops (draw)"
   ],
   "examples": []
- },
- {
-  "id": "G14",
-  "name": "G14-numbers-in-columns",
-  "class": "G14_NumbersInColumns",
-  "title": "Numbers in columns",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "PrintInColumns"
-  ],
-  "cases": [
-   {
-    "method": "PrintInColumns",
-    "args": [
-     3
-    ],
-    "expected": "  10  20  30\n"
-   },
-   {
-    "method": "PrintInColumns",
-    "args": [
-     1
-    ],
-    "expected": "  10\n"
-   },
-   {
-    "method": "PrintInColumns",
-    "args": [
-     12
-    ],
-    "expected": "  10  20  30  40  50  60  70  80  90 100 110 120\n"
-   }
-  ],
-  "checkHint": "",
-  "theme": "Loops: draw in 2D",
-  "themeOrder": 6,
-  "drills": [
-   "Nested loops (draw)"
-  ],
-  "examples": []
- },
- {
-  "id": "G03",
-  "name": "G03-multiplication-grid",
-  "class": "G03_MultiplicationGrid",
-  "title": "Multiplication grid",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "DrawGrid"
-  ],
-  "cases": [
-   {
-    "method": "DrawGrid",
-    "args": [
-     4
-    ],
-    "expected": "   1   2   3   4\n   2   4   6   8\n   3   6   9  12\n   4   8  12  16\n"
-   },
-   {
-    "method": "DrawGrid",
-    "args": [
-     1
-    ],
-    "expected": "   1\n"
-   }
-  ],
-  "checkHint": "",
-  "theme": "Loops: draw in 2D",
-  "themeOrder": 6,
-  "drills": [
-   "Nested loops (draw)"
-  ],
-  "examples": [
-   {
-    "input": [
-     "4"
-    ],
-    "expected": [
-     "   1   2   3   4",
-     "   2   4   6   8",
-     "   3   6   9  12",
-     "   4   8  12  16"
-    ]
-   }
-  ]
  },
  {
   "id": "G04",
@@ -2833,8 +2889,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: draw in 2D",
-  "themeOrder": 6,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Draw shapes",
   "drills": [
    "Nested loops (draw)"
   ],
@@ -2891,8 +2948,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: draw in 2D",
-  "themeOrder": 6,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Draw shapes",
   "drills": [
    "Nested loops (draw)"
   ],
@@ -2925,8 +2983,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: draw in 2D",
-  "themeOrder": 6,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Draw shapes",
   "drills": [
    "Nested loops (draw)"
   ],
@@ -2979,8 +3038,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: draw in 2D",
-  "themeOrder": 6,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Draw shapes",
   "drills": [],
   "examples": [
    {
@@ -3044,8 +3104,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: take digits apart",
-  "themeOrder": 7,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Digits",
   "drills": [
    "Digits"
   ],
@@ -3117,8 +3178,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: take digits apart",
-  "themeOrder": 7,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Digits",
   "drills": [
    "Digits"
   ],
@@ -3182,8 +3244,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: take digits apart",
-  "themeOrder": 7,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Digits",
   "drills": [
    "Digits"
   ],
@@ -3255,8 +3318,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: take digits apart",
-  "themeOrder": 7,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Digits",
   "drills": [
    "Digits"
   ],
@@ -3303,8 +3367,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: take digits apart",
-  "themeOrder": 7,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Digits",
   "drills": [
    "Digits"
   ],
@@ -3369,8 +3434,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: take digits apart",
-  "themeOrder": 7,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Digits",
   "drills": [
    "Digits"
   ],
@@ -3413,56 +3479,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: take digits apart",
-  "themeOrder": 7,
-  "drills": [
-   "Digits"
-  ],
-  "examples": []
- },
- {
-  "id": "D11",
-  "name": "D11-largest-digit",
-  "class": "D11_LargestDigit",
-  "title": "Largest digit",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "LargestDigit"
-  ],
-  "cases": [
-   {
-    "method": "LargestDigit",
-    "args": [
-     3829
-    ],
-    "expected": 9
-   },
-   {
-    "method": "LargestDigit",
-    "args": [
-     111
-    ],
-    "expected": 1
-   },
-   {
-    "method": "LargestDigit",
-    "args": [
-     5
-    ],
-    "expected": 5
-   },
-   {
-    "method": "LargestDigit",
-    "args": [
-     2061
-    ],
-    "expected": 6
-   }
-  ],
-  "checkHint": "",
-  "theme": "Loops: take digits apart",
-  "themeOrder": 7,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Digits",
   "drills": [
    "Digits"
   ],
@@ -3509,8 +3528,58 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: take digits apart",
-  "themeOrder": 7,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Digits",
+  "drills": [
+   "Digits"
+  ],
+  "examples": []
+ },
+ {
+  "id": "D11",
+  "name": "D11-largest-digit",
+  "class": "D11_LargestDigit",
+  "title": "Largest digit",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "LargestDigit"
+  ],
+  "cases": [
+   {
+    "method": "LargestDigit",
+    "args": [
+     3829
+    ],
+    "expected": 9
+   },
+   {
+    "method": "LargestDigit",
+    "args": [
+     111
+    ],
+    "expected": 1
+   },
+   {
+    "method": "LargestDigit",
+    "args": [
+     5
+    ],
+    "expected": 5
+   },
+   {
+    "method": "LargestDigit",
+    "args": [
+     2061
+    ],
+    "expected": 6
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Digits",
   "drills": [
    "Digits"
   ],
@@ -3520,7 +3589,7 @@
   "id": "D07",
   "name": "D07-fix-digit-sum",
   "class": "D07_FixDigitSum",
-  "title": "Fix the bugs: digit sum",
+  "title": "Fix: digit sum",
   "paper": false,
   "kind": "method",
   "methods": [
@@ -3564,8 +3633,9 @@
    }
   ],
   "checkHint": "the code has 2 bugs. Trace DigitSum(123) with a table. Which operator gives the last digit (%) and which removes it (/)? Does the loop run for 10?",
-  "theme": "Loops: take digits apart",
-  "themeOrder": 7,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Digits",
   "drills": [
    "Digits"
   ],
@@ -3612,8 +3682,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: take digits apart",
-  "themeOrder": 7,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Digits",
   "drills": [
    "Digits"
   ],
@@ -3692,8 +3763,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: take digits apart",
-  "themeOrder": 7,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Digits",
   "drills": [],
   "examples": [
    {
@@ -3726,14 +3798,15 @@
   "id": "S01",
   "name": "S01-trace-updates",
   "class": "S01_TraceUpdates",
-  "title": "Trace two changing variables (paper)",
+  "title": "Trace two variables",
   "paper": true,
   "kind": "paper",
   "methods": [],
   "cases": [],
   "checkHint": "",
-  "theme": "Loops: remember changing values",
-  "themeOrder": 8,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Changing values",
   "drills": [
    "Changing state"
   ],
@@ -3768,8 +3841,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: remember changing values",
-  "themeOrder": 8,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Changing values",
   "drills": [
    "Changing state"
   ],
@@ -3785,8 +3859,9 @@
   "methods": [],
   "cases": [],
   "checkHint": "",
-  "theme": "Loops: remember changing values",
-  "themeOrder": 8,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Changing values",
   "drills": [
    "Changing state"
   ],
@@ -3821,7 +3896,7 @@
   "id": "S05",
   "name": "S05-nth-fibonacci",
   "class": "S05_NthFibonacci",
-  "title": "The n-th Fibonacci number",
+  "title": "N-th Fibonacci",
   "paper": false,
   "kind": "method",
   "methods": [
@@ -3858,8 +3933,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: remember changing values",
-  "themeOrder": 8,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Changing values",
   "drills": [
    "Changing state"
   ],
@@ -3906,8 +3982,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: remember changing values",
-  "themeOrder": 8,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Changing values",
   "drills": [
    "Changing state"
   ],
@@ -3937,6 +4014,263 @@
     ]
    }
   ]
+ },
+ {
+  "id": "P03",
+  "name": "P03-has-a-multiple-of-7",
+  "class": "P03_HasAMultipleOf7",
+  "title": "Has a multiple of 7",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "HasMultipleOf7"
+  ],
+  "cases": [
+   {
+    "method": "HasMultipleOf7",
+    "args": [
+     1,
+     6
+    ],
+    "expected": false
+   },
+   {
+    "method": "HasMultipleOf7",
+    "args": [
+     1,
+     7
+    ],
+    "expected": true
+   },
+   {
+    "method": "HasMultipleOf7",
+    "args": [
+     10,
+     20
+    ],
+    "expected": true
+   },
+   {
+    "method": "HasMultipleOf7",
+    "args": [
+     15,
+     20
+    ],
+    "expected": false
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Search and combine",
+  "drills": [
+   "Search with a flag"
+  ],
+  "examples": []
+ },
+ {
+  "id": "P04",
+  "name": "P04-has-an-even-digit",
+  "class": "P04_HasAnEvenDigit",
+  "title": "Has an even digit",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "HasEvenDigit"
+  ],
+  "cases": [
+   {
+    "method": "HasEvenDigit",
+    "args": [
+     135
+    ],
+    "expected": false
+   },
+   {
+    "method": "HasEvenDigit",
+    "args": [
+     1352
+    ],
+    "expected": true
+   },
+   {
+    "method": "HasEvenDigit",
+    "args": [
+     8
+    ],
+    "expected": true
+   },
+   {
+    "method": "HasEvenDigit",
+    "args": [
+     7
+    ],
+    "expected": false
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Search and combine",
+  "drills": [
+   "Search with a flag"
+  ],
+  "examples": []
+ },
+ {
+  "id": "P07",
+  "name": "P07-all-digits-odd",
+  "class": "P07_AllDigitsOdd",
+  "title": "All digits odd",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "AllDigitsOdd"
+  ],
+  "cases": [
+   {
+    "method": "AllDigitsOdd",
+    "args": [
+     1357
+    ],
+    "expected": true
+   },
+   {
+    "method": "AllDigitsOdd",
+    "args": [
+     1352
+    ],
+    "expected": false
+   },
+   {
+    "method": "AllDigitsOdd",
+    "args": [
+     7
+    ],
+    "expected": true
+   },
+   {
+    "method": "AllDigitsOdd",
+    "args": [
+     20
+    ],
+    "expected": false
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Search and combine",
+  "drills": [
+   "Search with a flag"
+  ],
+  "examples": []
+ },
+ {
+  "id": "P05",
+  "name": "P05-first-multiple",
+  "class": "P05_FirstMultiple",
+  "title": "First multiple",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "FirstMultiple"
+  ],
+  "cases": [
+   {
+    "method": "FirstMultiple",
+    "args": [
+     10,
+     20,
+     7
+    ],
+    "expected": 14
+   },
+   {
+    "method": "FirstMultiple",
+    "args": [
+     1,
+     5,
+     6
+    ],
+    "expected": -1
+   },
+   {
+    "method": "FirstMultiple",
+    "args": [
+     6,
+     9,
+     3
+    ],
+    "expected": 6
+   },
+   {
+    "method": "FirstMultiple",
+    "args": [
+     1,
+     30,
+     10
+    ],
+    "expected": 10
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Search and combine",
+  "drills": [
+   "Search with a flag"
+  ],
+  "examples": []
+ },
+ {
+  "id": "P06",
+  "name": "P06-smallest-divisor",
+  "class": "P06_SmallestDivisor",
+  "title": "Smallest divisor",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SmallestDivisor"
+  ],
+  "cases": [
+   {
+    "method": "SmallestDivisor",
+    "args": [
+     15
+    ],
+    "expected": 3
+   },
+   {
+    "method": "SmallestDivisor",
+    "args": [
+     7
+    ],
+    "expected": 7
+   },
+   {
+    "method": "SmallestDivisor",
+    "args": [
+     2
+    ],
+    "expected": 2
+   },
+   {
+    "method": "SmallestDivisor",
+    "args": [
+     49
+    ],
+    "expected": 7
+   }
+  ],
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Search and combine",
+  "drills": [
+   "Search with a flag"
+  ],
+  "examples": []
  },
  {
   "id": "P01",
@@ -3993,9 +4327,12 @@
    }
   ],
   "checkHint": "",
-  "theme": "Loops: search",
-  "themeOrder": 9,
-  "drills": [],
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Search and combine",
+  "drills": [
+   "Search with a flag"
+  ],
   "examples": [
    {
     "input": [
@@ -4049,8 +4386,9 @@
   "methods": [],
   "cases": [],
   "checkHint": "",
-  "theme": "Loops: search",
-  "themeOrder": 9,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Search and combine",
   "drills": [],
   "examples": [
    {
@@ -4136,8 +4474,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Combine recipes",
-  "themeOrder": 10,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Search and combine",
   "drills": [],
   "examples": [
    {
@@ -4186,14 +4525,15 @@
   "id": "M02",
   "name": "M02-armstrong-numbers-in-a-range",
   "class": "M02_ArmstrongNumbersInARange",
-  "title": "All Armstrong numbers in a range",
+  "title": "Armstrong in a range",
   "paper": false,
   "kind": "output",
   "methods": [],
   "cases": [],
   "checkHint": "",
-  "theme": "Combine recipes",
-  "themeOrder": 10,
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Search and combine",
   "drills": [],
   "examples": [
    {
@@ -4265,8 +4605,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Arrays and text",
-  "themeOrder": 11,
+  "theme": "Arrays, text and lists",
+  "themeOrder": 3,
+  "group": "Arrays",
   "drills": [],
   "examples": [
    {
@@ -4300,10 +4641,88 @@
   ]
  },
  {
+  "id": "R03",
+  "name": "R03-count-matches",
+  "class": "R03_CountMatches",
+  "title": "Count matches",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountMatches"
+  ],
+  "cases": [
+   {
+    "method": "CountMatches",
+    "args": [
+     [
+      2,
+      4,
+      2,
+      5,
+      2
+     ],
+     2
+    ],
+    "expected": 3
+   },
+   {
+    "method": "CountMatches",
+    "args": [
+     [
+      1,
+      1
+     ],
+     9
+    ],
+    "expected": 0
+   },
+   {
+    "method": "CountMatches",
+    "args": [
+     [],
+     3
+    ],
+    "expected": 0
+   }
+  ],
+  "checkHint": "",
+  "theme": "Arrays, text and lists",
+  "themeOrder": 3,
+  "group": "Arrays",
+  "drills": [],
+  "examples": [
+   {
+    "input": [
+     "5",
+     "2",
+     "4",
+     "2",
+     "5",
+     "2",
+     "2"
+    ],
+    "expected": [
+     "2 appears 3 times"
+    ]
+   },
+   {
+    "input": [
+     "2",
+     "1",
+     "1",
+     "9"
+    ],
+    "expected": [
+     "9 appears 0 times"
+    ]
+   }
+  ]
+ },
+ {
   "id": "R02",
   "name": "R02-largest-in-an-array",
   "class": "R02_LargestInAnArray",
-  "title": "Largest value in an array",
+  "title": "Position of the largest",
   "paper": false,
   "kind": "method",
   "methods": [
@@ -4356,8 +4775,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Arrays and text",
-  "themeOrder": 11,
+  "theme": "Arrays, text and lists",
+  "themeOrder": 3,
+  "group": "Arrays",
   "drills": [],
   "examples": [
    {
@@ -4390,7 +4810,7 @@
   "id": "R06",
   "name": "R06-fix-largest-value",
   "class": "R06_FixLargestValue",
-  "title": "Fix the bugs: largest value",
+  "title": "Fix: largest value",
   "paper": false,
   "kind": "method",
   "methods": [
@@ -4441,87 +4861,11 @@
    }
   ],
   "checkHint": "the code has 2 bugs. The last index is values.Length - 1. And try [-5, -2, -9]: why is 0 a bad start value for max?",
-  "theme": "Arrays and text",
-  "themeOrder": 11,
+  "theme": "Arrays, text and lists",
+  "themeOrder": 3,
+  "group": "Arrays",
   "drills": [],
   "examples": []
- },
- {
-  "id": "R03",
-  "name": "R03-count-matches",
-  "class": "R03_CountMatches",
-  "title": "Count matches in an array",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "CountMatches"
-  ],
-  "cases": [
-   {
-    "method": "CountMatches",
-    "args": [
-     [
-      2,
-      4,
-      2,
-      5,
-      2
-     ],
-     2
-    ],
-    "expected": 3
-   },
-   {
-    "method": "CountMatches",
-    "args": [
-     [
-      1,
-      1
-     ],
-     9
-    ],
-    "expected": 0
-   },
-   {
-    "method": "CountMatches",
-    "args": [
-     [],
-     3
-    ],
-    "expected": 0
-   }
-  ],
-  "checkHint": "",
-  "theme": "Arrays and text",
-  "themeOrder": 11,
-  "drills": [],
-  "examples": [
-   {
-    "input": [
-     "5",
-     "2",
-     "4",
-     "2",
-     "5",
-     "2",
-     "2"
-    ],
-    "expected": [
-     "2 appears 3 times"
-    ]
-   },
-   {
-    "input": [
-     "2",
-     "1",
-     "1",
-     "9"
-    ],
-    "expected": [
-     "9 appears 0 times"
-    ]
-   }
-  ]
  },
  {
   "id": "R04",
@@ -4580,8 +4924,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Arrays and text",
-  "themeOrder": 11,
+  "theme": "Arrays, text and lists",
+  "themeOrder": 3,
+  "group": "Arrays",
   "drills": [],
   "examples": [
    {
@@ -4660,8 +5005,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Arrays and text",
-  "themeOrder": 11,
+  "theme": "Arrays, text and lists",
+  "themeOrder": 3,
+  "group": "Arrays",
   "drills": [],
   "examples": [
    {
@@ -4724,8 +5070,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Arrays and text",
-  "themeOrder": 11,
+  "theme": "Arrays, text and lists",
+  "themeOrder": 3,
+  "group": "Text",
   "drills": [],
   "examples": [
    {
@@ -4791,8 +5138,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Arrays and text",
-  "themeOrder": 11,
+  "theme": "Arrays, text and lists",
+  "themeOrder": 3,
+  "group": "Text",
   "drills": [],
   "examples": [
    {
@@ -4825,7 +5173,7 @@
   "id": "T03",
   "name": "T03-count-and-keep-digits",
   "class": "T03_CountAndKeepDigits",
-  "title": "Count and keep the digits",
+  "title": "Keep the digits",
   "paper": false,
   "kind": "method",
   "methods": [
@@ -4855,8 +5203,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Arrays and text",
-  "themeOrder": 11,
+  "theme": "Arrays, text and lists",
+  "themeOrder": 3,
+  "group": "Text",
   "drills": [],
   "examples": [
    {
@@ -4889,8 +5238,9 @@
   "methods": [],
   "cases": [],
   "checkHint": "",
-  "theme": "Files",
-  "themeOrder": 12,
+  "theme": "Arrays, text and lists",
+  "themeOrder": 3,
+  "group": "Files and lists",
   "drills": [],
   "examples": [
    {
@@ -4917,34 +5267,6 @@
   ]
  },
  {
-  "id": "E01",
-  "name": "E01-safe-number-reader",
-  "class": "E01_SafeNumberReader",
-  "title": "Safe number reader",
-  "paper": false,
-  "kind": "output",
-  "methods": [],
-  "cases": [],
-  "checkHint": "",
-  "theme": "Exceptions",
-  "themeOrder": 15,
-  "drills": [],
-  "examples": [
-   {
-    "input": [
-     "abc",
-     "12x",
-     "42"
-    ],
-    "expected": [
-     "That is not a number.",
-     "That is not a number.",
-     "Thanks: 42"
-    ]
-   }
-  ]
- },
- {
   "id": "K01",
   "name": "K01-shopping-list",
   "class": "K01_ShoppingList",
@@ -4954,8 +5276,9 @@
   "methods": [],
   "cases": [],
   "checkHint": "",
-  "theme": "Collections",
-  "themeOrder": 13,
+  "theme": "Arrays, text and lists",
+  "themeOrder": 3,
+  "group": "Files and lists",
   "drills": [],
   "examples": [
    {
@@ -4981,6 +5304,66 @@
     ]
    }
   ]
+ },
+ {
+  "id": "N02",
+  "name": "N02-is-multiple-and-count",
+  "class": "N02_IsMultipleAndCount",
+  "title": "A method that calls one",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "IsMultiple",
+   "CountMultiples"
+  ],
+  "cases": [
+   {
+    "method": "IsMultiple",
+    "args": [
+     12,
+     3
+    ],
+    "expected": true
+   },
+   {
+    "method": "IsMultiple",
+    "args": [
+     7,
+     2
+    ],
+    "expected": false
+   },
+   {
+    "method": "CountMultiples",
+    "args": [
+     20,
+     5
+    ],
+    "expected": 4
+   },
+   {
+    "method": "CountMultiples",
+    "args": [
+     10,
+     3
+    ],
+    "expected": 3
+   },
+   {
+    "method": "CountMultiples",
+    "args": [
+     4,
+     5
+    ],
+    "expected": 0
+   }
+  ],
+  "checkHint": "",
+  "theme": "Methods and errors",
+  "themeOrder": 4,
+  "group": "Methods",
+  "drills": [],
+  "examples": []
  },
  {
   "id": "N01",
@@ -5048,8 +5431,9 @@
    }
   ],
   "checkHint": "",
-  "theme": "Methods",
-  "themeOrder": 14,
+  "theme": "Methods and errors",
+  "themeOrder": 4,
+  "group": "Methods",
   "drills": [],
   "examples": [
    {
@@ -5059,6 +5443,82 @@
     ],
     "expected": [
      "153 370 371 407"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "E02",
+  "name": "E02-parse-or-zero",
+  "class": "E02_ParseOrZero",
+  "title": "Parse or zero",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "ParseOrZero"
+  ],
+  "cases": [
+   {
+    "method": "ParseOrZero",
+    "args": [
+     "42"
+    ],
+    "expected": 42
+   },
+   {
+    "method": "ParseOrZero",
+    "args": [
+     "abc"
+    ],
+    "expected": 0
+   },
+   {
+    "method": "ParseOrZero",
+    "args": [
+     ""
+    ],
+    "expected": 0
+   },
+   {
+    "method": "ParseOrZero",
+    "args": [
+     "-7"
+    ],
+    "expected": -7
+   }
+  ],
+  "checkHint": "",
+  "theme": "Methods and errors",
+  "themeOrder": 4,
+  "group": "Errors",
+  "drills": [],
+  "examples": []
+ },
+ {
+  "id": "E01",
+  "name": "E01-safe-number-reader",
+  "class": "E01_SafeNumberReader",
+  "title": "Safe number reader",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "checkHint": "",
+  "theme": "Methods and errors",
+  "themeOrder": 4,
+  "group": "Errors",
+  "drills": [],
+  "examples": [
+   {
+    "input": [
+     "abc",
+     "12x",
+     "42"
+    ],
+    "expected": [
+     "That is not a number.",
+     "That is not a number.",
+     "Thanks: 42"
     ]
    }
   ]

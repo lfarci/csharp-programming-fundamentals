@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // A09 · Smallest and largest until zero
+    // A09 · Min and max until zero
     // Exercise page: exercises/A09-min-and-max-until-zero.md
     public static class A09_MinAndMaxUntilZero
     {

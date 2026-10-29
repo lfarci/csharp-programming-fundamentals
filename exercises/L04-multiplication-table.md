@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: repeat and count](../themes/loops-repeat.md) › L04
+---
+prev:
+  text: "L15 · Count by any step"
+  link: /exercises/L15-count-by-step
+next:
+  text: "L19 · Count the turns"
+  link: /exercises/L19-count-the-turns
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L04
 
 # L04 · Multiplication table
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | easy | [Loops: repeat and count](../themes/loops-repeat.md) | [Counter loop](../cookbook/01-counter-loop.md) | [L03](L03-count-up-and-down.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Count** · exercise 13 of 13 in this group (13 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | easy | write code | [Counter loop](../cookbook/01-counter-loop.md) | [L03](L03-count-up-and-down.md) |
+
+</div>
 
 ## Goal
 
@@ -78,4 +95,8 @@ Only after a real try: [open the solution for L04](../solutions/L04_Multiplicati
 
 ---
 
-Previous: [L03 · Count up and down](L03-count-up-and-down.md) · [All exercises](README.md) · Next: [L05 · Until zero](L05-until-zero.md)
+<div class="gh-only">
+
+Previous: [L15 · Count by any step](L15-count-by-step.md) · [Loops](../themes/loops.md) · Next: [L19 · Count the turns](L19-count-the-turns.md)
+
+</div>

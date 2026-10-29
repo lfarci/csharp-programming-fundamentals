@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // G07 · Arrange the lines: a square
+    // G07 · Arrange: a square
     // Exercise page: exercises/G07-arrange-a-square.md
     //
     // Goal: Print a square of #, size wide and size high. All the lines are given, mixed up: put

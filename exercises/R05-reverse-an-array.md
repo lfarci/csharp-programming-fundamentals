@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Arrays and text](../themes/arrays.md) › R05
+---
+prev:
+  text: "R04 · Find the position"
+  link: /exercises/R04-find-the-position
+next:
+  text: "T01 · Count a letter"
+  link: /exercises/T01-count-a-letter
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Arrays](../themes/arrays.md#arrays) › R05
 
 # R05 · Reverse an array
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Challenge | medium | [Arrays and text](../themes/arrays.md) | [Array traversal](../cookbook/11-array-traversal.md) | [R01](R01-sum-an-array.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Arrays, text and lists › Arrays** · exercise 6 of 6 in this group (6 of 11 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Challenge | medium | write code | [Array traversal](../cookbook/11-array-traversal.md) | [R01](R01-sum-an-array.md) |
+
+</div>
 
 ## Goal
 
@@ -73,4 +90,8 @@ Only after a real try: [open the solution for R05](../solutions/R05_ReverseAnArr
 
 ---
 
-Previous: [R04 · Find the position](R04-find-the-position.md) · [All exercises](README.md) · Next: [T01 · Count a letter](T01-count-a-letter.md)
+<div class="gh-only">
+
+Previous: [R04 · Find the position](R04-find-the-position.md) · [Arrays, text and lists](../themes/arrays.md) · Next: [T01 · Count a letter](T01-count-a-letter.md)
+
+</div>

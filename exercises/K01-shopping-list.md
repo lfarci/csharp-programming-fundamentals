@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Collections](../themes/collections.md) › K01
+---
+prev:
+  text: "F01 · Save numbers to a file"
+  link: /exercises/F01-numbers-file
+next:
+  text: "Next theme: Methods and errors"
+  link: /themes/methods
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Files and lists](../themes/arrays.md#files-and-lists) › K01
 
 # K01 · Shopping list
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Collections](../themes/collections.md) | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Array traversal](../cookbook/11-array-traversal.md) | [R01](R01-sum-an-array.md), [L05](L05-until-zero.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Arrays, text and lists › Files and lists** · exercise 2 of 2 in this group (11 of 11 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Array traversal](../cookbook/11-array-traversal.md) | [R01](R01-sum-an-array.md), [L05](L05-until-zero.md) |
+
+</div>
 
 ## Goal
 
@@ -85,4 +102,8 @@ Only after a real try: [open the solution for K01](../solutions/K01_ShoppingList
 
 ---
 
-Previous: [E01 · Safe number reader](E01-safe-number-reader.md) · [All exercises](README.md) · Next: [N01 · Armstrong with methods](N01-armstrong-with-methods.md)
+<div class="gh-only">
+
+Previous: [F01 · Save numbers to a file](F01-numbers-file.md) · [Arrays, text and lists](../themes/arrays.md) · Next: [Next theme: Methods and errors](../themes/methods.md)
+
+</div>

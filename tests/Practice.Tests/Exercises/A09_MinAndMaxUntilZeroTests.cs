@@ -1,4 +1,4 @@
-// Tests for A09 · Smallest and largest until zero
+// Tests for A09 · Min and max until zero
 // Exercise page: exercises/A09-min-and-max-until-zero.md
 // Your code:     practice/A09_MinAndMaxUntilZero.cs
 // Run them:      ./ex check A09

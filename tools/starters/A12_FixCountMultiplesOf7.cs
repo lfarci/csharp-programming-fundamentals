@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // A12 · Fix the bugs: count multiples of 7
+    // A12 · Fix: multiples of 7
     // Exercise page: exercises/A12-fix-count-multiples-of-7.md
     //
     // Goal: CountMultiplesOf7(n) should count the numbers from 1 to n (included) divisible by 7.

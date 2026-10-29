@@ -8,6 +8,10 @@ Learn them like cooking: first follow the recipe exactly, then change one ingred
 
 ## The 12 recipes
 
+<CardList list="recipes" />
+
+### Trigger words at a glance
+
 | # | Recipe | Trigger words: you read… | Box(es) to keep | Loop |
 | ---: | --- | --- | --- | --- |
 | 1 | [Counter loop](01-counter-loop.md) | "from 1 to N", "N times", "count down" | `i` | `for` |

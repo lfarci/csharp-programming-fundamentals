@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: repeat and count](../themes/loops-repeat.md) › L02
+---
+prev:
+  text: "L01 · Trace a loop"
+  link: /exercises/L01-trace-a-loop
+next:
+  text: "L03 · Count up and down"
+  link: /exercises/L03-count-up-and-down
+---
 
-# L02 · Boundaries: < or <= ? (paper)
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L02
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: repeat and count](../themes/loops-repeat.md) | [Counter loop](../cookbook/01-counter-loop.md) | [L01](L01-trace-a-loop.md) | Custom |
+# L02 · Boundaries: < or <=
+
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Count** · exercise 2 of 13 in this group (2 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | paper | [Counter loop](../cookbook/01-counter-loop.md) | [L01](L01-trace-a-loop.md) |
+
+</div>
 
 ## Goal
 
@@ -62,4 +79,8 @@ Only after a real try: [open the solution for L02](../solutions/L02-boundaries.m
 
 ---
 
-Previous: [L01 · Trace a loop (paper)](L01-trace-a-loop.md) · [All exercises](README.md) · Next: [L03 · Count up and down](L03-count-up-and-down.md)
+<div class="gh-only">
+
+Previous: [L01 · Trace a loop](L01-trace-a-loop.md) · [Loops](../themes/loops.md) · Next: [L03 · Count up and down](L03-count-up-and-down.md)
+
+</div>

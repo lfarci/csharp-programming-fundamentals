@@ -4,148 +4,253 @@
    "id": "B01",
    "title": "Hello you",
    "link": "/exercises/B01-hello-you",
-   "theme": "hello-world",
+   "theme": "basics",
+   "group": "first-programs",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 1,
+   "of": 3,
+   "recipes": [],
+   "pre": [],
    "drills": []
   },
   {
    "id": "B02",
    "title": "Rectangle calculator",
    "link": "/exercises/B02-rectangle-calculator",
-   "theme": "variables",
+   "theme": "basics",
+   "group": "first-programs",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 2,
+   "of": 3,
+   "recipes": [],
+   "pre": [
+    {
+     "id": "B01",
+     "link": "/exercises/B01-hello-you"
+    }
+   ],
    "drills": []
   },
   {
    "id": "B03",
-   "title": "Seconds to hours, minutes, seconds",
+   "title": "Seconds to h, min, s",
    "link": "/exercises/B03-seconds-to-hms",
-   "theme": "variables",
+   "theme": "basics",
+   "group": "first-programs",
    "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
    "paper": false,
+   "pos": 3,
+   "of": 3,
+   "recipes": [],
+   "pre": [
+    {
+     "id": "B02",
+     "link": "/exercises/B02-rectangle-calculator"
+    }
+   ],
    "drills": []
   },
   {
    "id": "C01",
    "title": "Even or odd",
    "link": "/exercises/C01-even-or-odd",
-   "theme": "conditions",
+   "theme": "basics",
+   "group": "conditions",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 1,
+   "of": 4,
+   "recipes": [],
+   "pre": [
+    {
+     "id": "B02",
+     "link": "/exercises/B02-rectangle-calculator"
+    }
+   ],
    "drills": []
   },
   {
    "id": "C02",
    "title": "Largest of three",
    "link": "/exercises/C02-largest-of-three",
-   "theme": "conditions",
+   "theme": "basics",
+   "group": "conditions",
    "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
    "paper": false,
+   "pos": 2,
+   "of": 4,
+   "recipes": [
+    {
+     "title": "Min/max",
+     "link": "/cookbook/04-min-max"
+    }
+   ],
+   "pre": [
+    {
+     "id": "C01",
+     "link": "/exercises/C01-even-or-odd"
+    }
+   ],
    "drills": []
   },
   {
    "id": "C03",
    "title": "Ticket price",
    "link": "/exercises/C03-ticket-price",
-   "theme": "conditions",
+   "theme": "basics",
+   "group": "conditions",
    "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
    "paper": false,
+   "pos": 3,
+   "of": 4,
+   "recipes": [],
+   "pre": [
+    {
+     "id": "C01",
+     "link": "/exercises/C01-even-or-odd"
+    }
+   ],
    "drills": []
   },
   {
    "id": "C04",
    "title": "Grade from a score",
    "link": "/exercises/C04-grade-from-a-score",
-   "theme": "conditions",
+   "theme": "basics",
+   "group": "conditions",
    "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
    "paper": false,
+   "pos": 4,
+   "of": 4,
+   "recipes": [],
+   "pre": [
+    {
+     "id": "C03",
+     "link": "/exercises/C03-ticket-price"
+    }
+   ],
    "drills": []
   },
   {
    "id": "L01",
-   "title": "Trace a loop (paper)",
+   "title": "Trace a loop",
    "link": "/exercises/L01-trace-a-loop",
-   "theme": "loops-repeat",
+   "theme": "loops",
+   "group": "count",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "paper",
    "paper": true,
+   "pos": 1,
+   "of": 13,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    }
+   ],
+   "pre": [
+    {
+     "id": "C01",
+     "link": "/exercises/C01-even-or-odd"
+    }
+   ],
    "drills": []
   },
   {
    "id": "L02",
-   "title": "Boundaries: < or <= ? (paper)",
+   "title": "Boundaries: < or <=",
    "link": "/exercises/L02-boundaries",
-   "theme": "loops-repeat",
+   "theme": "loops",
+   "group": "count",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "paper",
    "paper": true,
+   "pos": 2,
+   "of": 13,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L01",
+     "link": "/exercises/L01-trace-a-loop"
+    }
+   ],
    "drills": []
   },
   {
    "id": "L03",
    "title": "Count up and down",
    "link": "/exercises/L03-count-up-and-down",
-   "theme": "loops-repeat",
+   "theme": "loops",
+   "group": "count",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 3,
+   "of": 13,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L01",
+     "link": "/exercises/L01-trace-a-loop"
+    }
+   ],
    "drills": [
     "Counter loop (print, count, step)"
    ]
-  },
-  {
-   "id": "L04",
-   "title": "Multiplication table",
-   "link": "/exercises/L04-multiplication-table",
-   "theme": "loops-repeat",
-   "level": "Independent",
-   "paper": false,
-   "drills": []
-  },
-  {
-   "id": "L05",
-   "title": "Until zero",
-   "link": "/exercises/L05-until-zero",
-   "theme": "loops-repeat",
-   "level": "Independent",
-   "paper": false,
-   "drills": []
-  },
-  {
-   "id": "L06",
-   "title": "Even numbers",
-   "link": "/exercises/L06-even-numbers",
-   "theme": "loops-repeat",
-   "level": "Guided",
-   "paper": false,
-   "drills": [
-    "Counter loop (print, count, step)"
-   ]
-  },
-  {
-   "id": "L07",
-   "title": "Ask until valid",
-   "link": "/exercises/L07-ask-until-valid",
-   "theme": "loops-repeat",
-   "level": "Independent",
-   "paper": false,
-   "drills": []
-  },
-  {
-   "id": "L08",
-   "title": "Guess the number",
-   "link": "/exercises/L08-guess-the-number",
-   "theme": "loops-repeat",
-   "level": "Challenge",
-   "paper": false,
-   "drills": []
   },
   {
    "id": "L11",
    "title": "Count from a to b",
    "link": "/exercises/L11-count-from-a-to-b",
-   "theme": "loops-repeat",
+   "theme": "loops",
+   "group": "count",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 4,
+   "of": 13,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L03",
+     "link": "/exercises/L03-count-up-and-down"
+    }
+   ],
    "drills": [
     "Counter loop (print, count, step)"
    ]
@@ -154,9 +259,26 @@
    "id": "L12",
    "title": "Count down",
    "link": "/exercises/L12-count-down",
-   "theme": "loops-repeat",
+   "theme": "loops",
+   "group": "count",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 5,
+   "of": 13,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L11",
+     "link": "/exercises/L11-count-from-a-to-b"
+    }
+   ],
    "drills": [
     "Counter loop (print, count, step)"
    ]
@@ -165,9 +287,26 @@
    "id": "L13",
    "title": "Count by 3",
    "link": "/exercises/L13-count-by-3",
-   "theme": "loops-repeat",
+   "theme": "loops",
+   "group": "count",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 6,
+   "of": 13,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L11",
+     "link": "/exercises/L11-count-from-a-to-b"
+    }
+   ],
    "drills": [
     "Counter loop (print, count, step)"
    ]
@@ -176,20 +315,26 @@
    "id": "L14",
    "title": "Count by 5",
    "link": "/exercises/L14-count-by-5",
-   "theme": "loops-repeat",
+   "theme": "loops",
+   "group": "count",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
-   "drills": [
-    "Counter loop (print, count, step)"
-   ]
-  },
-  {
-   "id": "L15",
-   "title": "Count by any step",
-   "link": "/exercises/L15-count-by-step",
-   "theme": "loops-repeat",
-   "level": "Independent",
-   "paper": false,
+   "pos": 7,
+   "of": 13,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L13",
+     "link": "/exercises/L13-count-by-3"
+    }
+   ],
    "drills": [
     "Counter loop (print, count, step)"
    ]
@@ -198,9 +343,54 @@
    "id": "L16",
    "title": "Odd numbers",
    "link": "/exercises/L16-odd-numbers",
-   "theme": "loops-repeat",
+   "theme": "loops",
+   "group": "count",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 8,
+   "of": 13,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L11",
+     "link": "/exercises/L11-count-from-a-to-b"
+    }
+   ],
+   "drills": [
+    "Counter loop (print, count, step)"
+   ]
+  },
+  {
+   "id": "L06",
+   "title": "Even numbers",
+   "link": "/exercises/L06-even-numbers",
+   "theme": "loops",
+   "group": "count",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 9,
+   "of": 13,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L03",
+     "link": "/exercises/L03-count-up-and-down"
+    }
+   ],
    "drills": [
     "Counter loop (print, count, step)"
    ]
@@ -209,9 +399,26 @@
    "id": "L17",
    "title": "Count down by 2",
    "link": "/exercises/L17-count-down-by-2",
-   "theme": "loops-repeat",
+   "theme": "loops",
+   "group": "count",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 10,
+   "of": 13,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L12",
+     "link": "/exercises/L12-count-down"
+    }
+   ],
    "drills": [
     "Counter loop (print, count, step)"
    ]
@@ -220,31 +427,138 @@
    "id": "L18",
    "title": "Square numbers",
    "link": "/exercises/L18-squares",
-   "theme": "loops-repeat",
+   "theme": "loops",
+   "group": "count",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 11,
+   "of": 13,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L11",
+     "link": "/exercises/L11-count-from-a-to-b"
+    }
+   ],
    "drills": [
     "Counter loop (print, count, step)"
    ]
+  },
+  {
+   "id": "L15",
+   "title": "Count by any step",
+   "link": "/exercises/L15-count-by-step",
+   "theme": "loops",
+   "group": "count",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 12,
+   "of": 13,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L14",
+     "link": "/exercises/L14-count-by-5"
+    }
+   ],
+   "drills": [
+    "Counter loop (print, count, step)"
+   ]
+  },
+  {
+   "id": "L04",
+   "title": "Multiplication table",
+   "link": "/exercises/L04-multiplication-table",
+   "theme": "loops",
+   "group": "count",
+   "level": "Independent",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 13,
+   "of": 13,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L03",
+     "link": "/exercises/L03-count-up-and-down"
+    }
+   ],
+   "drills": []
   },
   {
    "id": "L19",
    "title": "Count the turns",
    "link": "/exercises/L19-count-the-turns",
-   "theme": "loops-repeat",
+   "theme": "loops",
+   "group": "add-up",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
-   "drills": [
-    "Counter loop (print, count, step)"
-   ]
+   "pos": 1,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    },
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L11",
+     "link": "/exercises/L11-count-from-a-to-b"
+    }
+   ],
+   "drills": []
   },
   {
    "id": "A11",
-   "title": "Arrange the lines: sum of squares",
+   "title": "Arrange: sum of squares",
    "link": "/exercises/A11-arrange-sum-of-squares",
-   "theme": "loops-running-result",
+   "theme": "loops",
+   "group": "add-up",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "arrange the lines",
    "paper": false,
+   "pos": 2,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L03",
+     "link": "/exercises/L03-count-up-and-down"
+    }
+   ],
    "drills": [
     "Accumulator (sum, product)"
    ]
@@ -253,113 +567,30 @@
    "id": "A01",
    "title": "Sum from 1 to N",
    "link": "/exercises/A01-sum-1-to-n",
-   "theme": "loops-running-result",
+   "theme": "loops",
+   "group": "add-up",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
-   "drills": [
-    "Accumulator (sum, product)"
-   ]
-  },
-  {
-   "id": "A02",
-   "title": "Count multiples of 3",
-   "link": "/exercises/A02-count-multiples-of-3",
-   "theme": "loops-running-result",
-   "level": "Guided",
-   "paper": false,
-   "drills": [
-    "Count or sum only some values"
-   ]
-  },
-  {
-   "id": "A12",
-   "title": "Fix the bugs: count multiples of 7",
-   "link": "/exercises/A12-fix-count-multiples-of-7",
-   "theme": "loops-running-result",
-   "level": "Guided",
-   "paper": false,
-   "drills": [
-    "Count or sum only some values"
-   ]
-  },
-  {
-   "id": "A03",
-   "title": "Sum of the even numbers",
-   "link": "/exercises/A03-sum-even-values",
-   "theme": "loops-running-result",
-   "level": "Independent",
-   "paper": false,
-   "drills": [
-    "Count or sum only some values"
-   ]
-  },
-  {
-   "id": "A04",
-   "title": "Factorial",
-   "link": "/exercises/A04-factorial",
-   "theme": "loops-running-result",
-   "level": "Independent",
-   "paper": false,
-   "drills": [
-    "Accumulator (sum, product)"
-   ]
-  },
-  {
-   "id": "A05",
-   "title": "Two accumulators: sum and squares",
-   "link": "/exercises/A05-sum-square-difference",
-   "theme": "loops-running-result",
-   "level": "Independent",
-   "paper": false,
-   "drills": []
-  },
-  {
-   "id": "A06",
-   "title": "Average until zero",
-   "link": "/exercises/A06-average-until-zero",
-   "theme": "loops-running-result",
-   "level": "Independent",
-   "paper": false,
-   "drills": []
-  },
-  {
-   "id": "A07",
-   "title": "Integer power",
-   "link": "/exercises/A07-integer-power",
-   "theme": "loops-running-result",
-   "level": "Independent",
-   "paper": false,
-   "drills": [
-    "Accumulator (sum, product)"
-   ]
-  },
-  {
-   "id": "A08",
-   "title": "Multiples of 3 or 5",
-   "link": "/exercises/A08-multiples-of-3-or-5",
-   "theme": "loops-running-result",
-   "level": "Challenge",
-   "paper": false,
-   "drills": [
-    "Count or sum only some values"
-   ]
-  },
-  {
-   "id": "A09",
-   "title": "Smallest and largest until zero",
-   "link": "/exercises/A09-min-and-max-until-zero",
-   "theme": "loops-running-result",
-   "level": "Independent",
-   "paper": false,
-   "drills": []
-  },
-  {
-   "id": "A10",
-   "title": "Sum of a series",
-   "link": "/exercises/A10-sum-of-a-series",
-   "theme": "loops-running-result",
-   "level": "Challenge",
-   "paper": false,
+   "pos": 3,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    },
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L03",
+     "link": "/exercises/L03-count-up-and-down"
+    }
+   ],
    "drills": [
     "Accumulator (sum, product)"
    ]
@@ -368,9 +599,26 @@
    "id": "A13",
    "title": "Sum from a to b",
    "link": "/exercises/A13-sum-from-a-to-b",
-   "theme": "loops-running-result",
+   "theme": "loops",
+   "group": "add-up",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 4,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A01",
+     "link": "/exercises/A01-sum-1-to-n"
+    }
+   ],
    "drills": [
     "Accumulator (sum, product)"
    ]
@@ -379,64 +627,58 @@
    "id": "A14",
    "title": "Sum the odd numbers",
    "link": "/exercises/A14-sum-odd-numbers",
-   "theme": "loops-running-result",
+   "theme": "loops",
+   "group": "add-up",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 5,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A01",
+     "link": "/exercises/A01-sum-1-to-n"
+    },
+    {
+     "id": "L16",
+     "link": "/exercises/L16-odd-numbers"
+    }
+   ],
    "drills": [
     "Accumulator (sum, product)"
-   ]
-  },
-  {
-   "id": "A15",
-   "title": "Count the even numbers",
-   "link": "/exercises/A15-count-even-numbers",
-   "theme": "loops-running-result",
-   "level": "Guided",
-   "paper": false,
-   "drills": [
-    "Count or sum only some values"
-   ]
-  },
-  {
-   "id": "A16",
-   "title": "Count multiples of 5",
-   "link": "/exercises/A16-count-multiples-of-5",
-   "theme": "loops-running-result",
-   "level": "Guided",
-   "paper": false,
-   "drills": [
-    "Count or sum only some values"
-   ]
-  },
-  {
-   "id": "A17",
-   "title": "Sum the multiples of k",
-   "link": "/exercises/A17-sum-multiples-of-k",
-   "theme": "loops-running-result",
-   "level": "Independent",
-   "paper": false,
-   "drills": [
-    "Count or sum only some values"
    ]
   },
   {
    "id": "A18",
    "title": "Sum of cubes",
    "link": "/exercises/A18-sum-of-cubes",
-   "theme": "loops-running-result",
+   "theme": "loops",
+   "group": "add-up",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
-   "drills": [
-    "Accumulator (sum, product)"
-   ]
-  },
-  {
-   "id": "A19",
-   "title": "Product from a to b",
-   "link": "/exercises/A19-product-from-a-to-b",
-   "theme": "loops-running-result",
-   "level": "Guided",
-   "paper": false,
+   "pos": 6,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A11",
+     "link": "/exercises/A11-arrange-sum-of-squares"
+    }
+   ],
    "drills": [
     "Accumulator (sum, product)"
    ]
@@ -445,20 +687,284 @@
    "id": "A20",
    "title": "Power of 2",
    "link": "/exercises/A20-powers-of-2",
-   "theme": "loops-running-result",
+   "theme": "loops",
+   "group": "add-up",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 7,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A01",
+     "link": "/exercises/A01-sum-1-to-n"
+    }
+   ],
    "drills": [
     "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A19",
+   "title": "Product from a to b",
+   "link": "/exercises/A19-product-from-a-to-b",
+   "theme": "loops",
+   "group": "add-up",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 8,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A20",
+     "link": "/exercises/A20-powers-of-2"
+    },
+    {
+     "id": "A13",
+     "link": "/exercises/A13-sum-from-a-to-b"
+    }
+   ],
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A04",
+   "title": "Factorial",
+   "link": "/exercises/A04-factorial",
+   "theme": "loops",
+   "group": "add-up",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 9,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A01",
+     "link": "/exercises/A01-sum-1-to-n"
+    }
+   ],
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A07",
+   "title": "Integer power",
+   "link": "/exercises/A07-integer-power",
+   "theme": "loops",
+   "group": "add-up",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 10,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A04",
+     "link": "/exercises/A04-factorial"
+    }
+   ],
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A05",
+   "title": "Sum and sum of squares",
+   "link": "/exercises/A05-sum-square-difference",
+   "theme": "loops",
+   "group": "add-up",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 11,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A01",
+     "link": "/exercises/A01-sum-1-to-n"
+    }
+   ],
+   "drills": []
+  },
+  {
+   "id": "A10",
+   "title": "Sum of a series",
+   "link": "/exercises/A10-sum-of-a-series",
+   "theme": "loops",
+   "group": "add-up",
+   "level": "Challenge",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 12,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A01",
+     "link": "/exercises/A01-sum-1-to-n"
+    }
+   ],
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A02",
+   "title": "Count multiples of 3",
+   "link": "/exercises/A02-count-multiples-of-3",
+   "theme": "loops",
+   "group": "keep-only-some",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 1,
+   "of": 9,
+   "recipes": [
+    {
+     "title": "Conditional accumulator",
+     "link": "/cookbook/03-conditional-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A01",
+     "link": "/exercises/A01-sum-1-to-n"
+    },
+    {
+     "id": "C01",
+     "link": "/exercises/C01-even-or-odd"
+    }
+   ],
+   "drills": [
+    "Count or sum only some values"
+   ]
+  },
+  {
+   "id": "A15",
+   "title": "Count the even numbers",
+   "link": "/exercises/A15-count-even-numbers",
+   "theme": "loops",
+   "group": "keep-only-some",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 2,
+   "of": 9,
+   "recipes": [
+    {
+     "title": "Conditional accumulator",
+     "link": "/cookbook/03-conditional-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A02",
+     "link": "/exercises/A02-count-multiples-of-3"
+    }
+   ],
+   "drills": [
+    "Count or sum only some values"
+   ]
+  },
+  {
+   "id": "A16",
+   "title": "Count multiples of 5",
+   "link": "/exercises/A16-count-multiples-of-5",
+   "theme": "loops",
+   "group": "keep-only-some",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 3,
+   "of": 9,
+   "recipes": [
+    {
+     "title": "Conditional accumulator",
+     "link": "/cookbook/03-conditional-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A15",
+     "link": "/exercises/A15-count-even-numbers"
+    }
+   ],
+   "drills": [
+    "Count or sum only some values"
    ]
   },
   {
    "id": "A21",
    "title": "Count the divisors",
    "link": "/exercises/A21-count-divisors",
-   "theme": "loops-running-result",
+   "theme": "loops",
+   "group": "keep-only-some",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 4,
+   "of": 9,
+   "recipes": [
+    {
+     "title": "Conditional accumulator",
+     "link": "/cookbook/03-conditional-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A16",
+     "link": "/exercises/A16-count-multiples-of-5"
+    }
+   ],
    "drills": [
     "Count or sum only some values"
    ]
@@ -467,20 +973,332 @@
    "id": "A22",
    "title": "Sum of the divisors",
    "link": "/exercises/A22-sum-of-divisors",
-   "theme": "loops-running-result",
+   "theme": "loops",
+   "group": "keep-only-some",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 5,
+   "of": 9,
+   "recipes": [
+    {
+     "title": "Conditional accumulator",
+     "link": "/cookbook/03-conditional-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A21",
+     "link": "/exercises/A21-count-divisors"
+    }
+   ],
    "drills": [
     "Count or sum only some values"
    ]
   },
   {
+   "id": "A12",
+   "title": "Fix: multiples of 7",
+   "link": "/exercises/A12-fix-count-multiples-of-7",
+   "theme": "loops",
+   "group": "keep-only-some",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "fix the bugs",
+   "paper": false,
+   "pos": 6,
+   "of": 9,
+   "recipes": [
+    {
+     "title": "Conditional accumulator",
+     "link": "/cookbook/03-conditional-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A02",
+     "link": "/exercises/A02-count-multiples-of-3"
+    }
+   ],
+   "drills": [
+    "Count or sum only some values"
+   ]
+  },
+  {
+   "id": "A03",
+   "title": "Sum of the even numbers",
+   "link": "/exercises/A03-sum-even-values",
+   "theme": "loops",
+   "group": "keep-only-some",
+   "level": "Independent",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 7,
+   "of": 9,
+   "recipes": [
+    {
+     "title": "Conditional accumulator",
+     "link": "/cookbook/03-conditional-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A02",
+     "link": "/exercises/A02-count-multiples-of-3"
+    }
+   ],
+   "drills": [
+    "Count or sum only some values"
+   ]
+  },
+  {
+   "id": "A17",
+   "title": "Sum the multiples of k",
+   "link": "/exercises/A17-sum-multiples-of-k",
+   "theme": "loops",
+   "group": "keep-only-some",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 8,
+   "of": 9,
+   "recipes": [
+    {
+     "title": "Conditional accumulator",
+     "link": "/cookbook/03-conditional-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A03",
+     "link": "/exercises/A03-sum-even-values"
+    },
+    {
+     "id": "A16",
+     "link": "/exercises/A16-count-multiples-of-5"
+    }
+   ],
+   "drills": [
+    "Count or sum only some values"
+   ]
+  },
+  {
+   "id": "A08",
+   "title": "Multiples of 3 or 5",
+   "link": "/exercises/A08-multiples-of-3-or-5",
+   "theme": "loops",
+   "group": "keep-only-some",
+   "level": "Challenge",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 9,
+   "of": 9,
+   "recipes": [
+    {
+     "title": "Conditional accumulator",
+     "link": "/cookbook/03-conditional-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A03",
+     "link": "/exercises/A03-sum-even-values"
+    }
+   ],
+   "drills": [
+    "Count or sum only some values"
+   ]
+  },
+  {
+   "id": "L05",
+   "title": "Until zero",
+   "link": "/exercises/L05-until-zero",
+   "theme": "loops",
+   "group": "until-the-user-stops",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 1,
+   "of": 5,
+   "recipes": [
+    {
+     "title": "Sentinel loop",
+     "link": "/cookbook/10-sentinel-loop"
+    },
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L03",
+     "link": "/exercises/L03-count-up-and-down"
+    }
+   ],
+   "drills": []
+  },
+  {
+   "id": "A06",
+   "title": "Average until zero",
+   "link": "/exercises/A06-average-until-zero",
+   "theme": "loops",
+   "group": "until-the-user-stops",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 2,
+   "of": 5,
+   "recipes": [
+    {
+     "title": "Sentinel loop",
+     "link": "/cookbook/10-sentinel-loop"
+    },
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L05",
+     "link": "/exercises/L05-until-zero"
+    },
+    {
+     "id": "A01",
+     "link": "/exercises/A01-sum-1-to-n"
+    }
+   ],
+   "drills": []
+  },
+  {
+   "id": "A09",
+   "title": "Min and max until zero",
+   "link": "/exercises/A09-min-and-max-until-zero",
+   "theme": "loops",
+   "group": "until-the-user-stops",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 3,
+   "of": 5,
+   "recipes": [
+    {
+     "title": "Sentinel loop",
+     "link": "/cookbook/10-sentinel-loop"
+    },
+    {
+     "title": "Min/max",
+     "link": "/cookbook/04-min-max"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A06",
+     "link": "/exercises/A06-average-until-zero"
+    },
+    {
+     "id": "C02",
+     "link": "/exercises/C02-largest-of-three"
+    }
+   ],
+   "drills": []
+  },
+  {
+   "id": "L07",
+   "title": "Ask until valid",
+   "link": "/exercises/L07-ask-until-valid",
+   "theme": "loops",
+   "group": "until-the-user-stops",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 4,
+   "of": 5,
+   "recipes": [
+    {
+     "title": "Input validation",
+     "link": "/cookbook/09-input-validation"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L05",
+     "link": "/exercises/L05-until-zero"
+    },
+    {
+     "id": "C03",
+     "link": "/exercises/C03-ticket-price"
+    }
+   ],
+   "drills": []
+  },
+  {
+   "id": "L08",
+   "title": "Guess the number",
+   "link": "/exercises/L08-guess-the-number",
+   "theme": "loops",
+   "group": "until-the-user-stops",
+   "level": "Challenge",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 5,
+   "of": 5,
+   "recipes": [
+    {
+     "title": "Input validation",
+     "link": "/cookbook/09-input-validation"
+    },
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L07",
+     "link": "/exercises/L07-ask-until-valid"
+    }
+   ],
+   "drills": []
+  },
+  {
    "id": "L09",
    "title": "Draw one row",
    "link": "/exercises/L09-draw-a-row",
-   "theme": "loops-2d",
+   "theme": "loops",
+   "group": "draw-rows-and-grids",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 1,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    },
+    {
+     "title": "Nested grid",
+     "link": "/cookbook/08-nested-grid"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L03",
+     "link": "/exercises/L03-count-up-and-down"
+    }
+   ],
    "drills": [
     "Nested loops (draw)"
    ]
@@ -489,31 +1307,58 @@
    "id": "L10",
    "title": "Numbers on one line",
    "link": "/exercises/L10-numbers-on-one-line",
-   "theme": "loops-2d",
-   "level": "Independent",
+   "theme": "loops",
+   "group": "draw-rows-and-grids",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 2,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    },
+    {
+     "title": "Nested grid",
+     "link": "/cookbook/08-nested-grid"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L09",
+     "link": "/exercises/L09-draw-a-row"
+    }
+   ],
    "drills": [
     "Nested loops (draw)"
    ]
   },
   {
    "id": "G07",
-   "title": "Arrange the lines: a square",
+   "title": "Arrange: a square",
    "link": "/exercises/G07-arrange-a-square",
-   "theme": "loops-2d",
+   "theme": "loops",
+   "group": "draw-rows-and-grids",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "arrange the lines",
    "paper": false,
-   "drills": [
-    "Nested loops (draw)"
-   ]
-  },
-  {
-   "id": "G01",
-   "title": "Draw a rectangle",
-   "link": "/exercises/G01-rectangle",
-   "theme": "loops-2d",
-   "level": "Guided",
-   "paper": false,
+   "pos": 3,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Nested grid",
+     "link": "/cookbook/08-nested-grid"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L09",
+     "link": "/exercises/L09-draw-a-row"
+    }
+   ],
    "drills": [
     "Nested loops (draw)"
    ]
@@ -522,9 +1367,54 @@
    "id": "G08",
    "title": "Solid square",
    "link": "/exercises/G08-solid-square",
-   "theme": "loops-2d",
+   "theme": "loops",
+   "group": "draw-rows-and-grids",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 4,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Nested grid",
+     "link": "/cookbook/08-nested-grid"
+    }
+   ],
+   "pre": [
+    {
+     "id": "G07",
+     "link": "/exercises/G07-arrange-a-square"
+    }
+   ],
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G01",
+   "title": "Draw a rectangle",
+   "link": "/exercises/G01-rectangle",
+   "theme": "loops",
+   "group": "draw-rows-and-grids",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 5,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Nested grid",
+     "link": "/cookbook/08-nested-grid"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L09",
+     "link": "/exercises/L09-draw-a-row"
+    }
+   ],
    "drills": [
     "Nested loops (draw)"
    ]
@@ -533,53 +1423,26 @@
    "id": "G09",
    "title": "Rows of numbers",
    "link": "/exercises/G09-number-rows",
-   "theme": "loops-2d",
+   "theme": "loops",
+   "group": "draw-rows-and-grids",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
-   "drills": [
-    "Nested loops (draw)"
-   ]
-  },
-  {
-   "id": "G02",
-   "title": "Draw a right triangle",
-   "link": "/exercises/G02-right-triangle",
-   "theme": "loops-2d",
-   "level": "Independent",
-   "paper": false,
-   "drills": [
-    "Nested loops (draw)"
-   ]
-  },
-  {
-   "id": "G10",
-   "title": "Triangle of row numbers",
-   "link": "/exercises/G10-row-number-triangle",
-   "theme": "loops-2d",
-   "level": "Guided",
-   "paper": false,
-   "drills": [
-    "Nested loops (draw)"
-   ]
-  },
-  {
-   "id": "G11",
-   "title": "Counting triangle",
-   "link": "/exercises/G11-counting-triangle",
-   "theme": "loops-2d",
-   "level": "Guided",
-   "paper": false,
-   "drills": [
-    "Nested loops (draw)"
-   ]
-  },
-  {
-   "id": "G12",
-   "title": "Upside-down triangle",
-   "link": "/exercises/G12-upside-down-triangle",
-   "theme": "loops-2d",
-   "level": "Guided",
-   "paper": false,
+   "pos": 6,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Nested grid",
+     "link": "/cookbook/08-nested-grid"
+    }
+   ],
+   "pre": [
+    {
+     "id": "G08",
+     "link": "/exercises/G08-solid-square"
+    }
+   ],
    "drills": [
     "Nested loops (draw)"
    ]
@@ -588,9 +1451,30 @@
    "id": "G14",
    "title": "Numbers in columns",
    "link": "/exercises/G14-numbers-in-columns",
-   "theme": "loops-2d",
+   "theme": "loops",
+   "group": "draw-rows-and-grids",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 7,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    },
+    {
+     "title": "Nested grid",
+     "link": "/cookbook/08-nested-grid"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L10",
+     "link": "/exercises/L10-numbers-on-one-line"
+    }
+   ],
    "drills": [
     "Nested loops (draw)"
    ]
@@ -599,9 +1483,150 @@
    "id": "G03",
    "title": "Multiplication grid",
    "link": "/exercises/G03-multiplication-grid",
-   "theme": "loops-2d",
+   "theme": "loops",
+   "group": "draw-rows-and-grids",
    "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
    "paper": false,
+   "pos": 8,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Nested grid",
+     "link": "/cookbook/08-nested-grid"
+    }
+   ],
+   "pre": [
+    {
+     "id": "G01",
+     "link": "/exercises/G01-rectangle"
+    },
+    {
+     "id": "L04",
+     "link": "/exercises/L04-multiplication-table"
+    },
+    {
+     "id": "G14",
+     "link": "/exercises/G14-numbers-in-columns"
+    }
+   ],
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G02",
+   "title": "Draw a right triangle",
+   "link": "/exercises/G02-right-triangle",
+   "theme": "loops",
+   "group": "draw-shapes",
+   "level": "Guided",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 1,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Nested grid",
+     "link": "/cookbook/08-nested-grid"
+    }
+   ],
+   "pre": [
+    {
+     "id": "G01",
+     "link": "/exercises/G01-rectangle"
+    }
+   ],
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G10",
+   "title": "Triangle of row numbers",
+   "link": "/exercises/G10-row-number-triangle",
+   "theme": "loops",
+   "group": "draw-shapes",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 2,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Nested grid",
+     "link": "/cookbook/08-nested-grid"
+    }
+   ],
+   "pre": [
+    {
+     "id": "G02",
+     "link": "/exercises/G02-right-triangle"
+    }
+   ],
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G11",
+   "title": "Counting triangle",
+   "link": "/exercises/G11-counting-triangle",
+   "theme": "loops",
+   "group": "draw-shapes",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 3,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Nested grid",
+     "link": "/cookbook/08-nested-grid"
+    }
+   ],
+   "pre": [
+    {
+     "id": "G10",
+     "link": "/exercises/G10-row-number-triangle"
+    }
+   ],
+   "drills": [
+    "Nested loops (draw)"
+   ]
+  },
+  {
+   "id": "G12",
+   "title": "Upside-down triangle",
+   "link": "/exercises/G12-upside-down-triangle",
+   "theme": "loops",
+   "group": "draw-shapes",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 4,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Nested grid",
+     "link": "/cookbook/08-nested-grid"
+    }
+   ],
+   "pre": [
+    {
+     "id": "G02",
+     "link": "/exercises/G02-right-triangle"
+    },
+    {
+     "id": "L12",
+     "link": "/exercises/L12-count-down"
+    }
+   ],
    "drills": [
     "Nested loops (draw)"
    ]
@@ -610,9 +1635,26 @@
    "id": "G04",
    "title": "Hollow rectangle",
    "link": "/exercises/G04-hollow-rectangle",
-   "theme": "loops-2d",
+   "theme": "loops",
+   "group": "draw-shapes",
    "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
    "paper": false,
+   "pos": 5,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Nested grid",
+     "link": "/cookbook/08-nested-grid"
+    }
+   ],
+   "pre": [
+    {
+     "id": "G01",
+     "link": "/exercises/G01-rectangle"
+    }
+   ],
    "drills": [
     "Nested loops (draw)"
    ]
@@ -621,9 +1663,30 @@
    "id": "G13",
    "title": "Diagonal",
    "link": "/exercises/G13-diagonal",
-   "theme": "loops-2d",
+   "theme": "loops",
+   "group": "draw-shapes",
    "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
    "paper": false,
+   "pos": 6,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Nested grid",
+     "link": "/cookbook/08-nested-grid"
+    }
+   ],
+   "pre": [
+    {
+     "id": "G08",
+     "link": "/exercises/G08-solid-square"
+    },
+    {
+     "id": "G04",
+     "link": "/exercises/G04-hollow-rectangle"
+    }
+   ],
    "drills": [
     "Nested loops (draw)"
    ]
@@ -632,9 +1695,30 @@
    "id": "G05",
    "title": "Checkerboard",
    "link": "/exercises/G05-checkerboard",
-   "theme": "loops-2d",
+   "theme": "loops",
+   "group": "draw-shapes",
    "level": "Challenge",
+   "effort": "medium",
+   "kind": "write code",
    "paper": false,
+   "pos": 7,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Nested grid",
+     "link": "/cookbook/08-nested-grid"
+    }
+   ],
+   "pre": [
+    {
+     "id": "G04",
+     "link": "/exercises/G04-hollow-rectangle"
+    },
+    {
+     "id": "C01",
+     "link": "/exercises/C01-even-or-odd"
+    }
+   ],
    "drills": [
     "Nested loops (draw)"
    ]
@@ -643,18 +1727,52 @@
    "id": "G06",
    "title": "Pyramid",
    "link": "/exercises/G06-pyramid",
-   "theme": "loops-2d",
+   "theme": "loops",
+   "group": "draw-shapes",
    "level": "Challenge",
+   "effort": "hard",
+   "kind": "write code",
    "paper": false,
+   "pos": 8,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Nested grid",
+     "link": "/cookbook/08-nested-grid"
+    }
+   ],
+   "pre": [
+    {
+     "id": "G02",
+     "link": "/exercises/G02-right-triangle"
+    }
+   ],
    "drills": []
   },
   {
    "id": "D01",
    "title": "Last digit",
    "link": "/exercises/D01-last-digit",
-   "theme": "loops-digits",
+   "theme": "loops",
+   "group": "digits",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 1,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Digit extraction",
+     "link": "/cookbook/06-digit-extraction"
+    }
+   ],
+   "pre": [
+    {
+     "id": "B03",
+     "link": "/exercises/B03-seconds-to-hms"
+    }
+   ],
    "drills": [
     "Digits"
    ]
@@ -663,9 +1781,26 @@
    "id": "D02",
    "title": "Remove the last digit",
    "link": "/exercises/D02-remove-last-digit",
-   "theme": "loops-digits",
+   "theme": "loops",
+   "group": "digits",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 2,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Digit extraction",
+     "link": "/cookbook/06-digit-extraction"
+    }
+   ],
+   "pre": [
+    {
+     "id": "D01",
+     "link": "/exercises/D01-last-digit"
+    }
+   ],
    "drills": [
     "Digits"
    ]
@@ -674,9 +1809,34 @@
    "id": "D03",
    "title": "Count the digits",
    "link": "/exercises/D03-count-digits",
-   "theme": "loops-digits",
-   "level": "Independent",
+   "theme": "loops",
+   "group": "digits",
+   "level": "Guided",
+   "effort": "medium",
+   "kind": "write code",
    "paper": false,
+   "pos": 3,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Digit extraction",
+     "link": "/cookbook/06-digit-extraction"
+    },
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "D02",
+     "link": "/exercises/D02-remove-last-digit"
+    },
+    {
+     "id": "L05",
+     "link": "/exercises/L05-until-zero"
+    }
+   ],
    "drills": [
     "Digits"
    ]
@@ -685,9 +1845,26 @@
    "id": "D08",
    "title": "First digit",
    "link": "/exercises/D08-first-digit",
-   "theme": "loops-digits",
+   "theme": "loops",
+   "group": "digits",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 4,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Digit extraction",
+     "link": "/cookbook/06-digit-extraction"
+    }
+   ],
+   "pre": [
+    {
+     "id": "D03",
+     "link": "/exercises/D03-count-digits"
+    }
+   ],
    "drills": [
     "Digits"
    ]
@@ -696,9 +1873,30 @@
    "id": "D04",
    "title": "Sum of the digits",
    "link": "/exercises/D04-digit-sum",
-   "theme": "loops-digits",
-   "level": "Independent",
+   "theme": "loops",
+   "group": "digits",
+   "level": "Guided",
+   "effort": "medium",
+   "kind": "write code",
    "paper": false,
+   "pos": 5,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Digit extraction",
+     "link": "/cookbook/06-digit-extraction"
+    },
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "D03",
+     "link": "/exercises/D03-count-digits"
+    }
+   ],
    "drills": [
     "Digits"
    ]
@@ -707,9 +1905,30 @@
    "id": "D09",
    "title": "Count the even digits",
    "link": "/exercises/D09-count-even-digits",
-   "theme": "loops-digits",
+   "theme": "loops",
+   "group": "digits",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 6,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Digit extraction",
+     "link": "/cookbook/06-digit-extraction"
+    },
+    {
+     "title": "Conditional accumulator",
+     "link": "/cookbook/03-conditional-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "D04",
+     "link": "/exercises/D04-digit-sum"
+    }
+   ],
    "drills": [
     "Digits"
    ]
@@ -718,20 +1937,30 @@
    "id": "D10",
    "title": "Count one digit",
    "link": "/exercises/D10-count-a-digit",
-   "theme": "loops-digits",
+   "theme": "loops",
+   "group": "digits",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
-   "drills": [
-    "Digits"
-   ]
-  },
-  {
-   "id": "D11",
-   "title": "Largest digit",
-   "link": "/exercises/D11-largest-digit",
-   "theme": "loops-digits",
-   "level": "Independent",
-   "paper": false,
+   "pos": 7,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Digit extraction",
+     "link": "/cookbook/06-digit-extraction"
+    },
+    {
+     "title": "Conditional accumulator",
+     "link": "/cookbook/03-conditional-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "D09",
+     "link": "/exercises/D09-count-even-digits"
+    }
+   ],
    "drills": [
     "Digits"
    ]
@@ -740,20 +1969,94 @@
    "id": "D12",
    "title": "Product of the digits",
    "link": "/exercises/D12-product-of-digits",
-   "theme": "loops-digits",
+   "theme": "loops",
+   "group": "digits",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 8,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Digit extraction",
+     "link": "/cookbook/06-digit-extraction"
+    },
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "D04",
+     "link": "/exercises/D04-digit-sum"
+    }
+   ],
+   "drills": [
+    "Digits"
+   ]
+  },
+  {
+   "id": "D11",
+   "title": "Largest digit",
+   "link": "/exercises/D11-largest-digit",
+   "theme": "loops",
+   "group": "digits",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 9,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Digit extraction",
+     "link": "/cookbook/06-digit-extraction"
+    },
+    {
+     "title": "Min/max",
+     "link": "/cookbook/04-min-max"
+    }
+   ],
+   "pre": [
+    {
+     "id": "D04",
+     "link": "/exercises/D04-digit-sum"
+    },
+    {
+     "id": "C02",
+     "link": "/exercises/C02-largest-of-three"
+    }
+   ],
    "drills": [
     "Digits"
    ]
   },
   {
    "id": "D07",
-   "title": "Fix the bugs: digit sum",
+   "title": "Fix: digit sum",
    "link": "/exercises/D07-fix-digit-sum",
-   "theme": "loops-digits",
+   "theme": "loops",
+   "group": "digits",
    "level": "Independent",
+   "effort": "medium",
+   "kind": "fix the bugs",
    "paper": false,
+   "pos": 10,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Digit extraction",
+     "link": "/cookbook/06-digit-extraction"
+    }
+   ],
+   "pre": [
+    {
+     "id": "D04",
+     "link": "/exercises/D04-digit-sum"
+    }
+   ],
    "drills": [
     "Digits"
    ]
@@ -762,9 +2065,26 @@
    "id": "D05",
    "title": "Reverse a number",
    "link": "/exercises/D05-reverse-a-number",
-   "theme": "loops-digits",
+   "theme": "loops",
+   "group": "digits",
    "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
    "paper": false,
+   "pos": 11,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Digit extraction",
+     "link": "/cookbook/06-digit-extraction"
+    }
+   ],
+   "pre": [
+    {
+     "id": "D04",
+     "link": "/exercises/D04-digit-sum"
+    }
+   ],
    "drills": [
     "Digits"
    ]
@@ -773,18 +2093,52 @@
    "id": "D06",
    "title": "Palindrome number",
    "link": "/exercises/D06-palindrome-number",
-   "theme": "loops-digits",
+   "theme": "loops",
+   "group": "digits",
    "level": "Challenge",
+   "effort": "hard",
+   "kind": "write code",
    "paper": false,
+   "pos": 12,
+   "of": 12,
+   "recipes": [
+    {
+     "title": "Digit extraction",
+     "link": "/cookbook/06-digit-extraction"
+    }
+   ],
+   "pre": [
+    {
+     "id": "D05",
+     "link": "/exercises/D05-reverse-a-number"
+    }
+   ],
    "drills": []
   },
   {
    "id": "S01",
-   "title": "Trace two changing variables (paper)",
+   "title": "Trace two variables",
    "link": "/exercises/S01-trace-updates",
-   "theme": "loops-state",
+   "theme": "loops",
+   "group": "changing-values",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "paper",
    "paper": true,
+   "pos": 1,
+   "of": 5,
+   "recipes": [
+    {
+     "title": "State update",
+     "link": "/cookbook/07-state-update"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L01",
+     "link": "/exercises/L01-trace-a-loop"
+    }
+   ],
    "drills": [
     "Changing state"
    ]
@@ -793,9 +2147,26 @@
    "id": "S04",
    "title": "Doubling",
    "link": "/exercises/S04-doubling",
-   "theme": "loops-state",
+   "theme": "loops",
+   "group": "changing-values",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 2,
+   "of": 5,
+   "recipes": [
+    {
+     "title": "State update",
+     "link": "/cookbook/07-state-update"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L11",
+     "link": "/exercises/L11-count-from-a-to-b"
+    }
+   ],
    "drills": [
     "Changing state"
    ]
@@ -804,20 +2175,58 @@
    "id": "S02",
    "title": "Fibonacci",
    "link": "/exercises/S02-fibonacci",
-   "theme": "loops-state",
+   "theme": "loops",
+   "group": "changing-values",
    "level": "Independent",
+   "effort": "hard",
+   "kind": "write code",
    "paper": false,
+   "pos": 3,
+   "of": 5,
+   "recipes": [
+    {
+     "title": "State update",
+     "link": "/cookbook/07-state-update"
+    }
+   ],
+   "pre": [
+    {
+     "id": "S01",
+     "link": "/exercises/S01-trace-updates"
+    },
+    {
+     "id": "A01",
+     "link": "/exercises/A01-sum-1-to-n"
+    }
+   ],
    "drills": [
     "Changing state"
    ]
   },
   {
    "id": "S05",
-   "title": "The n-th Fibonacci number",
+   "title": "N-th Fibonacci",
    "link": "/exercises/S05-nth-fibonacci",
-   "theme": "loops-state",
+   "theme": "loops",
+   "group": "changing-values",
    "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
    "paper": false,
+   "pos": 4,
+   "of": 5,
+   "recipes": [
+    {
+     "title": "State update",
+     "link": "/cookbook/07-state-update"
+    }
+   ],
+   "pre": [
+    {
+     "id": "S02",
+     "link": "/exercises/S02-fibonacci"
+    }
+   ],
    "drills": [
     "Changing state"
    ]
@@ -826,47 +2235,326 @@
    "id": "S03",
    "title": "Even Fibonacci sum",
    "link": "/exercises/S03-even-fibonacci-sum",
-   "theme": "loops-state",
+   "theme": "loops",
+   "group": "changing-values",
    "level": "Challenge",
+   "effort": "hard",
+   "kind": "write code",
    "paper": false,
+   "pos": 5,
+   "of": 5,
+   "recipes": [
+    {
+     "title": "State update",
+     "link": "/cookbook/07-state-update"
+    },
+    {
+     "title": "Conditional accumulator",
+     "link": "/cookbook/03-conditional-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "S02",
+     "link": "/exercises/S02-fibonacci"
+    },
+    {
+     "id": "A03",
+     "link": "/exercises/A03-sum-even-values"
+    }
+   ],
    "drills": [
     "Changing state"
+   ]
+  },
+  {
+   "id": "P03",
+   "title": "Has a multiple of 7",
+   "link": "/exercises/P03-has-a-multiple-of-7",
+   "theme": "loops",
+   "group": "search-and-combine",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 1,
+   "of": 9,
+   "recipes": [
+    {
+     "title": "Flag/search",
+     "link": "/cookbook/05-flag-search"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A16",
+     "link": "/exercises/A16-count-multiples-of-5"
+    }
+   ],
+   "drills": [
+    "Search with a flag"
+   ]
+  },
+  {
+   "id": "P04",
+   "title": "Has an even digit",
+   "link": "/exercises/P04-has-an-even-digit",
+   "theme": "loops",
+   "group": "search-and-combine",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 2,
+   "of": 9,
+   "recipes": [
+    {
+     "title": "Flag/search",
+     "link": "/cookbook/05-flag-search"
+    },
+    {
+     "title": "Digit extraction",
+     "link": "/cookbook/06-digit-extraction"
+    }
+   ],
+   "pre": [
+    {
+     "id": "P03",
+     "link": "/exercises/P03-has-a-multiple-of-7"
+    },
+    {
+     "id": "D09",
+     "link": "/exercises/D09-count-even-digits"
+    }
+   ],
+   "drills": [
+    "Search with a flag"
+   ]
+  },
+  {
+   "id": "P07",
+   "title": "All digits odd",
+   "link": "/exercises/P07-all-digits-odd",
+   "theme": "loops",
+   "group": "search-and-combine",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 3,
+   "of": 9,
+   "recipes": [
+    {
+     "title": "Flag/search",
+     "link": "/cookbook/05-flag-search"
+    },
+    {
+     "title": "Digit extraction",
+     "link": "/cookbook/06-digit-extraction"
+    }
+   ],
+   "pre": [
+    {
+     "id": "P04",
+     "link": "/exercises/P04-has-an-even-digit"
+    }
+   ],
+   "drills": [
+    "Search with a flag"
+   ]
+  },
+  {
+   "id": "P05",
+   "title": "First multiple",
+   "link": "/exercises/P05-first-multiple",
+   "theme": "loops",
+   "group": "search-and-combine",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 4,
+   "of": 9,
+   "recipes": [
+    {
+     "title": "Flag/search",
+     "link": "/cookbook/05-flag-search"
+    }
+   ],
+   "pre": [
+    {
+     "id": "P03",
+     "link": "/exercises/P03-has-a-multiple-of-7"
+    }
+   ],
+   "drills": [
+    "Search with a flag"
+   ]
+  },
+  {
+   "id": "P06",
+   "title": "Smallest divisor",
+   "link": "/exercises/P06-smallest-divisor",
+   "theme": "loops",
+   "group": "search-and-combine",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 5,
+   "of": 9,
+   "recipes": [
+    {
+     "title": "Flag/search",
+     "link": "/cookbook/05-flag-search"
+    }
+   ],
+   "pre": [
+    {
+     "id": "P05",
+     "link": "/exercises/P05-first-multiple"
+    },
+    {
+     "id": "A21",
+     "link": "/exercises/A21-count-divisors"
+    }
+   ],
+   "drills": [
+    "Search with a flag"
    ]
   },
   {
    "id": "P01",
    "title": "Is it prime?",
    "link": "/exercises/P01-is-it-prime",
-   "theme": "loops-search",
+   "theme": "loops",
+   "group": "search-and-combine",
    "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
    "paper": false,
-   "drills": []
+   "pos": 6,
+   "of": 9,
+   "recipes": [
+    {
+     "title": "Flag/search",
+     "link": "/cookbook/05-flag-search"
+    }
+   ],
+   "pre": [
+    {
+     "id": "P06",
+     "link": "/exercises/P06-smallest-divisor"
+    }
+   ],
+   "drills": [
+    "Search with a flag"
+   ]
   },
   {
    "id": "P02",
    "title": "All primes up to N",
    "link": "/exercises/P02-primes-up-to-n",
-   "theme": "loops-search",
+   "theme": "loops",
+   "group": "search-and-combine",
    "level": "Challenge",
+   "effort": "hard",
+   "kind": "write code",
    "paper": false,
+   "pos": 7,
+   "of": 9,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    },
+    {
+     "title": "Flag/search",
+     "link": "/cookbook/05-flag-search"
+    },
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "P01",
+     "link": "/exercises/P01-is-it-prime"
+    }
+   ],
    "drills": []
   },
   {
    "id": "M01",
    "title": "Armstrong number",
    "link": "/exercises/M01-armstrong-number",
-   "theme": "combine",
+   "theme": "loops",
+   "group": "search-and-combine",
    "level": "Challenge",
+   "effort": "hard",
+   "kind": "write code",
    "paper": false,
+   "pos": 8,
+   "of": 9,
+   "recipes": [
+    {
+     "title": "Digit extraction",
+     "link": "/cookbook/06-digit-extraction"
+    },
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "D03",
+     "link": "/exercises/D03-count-digits"
+    },
+    {
+     "id": "D04",
+     "link": "/exercises/D04-digit-sum"
+    },
+    {
+     "id": "A07",
+     "link": "/exercises/A07-integer-power"
+    }
+   ],
    "drills": []
   },
   {
    "id": "M02",
-   "title": "All Armstrong numbers in a range",
+   "title": "Armstrong in a range",
    "link": "/exercises/M02-armstrong-numbers-in-a-range",
-   "theme": "combine",
+   "theme": "loops",
+   "group": "search-and-combine",
    "level": "Challenge",
+   "effort": "hard",
+   "kind": "write code",
    "paper": false,
+   "pos": 9,
+   "of": 9,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    },
+    {
+     "title": "Digit extraction",
+     "link": "/cookbook/06-digit-extraction"
+    },
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "M01",
+     "link": "/exercises/M01-armstrong-number"
+    }
+   ],
    "drills": []
   },
   {
@@ -874,35 +2562,127 @@
    "title": "Sum of an array",
    "link": "/exercises/R01-sum-an-array",
    "theme": "arrays",
+   "group": "arrays",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
-   "drills": []
-  },
-  {
-   "id": "R02",
-   "title": "Largest value in an array",
-   "link": "/exercises/R02-largest-in-an-array",
-   "theme": "arrays",
-   "level": "Independent",
-   "paper": false,
-   "drills": []
-  },
-  {
-   "id": "R06",
-   "title": "Fix the bugs: largest value",
-   "link": "/exercises/R06-fix-largest-value",
-   "theme": "arrays",
-   "level": "Independent",
-   "paper": false,
+   "pos": 1,
+   "of": 6,
+   "recipes": [
+    {
+     "title": "Array traversal",
+     "link": "/cookbook/11-array-traversal"
+    },
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A01",
+     "link": "/exercises/A01-sum-1-to-n"
+    }
+   ],
    "drills": []
   },
   {
    "id": "R03",
-   "title": "Count matches in an array",
+   "title": "Count matches",
    "link": "/exercises/R03-count-matches",
    "theme": "arrays",
+   "group": "arrays",
    "level": "Independent",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 2,
+   "of": 6,
+   "recipes": [
+    {
+     "title": "Array traversal",
+     "link": "/cookbook/11-array-traversal"
+    },
+    {
+     "title": "Conditional accumulator",
+     "link": "/cookbook/03-conditional-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "R01",
+     "link": "/exercises/R01-sum-an-array"
+    },
+    {
+     "id": "A02",
+     "link": "/exercises/A02-count-multiples-of-3"
+    }
+   ],
+   "drills": []
+  },
+  {
+   "id": "R02",
+   "title": "Position of the largest",
+   "link": "/exercises/R02-largest-in-an-array",
+   "theme": "arrays",
+   "group": "arrays",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 3,
+   "of": 6,
+   "recipes": [
+    {
+     "title": "Array traversal",
+     "link": "/cookbook/11-array-traversal"
+    },
+    {
+     "title": "Min/max",
+     "link": "/cookbook/04-min-max"
+    }
+   ],
+   "pre": [
+    {
+     "id": "R01",
+     "link": "/exercises/R01-sum-an-array"
+    },
+    {
+     "id": "C02",
+     "link": "/exercises/C02-largest-of-three"
+    }
+   ],
+   "drills": []
+  },
+  {
+   "id": "R06",
+   "title": "Fix: largest value",
+   "link": "/exercises/R06-fix-largest-value",
+   "theme": "arrays",
+   "group": "arrays",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "fix the bugs",
+   "paper": false,
+   "pos": 4,
+   "of": 6,
+   "recipes": [
+    {
+     "title": "Array traversal",
+     "link": "/cookbook/11-array-traversal"
+    },
+    {
+     "title": "Min/max",
+     "link": "/cookbook/04-min-max"
+    }
+   ],
+   "pre": [
+    {
+     "id": "R02",
+     "link": "/exercises/R02-largest-in-an-array"
+    }
+   ],
    "drills": []
   },
   {
@@ -910,8 +2690,29 @@
    "title": "Find the position",
    "link": "/exercises/R04-find-the-position",
    "theme": "arrays",
+   "group": "arrays",
    "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
    "paper": false,
+   "pos": 5,
+   "of": 6,
+   "recipes": [
+    {
+     "title": "Array traversal",
+     "link": "/cookbook/11-array-traversal"
+    },
+    {
+     "title": "Flag/search",
+     "link": "/cookbook/05-flag-search"
+    }
+   ],
+   "pre": [
+    {
+     "id": "R03",
+     "link": "/exercises/R03-count-matches"
+    }
+   ],
    "drills": []
   },
   {
@@ -919,8 +2720,25 @@
    "title": "Reverse an array",
    "link": "/exercises/R05-reverse-an-array",
    "theme": "arrays",
+   "group": "arrays",
    "level": "Challenge",
+   "effort": "medium",
+   "kind": "write code",
    "paper": false,
+   "pos": 6,
+   "of": 6,
+   "recipes": [
+    {
+     "title": "Array traversal",
+     "link": "/cookbook/11-array-traversal"
+    }
+   ],
+   "pre": [
+    {
+     "id": "R01",
+     "link": "/exercises/R01-sum-an-array"
+    }
+   ],
    "drills": []
   },
   {
@@ -928,8 +2746,29 @@
    "title": "Count a letter",
    "link": "/exercises/T01-count-a-letter",
    "theme": "arrays",
+   "group": "text",
    "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 1,
+   "of": 3,
+   "recipes": [
+    {
+     "title": "Build a string",
+     "link": "/cookbook/12-string-building"
+    },
+    {
+     "title": "Conditional accumulator",
+     "link": "/cookbook/03-conditional-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "R03",
+     "link": "/exercises/R03-count-matches"
+    }
+   ],
    "drills": []
   },
   {
@@ -937,44 +2776,153 @@
    "title": "Remove spaces",
    "link": "/exercises/T02-remove-spaces",
    "theme": "arrays",
+   "group": "text",
    "level": "Independent",
+   "effort": "easy",
+   "kind": "write code",
    "paper": false,
+   "pos": 2,
+   "of": 3,
+   "recipes": [
+    {
+     "title": "Build a string",
+     "link": "/cookbook/12-string-building"
+    }
+   ],
+   "pre": [
+    {
+     "id": "T01",
+     "link": "/exercises/T01-count-a-letter"
+    }
+   ],
    "drills": []
   },
   {
    "id": "T03",
-   "title": "Count and keep the digits",
+   "title": "Keep the digits",
    "link": "/exercises/T03-count-and-keep-digits",
    "theme": "arrays",
+   "group": "text",
    "level": "Challenge",
+   "effort": "medium",
+   "kind": "write code",
    "paper": false,
+   "pos": 3,
+   "of": 3,
+   "recipes": [
+    {
+     "title": "Build a string",
+     "link": "/cookbook/12-string-building"
+    },
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "T02",
+     "link": "/exercises/T02-remove-spaces"
+    }
+   ],
    "drills": []
   },
   {
    "id": "F01",
    "title": "Save numbers to a file",
    "link": "/exercises/F01-numbers-file",
-   "theme": "files",
+   "theme": "arrays",
+   "group": "files-and-lists",
    "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
    "paper": false,
-   "drills": []
-  },
-  {
-   "id": "E01",
-   "title": "Safe number reader",
-   "link": "/exercises/E01-safe-number-reader",
-   "theme": "exceptions",
-   "level": "Independent",
-   "paper": false,
+   "pos": 1,
+   "of": 2,
+   "recipes": [
+    {
+     "title": "Sentinel loop",
+     "link": "/cookbook/10-sentinel-loop"
+    },
+    {
+     "title": "Array traversal",
+     "link": "/cookbook/11-array-traversal"
+    },
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L05",
+     "link": "/exercises/L05-until-zero"
+    },
+    {
+     "id": "R01",
+     "link": "/exercises/R01-sum-an-array"
+    }
+   ],
    "drills": []
   },
   {
    "id": "K01",
    "title": "Shopping list",
    "link": "/exercises/K01-shopping-list",
-   "theme": "collections",
+   "theme": "arrays",
+   "group": "files-and-lists",
    "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
    "paper": false,
+   "pos": 2,
+   "of": 2,
+   "recipes": [
+    {
+     "title": "Sentinel loop",
+     "link": "/cookbook/10-sentinel-loop"
+    },
+    {
+     "title": "Array traversal",
+     "link": "/cookbook/11-array-traversal"
+    }
+   ],
+   "pre": [
+    {
+     "id": "R01",
+     "link": "/exercises/R01-sum-an-array"
+    },
+    {
+     "id": "L05",
+     "link": "/exercises/L05-until-zero"
+    }
+   ],
+   "drills": []
+  },
+  {
+   "id": "N02",
+   "title": "A method that calls one",
+   "link": "/exercises/N02-is-multiple-and-count",
+   "theme": "methods",
+   "group": "methods",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 1,
+   "of": 2,
+   "recipes": [
+    {
+     "title": "Conditional accumulator",
+     "link": "/cookbook/03-conditional-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A16",
+     "link": "/exercises/A16-count-multiples-of-5"
+    }
+   ],
    "drills": []
   },
   {
@@ -982,8 +2930,76 @@
    "title": "Armstrong with methods",
    "link": "/exercises/N01-armstrong-with-methods",
    "theme": "methods",
+   "group": "methods",
    "level": "Challenge",
+   "effort": "hard",
+   "kind": "write code",
    "paper": false,
+   "pos": 2,
+   "of": 2,
+   "recipes": [
+    {
+     "title": "Digit extraction",
+     "link": "/cookbook/06-digit-extraction"
+    },
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "M02",
+     "link": "/exercises/M02-armstrong-numbers-in-a-range"
+    }
+   ],
+   "drills": []
+  },
+  {
+   "id": "E02",
+   "title": "Parse or zero",
+   "link": "/exercises/E02-parse-or-zero",
+   "theme": "methods",
+   "group": "errors",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 1,
+   "of": 2,
+   "recipes": [],
+   "pre": [
+    {
+     "id": "L07",
+     "link": "/exercises/L07-ask-until-valid"
+    }
+   ],
+   "drills": []
+  },
+  {
+   "id": "E01",
+   "title": "Safe number reader",
+   "link": "/exercises/E01-safe-number-reader",
+   "theme": "methods",
+   "group": "errors",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 2,
+   "of": 2,
+   "recipes": [
+    {
+     "title": "Input validation",
+     "link": "/cookbook/09-input-validation"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L07",
+     "link": "/exercises/L07-ask-until-valid"
+    }
+   ],
    "drills": []
   }
  ],
@@ -998,11 +3014,10 @@
     "L13",
     "L14",
     "L16",
+    "L06",
     "L17",
     "L18",
-    "L15",
-    "L19",
-    "L06"
+    "L15"
    ]
   },
   {
@@ -1014,9 +3029,9 @@
     "A13",
     "A14",
     "A18",
-    "A04",
-    "A19",
     "A20",
+    "A19",
+    "A04",
     "A07",
     "A10"
    ]
@@ -1028,11 +3043,11 @@
     "A02",
     "A15",
     "A16",
-    "A03",
-    "A17",
     "A21",
     "A22",
     "A12",
+    "A03",
+    "A17",
     "A08"
    ]
   },
@@ -1043,17 +3058,17 @@
     "L09",
     "L10",
     "G07",
-    "G01",
     "G08",
+    "G01",
     "G09",
+    "G14",
+    "G03",
     "G02",
     "G10",
     "G11",
     "G12",
     "G04",
     "G13",
-    "G14",
-    "G03",
     "G05"
    ]
   },
@@ -1068,8 +3083,8 @@
     "D04",
     "D09",
     "D10",
-    "D11",
     "D12",
+    "D11",
     "D07",
     "D05"
    ]
@@ -1084,113 +3099,136 @@
     "S05",
     "S03"
    ]
+  },
+  {
+   "name": "Search with a flag",
+   "recipe": "05",
+   "ids": [
+    "P03",
+    "P04",
+    "P07",
+    "P05",
+    "P06",
+    "P01"
+   ]
   }
  ],
  "themes": [
   {
-   "slug": "hello-world",
-   "title": "Hello World",
+   "slug": "basics",
+   "title": "Basics",
    "part": "MS Learn Part 1: Write your first code",
-   "summary": "Print text and read what the user types.",
-   "link": "/themes/hello-world"
+   "summary": "Print, read, compute with variables and decide with `if`.",
+   "link": "/themes/basics",
+   "groups": [
+    {
+     "slug": "first-programs",
+     "title": "First programs",
+     "link": "/themes/basics#first-programs"
+    },
+    {
+     "slug": "conditions",
+     "title": "Conditions",
+     "link": "/themes/basics#conditions"
+    }
+   ]
   },
   {
-   "slug": "variables",
-   "title": "Variables and expressions",
-   "part": "MS Learn Part 1: Write your first code",
-   "summary": "Store values in variables, compute with operators, convert text to numbers.",
-   "link": "/themes/variables"
-  },
-  {
-   "slug": "conditions",
-   "title": "Conditions",
-   "part": "MS Learn Part 1: Write your first code",
-   "summary": "Make decisions with Boolean expressions and `if`.",
-   "link": "/themes/conditions"
-  },
-  {
-   "slug": "loops-repeat",
-   "title": "Loops: repeat and count",
+   "slug": "loops",
+   "title": "Loops",
    "part": "MS Learn Parts 2 and 3: Loops and logic",
-   "summary": "Repeat code with iteration statements (`for`, `while`), and trace them on paper.",
-   "link": "/themes/loops-repeat"
-  },
-  {
-   "slug": "loops-running-result",
-   "title": "Loops: keep a running result",
-   "part": "MS Learn Parts 2 and 3: Loops and logic",
-   "summary": "Add up, count or multiply while you loop.",
-   "link": "/themes/loops-running-result"
-  },
-  {
-   "slug": "loops-2d",
-   "title": "Loops: draw in 2D",
-   "part": "MS Learn Parts 2 and 3: Loops and logic",
-   "summary": "Draw rows and columns with a loop inside a loop.",
-   "link": "/themes/loops-2d"
-  },
-  {
-   "slug": "loops-digits",
-   "title": "Loops: take digits apart",
-   "part": "MS Learn Parts 2 and 3: Loops and logic",
-   "summary": "Read the digits of a number one by one with `% 10` and `/ 10`.",
-   "link": "/themes/loops-digits"
-  },
-  {
-   "slug": "loops-state",
-   "title": "Loops: remember changing values",
-   "part": "MS Learn Parts 2 and 3: Loops and logic",
-   "summary": "Keep the last values in variables, like Fibonacci.",
-   "link": "/themes/loops-state"
-  },
-  {
-   "slug": "loops-search",
-   "title": "Loops: search",
-   "part": "MS Learn Parts 2 and 3: Loops and logic",
-   "summary": "Answer a yes-or-no question with a loop: is it there? is it prime?",
-   "link": "/themes/loops-search"
-  },
-  {
-   "slug": "combine",
-   "title": "Combine recipes",
-   "part": "MS Learn Parts 2 and 3: Loops and logic",
-   "summary": "Glue two or three recipes together, like the Armstrong check.",
-   "link": "/themes/combine"
+   "summary": "Repeat code with `for` and `while`: count, add up, draw, take digits apart, search.",
+   "link": "/themes/loops",
+   "groups": [
+    {
+     "slug": "count",
+     "title": "Count",
+     "link": "/themes/loops#count"
+    },
+    {
+     "slug": "add-up",
+     "title": "Add up",
+     "link": "/themes/loops#add-up"
+    },
+    {
+     "slug": "keep-only-some",
+     "title": "Keep only some",
+     "link": "/themes/loops#keep-only-some"
+    },
+    {
+     "slug": "until-the-user-stops",
+     "title": "Until the user stops",
+     "link": "/themes/loops#until-the-user-stops"
+    },
+    {
+     "slug": "draw-rows-and-grids",
+     "title": "Draw rows and grids",
+     "link": "/themes/loops#draw-rows-and-grids"
+    },
+    {
+     "slug": "draw-shapes",
+     "title": "Draw shapes",
+     "link": "/themes/loops#draw-shapes"
+    },
+    {
+     "slug": "digits",
+     "title": "Digits",
+     "link": "/themes/loops#digits"
+    },
+    {
+     "slug": "changing-values",
+     "title": "Changing values",
+     "link": "/themes/loops#changing-values"
+    },
+    {
+     "slug": "search-and-combine",
+     "title": "Search and combine",
+     "link": "/themes/loops#search-and-combine"
+    }
+   ]
   },
   {
    "slug": "arrays",
-   "title": "Arrays and text",
-   "part": "MS Learn Part 4: Work with variable data",
-   "summary": "Keep many values in one variable, and work on text letter by letter.",
-   "link": "/themes/arrays"
-  },
-  {
-   "slug": "files",
-   "title": "Files",
-   "part": "MS Learn Part 4: Work with variable data",
-   "summary": "Save lines to a file and read them back.",
-   "link": "/themes/files"
-  },
-  {
-   "slug": "collections",
-   "title": "Collections",
-   "part": "MS Learn Part 4: Work with variable data",
-   "summary": "Use a `List` that can grow.",
-   "link": "/themes/collections"
+   "title": "Arrays, text and lists",
+   "part": "MS Learn Parts 2 and 4: Work with variable data",
+   "summary": "Keep many values in one variable, work on text letter by letter, save to a file, use a `List`.",
+   "link": "/themes/arrays",
+   "groups": [
+    {
+     "slug": "arrays",
+     "title": "Arrays",
+     "link": "/themes/arrays#arrays"
+    },
+    {
+     "slug": "text",
+     "title": "Text",
+     "link": "/themes/arrays#text"
+    },
+    {
+     "slug": "files-and-lists",
+     "title": "Files and lists",
+     "link": "/themes/arrays#files-and-lists"
+    }
+   ]
   },
   {
    "slug": "methods",
-   "title": "Methods",
-   "part": "MS Learn Part 5: Methods",
-   "summary": "Give a recipe a name: a method with parameters and a return value.",
-   "link": "/themes/methods"
-  },
-  {
-   "slug": "exceptions",
-   "title": "Exceptions",
-   "part": "MS Learn Part 6: Debug and handle exceptions",
-   "summary": "Stop bad input from crashing your program.",
-   "link": "/themes/exceptions"
+   "title": "Methods and errors",
+   "part": "MS Learn Parts 5 and 6: Methods and debugging",
+   "summary": "Split a program into small methods, and stop bad input from crashing it.",
+   "link": "/themes/methods",
+   "groups": [
+    {
+     "slug": "methods",
+     "title": "Methods",
+     "link": "/themes/methods#methods"
+    },
+    {
+     "slug": "errors",
+     "title": "Errors",
+     "link": "/themes/methods#errors"
+    }
+   ]
   }
  ],
  "mslearn": [
@@ -1204,8 +3242,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-write-first/",
      "themes": [
       {
-       "title": "Hello World",
-       "link": "/themes/hello-world"
+       "title": "Basics",
+       "link": "/themes/basics"
       }
      ]
     },
@@ -1214,8 +3252,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-literals-variables/",
      "themes": [
       {
-       "title": "Variables and expressions",
-       "link": "/themes/variables"
+       "title": "Basics",
+       "link": "/themes/basics"
       }
      ]
     },
@@ -1224,12 +3262,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-basic-operations/",
      "themes": [
       {
-       "title": "Variables and expressions",
-       "link": "/themes/variables"
-      },
-      {
-       "title": "Loops: take digits apart",
-       "link": "/themes/loops-digits"
+       "title": "Basics",
+       "link": "/themes/basics"
       }
      ]
     },
@@ -1238,8 +3272,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-if-elseif-else/",
      "themes": [
       {
-       "title": "Conditions",
-       "link": "/themes/conditions"
+       "title": "Basics",
+       "link": "/themes/basics"
       }
      ]
     }
@@ -1255,8 +3289,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/install-configure-visual-studio-code/",
      "themes": [
       {
-       "title": "Hello World",
-       "link": "/themes/hello-world"
+       "title": "Basics",
+       "link": "/themes/basics"
       }
      ]
     },
@@ -1265,8 +3299,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-repeat-actions-loops/",
      "themes": [
       {
-       "title": "Loops: repeat and count",
-       "link": "/themes/loops-repeat"
+       "title": "Loops",
+       "link": "/themes/loops"
       }
      ]
     },
@@ -1275,12 +3309,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-arrays-lists/",
      "themes": [
       {
-       "title": "Arrays and text",
+       "title": "Arrays, text and lists",
        "link": "/themes/arrays"
-      },
-      {
-       "title": "Collections",
-       "link": "/themes/collections"
       }
      ]
     },
@@ -1289,7 +3319,7 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-reusable-code/",
      "themes": [
       {
-       "title": "Methods",
+       "title": "Methods and errors",
        "link": "/themes/methods"
       }
      ]
@@ -1299,8 +3329,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-read-write-files/",
      "themes": [
       {
-       "title": "Files",
-       "link": "/themes/files"
+       "title": "Arrays, text and lists",
+       "link": "/themes/arrays"
       }
      ]
     }
@@ -1316,12 +3346,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-evaluate-boolean-expressions/",
      "themes": [
       {
-       "title": "Conditions",
-       "link": "/themes/conditions"
-      },
-      {
-       "title": "Loops: search",
-       "link": "/themes/loops-search"
+       "title": "Basics",
+       "link": "/themes/basics"
       }
      ]
     },
@@ -1330,12 +3356,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-code-blocks/",
      "themes": [
       {
-       "title": "Loops: draw in 2D",
-       "link": "/themes/loops-2d"
-      },
-      {
-       "title": "Loops: remember changing values",
-       "link": "/themes/loops-state"
+       "title": "Loops",
+       "link": "/themes/loops"
       }
      ]
     },
@@ -1344,8 +3366,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-switch-case/",
      "themes": [
       {
-       "title": "Conditions",
-       "link": "/themes/conditions"
+       "title": "Basics",
+       "link": "/themes/basics"
       }
      ]
     },
@@ -1354,16 +3376,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-for/",
      "themes": [
       {
-       "title": "Loops: repeat and count",
-       "link": "/themes/loops-repeat"
-      },
-      {
-       "title": "Loops: keep a running result",
-       "link": "/themes/loops-running-result"
-      },
-      {
-       "title": "Loops: draw in 2D",
-       "link": "/themes/loops-2d"
+       "title": "Loops",
+       "link": "/themes/loops"
       }
      ]
     },
@@ -1372,20 +3386,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-do-while/",
      "themes": [
       {
-       "title": "Loops: repeat and count",
-       "link": "/themes/loops-repeat"
-      },
-      {
-       "title": "Loops: take digits apart",
-       "link": "/themes/loops-digits"
-      },
-      {
-       "title": "Loops: remember changing values",
-       "link": "/themes/loops-state"
-      },
-      {
-       "title": "Loops: search",
-       "link": "/themes/loops-search"
+       "title": "Loops",
+       "link": "/themes/loops"
       }
      ]
     },
@@ -1394,8 +3396,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/guided-project-develop-conditional-branching-looping/",
      "themes": [
       {
-       "title": "Combine recipes",
-       "link": "/themes/combine"
+       "title": "Loops",
+       "link": "/themes/loops"
       }
      ]
     },
@@ -1404,8 +3406,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/challenge-project-develop-branching-looping-structures-c-sharp/",
      "themes": [
       {
-       "title": "Combine recipes",
-       "link": "/themes/combine"
+       "title": "Loops",
+       "link": "/themes/loops"
       }
      ]
     }
@@ -1421,8 +3423,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-choose-data-type/",
      "themes": [
       {
-       "title": "Variables and expressions",
-       "link": "/themes/variables"
+       "title": "Basics",
+       "link": "/themes/basics"
       }
      ]
     },
@@ -1431,8 +3433,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-convert-cast/",
      "themes": [
       {
-       "title": "Variables and expressions",
-       "link": "/themes/variables"
+       "title": "Basics",
+       "link": "/themes/basics"
       }
      ]
     },
@@ -1441,7 +3443,7 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-arrays-operations/",
      "themes": [
       {
-       "title": "Arrays and text",
+       "title": "Arrays, text and lists",
        "link": "/themes/arrays"
       }
      ]
@@ -1451,7 +3453,7 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-format-strings/",
      "themes": [
       {
-       "title": "Arrays and text",
+       "title": "Arrays, text and lists",
        "link": "/themes/arrays"
       }
      ]
@@ -1461,7 +3463,7 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-modify-content/",
      "themes": [
       {
-       "title": "Arrays and text",
+       "title": "Arrays, text and lists",
        "link": "/themes/arrays"
       }
      ]
@@ -1488,7 +3490,7 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/write-first-c-sharp-method/",
      "themes": [
       {
-       "title": "Methods",
+       "title": "Methods and errors",
        "link": "/themes/methods"
       }
      ]
@@ -1498,7 +3500,7 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/create-c-sharp-methods-parameters/",
      "themes": [
       {
-       "title": "Methods",
+       "title": "Methods and errors",
        "link": "/themes/methods"
       }
      ]
@@ -1508,7 +3510,7 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/create-c-sharp-methods-return-values/",
      "themes": [
       {
-       "title": "Methods",
+       "title": "Methods and errors",
        "link": "/themes/methods"
       }
      ]
@@ -1535,8 +3537,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/review-principles-code-debugging-exception-handling-c-sharp/",
      "themes": [
       {
-       "title": "Exceptions",
-       "link": "/themes/exceptions"
+       "title": "Methods and errors",
+       "link": "/themes/methods"
       }
      ]
     },
@@ -1545,8 +3547,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/implement-visual-studio-code-debugging-tools/",
      "themes": [
       {
-       "title": "Combine recipes",
-       "link": "/themes/combine"
+       "title": "Loops",
+       "link": "/themes/loops"
       }
      ]
     },
@@ -1555,8 +3557,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/implement-exception-handling-c-sharp/",
      "themes": [
       {
-       "title": "Exceptions",
-       "link": "/themes/exceptions"
+       "title": "Methods and errors",
+       "link": "/themes/methods"
       }
      ]
     },
@@ -1565,8 +3567,8 @@
      "url": "https://learn.microsoft.com/en-us/training/modules/create-throw-exceptions-c-sharp/",
      "themes": [
       {
-       "title": "Exceptions",
-       "link": "/themes/exceptions"
+       "title": "Methods and errors",
+       "link": "/themes/methods"
       }
      ]
     },
@@ -1594,7 +3596,7 @@
      "page": "/learn/videos/creating-your-first-c-program",
      "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-08bc33cd-9b30-4544-9491-bd6d7d769c43/creating-your-first-c-program_960.jpg",
      "themes": [
-      "Hello World"
+      "Basics"
      ]
     },
     {
@@ -1604,7 +3606,7 @@
      "page": "/learn/videos/understanding-your-first-c-program",
      "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-6321880c-40b1-4d77-8cc6-e43c32c67a06/understanding-your-first-c-program_960.jpg",
      "themes": [
-      "Hello World"
+      "Basics"
      ]
     },
     {
@@ -1614,29 +3616,27 @@
      "page": "/learn/videos/understanding-data-types-and-variables",
      "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-53ebc4e6-52f1-4de8-9c72-6b6dea73eb7b/understanding-data-types-and-variables_960.jpg",
      "themes": [
-      "Variables and expressions"
+      "Basics"
      ]
     },
     {
      "num": 4,
-     "title": "Operators, Expressions, and Statements",
-     "minutes": 15,
-     "page": "/learn/videos/operators-expressions-and-statements",
-     "thumb": null,
-     "themes": [
-      "Variables and expressions",
-      "Loops: take digits apart"
-     ]
-    },
-    {
-     "num": 5,
      "title": "The if Decision Statement",
      "minutes": 23,
      "page": "/learn/videos/the-if-decision-statement",
      "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-6d088f29-9a6a-4daf-9955-dc6326cd0738/the-if-decision-statement_960.jpg",
      "themes": [
-      "Conditions",
-      "Combine recipes"
+      "Basics"
+     ]
+    },
+    {
+     "num": 5,
+     "title": "Operators, Expressions, and Statements",
+     "minutes": 15,
+     "page": "/learn/videos/operators-expressions-and-statements",
+     "thumb": null,
+     "themes": [
+      "Basics"
      ]
     },
     {
@@ -1646,7 +3646,7 @@
      "page": "/learn/videos/enumerations-and-the-switch-decision-statement",
      "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-2662ad9f-3f72-49ad-84a9-7737766cf987/enumerations-and-the-switch-decision-statement_960.jpg",
      "themes": [
-      "Conditions"
+      "Basics"
      ]
     }
    ]
@@ -1661,10 +3661,7 @@
      "page": "/learn/videos/for-iteration-statement",
      "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-d44cd0b2-b866-4b0e-ad02-ee1a7f31157c/for-iteration-statement_960.jpg",
      "themes": [
-      "Loops: repeat and count",
-      "Loops: keep a running result",
-      "Loops: draw in 2D",
-      "Combine recipes"
+      "Loops"
      ]
     },
     {
@@ -1674,16 +3671,13 @@
      "page": "/learn/videos/while-iteration-statement",
      "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-4f54adb3-0479-4327-9e48-4ac4c5caf34d/while-iteration-statement_960.jpg",
      "themes": [
-      "Loops: repeat and count",
-      "Loops: take digits apart",
-      "Loops: remember changing values",
-      "Loops: search"
+      "Loops"
      ]
     }
    ]
   },
   {
-   "group": "MS Learn Part 4: Work with variable data",
+   "group": "MS Learn Parts 2 and 4: Work with variable data",
    "episodes": [
     {
      "num": 9,
@@ -1692,7 +3686,7 @@
      "page": "/learn/videos/understanding-arrays",
      "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-5e3151e9-bb9b-4068-a337-600c4bdd8cb1/understanding-arrays_960.jpg",
      "themes": [
-      "Arrays and text"
+      "Arrays, text and lists"
      ]
     },
     {
@@ -1702,8 +3696,7 @@
      "page": "/learn/videos/working-with-strings",
      "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-02de69b5-c775-4830-934b-46344ac60ec3/working-with-strings_960.jpg",
      "themes": [
-      "Arrays and text",
-      "Files"
+      "Arrays, text and lists"
      ]
     },
     {
@@ -1713,13 +3706,13 @@
      "page": "/learn/videos/working-with-collections",
      "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-652b0c55-41da-43c3-b9fe-b987ed2a2885/working-with-collections_960.jpg",
      "themes": [
-      "Collections"
+      "Arrays, text and lists"
      ]
     }
    ]
   },
   {
-   "group": "MS Learn Part 5: Methods",
+   "group": "MS Learn Parts 5 and 6: Methods and debugging",
    "episodes": [
     {
      "num": 12,
@@ -1728,14 +3721,9 @@
      "page": "/learn/videos/defining-and-calling-methods",
      "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-c407acc8-05ef-4f09-a1ee-82482fa4d0d1/defining-and-calling-methods_960.jpg",
      "themes": [
-      "Methods"
+      "Methods and errors"
      ]
-    }
-   ]
-  },
-  {
-   "group": "MS Learn Part 6: Debug and handle exceptions",
-   "episodes": [
+    },
     {
      "num": 13,
      "title": "Gracefully Handling Exceptions",
@@ -1743,7 +3731,7 @@
      "page": "/learn/videos/gracefully-handling-exceptions",
      "thumb": "https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-b2a0103b-1484-415e-81a6-61a2b54a60b1/gracefully-handling-exceptions_960.jpg",
      "themes": [
-      "Exceptions"
+      "Methods and errors"
      ]
     }
    ]
@@ -1752,15 +3740,15 @@
  "flow": [
   {
    "num": 1,
-   "title": "Hello World",
-   "link": "/themes/hello-world",
+   "title": "Basics",
+   "link": "/themes/basics",
    "group": "MS Learn Part 1: Write your first code",
    "part": 1,
    "module": "Write your first C# code",
    "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-write-first/",
    "video": "Creating Your First C# Program",
    "videoPage": "/learn/videos/creating-your-first-c-program",
-   "exercises": 1,
+   "exercises": 7,
    "first": {
     "id": "B01",
     "link": "/exercises/B01-hello-you"
@@ -1768,227 +3756,463 @@
   },
   {
    "num": 2,
-   "title": "Variables and expressions",
-   "link": "/themes/variables",
-   "group": "MS Learn Part 1: Write your first code",
-   "part": 1,
-   "module": "Store data with variables in C#",
-   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-literals-variables/",
-   "video": "Understanding Data Types and Variables",
-   "videoPage": "/learn/videos/understanding-data-types-and-variables",
-   "exercises": 2,
-   "first": {
-    "id": "B02",
-    "link": "/exercises/B02-rectangle-calculator"
-   }
-  },
-  {
-   "num": 3,
-   "title": "Conditions",
-   "link": "/themes/conditions",
-   "group": "MS Learn Part 1: Write your first code",
-   "part": 1,
-   "module": "Add decision logic to your code in C#",
-   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-if-elseif-else/",
-   "video": "The if Decision Statement",
-   "videoPage": "/learn/videos/the-if-decision-statement",
-   "exercises": 4,
-   "first": {
-    "id": "C01",
-    "link": "/exercises/C01-even-or-odd"
-   }
-  },
-  {
-   "num": 4,
-   "title": "Loops: repeat and count",
-   "link": "/themes/loops-repeat",
+   "title": "Loops",
+   "link": "/themes/loops",
    "group": "MS Learn Parts 2 and 3: Loops and logic",
    "part": 3,
    "module": "Iterate through a code block using for statement in C#",
    "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-for/",
    "video": "for Iteration Statement",
    "videoPage": "/learn/videos/for-iteration-statement",
-   "exercises": 17,
+   "exercises": 81,
    "first": {
     "id": "L01",
     "link": "/exercises/L01-trace-a-loop"
    }
   },
   {
-   "num": 5,
-   "title": "Loops: keep a running result",
-   "link": "/themes/loops-running-result",
-   "group": "MS Learn Parts 2 and 3: Loops and logic",
-   "part": 3,
-   "module": "Iterate through a code block using for statement in C#",
-   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-for/",
-   "video": "for Iteration Statement",
-   "videoPage": "/learn/videos/for-iteration-statement",
-   "exercises": 22,
-   "first": {
-    "id": "A11",
-    "link": "/exercises/A11-arrange-sum-of-squares"
-   }
-  },
-  {
-   "num": 6,
-   "title": "Loops: draw in 2D",
-   "link": "/themes/loops-2d",
-   "group": "MS Learn Parts 2 and 3: Loops and logic",
-   "part": 3,
-   "module": "Iterate through a code block using for statement in C#",
-   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-for/",
-   "video": "for Iteration Statement",
-   "videoPage": "/learn/videos/for-iteration-statement",
-   "exercises": 16,
-   "first": {
-    "id": "L09",
-    "link": "/exercises/L09-draw-a-row"
-   }
-  },
-  {
-   "num": 7,
-   "title": "Loops: take digits apart",
-   "link": "/themes/loops-digits",
-   "group": "MS Learn Parts 2 and 3: Loops and logic",
-   "part": 3,
-   "module": "Add looping logic to your code using the do-while and while statements in C#",
-   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-do-while/",
-   "video": "While Iteration Statement",
-   "videoPage": "/learn/videos/while-iteration-statement",
-   "exercises": 12,
-   "first": {
-    "id": "D01",
-    "link": "/exercises/D01-last-digit"
-   }
-  },
-  {
-   "num": 8,
-   "title": "Loops: remember changing values",
-   "link": "/themes/loops-state",
-   "group": "MS Learn Parts 2 and 3: Loops and logic",
-   "part": 3,
-   "module": "Control variable scope and logic using code blocks in C#",
-   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-code-blocks/",
-   "video": "While Iteration Statement",
-   "videoPage": "/learn/videos/while-iteration-statement",
-   "exercises": 5,
-   "first": {
-    "id": "S01",
-    "link": "/exercises/S01-trace-updates"
-   }
-  },
-  {
-   "num": 9,
-   "title": "Loops: search",
-   "link": "/themes/loops-search",
-   "group": "MS Learn Parts 2 and 3: Loops and logic",
-   "part": 3,
-   "module": "Add looping logic to your code using the do-while and while statements in C#",
-   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-do-while/",
-   "video": "While Iteration Statement",
-   "videoPage": "/learn/videos/while-iteration-statement",
-   "exercises": 2,
-   "first": {
-    "id": "P01",
-    "link": "/exercises/P01-is-it-prime"
-   }
-  },
-  {
-   "num": 10,
-   "title": "Combine recipes",
-   "link": "/themes/combine",
-   "group": "MS Learn Parts 2 and 3: Loops and logic",
-   "part": 3,
-   "module": "Guided project - Develop conditional branching and looping structures in C#",
-   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/guided-project-develop-conditional-branching-looping/",
-   "video": "for Iteration Statement",
-   "videoPage": "/learn/videos/for-iteration-statement",
-   "exercises": 2,
-   "first": {
-    "id": "M01",
-    "link": "/exercises/M01-armstrong-number"
-   }
-  },
-  {
-   "num": 11,
-   "title": "Arrays and text",
+   "num": 3,
+   "title": "Arrays, text and lists",
    "link": "/themes/arrays",
-   "group": "MS Learn Part 4: Work with variable data",
+   "group": "MS Learn Parts 2 and 4: Work with variable data",
    "part": 2,
    "module": "Organize data with arrays and lists in C#",
    "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-arrays-lists/",
    "video": "Understanding Arrays",
    "videoPage": "/learn/videos/understanding-arrays",
-   "exercises": 9,
+   "exercises": 11,
    "first": {
     "id": "R01",
     "link": "/exercises/R01-sum-an-array"
    }
   },
   {
-   "num": 12,
-   "title": "Files",
-   "link": "/themes/files",
-   "group": "MS Learn Part 4: Work with variable data",
-   "part": 2,
-   "module": "Read and write files in C#",
-   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-read-write-files/",
-   "video": "Working with Strings",
-   "videoPage": "/learn/videos/working-with-strings",
-   "exercises": 1,
-   "first": {
-    "id": "F01",
-    "link": "/exercises/F01-numbers-file"
-   }
-  },
-  {
-   "num": 13,
-   "title": "Collections",
-   "link": "/themes/collections",
-   "group": "MS Learn Part 4: Work with variable data",
-   "part": 2,
-   "module": "Organize data with arrays and lists in C#",
-   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-arrays-lists/",
-   "video": "Working with Collections",
-   "videoPage": "/learn/videos/working-with-collections",
-   "exercises": 1,
-   "first": {
-    "id": "K01",
-    "link": "/exercises/K01-shopping-list"
-   }
-  },
-  {
-   "num": 14,
-   "title": "Methods",
+   "num": 4,
+   "title": "Methods and errors",
    "link": "/themes/methods",
-   "group": "MS Learn Part 5: Methods",
+   "group": "MS Learn Parts 5 and 6: Methods and debugging",
    "part": 5,
    "module": "Write your first C# method",
    "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/write-first-c-sharp-method/",
    "video": "Defining and Calling Methods",
    "videoPage": "/learn/videos/defining-and-calling-methods",
-   "exercises": 1,
+   "exercises": 4,
    "first": {
-    "id": "N01",
-    "link": "/exercises/N01-armstrong-with-methods"
+    "id": "N02",
+    "link": "/exercises/N02-is-multiple-and-count"
+   }
+  }
+ ],
+ "learn": {
+  "basics": {
+   "watch": {
+    "title": "Creating Your First C# Program",
+    "minutes": 16,
+    "link": "/learn/videos/creating-your-first-c-program"
+   },
+   "read": {
+    "title": "Write your first C# code",
+    "part": 1,
+    "url": "https://learn.microsoft.com/en-us/training/modules/csharp-write-first/"
+   },
+   "first": {
+    "id": "B01",
+    "title": "Hello you",
+    "link": "/exercises/B01-hello-you"
+   },
+   "path": {
+    "num": 1,
+    "title": "Write your first code using C#",
+    "url": "https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-1/"
+   },
+   "more": {
+    "modules": [
+     {
+      "title": "Store data with variables in C#",
+      "part": 1,
+      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-literals-variables/"
+     },
+     {
+      "title": "Perform basic operations on numbers in C#",
+      "part": 1,
+      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-basic-operations/"
+     },
+     {
+      "title": "Add decision logic to your code in C#",
+      "part": 1,
+      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-if-elseif-else/"
+     },
+     {
+      "title": "Install and configure Visual Studio Code",
+      "part": 2,
+      "url": "https://learn.microsoft.com/en-us/training/modules/install-configure-visual-studio-code/"
+     },
+     {
+      "title": "Choose the correct data type in your C# code",
+      "part": 4,
+      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-choose-data-type/"
+     },
+     {
+      "title": "Convert data types using casting and conversion techniques in C#",
+      "part": 4,
+      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-convert-cast/"
+     },
+     {
+      "title": "Evaluate Boolean expressions to make decisions in C#",
+      "part": 3,
+      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-evaluate-boolean-expressions/"
+     },
+     {
+      "title": "Branch the flow of code using the switch-case construct in C#",
+      "part": 3,
+      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-switch-case/"
+     }
+    ],
+    "videos": [
+     {
+      "title": "Understanding Your First C# Program",
+      "link": "/learn/videos/understanding-your-first-c-program"
+     },
+     {
+      "title": "Understanding Data Types and Variables",
+      "link": "/learn/videos/understanding-data-types-and-variables"
+     },
+     {
+      "title": "Operators, Expressions, and Statements",
+      "link": "/learn/videos/operators-expressions-and-statements"
+     },
+     {
+      "title": "The if Decision Statement",
+      "link": "/learn/videos/the-if-decision-statement"
+     },
+     {
+      "title": "Enumerations and the Switch Decision Statement",
+      "link": "/learn/videos/enumerations-and-the-switch-decision-statement"
+     }
+    ],
+    "docs": [
+     {
+      "title": "Tutorial: Hello World",
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world"
+     },
+     {
+      "title": "Selection statements",
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements"
+     }
+    ]
    }
   },
-  {
-   "num": 15,
-   "title": "Exceptions",
-   "link": "/themes/exceptions",
-   "group": "MS Learn Part 6: Debug and handle exceptions",
-   "part": 6,
-   "module": "Review the principles of code debugging and exception handling",
-   "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/review-principles-code-debugging-exception-handling-c-sharp/",
-   "video": "Gracefully Handling Exceptions",
-   "videoPage": "/learn/videos/gracefully-handling-exceptions",
-   "exercises": 1,
+  "loops": {
+   "watch": {
+    "title": "for Iteration Statement",
+    "minutes": 18,
+    "link": "/learn/videos/for-iteration-statement"
+   },
+   "read": {
+    "title": "Iterate through a code block using for statement in C#",
+    "part": 3,
+    "url": "https://learn.microsoft.com/en-us/training/modules/csharp-for/"
+   },
    "first": {
-    "id": "E01",
-    "link": "/exercises/E01-safe-number-reader"
+    "id": "L01",
+    "title": "Trace a loop",
+    "link": "/exercises/L01-trace-a-loop"
+   },
+   "path": {
+    "num": 3,
+    "title": "Add logic to C# console applications",
+    "url": "https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-3/"
+   },
+   "more": {
+    "modules": [
+     {
+      "title": "Add looping logic to your code using the do-while and while statements in C#",
+      "part": 3,
+      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-do-while/"
+     },
+     {
+      "title": "Repeat actions with loops in C#",
+      "part": 2,
+      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-repeat-actions-loops/"
+     },
+     {
+      "title": "Control variable scope and logic using code blocks in C#",
+      "part": 3,
+      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-code-blocks/"
+     },
+     {
+      "title": "Guided project - Develop conditional branching and looping structures in C#",
+      "part": 3,
+      "url": "https://learn.microsoft.com/en-us/training/modules/guided-project-develop-conditional-branching-looping/"
+     },
+     {
+      "title": "Challenge project - Develop branching and looping structures in C#",
+      "part": 3,
+      "url": "https://learn.microsoft.com/en-us/training/modules/challenge-project-develop-branching-looping-structures-c-sharp/"
+     },
+     {
+      "title": "Implement the Visual Studio Code debugging tools for C#",
+      "part": 6,
+      "url": "https://learn.microsoft.com/en-us/training/modules/implement-visual-studio-code-debugging-tools/"
+     }
+    ],
+    "videos": [
+     {
+      "title": "While Iteration Statement",
+      "link": "/learn/videos/while-iteration-statement"
+     }
+    ],
+    "docs": [
+     {
+      "title": "Iteration statements",
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements"
+     }
+    ]
    }
+  },
+  "arrays": {
+   "watch": {
+    "title": "Understanding Arrays",
+    "minutes": 17,
+    "link": "/learn/videos/understanding-arrays"
+   },
+   "read": {
+    "title": "Organize data with arrays and lists in C#",
+    "part": 2,
+    "url": "https://learn.microsoft.com/en-us/training/modules/csharp-arrays-lists/"
+   },
+   "first": {
+    "id": "R01",
+    "title": "Sum of an array",
+    "link": "/exercises/R01-sum-an-array"
+   },
+   "path": {
+    "num": 4,
+    "title": "Work with variable data in C# console applications",
+    "url": "https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-4/"
+   },
+   "more": {
+    "modules": [
+     {
+      "title": "Perform operations on arrays using helper methods in C#",
+      "part": 4,
+      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-arrays-operations/"
+     },
+     {
+      "title": "Modify the content of strings using built-in string data type methods in C#",
+      "part": 4,
+      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-modify-content/"
+     },
+     {
+      "title": "Format alphanumeric data for presentation in C#",
+      "part": 4,
+      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-format-strings/"
+     },
+     {
+      "title": "Read and write files in C#",
+      "part": 2,
+      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-read-write-files/"
+     }
+    ],
+    "videos": [
+     {
+      "title": "Working with Strings",
+      "link": "/learn/videos/working-with-strings"
+     },
+     {
+      "title": "Working with Collections",
+      "link": "/learn/videos/working-with-collections"
+     }
+    ],
+    "docs": [
+     {
+      "title": "Arrays",
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays"
+     },
+     {
+      "title": "Collections tutorial",
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/list-collection"
+     }
+    ]
+   }
+  },
+  "methods": {
+   "watch": {
+    "title": "Defining and Calling Methods",
+    "minutes": 31,
+    "link": "/learn/videos/defining-and-calling-methods"
+   },
+   "read": {
+    "title": "Write your first C# method",
+    "part": 5,
+    "url": "https://learn.microsoft.com/en-us/training/modules/write-first-c-sharp-method/"
+   },
+   "first": {
+    "id": "N02",
+    "title": "A method that calls one",
+    "link": "/exercises/N02-is-multiple-and-count"
+   },
+   "path": {
+    "num": 5,
+    "title": "Create methods in C# console applications",
+    "url": "https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-5/"
+   },
+   "more": {
+    "modules": [
+     {
+      "title": "Create C# methods with parameters",
+      "part": 5,
+      "url": "https://learn.microsoft.com/en-us/training/modules/create-c-sharp-methods-parameters/"
+     },
+     {
+      "title": "Create C# methods that return values",
+      "part": 5,
+      "url": "https://learn.microsoft.com/en-us/training/modules/create-c-sharp-methods-return-values/"
+     },
+     {
+      "title": "Write reusable code in C#",
+      "part": 2,
+      "url": "https://learn.microsoft.com/en-us/training/modules/csharp-reusable-code/"
+     },
+     {
+      "title": "Review the principles of code debugging and exception handling",
+      "part": 6,
+      "url": "https://learn.microsoft.com/en-us/training/modules/review-principles-code-debugging-exception-handling-c-sharp/"
+     },
+     {
+      "title": "Implement exception handling in C# console applications",
+      "part": 6,
+      "url": "https://learn.microsoft.com/en-us/training/modules/implement-exception-handling-c-sharp/"
+     },
+     {
+      "title": "Create and throw exceptions in C# console applications",
+      "part": 6,
+      "url": "https://learn.microsoft.com/en-us/training/modules/create-throw-exceptions-c-sharp/"
+     }
+    ],
+    "videos": [
+     {
+      "title": "Gracefully Handling Exceptions",
+      "link": "/learn/videos/gracefully-handling-exceptions"
+     }
+    ],
+    "docs": [
+     {
+      "title": "Methods",
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/methods"
+     },
+     {
+      "title": "Exceptions",
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/"
+     }
+    ]
+   }
+  }
+ },
+ "recipes": [
+  {
+   "num": 1,
+   "title": "Counter loop",
+   "text": "\"do it N times\"",
+   "link": "/cookbook/01-counter-loop"
+  },
+  {
+   "num": 2,
+   "title": "Accumulator",
+   "text": "sum, count, product",
+   "link": "/cookbook/02-accumulator"
+  },
+  {
+   "num": 3,
+   "title": "Conditional accumulator",
+   "text": "filter, then accumulate",
+   "link": "/cookbook/03-conditional-accumulator"
+  },
+  {
+   "num": 4,
+   "title": "Min/max",
+   "text": "\"the best so far\"",
+   "link": "/cookbook/04-min-max"
+  },
+  {
+   "num": 5,
+   "title": "Flag/search",
+   "text": "\"is there at least one?\"",
+   "link": "/cookbook/05-flag-search"
+  },
+  {
+   "num": 6,
+   "title": "Digit extraction",
+   "text": "`% 10` and `/ 10`",
+   "link": "/cookbook/06-digit-extraction"
+  },
+  {
+   "num": 7,
+   "title": "State update",
+   "text": "Fibonacci",
+   "link": "/cookbook/07-state-update"
+  },
+  {
+   "num": 8,
+   "title": "Nested grid",
+   "text": "draw 2D grids",
+   "link": "/cookbook/08-nested-grid"
+  },
+  {
+   "num": 9,
+   "title": "Input validation",
+   "text": "\"ask again until it is OK\"",
+   "link": "/cookbook/09-input-validation"
+  },
+  {
+   "num": 10,
+   "title": "Sentinel loop",
+   "text": "\"stop when the user types 0\"",
+   "link": "/cookbook/10-sentinel-loop"
+  },
+  {
+   "num": 11,
+   "title": "Array traversal",
+   "text": "visit every box",
+   "link": "/cookbook/11-array-traversal"
+  },
+  {
+   "num": 12,
+   "title": "Build a string",
+   "text": "traverse text, keep a result",
+   "link": "/cookbook/12-string-building"
+  }
+ ],
+ "skills": [
+  {
+   "num": 1,
+   "title": "How to read an exercise",
+   "text": "Find what goes in, what comes out, and a tiny example, before you code.",
+   "link": "/docs/reading-an-exercise"
+  },
+  {
+   "num": 2,
+   "title": "Solving a problem",
+   "text": "Turn a problem into small steps you can write.",
+   "link": "/docs/problem-solving"
+  },
+  {
+   "num": 3,
+   "title": "How to practice",
+   "text": "The shape of one practice session, and what to ask yourself.",
+   "link": "/docs/how-to-practice"
+  },
+  {
+   "num": 4,
+   "title": "Glossary",
+   "text": "Every new word of the course, in plain English.",
+   "link": "/docs/glossary"
+  },
+  {
+   "num": 5,
+   "title": "Progress checklist (paper)",
+   "text": "Every exercise as a box to tick on paper.",
+   "link": "/docs/progress-checklist"
   }
  ]
 }

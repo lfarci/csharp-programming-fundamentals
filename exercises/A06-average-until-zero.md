@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A06
+---
+prev:
+  text: "L05 · Until zero"
+  link: /exercises/L05-until-zero
+next:
+  text: "A09 · Min and max until zero"
+  link: /exercises/A09-min-and-max-until-zero
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Until the user stops](../themes/loops.md#until-the-user-stops) › A06
 
 # A06 · Average until zero
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: keep a running result](../themes/loops-running-result.md) | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Accumulator](../cookbook/02-accumulator.md) | [L05](L05-until-zero.md), [A01](A01-sum-1-to-n.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Until the user stops** · exercise 2 of 5 in this group (36 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Accumulator](../cookbook/02-accumulator.md) | [L05](L05-until-zero.md), [A01](A01-sum-1-to-n.md) |
+
+</div>
 
 ## Goal
 
@@ -91,4 +108,8 @@ Only after a real try: [open the solution for A06](../solutions/A06_AverageUntil
 
 ---
 
-Previous: [A05 · Two accumulators: sum and squares](A05-sum-square-difference.md) · [All exercises](README.md) · Next: [A07 · Integer power](A07-integer-power.md)
+<div class="gh-only">
+
+Previous: [L05 · Until zero](L05-until-zero.md) · [Loops](../themes/loops.md) · Next: [A09 · Min and max until zero](A09-min-and-max-until-zero.md)
+
+</div>

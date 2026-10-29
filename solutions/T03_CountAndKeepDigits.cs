@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // T03 · Count and keep the digits
+    // T03 · Keep the digits
     // Exercise page: exercises/T03-count-and-keep-digits.md
     public static class T03_CountAndKeepDigits
     {

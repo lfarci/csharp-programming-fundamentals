@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: take digits apart](../themes/loops-digits.md) › D04
+---
+prev:
+  text: "D08 · First digit"
+  link: /exercises/D08-first-digit
+next:
+  text: "D09 · Count the even digits"
+  link: /exercises/D09-count-even-digits
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D04
 
 # D04 · Sum of the digits
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: take digits apart](../themes/loops-digits.md) | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [D03](D03-count-digits.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Digits** · exercise 5 of 12 in this group (60 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | medium | write code | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [D03](D03-count-digits.md) |
+
+</div>
 
 ## Goal
 
@@ -73,4 +90,8 @@ Only after a real try: [open the solution for D04](../solutions/D04_DigitSum.cs)
 
 ---
 
-Previous: [D08 · First digit](D08-first-digit.md) · [All exercises](README.md) · Next: [D09 · Count the even digits](D09-count-even-digits.md)
+<div class="gh-only">
+
+Previous: [D08 · First digit](D08-first-digit.md) · [Loops](../themes/loops.md) · Next: [D09 · Count the even digits](D09-count-even-digits.md)
+
+</div>

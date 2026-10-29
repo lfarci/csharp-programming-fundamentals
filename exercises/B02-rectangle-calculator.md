@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Variables and expressions](../themes/variables.md) › B02
+---
+prev:
+  text: "B01 · Hello you"
+  link: /exercises/B01-hello-you
+next:
+  text: "B03 · Seconds to h, min, s"
+  link: /exercises/B03-seconds-to-hms
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [First programs](../themes/basics.md#first-programs) › B02
 
 # B02 · Rectangle calculator
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Variables and expressions](../themes/variables.md) | — | [B01](B01-hello-you.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Basics › First programs** · exercise 2 of 3 in this group (2 of 7 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | — | [B01](B01-hello-you.md) |
+
+</div>
 
 ## Goal
 
@@ -75,4 +92,8 @@ Only after a real try: [open the solution for B02](../solutions/B02_RectangleCal
 
 ---
 
-Previous: [B01 · Hello you](B01-hello-you.md) · [All exercises](README.md) · Next: [B03 · Seconds to hours, minutes, seconds](B03-seconds-to-hms.md)
+<div class="gh-only">
+
+Previous: [B01 · Hello you](B01-hello-you.md) · [Basics](../themes/basics.md) · Next: [B03 · Seconds to h, min, s](B03-seconds-to-hms.md)
+
+</div>

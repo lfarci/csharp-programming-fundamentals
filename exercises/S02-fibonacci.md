@@ -1,10 +1,29 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: remember changing values](../themes/loops-state.md) › S02
+---
+prev:
+  text: "S04 · Doubling"
+  link: /exercises/S04-doubling
+next:
+  text: "S05 · N-th Fibonacci"
+  link: /exercises/S05-nth-fibonacci
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Changing values](../themes/loops.md#changing-values) › S02
 
 # S02 · Fibonacci
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | hard | [Loops: remember changing values](../themes/loops-state.md) | [State update](../cookbook/07-state-update.md) | [S01](S01-trace-updates.md), [A01](A01-sum-1-to-n.md) | Custom · teacher topic: Fibonacci |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Changing values** · exercise 3 of 5 in this group (70 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | hard | write code | [State update](../cookbook/07-state-update.md) | [S01](S01-trace-updates.md), [A01](A01-sum-1-to-n.md) |
+
+</div>
+
+Source: teacher topic: Fibonacci.
 
 ## Goal
 
@@ -90,4 +109,8 @@ Only after a real try: [open the solution for S02](../solutions/S02_Fibonacci.cs
 
 ---
 
-Previous: [S04 · Doubling](S04-doubling.md) · [All exercises](README.md) · Next: [S05 · The n-th Fibonacci number](S05-nth-fibonacci.md)
+<div class="gh-only">
+
+Previous: [S04 · Doubling](S04-doubling.md) · [Loops](../themes/loops.md) · Next: [S05 · N-th Fibonacci](S05-nth-fibonacci.md)
+
+</div>

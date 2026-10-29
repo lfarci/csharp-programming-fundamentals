@@ -1,10 +1,29 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A04
+---
+prev:
+  text: "A19 · Product from a to b"
+  link: /exercises/A19-product-from-a-to-b
+next:
+  text: "A07 · Integer power"
+  link: /exercises/A07-integer-power
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A04
 
 # A04 · Factorial
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: keep a running result](../themes/loops-running-result.md) | [Accumulator](../cookbook/02-accumulator.md) | [A01](A01-sum-1-to-n.md) | Custom · teacher topic: Factorial |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Add up** · exercise 9 of 12 in this group (22 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [Accumulator](../cookbook/02-accumulator.md) | [A01](A01-sum-1-to-n.md) |
+
+</div>
+
+Source: teacher topic: Factorial.
 
 ## Goal
 
@@ -81,4 +100,8 @@ Only after a real try: [open the solution for A04](../solutions/A04_Factorial.cs
 
 ---
 
-Previous: [A03 · Sum of the even numbers](A03-sum-even-values.md) · [All exercises](README.md) · Next: [A05 · Two accumulators: sum and squares](A05-sum-square-difference.md)
+<div class="gh-only">
+
+Previous: [A19 · Product from a to b](A19-product-from-a-to-b.md) · [Loops](../themes/loops.md) · Next: [A07 · Integer power](A07-integer-power.md)
+
+</div>

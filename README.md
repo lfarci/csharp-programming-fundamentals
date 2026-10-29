@@ -24,8 +24,8 @@ On Windows, type `.\ex` instead of `./ex`. Full setup: [Getting started](docs/ge
 
 | Folder or page | What it holds |
 | --- | --- |
-| [Roadmap](ROADMAP.md) | The 15 themes, in order. |
-| [`exercises/`](exercises/README.md) | Every exercise page, grouped by theme. |
+| [Roadmap](ROADMAP.md) | The 4 themes and their groups, in order. |
+| [`exercises/`](exercises/README.md) | Every exercise page, grouped by theme and group. |
 | [`cookbook/`](cookbook/README.md) | The 12 loop recipes and [which loop to use](cookbook/which-loop.md). |
 | [`learn/`](learn/README.md) | The theory, from Microsoft Learn (the 6 parts of *Get started with C#*), and extra exercises in the [C# Quest Tracker](https://lfarci.github.io/csharp-quest-tracker/). |
 | [`docs/`](docs/getting-started.md) | Getting started, how to read an exercise, problem solving, glossary. |

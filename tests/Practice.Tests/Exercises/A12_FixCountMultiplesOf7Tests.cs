@@ -1,4 +1,4 @@
-// Tests for A12 · Fix the bugs: count multiples of 7
+// Tests for A12 · Fix: multiples of 7
 // Exercise page: exercises/A12-fix-count-multiples-of-7.md
 // Your code:     practice/A12_FixCountMultiplesOf7.cs
 // Run them:      ./ex check A12

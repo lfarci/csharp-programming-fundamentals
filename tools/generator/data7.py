@@ -13,10 +13,10 @@ TODO = {"int": "return 0;", "long": "return 0;", "bool": "return false;", "void"
 def drill(id_, slug, title, sig, body, cases, goal, hints, edge, mastery, theme, recipes, pre,
           level="Guided", stars=1, sort=None):
     ret = sig.split()[0]; name = sig.split()[1].split("(")[0]
-    k = dict(id=id_, slug=slug, title=title, level=level, stars=stars, theme=theme, recipes=recipes, pre=pre,
+    # `theme` and `sort` are kept in the signature for old calls; placement lives in themes.py (groups).
+    k = dict(id=id_, slug=slug, title=title, level=level, stars=stars, recipes=recipes, pre=pre,
              goal="", examples=[], edge=edge, constraints=["Write the loop yourself."], hints=hints,
              mastery=mastery, code="")
-    if sort: k["sort"] = sort
     ex(**k)
     M[id_] = dict(run="", methods=[(f"public static {sig}", body, TODO[ret])],
                   cases=[(name, a, r) for a, r in cases])
@@ -127,7 +127,7 @@ for (int i = 1; i <= n; i += 2)
 return sum;""", [([5], 9), ([6], 9), ([1], 1), ([0], 0)],
  "Give back 1 + 3 + 5 + … (the odd numbers up to n).",
  ["Loop over 1, 3, 5, … with `i += 2` (like L16).", "Add each one to `sum`."], ["n = 0: 0."],
- "Do it again with `i++` and an `if (i % 2 != 0)`.", ["A01", "L16"])
+ "Give back the sum of the odd numbers from `a` to `b`.", ["A01", "L16"])
 acc("A15", "count-even-numbers", "Count the even numbers", "int CountEvens(int n)",
 """int count = 0;
 for (int i = 1; i <= n; i++)
@@ -185,8 +185,8 @@ for (int i = a; i <= b; i++)
 }
 return product;""", [([2, 4], 24), ([3, 3], 3), ([1, 5], 120), ([5, 4], 1)],
  "Give back a × (a+1) × … × b. If `a` is bigger than `b`, give back 1.",
- ["Like A04: the box starts at 1.", "The loop starts at `a`."], ["`a` bigger than `b`: 1 (nothing was multiplied)."],
- "Multiply only the even numbers from a to b.", ["A04"])
+ ["Like A20: the product box starts at 1, and each turn does `product *= i;`.", "The loop starts at `a` and stops after `b`."], ["`a` bigger than `b`: 1 (nothing was multiplied)."],
+ "Multiply only the even numbers from a to b.", ["A20", "A13"])
 acc("A20", "powers-of-2", "Power of 2", "long PowerOf2(int n)",
 """long result = 1;
 for (int i = 1; i <= n; i++)
@@ -195,8 +195,8 @@ for (int i = 1; i <= n; i++)
 }
 return result;""", [([3], 8), ([0], 1), ([10], 1024)],
  "Give back 2 to the power n (n ≥ 0), by multiplying by 2, n times.",
- ["Product box `result = 1`.", "The loop runs n times; each turn: `result *= 2`."], ["n = 0: 1."],
- "Give back 3 to the power n.", ["A04"])
+ ["A product box starts at 1, not 0 (0 times anything is 0): `long result = 1;`.", "The loop runs n times; each turn: `result *= 2`."], ["n = 0: 1."],
+ "Give back 3 to the power n.", ["A01"])
 acc("A21", "count-divisors", "Count the divisors", "int CountDivisors(int n)",
 """int count = 0;
 for (int d = 1; d <= n; d++)
@@ -238,8 +238,8 @@ grid("G08", "solid-square", "Solid square", "void DrawSquare(int size)",
     Console.WriteLine();
 }""", [([3], ["***", "***", "***"]), ([1], ["*"])],
  "Print a square of `*`, `size` wide and `size` high.",
- ["G01 with width and height both equal to `size`.", "Inner loop: one row. Outer loop: repeat the row."], ["size = 1: one star."],
- "Print a square of `o`.", ["G01"], "G011")
+ ["G07 again, now from a blank file: the inner loop prints one row, the outer loop repeats it.", "`Console.WriteLine();` after the inner loop ends the row."], ["size = 1: one star."],
+ "Print a rectangle twice as wide as it is high: `size` rows of `2 × size` stars.", ["G07"], "G011")
 grid("G09", "number-rows", "Rows of numbers", "void DrawNumberRows(int width, int height)",
 """for (int row = 1; row <= height; row++)
 {
@@ -386,7 +386,7 @@ for (int i = 1; i <= count; i++)
  "Print `count` values: `start`, then each value doubled (`3, 6, 12`).",
  ["One box `value`, starting at `start`.", "Each turn: print it, then `value = value * 2;`."], ["count = 0: nothing."],
  "Each value is the previous one plus 3.", "loops-state", ["07"], ["L11"], sort="S015")
-drill("S05", "nth-fibonacci", "The n-th Fibonacci number", "long Fibonacci(int n)",
+drill("S05", "nth-fibonacci", "N-th Fibonacci", "long Fibonacci(int n)",
 """long previous = 0;
 long current = 1;
 for (int i = 0; i < n; i++)
@@ -402,12 +402,13 @@ return previous;""", [([0], 0), ([1], 1), ([6], 8), ([10], 55)],
 
 # ---------- drill sets (shown in exercises/README.md) ----------
 DRILLS = [
- ("Counter loop (print, count, step)", "01", ["L03", "L11", "L12", "L13", "L14", "L16", "L17", "L18", "L15", "L19", "L06"]),
- ("Accumulator (sum, product)", "02", ["A11", "A01", "A13", "A14", "A18", "A04", "A19", "A20", "A07", "A10"]),
- ("Count or sum only some values", "03", ["A02", "A15", "A16", "A03", "A17", "A21", "A22", "A12", "A08"]),
- ("Nested loops (draw)", "08", ["L09", "L10", "G07", "G01", "G08", "G09", "G02", "G10", "G11", "G12", "G04", "G13", "G05"]),
- ("Digits", "06", ["D01", "D02", "D03", "D08", "D04", "D09", "D10", "D11", "D12", "D07", "D05"]),
+ ("Counter loop (print, count, step)", "01", ["L03", "L11", "L12", "L13", "L14", "L16", "L06", "L17", "L18", "L15"]),
+ ("Accumulator (sum, product)", "02", ["A11", "A01", "A13", "A14", "A18", "A20", "A19", "A04", "A07", "A10"]),
+ ("Count or sum only some values", "03", ["A02", "A15", "A16", "A21", "A22", "A12", "A03", "A17", "A08"]),
+ ("Nested loops (draw)", "08", ["L09", "L10", "G07", "G08", "G01", "G09", "G14", "G03", "G02", "G10", "G11", "G12", "G04", "G13", "G05"]),
+ ("Digits", "06", ["D01", "D02", "D03", "D08", "D04", "D09", "D10", "D12", "D11", "D07", "D05"]),
  ("Changing state", "07", ["S01", "S04", "S02", "S05", "S03"]),
+ ("Search with a flag", "05", ["P03", "P04", "P07", "P05", "P06", "P01"]),
 ]
 
 # ---------- G14: column formatting alone, before G03 needs it inside a grid ----------
@@ -433,5 +434,3 @@ CHECK = {
 }
 for e in E:
     if e["id"] in CHECK: e["check_hint"] = CHECK[e["id"]]
-for i, (name, r, ids) in enumerate(DRILLS):
-    if r == "08": DRILLS[i] = (name, r, ids[:-1] + ["G14", "G03"] + ids[-1:])

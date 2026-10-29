@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A12
+---
+prev:
+  text: "A22 · Sum of the divisors"
+  link: /exercises/A22-sum-of-divisors
+next:
+  text: "A03 · Sum of the even numbers"
+  link: /exercises/A03-sum-even-values
+---
 
-# A12 · Fix the bugs: count multiples of 7
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops.md#keep-only-some) › A12
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: keep a running result](../themes/loops-running-result.md) | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A02](A02-count-multiples-of-3.md) | Custom |
+# A12 · Fix: multiples of 7
+
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Keep only some** · exercise 6 of 9 in this group (31 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | fix the bugs | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A02](A02-count-multiples-of-3.md) |
+
+</div>
 
 ## Goal
 
@@ -78,4 +95,8 @@ Only after a real try: [open the solution for A12](../solutions/A12_FixCountMult
 
 ---
 
-Previous: [A02 · Count multiples of 3](A02-count-multiples-of-3.md) · [All exercises](README.md) · Next: [A03 · Sum of the even numbers](A03-sum-even-values.md)
+<div class="gh-only">
+
+Previous: [A22 · Sum of the divisors](A22-sum-of-divisors.md) · [Loops](../themes/loops.md) · Next: [A03 · Sum of the even numbers](A03-sum-even-values.md)
+
+</div>

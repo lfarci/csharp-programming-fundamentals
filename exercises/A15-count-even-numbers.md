@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A15
+---
+prev:
+  text: "A02 · Count multiples of 3"
+  link: /exercises/A02-count-multiples-of-3
+next:
+  text: "A16 · Count multiples of 5"
+  link: /exercises/A16-count-multiples-of-5
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops.md#keep-only-some) › A15
 
 # A15 · Count the even numbers
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: keep a running result](../themes/loops-running-result.md) | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A02](A02-count-multiples-of-3.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Keep only some** · exercise 2 of 9 in this group (27 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A02](A02-count-multiples-of-3.md) |
+
+</div>
 
 ## Goal
 
@@ -72,4 +89,8 @@ Only after a real try: [open the solution for A15](../solutions/A15_CountEvenNum
 
 ---
 
-Previous: [A14 · Sum the odd numbers](A14-sum-odd-numbers.md) · [All exercises](README.md) · Next: [A16 · Count multiples of 5](A16-count-multiples-of-5.md)
+<div class="gh-only">
+
+Previous: [A02 · Count multiples of 3](A02-count-multiples-of-3.md) · [Loops](../themes/loops.md) · Next: [A16 · Count multiples of 5](A16-count-multiples-of-5.md)
+
+</div>

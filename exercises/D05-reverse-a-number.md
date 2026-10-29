@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: take digits apart](../themes/loops-digits.md) › D05
+---
+prev:
+  text: "D07 · Fix: digit sum"
+  link: /exercises/D07-fix-digit-sum
+next:
+  text: "D06 · Palindrome number"
+  link: /exercises/D06-palindrome-number
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D05
 
 # D05 · Reverse a number
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: take digits apart](../themes/loops-digits.md) | [Digit extraction](../cookbook/06-digit-extraction.md) | [D04](D04-digit-sum.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Digits** · exercise 11 of 12 in this group (66 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [Digit extraction](../cookbook/06-digit-extraction.md) | [D04](D04-digit-sum.md) |
+
+</div>
 
 ## Goal
 
@@ -79,4 +96,8 @@ Only after a real try: [open the solution for D05](../solutions/D05_ReverseANumb
 
 ---
 
-Previous: [D07 · Fix the bugs: digit sum](D07-fix-digit-sum.md) · [All exercises](README.md) · Next: [D06 · Palindrome number](D06-palindrome-number.md)
+<div class="gh-only">
+
+Previous: [D07 · Fix: digit sum](D07-fix-digit-sum.md) · [Loops](../themes/loops.md) · Next: [D06 · Palindrome number](D06-palindrome-number.md)
+
+</div>

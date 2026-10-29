@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A18
+---
+prev:
+  text: "A14 · Sum the odd numbers"
+  link: /exercises/A14-sum-odd-numbers
+next:
+  text: "A20 · Power of 2"
+  link: /exercises/A20-powers-of-2
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A18
 
 # A18 · Sum of cubes
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: keep a running result](../themes/loops-running-result.md) | [Accumulator](../cookbook/02-accumulator.md) | [A11](A11-arrange-sum-of-squares.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Add up** · exercise 6 of 12 in this group (19 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Accumulator](../cookbook/02-accumulator.md) | [A11](A11-arrange-sum-of-squares.md) |
+
+</div>
 
 ## Goal
 
@@ -73,4 +90,8 @@ Only after a real try: [open the solution for A18](../solutions/A18_SumOfCubes.c
 
 ---
 
-Previous: [A17 · Sum the multiples of k](A17-sum-multiples-of-k.md) · [All exercises](README.md) · Next: [A19 · Product from a to b](A19-product-from-a-to-b.md)
+<div class="gh-only">
+
+Previous: [A14 · Sum the odd numbers](A14-sum-odd-numbers.md) · [Loops](../themes/loops.md) · Next: [A20 · Power of 2](A20-powers-of-2.md)
+
+</div>

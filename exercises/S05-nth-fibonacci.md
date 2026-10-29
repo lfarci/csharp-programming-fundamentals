@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: remember changing values](../themes/loops-state.md) › S05
+---
+prev:
+  text: "S02 · Fibonacci"
+  link: /exercises/S02-fibonacci
+next:
+  text: "S03 · Even Fibonacci sum"
+  link: /exercises/S03-even-fibonacci-sum
+---
 
-# S05 · The n-th Fibonacci number
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Changing values](../themes/loops.md#changing-values) › S05
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: remember changing values](../themes/loops-state.md) | [State update](../cookbook/07-state-update.md) | [S02](S02-fibonacci.md) | Custom |
+# S05 · N-th Fibonacci
+
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Changing values** · exercise 4 of 5 in this group (71 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [State update](../cookbook/07-state-update.md) | [S02](S02-fibonacci.md) |
+
+</div>
 
 ## Goal
 
@@ -73,4 +90,8 @@ Only after a real try: [open the solution for S05](../solutions/S05_NthFibonacci
 
 ---
 
-Previous: [S02 · Fibonacci](S02-fibonacci.md) · [All exercises](README.md) · Next: [S03 · Even Fibonacci sum](S03-even-fibonacci-sum.md)
+<div class="gh-only">
+
+Previous: [S02 · Fibonacci](S02-fibonacci.md) · [Loops](../themes/loops.md) · Next: [S03 · Even Fibonacci sum](S03-even-fibonacci-sum.md)
+
+</div>

@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: search](../themes/loops-search.md) › P02
+---
+prev:
+  text: "P01 · Is it prime?"
+  link: /exercises/P01-is-it-prime
+next:
+  text: "M01 · Armstrong number"
+  link: /exercises/M01-armstrong-number
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops.md#search-and-combine) › P02
 
 # P02 · All primes up to N
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Challenge | hard | [Loops: search](../themes/loops-search.md) | [Counter loop](../cookbook/01-counter-loop.md), [Flag/search](../cookbook/05-flag-search.md), [Accumulator](../cookbook/02-accumulator.md) | [P01](P01-is-it-prime.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Search and combine** · exercise 7 of 9 in this group (79 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Challenge | hard | write code | [Counter loop](../cookbook/01-counter-loop.md), [Flag/search](../cookbook/05-flag-search.md), [Accumulator](../cookbook/02-accumulator.md) | [P01](P01-is-it-prime.md) |
+
+</div>
 
 ## Goal
 
@@ -90,4 +107,8 @@ Only after a real try: [open the solution for P02](../solutions/P02_PrimesUpToN.
 
 ---
 
-Previous: [P01 · Is it prime?](P01-is-it-prime.md) · [All exercises](README.md) · Next: [M01 · Armstrong number](M01-armstrong-number.md)
+<div class="gh-only">
+
+Previous: [P01 · Is it prime?](P01-is-it-prime.md) · [Loops](../themes/loops.md) · Next: [M01 · Armstrong number](M01-armstrong-number.md)
+
+</div>

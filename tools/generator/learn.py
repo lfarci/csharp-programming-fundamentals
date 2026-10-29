@@ -120,31 +120,23 @@ assert sorted(EPISODE_ORDER + list(DROPPED)) == sorted(EPISODES), "every episode
 VIDEOS = ("C# for Beginners (Scott Hanselman and David Fowler)", "https://learn.microsoft.com/en-us/shows/csharp-for-beginners/")
 TOUR = ("A tour of the C# language", "https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/")
 
-# theme slug -> Microsoft Learn part (the main one), modules (any part), episodes.
+# theme slug -> Microsoft Learn part (the main one), then the ONE video to watch and the ONE module to read first
+# (the "Learn the theory" card shows only these two, plus the first exercise), then the other modules and episodes
+# ("More on Microsoft Learn", collapsed). `episodes` and `modules` list everything, the first one is the main one.
 THEORY = {
-    "hello-world": dict(part=1, modules=["csharp-write-first", "install-configure-visual-studio-code"],
-                        episodes=["creating-your-first-c-program", "understanding-your-first-c-program"]),
-    "variables": dict(part=1, modules=["csharp-literals-variables", "csharp-basic-operations", "csharp-choose-data-type", "csharp-convert-cast"],
-                      episodes=["understanding-data-types-and-variables", "operators-expressions-and-statements"]),
-    "conditions": dict(part=1, modules=["csharp-if-elseif-else", "csharp-evaluate-boolean-expressions", "csharp-switch-case"],
-                       episodes=["the-if-decision-statement", "enumerations-and-the-switch-decision-statement"]),
-    "loops-repeat": dict(part=3, modules=["csharp-for", "csharp-do-while", "csharp-repeat-actions-loops"],
-                         episodes=["for-iteration-statement", "while-iteration-statement"]),
-    "loops-running-result": dict(part=3, modules=["csharp-for"], episodes=["for-iteration-statement"]),
-    "loops-2d": dict(part=3, modules=["csharp-for", "csharp-code-blocks"], episodes=["for-iteration-statement"]),
-    "loops-digits": dict(part=3, modules=["csharp-do-while", "csharp-basic-operations"], episodes=["while-iteration-statement", "operators-expressions-and-statements"]),
-    "loops-state": dict(part=3, modules=["csharp-code-blocks", "csharp-do-while"], episodes=["while-iteration-statement"]),
-    "loops-search": dict(part=3, modules=["csharp-do-while", "csharp-evaluate-boolean-expressions"], episodes=["while-iteration-statement"]),
-    "combine": dict(part=3, modules=["guided-project-develop-conditional-branching-looping", "challenge-project-develop-branching-looping-structures-c-sharp",
-                                     "implement-visual-studio-code-debugging-tools"], episodes=["for-iteration-statement", "the-if-decision-statement"]),
-    "arrays": dict(part=4, modules=["csharp-arrays-lists", "csharp-arrays-operations", "csharp-modify-content", "csharp-format-strings"],
-                   episodes=["understanding-arrays", "working-with-strings"]),
-    "files": dict(part=2, modules=["csharp-read-write-files"], episodes=["working-with-strings"]),
-    "exceptions": dict(part=6, modules=["review-principles-code-debugging-exception-handling-c-sharp", "implement-exception-handling-c-sharp", "create-throw-exceptions-c-sharp"],
-                       episodes=["gracefully-handling-exceptions"]),
-    "collections": dict(part=2, modules=["csharp-arrays-lists"], episodes=["working-with-collections"]),
-    "methods": dict(part=5, modules=["write-first-c-sharp-method", "create-c-sharp-methods-parameters", "create-c-sharp-methods-return-values", "csharp-reusable-code"],
-                    episodes=["defining-and-calling-methods"]),
+    "basics": dict(part=1, modules=["csharp-write-first", "csharp-literals-variables", "csharp-basic-operations", "csharp-if-elseif-else",
+                                    "install-configure-visual-studio-code", "csharp-choose-data-type", "csharp-convert-cast", "csharp-evaluate-boolean-expressions", "csharp-switch-case"],
+                   episodes=["creating-your-first-c-program", "understanding-your-first-c-program", "understanding-data-types-and-variables",
+                             "operators-expressions-and-statements", "the-if-decision-statement", "enumerations-and-the-switch-decision-statement"]),
+    "loops": dict(part=3, modules=["csharp-for", "csharp-do-while", "csharp-repeat-actions-loops", "csharp-code-blocks",
+                                   "guided-project-develop-conditional-branching-looping", "challenge-project-develop-branching-looping-structures-c-sharp",
+                                   "implement-visual-studio-code-debugging-tools"],
+                  episodes=["for-iteration-statement", "while-iteration-statement"]),
+    "arrays": dict(part=4, modules=["csharp-arrays-lists", "csharp-arrays-operations", "csharp-modify-content", "csharp-format-strings", "csharp-read-write-files"],
+                   episodes=["understanding-arrays", "working-with-strings", "working-with-collections"]),
+    "methods": dict(part=5, modules=["write-first-c-sharp-method", "create-c-sharp-methods-parameters", "create-c-sharp-methods-return-values", "csharp-reusable-code",
+                                     "review-principles-code-debugging-exception-handling-c-sharp", "implement-exception-handling-c-sharp", "create-throw-exceptions-c-sharp"],
+                    episodes=["defining-and-calling-methods", "gracefully-handling-exceptions"]),
 }
 for _s, _t in THEORY.items():
     assert _t["part"] in PARTS, f"{_s}: unknown Microsoft Learn part"

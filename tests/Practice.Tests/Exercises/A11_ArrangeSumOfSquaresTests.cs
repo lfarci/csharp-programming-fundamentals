@@ -1,4 +1,4 @@
-// Tests for A11 · Arrange the lines: sum of squares
+// Tests for A11 · Arrange: sum of squares
 // Exercise page: exercises/A11-arrange-sum-of-squares.md
 // Your code:     practice/A11_ArrangeSumOfSquares.cs
 // Run them:      ./ex check A11

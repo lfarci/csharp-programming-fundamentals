@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: repeat and count](../themes/loops-repeat.md) › L11
+---
+prev:
+  text: "L03 · Count up and down"
+  link: /exercises/L03-count-up-and-down
+next:
+  text: "L12 · Count down"
+  link: /exercises/L12-count-down
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L11
 
 # L11 · Count from a to b
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: repeat and count](../themes/loops-repeat.md) | [Counter loop](../cookbook/01-counter-loop.md) | [L03](L03-count-up-and-down.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Count** · exercise 4 of 13 in this group (4 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Counter loop](../cookbook/01-counter-loop.md) | [L03](L03-count-up-and-down.md) |
+
+</div>
 
 ## Goal
 
@@ -73,4 +90,8 @@ Only after a real try: [open the solution for L11](../solutions/L11_CountFromATo
 
 ---
 
-Previous: [L08 · Guess the number](L08-guess-the-number.md) · [All exercises](README.md) · Next: [L12 · Count down](L12-count-down.md)
+<div class="gh-only">
+
+Previous: [L03 · Count up and down](L03-count-up-and-down.md) · [Loops](../themes/loops.md) · Next: [L12 · Count down](L12-count-down.md)
+
+</div>

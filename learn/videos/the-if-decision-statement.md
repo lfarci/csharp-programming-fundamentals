@@ -3,7 +3,7 @@ prev: false
 next: false
 ---
 
-[Home](../../README.md) › [Learn](../README.md) › [Videos](../videos.md) › Video 5
+[Home](../../README.md) › [Learn](../README.md) › [Videos](../videos.md) › Video 4
 
 # The if Decision Statement
 
@@ -25,9 +25,8 @@ next: false
 
 ## Practise after this
 
-- [Conditions](../../themes/conditions.md): start with [C01](../../exercises/C01-even-or-odd.md), [C02](../../exercises/C02-largest-of-three.md), [C03](../../exercises/C03-ticket-price.md)
-- [Combine recipes](../../themes/combine.md): start with [M01](../../exercises/M01-armstrong-number.md), [M02](../../exercises/M02-armstrong-numbers-in-a-range.md)
+- [Basics](../../themes/basics.md): start with [B01](../../exercises/B01-hello-you.md), [B02](../../exercises/B02-rectangle-calculator.md), [B03](../../exercises/B03-seconds-to-hms.md)
 
 ---
 
-Previous: [Operators, Expressions, and Statements](operators-expressions-and-statements.md) · [All videos](../videos.md) · Next: [Enumerations and the Switch Decision Statement](enumerations-and-the-switch-decision-statement.md)
+Previous: [Understanding Data Types and Variables](understanding-data-types-and-variables.md) · [All videos](../videos.md) · Next: [Operators, Expressions, and Statements](operators-expressions-and-statements.md)

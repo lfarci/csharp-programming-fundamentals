@@ -25,8 +25,8 @@ next: false
 
 ## Practise after this
 
-- [Variables and expressions](../../themes/variables.md): start with [B02](../../exercises/B02-rectangle-calculator.md), [B03](../../exercises/B03-seconds-to-hms.md)
+- [Basics](../../themes/basics.md): start with [B01](../../exercises/B01-hello-you.md), [B02](../../exercises/B02-rectangle-calculator.md), [B03](../../exercises/B03-seconds-to-hms.md)
 
 ---
 
-Previous: [Understanding Your First C# Program](understanding-your-first-c-program.md) · [All videos](../videos.md) · Next: [Operators, Expressions, and Statements](operators-expressions-and-statements.md)
+Previous: [Understanding Your First C# Program](understanding-your-first-c-program.md) · [All videos](../videos.md) · Next: [The if Decision Statement](the-if-decision-statement.md)

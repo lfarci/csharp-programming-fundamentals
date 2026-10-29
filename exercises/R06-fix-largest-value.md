@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Arrays and text](../themes/arrays.md) › R06
+---
+prev:
+  text: "R02 · Position of the largest"
+  link: /exercises/R02-largest-in-an-array
+next:
+  text: "R04 · Find the position"
+  link: /exercises/R04-find-the-position
+---
 
-# R06 · Fix the bugs: largest value
+[Home](../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Arrays](../themes/arrays.md#arrays) › R06
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Arrays and text](../themes/arrays.md) | [Array traversal](../cookbook/11-array-traversal.md), [Min/max](../cookbook/04-min-max.md) | [R02](R02-largest-in-an-array.md) | Custom |
+# R06 · Fix: largest value
+
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Arrays, text and lists › Arrays** · exercise 4 of 6 in this group (4 of 11 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | fix the bugs | [Array traversal](../cookbook/11-array-traversal.md), [Min/max](../cookbook/04-min-max.md) | [R02](R02-largest-in-an-array.md) |
+
+</div>
 
 ## Goal
 
@@ -79,4 +96,8 @@ Only after a real try: [open the solution for R06](../solutions/R06_FixLargestVa
 
 ---
 
-Previous: [R02 · Largest value in an array](R02-largest-in-an-array.md) · [All exercises](README.md) · Next: [R03 · Count matches in an array](R03-count-matches.md)
+<div class="gh-only">
+
+Previous: [R02 · Position of the largest](R02-largest-in-an-array.md) · [Arrays, text and lists](../themes/arrays.md) · Next: [R04 · Find the position](R04-find-the-position.md)
+
+</div>

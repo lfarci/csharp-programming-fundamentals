@@ -42,11 +42,11 @@ function githubLinks(md: any) {
   }
 }
 
-// Sidebar: one Exercises section, one sub-section per theme (in course order). Titles only; the ID is small.
-const themeItems = course.themes.map((t) => ({
-  text: t.title, collapsed: true, link: t.link,
-  items: course.exercises.filter((e) => e.theme === t.slug)
-    .map((e) => ({ text: `${e.title} <span class="sb-id">${e.id}</span>`, link: e.link })),
+// Sidebar: themes and their groups only, never one link per exercise (tools/check-structure.py checks it).
+// Exercises are reached from the theme page tables and the Previous/Next links of each exercise page.
+const themeItems = course.themes.map((t, i) => ({
+  text: `${i + 1}. ${t.title}`, collapsed: true, link: t.link,
+  items: t.groups.map((g) => ({ text: g.title, link: g.link })),
 }))
 
 export default defineConfig({
@@ -74,7 +74,7 @@ export default defineConfig({
       { text: 'Learn', link: '/learn/' },
       { text: 'Cookbook', link: '/cookbook/' },
       { text: 'Exercises', link: '/exercises/' },
-      { text: 'Study skills', link: '/docs/reading-an-exercise' },
+      { text: 'Study skills', link: '/docs/' },
     ],
     search: { provider: 'local' },
     outline: { level: [2, 3], label: 'On this page' },
@@ -110,6 +110,7 @@ export default defineConfig({
         ...themeItems,
       ] },
       { text: 'Study skills', items: [
+        { text: 'All study skills', link: '/docs/' },
         { text: 'How to read an exercise', link: '/docs/reading-an-exercise' },
         { text: 'Solving a problem', link: '/docs/problem-solving' },
         { text: 'How to practice', link: '/docs/how-to-practice' },

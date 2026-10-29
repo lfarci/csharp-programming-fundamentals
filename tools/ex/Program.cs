@@ -51,7 +51,7 @@ int Help()
       {ex} run          run the current exercise and type the input yourself
       {ex} next         start the next exercise that is not done yet
       {ex} list         show all exercises
-      {ex} progress     see what is done, per theme and per drill set
+      {ex} progress     see what is done, per theme, group and drill set
       {ex} done L01     mark a paper exercise as done
 
     The exercises: exercises/README.md
@@ -222,11 +222,17 @@ int Progress()
     int started = all.Count(e => Started(e) && !done.ContainsKey(e.Id));
     lines.Add($"Progress: {done.Count} of {all.Count} exercises done, {started} started (not done yet).");
     lines.Add("");
-    lines.Add("By theme:");
+    lines.Add("By theme and group:");
+    string Row(string name, IEnumerable<Ex> list, int width = 34)
+    {
+        int d = list.Count(e => done.ContainsKey(e.Id)), s = list.Count(e => Started(e) && !done.ContainsKey(e.Id));
+        return $"{name.PadRight(width)} {d,3} of {list.Count(),-3} done{(s > 0 ? $", {s} started" : "")}";
+    }
     foreach (var g in all.OrderBy(e => e.ThemeOrder).GroupBy(e => e.Theme))
     {
-        int d = g.Count(e => done.ContainsKey(e.Id)), s = g.Count(e => Started(e) && !done.ContainsKey(e.Id));
-        lines.Add($"  {g.Key,-34} {d,3} of {g.Count(),-3} done{(s > 0 ? $", {s} started" : "")}");
+        lines.Add("  " + Row(g.Key, g));
+        foreach (var sub in g.GroupBy(e => e.Group))
+            lines.Add("    " + Row(sub.Key, sub, 32));
     }
     lines.Add("");
     lines.Add("Drill sets (x = done, o = started, . = not started):");
@@ -358,4 +364,4 @@ static string FindRoot()
 }
 
 record Result(string Class, string Name, int Number, bool Pass, string Message);
-record Ex(string Id, string Name, string Class, string Title, string Kind, string Theme, int ThemeOrder, string[] Methods, string[] Drills);
+record Ex(string Id, string Name, string Class, string Title, string Kind, string Theme, int ThemeOrder, string Group, string[] Methods, string[] Drills);

@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: repeat and count](../themes/loops-repeat.md) › L08
+---
+prev:
+  text: "L07 · Ask until valid"
+  link: /exercises/L07-ask-until-valid
+next:
+  text: "L09 · Draw one row"
+  link: /exercises/L09-draw-a-row
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Until the user stops](../themes/loops.md#until-the-user-stops) › L08
 
 # L08 · Guess the number
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Challenge | medium | [Loops: repeat and count](../themes/loops-repeat.md) | [Input validation](../cookbook/09-input-validation.md), [Accumulator](../cookbook/02-accumulator.md) | [L07](L07-ask-until-valid.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Until the user stops** · exercise 5 of 5 in this group (39 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Challenge | medium | write code | [Input validation](../cookbook/09-input-validation.md), [Accumulator](../cookbook/02-accumulator.md) | [L07](L07-ask-until-valid.md) |
+
+</div>
 
 ## Goal
 
@@ -84,4 +101,8 @@ Only after a real try: [open the solution for L08](../solutions/L08_GuessTheNumb
 
 ---
 
-Previous: [L07 · Ask until valid](L07-ask-until-valid.md) · [All exercises](README.md) · Next: [L11 · Count from a to b](L11-count-from-a-to-b.md)
+<div class="gh-only">
+
+Previous: [L07 · Ask until valid](L07-ask-until-valid.md) · [Loops](../themes/loops.md) · Next: [L09 · Draw one row](L09-draw-a-row.md)
+
+</div>

@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A11
+---
+prev:
+  text: "L19 · Count the turns"
+  link: /exercises/L19-count-the-turns
+next:
+  text: "A01 · Sum from 1 to N"
+  link: /exercises/A01-sum-1-to-n
+---
 
-# A11 · Arrange the lines: sum of squares
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A11
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: keep a running result](../themes/loops-running-result.md) | [Accumulator](../cookbook/02-accumulator.md) | [L03](L03-count-up-and-down.md) | Custom |
+# A11 · Arrange: sum of squares
+
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Add up** · exercise 2 of 12 in this group (15 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | arrange the lines | [Accumulator](../cookbook/02-accumulator.md) | [L03](L03-count-up-and-down.md) |
+
+</div>
 
 ## Goal
 
@@ -77,4 +94,8 @@ Only after a real try: [open the solution for A11](../solutions/A11_ArrangeSumOf
 
 ---
 
-Previous: [L19 · Count the turns](L19-count-the-turns.md) · [All exercises](README.md) · Next: [A01 · Sum from 1 to N](A01-sum-1-to-n.md)
+<div class="gh-only">
+
+Previous: [L19 · Count the turns](L19-count-the-turns.md) · [Loops](../themes/loops.md) · Next: [A01 · Sum from 1 to N](A01-sum-1-to-n.md)
+
+</div>

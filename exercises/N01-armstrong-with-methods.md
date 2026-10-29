@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Methods](../themes/methods.md) › N01
+---
+prev:
+  text: "N02 · A method that calls one"
+  link: /exercises/N02-is-multiple-and-count
+next:
+  text: "E02 · Parse or zero"
+  link: /exercises/E02-parse-or-zero
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Methods and errors](../themes/methods.md) › [Methods](../themes/methods.md#methods) › N01
 
 # N01 · Armstrong with methods
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Challenge | hard | [Methods](../themes/methods.md) | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [M02](M02-armstrong-numbers-in-a-range.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Methods and errors › Methods** · exercise 2 of 2 in this group (2 of 4 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Challenge | hard | write code | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [M02](M02-armstrong-numbers-in-a-range.md) |
+
+</div>
 
 ## Goal
 
@@ -84,4 +101,8 @@ Only after a real try: [open the solution for N01](../solutions/N01_ArmstrongWit
 
 ---
 
-Previous: [K01 · Shopping list](K01-shopping-list.md) · [All exercises](README.md)
+<div class="gh-only">
+
+Previous: [N02 · A method that calls one](N02-is-multiple-and-count.md) · [Methods and errors](../themes/methods.md) · Next: [E02 · Parse or zero](E02-parse-or-zero.md)
+
+</div>

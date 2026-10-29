@@ -1,18 +1,18 @@
 <script setup lang="ts">
-// The exercises of one theme, with a done tick from the browser store (same as "Mark as done").
+// The exercises of one theme (or one group of it), with a done tick from the browser store (same as "Mark as done").
 import { computed, onMounted } from 'vue'
 import { withBase } from 'vitepress'
 import course from '../course.json'
 import { done, load, setDone } from './progress'
 
-const props = defineProps<{ theme: string }>()
+const props = defineProps<{ theme: string; group?: string }>()
 onMounted(load)
-const list = computed(() => course.exercises.filter((e) => e.theme === props.theme))
+const list = computed(() => course.exercises.filter((e) => e.theme === props.theme && (!props.group || e.group === props.group)))
 const n = computed(() => list.value.filter((e) => done.value[e.id]).length)
 </script>
 
 <template>
-  <div class="theme-ex cpf-card">
+  <div class="theme-ex cpf-card" :data-group="group || null">
     <div class="head">
       <p class="count"><strong>{{ n }} of {{ list.length }}</strong> done</p>
       <span class="cpf-bar" aria-hidden="true"><span :style="{ width: (list.length ? 100 * n / list.length : 0) + '%' }"></span></span>
@@ -24,7 +24,7 @@ const n = computed(() => list.value.filter((e) => done.value[e.id]).length)
         <span class="pos" aria-hidden="true">{{ i + 1 }}</span>
         <a :href="withBase(e.link)">{{ e.title }}</a>
         <span class="id">{{ e.id }}</span>
-        <span v-if="e.paper" class="tag">paper</span>
+        <span v-if="e.kind !== 'write code'" class="tag">{{ e.kind }}</span>
         <span class="level">{{ e.level }}</span>
       </li>
     </ol>

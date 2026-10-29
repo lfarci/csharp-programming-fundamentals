@@ -1,10 +1,29 @@
-[Home](../README.md) › [Exercises](README.md) › [Combine recipes](../themes/combine.md) › M01
+---
+prev:
+  text: "P02 · All primes up to N"
+  link: /exercises/P02-primes-up-to-n
+next:
+  text: "M02 · Armstrong in a range"
+  link: /exercises/M02-armstrong-numbers-in-a-range
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops.md#search-and-combine) › M01
 
 # M01 · Armstrong number
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Challenge | hard | [Combine recipes](../themes/combine.md) | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [D03](D03-count-digits.md), [D04](D04-digit-sum.md), [A07](A07-integer-power.md) | Custom · teacher topic: Armstrong |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Search and combine** · exercise 8 of 9 in this group (80 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Challenge | hard | write code | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [D03](D03-count-digits.md), [D04](D04-digit-sum.md), [A07](A07-integer-power.md) |
+
+</div>
+
+Source: teacher topic: Armstrong.
 
 ## Goal
 
@@ -82,4 +101,8 @@ Only after a real try: [open the solution for M01](../solutions/M01_ArmstrongNum
 
 ---
 
-Previous: [P02 · All primes up to N](P02-primes-up-to-n.md) · [All exercises](README.md) · Next: [M02 · All Armstrong numbers in a range](M02-armstrong-numbers-in-a-range.md)
+<div class="gh-only">
+
+Previous: [P02 · All primes up to N](P02-primes-up-to-n.md) · [Loops](../themes/loops.md) · Next: [M02 · Armstrong in a range](M02-armstrong-numbers-in-a-range.md)
+
+</div>

@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: draw in 2D](../themes/loops-2d.md) › G14
+---
+prev:
+  text: "G09 · Rows of numbers"
+  link: /exercises/G09-number-rows
+next:
+  text: "G03 · Multiplication grid"
+  link: /exercises/G03-multiplication-grid
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw rows and grids](../themes/loops.md#draw-rows-and-grids) › G14
 
 # G14 · Numbers in columns
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: draw in 2D](../themes/loops-2d.md) | [Counter loop](../cookbook/01-counter-loop.md), [Nested grid](../cookbook/08-nested-grid.md) | [L10](L10-numbers-on-one-line.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Draw rows and grids** · exercise 7 of 8 in this group (46 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Counter loop](../cookbook/01-counter-loop.md), [Nested grid](../cookbook/08-nested-grid.md) | [L10](L10-numbers-on-one-line.md) |
+
+</div>
 
 ## Goal
 
@@ -78,4 +95,8 @@ Only after a real try: [open the solution for G14](../solutions/G14_NumbersInCol
 
 ---
 
-Previous: [G12 · Upside-down triangle](G12-upside-down-triangle.md) · [All exercises](README.md) · Next: [G03 · Multiplication grid](G03-multiplication-grid.md)
+<div class="gh-only">
+
+Previous: [G09 · Rows of numbers](G09-number-rows.md) · [Loops](../themes/loops.md) · Next: [G03 · Multiplication grid](G03-multiplication-grid.md)
+
+</div>

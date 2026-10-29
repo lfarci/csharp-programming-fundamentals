@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // M02 · All Armstrong numbers in a range
+    // M02 · Armstrong in a range
     // Exercise page: exercises/M02-armstrong-numbers-in-a-range.md
     public static class M02_ArmstrongNumbersInARange
     {

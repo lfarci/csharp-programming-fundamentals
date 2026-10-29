@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Arrays and text](../themes/arrays.md) › R01
+---
+prev:
+  text: "Arrays, text and lists"
+  link: /themes/arrays
+next:
+  text: "R03 · Count matches"
+  link: /exercises/R03-count-matches
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Arrays](../themes/arrays.md#arrays) › R01
 
 # R01 · Sum of an array
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Arrays and text](../themes/arrays.md) | [Array traversal](../cookbook/11-array-traversal.md), [Accumulator](../cookbook/02-accumulator.md) | [A01](A01-sum-1-to-n.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Arrays, text and lists › Arrays** · exercise 1 of 6 in this group (1 of 11 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Array traversal](../cookbook/11-array-traversal.md), [Accumulator](../cookbook/02-accumulator.md) | [A01](A01-sum-1-to-n.md) |
+
+</div>
 
 ## Goal
 
@@ -72,4 +89,8 @@ Only after a real try: [open the solution for R01](../solutions/R01_SumAnArray.c
 
 ---
 
-Previous: [M02 · All Armstrong numbers in a range](M02-armstrong-numbers-in-a-range.md) · [All exercises](README.md) · Next: [R02 · Largest value in an array](R02-largest-in-an-array.md)
+<div class="gh-only">
+
+Previous: [Arrays, text and lists](../themes/arrays.md) · [Arrays, text and lists](../themes/arrays.md) · Next: [R03 · Count matches](R03-count-matches.md)
+
+</div>

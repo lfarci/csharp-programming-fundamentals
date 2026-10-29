@@ -1,4 +1,4 @@
-// Tests for R02 · Largest value in an array
+// Tests for R02 · Position of the largest
 // Exercise page: exercises/R02-largest-in-an-array.md
 // Your code:     practice/R02_LargestInAnArray.cs
 // Run them:      ./ex check R02

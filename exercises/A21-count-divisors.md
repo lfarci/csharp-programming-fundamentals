@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A21
+---
+prev:
+  text: "A16 · Count multiples of 5"
+  link: /exercises/A16-count-multiples-of-5
+next:
+  text: "A22 · Sum of the divisors"
+  link: /exercises/A22-sum-of-divisors
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops.md#keep-only-some) › A21
 
 # A21 · Count the divisors
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: keep a running result](../themes/loops-running-result.md) | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A16](A16-count-multiples-of-5.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Keep only some** · exercise 4 of 9 in this group (29 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A16](A16-count-multiples-of-5.md) |
+
+</div>
 
 ## Goal
 
@@ -73,4 +90,8 @@ Only after a real try: [open the solution for A21](../solutions/A21_CountDivisor
 
 ---
 
-Previous: [A20 · Power of 2](A20-powers-of-2.md) · [All exercises](README.md) · Next: [A22 · Sum of the divisors](A22-sum-of-divisors.md)
+<div class="gh-only">
+
+Previous: [A16 · Count multiples of 5](A16-count-multiples-of-5.md) · [Loops](../themes/loops.md) · Next: [A22 · Sum of the divisors](A22-sum-of-divisors.md)
+
+</div>

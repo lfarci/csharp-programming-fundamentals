@@ -1,10 +1,29 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A05
+---
+prev:
+  text: "A07 · Integer power"
+  link: /exercises/A07-integer-power
+next:
+  text: "A10 · Sum of a series"
+  link: /exercises/A10-sum-of-a-series
+---
 
-# A05 · Two accumulators: sum and squares
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A05
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: keep a running result](../themes/loops-running-result.md) | [Accumulator](../cookbook/02-accumulator.md) | [A01](A01-sum-1-to-n.md) | Custom · prepares [Project Euler #6](https://projecteuler.net/problem=6) |
+# A05 · Sum and sum of squares
+
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Add up** · exercise 11 of 12 in this group (24 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [Accumulator](../cookbook/02-accumulator.md) | [A01](A01-sum-1-to-n.md) |
+
+</div>
+
+Source: prepares [Project Euler #6](https://projecteuler.net/problem=6).
 
 ## Goal
 
@@ -86,4 +105,8 @@ Only after a real try: [open the solution for A05](../solutions/A05_SumSquareDif
 
 ---
 
-Previous: [A04 · Factorial](A04-factorial.md) · [All exercises](README.md) · Next: [A06 · Average until zero](A06-average-until-zero.md)
+<div class="gh-only">
+
+Previous: [A07 · Integer power](A07-integer-power.md) · [Loops](../themes/loops.md) · Next: [A10 · Sum of a series](A10-sum-of-a-series.md)
+
+</div>

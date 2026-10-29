@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: remember changing values](../themes/loops-state.md) › S01
+---
+prev:
+  text: "D06 · Palindrome number"
+  link: /exercises/D06-palindrome-number
+next:
+  text: "S04 · Doubling"
+  link: /exercises/S04-doubling
+---
 
-# S01 · Trace two changing variables (paper)
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Changing values](../themes/loops.md#changing-values) › S01
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: remember changing values](../themes/loops-state.md) | [State update](../cookbook/07-state-update.md) | [L01](L01-trace-a-loop.md) | Custom |
+# S01 · Trace two variables
+
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Changing values** · exercise 1 of 5 in this group (68 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | paper | [State update](../cookbook/07-state-update.md) | [L01](L01-trace-a-loop.md) |
+
+</div>
 
 ## Goal
 
@@ -67,4 +84,8 @@ Only after a real try: [open the solution for S01](../solutions/S01-trace-update
 
 ---
 
-Previous: [D06 · Palindrome number](D06-palindrome-number.md) · [All exercises](README.md) · Next: [S04 · Doubling](S04-doubling.md)
+<div class="gh-only">
+
+Previous: [D06 · Palindrome number](D06-palindrome-number.md) · [Loops](../themes/loops.md) · Next: [S04 · Doubling](S04-doubling.md)
+
+</div>

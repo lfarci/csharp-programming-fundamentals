@@ -1,4 +1,4 @@
-// Tests for D07 · Fix the bugs: digit sum
+// Tests for D07 · Fix: digit sum
 // Exercise page: exercises/D07-fix-digit-sum.md
 // Your code:     practice/D07_FixDigitSum.cs
 // Run them:      ./ex check D07

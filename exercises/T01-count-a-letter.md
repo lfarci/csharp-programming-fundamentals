@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Arrays and text](../themes/arrays.md) › T01
+---
+prev:
+  text: "R05 · Reverse an array"
+  link: /exercises/R05-reverse-an-array
+next:
+  text: "T02 · Remove spaces"
+  link: /exercises/T02-remove-spaces
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Text](../themes/arrays.md#text) › T01
 
 # T01 · Count a letter
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Arrays and text](../themes/arrays.md) | [Build a string](../cookbook/12-string-building.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [R03](R03-count-matches.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Arrays, text and lists › Text** · exercise 1 of 3 in this group (7 of 11 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Build a string](../cookbook/12-string-building.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [R03](R03-count-matches.md) |
+
+</div>
 
 ## Goal
 
@@ -73,4 +90,8 @@ Only after a real try: [open the solution for T01](../solutions/T01_CountALetter
 
 ---
 
-Previous: [R05 · Reverse an array](R05-reverse-an-array.md) · [All exercises](README.md) · Next: [T02 · Remove spaces](T02-remove-spaces.md)
+<div class="gh-only">
+
+Previous: [R05 · Reverse an array](R05-reverse-an-array.md) · [Arrays, text and lists](../themes/arrays.md) · Next: [T02 · Remove spaces](T02-remove-spaces.md)
+
+</div>

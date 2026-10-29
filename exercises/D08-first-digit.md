@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: take digits apart](../themes/loops-digits.md) › D08
+---
+prev:
+  text: "D03 · Count the digits"
+  link: /exercises/D03-count-digits
+next:
+  text: "D04 · Sum of the digits"
+  link: /exercises/D04-digit-sum
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D08
 
 # D08 · First digit
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: take digits apart](../themes/loops-digits.md) | [Digit extraction](../cookbook/06-digit-extraction.md) | [D03](D03-count-digits.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Digits** · exercise 4 of 12 in this group (59 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Digit extraction](../cookbook/06-digit-extraction.md) | [D03](D03-count-digits.md) |
+
+</div>
 
 ## Goal
 
@@ -73,4 +90,8 @@ Only after a real try: [open the solution for D08](../solutions/D08_FirstDigit.c
 
 ---
 
-Previous: [D03 · Count the digits](D03-count-digits.md) · [All exercises](README.md) · Next: [D04 · Sum of the digits](D04-digit-sum.md)
+<div class="gh-only">
+
+Previous: [D03 · Count the digits](D03-count-digits.md) · [Loops](../themes/loops.md) · Next: [D04 · Sum of the digits](D04-digit-sum.md)
+
+</div>

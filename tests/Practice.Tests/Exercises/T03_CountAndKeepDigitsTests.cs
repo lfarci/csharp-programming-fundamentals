@@ -1,4 +1,4 @@
-// Tests for T03 · Count and keep the digits
+// Tests for T03 · Keep the digits
 // Exercise page: exercises/T03-count-and-keep-digits.md
 // Your code:     practice/T03_CountAndKeepDigits.cs
 // Run them:      ./ex check T03

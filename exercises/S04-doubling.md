@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: remember changing values](../themes/loops-state.md) › S04
+---
+prev:
+  text: "S01 · Trace two variables"
+  link: /exercises/S01-trace-updates
+next:
+  text: "S02 · Fibonacci"
+  link: /exercises/S02-fibonacci
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Changing values](../themes/loops.md#changing-values) › S04
 
 # S04 · Doubling
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: remember changing values](../themes/loops-state.md) | [State update](../cookbook/07-state-update.md) | [L11](L11-count-from-a-to-b.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Changing values** · exercise 2 of 5 in this group (69 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [State update](../cookbook/07-state-update.md) | [L11](L11-count-from-a-to-b.md) |
+
+</div>
 
 ## Goal
 
@@ -71,4 +88,8 @@ Only after a real try: [open the solution for S04](../solutions/S04_Doubling.cs)
 
 ---
 
-Previous: [S01 · Trace two changing variables (paper)](S01-trace-updates.md) · [All exercises](README.md) · Next: [S02 · Fibonacci](S02-fibonacci.md)
+<div class="gh-only">
+
+Previous: [S01 · Trace two variables](S01-trace-updates.md) · [Loops](../themes/loops.md) · Next: [S02 · Fibonacci](S02-fibonacci.md)
+
+</div>

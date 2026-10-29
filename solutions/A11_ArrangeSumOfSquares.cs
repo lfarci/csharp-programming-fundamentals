@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // A11 · Arrange the lines: sum of squares
+    // A11 · Arrange: sum of squares
     // Exercise page: exercises/A11-arrange-sum-of-squares.md
     public static class A11_ArrangeSumOfSquares
     {

@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: draw in 2D](../themes/loops-2d.md) › L09
+---
+prev:
+  text: "L08 · Guess the number"
+  link: /exercises/L08-guess-the-number
+next:
+  text: "L10 · Numbers on one line"
+  link: /exercises/L10-numbers-on-one-line
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw rows and grids](../themes/loops.md#draw-rows-and-grids) › L09
 
 # L09 · Draw one row
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: draw in 2D](../themes/loops-2d.md) | [Counter loop](../cookbook/01-counter-loop.md), [Nested grid](../cookbook/08-nested-grid.md) | [L03](L03-count-up-and-down.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Draw rows and grids** · exercise 1 of 8 in this group (40 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Counter loop](../cookbook/01-counter-loop.md), [Nested grid](../cookbook/08-nested-grid.md) | [L03](L03-count-up-and-down.md) |
+
+</div>
 
 ## Goal
 
@@ -72,4 +89,8 @@ Only after a real try: [open the solution for L09](../solutions/L09_DrawARow.cs)
 
 ---
 
-Previous: [A22 · Sum of the divisors](A22-sum-of-divisors.md) · [All exercises](README.md) · Next: [L10 · Numbers on one line](L10-numbers-on-one-line.md)
+<div class="gh-only">
+
+Previous: [L08 · Guess the number](L08-guess-the-number.md) · [Loops](../themes/loops.md) · Next: [L10 · Numbers on one line](L10-numbers-on-one-line.md)
+
+</div>

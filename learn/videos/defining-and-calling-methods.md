@@ -25,7 +25,7 @@ next: false
 
 ## Practise after this
 
-- [Methods](../../themes/methods.md): start with [N01](../../exercises/N01-armstrong-with-methods.md)
+- [Methods and errors](../../themes/methods.md): start with [N02](../../exercises/N02-is-multiple-and-count.md), [N01](../../exercises/N01-armstrong-with-methods.md), [E02](../../exercises/E02-parse-or-zero.md)
 
 ---
 

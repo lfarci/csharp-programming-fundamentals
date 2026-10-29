@@ -46,8 +46,6 @@ a.cpf-link:hover { border-color: var(--vp-c-brand-1); box-shadow: 0 4px 16px rgb
 .cpf-button:hover { background: var(--vp-c-brand-2); }
 .dark .cpf-button { color: #1b1b1f !important; }
 /* "Learn the theory" box on theme pages (plain Markdown inside a div, so it also reads on GitHub). */
-.vp-doc .learn-box { border: 1px solid var(--vp-c-divider); border-left: 4px solid var(--vp-c-brand-1); border-radius: 12px; padding: 4px 18px; margin: 20px 0; background: var(--vp-c-bg-soft); }
-.vp-doc .learn-box ul { padding-left: 18px; }
 /* Home: feature cards in the same card style. */
 .VPFeatures .VPFeature { background: var(--vp-c-bg) !important; border: 1px solid var(--vp-c-divider); border-radius: 12px; transition: border-color .2s, box-shadow .2s; }
 .VPFeatures .VPLink:hover .VPFeature { border-color: var(--vp-c-brand-1); box-shadow: 0 4px 16px rgba(52, 81, 178, .10); }

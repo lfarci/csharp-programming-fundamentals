@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // R06 · Fix the bugs: largest value
+    // R06 · Fix: largest value
     // Exercise page: exercises/R06-fix-largest-value.md
     public static class R06_FixLargestValue
     {
