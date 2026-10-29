@@ -18,10 +18,9 @@ const n = computed(() => list.value.filter((e) => done.value[e.id]).length)
       <span class="cpf-bar" aria-hidden="true"><span :style="{ width: (list.length ? 100 * n / list.length : 0) + '%' }"></span></span>
     </div>
     <ol class="rows">
-      <li v-for="(e, i) in list" :key="e.id" :class="{ isdone: done[e.id] }">
+      <li v-for="e in list" :key="e.id" :class="{ isdone: done[e.id] }">
         <input type="checkbox" :checked="!!done[e.id]" :aria-label="`Mark ${e.id} as done`"
           @change="setDone(e.id, ($event.target as HTMLInputElement).checked)" />
-        <span class="pos" aria-hidden="true">{{ i + 1 }}</span>
         <a :href="withBase(e.link)">{{ e.title }}</a>
         <span class="id">{{ e.id }}</span>
         <span v-if="e.kind !== 'write code'" class="tag">{{ e.kind }}</span>
@@ -40,12 +39,11 @@ const n = computed(() => list.value.filter((e) => done.value[e.id]).length)
 .rows li { display: flex; align-items: center; gap: 12px; padding: 9px 18px; margin: 0; border-top: 1px solid var(--vp-c-divider); font-size: 15px; }
 .rows li:first-child { border-top: none; }
 .rows input { width: 16px; height: 16px; accent-color: var(--vp-c-brand-1); cursor: pointer; flex: none; }
-.pos { width: 22px; flex: none; text-align: right; font-size: 13px; color: var(--vp-c-text-3); }
 .rows a { font-weight: 500; text-decoration: none; }
 .rows a:hover { text-decoration: underline; }
 .isdone a { color: var(--vp-c-text-2); text-decoration: line-through; text-decoration-color: var(--vp-c-text-3); }
 .id { font-family: var(--vp-font-family-mono); font-size: 12px; color: var(--vp-c-text-3); }
 .tag { font-size: 12px; padding: 0 6px; border: 1px solid var(--vp-c-divider); border-radius: 4px; color: var(--vp-c-text-2); }
 .level { margin-left: auto; font-size: 12px; color: var(--vp-c-text-2); background: var(--vp-c-default-soft); border-radius: 10px; padding: 1px 10px; white-space: nowrap; }
-@media (max-width: 640px) { .id, .pos { display: none; } }
+@media (max-width: 640px) { .id { display: none; } }
 </style>
