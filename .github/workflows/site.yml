@@ -55,7 +55,7 @@ jobs:
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
 
   live:
-    name: Live site (wait for this build, then browser tests)
+    name: Live site browser tests (right after the deploy)
     needs: deploy
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -71,7 +71,5 @@ jobs:
       - run: npm ci --prefix internal
       - name: Install the test browser
         run: npm exec --prefix internal -- playwright install --with-deps chromium
-      - name: Wait until GitHub Pages serves this commit (version.txt and the build-sha meta tag)
-        run: internal/tools/wait-for-deploy.sh "$SITE_URL" "$GITHUB_SHA" 300
       - name: Browser tests on the live site (2 retries, live only)
         run: npm run --prefix internal test:site
