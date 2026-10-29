@@ -18,4 +18,11 @@
     <Compile Include="..\tools\ex\Runner.cs" Link="Plumbing\Runner.cs" />
   </ItemGroup>
 
+  <!-- ./ex check A04 and ./ex run A04 build only Program.cs + that exercise's file
+       (OnlyExercise=A04_Factorial), so a broken file in another exercise does not block you. -->
+  <ItemGroup Condition="'$(OnlyExercise)' != ''">
+    <Compile Remove="**\*.cs" />
+    <Compile Include="Program.cs;$(OnlyExercise).cs" />
+  </ItemGroup>
+
 </Project>

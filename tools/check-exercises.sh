@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # 1. Reference solutions pass every example (method cases + program runs).
 # 2. Every starter compiles, and no starter already passes all its examples (else the tests are too weak).
-# 3. The ./ex tool builds and lists the exercises.
+# 3. One exercise builds alone, even when another practice file is broken.
+# 4. The ./ex tool builds and lists the exercises.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 tmp=$(mktemp -d)
@@ -34,6 +35,11 @@ if weak:
     sys.exit("❌ these starters already pass all examples (add a case the TODO version fails): " + ", ".join(weak))
 print(f"✅ {len(res)} starters compile and none passes before the learner writes code")
 PY
+
+echo "▶ One exercise at a time"
+echo "int broken = ;" > "$tmp/repo/practice/A01_Sum1ToN.cs"
+dotnet build "$tmp/repo/practice" "${q[@]}" -p:OnlyExercise=A04_Factorial -o "$tmp/only" > "$tmp/only.log" 2>&1 || { cat "$tmp/only.log"; echo "❌ a broken file in another exercise blocks ./ex check"; exit 1; }
+echo "✅ a broken file in another exercise does not block ./ex check"
 
 echo "▶ ./ex"
 dotnet build tools/ex "${q[@]}"
