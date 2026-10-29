@@ -13,12 +13,17 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **Box** | Our friendly word for a *variable*: a named place that holds one value. | `int count = 0;` |
 | **Bug** | A mistake in the code. The program runs, but does the wrong thing, or crashes. | |
 | **`char`** | One single character, written with single quotes. | `'a'` |
+| **Clone** | Copy a *repository* from GitHub to your computer with Git. | `git clone https://github.com/...` |
 | **Condition** | A question with a yes/no (`true`/`false`) answer, used by `if` and loops. | `n > 0` |
 | **Counter** | A *variable* that goes up (or down) by 1 on each turn. | `i++` |
 | **Debug** | Find and fix a *bug*: run the check, read what fails, trace that example on paper, change as little as you can. The exercises train it. | |
+| **Diagram** | A picture made of boxes and arrows that shows the steps of an *algorithm*. A diamond-like box asks a question; the arrows show the answers. | the tea diagram in Solving a problem |
 | **Edge case** | An unusual input that must still work: 0, 1, a negative number, empty text. | N = 0 |
+| **`./ex`** | The course's helper command. `./ex start` creates your file, `./ex check` tests it, `./ex next` goes on. On Windows: `.\ex`. | `./ex check A04` |
 | **Exception** | An error that stops the program (a crash), unless you catch it with `try`/`catch`. | typing `abc` for `int.Parse` |
 | **Flag** | A `bool` *variable* that remembers "did it happen yet?". See [recipe 5](../cookbook/05-flag-search.md). | `bool found = false;` |
+| **Fork** | Your own copy of a *repository* on your GitHub account, to save your work online. | the **Fork** button on GitHub |
+| **Git** | A tool that keeps the history of files and copies them between GitHub and your computer. | `git pull` gets updates |
 | **Index** | The position of an item in an *array* or string. The first index is 0. | `values[0]` |
 | **Infinite loop** | A *loop* that never stops, because its *condition* never becomes false. | forgetting `i++` |
 | **Input** | What the program reads (from the keyboard or a file). | `Console.ReadLine()` |
@@ -28,22 +33,26 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **Loop** | Code that repeats: `for`, `while`, `do … while`, `foreach`. | `for (int i = 1; i <= n; i++)` |
 | **Mastery check** | A new variation of an exercise you solve alone, on another day, to prove you learned it. | |
 | **Method** | A named piece of code you can call again and again. It gets its **input** through *parameters* and gives back its **result** with `return`. Most exercises ask you to fill in one. | `static int SumTo(int n) { … return sum; }` |
-| **Parameter** | An input of a *method*, written between the brackets. The caller gives its value. | `n` in `SumTo(int n)` |
-| **Parsons problem** | An exercise where all the lines of code are given, mixed up. You put them in the right order. The exercises are Parsons problems. | |
-| **Predict** | Say what code will print **before** you run it. Then run it and compare. | |
-| **Return** | Gives the result of a *method* back to the code that called it, and ends the method. | `return sum;` |
-| **Unit test** | Code that calls your *method* with an example and checks the result. `./ex check` runs them for you. | `SumTo(5)` must give `15` |
 | **Modulo (`%`)** | The remainder of a division. | `17 % 5` is `2`, `352 % 10` is `2` |
 | **Nested loop** | A *loop* inside another loop. See [recipe 8](../cookbook/08-nested-grid.md). | rows and columns |
 | **Output** | What the program shows (prints). | `Console.WriteLine("Hi")` |
+| **Parameter** | An input of a *method*, written between the brackets. The caller gives its value. | `n` in `SumTo(int n)` |
+| **Parsons problem** | An exercise where all the lines of code are given, mixed up. You put them in the right order. The exercises are Parsons problems. | |
+| **Predict** | Say what code will print **before** you run it. Then run it and compare. | |
+| **Pseudocode** | The steps of an *algorithm* in plain words, before any C#. | "for each price, if it is more than 10, add 1 to count" |
 | **Recipe** | A small code pattern that solves a common kind of problem. See the [cookbook](../cookbook/README.md). | counter loop, accumulator |
 | **Repository (repo)** | The online folder that holds this whole course on GitHub. | this website |
+| **Return** | Gives the result of a *method* back to the code that called it, and ends the method. | `return sum;` |
 | **Sentinel** | A special value that means "stop", like 0. See [recipe 10](../cookbook/10-sentinel-loop.md). | "enter 0 to stop" |
 | **Solution** | One possible correct code for an exercise. Yours can be different and still be right. | |
 | **String** | Text, written with double quotes. | `"Hello"` |
 | **Subgoal** | One named step of a pattern, like "create the box" or "update the box". Each recipe lists its subgoals; say their names while you code. | "Crown the first value" |
+| **Sync code** | A short line printed by `./ex progress` that lists your finished exercises. Paste it on the website's My progress page. | `CPF1:A1-4;L11` |
+| **Template** | A form with empty places to fill. The reading template helps you organise your ideas before coding. | INPUT, OUTPUT, STEPS |
 | **Terminal** | A window where you type commands like `dotnet run`. | |
+| **Theme** | One chapter of the course, with its own exercises, such as *Conditions* or *Loops: draw in 2D*. The roadmap lists them in order. | Theme 4: Loops, repeat and count |
 | **Trace table** | A table on paper with one row per *iteration*, showing each *variable*'s value. | |
+| **Unit test** | Code that calls your *method* with an example and checks the result. `./ex check` runs them for you. | `SumTo(5)` must give `15` |
 | **Variable** | A named place in memory that holds one value. Also called a *box* here. | `int age = 20;` |
 
 ---

@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › S05
+[Home](../README.md) › [Exercises](README.md) › [Loops: remember changing values](../themes/loops-state.md) › S05
 
 # S05 · The n-th Fibonacci number
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | medium | 4d · State | [State update](../cookbook/07-state-update.md) | [S02](S02-fibonacci.md) | Custom |
+| Independent | medium | [Loops: remember changing values](../themes/loops-state.md) | [State update](../cookbook/07-state-update.md) | [S02](S02-fibonacci.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Give back the Fibonacci number at position n: position 0 is 0, position 1 is 1, 
 ./ex check S05     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
 

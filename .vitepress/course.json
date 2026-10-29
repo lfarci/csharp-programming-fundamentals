@@ -4,7 +4,7 @@
    "id": "B01",
    "title": "Hello you",
    "link": "/exercises/B01-hello-you",
-   "step": "1 · Hello World",
+   "theme": "hello-world",
    "level": "Guided",
    "paper": false,
    "drills": []
@@ -13,7 +13,7 @@
    "id": "B02",
    "title": "Rectangle calculator",
    "link": "/exercises/B02-rectangle-calculator",
-   "step": "2 · Variables & expressions",
+   "theme": "variables",
    "level": "Guided",
    "paper": false,
    "drills": []
@@ -22,7 +22,7 @@
    "id": "B03",
    "title": "Seconds to hours, minutes, seconds",
    "link": "/exercises/B03-seconds-to-hms",
-   "step": "2 · Variables & expressions",
+   "theme": "variables",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -31,7 +31,7 @@
    "id": "C01",
    "title": "Even or odd",
    "link": "/exercises/C01-even-or-odd",
-   "step": "3 · Conditions",
+   "theme": "conditions",
    "level": "Guided",
    "paper": false,
    "drills": []
@@ -40,7 +40,7 @@
    "id": "C02",
    "title": "Largest of three",
    "link": "/exercises/C02-largest-of-three",
-   "step": "3 · Conditions",
+   "theme": "conditions",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -49,7 +49,7 @@
    "id": "C03",
    "title": "Ticket price",
    "link": "/exercises/C03-ticket-price",
-   "step": "3 · Conditions",
+   "theme": "conditions",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -58,7 +58,7 @@
    "id": "C04",
    "title": "Grade from a score",
    "link": "/exercises/C04-grade-from-a-score",
-   "step": "3 · Conditions",
+   "theme": "conditions",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -67,7 +67,7 @@
    "id": "L01",
    "title": "Trace a loop (paper)",
    "link": "/exercises/L01-trace-a-loop",
-   "step": "4a · Repeat & count",
+   "theme": "loops-repeat",
    "level": "Guided",
    "paper": true,
    "drills": []
@@ -76,7 +76,7 @@
    "id": "L02",
    "title": "Boundaries: < or <= ? (paper)",
    "link": "/exercises/L02-boundaries",
-   "step": "4a · Repeat & count",
+   "theme": "loops-repeat",
    "level": "Guided",
    "paper": true,
    "drills": []
@@ -85,7 +85,7 @@
    "id": "L03",
    "title": "Count up and down",
    "link": "/exercises/L03-count-up-and-down",
-   "step": "4a · Repeat & count",
+   "theme": "loops-repeat",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -96,7 +96,7 @@
    "id": "L04",
    "title": "Multiplication table",
    "link": "/exercises/L04-multiplication-table",
-   "step": "4a · Repeat & count",
+   "theme": "loops-repeat",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -105,7 +105,7 @@
    "id": "L05",
    "title": "Until zero",
    "link": "/exercises/L05-until-zero",
-   "step": "4a · Repeat & count",
+   "theme": "loops-repeat",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -114,7 +114,7 @@
    "id": "L06",
    "title": "Even numbers",
    "link": "/exercises/L06-even-numbers",
-   "step": "4a · Repeat & count",
+   "theme": "loops-repeat",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -125,7 +125,7 @@
    "id": "L07",
    "title": "Ask until valid",
    "link": "/exercises/L07-ask-until-valid",
-   "step": "4a · Repeat & count",
+   "theme": "loops-repeat",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -134,7 +134,7 @@
    "id": "L08",
    "title": "Guess the number",
    "link": "/exercises/L08-guess-the-number",
-   "step": "4a · Repeat & count",
+   "theme": "loops-repeat",
    "level": "Challenge",
    "paper": false,
    "drills": []
@@ -143,7 +143,7 @@
    "id": "L11",
    "title": "Count from a to b",
    "link": "/exercises/L11-count-from-a-to-b",
-   "step": "4a · Repeat & count",
+   "theme": "loops-repeat",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -154,7 +154,7 @@
    "id": "L12",
    "title": "Count down",
    "link": "/exercises/L12-count-down",
-   "step": "4a · Repeat & count",
+   "theme": "loops-repeat",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -165,7 +165,7 @@
    "id": "L13",
    "title": "Count by 3",
    "link": "/exercises/L13-count-by-3",
-   "step": "4a · Repeat & count",
+   "theme": "loops-repeat",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -176,7 +176,7 @@
    "id": "L14",
    "title": "Count by 5",
    "link": "/exercises/L14-count-by-5",
-   "step": "4a · Repeat & count",
+   "theme": "loops-repeat",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -187,7 +187,7 @@
    "id": "L15",
    "title": "Count by any step",
    "link": "/exercises/L15-count-by-step",
-   "step": "4a · Repeat & count",
+   "theme": "loops-repeat",
    "level": "Independent",
    "paper": false,
    "drills": [
@@ -198,7 +198,7 @@
    "id": "L16",
    "title": "Odd numbers",
    "link": "/exercises/L16-odd-numbers",
-   "step": "4a · Repeat & count",
+   "theme": "loops-repeat",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -209,7 +209,7 @@
    "id": "L17",
    "title": "Count down by 2",
    "link": "/exercises/L17-count-down-by-2",
-   "step": "4a · Repeat & count",
+   "theme": "loops-repeat",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -220,7 +220,7 @@
    "id": "L18",
    "title": "Square numbers",
    "link": "/exercises/L18-squares",
-   "step": "4a · Repeat & count",
+   "theme": "loops-repeat",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -231,7 +231,7 @@
    "id": "L19",
    "title": "Count the turns",
    "link": "/exercises/L19-count-the-turns",
-   "step": "4a · Repeat & count",
+   "theme": "loops-repeat",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -242,7 +242,7 @@
    "id": "A11",
    "title": "Arrange the lines: sum of squares",
    "link": "/exercises/A11-arrange-sum-of-squares",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -253,7 +253,7 @@
    "id": "A01",
    "title": "Sum from 1 to N",
    "link": "/exercises/A01-sum-1-to-n",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -264,7 +264,7 @@
    "id": "A02",
    "title": "Count multiples of 3",
    "link": "/exercises/A02-count-multiples-of-3",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -275,7 +275,7 @@
    "id": "A12",
    "title": "Fix the bugs: count multiples of 7",
    "link": "/exercises/A12-fix-count-multiples-of-7",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -286,7 +286,7 @@
    "id": "A03",
    "title": "Sum of the even numbers",
    "link": "/exercises/A03-sum-even-values",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Independent",
    "paper": false,
    "drills": [
@@ -297,7 +297,7 @@
    "id": "A04",
    "title": "Factorial",
    "link": "/exercises/A04-factorial",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Independent",
    "paper": false,
    "drills": [
@@ -308,7 +308,7 @@
    "id": "A05",
    "title": "Two accumulators: sum and squares",
    "link": "/exercises/A05-sum-square-difference",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -317,7 +317,7 @@
    "id": "A06",
    "title": "Average until zero",
    "link": "/exercises/A06-average-until-zero",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -326,7 +326,7 @@
    "id": "A07",
    "title": "Integer power",
    "link": "/exercises/A07-integer-power",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Independent",
    "paper": false,
    "drills": [
@@ -337,7 +337,7 @@
    "id": "A08",
    "title": "Multiples of 3 or 5",
    "link": "/exercises/A08-multiples-of-3-or-5",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Challenge",
    "paper": false,
    "drills": [
@@ -348,7 +348,7 @@
    "id": "A09",
    "title": "Smallest and largest until zero",
    "link": "/exercises/A09-min-and-max-until-zero",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -357,7 +357,7 @@
    "id": "A10",
    "title": "Sum of a series",
    "link": "/exercises/A10-sum-of-a-series",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Challenge",
    "paper": false,
    "drills": [
@@ -368,7 +368,7 @@
    "id": "A13",
    "title": "Sum from a to b",
    "link": "/exercises/A13-sum-from-a-to-b",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -379,7 +379,7 @@
    "id": "A14",
    "title": "Sum the odd numbers",
    "link": "/exercises/A14-sum-odd-numbers",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -390,7 +390,7 @@
    "id": "A15",
    "title": "Count the even numbers",
    "link": "/exercises/A15-count-even-numbers",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -401,7 +401,7 @@
    "id": "A16",
    "title": "Count multiples of 5",
    "link": "/exercises/A16-count-multiples-of-5",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -412,7 +412,7 @@
    "id": "A17",
    "title": "Sum the multiples of k",
    "link": "/exercises/A17-sum-multiples-of-k",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Independent",
    "paper": false,
    "drills": [
@@ -423,7 +423,7 @@
    "id": "A18",
    "title": "Sum of cubes",
    "link": "/exercises/A18-sum-of-cubes",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -434,7 +434,7 @@
    "id": "A19",
    "title": "Product from a to b",
    "link": "/exercises/A19-product-from-a-to-b",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -445,7 +445,7 @@
    "id": "A20",
    "title": "Power of 2",
    "link": "/exercises/A20-powers-of-2",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -456,7 +456,7 @@
    "id": "A21",
    "title": "Count the divisors",
    "link": "/exercises/A21-count-divisors",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -467,7 +467,7 @@
    "id": "A22",
    "title": "Sum of the divisors",
    "link": "/exercises/A22-sum-of-divisors",
-   "step": "4b · Running result",
+   "theme": "loops-running-result",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -478,7 +478,7 @@
    "id": "L09",
    "title": "Draw one row",
    "link": "/exercises/L09-draw-a-row",
-   "step": "4c · Draw in 2D",
+   "theme": "loops-2d",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -489,7 +489,7 @@
    "id": "L10",
    "title": "Numbers on one line",
    "link": "/exercises/L10-numbers-on-one-line",
-   "step": "4c · Draw in 2D",
+   "theme": "loops-2d",
    "level": "Independent",
    "paper": false,
    "drills": [
@@ -500,7 +500,7 @@
    "id": "G07",
    "title": "Arrange the lines: a square",
    "link": "/exercises/G07-arrange-a-square",
-   "step": "4c · Draw in 2D",
+   "theme": "loops-2d",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -511,7 +511,7 @@
    "id": "G01",
    "title": "Draw a rectangle",
    "link": "/exercises/G01-rectangle",
-   "step": "4c · Draw in 2D",
+   "theme": "loops-2d",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -522,7 +522,7 @@
    "id": "G08",
    "title": "Solid square",
    "link": "/exercises/G08-solid-square",
-   "step": "4c · Draw in 2D",
+   "theme": "loops-2d",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -533,7 +533,7 @@
    "id": "G09",
    "title": "Rows of numbers",
    "link": "/exercises/G09-number-rows",
-   "step": "4c · Draw in 2D",
+   "theme": "loops-2d",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -544,7 +544,7 @@
    "id": "G02",
    "title": "Draw a right triangle",
    "link": "/exercises/G02-right-triangle",
-   "step": "4c · Draw in 2D",
+   "theme": "loops-2d",
    "level": "Independent",
    "paper": false,
    "drills": [
@@ -555,7 +555,7 @@
    "id": "G10",
    "title": "Triangle of row numbers",
    "link": "/exercises/G10-row-number-triangle",
-   "step": "4c · Draw in 2D",
+   "theme": "loops-2d",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -566,7 +566,7 @@
    "id": "G11",
    "title": "Counting triangle",
    "link": "/exercises/G11-counting-triangle",
-   "step": "4c · Draw in 2D",
+   "theme": "loops-2d",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -577,7 +577,7 @@
    "id": "G12",
    "title": "Upside-down triangle",
    "link": "/exercises/G12-upside-down-triangle",
-   "step": "4c · Draw in 2D",
+   "theme": "loops-2d",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -588,7 +588,7 @@
    "id": "G14",
    "title": "Numbers in columns",
    "link": "/exercises/G14-numbers-in-columns",
-   "step": "4c · Draw in 2D",
+   "theme": "loops-2d",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -599,7 +599,7 @@
    "id": "G03",
    "title": "Multiplication grid",
    "link": "/exercises/G03-multiplication-grid",
-   "step": "4c · Draw in 2D",
+   "theme": "loops-2d",
    "level": "Independent",
    "paper": false,
    "drills": [
@@ -610,7 +610,7 @@
    "id": "G04",
    "title": "Hollow rectangle",
    "link": "/exercises/G04-hollow-rectangle",
-   "step": "4c · Draw in 2D",
+   "theme": "loops-2d",
    "level": "Independent",
    "paper": false,
    "drills": [
@@ -621,7 +621,7 @@
    "id": "G13",
    "title": "Diagonal",
    "link": "/exercises/G13-diagonal",
-   "step": "4c · Draw in 2D",
+   "theme": "loops-2d",
    "level": "Independent",
    "paper": false,
    "drills": [
@@ -632,7 +632,7 @@
    "id": "G05",
    "title": "Checkerboard",
    "link": "/exercises/G05-checkerboard",
-   "step": "4c · Draw in 2D",
+   "theme": "loops-2d",
    "level": "Challenge",
    "paper": false,
    "drills": [
@@ -643,7 +643,7 @@
    "id": "G06",
    "title": "Pyramid",
    "link": "/exercises/G06-pyramid",
-   "step": "4c · Draw in 2D",
+   "theme": "loops-2d",
    "level": "Challenge",
    "paper": false,
    "drills": []
@@ -652,7 +652,7 @@
    "id": "D01",
    "title": "Last digit",
    "link": "/exercises/D01-last-digit",
-   "step": "4d · Digits",
+   "theme": "loops-digits",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -663,7 +663,7 @@
    "id": "D02",
    "title": "Remove the last digit",
    "link": "/exercises/D02-remove-last-digit",
-   "step": "4d · Digits",
+   "theme": "loops-digits",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -674,7 +674,7 @@
    "id": "D03",
    "title": "Count the digits",
    "link": "/exercises/D03-count-digits",
-   "step": "4d · Digits",
+   "theme": "loops-digits",
    "level": "Independent",
    "paper": false,
    "drills": [
@@ -685,7 +685,7 @@
    "id": "D08",
    "title": "First digit",
    "link": "/exercises/D08-first-digit",
-   "step": "4d · Digits",
+   "theme": "loops-digits",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -696,7 +696,7 @@
    "id": "D04",
    "title": "Sum of the digits",
    "link": "/exercises/D04-digit-sum",
-   "step": "4d · Digits",
+   "theme": "loops-digits",
    "level": "Independent",
    "paper": false,
    "drills": [
@@ -707,7 +707,7 @@
    "id": "D09",
    "title": "Count the even digits",
    "link": "/exercises/D09-count-even-digits",
-   "step": "4d · Digits",
+   "theme": "loops-digits",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -718,7 +718,7 @@
    "id": "D10",
    "title": "Count one digit",
    "link": "/exercises/D10-count-a-digit",
-   "step": "4d · Digits",
+   "theme": "loops-digits",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -729,7 +729,7 @@
    "id": "D11",
    "title": "Largest digit",
    "link": "/exercises/D11-largest-digit",
-   "step": "4d · Digits",
+   "theme": "loops-digits",
    "level": "Independent",
    "paper": false,
    "drills": [
@@ -740,7 +740,7 @@
    "id": "D12",
    "title": "Product of the digits",
    "link": "/exercises/D12-product-of-digits",
-   "step": "4d · Digits",
+   "theme": "loops-digits",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -751,7 +751,7 @@
    "id": "D07",
    "title": "Fix the bugs: digit sum",
    "link": "/exercises/D07-fix-digit-sum",
-   "step": "4d · Digits",
+   "theme": "loops-digits",
    "level": "Independent",
    "paper": false,
    "drills": [
@@ -762,7 +762,7 @@
    "id": "D05",
    "title": "Reverse a number",
    "link": "/exercises/D05-reverse-a-number",
-   "step": "4d · Digits",
+   "theme": "loops-digits",
    "level": "Independent",
    "paper": false,
    "drills": [
@@ -773,7 +773,7 @@
    "id": "D06",
    "title": "Palindrome number",
    "link": "/exercises/D06-palindrome-number",
-   "step": "4d · Digits",
+   "theme": "loops-digits",
    "level": "Challenge",
    "paper": false,
    "drills": []
@@ -782,7 +782,7 @@
    "id": "S01",
    "title": "Trace two changing variables (paper)",
    "link": "/exercises/S01-trace-updates",
-   "step": "4d · State",
+   "theme": "loops-state",
    "level": "Guided",
    "paper": true,
    "drills": [
@@ -793,7 +793,7 @@
    "id": "S04",
    "title": "Doubling",
    "link": "/exercises/S04-doubling",
-   "step": "4d · State",
+   "theme": "loops-state",
    "level": "Guided",
    "paper": false,
    "drills": [
@@ -804,7 +804,7 @@
    "id": "S02",
    "title": "Fibonacci",
    "link": "/exercises/S02-fibonacci",
-   "step": "4d · State",
+   "theme": "loops-state",
    "level": "Independent",
    "paper": false,
    "drills": [
@@ -815,7 +815,7 @@
    "id": "S05",
    "title": "The n-th Fibonacci number",
    "link": "/exercises/S05-nth-fibonacci",
-   "step": "4d · State",
+   "theme": "loops-state",
    "level": "Independent",
    "paper": false,
    "drills": [
@@ -826,7 +826,7 @@
    "id": "S03",
    "title": "Even Fibonacci sum",
    "link": "/exercises/S03-even-fibonacci-sum",
-   "step": "4d · State",
+   "theme": "loops-state",
    "level": "Challenge",
    "paper": false,
    "drills": [
@@ -837,7 +837,7 @@
    "id": "P01",
    "title": "Is it prime?",
    "link": "/exercises/P01-is-it-prime",
-   "step": "4d · Search",
+   "theme": "loops-search",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -846,7 +846,7 @@
    "id": "P02",
    "title": "All primes up to N",
    "link": "/exercises/P02-primes-up-to-n",
-   "step": "4d · Search",
+   "theme": "loops-search",
    "level": "Challenge",
    "paper": false,
    "drills": []
@@ -855,7 +855,7 @@
    "id": "M01",
    "title": "Armstrong number",
    "link": "/exercises/M01-armstrong-number",
-   "step": "4 · Combine",
+   "theme": "combine",
    "level": "Challenge",
    "paper": false,
    "drills": []
@@ -864,7 +864,7 @@
    "id": "M02",
    "title": "All Armstrong numbers in a range",
    "link": "/exercises/M02-armstrong-numbers-in-a-range",
-   "step": "4 · Combine",
+   "theme": "combine",
    "level": "Challenge",
    "paper": false,
    "drills": []
@@ -873,7 +873,7 @@
    "id": "R01",
    "title": "Sum of an array",
    "link": "/exercises/R01-sum-an-array",
-   "step": "6 · Arrays",
+   "theme": "arrays",
    "level": "Guided",
    "paper": false,
    "drills": []
@@ -882,7 +882,7 @@
    "id": "R02",
    "title": "Largest value in an array",
    "link": "/exercises/R02-largest-in-an-array",
-   "step": "6 · Arrays",
+   "theme": "arrays",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -891,7 +891,7 @@
    "id": "R06",
    "title": "Fix the bugs: largest value",
    "link": "/exercises/R06-fix-largest-value",
-   "step": "6 · Arrays",
+   "theme": "arrays",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -900,7 +900,7 @@
    "id": "R03",
    "title": "Count matches in an array",
    "link": "/exercises/R03-count-matches",
-   "step": "6 · Arrays",
+   "theme": "arrays",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -909,7 +909,7 @@
    "id": "R04",
    "title": "Find the position",
    "link": "/exercises/R04-find-the-position",
-   "step": "6 · Arrays",
+   "theme": "arrays",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -918,7 +918,7 @@
    "id": "R05",
    "title": "Reverse an array",
    "link": "/exercises/R05-reverse-an-array",
-   "step": "6 · Arrays",
+   "theme": "arrays",
    "level": "Challenge",
    "paper": false,
    "drills": []
@@ -927,7 +927,7 @@
    "id": "T01",
    "title": "Count a letter",
    "link": "/exercises/T01-count-a-letter",
-   "step": "6 · Arrays",
+   "theme": "arrays",
    "level": "Guided",
    "paper": false,
    "drills": []
@@ -936,7 +936,7 @@
    "id": "T02",
    "title": "Remove spaces",
    "link": "/exercises/T02-remove-spaces",
-   "step": "6 · Arrays",
+   "theme": "arrays",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -945,7 +945,7 @@
    "id": "T03",
    "title": "Count and keep the digits",
    "link": "/exercises/T03-count-and-keep-digits",
-   "step": "6 · Arrays",
+   "theme": "arrays",
    "level": "Challenge",
    "paper": false,
    "drills": []
@@ -954,7 +954,7 @@
    "id": "F01",
    "title": "Save numbers to a file",
    "link": "/exercises/F01-numbers-file",
-   "step": "5 · Files",
+   "theme": "files",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -963,7 +963,7 @@
    "id": "E01",
    "title": "Safe number reader",
    "link": "/exercises/E01-safe-number-reader",
-   "step": "7 · Exceptions",
+   "theme": "exceptions",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -972,7 +972,7 @@
    "id": "K01",
    "title": "Shopping list",
    "link": "/exercises/K01-shopping-list",
-   "step": "9 · Collections",
+   "theme": "collections",
    "level": "Independent",
    "paper": false,
    "drills": []
@@ -981,7 +981,7 @@
    "id": "N01",
    "title": "Armstrong with methods",
    "link": "/exercises/N01-armstrong-with-methods",
-   "step": "10 · Methods",
+   "theme": "methods",
    "level": "Challenge",
    "paper": false,
    "drills": []
@@ -1084,6 +1084,113 @@
     "S05",
     "S03"
    ]
+  }
+ ],
+ "themes": [
+  {
+   "slug": "hello-world",
+   "title": "Hello World",
+   "part": "Before loops",
+   "summary": "Print text and read what the user types.",
+   "link": "/themes/hello-world"
+  },
+  {
+   "slug": "variables",
+   "title": "Variables and expressions",
+   "part": "Before loops",
+   "summary": "Store values, compute with them, turn text into numbers.",
+   "link": "/themes/variables"
+  },
+  {
+   "slug": "conditions",
+   "title": "Conditions",
+   "part": "Before loops",
+   "summary": "Choose between cases with `if`.",
+   "link": "/themes/conditions"
+  },
+  {
+   "slug": "loops-repeat",
+   "title": "Loops: repeat and count",
+   "part": "Loops",
+   "summary": "Make the computer repeat something, and trace it on paper.",
+   "link": "/themes/loops-repeat"
+  },
+  {
+   "slug": "loops-running-result",
+   "title": "Loops: keep a running result",
+   "part": "Loops",
+   "summary": "Add up, count or multiply while you loop.",
+   "link": "/themes/loops-running-result"
+  },
+  {
+   "slug": "loops-2d",
+   "title": "Loops: draw in 2D",
+   "part": "Loops",
+   "summary": "Draw rows and columns with a loop inside a loop.",
+   "link": "/themes/loops-2d"
+  },
+  {
+   "slug": "loops-digits",
+   "title": "Loops: take digits apart",
+   "part": "Loops",
+   "summary": "Read the digits of a number one by one with `% 10` and `/ 10`.",
+   "link": "/themes/loops-digits"
+  },
+  {
+   "slug": "loops-state",
+   "title": "Loops: remember changing values",
+   "part": "Loops",
+   "summary": "Keep the last values in variables, like Fibonacci.",
+   "link": "/themes/loops-state"
+  },
+  {
+   "slug": "loops-search",
+   "title": "Loops: search",
+   "part": "Loops",
+   "summary": "Answer a yes-or-no question with a loop: is it there? is it prime?",
+   "link": "/themes/loops-search"
+  },
+  {
+   "slug": "combine",
+   "title": "Combine recipes",
+   "part": "Loops",
+   "summary": "Glue two or three recipes together, like the Armstrong check.",
+   "link": "/themes/combine"
+  },
+  {
+   "slug": "arrays",
+   "title": "Arrays and text",
+   "part": "After loops",
+   "summary": "Keep many values in one variable, and work on text letter by letter.",
+   "link": "/themes/arrays"
+  },
+  {
+   "slug": "files",
+   "title": "Files",
+   "part": "After loops",
+   "summary": "Save lines to a file and read them back.",
+   "link": "/themes/files"
+  },
+  {
+   "slug": "exceptions",
+   "title": "Exceptions",
+   "part": "After loops",
+   "summary": "Stop bad input from crashing your program.",
+   "link": "/themes/exceptions"
+  },
+  {
+   "slug": "collections",
+   "title": "Collections",
+   "part": "After loops",
+   "summary": "Use a `List` that can grow.",
+   "link": "/themes/collections"
+  },
+  {
+   "slug": "methods",
+   "title": "Methods",
+   "part": "After loops",
+   "summary": "Give a recipe a name: parameters and `return`.",
+   "link": "/themes/methods"
   }
  ]
 }

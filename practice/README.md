@@ -19,7 +19,7 @@ On Windows, type `.\ex` instead of `./ex`. Full guide: [Getting started](../docs
 - Use the debugger (VS Code: **Run › Start Debugging** on "Debug the current exercise") or a temporary `Console.WriteLine` to *watch* the variables change.
 - You never need to edit `Program.cs` or `Practice.csproj`.
 - `./ex check A04` and `./ex run A04` build only `Program.cs` and that exercise's file, so an unfinished file elsewhere never blocks you. (Visual Studio, Rider and Test Explorer build the whole folder, so there a broken file does block the others.)
-- Your files here are ignored by Git, so `git pull` never touches them. Forked the course to your own GitHub? Save them with `git add -f practice`, `git commit`, `git push`. See [Get the files](../docs/getting-started.md#2-get-the-files-on-your-computer).
+- Your files here are ignored by Git, so `git pull` never touches them. Forked the course to your own GitHub? Save them with `git add -f practice`, `git commit`, `git push`. See [Get the files](../docs/getting-started.md#save-your-work-optional).
 - The tests for `A04` are in `tests/Practice.Tests/Exercises/A04_FactorialTests.cs`: open them to see every input and expected result.
 - `./ex check` saves the exercises you finished in `practice/.done`; `./ex progress` also writes `practice/PROGRESS.md`. Both stay on your computer.
 - All OK? Compare your idea with the [solutions](../solutions/README.md).

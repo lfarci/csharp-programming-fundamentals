@@ -1,4 +1,4 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 5 · Flag / search
+[Home](../README.md) › [Cookbook](README.md) › Recipe 5 · Flag / search
 
 # Recipe 5 · Flag / search — "is there at least one?"
 
@@ -70,19 +70,7 @@ The answer is **yes/no** (or a position) → you need a flag.
 
 You can stop early with `break` when the answer cannot change anymore.
 
-```mermaid
-flowchart TD
-    accTitle: Flag search
-    accDescr: Set found to false. While there are more values and nothing is found, test each value. If it is the one searched for, set found to true. At the end, use found.
-    A["found = false"] --> B{"more values<br/>AND not found?"}
-    B -- yes --> C{"value is<br/>what I search?"}
-    C -- yes --> D["found = true "]
-    C -- no --> B
-    D --> B
-    B -- no --> E{"found?"}
-    E -- yes --> F["print yes"]
-    E -- no --> G["print no"]
-```
+![Flag search. Set found to false. While there are more values and nothing is found, test each value. If it is the one searched for, set found to true. At the end, use found.](../diagrams/cookbook-05-flag-search.svg)
 
 ### Template
 

@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › C04
+[Home](../README.md) › [Exercises](README.md) › [Conditions](../themes/conditions.md) › C04
 
 # C04 · Grade from a score
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | medium | 3 · Conditions | — | [C03](C03-ticket-price.md) | Custom |
+| Independent | medium | [Conditions](../themes/conditions.md) | — | [C03](C03-ticket-price.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Give back the grade for a score from 0 to 100: 90 or more → `"A"`, 80–89 →
 ./ex check C04     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
 
@@ -50,7 +50,7 @@ Your method must give these results. `./ex check` tests all of them.
 
 ## Before coding
 
-Fill the [reading worksheet](../docs/reading-an-exercise.md#4-the-worksheet-copy-it): what goes in? what comes out? a tiny example by hand?
+Fill the [reading worksheet](../docs/reading-an-exercise.md#the-template): what goes in? what comes out? a tiny example by hand?
 
 ## Hints (open one at a time)
 

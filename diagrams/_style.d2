@@ -1,0 +1,27 @@
+# Shared look for every diagram (one visual identity). Colours match the website theme.
+# Accent #3451b2, soft accent #eef1fb, text #1f2937, lines #6b7280.
+vars: {
+  d2-config: {
+    layout-engine: elk
+    pad: 24
+  }
+}
+classes: {
+  step: {
+    style: {fill: "#ffffff"; stroke: "#3451b2"; stroke-width: 2; border-radius: 10; font-size: 18; font-color: "#1f2937"}
+  }
+  ask: {
+    style: {fill: "#eef1fb"; stroke: "#3451b2"; stroke-width: 2; border-radius: 24; font-size: 18; font-color: "#1f2937"; italic: false}
+  }
+  end: {
+    style: {fill: "#3451b2"; stroke: "#3451b2"; border-radius: 24; font-color: "#ffffff"; font-size: 18; bold: true}
+  }
+  note: {
+    style: {fill: "#f6f6f7"; stroke: "#9ca3af"; stroke-dash: 4; border-radius: 10; font-size: 16; font-color: "#4b5563"}
+  }
+  part: {
+    style: {fill: "#f7f8fc"; stroke: "#c7cdea"; stroke-width: 1; border-radius: 14; font-size: 20; font-color: "#3451b2"; bold: true}
+  }
+}
+(* -> *)[*].style: {stroke: "#6b7280"; stroke-width: 2; font-size: 16; font-color: "#4b5563"}
+(** -> **)[*].style: {stroke: "#6b7280"; stroke-width: 2; font-size: 16; font-color: "#4b5563"}

@@ -1,4 +1,4 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 9 · Input validation loop
+[Home](../README.md) › [Cookbook](README.md) › Recipe 9 · Input validation loop
 
 # Recipe 9 · Input validation loop — "ask again until it is OK"
 
@@ -61,16 +61,7 @@ Trigger words: **"between 1 and 10"**, **"must be positive"**, **"ask again"**, 
 
 You must ask **at least once** before you can check → `do … while` is the natural fit.
 
-```mermaid
-flowchart TD
-    accTitle: Input validation
-    accDescr: Ask for a number and read the text. If it is a number and in range, continue. If not, print an error message and ask again.
-    A["ask for a number"] --> B["read the text"]
-    B --> C{"is it a number<br/>AND in range?"}
-    C -- no --> D["print an error message"]
-    D --> A
-    C -- yes --> E["use the number "]
-```
+![Input validation. Ask for a number and read the text. If it is a number and in range, continue. If not, print an error message and ask again.](../diagrams/cookbook-09-input-validation.svg)
 
 `int.TryParse(text, out int number)` returns `true` if the text **is** a number (and puts it in `number`), `false` otherwise. No crash.
 
@@ -105,7 +96,7 @@ while (n <= 0)
 }
 ```
 
-With exceptions (week 7): put `int.Parse` in a `try { } catch (FormatException) { }`.
+With exceptions (theme 13): put `int.Parse` in a `try { } catch (FormatException) { }`.
 
 ## 5 · Complete it
 

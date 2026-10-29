@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › S03
+[Home](../README.md) › [Exercises](README.md) › [Loops: remember changing values](../themes/loops-state.md) › S03
 
 # S03 · Even Fibonacci sum
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Challenge | hard | 4d · State | [State update](../cookbook/07-state-update.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [S02](S02-fibonacci.md), [A03](A03-sum-even-values.md) | Custom · prepares [Project Euler #2](https://projecteuler.net/problem=2) |
+| Challenge | hard | [Loops: remember changing values](../themes/loops-state.md) | [State update](../cookbook/07-state-update.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [S02](S02-fibonacci.md), [A03](A03-sum-even-values.md) | Custom · prepares [Project Euler #2](https://projecteuler.net/problem=2) |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Add up the **even** Fibonacci numbers that are **not greater** than `limit`, and
 ./ex check S03     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
 

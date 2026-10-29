@@ -51,7 +51,7 @@ int Help()
       {ex} run          run the current exercise and type the input yourself
       {ex} next         start the next exercise that is not done yet
       {ex} list         show all exercises
-      {ex} progress     see what is done, per roadmap step and per drill set
+      {ex} progress     see what is done, per theme and per drill set
       {ex} done L01     mark a paper exercise as done
 
     The exercises: exercises/README.md
@@ -222,11 +222,11 @@ int Progress()
     int started = all.Count(e => Started(e) && !done.ContainsKey(e.Id));
     lines.Add($"Progress: {done.Count} of {all.Count} exercises done, {started} started (not done yet).");
     lines.Add("");
-    lines.Add("By roadmap step:");
-    foreach (var g in all.GroupBy(e => e.Step))
+    lines.Add("By theme:");
+    foreach (var g in all.OrderBy(e => e.ThemeOrder).GroupBy(e => e.Theme))
     {
         int d = g.Count(e => done.ContainsKey(e.Id)), s = g.Count(e => Started(e) && !done.ContainsKey(e.Id));
-        lines.Add($"  {g.Key,-28} {d,3} of {g.Count(),-3} done{(s > 0 ? $", {s} started" : "")}");
+        lines.Add($"  {g.Key,-34} {d,3} of {g.Count(),-3} done{(s > 0 ? $", {s} started" : "")}");
     }
     lines.Add("");
     lines.Add("Drill sets (x = done, o = started, . = not started):");
@@ -358,4 +358,4 @@ static string FindRoot()
 }
 
 record Result(string Class, string Name, int Number, bool Pass, string Message);
-record Ex(string Id, string Name, string Class, string Title, string Kind, string Step, string[] Methods, string[] Drills);
+record Ex(string Id, string Name, string Class, string Title, string Kind, string Theme, int ThemeOrder, string[] Methods, string[] Drills);

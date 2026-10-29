@@ -1,21 +1,24 @@
 [Home](../README.md) › Progress checklist
 
-# My progress checklist
+# My progress checklist (paper)
 
-Print this page, or copy it into a notes file. Tick a box when it is true **without help**.
+Print this page if you like paper. Tick a box when it is true **without help**. (On the website, use [My progress](../progress.md) instead.)
 
-For each exercise: **Solved** = it works and matches the examples. **Mastered** = you also solved the mastery check alone, on another day.
+**Solved** = `./ex check` says DONE. **Mastered** = you also solved the mastery check alone, on another day.
 
-## B · Basics: input → compute → output (Step 1–2)
+## Hello World
 
 - [ ] [B01 · Hello you](../exercises/B01-hello-you.md) solved
   - [ ] mastered (another day, alone)
+
+## Variables and expressions
+
 - [ ] [B02 · Rectangle calculator](../exercises/B02-rectangle-calculator.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [B03 · Seconds to hours, minutes, seconds](../exercises/B03-seconds-to-hms.md) solved
   - [ ] mastered (another day, alone)
 
-## C · Conditions (Step 3)
+## Conditions
 
 - [ ] [C01 · Even or odd](../exercises/C01-even-or-odd.md) solved
   - [ ] mastered (another day, alone)
@@ -26,7 +29,7 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
 - [ ] [C04 · Grade from a score](../exercises/C04-grade-from-a-score.md) solved
   - [ ] mastered (another day, alone)
 
-## L · Loop mechanics (Step 4a)
+## Loops: repeat and count
 
 - [ ] [L01 · Trace a loop (paper)](../exercises/L01-trace-a-loop.md) solved
   - [ ] mastered (another day, alone)
@@ -62,12 +65,8 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
   - [ ] mastered (another day, alone)
 - [ ] [L19 · Count the turns](../exercises/L19-count-the-turns.md) solved
   - [ ] mastered (another day, alone)
-- [ ] [L09 · Draw one row](../exercises/L09-draw-a-row.md) solved
-  - [ ] mastered (another day, alone)
-- [ ] [L10 · Numbers on one line](../exercises/L10-numbers-on-one-line.md) solved
-  - [ ] mastered (another day, alone)
 
-## A · Accumulators (Step 4b)
+## Loops: keep a running result
 
 - [ ] [A11 · Arrange the lines: sum of squares](../exercises/A11-arrange-sum-of-squares.md) solved
   - [ ] mastered (another day, alone)
@@ -114,8 +113,12 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
 - [ ] [A22 · Sum of the divisors](../exercises/A22-sum-of-divisors.md) solved
   - [ ] mastered (another day, alone)
 
-## G · 2D drawings (nested loops) (Step 4c)
+## Loops: draw in 2D
 
+- [ ] [L09 · Draw one row](../exercises/L09-draw-a-row.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [L10 · Numbers on one line](../exercises/L10-numbers-on-one-line.md) solved
+  - [ ] mastered (another day, alone)
 - [ ] [G07 · Arrange the lines: a square](../exercises/G07-arrange-a-square.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [G01 · Draw a rectangle](../exercises/G01-rectangle.md) solved
@@ -145,7 +148,7 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
 - [ ] [G06 · Pyramid](../exercises/G06-pyramid.md) solved
   - [ ] mastered (another day, alone)
 
-## D · Digits (Step 4d)
+## Loops: take digits apart
 
 - [ ] [D01 · Last digit](../exercises/D01-last-digit.md) solved
   - [ ] mastered (another day, alone)
@@ -172,7 +175,7 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
 - [ ] [D06 · Palindrome number](../exercises/D06-palindrome-number.md) solved
   - [ ] mastered (another day, alone)
 
-## S · Changing state (Step 4d)
+## Loops: remember changing values
 
 - [ ] [S01 · Trace two changing variables (paper)](../exercises/S01-trace-updates.md) solved
   - [ ] mastered (another day, alone)
@@ -185,21 +188,21 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
 - [ ] [S03 · Even Fibonacci sum](../exercises/S03-even-fibonacci-sum.md) solved
   - [ ] mastered (another day, alone)
 
-## P · Search & primes (Step 4d)
+## Loops: search
 
 - [ ] [P01 · Is it prime?](../exercises/P01-is-it-prime.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [P02 · All primes up to N](../exercises/P02-primes-up-to-n.md) solved
   - [ ] mastered (another day, alone)
 
-## M · Combine (mixed) (Step 4)
+## Combine recipes
 
 - [ ] [M01 · Armstrong number](../exercises/M01-armstrong-number.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [M02 · All Armstrong numbers in a range](../exercises/M02-armstrong-numbers-in-a-range.md) solved
   - [ ] mastered (another day, alone)
 
-## R · Arrays (Step 6)
+## Arrays and text
 
 - [ ] [R01 · Sum of an array](../exercises/R01-sum-an-array.md) solved
   - [ ] mastered (another day, alone)
@@ -213,9 +216,6 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
   - [ ] mastered (another day, alone)
 - [ ] [R05 · Reverse an array](../exercises/R05-reverse-an-array.md) solved
   - [ ] mastered (another day, alone)
-
-## T · Text (Step 6)
-
 - [ ] [T01 · Count a letter](../exercises/T01-count-a-letter.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [T02 · Remove spaces](../exercises/T02-remove-spaces.md) solved
@@ -223,31 +223,25 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
 - [ ] [T03 · Count and keep the digits](../exercises/T03-count-and-keep-digits.md) solved
   - [ ] mastered (another day, alone)
 
-## F · Files (Step 5)
+## Files
 
 - [ ] [F01 · Save numbers to a file](../exercises/F01-numbers-file.md) solved
   - [ ] mastered (another day, alone)
 
-## E · Exceptions (Step 7)
+## Exceptions
 
 - [ ] [E01 · Safe number reader](../exercises/E01-safe-number-reader.md) solved
   - [ ] mastered (another day, alone)
 
-## K · Collections (Step 9)
+## Collections
 
 - [ ] [K01 · Shopping list](../exercises/K01-shopping-list.md) solved
   - [ ] mastered (another day, alone)
 
-## N · Methods (Step 10)
+## Methods
 
 - [ ] [N01 · Armstrong with methods](../exercises/N01-armstrong-with-methods.md) solved
   - [ ] mastered (another day, alone)
-
-## Milestones
-
-- [ ] I can trace a loop on paper (L01, L02).
-- [ ] I can solve factorial, Fibonacci and Armstrong from a blank file.
-- [ ] I can explain every line of my code to someone else.
 
 ---
 

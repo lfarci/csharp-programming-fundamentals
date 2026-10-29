@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  MERMAID_CLI: "@mermaid-js/mermaid-cli@12.0.0"
+  D2_VERSION: "v0.9.0"
   CSPELL: "cspell@10.4.0"
   DOTNET_NOLOGO: "true"
   DOTNET_CLI_TELEMETRY_OPTOUT: "true"
@@ -57,23 +57,18 @@ jobs:
           git diff --exit-code
           test -z "$(git status --porcelain --untracked-files=all)"
 
-  mermaid:
-    name: Mermaid diagrams render
+  diagrams:
+    name: Diagrams (D2 sources match the committed SVGs)
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
-        with:
-          node-version: "22"
-      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
-        with:
-          path: |
-            ~/.npm
-            ~/.cache/puppeteer
-          key: mermaid-${{ runner.os }}-${{ env.MERMAID_CLI }}
-      - name: Render every mermaid block
-        run: tools/check-mermaid.sh
+      - name: Install D2
+        run: |
+          curl -fsSL "https://github.com/terrastruct/d2/releases/download/${D2_VERSION}/d2-${D2_VERSION}-linux-amd64.tar.gz" | tar -xz -C /tmp
+          echo "/tmp/d2-${D2_VERSION}/bin" >> "$GITHUB_PATH"
+      - name: Render every diagram and compare
+        run: tools/diagrams.sh --check
 
   markdownlint:
     name: Markdown lint

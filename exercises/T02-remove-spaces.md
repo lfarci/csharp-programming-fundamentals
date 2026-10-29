@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › T02
+[Home](../README.md) › [Exercises](README.md) › [Arrays and text](../themes/arrays.md) › T02
 
 # T02 · Remove spaces
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | easy | 6 · Arrays | [Build a string](../cookbook/12-string-building.md) | [T01](T01-count-a-letter.md) | Custom |
+| Independent | easy | [Arrays and text](../themes/arrays.md) | [Build a string](../cookbook/12-string-building.md) | [T01](T01-count-a-letter.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Give back `text` without its spaces.
 ./ex check T02     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
 

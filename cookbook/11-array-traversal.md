@@ -1,4 +1,4 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 11 · Array traversal
+[Home](../README.md) › [Cookbook](README.md) › Recipe 11 · Array traversal
 
 # Recipe 11 · Array traversal — visit every box
 
@@ -67,12 +67,7 @@ Trigger words: **"array"**, **"list of values"**, **"for each element"**, **"the
 - Indexes start at **0**. The last index is `values.Length - 1`.
 - At `i = 1`, the value is `values[1]` = 9. At `i = 3` there is **no box** → stop before.
 
-```mermaid
-flowchart LR
-    accTitle: Position and value
-    accDescr: Three cells: position 0 holds 4, position 1 holds 9, position 2 holds 2. When i reaches 3, which equals Length, the loop stops.
-    I0["[0]<br/>4"] --> I1["[1]<br/>9"] --> I2["[2]<br/>2"] --> STOP(["i = 3 = Length<br/>stop"])
-```
+![Position and value. Three cells: position 0 holds 4, position 1 holds 9, position 2 holds 2. When i reaches 3, which equals Length, the loop stops.](../diagrams/cookbook-11-array-traversal.svg)
 
 ### Template
 

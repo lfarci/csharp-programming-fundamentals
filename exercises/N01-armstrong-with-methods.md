@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › N01
+[Home](../README.md) › [Exercises](README.md) › [Methods](../themes/methods.md) › N01
 
 # N01 · Armstrong with methods
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Challenge | hard | 10 · Methods | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [M02](M02-armstrong-numbers-in-a-range.md) | Custom |
+| Challenge | hard | [Methods](../themes/methods.md) | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [M02](M02-armstrong-numbers-in-a-range.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Split the Armstrong check into three small methods: `CountDigits`, `Power` and `
 ./ex check N01     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** fill in these methods in the file. The *parameters* are its input; what you `return` is its result.
 

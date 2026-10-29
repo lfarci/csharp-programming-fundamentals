@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › L07
+[Home](../README.md) › [Exercises](README.md) › [Loops: repeat and count](../themes/loops-repeat.md) › L07
 
 # L07 · Ask until valid
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | medium | 4a · Repeat & count | [Input validation](../cookbook/09-input-validation.md) | [L05](L05-until-zero.md), [C03](C03-ticket-price.md) | Custom |
+| Independent | medium | [Loops: repeat and count](../themes/loops-repeat.md) | [Input validation](../cookbook/09-input-validation.md) | [L05](L05-until-zero.md), [C03](C03-ticket-price.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Ask for a number between 1 and 10. If the text is not a number, or is out of ran
 ./ex check L07     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 

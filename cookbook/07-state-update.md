@@ -1,4 +1,4 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 7 · State update with several variables
+[Home](../README.md) › [Cookbook](README.md) › Recipe 7 · State update with several variables
 
 # Recipe 7 · State update with several variables — Fibonacci
 
@@ -74,23 +74,7 @@ You only need to remember **two** boxes: `previous` and `current`. Each turn doe
 2. `previous = current` (slide left)
 3. `current = next` (slide left)
 
-```mermaid
-flowchart LR
-    accTitle: State update
-    accDescr: One turn of the Fibonacci loop. Before: previous 2, current 3. Compute next as previous plus current, 5. After: previous becomes 3 and current becomes 5.
-    subgraph Before["Before the turn"]
-        P1["previous = 2"]
-        C1["current = 3"]
-    end
-    subgraph After["After the turn"]
-        P2["previous = 3"]
-        C2["current = 5"]
-    end
-    P1 -- "+" --> N["next = 2 + 3 = 5"]
-    C1 -- "+" --> N
-    C1 -- "slides to" --> P2
-    N -- "slides to" --> C2
-```
+![State update. One turn of the Fibonacci loop. Before: previous 2, current 3. Compute next as previous plus current, 5. After: previous becomes 3 and current becomes 5.](../diagrams/cookbook-07-state-update.svg)
 
 Think of a **conveyor belt** : the values move one place to the left each turn.
 

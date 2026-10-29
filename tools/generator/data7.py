@@ -10,10 +10,10 @@ import data6  # noqa: F401  (C04, L09, L10, A11, A12, G07, D07, R06 must exist f
 
 TODO = {"int": "return 0;", "long": "return 0;", "bool": "return false;", "void": ""}
 
-def drill(id_, slug, title, sig, body, cases, goal, hints, edge, mastery, step, recipes, pre,
+def drill(id_, slug, title, sig, body, cases, goal, hints, edge, mastery, theme, recipes, pre,
           level="Guided", stars=1, sort=None):
     ret = sig.split()[0]; name = sig.split()[1].split("(")[0]
-    k = dict(id=id_, slug=slug, title=title, level=level, stars=stars, step=step, recipes=recipes, pre=pre,
+    k = dict(id=id_, slug=slug, title=title, level=level, stars=stars, theme=theme, recipes=recipes, pre=pre,
              goal="", examples=[], edge=edge, constraints=["Write the loop yourself."], hints=hints,
              mastery=mastery, code="")
     if sort: k["sort"] = sort
@@ -22,7 +22,7 @@ def drill(id_, slug, title, sig, body, cases, goal, hints, edge, mastery, step, 
                   cases=[(name, a, r) for a, r in cases])
     GOALS[id_] = goal
 
-L4A, L4B, L4C, L4D = "4a · Repeat & count", "4b · Running result", "4c · Draw in 2D", "4d · Digits"
+L4A, L4B, L4C, L4D = "loops-repeat", "loops-running-result", "loops-2d", "loops-digits"
 
 # ---------- L · the loop itself: print / count / step ----------
 def ploop(id_, slug, title, sig, body, cases, goal, hints, edge, mastery, pre, **k):
@@ -385,7 +385,7 @@ for (int i = 1; i <= count; i++)
 }""", [([1, 5], lines("1", "2", "4", "8", "16")), ([3, 3], lines("3", "6", "12"))],
  "Print `count` values: `start`, then each value doubled (`3, 6, 12`).",
  ["One box `value`, starting at `start`.", "Each turn: print it, then `value = value * 2;`."], ["count = 0: nothing."],
- "Each value is the previous one plus 3.", "4d · State", ["07"], ["L11"], sort="S015")
+ "Each value is the previous one plus 3.", "loops-state", ["07"], ["L11"], sort="S015")
 drill("S05", "nth-fibonacci", "The n-th Fibonacci number", "long Fibonacci(int n)",
 """long previous = 0;
 long current = 1;
@@ -398,7 +398,7 @@ for (int i = 0; i < n; i++)
 return previous;""", [([0], 0), ([1], 1), ([6], 8), ([10], 55)],
  "Give back the Fibonacci number at position n: position 0 is 0, position 1 is 1, then 1, 2, 3, 5, 8, …",
  ["S02 without printing: do the same 3 moves n times.", "After the loop, `previous` holds the answer."], ["n = 0: 0."],
- "Give back the sum of the first n Fibonacci numbers.", "4d · State", ["07"], ["S02"], level="Independent", stars=2, sort="S025")
+ "Give back the sum of the first n Fibonacci numbers.", "loops-state", ["07"], ["S02"], level="Independent", stars=2, sort="S025")
 
 # ---------- drill sets (shown in exercises/README.md) ----------
 DRILLS = [

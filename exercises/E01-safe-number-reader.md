@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › E01
+[Home](../README.md) › [Exercises](README.md) › [Exceptions](../themes/exceptions.md) › E01
 
 # E01 · Safe number reader
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | medium | 7 · Exceptions | [Input validation](../cookbook/09-input-validation.md) | [L07](L07-ask-until-valid.md) | Custom |
+| Independent | medium | [Exceptions](../themes/exceptions.md) | [Input validation](../cookbook/09-input-validation.md) | [L07](L07-ask-until-valid.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Ask for a whole number. Use `int.Parse` inside `try`/`catch`: if it fails, print
 ./ex check E01     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 

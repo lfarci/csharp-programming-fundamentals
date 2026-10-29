@@ -1,4 +1,4 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › Cookbook
+[Home](../README.md) › Cookbook
 
 # The loop cookbook
 
@@ -6,11 +6,9 @@ A **recipe** is a small piece of code you can recognize and reuse. Almost every 
 
 Learn them like cooking: first follow the recipe exactly, then change one ingredient, then invent your own dish.
 
-> Not sure which recipe an exercise needs? First read the statement with [How to read an exercise](../docs/reading-an-exercise.md): its **trigger words** table points to the right recipe.
-
 ## The 12 recipes
 
-| # | Recipe | Recognize it when you read… | Box(es) to keep | Loop |
+| # | Recipe | Trigger words: you read… | Box(es) to keep | Loop |
 | ---: | --- | --- | --- | --- |
 | 1 | [Counter loop](01-counter-loop.md) | "from 1 to N", "N times", "count down" | `i` | `for` |
 | 2 | [Accumulator](02-accumulator.md) | "sum", "total", "how many", "product", "factorial", "power" | `sum = 0` / `count = 0` / `product = 1` | `for` |
@@ -25,37 +23,19 @@ Learn them like cooking: first follow the recipe exactly, then change one ingred
 | 11 | [Array traversal](11-array-traversal.md) | "array", "each element", "lines of a file" | `i`, `values[i]` | `for` / `foreach` |
 | 12 | [Build a string](12-string-building.md) | "each letter", "remove", "reverse the word", "join" | `result = ""` | `foreach` |
 
-Then read **[Combining recipes](combining-recipes.md)**: Armstrong, palindromes, primes, Project Euler #1.
-
 ## How to pick a recipe
 
-Read the exercise. Underline the **result** it asks for. Then follow the arrows.
+Ask the questions from top to bottom. The first **yes** gives your recipe.
 
-```mermaid
-flowchart TD
-    accTitle: How to pick a recipe
-    accDescr: Decision tree. A picture of rows and columns: nested loops. Read input until it is OK: input validation. Values until a stop value: sentinel loop plus another recipe. Work on digits: digit extraction plus another recipe. Next value depends on previous ones: state update. Otherwise by kind of answer: a list of values, counter loop; one total, count or product, accumulator, or conditional accumulator if only some values; biggest or smallest, min max; yes or no or a position, flag search; a new text, build a string.
-    START(["Read the exercise.<br/>What must I produce?"]) --> Q1{"A picture made of<br/>rows and columns?"}
-    Q1 -- yes --> R8["8 · Nested loops"]
-    Q1 -- no --> Q2{"Must I read input<br/>until it is OK?"}
-    Q2 -- yes --> R9["9 · Input validation"]
-    Q2 -- no --> Q3{"Values come until<br/>a stop value?"}
-    Q3 -- yes --> R10["10 · Sentinel loop<br/>+ a recipe below"]
-    Q3 -- no --> Q4{"Work on the digits<br/>of a number?"}
-    Q4 -- yes --> R6["6 · Digit extraction<br/>+ a recipe below"]
-    Q4 -- no --> Q5{"Next value depends on<br/>the previous ones?"}
-    Q5 -- yes --> R7["7 · State update"]
-    Q5 -- no --> Q6{"What kind of answer?"}
-    Q6 -- "a list of values printed" --> R1["1 · Counter loop<br/>(+ if to filter)"]
-    Q6 -- "ONE number:<br/>total / count / product" --> Q7{"only SOME values?"}
-    Q7 -- no --> R2["2 · Accumulator"]
-    Q7 -- yes --> R3["3 · Conditional accumulator"]
-    Q6 -- "the biggest / smallest" --> R4["4 · Min / max"]
-    Q6 -- "yes / no, or a position" --> R5["5 · Flag / search"]
-    Q6 -- "a new text" --> R12["12 · Build a string"]
-```
+![How to pick a recipe, as questions from top to bottom. A picture of rows and columns: 8, nested loops. Read input until it is OK: 9, input validation. Values come until a stop value: 10, sentinel loop plus a recipe below. Work on the digits of a number: 6, digit extraction plus a recipe below. Next value depends on the last ones: 7, state update. A list of values to print: 1, counter loop. One total, count or product: 2, accumulator, or 3 if only some values. The biggest or the smallest: 4, min and max. Yes or no, or a position: 5, flag and search. A new text: 12, build a string.](../diagrams/cookbook-index.svg)
 
 Values stored in an **array**, a **list** or a **file**? Use [11 · Array traversal](11-array-traversal.md) to visit them, and the recipe from the diagram for the work.
+
+## Theory pages
+
+- [Which loop should I use?](which-loop.md): `for`, `while`, `do … while` or `foreach`.
+- [Combining recipes](combining-recipes.md): two or three recipes in one exercise.
+- [The maths behind the exercises](the-maths.md): sum, factorial, power, prime… with tiny examples.
 
 ## Recipe card (the same 5 questions every time)
 
@@ -84,4 +64,4 @@ Every recipe is one short lesson, always in the same 6 steps. Do them in order, 
 
 Some exercises are special: **arrange the lines** (all the code is given, mixed up) and **fix the bugs** (the code is given, with mistakes). Both are checked by `./ex check` like the others.
 
-For reading a problem statement in general, see [From a problem statement to an algorithm](../docs/problem-solving.md).
+New to algorithms? Start with [Solving a problem](../docs/problem-solving.md).

@@ -1,4 +1,4 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › How to practice
+[Home](../README.md) › How to practice
 
 # How to practice
 
@@ -12,7 +12,7 @@ For each new recipe, go through these 5 stages, in order:
 
 This is close to the PRIMM method used in schools: *Predict, Run, Investigate, Modify, Make*.
 
-Want the deeper "why"? Read [From a problem statement to an algorithm](problem-solving.md).
+New to algorithms? Read [Solving a problem](problem-solving.md).
 
 ## Before coding
 
@@ -47,7 +47,7 @@ A pattern sticks when you use it **many times in a row**, with quick feedback. T
 
 When you solve **two** variations without help, and one of them on **another day**. Not yet? Repeat with smaller inputs, or go back one exercise. Tick it in your [progress checklist](progress-checklist.md).
 
-## Rules for the first weeks
+## Rules for the first themes
 
 Write simple code: variables, `if` and loops. No LINQ, no recursion, no clever formulas, no ready-made array helpers. The goal is to write the loop yourself.
 

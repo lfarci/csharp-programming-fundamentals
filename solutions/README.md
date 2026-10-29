@@ -7,7 +7,7 @@ A solution read too early teaches less than an exercise solved with 3 hints.
 
 - One file per exercise: `<ID>_<Name>.cs` (C# code) or `<ID>-<name>.md` (answer key for paper exercises).
 - Your solution can be different and still be correct. Compare the **idea** (which recipe? which boxes?), not the exact words.
-- The code only uses what the matching roadmap step teaches (no LINQ, no tricks).
+- The code only uses what the exercise's theme (and earlier themes) teach (no LINQ, no tricks).
 
 ## How to try a solution
 

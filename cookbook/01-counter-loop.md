@@ -1,4 +1,4 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 1 · Counter loop
+[Home](../README.md) › [Cookbook](README.md) › Recipe 1 · Counter loop
 
 # Recipe 1 · Counter loop — "do it N times"
 
@@ -72,16 +72,7 @@ A loop has **4 parts**. Say them out loud before you write code:
 3. **Work** – what happens with this value? (`Console.WriteLine(i)`)
 4. **Step** – how does the counter move? (`i++`)
 
-```mermaid
-flowchart TD
-    accTitle: Counter loop
-    accDescr: Start with i equal to 1. Test i against n. If true, do the work, add 1 to i and test again. If false, the loop ends.
-    A["1 · Start<br/>i = 1"] --> B{"2 · Test<br/>i #lt;= n ?"}
-    B -- yes --> C["3 · Work<br/>print i"]
-    C --> D["4 · Step<br/>i = i + 1"]
-    D --> B
-    B -- no --> E(["Done: after the loop"])
-```
+![Counter loop. Start with i equal to 1. Test i against n. If true, do the work, add 1 to i and test again. If false, the loop ends.](../diagrams/cookbook-01-counter-loop.svg)
 
 The test happens **before** each turn, also the first one. So a loop can run **zero** times (for example if `n` is 0).
 

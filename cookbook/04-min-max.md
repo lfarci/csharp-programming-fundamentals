@@ -1,4 +1,4 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Cookbook](README.md) › Recipe 4 · Min / max tracker
+[Home](../README.md) › [Cookbook](README.md) › Recipe 4 · Min / max tracker
 
 # Recipe 4 · Min / max tracker — "the best so far"
 
@@ -63,17 +63,7 @@ Trigger words: **"largest"**, **"smallest"**, **"maximum"**, **"minimum"**, **"h
 
 Think of a **king of the hill** : the first value is king. Each new value fights the king; if it is bigger, it becomes the new king.
 
-```mermaid
-flowchart TD
-    accTitle: Min max tracker
-    accDescr: Set max to the first value. For each other value, if it is bigger than max, max becomes that value. At the end, max is the biggest.
-    A["max = FIRST value"] --> B{"more values?"}
-    B -- yes --> C{"value #gt; max ?"}
-    C -- yes --> D["max = value "]
-    C -- no --> B
-    D --> B
-    B -- no --> E["print max"]
-```
+![Min max tracker. Set max to the first value. For each other value, if it is bigger than max, max becomes that value. At the end, max is the biggest.](../diagrams/cookbook-04-min-max.svg)
 
 **Start with the first value**, not with 0. If all values are negative (-5, -2, -9), a max starting at 0 would wrongly answer 0.
 

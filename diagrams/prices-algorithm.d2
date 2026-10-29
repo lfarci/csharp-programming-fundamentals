@@ -1,0 +1,18 @@
+# The prices algorithm as a picture: count and add the prices above 10. Render: tools/diagrams.sh
+...@_style
+direction: down
+
+start: "count = 0, total = 0" {class: step}
+more: "Another price\nto look at?" {class: ask}
+take: "Take the next price" {class: step}
+big: "price > 10 ?" {class: ask}
+add: "count = count + 1\ntotal = total + price" {class: step}
+show: "Show count and total" {class: end}
+
+start -> more
+more -> take: yes
+take -> big
+big -> add: yes
+big -> more: no
+add -> more
+more -> show: no

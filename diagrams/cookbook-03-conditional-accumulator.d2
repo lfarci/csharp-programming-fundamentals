@@ -1,0 +1,16 @@
+# Diagram source. Render: tools/diagrams.sh
+...@_style
+direction: down
+
+A: "count = 0" {class: step}
+B: "more values?" {class: ask}
+C: "value passes\nthe filter?" {class: ask}
+D: "count++ / sum += value" {class: step}
+E: "print the box" {class: step}
+
+A -> B
+B -> C: "yes"
+C -> D: "yes"
+C -> B: "no"
+D -> B
+B -> E: "no"

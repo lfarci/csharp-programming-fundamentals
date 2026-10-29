@@ -1,10 +1,10 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › [Exercises](README.md) › M02
+[Home](../README.md) › [Exercises](README.md) › [Combine recipes](../themes/combine.md) › M02
 
 # M02 · All Armstrong numbers in a range
 
-| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| Level | Difficulty | Theme | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Challenge | hard | 4 · Combine | [Counter loop](../cookbook/01-counter-loop.md), [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [M01](M01-armstrong-number.md) | Custom |
+| Challenge | hard | [Combine recipes](../themes/combine.md) | [Counter loop](../cookbook/01-counter-loop.md), [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [M01](M01-armstrong-number.md) | Custom |
 
 ## Goal
 
@@ -17,7 +17,7 @@ Read a lower and an upper bound. Print every Armstrong number between them (both
 ./ex check M02     # tests your code with the examples below
 ```
 
-On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#start-your-first-exercise).
 
 **Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
 

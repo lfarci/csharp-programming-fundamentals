@@ -16,7 +16,7 @@ How we write for a **struggling beginner**. Every rule below comes from a source
 | **Hints one at a time, solutions far away.** | Minimal guidance does not work for novices, but too much help removes the thinking. | (2) |
 | **Mastery = a new variation, alone, another day.** | Spaced, independent retrieval shows real learning. | (5) |
 | **Write for one person.** Check every page against the [learner persona](learner-persona.md). | A concrete learner keeps lessons at the right level and pace. | Learner personas (15, 21) |
-| **Start each step with objectives** that use verbs you can check ("trace", "write", "find the bug"), not "understand". | Objectives decide the exercises, and the exercises check the objectives. | SMART objectives, backward design (15, 20) |
+| **Start each theme with objectives** that use verbs you can check ("trace", "write", "find the bug"), not "understand". | Objectives decide the exercises, and the exercises check the objectives. | SMART objectives, backward design (15, 20) |
 | **Ask for a prediction before running code**, and write it down. | Watching a demo without predicting does not help learning. | (23 tip 4), PRIMM (17) |
 | **Label the subgoals** of a pattern with short reusable names. | Labels show novices what two problems have in common. | (19, 23 tip 6) |
 | **Give at least two examples per pattern**, in different contexts. | Learners then see the structure, not the surface. | Worked examples (18) |
@@ -25,6 +25,10 @@ How we write for a **struggling beginner**. Every rule below comes from a source
 | **Drill a recurrent skill many times.** Each recipe has a drill set: 5–12 *near* variations that change only the target (sum odds vs sum evens, count by 3 vs by 5). | Part-task practice of a recurrent sub-skill, with high repetition and quick feedback, makes it automatic. | Part-task practice (26), deliberate practice (27) |
 | **Vary and space the drills.** Short sessions of several same-pattern drills, then mix in older sets. Not one giant exercise. | Deliberate practice is not rote: vary, distribute and break it into parts. | (27) |
 | **Label loop subgoals the same way in every drill.** | Subgoal labels help most for loops. | (28) |
+| **One topic per page.** A page answers one question; a second topic gets its own page and a link. | Short, focused pages are easier to scan and come back to. | COGA (9) |
+| **Show, then tell.** Lead with a diagram, a table, an annotated example or a template; then a few short sentences. | Pictures plus words beat words alone. | Multimedia principle (2) |
+| **One word for one thing.** The path is made of **themes** (never "steps" or "weeks"); IDs never change. Every new word gets a glossary row. | Consistent terms lower load; a glossary helps readers with cognitive disabilities. | COGA (9) |
+| **No calendar.** No week numbers, dates or catch-up plans; the roadmap is a path of themes. Theory (which loop, the maths) lives in the cookbook. | Dated plans go stale and make a learner who is behind feel late. | Learner personas (15) |
 | **No "just" or "simply"**, and never imply that some people are born programmers. | There is no "geek gene": skill comes from practice. | (23 tip 1), (15) |
 
 ## 2. Lesson format
@@ -70,7 +74,7 @@ The path also follows the order of two well-known beginner courses. Conditions c
 | Rule | Source |
 | --- | --- |
 | Every image has **alt text** that says what the image shows (not "image of"). SVGs in `assets/` have a `<title>`. | WCAG 1.1.1 (10), W3C images tutorial (11) |
-| Every Mermaid diagram has `accTitle` and `accDescr`, and the same information is also written as text nearby. | Mermaid accessibility (12), GitHub Docs diagrams (13) |
+| Every diagram is a D2 SVG in `diagrams/` whose alt text is a full text version, and the same information is also written nearby. | W3C complex images (12), GitHub Docs diagrams (13) |
 | **No emoji**, anywhere: pages, headings, diagrams, code comments, `./ex` output. Use words ("Guided", "OK", "NOT YET", "done"). Colour never carries meaning alone. | WCAG 1.4.1 (10), plain language (7, 8): emoji are noise for many readers and are read aloud oddly by screen readers. |
 | Link text says where it goes ("open the solution for A01"), never "here" or a bare file name. | WCAG 2.4.4 (10), GitHub Docs style (14) |
 | Headings in order (`#`, then `##`, then `###`), one `#` per page. | WCAG 1.3.1, 2.4.6 (10) |
@@ -90,7 +94,7 @@ The path also follows the order of two well-known beginner courses. Conditions c
 9. W3C, *Making Content Usable for People with Cognitive and Learning Disabilities* (COGA). <https://www.w3.org/TR/coga-usable/>
 10. W3C, *WCAG 2.2 Quick Reference.* <https://www.w3.org/WAI/WCAG22/quickref/>
 11. W3C WAI, *An alt Decision Tree.* <https://www.w3.org/WAI/tutorials/images/decision-tree/>
-12. Mermaid, *Accessibility options.* <https://mermaid.js.org/config/accessibility.html>
+12. W3C WAI, *Complex Images.* <https://www.w3.org/WAI/tutorials/images/complex/>
 13. GitHub Docs, *Creating diagrams for GitHub Docs.* <https://docs.github.com/en/contributing/writing-for-github-docs/creating-diagrams-for-github-docs>
 14. GitHub Docs, *Style guide.* <https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide>
 15. Greg Wilson (2019). *Teaching Tech Together*, chapters "A Lesson Design Process" (learner personas, learning objectives) and "Cognitive Architecture" (faded examples, Parsons problems). <https://teachtogether.tech/en/index.html#s:process>
