@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › D05
+
 # D05 · Reverse a number
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -37,11 +39,11 @@ Reversed: 0
 ## 📏 Rules
 
 - Build an `int`, not a string.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -71,6 +73,8 @@ Explain why 1200 → 21 and not 0021.
 
 ## 🔑 Solution
 
-Only after a real try: [D05-reverse-a-number](../solutions/D05-reverse-a-number.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for D05](../solutions/D05-reverse-a-number.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [D04 · Sum of the digits](D04-digit-sum.md) · 📚 [All exercises](README.md) · Next: [D06 · Palindrome number](D06-palindrome-number.md) ➡️

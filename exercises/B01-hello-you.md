@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › B01
+
 # B01 · Hello you
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -31,11 +33,11 @@ Hello, Sam!
 ## 📏 Rules
 
 - Use `Console.Write`, `Console.ReadLine` and `Console.WriteLine`.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [reading worksheet](../docs/reading-an-exercise.md#4-the-worksheet-copy-it): what goes in? what comes out? a tiny example by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -59,6 +61,8 @@ Ask for a first name **and** a city, and print `Ada lives in Brussels.`
 
 ## 🔑 Solution
 
-Only after a real try: [B01-hello-you](../solutions/B01-hello-you.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for B01](../solutions/B01-hello-you.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+📚 [All exercises](README.md) · Next: [B02 · Rectangle calculator](B02-rectangle-calculator.md) ➡️

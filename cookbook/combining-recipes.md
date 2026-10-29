@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Combining recipes
+
 # 🧩 Combining recipes
 
 Hard exercises are just **small recipes glued together**. The skill is to **cut** the problem into recipes you already know.
@@ -9,6 +11,8 @@ Hard exercises are just **small recipes glued together**. The skill is to **cut*
 
 ```mermaid
 flowchart TD
+    accTitle: Armstrong check for 153
+    accDescr: Armstrong check for n equal to 153. Step 1 counts the digits: 3. Step 2 takes each digit: 3, then 5, then 1. Step 3 raises each digit to the power 3 with a product. Step 4 adds the powers: 27 plus 125 plus 1 is 153. Step 5 compares the sum with n: equal means Armstrong, different means not Armstrong.
     N["n = 153"] --> STEP1
     subgraph STEP1["① Count the digits · recipe 6 + counter"]
         C1["digits = 3"]
@@ -106,6 +110,8 @@ Trace table for 153 (`digits` = 3):
 
 ```mermaid
 flowchart LR
+    accTitle: All primes up to N
+    accDescr: An outer counter loop runs candidate from 2 to N. Inside, a flag search checks if the candidate is prime. If it is, print it and add 1 to a count.
     O["outer: candidate = 2..N<br/>recipe 1"] --> I["inner: is it prime?<br/>recipe 5 (flag)"] --> P["if isPrime: print<br/>count++ (recipe 2)"]
 ```
 
@@ -124,3 +130,7 @@ Counter loop 1..999 + filter `i % 3 == 0 || i % 5 == 0` + sum = [recipe 3](03-co
 3. Code and test **one block at a time** (print intermediate values!).
 4. Glue the blocks. Re-test with the tiny example.
 5. Later (week 10): turn each block into a **method**.
+
+---
+
+⬅️ [Recipe 12 · Build a string](12-string-building.md) · 🍳 [Cookbook](README.md) · Next: [Exercises](../exercises/README.md) ➡️

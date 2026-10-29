@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › A04
+
 # A04 · Factorial
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -44,11 +46,11 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 ## 📏 Rules
 
 - A loop, no recursion, no library.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -78,6 +80,8 @@ Print every factorial from 0! to N! (one per line), with **one** loop.
 
 ## 🔑 Solution
 
-Only after a real try: [A04-factorial](../solutions/A04-factorial.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for A04](../solutions/A04-factorial.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [A03 · Sum of the even numbers](A03-sum-even-values.md) · 📚 [All exercises](README.md) · Next: [A05 · Two accumulators: sum and squares](A05-sum-square-difference.md) ➡️

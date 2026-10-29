@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 9 · Input validation loop
+
 # Recipe 9 · Input validation loop — "ask again until it is OK"
 
 > Ask, check, and **ask again** while the answer is not valid.
@@ -12,6 +14,8 @@ You must ask **at least once** before you can check → `do … while` is the na
 
 ```mermaid
 flowchart TD
+    accTitle: Input validation
+    accDescr: Ask for a number and read the text. If it is a number and in range, continue. If not, print an error message and ask again.
     A["ask for a number"] --> B["read the text"]
     B --> C{"is it a number<br/>AND in range?"}
     C -- no --> D["print an error message"]
@@ -71,8 +75,8 @@ With exceptions (week 7): put `int.Parse` in a `try { } catch (FormatException) 
 
 ## 🏋️ Mini exercises
 
-1. **L07** Ask for a number between 1 and 10 until it is valid.
-2. **L08** Guess the number (keep asking until correct, say "higher"/"lower").
-3. **E01** Read a number safely with `try`/`catch`.
+1. [**L07**](../exercises/L07-ask-until-valid.md) Ask for a number between 1 and 10 until it is valid.
+2. [**L08**](../exercises/L08-guess-the-number.md) Guess the number (keep asking until correct, say "higher"/"lower").
+3. [**E01**](../exercises/E01-safe-number-reader.md) Read a number safely with `try`/`catch`.
 
 ➡️ Next: [Recipe 10 · Sentinel loop](10-sentinel-loop.md)

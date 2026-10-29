@@ -155,7 +155,7 @@ ex(id="D01", slug="last-digit", title="Last digit", level="Guided", stars=1, ste
    examples=[(["352"], ["Last digit: 2"]), (["7"], ["Last digit: 7"]), (["0"], ["Last digit: 0"])],
    edge=["One-digit number → the number itself."],
    constraints=["No string. Use `%`."],
-   hints=["What is the remainder of 352 divided by 10?"],
+   hints=["What is the remainder of 352 divided by 10? Do it on paper first.", "The remainder operator is `%`: `352 % 10` gives `2`. No loop is needed here."],
    mastery="Print the **second to last** digit (352 → 5).",
    code=r'''Console.Write("N: ");
 int n = int.Parse(Console.ReadLine()!);
@@ -167,7 +167,7 @@ ex(id="D02", slug="remove-last-digit", title="Remove the last digit", level="Gui
    examples=[(["352"], ["Without last digit: 35"]), (["7"], ["Without last digit: 0"])],
    edge=["One digit → 0."],
    constraints=["No string. Use integer `/`."],
-   hints=["352 / 10 with two `int`s gives 35, not 35.2."],
+   hints=["What is 352 divided by 10, if you throw away everything after the decimal point?", "With two `int`s, `/` drops the rest: `352 / 10` gives `35`, not `35.2`."],
    mastery="Print the first digit of a 3-digit number using only `/`.",
    code=r'''Console.Write("N: ");
 int n = int.Parse(Console.ReadLine()!);
@@ -408,7 +408,7 @@ ex(id="M01", slug="armstrong-number", title="Armstrong number", level="Challenge
    hints=["Cut the problem: (1) count the digits, (2) for each digit, (3) compute digit^count, (4) add, (5) compare. See [Combining recipes](../cookbook/combining-recipes.md).",
           "Step (1) empties your copy. Make a **new** copy of `n` for step (2).",
           "The power is a small product loop **inside** the digit loop: `power = 1; for (i = 0; i < digits; i++) power *= digit;`"],
-   mastery="Solve it again from a blank file two days later, without looking.",
+   mastery="Two days later, from a blank file: say if N is a *Disarium* number. Each digit is raised to its **position** from the left (89 = 8¹ + 9² = 89, 135 = 1¹ + 3² + 5³ = 135).",
    code=r'''Console.Write("N: ");
 int n = int.Parse(Console.ReadLine()!);
 

@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 1 · Counter loop
+
 # Recipe 1 · Counter loop — "do it N times"
 
 > The loop with a number that goes up (or down) by a fixed step. It is the base of almost every other recipe.
@@ -17,6 +19,8 @@ A loop has **4 parts**. Say them out loud before you write code:
 
 ```mermaid
 flowchart TD
+    accTitle: Counter loop
+    accDescr: Start with i equal to 1. Test i against n. If true, do the work, add 1 to i and test again. If false, the loop ends.
     A["1 · Start<br/>i = 1"] --> B{"2 · Test<br/>i #lt;= n ?"}
     B -- yes --> C["3 · Work<br/>print i"]
     C --> D["4 · Step<br/>i = i + 1"]
@@ -84,8 +88,8 @@ After the loop, `i` would be 5. 5 is tested but **not** printed.
 
 ## 🏋️ Mini exercises
 
-1. **L03** Print 1 to N, then N to 1.
-2. **L04** Print the multiplication table of N (`N x 1` … `N x 10`).
-3. **L06** Print only the even numbers from 2 to N (two ways: `i += 2`, or `i++` with an `if`).
+1. [**L03**](../exercises/L03-count-up-and-down.md) Print 1 to N, then N to 1.
+2. [**L04**](../exercises/L04-multiplication-table.md) Print the multiplication table of N (`N x 1` … `N x 10`).
+3. [**L06**](../exercises/L06-even-numbers.md) Print only the even numbers from 2 to N (two ways: `i += 2`, or `i++` with an `if`).
 
 ➡️ Next: [Recipe 2 · Accumulator](02-accumulator.md)

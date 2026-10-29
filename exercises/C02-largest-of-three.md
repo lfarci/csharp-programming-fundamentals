@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › C02
+
 # C02 · Largest of three
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -38,11 +40,11 @@ Largest: 4
 ## 📏 Rules
 
 - No `Math.Max`. Use `if`.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -72,6 +74,8 @@ Print the smallest of four numbers.
 
 ## 🔑 Solution
 
-Only after a real try: [C02-largest-of-three](../solutions/C02-largest-of-three.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for C02](../solutions/C02-largest-of-three.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [C01 · Even or odd](C01-even-or-odd.md) · 📚 [All exercises](README.md) · Next: [C03 · Ticket price](C03-ticket-price.md) ➡️

@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › G05
+
 # G05 · Checkerboard
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -34,11 +36,11 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 ## 📏 Rules
 
 - Nested loops. No `string` tricks.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -62,6 +64,8 @@ Make each square 2×2 characters big.
 
 ## 🔑 Solution
 
-Only after a real try: [G05-checkerboard](../solutions/G05-checkerboard.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for G05](../solutions/G05-checkerboard.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [G04 · Hollow rectangle](G04-hollow-rectangle.md) · 📚 [All exercises](README.md) · Next: [G06 · Pyramid](G06-pyramid.md) ➡️

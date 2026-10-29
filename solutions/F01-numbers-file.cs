@@ -2,7 +2,7 @@
 // Exercise: exercises/F01-numbers-file.md
 // Run: dotnet run solutions/F01-numbers-file.cs   (.NET 10+), or paste into practice/Program.cs
 
-List<string> lines = new List<string>();
+string content = "";
 while (true)
 {
     Console.Write("Number (0 to stop): ");
@@ -11,9 +11,9 @@ while (true)
     {
         break;
     }
-    lines.Add(text);
+    content += text + "\n";
 }
-File.WriteAllLines("numbers.txt", lines);
+File.WriteAllText("numbers.txt", content);
 
 string[] saved = File.ReadAllLines("numbers.txt");
 int sum = 0;

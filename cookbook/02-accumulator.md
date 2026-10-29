@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 2 · Accumulator
+
 # Recipe 2 · Accumulator — sum, count, product
 
 > Keep **one result box** outside the loop and update it on every turn.
@@ -24,6 +26,8 @@ Why does a product start at **1**? Because 0 × anything = 0. 1 is the "neutral"
 
 ```mermaid
 flowchart TD
+    accTitle: Accumulator
+    accDescr: Set sum to 0 before the loop. While there are more values, add the value to sum. When there are no more values, print sum after the loop.
     A["sum = 0<br/>(BEFORE the loop)"] --> B{"more values?"}
     B -- yes --> C["sum = sum + value"]
     C --> B
@@ -95,9 +99,9 @@ Paper drill: for 3, 5, 2, first **count** values above 2 (answer 2), then **sum*
 
 ## 🏋️ Mini exercises
 
-1. **A01** Sum 1..N (do not use the formula).
-2. **A04** Factorial of N (test N = 0 → 1).
-3. **A07** Power: `base` to the `exponent` with a loop.
-4. Bonus: **A05** two boxes in one loop (sum and sum of squares) → Project Euler #6.
+1. [**A01**](../exercises/A01-sum-1-to-n.md) Sum 1..N (do not use the formula).
+2. [**A04**](../exercises/A04-factorial.md) Factorial of N (test N = 0 → 1).
+3. [**A07**](../exercises/A07-integer-power.md) Power: `base` to the `exponent` with a loop.
+4. Bonus: [**A05**](../exercises/A05-sum-square-difference.md) two boxes in one loop (sum and sum of squares) → Project Euler #6.
 
 ➡️ Next: [Recipe 3 · Conditional accumulator](03-conditional-accumulator.md)

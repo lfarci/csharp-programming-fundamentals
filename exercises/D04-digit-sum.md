@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › D04
+
 # D04 · Sum of the digits
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -37,11 +39,11 @@ Digit sum: 36
 ## 📏 Rules
 
 - A loop with `% 10` and `/ 10`. No string.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -65,6 +67,8 @@ Repeat the digit sum until one digit is left (9875 → 29 → 11 → 2).
 
 ## 🔑 Solution
 
-Only after a real try: [D04-digit-sum](../solutions/D04-digit-sum.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for D04](../solutions/D04-digit-sum.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [D03 · Count the digits](D03-count-digits.md) · 📚 [All exercises](README.md) · Next: [D05 · Reverse a number](D05-reverse-a-number.md) ➡️

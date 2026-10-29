@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 6 · Digit extraction
+
 # Recipe 6 · Digit extraction — `% 10` and `/ 10`
 
 > Peel a number like an onion 🧅: take the **last digit**, then **remove** it, until nothing is left.
@@ -23,6 +25,8 @@ Digits come out **right to left**: 2, then 5, then 3.
 
 ```mermaid
 flowchart TD
+    accTitle: Digit extraction
+    accDescr: Copy n into remaining. While remaining is above 0: digit is remaining modulo 10, use the digit, then divide remaining by 10. When remaining is 0, stop.
     A["remaining = n<br/>(work on a COPY)"] --> B{"remaining #gt; 0 ?"}
     B -- yes --> C["digit = remaining % 10"]
     C --> D["use digit<br/>(count it, add it, …)"]
@@ -74,8 +78,8 @@ Reverse 352: `reversed` goes 0 → 2 → 25 → **253**.
 
 ## 🏋️ Mini exercises
 
-1. **D03** Count the digits of N (0 has 1 digit).
-2. **D04** Sum of the digits of N.
-3. **D05** Reverse N (1230 → 321) → then **D06** palindrome number.
+1. [**D03**](../exercises/D03-count-digits.md) Count the digits of N (0 has 1 digit).
+2. [**D04**](../exercises/D04-digit-sum.md) Sum of the digits of N.
+3. [**D05**](../exercises/D05-reverse-a-number.md) Reverse N (1230 → 321) → then [**D06**](../exercises/D06-palindrome-number.md) palindrome number.
 
 ➡️ Next: [Recipe 7 · State update](07-state-update.md)

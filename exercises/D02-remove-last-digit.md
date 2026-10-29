@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › D02
+
 # D02 · Remove the last digit
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -31,17 +33,23 @@ Without last digit: 0
 ## 📏 Rules
 
 - No string. Use integer `/`.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
-352 / 10 with two `int`s gives 35, not 35.2.
+What is 352 divided by 10, if you throw away everything after the decimal point?
+
+</details>
+
+<details><summary>Hint 2</summary>
+
+With two `int`s, `/` drops the rest: `352 / 10` gives `35`, not `35.2`.
 
 </details>
 
@@ -53,6 +61,8 @@ Print the first digit of a 3-digit number using only `/`.
 
 ## 🔑 Solution
 
-Only after a real try: [D02-remove-last-digit](../solutions/D02-remove-last-digit.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for D02](../solutions/D02-remove-last-digit.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [D01 · Last digit](D01-last-digit.md) · 📚 [All exercises](README.md) · Next: [D03 · Count the digits](D03-count-digits.md) ➡️

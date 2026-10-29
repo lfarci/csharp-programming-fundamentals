@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 5 · Flag / search
+
 # Recipe 5 · Flag / search — "is there at least one?"
 
 > A `bool` box that starts at one answer and **flips** when you find proof of the other answer.
@@ -17,6 +19,8 @@ You can stop early with `break` when the answer cannot change anymore.
 
 ```mermaid
 flowchart TD
+    accTitle: Flag search
+    accDescr: Set found to false. While there are more values and nothing is found, test each value. If it is the one searched for, set found to true. At the end, use found.
     A["found = false"] --> B{"more values<br/>AND not found?"}
     B -- yes --> C{"value is<br/>what I search?"}
     C -- yes --> D["found = true 🚩"]
@@ -76,8 +80,8 @@ Is 7 prime? d = 2: 7 % 2 = 1 · then 3 × 3 = 9 > 7 → stop. `isPrime` stays **
 
 ## 🏋️ Mini exercises
 
-1. **R04** Find the position of a value in an array (-1 if missing).
-2. **P01** Is N prime?
-3. **P02** Print all primes up to N (a flag loop **inside** a counter loop).
+1. [**R04**](../exercises/R04-find-the-position.md) Find the position of a value in an array (-1 if missing).
+2. [**P01**](../exercises/P01-is-it-prime.md) Is N prime?
+3. [**P02**](../exercises/P02-primes-up-to-n.md) Print all primes up to N (a flag loop **inside** a counter loop).
 
 ➡️ Next: [Recipe 6 · Digit extraction](06-digit-extraction.md)

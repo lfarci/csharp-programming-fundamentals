@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › D01
+
 # D01 · Last digit
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -37,17 +39,23 @@ Last digit: 0
 ## 📏 Rules
 
 - No string. Use `%`.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
-What is the remainder of 352 divided by 10?
+What is the remainder of 352 divided by 10? Do it on paper first.
+
+</details>
+
+<details><summary>Hint 2</summary>
+
+The remainder operator is `%`: `352 % 10` gives `2`. No loop is needed here.
 
 </details>
 
@@ -59,6 +67,8 @@ Print the **second to last** digit (352 → 5).
 
 ## 🔑 Solution
 
-Only after a real try: [D01-last-digit](../solutions/D01-last-digit.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for D01](../solutions/D01-last-digit.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [G06 · Pyramid](G06-pyramid.md) · 📚 [All exercises](README.md) · Next: [D02 · Remove the last digit](D02-remove-last-digit.md) ➡️

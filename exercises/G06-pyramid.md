@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › G06
+
 # G06 · Pyramid
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -33,11 +35,11 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 ## 📏 Rules
 
 - Nested loops: **two** inner loops (spaces, then stars).
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -67,6 +69,8 @@ Draw a diamond (a pyramid, then the same pyramid upside down).
 
 ## 🔑 Solution
 
-Only after a real try: [G06-pyramid](../solutions/G06-pyramid.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for G06](../solutions/G06-pyramid.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [G05 · Checkerboard](G05-checkerboard.md) · 📚 [All exercises](README.md) · Next: [D01 · Last digit](D01-last-digit.md) ➡️

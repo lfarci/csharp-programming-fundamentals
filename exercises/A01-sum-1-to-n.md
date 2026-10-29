@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › A01
+
 # A01 · Sum from 1 to N
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -43,11 +45,11 @@ Sum: 0
 ## 📏 Rules
 
 - Use a loop. No formula `n * (n + 1) / 2` (you can use it to **check** your answer).
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -77,6 +79,8 @@ Sum from A to B (read both). Then: sum of the squares 1² + 2² + … + N².
 
 ## 🔑 Solution
 
-Only after a real try: [A01-sum-1-to-n](../solutions/A01-sum-1-to-n.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for A01](../solutions/A01-sum-1-to-n.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [L08 · Guess the number](L08-guess-the-number.md) · 📚 [All exercises](README.md) · Next: [A02 · Count multiples of 3](A02-count-multiples-of-3.md) ➡️

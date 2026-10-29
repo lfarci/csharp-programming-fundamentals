@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 8 · Nested loops
+
 # Recipe 8 · Nested loops — draw 2D grids 🎨
 
 > One loop for the **rows**, one loop inside it for the **columns**. Like writing a page: line after line, letter after letter.
@@ -14,6 +16,8 @@ Trigger words: **"draw"**, **"rectangle"**, **"triangle"**, **"pyramid"**, **"gr
 
 ```mermaid
 flowchart TD
+    accTitle: Nested grid
+    accDescr: Outer loop on row from 1 to height. For each row, inner loop on col from 1 to width prints one character. After the inner loop, go to a new line and add 1 to row.
     A["row = 1"] --> B{"row #lt;= height ?"}
     B -- yes --> C["col = 1"]
     C --> D{"col #lt;= width ?"}
@@ -78,8 +82,8 @@ Total `Console.Write` calls: 1 + 2 + 3 = 6. The inner loop **starts again from 1
 
 ## 🏋️ Mini exercises
 
-1. **G01** Rectangle `width × height`.
-2. **G02** Right triangle, then **G06** pyramid.
-3. **G05** Checkerboard, and **G03** multiplication grid (the same idea with numbers).
+1. [**G01**](../exercises/G01-rectangle.md) Rectangle `width × height`.
+2. [**G02**](../exercises/G02-right-triangle.md) Right triangle, then [**G06**](../exercises/G06-pyramid.md) pyramid.
+3. [**G05**](../exercises/G05-checkerboard.md) Checkerboard, and [**G03**](../exercises/G03-multiplication-grid.md) multiplication grid (the same idea with numbers).
 
 ➡️ Next: [Recipe 9 · Input validation loop](09-input-validation.md)

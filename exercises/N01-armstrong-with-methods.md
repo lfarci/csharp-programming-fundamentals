@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › N01
+
 # N01 · Armstrong with methods
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -25,11 +27,11 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 ## 📏 Rules
 
 - Each method does **one** recipe. No `Math.Pow`.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -59,6 +61,8 @@ Add `IsPalindrome(int n)` and print the numbers in the range that are both (hint
 
 ## 🔑 Solution
 
-Only after a real try: [N01-armstrong-with-methods](../solutions/N01-armstrong-with-methods.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for N01](../solutions/N01-armstrong-with-methods.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [K01 · Shopping list](K01-shopping-list.md) · 📚 [All exercises](README.md)

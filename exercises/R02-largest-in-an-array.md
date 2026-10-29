@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › R02
+
 # R02 · Largest value in an array
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -32,11 +34,11 @@ Largest: 7 at index 1
 ## 📏 Rules
 
 - No `.Max()`. Start with `values[0]`, not 0.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -60,6 +62,8 @@ Print the second largest value.
 
 ## 🔑 Solution
 
-Only after a real try: [R02-largest-in-an-array](../solutions/R02-largest-in-an-array.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for R02](../solutions/R02-largest-in-an-array.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [R01 · Sum of an array](R01-sum-an-array.md) · 📚 [All exercises](README.md) · Next: [R03 · Count matches in an array](R03-count-matches.md) ➡️

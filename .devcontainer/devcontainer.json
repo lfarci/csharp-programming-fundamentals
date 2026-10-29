@@ -1,0 +1,12 @@
+{
+  "name": "C# Programming Fundamentals",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:1-10.0",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-dotnettools.csdevkit", "bierner.markdown-mermaid"],
+      "settings": { "workbench.startupEditor": "readme" }
+    },
+    "codespaces": { "openFiles": ["README.md", "practice/Program.cs"] }
+  },
+  "postCreateCommand": "dotnet build practice"
+}

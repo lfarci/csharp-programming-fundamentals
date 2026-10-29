@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › P02
+
 # P02 · All primes up to N
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -39,11 +41,11 @@ Count: 0
 ## 📏 Rules
 
 - Nested loops: the P01 test inside a counter loop.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -73,6 +75,8 @@ Print the first N primes (not the primes up to N).
 
 ## 🔑 Solution
 
-Only after a real try: [P02-primes-up-to-n](../solutions/P02-primes-up-to-n.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for P02](../solutions/P02-primes-up-to-n.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [P01 · Is it prime?](P01-is-it-prime.md) · 📚 [All exercises](README.md) · Next: [M01 · Armstrong number](M01-armstrong-number.md) ➡️

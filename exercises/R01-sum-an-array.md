@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › R01
+
 # R01 · Sum of an array
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -37,11 +39,11 @@ Sum: 0
 ## 📏 Rules
 
 - Two loops: one to fill the array, one to sum it. No LINQ (`.Sum()`).
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -65,6 +67,8 @@ Print the sum of the values at **even positions** (0, 2, 4…).
 
 ## 🔑 Solution
 
-Only after a real try: [R01-sum-an-array](../solutions/R01-sum-an-array.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for R01](../solutions/R01-sum-an-array.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [M02 · All Armstrong numbers in a range](M02-armstrong-numbers-in-a-range.md) · 📚 [All exercises](README.md) · Next: [R02 · Largest value in an array](R02-largest-in-an-array.md) ➡️

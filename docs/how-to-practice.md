@@ -1,39 +1,45 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › How to practice
+
 # How to practice
 
-For each new pattern:
+For each new recipe, go through these 5 stages, in order:
 
-1. **Predict:** Look at a tiny example and state what it prints without running it.
-2. **Trace:** Make a table showing the loop variable and other variables *before and after* each iteration.
-3. **Implement:** Write an easy exercise from scratch.
-4. **Adapt:** Change a requirement, such as counting even values instead of all values.
-5. **Recognize:** Try an unlabeled mixed challenge and decide which patterns apply.
+1. **Predict:** look at a tiny piece of code. Say what it prints **before** you run it.
+2. **Trace:** fill a table with the value of each variable, turn after turn.
+3. **Write:** solve an easy exercise from a blank file.
+4. **Change:** change one rule (for example, count only the even values).
+5. **Recognize:** take a mixed exercise and find which recipes it needs.
 
-Use [From a problem statement to an algorithm](problem-solving.md) for a worked example, diagram conventions and a reusable paper worksheet.
+This is close to the PRIMM method used in schools: *Predict, Run, Investigate, Modify, Make*.
+
+Want the deeper "why"? Read [From a problem statement to an algorithm](problem-solving.md).
 
 ## Before coding
 
 Write down:
 
-- **Input:** What information do I start with?
-- **Output:** What exactly must I produce?
-- **Example:** Can I solve a tiny case by hand?
-- **State:** What values must I remember?
-- **Repetition:** What action repeats, and when does it stop?
-- **Check:** What result should I expect for a small example or an edge case?
+- **Input:** what do I start with?
+- **Output:** what exactly must I show?
+- **Example:** can I solve a tiny case by hand?
+- **Boxes:** which values must I remember?
+- **Repeat:** what repeats, and when does it stop?
+- **Check:** what result do I expect for a small example and for an edge case?
+
+## A session
+
+About 40 minutes: **5 min** recall what you did last time · **10 min** trace on paper · **20 min** code alone · **5 min** explain your code out loud.
 
 ## Asking for help
 
-Ask for **one hint** at a time. The helper should ask questions, offer a smaller example, or suggest a trace table before showing code. Do not replace the learner's solution with a more advanced version.
+Ask for **one hint** at a time. A good helper asks you questions, gives you a smaller example, or fills a trace table with you. A good helper does **not** write the code for you.
 
-A practical 35-minute session: 5 minutes recall, 10 minutes paper tracing, 15 minutes independent coding, 5 minutes explaining the solution.
+## When is a recipe "ready"?
 
-## Progress rule
+When you solve **two** variations without help, and one of them on **another day**. Not yet? Repeat with smaller inputs, or go back one exercise. Tick it in your [progress checklist](progress-checklist.md).
 
-A pattern is *ready* when the learner can solve two variations without step-by-step prompts, including one attempted on a different day. If not, repeat with easier inputs or one smaller building block. Keep progress in the existing book tracker for book challenges; this repository does not duplicate that tracker.
+## Rules for the first weeks
 
-## Constraints for the first stages
-
-Use simple top-level console code with variables, conditionals and loops. No LINQ, recursion, clever formulas, array helpers, or complicated abstractions to bypass the intended exercise. Where input is requested, a fixed test value is fine while learning the algorithm.
+Write simple code: variables, `if` and loops. No LINQ, no recursion, no clever formulas, no ready-made array helpers. The goal is to write the loop yourself.
 
 ## For the coach: 5 questions when she is stuck
 
@@ -57,3 +63,7 @@ A good exercise for the coach: give working code and ask her to **predict** its 
 - [ ] Extract digits with `% 10` and `/ 10` (D03, D04)
 - [ ] Explain and write Fibonacci alone (S01, S02)
 - [ ] Solve a new mixed problem without step-by-step help (M01, P02, D06)
+
+---
+
+⬅️ [Home](../README.md) · [Progress checklist](progress-checklist.md) ➡️

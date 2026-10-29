@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › A03
+
 # A03 · Sum of the even numbers
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -37,17 +39,23 @@ Sum: 0
 ## 📏 Rules
 
 - Loop + `if` + accumulator.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
-Same loop as A02, but the box gets `+= i` instead of `++`.
+Same loop as A02 (loop + `if (i % 2 == 0)`).
+
+</details>
+
+<details><summary>Hint 2</summary>
+
+The box is `sum`, not `count`: inside the `if`, write `sum += i;` instead of `count++;`.
 
 </details>
 
@@ -59,6 +67,8 @@ Print the sum of the even numbers AND the sum of the odd numbers with **one** lo
 
 ## 🔑 Solution
 
-Only after a real try: [A03-sum-even-values](../solutions/A03-sum-even-values.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for A03](../solutions/A03-sum-even-values.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [A02 · Count multiples of 3](A02-count-multiples-of-3.md) · 📚 [All exercises](README.md) · Next: [A04 · Factorial](A04-factorial.md) ➡️

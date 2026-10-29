@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › E01
+
 # E01 · Safe number reader
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -27,11 +29,11 @@ Thanks: 42
 ## 📏 Rules
 
 - Use `try`/`catch (FormatException)` (not `TryParse`, which you used in L07).
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -55,6 +57,8 @@ Also catch `OverflowException` (try `99999999999`) with its own message.
 
 ## 🔑 Solution
 
-Only after a real try: [E01-safe-number-reader](../solutions/E01-safe-number-reader.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for E01](../solutions/E01-safe-number-reader.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [F01 · Save numbers to a file](F01-numbers-file.md) · 📚 [All exercises](README.md) · Next: [K01 · Shopping list](K01-shopping-list.md) ➡️

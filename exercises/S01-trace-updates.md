@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › S01
+
 # S01 · Trace two changing variables (paper)
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -29,11 +31,11 @@ Then swap the two middle lines (`b = next;` before `a = b;`). What changes? Why?
 ## 📏 Rules
 
 - Paper first.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -57,6 +59,8 @@ Predict the output when `a = 0` and `b = 1` and the loop runs 6 times. Which fam
 
 ## 🔑 Solution
 
-Only after a real try: [S01-trace-updates](../solutions/S01-trace-updates.md). Your solution can be different and still correct!
+Only after a real try: [open the solution for S01](../solutions/S01-trace-updates.md). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [D06 · Palindrome number](D06-palindrome-number.md) · 📚 [All exercises](README.md) · Next: [S02 · Fibonacci](S02-fibonacci.md) ➡️

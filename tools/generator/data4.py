@@ -54,7 +54,7 @@ ex(id="R03", slug="count-matches", title="Count matches in an array", level="Ind
    examples=[(["5","2","4","2","5","2","2"], ["2 appears 3 times"]), (["2","1","1","9"], ["9 appears 0 times"])],
    edge=["Target not present → 0."],
    constraints=["No LINQ (`.Count()`)."],
-   hints=["Conditional accumulator: `if (value == target) count++;`"],
+   hints=["First read the array like in R01. Then read the target. Which recipe counts only *some* values?", "Conditional accumulator: `if (value == target) count++;`"],
    mastery="Count the values **greater** than the target.",
    code=READ_ARRAY + r'''
 Console.Write("Target: ");
@@ -197,12 +197,12 @@ ex(id="F01", slug="numbers-file", title="Save numbers to a file", level="Indepen
    goal="Read numbers until 0 and save them (one per line) in `numbers.txt`. Then read the file back and print how many lines it has and the sum.",
    examples=[(["4","7","1","0"], ["Lines: 3","Sum: 12"]), (["0"], ["Lines: 0","Sum: 0"])],
    edge=["No number → an empty file."],
-   constraints=["`File.WriteAllLines` / `File.ReadAllLines`. No LINQ. Use a `List<string>` or build the text yourself."],
-   hints=["Collect the lines in a `List<string>` (or a string with `\\n`), then write once.",
+   constraints=["Save with `File.WriteAllText`, read back with `File.ReadAllLines`. Build the text yourself with `+=` (lists come in step 9)."],
+   hints=["Build one string: start with `string content = \"\";` and add each number plus `\"\\n\"` (a new line). Write the file once, after the loop.",
           "`string[] lines = File.ReadAllLines(\"numbers.txt\");` gives an array → [array traversal](../cookbook/11-array-traversal.md).",
           "Each line is text: `int.Parse(line)`."],
    mastery="When the program starts, if the file exists, first print the numbers saved last time.",
-   code=r'''List<string> lines = new List<string>();
+   code=r'''string content = "";
 while (true)
 {
     Console.Write("Number (0 to stop): ");
@@ -211,9 +211,9 @@ while (true)
     {
         break;
     }
-    lines.Add(text);
+    content += text + "\n";
 }
-File.WriteAllLines("numbers.txt", lines);
+File.WriteAllText("numbers.txt", content);
 
 string[] saved = File.ReadAllLines("numbers.txt");
 int sum = 0;

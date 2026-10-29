@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › A10
+
 # A10 · Sum of a series
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -39,11 +41,11 @@ Sum: 2.0833
 ## 📏 Rules
 
 - A loop with a `double` box.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -73,6 +75,8 @@ Compute 1 − 1/2 + 1/3 − 1/4 + … (the sign changes every turn). Hint: a `si
 
 ## 🔑 Solution
 
-Only after a real try: [A10-sum-of-a-series](../solutions/A10-sum-of-a-series.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for A10](../solutions/A10-sum-of-a-series.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [A09 · Smallest and largest until zero](A09-min-and-max-until-zero.md) · 📚 [All exercises](README.md) · Next: [G01 · Draw a rectangle](G01-rectangle.md) ➡️

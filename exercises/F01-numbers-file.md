@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › F01
+
 # F01 · Save numbers to a file
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -32,18 +34,18 @@ Sum: 0
 
 ## 📏 Rules
 
-- `File.WriteAllLines` / `File.ReadAllLines`. No LINQ. Use a `List<string>` or build the text yourself.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- Save with `File.WriteAllText`, read back with `File.ReadAllLines`. Build the text yourself with `+=` (lists come in step 9).
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
 
-Collect the lines in a `List<string>` (or a string with `\n`), then write once.
+Build one string: start with `string content = "";` and add each number plus `"\n"` (a new line). Write the file once, after the loop.
 
 </details>
 
@@ -67,6 +69,8 @@ When the program starts, if the file exists, first print the numbers saved last 
 
 ## 🔑 Solution
 
-Only after a real try: [F01-numbers-file](../solutions/F01-numbers-file.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for F01](../solutions/F01-numbers-file.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [T03 · Count and keep the digits](T03-count-and-keep-digits.md) · 📚 [All exercises](README.md) · Next: [E01 · Safe number reader](E01-safe-number-reader.md) ➡️

@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 10 · Sentinel loop
+
 # Recipe 10 · Sentinel loop — "stop when the user types 0"
 
 > Read values **until a special stop value** (the *sentinel*) arrives. The sentinel is **not** part of the data.
@@ -13,6 +15,8 @@ Combine it with any other recipe: count, sum, average, min/max…
 
 ```mermaid
 flowchart TD
+    accTitle: Sentinel loop
+    accDescr: Start the boxes at 0. Read a value. If it is 0, the sentinel, stop and use the boxes. Otherwise update the boxes and read the next value.
     A["boxes: count = 0, sum = 0"] --> B["read a value"]
     B --> C{"value == 0 ?<br/>(sentinel)"}
     C -- yes --> E["stop: use the boxes"]
@@ -69,8 +73,8 @@ Average = 12 / 3 = 4. If the very first value is 0 → count is 0 → **no avera
 
 ## 🏋️ Mini exercises
 
-1. **L05** Count the non-zero numbers until 0.
-2. **A06** Average of numbers until 0.
-3. **A09** Smallest and largest until 0 (combine with [recipe 4](04-min-max.md)).
+1. [**L05**](../exercises/L05-until-zero.md) Count the non-zero numbers until 0.
+2. [**A06**](../exercises/A06-average-until-zero.md) Average of numbers until 0.
+3. [**A09**](../exercises/A09-min-and-max-until-zero.md) Smallest and largest until 0 (combine with [recipe 4](04-min-max.md)).
 
 ➡️ Next: [Recipe 11 · Array traversal](11-array-traversal.md)

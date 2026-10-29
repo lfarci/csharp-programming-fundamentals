@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › B03
+
 # B03 · Seconds to hours, minutes, seconds
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -37,11 +39,11 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 ## 📏 Rules
 
 - No loop, no `if`. Only `/` and `%` on `int`.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [reading worksheet](../docs/reading-an-exercise.md#4-the-worksheet-copy-it): what goes in? what comes out? a tiny example by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -71,6 +73,8 @@ Turn a number of days into weeks and days (`17` → `2 weeks 3 days`).
 
 ## 🔑 Solution
 
-Only after a real try: [B03-seconds-to-hms](../solutions/B03-seconds-to-hms.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for B03](../solutions/B03-seconds-to-hms.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [B02 · Rectangle calculator](B02-rectangle-calculator.md) · 📚 [All exercises](README.md) · Next: [C01 · Even or odd](C01-even-or-odd.md) ➡️

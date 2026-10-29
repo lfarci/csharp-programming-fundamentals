@@ -4,3 +4,4 @@ obj/
 .vs/
 numbers.txt
 __pycache__/
+.lycheecache

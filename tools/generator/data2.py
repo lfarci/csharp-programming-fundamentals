@@ -46,7 +46,7 @@ ex(id="A03", slug="sum-even-values", title="Sum of the even numbers", level="Ind
    examples=[(["6"], ["Sum: 12"]), (["7"], ["Sum: 12"]), (["1"], ["Sum: 0"])],
    edge=["N = 1 → 0."],
    constraints=["Loop + `if` + accumulator."],
-   hints=["Same loop as A02, but the box gets `+= i` instead of `++`."],
+   hints=["Same loop as A02 (loop + `if (i % 2 == 0)`).", "The box is `sum`, not `count`: inside the `if`, write `sum += i;` instead of `count++;`."],
    mastery="Print the sum of the even numbers AND the sum of the odd numbers with **one** loop.",
    code=r'''Console.Write("N: ");
 int n = int.Parse(Console.ReadLine()!);

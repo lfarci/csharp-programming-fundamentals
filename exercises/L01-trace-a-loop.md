@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › L01
+
 # L01 · Trace a loop (paper)
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -24,11 +26,11 @@ Table columns: `turn`, `i at start`, `i <= 8?`, `output`, `i after step`.
 ## 📏 Rules
 
 - Paper and pen only. Run the code **after** to check.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -52,6 +54,8 @@ Predict `for (int i = 10; i > 0; i -= 3)` without running it.
 
 ## 🔑 Solution
 
-Only after a real try: [L01-trace-a-loop](../solutions/L01-trace-a-loop.md). Your solution can be different and still correct!
+Only after a real try: [open the solution for L01](../solutions/L01-trace-a-loop.md). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [C03 · Ticket price](C03-ticket-price.md) · 📚 [All exercises](README.md) · Next: [L02 · Boundaries: < or <= ? (paper)](L02-boundaries.md) ➡️

@@ -1,4 +1,8 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 Exercises
+
 # 📚 Exercise inventory
+
+✅ Track what you have done with the [progress checklist](../docs/progress-checklist.md).
 
 One table for **every** exercise: our own original exercises, a few Project Euler milestones and the teacher's topics.
 Each custom exercise adds **one** new difficulty. Pick the next one whose prerequisites you have done.
@@ -24,6 +28,8 @@ Custom by level: 🟢 15 guided · 🔵 27 independent · 🟣 13 challenge.
 
 ```mermaid
 flowchart LR
+    accTitle: Map of the exercise families
+    accDescr: Basics lead to conditions, then loop mechanics. Loop mechanics lead to accumulators, state and exceptions. Accumulators lead to 2D drawings, digits, search and primes, combine, and arrays. Digits lead to combine, which leads to methods. Arrays lead to text, files and collections.
     B["B · Basics"] --> C["C · Conditions"] --> L["L · Loop mechanics"]
     L --> A["A · Accumulators"]
     A --> G["G · 2D drawings"]
@@ -39,7 +45,7 @@ flowchart LR
     M --> N["N · Methods"]
 ```
 
-Full exercise-by-exercise graph: [dependency-graph.md](dependency-graph.md).
+See the full [graph of every exercise and its prerequisites](dependency-graph.md).
 
 ## Custom exercises
 
