@@ -8,35 +8,31 @@
 
 ## 🎯 Goal
 
-Read N and print the sum 1 + 2 + … + N.
+Give back the sum 1 + 2 + … + n.
+
+## ▶️ Start and check
+
+```bash
+./ex start A01     # creates practice/A01_Sum1ToN.cs (never overwrites your work)
+./ex check A01     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `int SumTo(int n)`: input = n, an int (whole number); result = an int (whole number), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `5`
-
-```text
-Sum: 15
-```
-
-**Example 2** — input: `1`
-
-```text
-Sum: 1
-```
-
-**Example 3** — input: `10`
-
-```text
-Sum: 55
-```
-
-**Example 4** — input: `0`
-
-```text
-Sum: 0
-```
+| Call | Result |
+| --- | --- |
+| `SumTo(5)` | `15` |
+| `SumTo(1)` | `1` |
+| `SumTo(10)` | `55` |
+| `SumTo(0)` | `0` |
 
 ## ⚠️ Edge cases to test
 
@@ -67,7 +63,7 @@ The box `sum` is created **before** the loop and starts at 0.
 
 <details><summary>Hint 3</summary>
 
-Inside the loop: `sum += i;`. Print **after** the loop.
+Inside the loop: `sum += i;`. `return sum;` **after** the loop.
 
 </details>
 
@@ -79,7 +75,7 @@ Sum from A to B (read both). Then: sum of the squares 1² + 2² + … + N².
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for A01](../solutions/A01-sum-1-to-n.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for A01](../solutions/A01_Sum1ToN.cs). Your solution can be different and still correct!
 
 ---
 

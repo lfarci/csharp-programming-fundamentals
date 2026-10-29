@@ -8,29 +8,30 @@
 
 ## 🎯 Goal
 
-Read a text. Print it without its spaces, between square brackets.
+Give back `text` without its spaces.
+
+## ▶️ Start and check
+
+```bash
+./ex start T02     # creates practice/T02_RemoveSpaces.cs (never overwrites your work)
+./ex check T02     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `string RemoveSpaces(string text)`: input = text, a string (text); result = a string (text), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `a b c`
-
-```text
-[abc]
-```
-
-**Example 2** — input: `   `
-
-```text
-[]
-```
-
-**Example 3** — input: `no-space`
-
-```text
-[no-space]
-```
+| Call | Result |
+| --- | --- |
+| `RemoveSpaces("a b c")` | `"abc"` |
+| `RemoveSpaces("   ")` | `""` |
+| `RemoveSpaces("no-space")` | `"no-space"` |
 
 ## ⚠️ Edge cases to test
 
@@ -67,7 +68,7 @@ Reverse the text (`abc` → `cba`).
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for T02](../solutions/T02-remove-spaces.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for T02](../solutions/T02_RemoveSpaces.cs). Your solution can be different and still correct!
 
 ---
 

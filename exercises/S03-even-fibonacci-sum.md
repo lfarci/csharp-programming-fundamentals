@@ -8,29 +8,31 @@
 
 ## 🎯 Goal
 
-Read a limit. Add up the **even** Fibonacci numbers that are **not greater** than the limit.
+Add up the **even** Fibonacci numbers that are **not greater** than `limit`, and give back the sum.
+
+## ▶️ Start and check
+
+```bash
+./ex start S03     # creates practice/S03_EvenFibonacciSum.cs (never overwrites your work)
+./ex check S03     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `long EvenFibonacciSum(long limit)`: input = limit, a long (big whole number); result = a long (big whole number), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `10`
-
-```text
-Sum: 10
-```
-
-**Example 2** — input: `100`
-
-```text
-Sum: 44
-```
-
-**Example 3** — input: `1`
-
-```text
-Sum: 0
-```
+| Call | Result |
+| --- | --- |
+| `EvenFibonacciSum(10)` | `10` |
+| `EvenFibonacciSum(100)` | `44` |
+| `EvenFibonacciSum(1)` | `0` |
+| `EvenFibonacciSum(34)` | `44` |
 
 ## ⚠️ Edge cases to test
 
@@ -73,7 +75,7 @@ Solve [Project Euler #2](https://projecteuler.net/problem=2) (limit four million
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for S03](../solutions/S03-even-fibonacci-sum.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for S03](../solutions/S03_EvenFibonacciSum.cs). Your solution can be different and still correct!
 
 ---
 

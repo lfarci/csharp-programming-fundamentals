@@ -8,26 +8,29 @@
 
 ## 🎯 Goal
 
-Read a size. Draw a size×size checkerboard with `#` and `.`, starting with `#` in the top-left corner.
+Print a size×size checkerboard with `#` and `.`, starting with `#` in the top-left corner.
+
+## ▶️ Start and check
+
+```bash
+./ex start G05     # creates practice/G05_Checkerboard.cs (never overwrites your work)
+./ex check G05     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `void DrawCheckerboard(int size)`: input = size, an int (whole number); result = nothing is returned: the method prints with Console.Write / Console.WriteLine.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `4`
-
-```text
-#.#.
-.#.#
-#.#.
-.#.#
-```
-
-**Example 2** — input: `1`
-
-```text
-#
-```
+| Call | Result |
+| --- | --- |
+| `DrawCheckerboard(4)` | prints:<br>`#.#.`<br>`.#.#`<br>`#.#.`<br>`.#.#` |
+| `DrawCheckerboard(1)` | prints:<br>`#` |
 
 ## ⚠️ Edge cases to test
 
@@ -64,7 +67,7 @@ Make each square 2×2 characters big.
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for G05](../solutions/G05-checkerboard.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for G05](../solutions/G05_Checkerboard.cs). Your solution can be different and still correct!
 
 ---
 

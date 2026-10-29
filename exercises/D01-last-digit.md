@@ -8,29 +8,31 @@
 
 ## 🎯 Goal
 
-Read a whole number N ≥ 0. Print its last digit.
+Give back the last digit of n (n ≥ 0).
+
+## ▶️ Start and check
+
+```bash
+./ex start D01     # creates practice/D01_LastDigit.cs (never overwrites your work)
+./ex check D01     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `int LastDigit(int n)`: input = n, an int (whole number); result = an int (whole number), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `352`
-
-```text
-Last digit: 2
-```
-
-**Example 2** — input: `7`
-
-```text
-Last digit: 7
-```
-
-**Example 3** — input: `0`
-
-```text
-Last digit: 0
-```
+| Call | Result |
+| --- | --- |
+| `LastDigit(352)` | `2` |
+| `LastDigit(7)` | `7` |
+| `LastDigit(0)` | `0` |
+| `LastDigit(90)` | `0` |
 
 ## ⚠️ Edge cases to test
 
@@ -67,7 +69,7 @@ Print the **second to last** digit (352 → 5).
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for D01](../solutions/D01-last-digit.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for D01](../solutions/D01_LastDigit.cs). Your solution can be different and still correct!
 
 ---
 

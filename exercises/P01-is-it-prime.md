@@ -8,41 +8,33 @@
 
 ## 🎯 Goal
 
-Read N. Say if it is a prime number (≥ 2 and only divisible by 1 and itself).
+Give back `true` if n is a prime number (≥ 2 and only divisible by 1 and itself).
+
+## ▶️ Start and check
+
+```bash
+./ex start P01     # creates practice/P01_IsItPrime.cs (never overwrites your work)
+./ex check P01     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `bool IsPrime(int n)`: input = n, an int (whole number); result = a bool (true or false), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `7`
-
-```text
-7 is prime
-```
-
-**Example 2** — input: `9`
-
-```text
-9 is not prime
-```
-
-**Example 3** — input: `1`
-
-```text
-1 is not prime
-```
-
-**Example 4** — input: `2`
-
-```text
-2 is prime
-```
-
-**Example 5** — input: `97`
-
-```text
-97 is prime
-```
+| Call | Result |
+| --- | --- |
+| `IsPrime(7)` | `true` |
+| `IsPrime(9)` | `false` |
+| `IsPrime(1)` | `false` |
+| `IsPrime(2)` | `true` |
+| `IsPrime(97)` | `true` |
+| `IsPrime(0)` | `false` |
 
 ## ⚠️ Edge cases to test
 
@@ -74,7 +66,7 @@ Flag: `bool isPrime = n >= 2;` and set it to `false` when `n % d == 0`.
 
 <details><summary>Hint 3</summary>
 
-Do not print inside the loop. Decide **after** the loop.
+Do not `return true` inside the loop: you only know it is prime **after** checking every divisor.
 
 </details>
 
@@ -86,7 +78,7 @@ Make it faster: stop at `d * d <= n`. Why does that work?
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for P01](../solutions/P01-is-it-prime.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for P01](../solutions/P01_IsItPrime.cs). Your solution can be different and still correct!
 
 ---
 

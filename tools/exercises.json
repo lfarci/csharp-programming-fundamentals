@@ -1,0 +1,3027 @@
+[
+ {
+  "id": "B01",
+  "name": "B01-hello-you",
+  "class": "B01_HelloYou",
+  "title": "Hello you",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "examples": [
+   {
+    "input": [
+     "Ada"
+    ],
+    "expected": [
+     "Hello, Ada!"
+    ]
+   },
+   {
+    "input": [
+     "Sam"
+    ],
+    "expected": [
+     "Hello, Sam!"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B02",
+  "name": "B02-rectangle-calculator",
+  "class": "B02_RectangleCalculator",
+  "title": "Rectangle calculator",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "Area",
+   "Perimeter"
+  ],
+  "cases": [
+   {
+    "method": "Area",
+    "args": [
+     4,
+     3
+    ],
+    "expected": 12
+   },
+   {
+    "method": "Perimeter",
+    "args": [
+     4,
+     3
+    ],
+    "expected": 14
+   },
+   {
+    "method": "Area",
+    "args": [
+     5,
+     5
+    ],
+    "expected": 25
+   },
+   {
+    "method": "Perimeter",
+    "args": [
+     5,
+     5
+    ],
+    "expected": 20
+   },
+   {
+    "method": "Area",
+    "args": [
+     0,
+     7
+    ],
+    "expected": 0
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "4",
+     "3"
+    ],
+    "expected": [
+     "Area: 12",
+     "Perimeter: 14"
+    ]
+   },
+   {
+    "input": [
+     "5",
+     "5"
+    ],
+    "expected": [
+     "Area: 25",
+     "Perimeter: 20"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "B03",
+  "name": "B03-seconds-to-hms",
+  "class": "B03_SecondsToHms",
+  "title": "Seconds to hours, minutes, seconds",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "Format"
+  ],
+  "cases": [
+   {
+    "method": "Format",
+    "args": [
+     3725
+    ],
+    "expected": "1 h 2 min 5 s"
+   },
+   {
+    "method": "Format",
+    "args": [
+     59
+    ],
+    "expected": "0 h 0 min 59 s"
+   },
+   {
+    "method": "Format",
+    "args": [
+     7200
+    ],
+    "expected": "2 h 0 min 0 s"
+   },
+   {
+    "method": "Format",
+    "args": [
+     0
+    ],
+    "expected": "0 h 0 min 0 s"
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "3725"
+    ],
+    "expected": [
+     "1 h 2 min 5 s"
+    ]
+   },
+   {
+    "input": [
+     "59"
+    ],
+    "expected": [
+     "0 h 0 min 59 s"
+    ]
+   },
+   {
+    "input": [
+     "7200"
+    ],
+    "expected": [
+     "2 h 0 min 0 s"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "C01",
+  "name": "C01-even-or-odd",
+  "class": "C01_EvenOrOdd",
+  "title": "Even or odd",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "IsEven"
+  ],
+  "cases": [
+   {
+    "method": "IsEven",
+    "args": [
+     7
+    ],
+    "expected": false
+   },
+   {
+    "method": "IsEven",
+    "args": [
+     0
+    ],
+    "expected": true
+   },
+   {
+    "method": "IsEven",
+    "args": [
+     -4
+    ],
+    "expected": true
+   },
+   {
+    "method": "IsEven",
+    "args": [
+     -3
+    ],
+    "expected": false
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "7"
+    ],
+    "expected": [
+     "7 is odd"
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "0 is even"
+    ]
+   },
+   {
+    "input": [
+     "-4"
+    ],
+    "expected": [
+     "-4 is even"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "C02",
+  "name": "C02-largest-of-three",
+  "class": "C02_LargestOfThree",
+  "title": "Largest of three",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "Largest"
+  ],
+  "cases": [
+   {
+    "method": "Largest",
+    "args": [
+     3,
+     9,
+     5
+    ],
+    "expected": 9
+   },
+   {
+    "method": "Largest",
+    "args": [
+     -1,
+     -7,
+     -3
+    ],
+    "expected": -1
+   },
+   {
+    "method": "Largest",
+    "args": [
+     4,
+     4,
+     2
+    ],
+    "expected": 4
+   },
+   {
+    "method": "Largest",
+    "args": [
+     1,
+     2,
+     8
+    ],
+    "expected": 8
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "3",
+     "9",
+     "5"
+    ],
+    "expected": [
+     "Largest: 9"
+    ]
+   },
+   {
+    "input": [
+     "-1",
+     "-7",
+     "-3"
+    ],
+    "expected": [
+     "Largest: -1"
+    ]
+   },
+   {
+    "input": [
+     "4",
+     "4",
+     "2"
+    ],
+    "expected": [
+     "Largest: 4"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "C03",
+  "name": "C03-ticket-price",
+  "class": "C03_TicketPrice",
+  "title": "Ticket price",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "Price"
+  ],
+  "cases": [
+   {
+    "method": "Price",
+    "args": [
+     11
+    ],
+    "expected": 5
+   },
+   {
+    "method": "Price",
+    "args": [
+     12
+    ],
+    "expected": 10
+   },
+   {
+    "method": "Price",
+    "args": [
+     64
+    ],
+    "expected": 10
+   },
+   {
+    "method": "Price",
+    "args": [
+     65
+    ],
+    "expected": 7
+   },
+   {
+    "method": "Price",
+    "args": [
+     0
+    ],
+    "expected": 5
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "11"
+    ],
+    "expected": [
+     "Price: 5"
+    ]
+   },
+   {
+    "input": [
+     "12"
+    ],
+    "expected": [
+     "Price: 10"
+    ]
+   },
+   {
+    "input": [
+     "64"
+    ],
+    "expected": [
+     "Price: 10"
+    ]
+   },
+   {
+    "input": [
+     "65"
+    ],
+    "expected": [
+     "Price: 7"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "L01",
+  "name": "L01-trace-a-loop",
+  "class": "L01_TraceALoop",
+  "title": "Trace a loop (paper)",
+  "paper": true,
+  "kind": "paper",
+  "methods": [],
+  "cases": [],
+  "examples": []
+ },
+ {
+  "id": "L02",
+  "name": "L02-boundaries",
+  "class": "L02_Boundaries",
+  "title": "Boundaries: < or <= ? (paper)",
+  "paper": true,
+  "kind": "paper",
+  "methods": [],
+  "cases": [],
+  "examples": []
+ },
+ {
+  "id": "L03",
+  "name": "L03-count-up-and-down",
+  "class": "L03_CountUpAndDown",
+  "title": "Count up and down",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "examples": [
+   {
+    "input": [
+     "4"
+    ],
+    "expected": [
+     "1 2 3 4",
+     "4 3 2 1"
+    ]
+   },
+   {
+    "input": [
+     "1"
+    ],
+    "expected": [
+     "1",
+     "1"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "L04",
+  "name": "L04-multiplication-table",
+  "class": "L04_MultiplicationTable",
+  "title": "Multiplication table",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "examples": [
+   {
+    "input": [
+     "3"
+    ],
+    "expected": [
+     "3 x 1 = 3",
+     "3 x 2 = 6",
+     "3 x 10 = 30"
+    ]
+   },
+   {
+    "input": [
+     "7"
+    ],
+    "expected": [
+     "7 x 7 = 49"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "L05",
+  "name": "L05-until-zero",
+  "class": "L05_UntilZero",
+  "title": "Until zero",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "examples": [
+   {
+    "input": [
+     "5",
+     "-2",
+     "8",
+     "0"
+    ],
+    "expected": [
+     "You entered 3 numbers."
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "You entered 0 numbers."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "L06",
+  "name": "L06-even-numbers",
+  "class": "L06_EvenNumbers",
+  "title": "Even numbers",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "examples": [
+   {
+    "input": [
+     "9"
+    ],
+    "expected": [
+     "2 4 6 8"
+    ]
+   },
+   {
+    "input": [
+     "10"
+    ],
+    "expected": [
+     "2 4 6 8 10"
+    ]
+   },
+   {
+    "input": [
+     "1"
+    ],
+    "expected": []
+   }
+  ]
+ },
+ {
+  "id": "L07",
+  "name": "L07-ask-until-valid",
+  "class": "L07_AskUntilValid",
+  "title": "Ask until valid",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "examples": [
+   {
+    "input": [
+     "abc",
+     "42",
+     "7"
+    ],
+    "expected": [
+     "Invalid, try again.",
+     "Invalid, try again.",
+     "You chose 7"
+    ]
+   },
+   {
+    "input": [
+     "1"
+    ],
+    "expected": [
+     "You chose 1"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "L08",
+  "name": "L08-guess-the-number",
+  "class": "L08_GuessTheNumber",
+  "title": "Guess the number",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "examples": [
+   {
+    "input": [
+     "50",
+     "30",
+     "42"
+    ],
+    "expected": [
+     "Lower!",
+     "Higher!",
+     "Correct! You needed 3 tries."
+    ]
+   },
+   {
+    "input": [
+     "42"
+    ],
+    "expected": [
+     "Correct! You needed 1 tries."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A01",
+  "name": "A01-sum-1-to-n",
+  "class": "A01_Sum1ToN",
+  "title": "Sum from 1 to N",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SumTo"
+  ],
+  "cases": [
+   {
+    "method": "SumTo",
+    "args": [
+     5
+    ],
+    "expected": 15
+   },
+   {
+    "method": "SumTo",
+    "args": [
+     1
+    ],
+    "expected": 1
+   },
+   {
+    "method": "SumTo",
+    "args": [
+     10
+    ],
+    "expected": 55
+   },
+   {
+    "method": "SumTo",
+    "args": [
+     0
+    ],
+    "expected": 0
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "5"
+    ],
+    "expected": [
+     "Sum: 15"
+    ]
+   },
+   {
+    "input": [
+     "1"
+    ],
+    "expected": [
+     "Sum: 1"
+    ]
+   },
+   {
+    "input": [
+     "10"
+    ],
+    "expected": [
+     "Sum: 55"
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "Sum: 0"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A02",
+  "name": "A02-count-multiples-of-3",
+  "class": "A02_CountMultiplesOf3",
+  "title": "Count multiples of 3",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountMultiplesOf3"
+  ],
+  "cases": [
+   {
+    "method": "CountMultiplesOf3",
+    "args": [
+     10
+    ],
+    "expected": 3
+   },
+   {
+    "method": "CountMultiplesOf3",
+    "args": [
+     2
+    ],
+    "expected": 0
+   },
+   {
+    "method": "CountMultiplesOf3",
+    "args": [
+     9
+    ],
+    "expected": 3
+   },
+   {
+    "method": "CountMultiplesOf3",
+    "args": [
+     0
+    ],
+    "expected": 0
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "10"
+    ],
+    "expected": [
+     "Count: 3"
+    ]
+   },
+   {
+    "input": [
+     "2"
+    ],
+    "expected": [
+     "Count: 0"
+    ]
+   },
+   {
+    "input": [
+     "9"
+    ],
+    "expected": [
+     "Count: 3"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A03",
+  "name": "A03-sum-even-values",
+  "class": "A03_SumEvenValues",
+  "title": "Sum of the even numbers",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SumOfEvens"
+  ],
+  "cases": [
+   {
+    "method": "SumOfEvens",
+    "args": [
+     6
+    ],
+    "expected": 12
+   },
+   {
+    "method": "SumOfEvens",
+    "args": [
+     7
+    ],
+    "expected": 12
+   },
+   {
+    "method": "SumOfEvens",
+    "args": [
+     1
+    ],
+    "expected": 0
+   },
+   {
+    "method": "SumOfEvens",
+    "args": [
+     10
+    ],
+    "expected": 30
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "6"
+    ],
+    "expected": [
+     "Sum: 12"
+    ]
+   },
+   {
+    "input": [
+     "7"
+    ],
+    "expected": [
+     "Sum: 12"
+    ]
+   },
+   {
+    "input": [
+     "1"
+    ],
+    "expected": [
+     "Sum: 0"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A04",
+  "name": "A04-factorial",
+  "class": "A04_Factorial",
+  "title": "Factorial",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "Factorial"
+  ],
+  "cases": [
+   {
+    "method": "Factorial",
+    "args": [
+     5
+    ],
+    "expected": 120
+   },
+   {
+    "method": "Factorial",
+    "args": [
+     0
+    ],
+    "expected": 1
+   },
+   {
+    "method": "Factorial",
+    "args": [
+     1
+    ],
+    "expected": 1
+   },
+   {
+    "method": "Factorial",
+    "args": [
+     12
+    ],
+    "expected": 479001600
+   },
+   {
+    "method": "Factorial",
+    "args": [
+     20
+    ],
+    "expected": 2432902008176640000
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "5"
+    ],
+    "expected": [
+     "5! = 120"
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "0! = 1"
+    ]
+   },
+   {
+    "input": [
+     "12"
+    ],
+    "expected": [
+     "12! = 479001600"
+    ]
+   },
+   {
+    "input": [
+     "20"
+    ],
+    "expected": [
+     "20! = 2432902008176640000"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A05",
+  "name": "A05-sum-square-difference",
+  "class": "A05_SumSquareDifference",
+  "title": "Two accumulators: sum and squares",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "examples": [
+   {
+    "input": [
+     "3"
+    ],
+    "expected": [
+     "Sum: 6",
+     "Sum of squares: 14",
+     "Difference: 22"
+    ]
+   },
+   {
+    "input": [
+     "10"
+    ],
+    "expected": [
+     "Sum: 55",
+     "Sum of squares: 385",
+     "Difference: 2640"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A06",
+  "name": "A06-average-until-zero",
+  "class": "A06_AverageUntilZero",
+  "title": "Average until zero",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "examples": [
+   {
+    "input": [
+     "4",
+     "7",
+     "1",
+     "0"
+    ],
+    "expected": [
+     "Average: 4"
+    ]
+   },
+   {
+    "input": [
+     "1",
+     "2",
+     "0"
+    ],
+    "expected": [
+     "Average: 1.5"
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "No numbers."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A07",
+  "name": "A07-integer-power",
+  "class": "A07_IntegerPower",
+  "title": "Integer power",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "Power"
+  ],
+  "cases": [
+   {
+    "method": "Power",
+    "args": [
+     3,
+     4
+    ],
+    "expected": 81
+   },
+   {
+    "method": "Power",
+    "args": [
+     2,
+     10
+    ],
+    "expected": 1024
+   },
+   {
+    "method": "Power",
+    "args": [
+     5,
+     0
+    ],
+    "expected": 1
+   },
+   {
+    "method": "Power",
+    "args": [
+     -2,
+     3
+    ],
+    "expected": -8
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "3",
+     "4"
+    ],
+    "expected": [
+     "3^4 = 81"
+    ]
+   },
+   {
+    "input": [
+     "2",
+     "10"
+    ],
+    "expected": [
+     "2^10 = 1024"
+    ]
+   },
+   {
+    "input": [
+     "5",
+     "0"
+    ],
+    "expected": [
+     "5^0 = 1"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A08",
+  "name": "A08-multiples-of-3-or-5",
+  "class": "A08_MultiplesOf3Or5",
+  "title": "Multiples of 3 or 5",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SumOfMultiples"
+  ],
+  "cases": [
+   {
+    "method": "SumOfMultiples",
+    "args": [
+     10
+    ],
+    "expected": 23
+   },
+   {
+    "method": "SumOfMultiples",
+    "args": [
+     20
+    ],
+    "expected": 78
+   },
+   {
+    "method": "SumOfMultiples",
+    "args": [
+     1
+    ],
+    "expected": 0
+   },
+   {
+    "method": "SumOfMultiples",
+    "args": [
+     16
+    ],
+    "expected": 60
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "10"
+    ],
+    "expected": [
+     "Sum: 23"
+    ]
+   },
+   {
+    "input": [
+     "20"
+    ],
+    "expected": [
+     "Sum: 78"
+    ]
+   },
+   {
+    "input": [
+     "1"
+    ],
+    "expected": [
+     "Sum: 0"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A09",
+  "name": "A09-min-and-max-until-zero",
+  "class": "A09_MinAndMaxUntilZero",
+  "title": "Smallest and largest until zero",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "examples": [
+   {
+    "input": [
+     "4",
+     "-2",
+     "9",
+     "0"
+    ],
+    "expected": [
+     "Min: -2",
+     "Max: 9"
+    ]
+   },
+   {
+    "input": [
+     "-5",
+     "-3",
+     "0"
+    ],
+    "expected": [
+     "Min: -5",
+     "Max: -3"
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "No numbers."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A10",
+  "name": "A10-sum-of-a-series",
+  "class": "A10_SumOfASeries",
+  "title": "Sum of a series",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SeriesSum"
+  ],
+  "cases": [
+   {
+    "method": "SeriesSum",
+    "args": [
+     1
+    ],
+    "expected": 1.0
+   },
+   {
+    "method": "SeriesSum",
+    "args": [
+     2
+    ],
+    "expected": 1.5
+   },
+   {
+    "method": "SeriesSum",
+    "args": [
+     4
+    ],
+    "expected": 2.0833333333
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "1"
+    ],
+    "expected": [
+     "Sum: 1.0000"
+    ]
+   },
+   {
+    "input": [
+     "2"
+    ],
+    "expected": [
+     "Sum: 1.5000"
+    ]
+   },
+   {
+    "input": [
+     "4"
+    ],
+    "expected": [
+     "Sum: 2.0833"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "G01",
+  "name": "G01-rectangle",
+  "class": "G01_Rectangle",
+  "title": "Draw a rectangle",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DrawRectangle"
+  ],
+  "cases": [
+   {
+    "method": "DrawRectangle",
+    "args": [
+     4,
+     3
+    ],
+    "expected": "****\n****\n****\n"
+   },
+   {
+    "method": "DrawRectangle",
+    "args": [
+     1,
+     2
+    ],
+    "expected": "*\n*\n"
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "4",
+     "3"
+    ],
+    "expected": [
+     "****",
+     "****",
+     "****"
+    ]
+   },
+   {
+    "input": [
+     "1",
+     "2"
+    ],
+    "expected": [
+     "*",
+     "*"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "G02",
+  "name": "G02-right-triangle",
+  "class": "G02_RightTriangle",
+  "title": "Draw a right triangle",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DrawTriangle"
+  ],
+  "cases": [
+   {
+    "method": "DrawTriangle",
+    "args": [
+     4
+    ],
+    "expected": "*\n**\n***\n****\n"
+   },
+   {
+    "method": "DrawTriangle",
+    "args": [
+     1
+    ],
+    "expected": "*\n"
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "4"
+    ],
+    "expected": [
+     "*",
+     "**",
+     "***",
+     "****"
+    ]
+   },
+   {
+    "input": [
+     "1"
+    ],
+    "expected": [
+     "*"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "G03",
+  "name": "G03-multiplication-grid",
+  "class": "G03_MultiplicationGrid",
+  "title": "Multiplication grid",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DrawGrid"
+  ],
+  "cases": [
+   {
+    "method": "DrawGrid",
+    "args": [
+     4
+    ],
+    "expected": "   1   2   3   4\n   2   4   6   8\n   3   6   9  12\n   4   8  12  16\n"
+   },
+   {
+    "method": "DrawGrid",
+    "args": [
+     1
+    ],
+    "expected": "   1\n"
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "4"
+    ],
+    "expected": [
+     "   1   2   3   4",
+     "   2   4   6   8",
+     "   3   6   9  12",
+     "   4   8  12  16"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "G04",
+  "name": "G04-hollow-rectangle",
+  "class": "G04_HollowRectangle",
+  "title": "Hollow rectangle",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DrawHollowRectangle"
+  ],
+  "cases": [
+   {
+    "method": "DrawHollowRectangle",
+    "args": [
+     5,
+     4
+    ],
+    "expected": "*****\n*   *\n*   *\n*****\n"
+   },
+   {
+    "method": "DrawHollowRectangle",
+    "args": [
+     3,
+     3
+    ],
+    "expected": "***\n* *\n***\n"
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "5",
+     "4"
+    ],
+    "expected": [
+     "*****",
+     "*   *",
+     "*   *",
+     "*****"
+    ]
+   },
+   {
+    "input": [
+     "3",
+     "3"
+    ],
+    "expected": [
+     "***",
+     "* *",
+     "***"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "G05",
+  "name": "G05-checkerboard",
+  "class": "G05_Checkerboard",
+  "title": "Checkerboard",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DrawCheckerboard"
+  ],
+  "cases": [
+   {
+    "method": "DrawCheckerboard",
+    "args": [
+     4
+    ],
+    "expected": "#.#.\n.#.#\n#.#.\n.#.#\n"
+   },
+   {
+    "method": "DrawCheckerboard",
+    "args": [
+     1
+    ],
+    "expected": "#\n"
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "4"
+    ],
+    "expected": [
+     "#.#.",
+     ".#.#",
+     "#.#.",
+     ".#.#"
+    ]
+   },
+   {
+    "input": [
+     "1"
+    ],
+    "expected": [
+     "#"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "G06",
+  "name": "G06-pyramid",
+  "class": "G06_Pyramid",
+  "title": "Pyramid",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DrawPyramid"
+  ],
+  "cases": [
+   {
+    "method": "DrawPyramid",
+    "args": [
+     3
+    ],
+    "expected": "  *\n ***\n*****\n"
+   },
+   {
+    "method": "DrawPyramid",
+    "args": [
+     1
+    ],
+    "expected": "*\n"
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "3"
+    ],
+    "expected": [
+     "  *",
+     " ***",
+     "*****"
+    ]
+   },
+   {
+    "input": [
+     "1"
+    ],
+    "expected": [
+     "*"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "D01",
+  "name": "D01-last-digit",
+  "class": "D01_LastDigit",
+  "title": "Last digit",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "LastDigit"
+  ],
+  "cases": [
+   {
+    "method": "LastDigit",
+    "args": [
+     352
+    ],
+    "expected": 2
+   },
+   {
+    "method": "LastDigit",
+    "args": [
+     7
+    ],
+    "expected": 7
+   },
+   {
+    "method": "LastDigit",
+    "args": [
+     0
+    ],
+    "expected": 0
+   },
+   {
+    "method": "LastDigit",
+    "args": [
+     90
+    ],
+    "expected": 0
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "352"
+    ],
+    "expected": [
+     "Last digit: 2"
+    ]
+   },
+   {
+    "input": [
+     "7"
+    ],
+    "expected": [
+     "Last digit: 7"
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "Last digit: 0"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "D02",
+  "name": "D02-remove-last-digit",
+  "class": "D02_RemoveLastDigit",
+  "title": "Remove the last digit",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "RemoveLastDigit"
+  ],
+  "cases": [
+   {
+    "method": "RemoveLastDigit",
+    "args": [
+     352
+    ],
+    "expected": 35
+   },
+   {
+    "method": "RemoveLastDigit",
+    "args": [
+     7
+    ],
+    "expected": 0
+   },
+   {
+    "method": "RemoveLastDigit",
+    "args": [
+     0
+    ],
+    "expected": 0
+   },
+   {
+    "method": "RemoveLastDigit",
+    "args": [
+     1000
+    ],
+    "expected": 100
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "352"
+    ],
+    "expected": [
+     "Without last digit: 35"
+    ]
+   },
+   {
+    "input": [
+     "7"
+    ],
+    "expected": [
+     "Without last digit: 0"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "D03",
+  "name": "D03-count-digits",
+  "class": "D03_CountDigits",
+  "title": "Count the digits",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountDigits"
+  ],
+  "cases": [
+   {
+    "method": "CountDigits",
+    "args": [
+     352
+    ],
+    "expected": 3
+   },
+   {
+    "method": "CountDigits",
+    "args": [
+     0
+    ],
+    "expected": 1
+   },
+   {
+    "method": "CountDigits",
+    "args": [
+     1000
+    ],
+    "expected": 4
+   },
+   {
+    "method": "CountDigits",
+    "args": [
+     7
+    ],
+    "expected": 1
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "352"
+    ],
+    "expected": [
+     "Digits: 3"
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "Digits: 1"
+    ]
+   },
+   {
+    "input": [
+     "1000"
+    ],
+    "expected": [
+     "Digits: 4"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "D04",
+  "name": "D04-digit-sum",
+  "class": "D04_DigitSum",
+  "title": "Sum of the digits",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DigitSum"
+  ],
+  "cases": [
+   {
+    "method": "DigitSum",
+    "args": [
+     352
+    ],
+    "expected": 10
+   },
+   {
+    "method": "DigitSum",
+    "args": [
+     0
+    ],
+    "expected": 0
+   },
+   {
+    "method": "DigitSum",
+    "args": [
+     9999
+    ],
+    "expected": 36
+   },
+   {
+    "method": "DigitSum",
+    "args": [
+     7
+    ],
+    "expected": 7
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "352"
+    ],
+    "expected": [
+     "Digit sum: 10"
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "Digit sum: 0"
+    ]
+   },
+   {
+    "input": [
+     "9999"
+    ],
+    "expected": [
+     "Digit sum: 36"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "D05",
+  "name": "D05-reverse-a-number",
+  "class": "D05_ReverseANumber",
+  "title": "Reverse a number",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "ReverseNumber"
+  ],
+  "cases": [
+   {
+    "method": "ReverseNumber",
+    "args": [
+     352
+    ],
+    "expected": 253
+   },
+   {
+    "method": "ReverseNumber",
+    "args": [
+     1200
+    ],
+    "expected": 21
+   },
+   {
+    "method": "ReverseNumber",
+    "args": [
+     0
+    ],
+    "expected": 0
+   },
+   {
+    "method": "ReverseNumber",
+    "args": [
+     7
+    ],
+    "expected": 7
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "352"
+    ],
+    "expected": [
+     "Reversed: 253"
+    ]
+   },
+   {
+    "input": [
+     "1200"
+    ],
+    "expected": [
+     "Reversed: 21"
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "Reversed: 0"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "D06",
+  "name": "D06-palindrome-number",
+  "class": "D06_PalindromeNumber",
+  "title": "Palindrome number",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "IsPalindrome"
+  ],
+  "cases": [
+   {
+    "method": "IsPalindrome",
+    "args": [
+     1221
+    ],
+    "expected": true
+   },
+   {
+    "method": "IsPalindrome",
+    "args": [
+     123
+    ],
+    "expected": false
+   },
+   {
+    "method": "IsPalindrome",
+    "args": [
+     7
+    ],
+    "expected": true
+   },
+   {
+    "method": "IsPalindrome",
+    "args": [
+     0
+    ],
+    "expected": true
+   },
+   {
+    "method": "IsPalindrome",
+    "args": [
+     10
+    ],
+    "expected": false
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "1221"
+    ],
+    "expected": [
+     "1221 is a palindrome"
+    ]
+   },
+   {
+    "input": [
+     "123"
+    ],
+    "expected": [
+     "123 is not a palindrome"
+    ]
+   },
+   {
+    "input": [
+     "7"
+    ],
+    "expected": [
+     "7 is a palindrome"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S01",
+  "name": "S01-trace-updates",
+  "class": "S01_TraceUpdates",
+  "title": "Trace two changing variables (paper)",
+  "paper": true,
+  "kind": "paper",
+  "methods": [],
+  "cases": [],
+  "examples": []
+ },
+ {
+  "id": "S02",
+  "name": "S02-fibonacci",
+  "class": "S02_Fibonacci",
+  "title": "Fibonacci",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "examples": [
+   {
+    "input": [
+     "6"
+    ],
+    "expected": [
+     "0 1 1 2 3 5"
+    ]
+   },
+   {
+    "input": [
+     "1"
+    ],
+    "expected": [
+     "0"
+    ]
+   },
+   {
+    "input": [
+     "10"
+    ],
+    "expected": [
+     "0 1 1 2 3 5 8 13 21 34"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "S03",
+  "name": "S03-even-fibonacci-sum",
+  "class": "S03_EvenFibonacciSum",
+  "title": "Even Fibonacci sum",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "EvenFibonacciSum"
+  ],
+  "cases": [
+   {
+    "method": "EvenFibonacciSum",
+    "args": [
+     10
+    ],
+    "expected": 10
+   },
+   {
+    "method": "EvenFibonacciSum",
+    "args": [
+     100
+    ],
+    "expected": 44
+   },
+   {
+    "method": "EvenFibonacciSum",
+    "args": [
+     1
+    ],
+    "expected": 0
+   },
+   {
+    "method": "EvenFibonacciSum",
+    "args": [
+     34
+    ],
+    "expected": 44
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "10"
+    ],
+    "expected": [
+     "Sum: 10"
+    ]
+   },
+   {
+    "input": [
+     "100"
+    ],
+    "expected": [
+     "Sum: 44"
+    ]
+   },
+   {
+    "input": [
+     "1"
+    ],
+    "expected": [
+     "Sum: 0"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "P01",
+  "name": "P01-is-it-prime",
+  "class": "P01_IsItPrime",
+  "title": "Is it prime?",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "IsPrime"
+  ],
+  "cases": [
+   {
+    "method": "IsPrime",
+    "args": [
+     7
+    ],
+    "expected": true
+   },
+   {
+    "method": "IsPrime",
+    "args": [
+     9
+    ],
+    "expected": false
+   },
+   {
+    "method": "IsPrime",
+    "args": [
+     1
+    ],
+    "expected": false
+   },
+   {
+    "method": "IsPrime",
+    "args": [
+     2
+    ],
+    "expected": true
+   },
+   {
+    "method": "IsPrime",
+    "args": [
+     97
+    ],
+    "expected": true
+   },
+   {
+    "method": "IsPrime",
+    "args": [
+     0
+    ],
+    "expected": false
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "7"
+    ],
+    "expected": [
+     "7 is prime"
+    ]
+   },
+   {
+    "input": [
+     "9"
+    ],
+    "expected": [
+     "9 is not prime"
+    ]
+   },
+   {
+    "input": [
+     "1"
+    ],
+    "expected": [
+     "1 is not prime"
+    ]
+   },
+   {
+    "input": [
+     "2"
+    ],
+    "expected": [
+     "2 is prime"
+    ]
+   },
+   {
+    "input": [
+     "97"
+    ],
+    "expected": [
+     "97 is prime"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "P02",
+  "name": "P02-primes-up-to-n",
+  "class": "P02_PrimesUpToN",
+  "title": "All primes up to N",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "examples": [
+   {
+    "input": [
+     "20"
+    ],
+    "expected": [
+     "2 3 5 7 11 13 17 19",
+     "Count: 8"
+    ]
+   },
+   {
+    "input": [
+     "2"
+    ],
+    "expected": [
+     "2",
+     "Count: 1"
+    ]
+   },
+   {
+    "input": [
+     "1"
+    ],
+    "expected": [
+     "Count: 0"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "M01",
+  "name": "M01-armstrong-number",
+  "class": "M01_ArmstrongNumber",
+  "title": "Armstrong number",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "IsArmstrong"
+  ],
+  "cases": [
+   {
+    "method": "IsArmstrong",
+    "args": [
+     153
+    ],
+    "expected": true
+   },
+   {
+    "method": "IsArmstrong",
+    "args": [
+     154
+    ],
+    "expected": false
+   },
+   {
+    "method": "IsArmstrong",
+    "args": [
+     9474
+    ],
+    "expected": true
+   },
+   {
+    "method": "IsArmstrong",
+    "args": [
+     0
+    ],
+    "expected": true
+   },
+   {
+    "method": "IsArmstrong",
+    "args": [
+     10
+    ],
+    "expected": false
+   },
+   {
+    "method": "IsArmstrong",
+    "args": [
+     370
+    ],
+    "expected": true
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "153"
+    ],
+    "expected": [
+     "153 is an Armstrong number"
+    ]
+   },
+   {
+    "input": [
+     "154"
+    ],
+    "expected": [
+     "154 is not an Armstrong number"
+    ]
+   },
+   {
+    "input": [
+     "9474"
+    ],
+    "expected": [
+     "9474 is an Armstrong number"
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "0 is an Armstrong number"
+    ]
+   },
+   {
+    "input": [
+     "10"
+    ],
+    "expected": [
+     "10 is not an Armstrong number"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "M02",
+  "name": "M02-armstrong-numbers-in-a-range",
+  "class": "M02_ArmstrongNumbersInARange",
+  "title": "All Armstrong numbers in a range",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "examples": [
+   {
+    "input": [
+     "100",
+     "999"
+    ],
+    "expected": [
+     "153 370 371 407"
+    ]
+   },
+   {
+    "input": [
+     "1",
+     "9"
+    ],
+    "expected": [
+     "1 2 3 4 5 6 7 8 9"
+    ]
+   },
+   {
+    "input": [
+     "1000",
+     "9999"
+    ],
+    "expected": [
+     "1634 8208 9474"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "R01",
+  "name": "R01-sum-an-array",
+  "class": "R01_SumAnArray",
+  "title": "Sum of an array",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "Sum"
+  ],
+  "cases": [
+   {
+    "method": "Sum",
+    "args": [
+     [
+      4,
+      9,
+      2
+     ]
+    ],
+    "expected": 15
+   },
+   {
+    "method": "Sum",
+    "args": [
+     [
+      -5
+     ]
+    ],
+    "expected": -5
+   },
+   {
+    "method": "Sum",
+    "args": [
+     []
+    ],
+    "expected": 0
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "3",
+     "4",
+     "9",
+     "2"
+    ],
+    "expected": [
+     "Sum: 15"
+    ]
+   },
+   {
+    "input": [
+     "1",
+     "-5"
+    ],
+    "expected": [
+     "Sum: -5"
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "Sum: 0"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "R02",
+  "name": "R02-largest-in-an-array",
+  "class": "R02_LargestInAnArray",
+  "title": "Largest value in an array",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "IndexOfLargest"
+  ],
+  "cases": [
+   {
+    "method": "IndexOfLargest",
+    "args": [
+     [
+      -5,
+      -2,
+      -9
+     ]
+    ],
+    "expected": 1
+   },
+   {
+    "method": "IndexOfLargest",
+    "args": [
+     [
+      3,
+      7,
+      2,
+      7,
+      1
+     ]
+    ],
+    "expected": 1
+   },
+   {
+    "method": "IndexOfLargest",
+    "args": [
+     [
+      4
+     ]
+    ],
+    "expected": 0
+   },
+   {
+    "method": "IndexOfLargest",
+    "args": [
+     [
+      1,
+      2,
+      9
+     ]
+    ],
+    "expected": 2
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "3",
+     "-5",
+     "-2",
+     "-9"
+    ],
+    "expected": [
+     "Largest: -2 at index 1"
+    ]
+   },
+   {
+    "input": [
+     "5",
+     "3",
+     "7",
+     "2",
+     "7",
+     "1"
+    ],
+    "expected": [
+     "Largest: 7 at index 1"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "R03",
+  "name": "R03-count-matches",
+  "class": "R03_CountMatches",
+  "title": "Count matches in an array",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountMatches"
+  ],
+  "cases": [
+   {
+    "method": "CountMatches",
+    "args": [
+     [
+      2,
+      4,
+      2,
+      5,
+      2
+     ],
+     2
+    ],
+    "expected": 3
+   },
+   {
+    "method": "CountMatches",
+    "args": [
+     [
+      1,
+      1
+     ],
+     9
+    ],
+    "expected": 0
+   },
+   {
+    "method": "CountMatches",
+    "args": [
+     [],
+     3
+    ],
+    "expected": 0
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "5",
+     "2",
+     "4",
+     "2",
+     "5",
+     "2",
+     "2"
+    ],
+    "expected": [
+     "2 appears 3 times"
+    ]
+   },
+   {
+    "input": [
+     "2",
+     "1",
+     "1",
+     "9"
+    ],
+    "expected": [
+     "9 appears 0 times"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "R04",
+  "name": "R04-find-the-position",
+  "class": "R04_FindThePosition",
+  "title": "Find the position",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "IndexOf"
+  ],
+  "cases": [
+   {
+    "method": "IndexOf",
+    "args": [
+     [
+      7,
+      3,
+      9,
+      3
+     ],
+     3
+    ],
+    "expected": 1
+   },
+   {
+    "method": "IndexOf",
+    "args": [
+     [
+      7,
+      3,
+      9,
+      3
+     ],
+     8
+    ],
+    "expected": -1
+   },
+   {
+    "method": "IndexOf",
+    "args": [
+     [
+      5
+     ],
+     5
+    ],
+    "expected": 0
+   },
+   {
+    "method": "IndexOf",
+    "args": [
+     [],
+     1
+    ],
+    "expected": -1
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "4",
+     "7",
+     "3",
+     "9",
+     "3",
+     "3"
+    ],
+    "expected": [
+     "First position: 1"
+    ]
+   },
+   {
+    "input": [
+     "4",
+     "7",
+     "3",
+     "9",
+     "3",
+     "8"
+    ],
+    "expected": [
+     "Not found"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "R05",
+  "name": "R05-reverse-an-array",
+  "class": "R05_ReverseAnArray",
+  "title": "Reverse an array",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "Reversed"
+  ],
+  "cases": [
+   {
+    "method": "Reversed",
+    "args": [
+     [
+      1,
+      2,
+      3,
+      4
+     ]
+    ],
+    "expected": [
+     4,
+     3,
+     2,
+     1
+    ]
+   },
+   {
+    "method": "Reversed",
+    "args": [
+     [
+      8
+     ]
+    ],
+    "expected": [
+     8
+    ]
+   },
+   {
+    "method": "Reversed",
+    "args": [
+     []
+    ],
+    "expected": []
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "4",
+     "1",
+     "2",
+     "3",
+     "4"
+    ],
+    "expected": [
+     "4 3 2 1"
+    ]
+   },
+   {
+    "input": [
+     "1",
+     "8"
+    ],
+    "expected": [
+     "8"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "T01",
+  "name": "T01-count-a-letter",
+  "class": "T01_CountALetter",
+  "title": "Count a letter",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountLetter"
+  ],
+  "cases": [
+   {
+    "method": "CountLetter",
+    "args": [
+     "banana",
+     "a"
+    ],
+    "expected": 3
+   },
+   {
+    "method": "CountLetter",
+    "args": [
+     "BANANA",
+     "a"
+    ],
+    "expected": 0
+   },
+   {
+    "method": "CountLetter",
+    "args": [
+     "",
+     "a"
+    ],
+    "expected": 0
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "banana",
+     "a"
+    ],
+    "expected": [
+     "a appears 3 times"
+    ]
+   },
+   {
+    "input": [
+     "BANANA",
+     "a"
+    ],
+    "expected": [
+     "a appears 0 times"
+    ]
+   },
+   {
+    "input": [
+     "",
+     "a"
+    ],
+    "expected": [
+     "a appears 0 times"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "T02",
+  "name": "T02-remove-spaces",
+  "class": "T02_RemoveSpaces",
+  "title": "Remove spaces",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "RemoveSpaces"
+  ],
+  "cases": [
+   {
+    "method": "RemoveSpaces",
+    "args": [
+     "a b c"
+    ],
+    "expected": "abc"
+   },
+   {
+    "method": "RemoveSpaces",
+    "args": [
+     "   "
+    ],
+    "expected": ""
+   },
+   {
+    "method": "RemoveSpaces",
+    "args": [
+     "no-space"
+    ],
+    "expected": "no-space"
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "a b c"
+    ],
+    "expected": [
+     "[abc]"
+    ]
+   },
+   {
+    "input": [
+     "   "
+    ],
+    "expected": [
+     "[]"
+    ]
+   },
+   {
+    "input": [
+     "no-space"
+    ],
+    "expected": [
+     "[no-space]"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "T03",
+  "name": "T03-count-and-keep-digits",
+  "class": "T03_CountAndKeepDigits",
+  "title": "Count and keep the digits",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "KeepDigits"
+  ],
+  "cases": [
+   {
+    "method": "KeepDigits",
+    "args": [
+     "a1 b2!"
+    ],
+    "expected": "12"
+   },
+   {
+    "method": "KeepDigits",
+    "args": [
+     "abc"
+    ],
+    "expected": ""
+   },
+   {
+    "method": "KeepDigits",
+    "args": [
+     "2026"
+    ],
+    "expected": "2026"
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "a1 b2!"
+    ],
+    "expected": [
+     "Digits: 2",
+     "Kept: 12"
+    ]
+   },
+   {
+    "input": [
+     "abc"
+    ],
+    "expected": [
+     "Digits: 0",
+     "Kept: "
+    ]
+   }
+  ]
+ },
+ {
+  "id": "F01",
+  "name": "F01-numbers-file",
+  "class": "F01_NumbersFile",
+  "title": "Save numbers to a file",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "examples": [
+   {
+    "input": [
+     "4",
+     "7",
+     "1",
+     "0"
+    ],
+    "expected": [
+     "Lines: 3",
+     "Sum: 12"
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "Lines: 0",
+     "Sum: 0"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "E01",
+  "name": "E01-safe-number-reader",
+  "class": "E01_SafeNumberReader",
+  "title": "Safe number reader",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "examples": [
+   {
+    "input": [
+     "abc",
+     "12x",
+     "42"
+    ],
+    "expected": [
+     "That is not a number.",
+     "That is not a number.",
+     "Thanks: 42"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "K01",
+  "name": "K01-shopping-list",
+  "class": "K01_ShoppingList",
+  "title": "Shopping list",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "examples": [
+   {
+    "input": [
+     "milk",
+     "eggs",
+     "bread",
+     "done"
+    ],
+    "expected": [
+     "1. milk",
+     "2. eggs",
+     "3. bread",
+     "Total: 3 items"
+    ]
+   },
+   {
+    "input": [
+     "done"
+    ],
+    "expected": [
+     "Total: 0 items"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "N01",
+  "name": "N01-armstrong-with-methods",
+  "class": "N01_ArmstrongWithMethods",
+  "title": "Armstrong with methods",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountDigits",
+   "Power",
+   "IsArmstrong"
+  ],
+  "cases": [
+   {
+    "method": "CountDigits",
+    "args": [
+     352
+    ],
+    "expected": 3
+   },
+   {
+    "method": "CountDigits",
+    "args": [
+     0
+    ],
+    "expected": 1
+   },
+   {
+    "method": "Power",
+    "args": [
+     3,
+     4
+    ],
+    "expected": 81
+   },
+   {
+    "method": "Power",
+    "args": [
+     5,
+     0
+    ],
+    "expected": 1
+   },
+   {
+    "method": "IsArmstrong",
+    "args": [
+     153
+    ],
+    "expected": true
+   },
+   {
+    "method": "IsArmstrong",
+    "args": [
+     154
+    ],
+    "expected": false
+   },
+   {
+    "method": "IsArmstrong",
+    "args": [
+     9474
+    ],
+    "expected": true
+   }
+  ],
+  "examples": [
+   {
+    "input": [
+     "100",
+     "999"
+    ],
+    "expected": [
+     "153 370 371 407"
+    ]
+   }
+  ]
+ }
+]

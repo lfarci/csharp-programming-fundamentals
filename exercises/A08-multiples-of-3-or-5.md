@@ -8,29 +8,31 @@
 
 ## 🎯 Goal
 
-Read N. Print the sum of all numbers **below** N that are multiples of 3 or 5.
+Give back the sum of all numbers **below** n that are multiples of 3 or 5.
+
+## ▶️ Start and check
+
+```bash
+./ex start A08     # creates practice/A08_MultiplesOf3Or5.cs (never overwrites your work)
+./ex check A08     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `int SumOfMultiples(int n)`: input = n, an int (whole number); result = an int (whole number), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `10`
-
-```text
-Sum: 23
-```
-
-**Example 2** — input: `20`
-
-```text
-Sum: 78
-```
-
-**Example 3** — input: `1`
-
-```text
-Sum: 0
-```
+| Call | Result |
+| --- | --- |
+| `SumOfMultiples(10)` | `23` |
+| `SumOfMultiples(20)` | `78` |
+| `SumOfMultiples(1)` | `0` |
+| `SumOfMultiples(16)` | `60` |
 
 ## ⚠️ Edge cases to test
 
@@ -74,7 +76,7 @@ Solve [Project Euler #1](https://projecteuler.net/problem=1) (N = 1000).
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for A08](../solutions/A08-multiples-of-3-or-5.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for A08](../solutions/A08_MultiplesOf3Or5.cs). Your solution can be different and still correct!
 
 ---
 

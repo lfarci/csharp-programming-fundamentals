@@ -9,19 +9,18 @@ step() { echo; echo "▶ $1"; shift; "$@" || status=1; }
 regen() {
   # Run the generator on a copy, then compare with the working tree.
   local tmp; tmp=$(mktemp -d)
-  cp -r tools exercises solutions docs "$tmp"/
+  cp -r tools exercises solutions docs tests "$tmp"/
   python3 "$tmp/tools/generator/gen.py" >/dev/null || return 1
   local bad=0
-  for p in exercises solutions docs/progress-checklist.md; do
-    diff -r "$tmp/$p" "$p" >/dev/null || { echo "❌ $p differs from generator output"; bad=1; }
+  for p in exercises solutions docs/progress-checklist.md tools/starters tools/exercises.json tests/Practice.Tests/Generated.cs; do
+    diff -r -x bin -x obj "$tmp/$p" "$p" >/dev/null || { echo "❌ $p differs from generator output"; bad=1; }
   done
   [ $bad = 0 ] && echo "✅ generator output identical to the files" ||
     { echo "   Edit tools/generator/data*.py, run python3 tools/generator/gen.py, commit both."; return 1; }
 }
 
 step "Generator in sync" regen
-step "Solutions compile and match examples" python3 tools/check-solutions.py
-step "Practice project builds" dotnet build practice -nologo -v q
+step "Exercises: solutions pass, starters compile, ./ex works" tools/check-exercises.sh
 step "Links (internal)" python3 tools/check-links.py
 lychee_check() {
   if command -v lychee >/dev/null; then lychee --config lychee.toml --root-dir "$PWD" --no-progress './**/*.md'

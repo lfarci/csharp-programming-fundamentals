@@ -10,6 +10,17 @@
 
 Read a lower and an upper bound. Print every Armstrong number between them (both included).
 
+## ▶️ Start and check
+
+```bash
+./ex start M02     # creates practice/M02_ArmstrongNumbersInARange.cs (never overwrites your work)
+./ex check M02     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
+
 ## 🧪 Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
@@ -73,7 +84,7 @@ Count how many Armstrong numbers exist below 100000.
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for M02](../solutions/M02-armstrong-numbers-in-a-range.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for M02](../solutions/M02_ArmstrongNumbersInARange.cs). Your solution can be different and still correct!
 
 ---
 

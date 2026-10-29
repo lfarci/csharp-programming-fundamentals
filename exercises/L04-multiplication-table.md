@@ -10,6 +10,17 @@
 
 Read a number N and print its multiplication table from 1 to 10.
 
+## ▶️ Start and check
+
+```bash
+./ex start L04     # creates practice/L04_MultiplicationTable.cs (never overwrites your work)
+./ex check L04     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
+
 ## 🧪 Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
@@ -63,7 +74,7 @@ Read a second number M and print the table up to M instead of 10.
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for L04](../solutions/L04-multiplication-table.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for L04](../solutions/L04_MultiplicationTable.cs). Your solution can be different and still correct!
 
 ---
 

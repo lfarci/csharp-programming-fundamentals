@@ -7,9 +7,16 @@ A friendly companion for a beginner C# course. You learn **loop recipes** and pr
 
 ## 🚀 Start here
 
-1. Read [**Getting started**](docs/getting-started.md): clone the repo, run the practice project, and use hints and solutions.
+1. Read [**Getting started**](docs/getting-started.md): clone the repo, start an exercise, check it, use hints and solutions.
 2. Read [**How to read an exercise**](docs/reading-an-exercise.md) (10 minutes).
-3. Do your first exercises: [L01](exercises/L01-trace-a-loop.md) and [L02](exercises/L02-boundaries.md) on paper, then [L03](exercises/L03-count-up-and-down.md) in code.
+3. Do your first exercises: [L01](exercises/L01-trace-a-loop.md) and [L02](exercises/L02-boundaries.md) on paper. Then, in a terminal:
+
+   ```bash
+   ./ex start L03     # creates your file practice/L03_CountUpAndDown.cs
+   ./ex check         # tests it: every example says OK or NOT YET
+   ```
+
+   (Windows: `.\ex start L03`, `.\ex check`.)
 4. Tick them in your [**progress checklist**](docs/progress-checklist.md).
 5. Next time, open the [**Roadmap**](ROADMAP.md) and follow the plan for today.
 
@@ -24,7 +31,7 @@ A friendly companion for a beginner C# course. You learn **loop recipes** and pr
 | Understand an exercise before coding | 🔎 [**How to read an exercise**](docs/reading-an-exercise.md) (+ fill-in worksheet) |
 | Pick an exercise | 📚 [**Exercise inventory**](exercises/README.md) (55 original + Project Euler + teacher topics) |
 | See which exercise comes before which | 🕸️ [Dependency graph](exercises/dependency-graph.md) |
-| Get set up and run my code | 🚀 [Getting started](docs/getting-started.md) · ✏️ [Practice project](practice/README.md) |
+| Get set up, start and check an exercise | 🚀 [Getting started](docs/getting-started.md) · ✏️ [Practice folder](practice/README.md) |
 | Check my answer (after trying!) | 🔑 [Solutions](solutions/README.md) |
 | Track what I have done | ✅ [Progress checklist](docs/progress-checklist.md) |
 | Understand a word | 📖 [Glossary](docs/glossary.md) |

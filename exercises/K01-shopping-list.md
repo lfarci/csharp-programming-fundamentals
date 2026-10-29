@@ -10,6 +10,17 @@
 
 Read items until the user types `done`. Store them in a `List<string>`. Print them numbered, then the total.
 
+## ▶️ Start and check
+
+```bash
+./ex start K01     # creates practice/K01_ShoppingList.cs (never overwrites your work)
+./ex check K01     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
+
 ## 🧪 Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
@@ -70,7 +81,7 @@ Do not add an item that is already in the list (`items.Contains(item)`).
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for K01](../solutions/K01-shopping-list.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for K01](../solutions/K01_ShoppingList.cs). Your solution can be different and still correct!
 
 ---
 

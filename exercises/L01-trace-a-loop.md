@@ -19,6 +19,10 @@ for (int i = 2; i <= 8; i += 2)
 
 Table columns: `turn`, `i at start`, `i <= 8?`, `output`, `i after step`.
 
+## ✏️ Start and check
+
+This one is on **paper**: no code to write. When you are done, compare with the answer key (link at the bottom).
+
 ## ⚠️ Edge cases to test
 
 - What is the value of `i` when the loop stops? Is it printed?

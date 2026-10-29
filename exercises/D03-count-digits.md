@@ -8,29 +8,31 @@
 
 ## 🎯 Goal
 
-Read N ≥ 0. Print how many digits it has.
+Give back how many digits n has (n ≥ 0). 0 has 1 digit.
+
+## ▶️ Start and check
+
+```bash
+./ex start D03     # creates practice/D03_CountDigits.cs (never overwrites your work)
+./ex check D03     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `int CountDigits(int n)`: input = n, an int (whole number); result = an int (whole number), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `352`
-
-```text
-Digits: 3
-```
-
-**Example 2** — input: `0`
-
-```text
-Digits: 1
-```
-
-**Example 3** — input: `1000`
-
-```text
-Digits: 4
-```
+| Call | Result |
+| --- | --- |
+| `CountDigits(352)` | `3` |
+| `CountDigits(0)` | `1` |
+| `CountDigits(1000)` | `4` |
+| `CountDigits(7)` | `1` |
 
 ## ⚠️ Edge cases to test
 
@@ -73,7 +75,7 @@ Count how many digits of N are even.
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for D03](../solutions/D03-count-digits.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for D03](../solutions/D03_CountDigits.cs). Your solution can be different and still correct!
 
 ---
 

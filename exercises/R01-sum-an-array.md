@@ -8,29 +8,30 @@
 
 ## 🎯 Goal
 
-Read numbers into an array, then print their sum. Input format: first how many numbers, then one number per line. Fill the array with a loop (see [array traversal](../cookbook/11-array-traversal.md)).
+Give back the sum of all values in the array.
+
+## ▶️ Start and check
+
+```bash
+./ex start R01     # creates practice/R01_SumAnArray.cs (never overwrites your work)
+./ex check R01     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `int Sum(int[] values)`: input = values, an int[] (array of whole numbers); result = an int (whole number), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `3`, `4`, `9`, `2`
-
-```text
-Sum: 15
-```
-
-**Example 2** — input: `1`, `-5`
-
-```text
-Sum: -5
-```
-
-**Example 3** — input: `0`
-
-```text
-Sum: 0
-```
+| Call | Result |
+| --- | --- |
+| `Sum(new int[] { 4, 9, 2 })` | `15` |
+| `Sum(new int[] { -5 })` | `-5` |
+| `Sum(new int[0])` | `0` |
 
 ## ⚠️ Edge cases to test
 
@@ -38,7 +39,7 @@ Sum: 0
 
 ## 📏 Rules
 
-- Two loops: one to fill the array, one to sum it. No LINQ (`.Sum()`).
+- One loop over the array. No LINQ (`.Sum()`).
 - No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
@@ -67,7 +68,7 @@ Print the sum of the values at **even positions** (0, 2, 4…).
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for R01](../solutions/R01-sum-an-array.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for R01](../solutions/R01_SumAnArray.cs). Your solution can be different and still correct!
 
 ---
 

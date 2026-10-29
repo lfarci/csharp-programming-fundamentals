@@ -26,7 +26,10 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **LINQ** | A C# toolbox that does loops for you (`.Sum()`, `.Max()`…). Not used here: you learn to write the loop yourself. | |
 | **Loop** | Code that repeats: `for`, `while`, `do … while`, `foreach`. | `for (int i = 1; i <= n; i++)` |
 | **Mastery check** | A new variation of an exercise you solve alone, on another day, to prove you learned it. | |
-| **Method** | A named piece of code you can call again and again. | `Console.WriteLine(...)` |
+| **Method** | A named piece of code you can call again and again. It gets its **input** through *parameters* and gives back its **result** with `return`. Most exercises ask you to fill in one. | `static int SumTo(int n) { … return sum; }` |
+| **Parameter** | An input of a *method*, written between the brackets. The caller gives its value. | `n` in `SumTo(int n)` |
+| **Return** | Gives the result of a *method* back to the code that called it, and ends the method. | `return sum;` |
+| **Unit test** | Code that calls your *method* with an example and checks the result. `./ex check` runs them for you. | `SumTo(5)` must give `15` |
 | **Modulo (`%`)** | The remainder of a division. | `17 % 5` is `2`, `352 % 10` is `2` |
 | **Nested loop** | A *loop* inside another loop. See [recipe 8](../cookbook/08-nested-grid.md). | rows and columns |
 | **Output** | What the program shows (prints). | `Console.WriteLine("Hi")` |

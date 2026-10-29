@@ -1,22 +1,24 @@
-🏠 [Home](../README.md) › ✏️ Practice project
+🏠 [Home](../README.md) › ✏️ Practice folder
 
-# ✏️ Practice project
+# ✏️ Practice folder
 
-One small console project, so you never have to think about project setup. Work on **one exercise at a time** in `Program.cs`.
+**Your** code lives here: one file per exercise, created by `./ex start`.
 
 ```bash
-dotnet run --project practice
+./ex start A04     # creates practice/A04_Factorial.cs (never overwrites your file)
+./ex check         # tests it with the examples of the exercise page
+./ex run           # runs it; you type the values yourself
 ```
 
-Or open `practice/Practice.csproj` in Visual Studio / VS Code / Rider and press ▶️.
+On Windows, type `.\ex` instead of `./ex`. Full guide: [Getting started](../docs/getting-started.md).
 
 ## Tips
 
 - Before typing, fill the [recipe card](../cookbook/README.md) and a trace table on paper.
-- Use the debugger (breakpoint + step over) or a temporary `Console.WriteLine` to *watch* the boxes change.
-- Done? Copy your code to `practice/done/<ID>.cs.txt` (the `.txt` keeps it out of the build), then compare with [`solutions/`](../solutions/README.md).
-
-**.NET 10 bonus:** you can also run a single file without a project: `dotnet run hello.cs` ([file-based apps](https://learn.microsoft.com/en-us/dotnet/core/sdk/file-based-apps)).
+- Use the debugger (VS Code: **Run › Start Debugging** on "Debug the current exercise") or a temporary `Console.WriteLine` to *watch* the variables change.
+- You never need to edit `Program.cs` or `Practice.csproj`.
+- All files here are built together: if one exercise does not compile, fix it (or put `//` before the broken lines) to check another one.
+- All OK? Commit your file, then compare your idea with the [solutions](../solutions/README.md).
 
 ---
 

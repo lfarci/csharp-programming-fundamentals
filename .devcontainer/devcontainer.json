@@ -3,10 +3,19 @@
   "image": "mcr.microsoft.com/devcontainers/dotnet:1-10.0",
   "customizations": {
     "vscode": {
-      "extensions": ["ms-dotnettools.csdevkit", "bierner.markdown-mermaid"],
-      "settings": { "workbench.startupEditor": "readme" }
+      "extensions": [
+        "ms-dotnettools.csdevkit",
+        "bierner.markdown-mermaid"
+      ],
+      "settings": {
+        "workbench.startupEditor": "readme"
+      }
     },
-    "codespaces": { "openFiles": ["README.md", "practice/Program.cs"] }
+    "codespaces": {
+      "openFiles": [
+        "docs/getting-started.md"
+      ]
+    }
   },
-  "postCreateCommand": "dotnet build practice"
+  "postCreateCommand": "dotnet build tests/Practice.Tests && dotnet build tools/ex"
 }

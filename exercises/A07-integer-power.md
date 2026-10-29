@@ -8,29 +8,31 @@
 
 ## 🎯 Goal
 
-Read a base and an exponent (exponent ≥ 0). Print base^exponent using a loop.
+Give back `baseValue` to the power `exponent` (exponent ≥ 0), using a loop.
+
+## ▶️ Start and check
+
+```bash
+./ex start A07     # creates practice/A07_IntegerPower.cs (never overwrites your work)
+./ex check A07     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `long Power(int baseValue, int exponent)`: input = baseValue, an int (whole number), exponent, an int (whole number); result = a long (big whole number), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `3`, `4`
-
-```text
-3^4 = 81
-```
-
-**Example 2** — input: `2`, `10`
-
-```text
-2^10 = 1024
-```
-
-**Example 3** — input: `5`, `0`
-
-```text
-5^0 = 1
-```
+| Call | Result |
+| --- | --- |
+| `Power(3, 4)` | `81` |
+| `Power(2, 10)` | `1024` |
+| `Power(5, 0)` | `1` |
+| `Power(-2, 3)` | `-8` |
 
 ## ⚠️ Edge cases to test
 
@@ -74,7 +76,7 @@ Print all powers of 2 from 2^0 to 2^N, with only one multiplication per turn.
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for A07](../solutions/A07-integer-power.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for A07](../solutions/A07_IntegerPower.cs). Your solution can be different and still correct!
 
 ---
 

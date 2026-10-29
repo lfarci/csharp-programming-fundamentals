@@ -10,6 +10,17 @@
 
 Read a positive number N. Print the numbers from 1 to N on one line, then from N down to 1 on a second line.
 
+## ▶️ Start and check
+
+```bash
+./ex start L03     # creates practice/L03_CountUpAndDown.cs (never overwrites your work)
+./ex check L03     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
+
 ## 🧪 Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
@@ -69,7 +80,7 @@ Print the odd numbers from N down to 1.
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for L03](../solutions/L03-count-up-and-down.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for L03](../solutions/L03_CountUpAndDown.cs). Your solution can be different and still correct!
 
 ---
 

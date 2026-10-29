@@ -24,6 +24,10 @@ for (int i = 1; i <= 3; i++)
 
 Then swap the two middle lines (`b = next;` before `a = b;`). What changes? Why?
 
+## ✏️ Start and check
+
+This one is on **paper**: no code to write. When you are done, compare with the answer key (link at the bottom).
+
 ## ⚠️ Edge cases to test
 
 - Order of the assignments.
