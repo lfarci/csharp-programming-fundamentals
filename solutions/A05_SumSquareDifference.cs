@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // A05 · Two accumulators: sum and squares
+    // A05 · Sum and sum of squares
     // Exercise page: exercises/A05-sum-square-difference.md
     public static class A05_SumSquareDifference
     {

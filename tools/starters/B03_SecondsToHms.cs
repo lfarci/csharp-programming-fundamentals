@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // B03 · Seconds to hours, minutes, seconds
+    // B03 · Seconds to h, min, s
     // Exercise page: exercises/B03-seconds-to-hms.md
     //
     // Goal: Turn a number of seconds into text like 1 h 2 min 5 s. This trains / and %, the key

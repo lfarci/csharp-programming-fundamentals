@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: draw in 2D](../themes/loops-2d.md) › G07
+---
+prev:
+  text: "L10 · Numbers on one line"
+  link: /exercises/L10-numbers-on-one-line
+next:
+  text: "G08 · Solid square"
+  link: /exercises/G08-solid-square
+---
 
-# G07 · Arrange the lines: a square
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw rows and grids](../themes/loops.md#draw-rows-and-grids) › G07
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: draw in 2D](../themes/loops-2d.md) | [Nested grid](../cookbook/08-nested-grid.md) | [L09](L09-draw-a-row.md) | Custom |
+# G07 · Arrange: a square
+
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Draw rows and grids** · exercise 3 of 8 in this group (42 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | arrange the lines | [Nested grid](../cookbook/08-nested-grid.md) | [L09](L09-draw-a-row.md) |
+
+</div>
 
 ## Goal
 
@@ -75,4 +92,8 @@ Only after a real try: [open the solution for G07](../solutions/G07_ArrangeASqua
 
 ---
 
-Previous: [L10 · Numbers on one line](L10-numbers-on-one-line.md) · [All exercises](README.md) · Next: [G01 · Draw a rectangle](G01-rectangle.md)
+<div class="gh-only">
+
+Previous: [L10 · Numbers on one line](L10-numbers-on-one-line.md) · [Loops](../themes/loops.md) · Next: [G08 · Solid square](G08-solid-square.md)
+
+</div>

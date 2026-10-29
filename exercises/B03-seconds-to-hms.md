@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Variables and expressions](../themes/variables.md) › B03
+---
+prev:
+  text: "B02 · Rectangle calculator"
+  link: /exercises/B02-rectangle-calculator
+next:
+  text: "C01 · Even or odd"
+  link: /exercises/C01-even-or-odd
+---
 
-# B03 · Seconds to hours, minutes, seconds
+[Home](../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [First programs](../themes/basics.md#first-programs) › B03
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Variables and expressions](../themes/variables.md) | — | [B02](B02-rectangle-calculator.md) | Custom |
+# B03 · Seconds to h, min, s
+
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Basics › First programs** · exercise 3 of 3 in this group (3 of 7 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | — | [B02](B02-rectangle-calculator.md) |
+
+</div>
 
 ## Goal
 
@@ -79,4 +96,8 @@ Only after a real try: [open the solution for B03](../solutions/B03_SecondsToHms
 
 ---
 
-Previous: [B02 · Rectangle calculator](B02-rectangle-calculator.md) · [All exercises](README.md) · Next: [C01 · Even or odd](C01-even-or-odd.md)
+<div class="gh-only">
+
+Previous: [B02 · Rectangle calculator](B02-rectangle-calculator.md) · [Basics](../themes/basics.md) · Next: [C01 · Even or odd](C01-even-or-odd.md)
+
+</div>

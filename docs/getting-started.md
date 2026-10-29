@@ -101,7 +101,7 @@ The first check takes a little longer, because it builds everything.
 | `./ex run` | Runs your code; you type the values yourself. |
 | `./ex next` | Starts the next exercise. |
 | `./ex list` | Lists the exercises: done, started, not started. |
-| `./ex progress` | Shows what is done in each theme, and a sync code for the website. |
+| `./ex progress` | Shows what is done in each theme and group, and a sync code for the website. |
 | `./ex done L01` | Marks a paper exercise as done (paper exercises have no tests). |
 
 ### Where the tests are

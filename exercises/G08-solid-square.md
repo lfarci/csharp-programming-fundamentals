@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: draw in 2D](../themes/loops-2d.md) › G08
+---
+prev:
+  text: "G07 · Arrange: a square"
+  link: /exercises/G07-arrange-a-square
+next:
+  text: "G01 · Draw a rectangle"
+  link: /exercises/G01-rectangle
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw rows and grids](../themes/loops.md#draw-rows-and-grids) › G08
 
 # G08 · Solid square
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: draw in 2D](../themes/loops-2d.md) | [Nested grid](../cookbook/08-nested-grid.md) | [G01](G01-rectangle.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Draw rows and grids** · exercise 4 of 8 in this group (43 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Nested grid](../cookbook/08-nested-grid.md) | [G07](G07-arrange-a-square.md) |
+
+</div>
 
 ## Goal
 
@@ -49,13 +66,13 @@ Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start v
 
 <details><summary>Hint 1</summary>
 
-G01 with width and height both equal to `size`.
+G07 again, now from a blank file: the inner loop prints one row, the outer loop repeats it.
 
 </details>
 
 <details><summary>Hint 2</summary>
 
-Inner loop: one row. Outer loop: repeat the row.
+`Console.WriteLine();` after the inner loop ends the row.
 
 </details>
 
@@ -63,7 +80,7 @@ Inner loop: one row. Outer loop: repeat the row.
 
 Solve this variation **alone**, on another day:
 
-Print a square of `o`.
+Print a rectangle twice as wide as it is high: `size` rows of `2 × size` stars.
 
 ## Solution
 
@@ -71,4 +88,8 @@ Only after a real try: [open the solution for G08](../solutions/G08_SolidSquare.
 
 ---
 
-Previous: [G01 · Draw a rectangle](G01-rectangle.md) · [All exercises](README.md) · Next: [G09 · Rows of numbers](G09-number-rows.md)
+<div class="gh-only">
+
+Previous: [G07 · Arrange: a square](G07-arrange-a-square.md) · [Loops](../themes/loops.md) · Next: [G01 · Draw a rectangle](G01-rectangle.md)
+
+</div>

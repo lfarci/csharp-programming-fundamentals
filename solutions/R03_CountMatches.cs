@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // R03 · Count matches in an array
+    // R03 · Count matches
     // Exercise page: exercises/R03-count-matches.md
     public static class R03_CountMatches
     {

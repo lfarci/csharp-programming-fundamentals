@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A13
+---
+prev:
+  text: "A01 · Sum from 1 to N"
+  link: /exercises/A01-sum-1-to-n
+next:
+  text: "A14 · Sum the odd numbers"
+  link: /exercises/A14-sum-odd-numbers
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A13
 
 # A13 · Sum from a to b
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: keep a running result](../themes/loops-running-result.md) | [Accumulator](../cookbook/02-accumulator.md) | [A01](A01-sum-1-to-n.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Add up** · exercise 4 of 12 in this group (17 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Accumulator](../cookbook/02-accumulator.md) | [A01](A01-sum-1-to-n.md) |
+
+</div>
 
 ## Goal
 
@@ -73,4 +90,8 @@ Only after a real try: [open the solution for A13](../solutions/A13_SumFromAToB.
 
 ---
 
-Previous: [A10 · Sum of a series](A10-sum-of-a-series.md) · [All exercises](README.md) · Next: [A14 · Sum the odd numbers](A14-sum-odd-numbers.md)
+<div class="gh-only">
+
+Previous: [A01 · Sum from 1 to N](A01-sum-1-to-n.md) · [Loops](../themes/loops.md) · Next: [A14 · Sum the odd numbers](A14-sum-odd-numbers.md)
+
+</div>

@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A07
+---
+prev:
+  text: "A04 · Factorial"
+  link: /exercises/A04-factorial
+next:
+  text: "A05 · Sum and sum of squares"
+  link: /exercises/A05-sum-square-difference
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A07
 
 # A07 · Integer power
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: keep a running result](../themes/loops-running-result.md) | [Accumulator](../cookbook/02-accumulator.md) | [A04](A04-factorial.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Add up** · exercise 10 of 12 in this group (23 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [Accumulator](../cookbook/02-accumulator.md) | [A04](A04-factorial.md) |
+
+</div>
 
 ## Goal
 
@@ -80,4 +97,8 @@ Only after a real try: [open the solution for A07](../solutions/A07_IntegerPower
 
 ---
 
-Previous: [A06 · Average until zero](A06-average-until-zero.md) · [All exercises](README.md) · Next: [A08 · Multiples of 3 or 5](A08-multiples-of-3-or-5.md)
+<div class="gh-only">
+
+Previous: [A04 · Factorial](A04-factorial.md) · [Loops](../themes/loops.md) · Next: [A05 · Sum and sum of squares](A05-sum-square-difference.md)
+
+</div>

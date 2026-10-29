@@ -1,4 +1,4 @@
-// Tests for M02 · All Armstrong numbers in a range
+// Tests for M02 · Armstrong in a range
 // Exercise page: exercises/M02-armstrong-numbers-in-a-range.md
 // Your code:     practice/M02_ArmstrongNumbersInARange.cs
 // Run them:      ./ex check M02

@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // A05 · Two accumulators: sum and squares
+    // A05 · Sum and sum of squares
     // Exercise page: exercises/A05-sum-square-difference.md
     //
     // Goal: Read N. With one loop compute the sum 1+…+N and the sum of squares 1²+…+N². Print

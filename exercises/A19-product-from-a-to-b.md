@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A19
+---
+prev:
+  text: "A20 · Power of 2"
+  link: /exercises/A20-powers-of-2
+next:
+  text: "A04 · Factorial"
+  link: /exercises/A04-factorial
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A19
 
 # A19 · Product from a to b
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: keep a running result](../themes/loops-running-result.md) | [Accumulator](../cookbook/02-accumulator.md) | [A04](A04-factorial.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Add up** · exercise 8 of 12 in this group (21 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Accumulator](../cookbook/02-accumulator.md) | [A20](A20-powers-of-2.md), [A13](A13-sum-from-a-to-b.md) |
+
+</div>
 
 ## Goal
 
@@ -51,13 +68,13 @@ Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start v
 
 <details><summary>Hint 1</summary>
 
-Like A04: the box starts at 1.
+Like A20: the product box starts at 1, and each turn does `product *= i;`.
 
 </details>
 
 <details><summary>Hint 2</summary>
 
-The loop starts at `a`.
+The loop starts at `a` and stops after `b`.
 
 </details>
 
@@ -73,4 +90,8 @@ Only after a real try: [open the solution for A19](../solutions/A19_ProductFromA
 
 ---
 
-Previous: [A18 · Sum of cubes](A18-sum-of-cubes.md) · [All exercises](README.md) · Next: [A20 · Power of 2](A20-powers-of-2.md)
+<div class="gh-only">
+
+Previous: [A20 · Power of 2](A20-powers-of-2.md) · [Loops](../themes/loops.md) · Next: [A04 · Factorial](A04-factorial.md)
+
+</div>

@@ -1,10 +1,29 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A08
+---
+prev:
+  text: "A17 · Sum the multiples of k"
+  link: /exercises/A17-sum-multiples-of-k
+next:
+  text: "L05 · Until zero"
+  link: /exercises/L05-until-zero
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops.md#keep-only-some) › A08
 
 # A08 · Multiples of 3 or 5
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Challenge | medium | [Loops: keep a running result](../themes/loops-running-result.md) | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A03](A03-sum-even-values.md) | Custom · prepares [Project Euler #1](https://projecteuler.net/problem=1) |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Keep only some** · exercise 9 of 9 in this group (34 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Challenge | medium | write code | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A03](A03-sum-even-values.md) |
+
+</div>
+
+Source: prepares [Project Euler #1](https://projecteuler.net/problem=1).
 
 ## Goal
 
@@ -80,4 +99,8 @@ Only after a real try: [open the solution for A08](../solutions/A08_MultiplesOf3
 
 ---
 
-Previous: [A07 · Integer power](A07-integer-power.md) · [All exercises](README.md) · Next: [A09 · Smallest and largest until zero](A09-min-and-max-until-zero.md)
+<div class="gh-only">
+
+Previous: [A17 · Sum the multiples of k](A17-sum-multiples-of-k.md) · [Loops](../themes/loops.md) · Next: [L05 · Until zero](L05-until-zero.md)
+
+</div>

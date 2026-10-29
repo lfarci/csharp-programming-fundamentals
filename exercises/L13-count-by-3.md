@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: repeat and count](../themes/loops-repeat.md) › L13
+---
+prev:
+  text: "L12 · Count down"
+  link: /exercises/L12-count-down
+next:
+  text: "L14 · Count by 5"
+  link: /exercises/L14-count-by-5
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L13
 
 # L13 · Count by 3
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: repeat and count](../themes/loops-repeat.md) | [Counter loop](../cookbook/01-counter-loop.md) | [L11](L11-count-from-a-to-b.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Count** · exercise 6 of 13 in this group (6 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Counter loop](../cookbook/01-counter-loop.md) | [L11](L11-count-from-a-to-b.md) |
+
+</div>
 
 ## Goal
 
@@ -72,4 +89,8 @@ Only after a real try: [open the solution for L13](../solutions/L13_CountBy3.cs)
 
 ---
 
-Previous: [L12 · Count down](L12-count-down.md) · [All exercises](README.md) · Next: [L14 · Count by 5](L14-count-by-5.md)
+<div class="gh-only">
+
+Previous: [L12 · Count down](L12-count-down.md) · [Loops](../themes/loops.md) · Next: [L14 · Count by 5](L14-count-by-5.md)
+
+</div>

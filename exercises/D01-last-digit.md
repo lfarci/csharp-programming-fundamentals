@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: take digits apart](../themes/loops-digits.md) › D01
+---
+prev:
+  text: "G06 · Pyramid"
+  link: /exercises/G06-pyramid
+next:
+  text: "D02 · Remove the last digit"
+  link: /exercises/D02-remove-last-digit
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D01
 
 # D01 · Last digit
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: take digits apart](../themes/loops-digits.md) | [Digit extraction](../cookbook/06-digit-extraction.md) | [B03](B03-seconds-to-hms.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Digits** · exercise 1 of 12 in this group (56 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Digit extraction](../cookbook/06-digit-extraction.md) | [B03](B03-seconds-to-hms.md) |
+
+</div>
 
 ## Goal
 
@@ -73,4 +90,8 @@ Only after a real try: [open the solution for D01](../solutions/D01_LastDigit.cs
 
 ---
 
-Previous: [G06 · Pyramid](G06-pyramid.md) · [All exercises](README.md) · Next: [D02 · Remove the last digit](D02-remove-last-digit.md)
+<div class="gh-only">
+
+Previous: [G06 · Pyramid](G06-pyramid.md) · [Loops](../themes/loops.md) · Next: [D02 · Remove the last digit](D02-remove-last-digit.md)
+
+</div>

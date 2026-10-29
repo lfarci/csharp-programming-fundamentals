@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // B03 · Seconds to hours, minutes, seconds
+    // B03 · Seconds to h, min, s
     // Exercise page: exercises/B03-seconds-to-hms.md
     public static class B03_SecondsToHms
     {

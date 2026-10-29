@@ -25,7 +25,7 @@ next: false
 
 ## Practise after this
 
-- [Hello World](../../themes/hello-world.md): start with [B01](../../exercises/B01-hello-you.md)
+- [Basics](../../themes/basics.md): start with [B01](../../exercises/B01-hello-you.md), [B02](../../exercises/B02-rectangle-calculator.md), [B03](../../exercises/B03-seconds-to-hms.md)
 
 ---
 

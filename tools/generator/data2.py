@@ -1,6 +1,6 @@
 from data1 import ex, E
 
-ex(id="A01", slug="sum-1-to-n", title="Sum from 1 to N", level="Guided", stars=1, theme="loops-running-result", recipes=["01","02"], pre=["L03"],
+ex(id="A01", slug="sum-1-to-n", title="Sum from 1 to N", level="Guided", stars=1, recipes=["01","02"], pre=["L03"],
    goal="Read N and print the sum 1 + 2 + … + N.",
    examples=[(["5"], ["Sum: 15"]), (["1"], ["Sum: 1"]), (["10"], ["Sum: 55"]), (["0"], ["Sum: 0"])],
    edge=["N = 0 → the loop runs 0 times → sum stays 0."],
@@ -20,7 +20,7 @@ for (int i = 1; i <= n; i++)
 Console.WriteLine($"Sum: {sum}");
 ''')
 
-ex(id="A02", slug="count-multiples-of-3", title="Count multiples of 3", level="Guided", stars=1, theme="loops-running-result", recipes=["03"], pre=["A01","C01"],
+ex(id="A02", slug="count-multiples-of-3", title="Count multiples of 3", level="Guided", stars=1, recipes=["03"], pre=["A01","C01"],
    goal="Read N. Count how many numbers from 1 to N (included) are divisible by 3.",
    examples=[(["10"], ["Count: 3"]), (["2"], ["Count: 0"]), (["9"], ["Count: 3"])],
    edge=["N smaller than 3 → 0.", "N itself divisible by 3 → counted."],
@@ -41,7 +41,7 @@ for (int i = 1; i <= n; i++)
 Console.WriteLine($"Count: {count}");
 ''')
 
-ex(id="A03", slug="sum-even-values", title="Sum of the even numbers", level="Independent", stars=1, theme="loops-running-result", recipes=["03"], pre=["A02"],
+ex(id="A03", slug="sum-even-values", title="Sum of the even numbers", level="Independent", stars=1, recipes=["03"], pre=["A02"],
    goal="Read N. Print the sum of the even numbers from 1 to N.",
    examples=[(["6"], ["Sum: 12"]), (["7"], ["Sum: 12"]), (["1"], ["Sum: 0"])],
    edge=["N = 1 → 0."],
@@ -62,7 +62,7 @@ for (int i = 1; i <= n; i++)
 Console.WriteLine($"Sum: {sum}");
 ''')
 
-ex(id="A04", slug="factorial", title="Factorial", level="Independent", stars=2, theme="loops-running-result", recipes=["02"], pre=["A01"], teacher="Factorial",
+ex(id="A04", slug="factorial", title="Factorial", level="Independent", stars=2, recipes=["02"], pre=["A01"], teacher="Factorial",
    goal="Read N (0 ≤ N ≤ 20) and print N! = 1 × 2 × … × N. By definition 0! = 1.",
    examples=[(["5"], ["5! = 120"]), (["0"], ["0! = 1"]), (["12"], ["12! = 479001600"]), (["20"], ["20! = 2432902008176640000"])],
    edge=["N = 0 → 1 (the loop runs 0 times, the box keeps its start value).", "13! does not fit in an `int` → use `long`."],
@@ -82,7 +82,7 @@ for (int i = 1; i <= n; i++)
 Console.WriteLine($"{n}! = {product}");
 ''')
 
-ex(id="A05", slug="sum-square-difference", title="Two accumulators: sum and squares", level="Independent", stars=2, theme="loops-running-result", recipes=["02"], pre=["A01"], euler=6,
+ex(id="A05", slug="sum-square-difference", title="Sum and sum of squares", level="Independent", stars=2, recipes=["02"], pre=["A01"], euler=6,
    goal="Read N. With **one** loop compute the sum 1+…+N and the sum of squares 1²+…+N². Print both, then (sum)² − (sum of squares).",
    examples=[(["3"], ["Sum: 6","Sum of squares: 14","Difference: 22"]), (["10"], ["Sum: 55","Sum of squares: 385","Difference: 2640"])],
    edge=["N = 1 → 1, 1, 0."],
@@ -105,7 +105,7 @@ Console.WriteLine($"Sum of squares: {squares}");
 Console.WriteLine($"Difference: {sum * sum - squares}");
 ''')
 
-ex(id="A06", slug="average-until-zero", title="Average until zero", level="Independent", stars=2, theme="loops-running-result", recipes=["10","02"], pre=["L05","A01"],
+ex(id="A06", slug="average-until-zero", title="Average until zero", level="Independent", stars=2, recipes=["10","02"], pre=["L05","A01"],
    goal="Read whole numbers until 0. Print their average. If no number was entered, print `No numbers.`",
    examples=[(["4","7","1","0"], ["Average: 4"]), (["1","2","0"], ["Average: 1.5"]), (["0"], ["No numbers."])],
    edge=["First value 0 → never divide by 0!", "The average can have decimals."],
@@ -140,7 +140,7 @@ else
 }
 ''')
 
-ex(id="A07", slug="integer-power", title="Integer power", level="Independent", stars=2, theme="loops-running-result", recipes=["02"], pre=["A04"],
+ex(id="A07", slug="integer-power", title="Integer power", level="Independent", stars=2, recipes=["02"], pre=["A04"],
    goal="Read a base and an exponent (exponent ≥ 0). Print base^exponent using a loop.",
    examples=[(["3","4"], ["3^4 = 81"]), (["2","10"], ["2^10 = 1024"]), (["5","0"], ["5^0 = 1"])],
    edge=["Exponent 0 → 1.", "Base 0 → 0 (except 0^0 = 1 by our convention)."],
@@ -162,7 +162,7 @@ for (int i = 0; i < exponent; i++)
 Console.WriteLine($"{baseValue}^{exponent} = {result}");
 ''')
 
-ex(id="A08", slug="multiples-of-3-or-5", title="Multiples of 3 or 5", level="Challenge", stars=2, theme="loops-running-result", recipes=["03"], pre=["A03"], euler=1,
+ex(id="A08", slug="multiples-of-3-or-5", title="Multiples of 3 or 5", level="Challenge", stars=2, recipes=["03"], pre=["A03"], euler=1,
    goal="Read N. Print the sum of all numbers **below** N that are multiples of 3 or 5.",
    examples=[(["10"], ["Sum: 23"]), (["20"], ["Sum: 78"]), (["1"], ["Sum: 0"])],
    edge=["15 is a multiple of 3 **and** 5: count it once.", "\"below N\" → N itself is not included."],
@@ -184,7 +184,7 @@ for (int i = 1; i < n; i++)
 Console.WriteLine($"Sum: {sum}");
 ''')
 
-ex(id="A09", slug="min-and-max-until-zero", title="Smallest and largest until zero", level="Independent", stars=2, theme="loops-running-result", recipes=["10","04"], pre=["A06","C02"],
+ex(id="A09", slug="min-and-max-until-zero", title="Min and max until zero", level="Independent", stars=2, recipes=["10","04"], pre=["A06","C02"],
    goal="Read whole numbers until 0. Print the smallest and the largest. If no number was entered, print `No numbers.`",
    examples=[(["4","-2","9","0"], ["Min: -2","Max: 9"]), (["-5","-3","0"], ["Min: -5","Max: -3"]), (["0"], ["No numbers."])],
    edge=["Only negative numbers → max must not be 0!", "Only one number → min = max."],
@@ -228,7 +228,7 @@ else
 }
 ''')
 
-ex(id="A10", slug="sum-of-a-series", title="Sum of a series", level="Challenge", stars=2, theme="loops-running-result", recipes=["02"], pre=["A01"],
+ex(id="A10", slug="sum-of-a-series", title="Sum of a series", level="Challenge", stars=2, recipes=["02"], pre=["A01"],
    goal="Read N. Print the sum 1 + 1/2 + 1/3 + … + 1/N with 4 decimals.",
    examples=[(["1"], ["Sum: 1.0000"]), (["2"], ["Sum: 1.5000"]), (["4"], ["Sum: 2.0833"])],
    edge=["`1 / 2` with two `int`s is **0**! Use `1.0 / i`."],

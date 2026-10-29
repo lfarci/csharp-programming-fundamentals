@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: take digits apart](../themes/loops-digits.md) › D06
+---
+prev:
+  text: "D05 · Reverse a number"
+  link: /exercises/D05-reverse-a-number
+next:
+  text: "S01 · Trace two variables"
+  link: /exercises/S01-trace-updates
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D06
 
 # D06 · Palindrome number
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Challenge | hard | [Loops: take digits apart](../themes/loops-digits.md) | [Digit extraction](../cookbook/06-digit-extraction.md) | [D05](D05-reverse-a-number.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Digits** · exercise 12 of 12 in this group (67 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Challenge | hard | write code | [Digit extraction](../cookbook/06-digit-extraction.md) | [D05](D05-reverse-a-number.md) |
+
+</div>
 
 ## Goal
 
@@ -75,4 +92,8 @@ Only after a real try: [open the solution for D06](../solutions/D06_PalindromeNu
 
 ---
 
-Previous: [D05 · Reverse a number](D05-reverse-a-number.md) · [All exercises](README.md) · Next: [S01 · Trace two changing variables (paper)](S01-trace-updates.md)
+<div class="gh-only">
+
+Previous: [D05 · Reverse a number](D05-reverse-a-number.md) · [Loops](../themes/loops.md) · Next: [S01 · Trace two variables](S01-trace-updates.md)
+
+</div>

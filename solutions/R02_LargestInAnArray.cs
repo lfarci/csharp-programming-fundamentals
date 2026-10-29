@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // R02 · Largest value in an array
+    // R02 · Position of the largest
     // Exercise page: exercises/R02-largest-in-an-array.md
     public static class R02_LargestInAnArray
     {

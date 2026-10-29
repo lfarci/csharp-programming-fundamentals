@@ -1,34 +1,35 @@
-# Pages built from the themes (exec'd by gen.py: uses ORDER, byid, fname, stars, rlinks, RECIPES, DRILLS, X, THEMES).
-# exercises/README.md (overview), themes/<slug>.md, ROADMAP.md, docs/progress-checklist.md, diagrams/roadmap.d2.
+# Pages built from the themes (exec'd by gen.py: uses ORDER, byid, fname, stars, kind, rlinks, RECIPES, DRILLS, X, THEMES, GROUP).
+# exercises/README.md (overview), themes/<slug>.md, ROADMAP.md, docs/progress-checklist.md, diagrams/roadmap.d2, docs/README.md.
 from learn import TRACKER, PARTS as MSL, MODULE, CERT, SERIES, EPISODES, EPISODE_ORDER, DROPPED, THUMBS, NOTES, CERT_SOURCES, VIDEOS, TOUR, THEORY, path_url, module_url, episode_url, modules_md, episodes_md
 assert set(THEORY) == {x["slug"] for x in THEMES}, "learn.py THEORY must list every theme exactly once"
 TH_EX = {x["slug"]: [e for e in ORDER if e["theme"] == x["slug"]] for x in THEMES}
 NUM = {x["slug"]: i for i, x in enumerate(THEMES, 1)}
 PARTS = list(dict.fromkeys(x["part"] for x in THEMES))  # roadmap groups, aligned with the 6 Microsoft Learn parts
-def kind(e):
-    if e.get("paper"): return "paper"
-    if e.get("task") == "parsons": return "arrange the lines"
-    if e.get("task") == "debug": return "fix the bugs"
-    return "write code"
 def mdlinks(items): return " · ".join(f"[{a}]({b})" for a, b in items)
+def gex(g_): return [byid[i_] for i_ in g_["ids"]]
+def recipe_link(r, up="../"): return f"[Recipe {int(r)} · {RECIPES[r][0]}]({up}cookbook/{RECIPES[r][1]}.md)"
+def ex_row(e, up="../exercises/"):
+    return f"| {e['id']} | [{e['title']}]({up}{fname(e)}.md) | {kind(e)} | {e['level']} | {stars(e['stars'])} |"
 
 # ---------- exercises/README.md: overview of all themes ----------
 out = ["[Home](../README.md) › Exercises", "", "# Exercises", "",
-       f"{len(ORDER)} small exercises in {len(THEMES)} themes. Do the themes in order; inside a theme, do the exercises from top to bottom. Each one adds **one** new difficulty.", "",
+       f"{len(ORDER)} small exercises in {len(THEMES)} themes. Each theme is split into small groups of the **same pattern**. Do them in order: each exercise adds **one** new difficulty.", "",
        "Start one with `./ex start A04`, check it with `./ex check`. New here? Read [Getting started](../docs/getting-started.md) first.", "",
        "<ExercisesOverview />", "", '<div class="gh-only">', "",
-       "| # | Theme | What you practise | Exercises |", "| ---: | --- | --- | ---: |"]
+       "| # | Theme | Groups | Exercises |", "| ---: | --- | --- | ---: |"]
 for x in THEMES:
-    out.append(f"| {NUM[x['slug']]} | [{x['title']}](../themes/{x['slug']}.md) | {x['summary']} | {len(TH_EX[x['slug']])} |")
+    out.append(f"| {NUM[x['slug']]} | [{x['title']}](../themes/{x['slug']}.md) | " + ", ".join(f"[{g_['title']}](../themes/{x['slug']}.md#{g_['slug']}) ({len(g_['ids'])})" for g_ in x["groups"]) + f" | {len(TH_EX[x['slug']])} |")
 out += ["", "</div>", "",
         "## Levels", "", "- **Guided**: small steps, the hints help a lot.", "- **Independent**: the same idea, alone.", "- **Challenge**: a new problem; combine recipes.", "",
         "## Drill sets (same pattern, many times)", "",
-        "Want to practise one pattern today? Do **one row**, in order. The exercises change only small details, so you see the **same pattern** again and again.", "",
+        "Want to practise one pattern today? Do **one set**, in order. The exercises change only small details, so you see the **same pattern** again and again.", "",
+        "<DrillSets />", "", '<div class="gh-only">', "",
         "| Drill | Recipe | Exercises, in order |", "| --- | --- | --- |"]
 for name, r, ids in DRILLS:
     for i in ids: assert i in byid, f"drill set lists unknown exercise {i}"
+    assert [POS[i] for i in ids] == sorted(POS[i] for i in ids), f"drill set {name!r} is not in course order"
     out.append(f"| {name} | [{RECIPES[r][0]}](../cookbook/{RECIPES[r][1]}.md) | " + ", ".join(f"[{i}]({fname(byid[i])}.md)" for i in ids) + " |")
-out += ["", "## Extra challenges", "", "Bigger problems for later, once their theme feels easy.", "", "| Problem | Theme | Do first |", "| --- | --- | --- |"]
+out += ["", "</div>", "", "## Extra challenges", "", "Bigger problems for later, once their theme feels easy.", "", "| Problem | Theme | Do first |", "| --- | --- | --- |"]
 for x in X:
     if x["source"].startswith("Project"):
         out.append(f"| [{x['source']}: {x['title']}]({x['url']}) | {BYSLUG[x['theme']]['title']} | {x['pre']} |")
@@ -37,25 +38,42 @@ out += ["", "## When you are stuck", "", "1. Read the recipe again in the [cookb
 open(f"{ROOT}/exercises/README.md", "w").write("\n".join(out))
 if os.path.exists(f"{ROOT}/exercises/dependency-graph.md"): os.remove(f"{ROOT}/exercises/dependency-graph.md")
 
+# ---------- the "Learn the theory" card: Watch one video, Read one module, Then practise ----------
+def learn_card(x):
+    th = THEORY[x["slug"]]; ep, mo = th["episodes"][0], th["modules"][0]; first = TH_EX[x["slug"]][0]
+    return {"watch": {"title": EPISODES[ep][0], "minutes": EPISODES[ep][1], "link": f"/learn/videos/{ep}"},
+            "read": {"title": MODULE[mo][1], "part": MODULE[mo][0], "url": module_url(mo)},
+            "first": {"id": first["id"], "title": first["title"], "link": f"/exercises/{fname(first)}"},
+            "path": {"num": th["part"], "title": MSL[th["part"]][0], "url": path_url(th["part"])},
+            "more": {"modules": [{"title": MODULE[m_][1], "part": MODULE[m_][0], "url": module_url(m_)} for m_ in th["modules"][1:]],
+                     "videos": [{"title": EPISODES[e_][0], "link": f"/learn/videos/{e_}"} for e_ in th["episodes"][1:]],
+                     "docs": [{"title": a_, "url": b_} for a_, b_ in x["docs"]]}}
+LEARN = {x["slug"]: learn_card(x) for x in THEMES}
+
 # ---------- themes/<slug>.md ----------
 os.makedirs(f"{ROOT}/themes", exist_ok=True)
 for old in glob.glob(f"{ROOT}/themes/*.md"): os.remove(old)
 for k, x in enumerate(THEMES):
-    s = x["slug"]; L = [f"[Home](../README.md) › [Roadmap](../ROADMAP.md) › Theme {k+1} of {len(THEMES)}", "", f"# {x['title']}", "", x["summary"], "",
-                        "## After this theme you can", ""] + [f"- {o}" for o in x["objectives"]] + ["",
-         "## Exercises", "", "Do them from top to bottom. Tick each one when `./ex check` says DONE.", "",
-         f'<ThemeExercises theme="{s}" />', "", '<div class="gh-only">', "", "| ID | Exercise | Kind | Level | Effort |", "| --- | --- | --- | --- | --- |"]
-    for e in TH_EX[s]:
-        L.append(f"| {e['id']} | [{e['title']}](../exercises/{fname(e)}.md) | {kind(e)} | {e['level']} | {stars(e['stars'])} |")
-    L += ["", "</div>", "", "## What to learn", "", f"- **C#:** {x['learn']}"]
-    if x["recipes"]: L.append("- **Recipes:** " + ", ".join(f"[{RECIPES[r][0]}](../cookbook/{RECIPES[r][1]}.md)" for r in x["recipes"]))
-    th = THEORY[s]
-    L += ["", '<div class="learn-box">', "", f"**Learn the theory on Microsoft Learn** ([Part {th['part']}: {MSL[th['part']][0]}]({path_url(th['part'])}))", "",
-          "- **Modules:** " + modules_md(th["modules"]),
-          f"- **Video ({SERIES[0]}):** " + " · ".join(f"[{EPISODES[e_][0]}](../learn/videos/{e_}.md)" for e_ in th["episodes"])]
+    s = x["slug"]; c = LEARN[s]
+    L = [f"[Home](../README.md) › [Roadmap](../ROADMAP.md) › Theme {k+1} of {len(THEMES)}", "", f"# {x['title']}", "", x["summary"], "",
+         f'<LearnCard theme="{s}" />', "", '<div class="gh-only">', "", "**Before you start:**", "",
+         f"1. **Watch:** [{c['watch']['title']}](../learn/videos/{THEORY[s]['episodes'][0]}.md) ({c['watch']['minutes']} min)",
+         f"2. **Read:** [{c['read']['title']}]({c['read']['url']}) (Microsoft Learn, Part {c['read']['part']})",
+         f"3. **Then practise:** [{c['first']['id']} · {c['first']['title']}](../exercises/{fname(TH_EX[s][0])}.md)", "",
+         "<details><summary>More on Microsoft Learn</summary>", ""]
+    if c["more"]["modules"]: L.append("- **Modules:** " + modules_md(THEORY[s]["modules"][1:]))
+    if c["more"]["videos"]: L.append("- **Videos:** " + " · ".join(f"[{EPISODES[e_][0]}](../learn/videos/{e_}.md)" for e_ in THEORY[s]["episodes"][1:]))
     if x["docs"]: L.append("- **Reference:** " + mdlinks(x["docs"]))
-    L += ["", "</div>"]
-    L += ["", "## Ready for the next theme when", "", f"{x['ready'][0].upper()}{x['ready'][1:]}", "", "---", ""]
+    L += ["", "</details>", "", "</div>", "",
+          "## After this theme you can", ""] + [f"- {o}" for o in x["objectives"]] + ["",
+          "## The groups", "", "Do the groups in order, and the exercises of a group from top to bottom. Tick each one when `./ex check` says DONE.", "",
+          f'<ThemeGroups theme="{s}" />', "", '<div class="gh-only">', ""]
+    L += [f"{i_}. [{g_['title']}](#{g_['slug']}): {g_['about']} ({len(g_['ids'])} exercises)" for i_, g_ in enumerate(x["groups"], 1)] + ["", "</div>", ""]
+    for i_, g_ in enumerate(x["groups"], 1):
+        L += [f"## {g_['title']}", "", g_["about"] + (f" Lesson: {recipe_link(g_['recipe'])}." if g_["recipe"] else ""), "",
+              f'<ThemeExercises theme="{s}" group="{g_["slug"]}" />', "", '<div class="gh-only">', "",
+              "| ID | Exercise | Kind | Level | Effort |", "| --- | --- | --- | --- | --- |"] + [ex_row(e) for e in gex(g_)] + ["", "</div>", ""]
+    L += ["## Ready for the next theme when", "", f"{x['ready'][0].upper()}{x['ready'][1:]}", "", "---", ""]
     nav_ = []
     if k: nav_.append(f"Previous: [{THEMES[k-1]['title']}]({THEMES[k-1]['slug']}.md)")
     nav_.append("[Roadmap](../ROADMAP.md)")
@@ -65,14 +83,14 @@ for k, x in enumerate(THEMES):
 
 # ---------- ROADMAP.md ----------
 R = ["[Home](README.md) › Roadmap", "", "# Roadmap", "",
-     "The course is a path of themes, grouped like the 6 parts of [Microsoft Learn](learn/microsoft-learn.md) *Get started with C#*. Do a Microsoft Learn part, then its themes here, **in order, at your own pace**. Move on when the \"ready\" check of a theme works without help.", "",
+     "The course is a path of themes, grouped like the 6 parts of [Microsoft Learn](learn/microsoft-learn.md) *Get started with C#*. Do a Microsoft Learn part, then its theme here, **in order, at your own pace**. Move on when the \"ready\" check of a theme works without help.", "",
      '<div class="gh-only">', "",
-     "![The roadmap: " + "; ".join(f"{part}: " + ", ".join(x["title"] for x in THEMES if x["part"] == part) for part in PARTS) + "](diagrams/roadmap.svg)", "", "</div>", "",
+     "![The roadmap: " + "; ".join(f"{part}: " + ", ".join(f"{x['title']} (" + ", ".join(g_["title"] for g_ in x["groups"]) + ")" for x in THEMES if x["part"] == part) for part in PARTS) + "](diagrams/roadmap.svg)", "", "</div>", "",
      "Before the first theme, read [How to read an exercise](docs/reading-an-exercise.md). You will use it for every exercise.", "",
      "<RoadmapPath />", "", '<div class="gh-only">', ""]
-R += ["| # | Part | Theme | What you learn | Exercises |", "| --- | --- | --- | --- | --- |"]
+R += ["| # | Part | Theme | Groups | Exercises |", "| --- | --- | --- | --- | --- |"]
 for x in THEMES:
-    R.append(f"| {NUM[x['slug']]} | {x['part']} | [{x['title']}](themes/{x['slug']}.md) | {x['summary']} | {len(TH_EX[x['slug']])} |")
+    R.append(f"| {NUM[x['slug']]} | {x['part']} | [{x['title']}](themes/{x['slug']}.md) | " + ", ".join(f"[{g_['title']}](themes/{x['slug']}.md#{g_['slug']})" for g_ in x["groups"]) + f" | {len(TH_EX[x['slug']])} |")
 R.append("")
 R += ["</div>", "", "## After the roadmap", "", "Objects and classes come next in most courses. There are no exercises for them here yet: follow your course or Microsoft Learn, and come back to the [cookbook](cookbook/README.md) when a method needs a loop.", "",
       "---", "", "[Home](README.md) · Next: [Getting started](docs/getting-started.md)", ""]
@@ -82,12 +100,13 @@ open(f"{ROOT}/ROADMAP.md", "w").write("\n".join(R))
 D = ["# Generated by tools/generator (themes.py). Render: tools/diagrams.sh", "...@_style", "direction: down", ""]
 for p_i, part in enumerate(PARTS):
     xs = [x for x in THEMES if x["part"] == part]
-    # long parts wrap onto rows of 4 so the picture stays readable on a phone
-    # a grid of equal cards, 4 per row, read left to right; numbers give the order
-    D += [f'part{p_i}: "{part}" {{', "  class: part", f"  grid-rows: {(len(xs) + 3) // 4}", "  grid-columns: 4", "  grid-gap: 24", ""]
+    D += [f'part{p_i}: "{part}" {{', "  class: part", ""]
     for x in xs:
-        name = x["title"].replace("Loops: ", ""); name = name[:1].upper() + name[1:]
-        D.append(f'  t{NUM[x["slug"]]}: "{NUM[x["slug"]]}. {name}" {{class: step; width: 270; height: 64}}')
+        gs = x["groups"]; cols = min(3, len(gs))
+        D += [f'  t{NUM[x["slug"]]}: "{NUM[x["slug"]]}. {x["title"]}" {{', "    class: part", f"    grid-rows: {(len(gs) + cols - 1) // cols}", f"    grid-columns: {cols}", "    grid-gap: 16"]
+        for j_, g_ in enumerate(gs, 1):
+            D.append(f'    g{j_}: "{NUM[x["slug"]]}.{j_} {g_["title"]}" {{class: step; width: 230; height: 56}}')
+        D += ["  }"]
     D += ["}", ""]
 D += [f"part{i} -> part{i + 1}" for i in range(len(PARTS) - 1)] + [""]
 os.makedirs(f"{ROOT}/diagrams", exist_ok=True)
@@ -99,12 +118,28 @@ pc = ["[Home](../README.md) › Progress checklist", "", "# My progress checklis
       "**Solved** = `./ex check` says DONE. **Mastered** = you also solved the mastery check alone, on another day.", ""]
 for x in THEMES:
     pc += [f"## {x['title']}", ""]
-    for e in TH_EX[x["slug"]]:
-        pc += [f"- [ ] [{e['id']} · {e['title']}](../exercises/{fname(e)}.md) solved", "  - [ ] mastered (another day, alone)"]
-    pc.append("")
+    for g_ in x["groups"]:
+        pc += [f"### {x['title']}: {g_['title']}", ""]
+        for e in gex(g_):
+            pc += [f"- [ ] [{e['id']} · {e['title']}](../exercises/{fname(e)}.md) solved", "  - [ ] mastered (another day, alone)"]
+        pc.append("")
 pc += ["---", "", "[Home](../README.md) · [All exercises](../exercises/README.md)", ""]
 open(f"{ROOT}/docs/progress-checklist.md", "w").write("\n".join(pc))
 
+# ---------- docs/README.md: the study skills index ----------
+SKILLS = [("How to read an exercise", "reading-an-exercise", "Find what goes in, what comes out, and a tiny example, before you code."),
+          ("Solving a problem", "problem-solving", "Turn a problem into small steps you can write."),
+          ("How to practice", "how-to-practice", "The shape of one practice session, and what to ask yourself."),
+          ("Glossary", "glossary", "Every new word of the course, in plain English."),
+          ("Progress checklist (paper)", "progress-checklist", "Every exercise as a box to tick on paper.")]
+SK = ["[Home](../README.md) › Study skills", "", "# Study skills", "", "How to work, not what to code: read these once, and come back when you are stuck.", "",
+      "<CardList list=\"skills\" />", "", '<div class="gh-only">', ""] + [f"{i_}. [{a_}]({b_}.md): {c_}" for i_, (a_, b_, c_) in enumerate(SKILLS, 1)] + ["", "</div>", "",
+      "---", "", "[Home](../README.md) · Next: [How to read an exercise](reading-an-exercise.md)", ""]
+open(f"{ROOT}/docs/README.md", "w").write("\n".join(SK))
+RECIPE_CARDS = []
+for r, (name, f_) in RECIPES.items():
+    m_ = re.search(r"^# Recipe \d+ · [^—\n]+— (.+)$", open(f"{ROOT}/cookbook/{f_}.md", encoding="utf-8").read(), re.M)
+    RECIPE_CARDS.append({"num": int(r), "title": name, "text": m_.group(1).strip() if m_ else "", "link": f"/cookbook/{f_}"})
 
 # ---------- learn/: the theory comes from Microsoft Learn ----------
 os.makedirs(f"{ROOT}/learn", exist_ok=True)
@@ -230,4 +265,7 @@ _site["flow"] = [{"num": NUM[x["slug"]], "title": x["title"], "link": f"/themes/
                   "part": MODULE[THEORY[x["slug"]]["modules"][0]][0], "module": MODULE[THEORY[x["slug"]]["modules"][0]][1], "moduleUrl": module_url(THEORY[x["slug"]]["modules"][0]),
                   "video": EPISODES[THEORY[x["slug"]]["episodes"][0]][0], "videoPage": f"/learn/videos/{THEORY[x['slug']]['episodes'][0]}",
                   "exercises": len(TH_EX[x["slug"]]), "first": {"id": TH_EX[x["slug"]][0]["id"], "link": f"/exercises/{fname(TH_EX[x['slug']][0])}"}} for x in THEMES]
+_site["learn"] = LEARN
+_site["recipes"] = RECIPE_CARDS
+_site["skills"] = [{"num": i_, "title": a_, "text": c_, "link": f"/docs/{b_}"} for i_, (a_, b_, c_) in enumerate(SKILLS, 1)]
 json.dump(_site, open(f"{ROOT}/.vitepress/course.json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)

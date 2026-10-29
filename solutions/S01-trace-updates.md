@@ -1,6 +1,6 @@
 [Home](../README.md) › [Solutions](README.md) › S01
 
-# Answer key · S01 Trace two changing variables (paper)
+# Answer key · S01 Trace two variables
 
 | Turn | `next` | `a` after | `b` after | Output |
 | ---: | ---: | ---: | ---: | --- |

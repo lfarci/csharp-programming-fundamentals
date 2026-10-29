@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: draw in 2D](../themes/loops-2d.md) › G03
+---
+prev:
+  text: "G14 · Numbers in columns"
+  link: /exercises/G14-numbers-in-columns
+next:
+  text: "G02 · Draw a right triangle"
+  link: /exercises/G02-right-triangle
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw rows and grids](../themes/loops.md#draw-rows-and-grids) › G03
 
 # G03 · Multiplication grid
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: draw in 2D](../themes/loops-2d.md) | [Nested grid](../cookbook/08-nested-grid.md) | [G01](G01-rectangle.md), [L04](L04-multiplication-table.md), [G14](G14-numbers-in-columns.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Draw rows and grids** · exercise 8 of 8 in this group (47 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [Nested grid](../cookbook/08-nested-grid.md) | [G01](G01-rectangle.md), [L04](L04-multiplication-table.md), [G14](G14-numbers-in-columns.md) |
+
+</div>
 
 ## Goal
 
@@ -71,4 +88,8 @@ Only after a real try: [open the solution for G03](../solutions/G03_Multiplicati
 
 ---
 
-Previous: [G14 · Numbers in columns](G14-numbers-in-columns.md) · [All exercises](README.md) · Next: [G04 · Hollow rectangle](G04-hollow-rectangle.md)
+<div class="gh-only">
+
+Previous: [G14 · Numbers in columns](G14-numbers-in-columns.md) · [Loops](../themes/loops.md) · Next: [G02 · Draw a right triangle](G02-right-triangle.md)
+
+</div>

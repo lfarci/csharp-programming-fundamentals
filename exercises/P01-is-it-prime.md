@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: search](../themes/loops-search.md) › P01
+---
+prev:
+  text: "P06 · Smallest divisor"
+  link: /exercises/P06-smallest-divisor
+next:
+  text: "P02 · All primes up to N"
+  link: /exercises/P02-primes-up-to-n
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops.md#search-and-combine) › P01
 
 # P01 · Is it prime?
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: search](../themes/loops-search.md) | [Flag/search](../cookbook/05-flag-search.md) | [A02](A02-count-multiples-of-3.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Search and combine** · exercise 6 of 9 in this group (78 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [Flag/search](../cookbook/05-flag-search.md) | [P06](P06-smallest-divisor.md) |
+
+</div>
 
 ## Goal
 
@@ -82,4 +99,8 @@ Only after a real try: [open the solution for P01](../solutions/P01_IsItPrime.cs
 
 ---
 
-Previous: [S03 · Even Fibonacci sum](S03-even-fibonacci-sum.md) · [All exercises](README.md) · Next: [P02 · All primes up to N](P02-primes-up-to-n.md)
+<div class="gh-only">
+
+Previous: [P06 · Smallest divisor](P06-smallest-divisor.md) · [Loops](../themes/loops.md) · Next: [P02 · All primes up to N](P02-primes-up-to-n.md)
+
+</div>

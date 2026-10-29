@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // R03 · Count matches in an array
+    // R03 · Count matches
     // Exercise page: exercises/R03-count-matches.md
     //
     // Goal: Give back how many times target appears in the array.

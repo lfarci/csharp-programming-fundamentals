@@ -27,6 +27,7 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **`foreach`** | A *loop* that visits every item of an *array* or *List*, in order, without an *index*. | `foreach (int v in values)` |
 | **Fork** | Your own copy of a *repository* on your GitHub account, to save your work online. | the **Fork** button on GitHub |
 | **Git** | A tool that keeps the history of files and copies them between GitHub and your computer. | `git pull` gets updates |
+| **Group** | A small part of a *theme*: exercises of the same pattern, in order. The *Loops* theme has 9 groups, such as *Count* and *Digits*. | Loops › Count |
 | **Index** | The position of an item in an *array* or string. The first index is 0. | `values[0]` |
 | **Infinite loop** | A *loop* that never stops, because its *condition* never becomes false. | forgetting `i++` |
 | **Input** | What the program reads (from the keyboard or a file). | `Console.ReadLine()` |
@@ -62,7 +63,7 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **Sync code** | A short line printed by `./ex progress` that lists your finished exercises. Paste it on the website's My progress page. | `CPF1:A1-4;L11` |
 | **Template** | A form with empty places to fill. The reading template helps you organise your ideas before coding. | INPUT, OUTPUT, STEPS |
 | **Terminal** | A window where you type commands like `dotnet run`. | |
-| **Theme** | One chapter of the course, with its own exercises, such as *Conditions* or *Loops: draw in 2D*. The roadmap lists them in order. | Theme 4: Loops, repeat and count |
+| **Theme** | One chapter of the course, such as *Basics* or *Loops*. It is split into *groups* of exercises. The roadmap lists the themes in order. | Theme 2: Loops |
 | **Trace table** | A table on paper with one row per *iteration*, showing each *variable*'s value. | |
 | **Type** | The kind of value a *variable* holds: `int` (whole number), `double` (decimal), `string` (text), `bool` (true or false). | `int count = 0;` |
 | **Unit test** | Code that calls your *method* with an example and checks the result. `./ex check` runs them for you. | `SumTo(5)` must give `15` |

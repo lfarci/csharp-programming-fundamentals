@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: take digits apart](../themes/loops-digits.md) › D11
+---
+prev:
+  text: "D12 · Product of the digits"
+  link: /exercises/D12-product-of-digits
+next:
+  text: "D07 · Fix: digit sum"
+  link: /exercises/D07-fix-digit-sum
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D11
 
 # D11 · Largest digit
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: take digits apart](../themes/loops-digits.md) | [Digit extraction](../cookbook/06-digit-extraction.md), [Min/max](../cookbook/04-min-max.md) | [D04](D04-digit-sum.md), [C02](C02-largest-of-three.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Digits** · exercise 9 of 12 in this group (64 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [Digit extraction](../cookbook/06-digit-extraction.md), [Min/max](../cookbook/04-min-max.md) | [D04](D04-digit-sum.md), [C02](C02-largest-of-three.md) |
+
+</div>
 
 ## Goal
 
@@ -73,4 +90,8 @@ Only after a real try: [open the solution for D11](../solutions/D11_LargestDigit
 
 ---
 
-Previous: [D10 · Count one digit](D10-count-a-digit.md) · [All exercises](README.md) · Next: [D12 · Product of the digits](D12-product-of-digits.md)
+<div class="gh-only">
+
+Previous: [D12 · Product of the digits](D12-product-of-digits.md) · [Loops](../themes/loops.md) · Next: [D07 · Fix: digit sum](D07-fix-digit-sum.md)
+
+</div>

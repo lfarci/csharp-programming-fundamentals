@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: draw in 2D](../themes/loops-2d.md) › G09
+---
+prev:
+  text: "G01 · Draw a rectangle"
+  link: /exercises/G01-rectangle
+next:
+  text: "G14 · Numbers in columns"
+  link: /exercises/G14-numbers-in-columns
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw rows and grids](../themes/loops.md#draw-rows-and-grids) › G09
 
 # G09 · Rows of numbers
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: draw in 2D](../themes/loops-2d.md) | [Nested grid](../cookbook/08-nested-grid.md) | [G08](G08-solid-square.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Draw rows and grids** · exercise 6 of 8 in this group (45 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Nested grid](../cookbook/08-nested-grid.md) | [G08](G08-solid-square.md) |
+
+</div>
 
 ## Goal
 
@@ -71,4 +88,8 @@ Only after a real try: [open the solution for G09](../solutions/G09_NumberRows.c
 
 ---
 
-Previous: [G08 · Solid square](G08-solid-square.md) · [All exercises](README.md) · Next: [G02 · Draw a right triangle](G02-right-triangle.md)
+<div class="gh-only">
+
+Previous: [G01 · Draw a rectangle](G01-rectangle.md) · [Loops](../themes/loops.md) · Next: [G14 · Numbers in columns](G14-numbers-in-columns.md)
+
+</div>

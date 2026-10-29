@@ -12,7 +12,7 @@ def same(*_): pass
 NOTE_P = "//! "  # starter text after this marker is used as is (no TODO line added)
 
 # ---------- ladder: conditions ----------
-ex(id="C04", slug="grade-from-a-score", title="Grade from a score", level="Independent", stars=2, theme="conditions", recipes=[], pre=["C03"],
+ex(id="C04", slug="grade-from-a-score", title="Grade from a score", level="Independent", stars=2, recipes=[], pre=["C03"],
    goal="", examples=[], edge=["Exactly 90, 80, 70 and 50: which grade? Test the borders.", "0 and 100."],
    constraints=["Use one `if` / `else if` / `else` chain. Test the biggest border first."],
    hints=["Write the borders on a number line first: 0 … 50 … 70 … 80 … 90 … 100.",
@@ -43,7 +43,7 @@ else
 GOALS["C04"] = "Give back the grade for a score from 0 to 100: 90 or more → `\"A\"`, 80–89 → `\"B\"`, 70–79 → `\"C\"`, 50–69 → `\"D\"`, below 50 → `\"F\"`."
 
 # ---------- ladder: one loop on one line, before nested loops ----------
-ex(id="L09", slug="draw-a-row", title="Draw one row", level="Guided", stars=1, theme="loops-2d", recipes=["01","08"], pre=["L03"], sort="G001",
+ex(id="L09", slug="draw-a-row", title="Draw one row", level="Guided", stars=1, recipes=["01","08"], pre=["L03"],
    goal="", examples=[], edge=["`DrawRow(0)` prints only the line break."],
    constraints=["Use `Console.Write` inside the loop and **one** `Console.WriteLine()` after it."],
    hints=["`Console.Write(\"*\")` prints a star and stays on the same line. `Console.WriteLine()` ends the line.",
@@ -57,7 +57,7 @@ M["L09"] = dict(run="", methods=[("public static void DrawRow(int width)", '''fo
 Console.WriteLine();''', "")], cases=[("DrawRow",[5],lines("*****")),("DrawRow",[1],lines("*")),("DrawRow",[0],lines(""))])
 GOALS["L09"] = "Print `width` stars **on one line**, then end the line. `DrawRow(5)` prints `*****`. This is the inside of every 2D drawing."
 
-ex(id="L10", slug="numbers-on-one-line", title="Numbers on one line", level="Independent", stars=2, theme="loops-2d", recipes=["01","08"], pre=["L09"], sort="G002",
+ex(id="L10", slug="numbers-on-one-line", title="Numbers on one line", level="Guided", stars=1, recipes=["01","08"], pre=["L09"],
    goal="", examples=[], edge=["`PrintNumbers(1)` prints just `1`: no space at the end.", "`PrintNumbers(0)` prints only the line break."],
    constraints=["No space after the last number. Use one `if` inside the loop."],
    hints=["Print the number with `Console.Write(i)`.",
@@ -77,7 +77,7 @@ Console.WriteLine();''', "")], cases=[("PrintNumbers",[4],lines("1 2 3 4")),("Pr
 GOALS["L10"] = "Print the numbers 1 to n on one line, with one space between them, then end the line. `PrintNumbers(4)` prints `1 2 3 4`."
 
 # ---------- Parsons: arrange the lines ----------
-ex(id="A11", slug="arrange-sum-of-squares", title="Arrange the lines: sum of squares", level="Guided", stars=1, theme="loops-running-result", recipes=["02"], pre=["L03"], sort="A005", task="parsons",
+ex(id="A11", slug="arrange-sum-of-squares", title="Arrange: sum of squares", level="Guided", stars=1, recipes=["02"], pre=["L03"], task="parsons",
    goal="", examples=[], edge=["`SumOfSquares(0)` must give 0: does your order still work?"],
    constraints=["Use **every** line once. Do not add new lines; you only remove the `//` and change the order."],
    hints=["Which line must come before the loop? Which one after it?",
@@ -102,7 +102,7 @@ return sum;''', NOTE_P + '''Put these lines in the right order, then remove the 
 return -1;''')], cases=[("SumOfSquares",[3],14),("SumOfSquares",[1],1),("SumOfSquares",[0],0),("SumOfSquares",[10],385)])
 GOALS["A11"] = "Give back 1² + 2² + … + n². `SumOfSquares(3)` is 1 + 4 + 9 = 14. All the lines are given, mixed up: put them in order."
 
-ex(id="G07", slug="arrange-a-square", title="Arrange the lines: a square", level="Guided", stars=1, theme="loops-2d", recipes=["08"], pre=["L09"], sort="G003", task="parsons",
+ex(id="G07", slug="arrange-a-square", title="Arrange: a square", level="Guided", stars=1, recipes=["08"], pre=["L09"], task="parsons",
    goal="", examples=[], edge=["`DrawSquare(1)` prints one `#`."],
    constraints=["Use every line once. You only remove the `//` and change the order."],
    hints=["Start from [L09 Draw one row](L09-draw-a-row.md): the inner loop is that row.",
@@ -131,7 +131,7 @@ GOALS["G07"] = "Print a square of `#`, `size` wide and `size` high. All the line
 
 # ---------- debugging: fix the bugs ----------
 DEBUG_RULE = "The file already has code. It compiles, but it has bugs. Change as **little** as you can."
-ex(id="A12", slug="fix-count-multiples-of-7", title="Fix the bugs: count multiples of 7", level="Guided", stars=1, theme="loops-running-result", recipes=["03"], pre=["A02"], sort="A025", task="debug",
+ex(id="A12", slug="fix-count-multiples-of-7", title="Fix: multiples of 7", level="Guided", stars=1, recipes=["03"], pre=["A02"], task="debug",
    goal="", examples=[], edge=["`CountMultiplesOf7(7)`: is 7 itself counted?"],
    constraints=[DEBUG_RULE, "There are **2** bugs."],
    hints=["Run `./ex check A12` first and read which example fails. Then trace `CountMultiplesOf7(7)` on paper.",
@@ -159,7 +159,7 @@ for (int i = 1; i < n; i++)
 return count;''')], cases=[("CountMultiplesOf7",[7],1),("CountMultiplesOf7",[20],2),("CountMultiplesOf7",[6],0),("CountMultiplesOf7",[21],3)])
 GOALS["A12"] = "`CountMultiplesOf7(n)` should count the numbers from 1 to n (included) divisible by 7. The code is written, but it has 2 bugs. Fix them."
 
-ex(id="D07", slug="fix-digit-sum", title="Fix the bugs: digit sum", level="Independent", stars=2, theme="loops-digits", recipes=["06"], pre=["D04"], sort="D045", task="debug",
+ex(id="D07", slug="fix-digit-sum", title="Fix: digit sum", level="Independent", stars=2, recipes=["06"], pre=["D04"], task="debug",
    goal="", examples=[], edge=["`DigitSum(10)`: the loop must still run for the 1.", "`DigitSum(0)` is 0."],
    constraints=[DEBUG_RULE, "There are **2** bugs."],
    hints=["Trace `DigitSum(123)` with a table: `n`, `n % 10`, `sum`.",
@@ -183,7 +183,7 @@ while (n > 10)
 return sum;''')], cases=[("DigitSum",[123],6),("DigitSum",[10],1),("DigitSum",[7],7),("DigitSum",[0],0),("DigitSum",[9045],18)])
 GOALS["D07"] = "`DigitSum(n)` should give back the sum of the digits of n (n ≥ 0). The code is written, but it has 2 bugs. Fix them."
 
-ex(id="R06", slug="fix-largest-value", title="Fix the bugs: largest value", level="Independent", stars=2, theme="arrays", recipes=["11","04"], pre=["R02"], sort="R025", task="debug",
+ex(id="R06", slug="fix-largest-value", title="Fix: largest value", level="Independent", stars=2, recipes=["11","04"], pre=["R02"], task="debug",
    goal="", examples=[], edge=["All values negative.", "One value only."],
    constraints=[DEBUG_RULE, "There are **2** bugs. One makes the program crash."],
    hints=["Read the crash message from `./ex check R06`: *index outside the bounds* means the loop goes one step too far.",

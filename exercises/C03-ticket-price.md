@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Conditions](../themes/conditions.md) › C03
+---
+prev:
+  text: "C02 · Largest of three"
+  link: /exercises/C02-largest-of-three
+next:
+  text: "C04 · Grade from a score"
+  link: /exercises/C04-grade-from-a-score
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [Conditions](../themes/basics.md#conditions) › C03
 
 # C03 · Ticket price
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Conditions](../themes/conditions.md) | — | [C01](C01-even-or-odd.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Basics › Conditions** · exercise 3 of 4 in this group (6 of 7 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | — | [C01](C01-even-or-odd.md) |
+
+</div>
 
 ## Goal
 
@@ -74,4 +91,8 @@ Only after a real try: [open the solution for C03](../solutions/C03_TicketPrice.
 
 ---
 
-Previous: [C02 · Largest of three](C02-largest-of-three.md) · [All exercises](README.md) · Next: [C04 · Grade from a score](C04-grade-from-a-score.md)
+<div class="gh-only">
+
+Previous: [C02 · Largest of three](C02-largest-of-three.md) · [Basics](../themes/basics.md) · Next: [C04 · Grade from a score](C04-grade-from-a-score.md)
+
+</div>

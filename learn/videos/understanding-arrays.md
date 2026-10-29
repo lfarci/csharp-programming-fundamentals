@@ -25,7 +25,7 @@ next: false
 
 ## Practise after this
 
-- [Arrays and text](../../themes/arrays.md): start with [R01](../../exercises/R01-sum-an-array.md), [R02](../../exercises/R02-largest-in-an-array.md), [R06](../../exercises/R06-fix-largest-value.md)
+- [Arrays, text and lists](../../themes/arrays.md): start with [R01](../../exercises/R01-sum-an-array.md), [R03](../../exercises/R03-count-matches.md), [R02](../../exercises/R02-largest-in-an-array.md)
 
 ---
 

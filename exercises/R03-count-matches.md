@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Arrays and text](../themes/arrays.md) › R03
+---
+prev:
+  text: "R01 · Sum of an array"
+  link: /exercises/R01-sum-an-array
+next:
+  text: "R02 · Position of the largest"
+  link: /exercises/R02-largest-in-an-array
+---
 
-# R03 · Count matches in an array
+[Home](../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Arrays](../themes/arrays.md#arrays) › R03
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | easy | [Arrays and text](../themes/arrays.md) | [Array traversal](../cookbook/11-array-traversal.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [R01](R01-sum-an-array.md), [A02](A02-count-multiples-of-3.md) | Custom |
+# R03 · Count matches
+
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Arrays, text and lists › Arrays** · exercise 2 of 6 in this group (2 of 11 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | easy | write code | [Array traversal](../cookbook/11-array-traversal.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [R01](R01-sum-an-array.md), [A02](A02-count-multiples-of-3.md) |
+
+</div>
 
 ## Goal
 
@@ -72,4 +89,8 @@ Only after a real try: [open the solution for R03](../solutions/R03_CountMatches
 
 ---
 
-Previous: [R06 · Fix the bugs: largest value](R06-fix-largest-value.md) · [All exercises](README.md) · Next: [R04 · Find the position](R04-find-the-position.md)
+<div class="gh-only">
+
+Previous: [R01 · Sum of an array](R01-sum-an-array.md) · [Arrays, text and lists](../themes/arrays.md) · Next: [R02 · Position of the largest](R02-largest-in-an-array.md)
+
+</div>

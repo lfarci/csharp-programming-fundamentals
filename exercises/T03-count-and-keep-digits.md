@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Arrays and text](../themes/arrays.md) › T03
+---
+prev:
+  text: "T02 · Remove spaces"
+  link: /exercises/T02-remove-spaces
+next:
+  text: "F01 · Save numbers to a file"
+  link: /exercises/F01-numbers-file
+---
 
-# T03 · Count and keep the digits
+[Home](../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Text](../themes/arrays.md#text) › T03
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Challenge | medium | [Arrays and text](../themes/arrays.md) | [Build a string](../cookbook/12-string-building.md), [Accumulator](../cookbook/02-accumulator.md) | [T02](T02-remove-spaces.md) | Custom |
+# T03 · Keep the digits
+
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Arrays, text and lists › Text** · exercise 3 of 3 in this group (9 of 11 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Challenge | medium | write code | [Build a string](../cookbook/12-string-building.md), [Accumulator](../cookbook/02-accumulator.md) | [T02](T02-remove-spaces.md) |
+
+</div>
 
 ## Goal
 
@@ -72,4 +89,8 @@ Only after a real try: [open the solution for T03](../solutions/T03_CountAndKeep
 
 ---
 
-Previous: [T02 · Remove spaces](T02-remove-spaces.md) · [All exercises](README.md) · Next: [F01 · Save numbers to a file](F01-numbers-file.md)
+<div class="gh-only">
+
+Previous: [T02 · Remove spaces](T02-remove-spaces.md) · [Arrays, text and lists](../themes/arrays.md) · Next: [F01 · Save numbers to a file](F01-numbers-file.md)
+
+</div>

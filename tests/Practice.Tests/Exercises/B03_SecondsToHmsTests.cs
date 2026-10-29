@@ -1,4 +1,4 @@
-// Tests for B03 · Seconds to hours, minutes, seconds
+// Tests for B03 · Seconds to h, min, s
 // Exercise page: exercises/B03-seconds-to-hms.md
 // Your code:     practice/B03_SecondsToHms.cs
 // Run them:      ./ex check B03

@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // D07 · Fix the bugs: digit sum
+    // D07 · Fix: digit sum
     // Exercise page: exercises/D07-fix-digit-sum.md
     public static class D07_FixDigitSum
     {

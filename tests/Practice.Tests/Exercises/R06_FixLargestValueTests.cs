@@ -1,4 +1,4 @@
-// Tests for R06 · Fix the bugs: largest value
+// Tests for R06 · Fix: largest value
 // Exercise page: exercises/R06-fix-largest-value.md
 // Your code:     practice/R06_FixLargestValue.cs
 // Run them:      ./ex check R06

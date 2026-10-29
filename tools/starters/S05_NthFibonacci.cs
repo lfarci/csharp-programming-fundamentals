@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // S05 · The n-th Fibonacci number
+    // S05 · N-th Fibonacci
     // Exercise page: exercises/S05-nth-fibonacci.md
     //
     // Goal: Give back the Fibonacci number at position n: position 0 is 0, position 1 is 1, then

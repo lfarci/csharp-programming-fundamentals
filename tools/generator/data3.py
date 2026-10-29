@@ -1,6 +1,6 @@
 from data2 import ex, E
 
-ex(id="G01", slug="rectangle", title="Draw a rectangle", level="Guided", stars=1, theme="loops-2d", recipes=["08"], pre=["L03"],
+ex(id="G01", slug="rectangle", title="Draw a rectangle", level="Guided", stars=1, recipes=["08"], pre=["G08"],
    goal="Read a width and a height. Draw a rectangle of `*`.",
    examples=[(["4","3"], ["****","****","****"]), (["1","2"], ["*","*"])],
    edge=["Width 1 → a vertical line."],
@@ -24,7 +24,7 @@ for (int row = 1; row <= height; row++)
 }
 ''')
 
-ex(id="G02", slug="right-triangle", title="Draw a right triangle", level="Independent", stars=2, theme="loops-2d", recipes=["08"], pre=["G01"],
+ex(id="G02", slug="right-triangle", title="Draw a right triangle", level="Guided", stars=2, recipes=["08"], pre=["G01"],
    goal="Read a height. Draw a right triangle: row 1 has 1 star, row 2 has 2 stars, …",
    examples=[(["4"], ["*","**","***","****"]), (["1"], ["*"])],
    edge=["Height 1."],
@@ -45,7 +45,7 @@ for (int row = 1; row <= height; row++)
 }
 ''')
 
-ex(id="G03", slug="multiplication-grid", title="Multiplication grid", level="Independent", stars=2, theme="loops-2d", recipes=["08"], pre=["G01","L04"],
+ex(id="G03", slug="multiplication-grid", title="Multiplication grid", level="Independent", stars=2, recipes=["08"], pre=["G01","L04"],
    goal="Read N. Print an N×N grid where the cell at row `r` and column `c` contains `r × c`. Each number takes 4 characters (right-aligned).",
    examples=[(["4"], ["   1   2   3   4","   2   4   6   8","   3   6   9  12","   4   8  12  16"])],
    edge=["N = 1 → one cell."],
@@ -66,7 +66,7 @@ for (int row = 1; row <= n; row++)
 }
 ''')
 
-ex(id="G04", slug="hollow-rectangle", title="Hollow rectangle", level="Independent", stars=2, theme="loops-2d", recipes=["08"], pre=["G01"],
+ex(id="G04", slug="hollow-rectangle", title="Hollow rectangle", level="Independent", stars=2, recipes=["08"], pre=["G01"],
    goal="Read a width and a height. Draw only the border of the rectangle with `*`; the inside is spaces.",
    examples=[(["5","4"], ["*****","*   *","*   *","*****"]), (["3","3"], ["***","* *","***"])],
    edge=["Height 1 or 2 → no inside."],
@@ -96,7 +96,7 @@ for (int row = 1; row <= height; row++)
 }
 ''')
 
-ex(id="G05", slug="checkerboard", title="Checkerboard", level="Challenge", stars=2, theme="loops-2d", recipes=["08"], pre=["G04","C01"],
+ex(id="G05", slug="checkerboard", title="Checkerboard", level="Challenge", stars=2, recipes=["08"], pre=["G04","C01"],
    goal="Read a size. Draw a size×size checkerboard with `#` and `.`, starting with `#` in the top-left corner.",
    examples=[(["4"], ["#.#.",".#.#","#.#.",".#.#"]), (["1"], ["#"])],
    edge=["Odd size."],
@@ -124,7 +124,7 @@ for (int row = 1; row <= size; row++)
 }
 ''')
 
-ex(id="G06", slug="pyramid", title="Pyramid", level="Challenge", stars=3, theme="loops-2d", recipes=["08"], pre=["G02"],
+ex(id="G06", slug="pyramid", title="Pyramid", level="Challenge", stars=3, recipes=["08"], pre=["G02"],
    goal="Read a height. Draw a centered pyramid of `*`.",
    examples=[(["3"], ["  *"," ***","*****"]), (["1"], ["*"])],
    edge=["Height 1."],
@@ -150,7 +150,7 @@ for (int row = 1; row <= height; row++)
 }
 ''')
 
-ex(id="D01", slug="last-digit", title="Last digit", level="Guided", stars=1, theme="loops-digits", recipes=["06"], pre=["B03"],
+ex(id="D01", slug="last-digit", title="Last digit", level="Guided", stars=1, recipes=["06"], pre=["B03"],
    goal="Read a whole number N ≥ 0. Print its last digit.",
    examples=[(["352"], ["Last digit: 2"]), (["7"], ["Last digit: 7"]), (["0"], ["Last digit: 0"])],
    edge=["One-digit number → the number itself."],
@@ -162,7 +162,7 @@ int n = int.Parse(Console.ReadLine()!);
 Console.WriteLine($"Last digit: {n % 10}");
 ''')
 
-ex(id="D02", slug="remove-last-digit", title="Remove the last digit", level="Guided", stars=1, theme="loops-digits", recipes=["06"], pre=["D01"],
+ex(id="D02", slug="remove-last-digit", title="Remove the last digit", level="Guided", stars=1, recipes=["06"], pre=["D01"],
    goal="Read N ≥ 0. Print N without its last digit.",
    examples=[(["352"], ["Without last digit: 35"]), (["7"], ["Without last digit: 0"])],
    edge=["One digit → 0."],
@@ -174,7 +174,7 @@ int n = int.Parse(Console.ReadLine()!);
 Console.WriteLine($"Without last digit: {n / 10}");
 ''')
 
-ex(id="D03", slug="count-digits", title="Count the digits", level="Independent", stars=2, theme="loops-digits", recipes=["06","02"], pre=["D02","L05"],
+ex(id="D03", slug="count-digits", title="Count the digits", level="Guided", stars=2, recipes=["06","02"], pre=["D02","L05"],
    goal="Read N ≥ 0. Print how many digits it has.",
    examples=[(["352"], ["Digits: 3"]), (["0"], ["Digits: 1"]), (["1000"], ["Digits: 4"])],
    edge=["**0 has 1 digit** (a plain `while (n > 0)` loop says 0)."],
@@ -198,7 +198,7 @@ while (remaining > 0);
 Console.WriteLine($"Digits: {digits}");
 ''')
 
-ex(id="D04", slug="digit-sum", title="Sum of the digits", level="Independent", stars=2, theme="loops-digits", recipes=["06","02"], pre=["D03"],
+ex(id="D04", slug="digit-sum", title="Sum of the digits", level="Guided", stars=2, recipes=["06","02"], pre=["D03"],
    goal="Read N ≥ 0. Print the sum of its digits.",
    examples=[(["352"], ["Digit sum: 10"]), (["0"], ["Digit sum: 0"]), (["9999"], ["Digit sum: 36"])],
    edge=["0 → 0."],
@@ -220,7 +220,7 @@ while (remaining > 0)
 Console.WriteLine($"Digit sum: {sum}");
 ''')
 
-ex(id="D05", slug="reverse-a-number", title="Reverse a number", level="Independent", stars=2, theme="loops-digits", recipes=["06"], pre=["D04"],
+ex(id="D05", slug="reverse-a-number", title="Reverse a number", level="Independent", stars=2, recipes=["06"], pre=["D04"],
    goal="Read N ≥ 0. Print the number with its digits in reverse order.",
    examples=[(["352"], ["Reversed: 253"]), (["1200"], ["Reversed: 21"]), (["0"], ["Reversed: 0"])],
    edge=["Trailing zeros disappear (1200 → 21)."],
@@ -243,7 +243,7 @@ while (remaining > 0)
 Console.WriteLine($"Reversed: {reversed}");
 ''')
 
-ex(id="D06", slug="palindrome-number", title="Palindrome number", level="Challenge", stars=3, theme="loops-digits", recipes=["06"], pre=["D05"],
+ex(id="D06", slug="palindrome-number", title="Palindrome number", level="Challenge", stars=3, recipes=["06"], pre=["D05"],
    goal="Read N ≥ 0. Say if it reads the same in both directions.",
    examples=[(["1221"], ["1221 is a palindrome"]), (["123"], ["123 is not a palindrome"]), (["7"], ["7 is a palindrome"])],
    edge=["One digit → palindrome.", "Keep the original `n` to compare at the end!"],
@@ -272,7 +272,7 @@ else
 }
 ''')
 
-ex(id="S01", slug="trace-updates", title="Trace two changing variables (paper)", level="Guided", stars=1, theme="loops-state", recipes=["07"], pre=["L01"], paper=True,
+ex(id="S01", slug="trace-updates", title="Trace two variables", level="Guided", stars=1, recipes=["07"], pre=["L01"], paper=True,
    goal="Without running it, fill a trace table (`turn`, `next`, `a`, `b`) for this code. Then run it to check.\n\n```csharp\nint a = 1;\nint b = 2;\nfor (int i = 1; i <= 3; i++)\n{\n    int next = a + b;\n    a = b;\n    b = next;\n    Console.WriteLine($\"a={a} b={b}\");\n}\n```\n\nThen swap the two middle lines (`b = next;` before `a = b;`). What changes? Why?",
    examples=[], edge=["Order of the assignments."],
    constraints=["Paper first."],
@@ -289,7 +289,7 @@ With the lines swapped (`b = next; a = b;`): turn 1 → b = 3, then a = 3 (the *
 
 Mastery check: `a` and `b` go through 1 1, 1 2, 2 3, 3 5, 5 8, 8 13 → it is the **Fibonacci** sequence.""")
 
-ex(id="S02", slug="fibonacci", title="Fibonacci", level="Independent", stars=3, theme="loops-state", recipes=["07"], pre=["S01","A01"], teacher="Fibonacci",
+ex(id="S02", slug="fibonacci", title="Fibonacci", level="Independent", stars=3, recipes=["07"], pre=["S01","A01"], teacher="Fibonacci",
    goal="Read N. Print the first N Fibonacci numbers on one line, starting with 0 and 1. Each number is the sum of the two before it.",
    examples=[(["6"], ["0 1 1 2 3 5"]), (["1"], ["0"]), (["10"], ["0 1 1 2 3 5 8 13 21 34"])],
    edge=["N = 0 → nothing.", "N = 1 → only 0.", "N = 2 → 0 1."],
@@ -313,7 +313,7 @@ for (int i = 0; i < n; i++)
 Console.WriteLine();
 ''')
 
-ex(id="S03", slug="even-fibonacci-sum", title="Even Fibonacci sum", level="Challenge", stars=3, theme="loops-state", recipes=["07","03"], pre=["S02","A03"], euler=2,
+ex(id="S03", slug="even-fibonacci-sum", title="Even Fibonacci sum", level="Challenge", stars=3, recipes=["07","03"], pre=["S02","A03"], euler=2,
    goal="Read a limit. Add up the **even** Fibonacci numbers that are **not greater** than the limit.",
    examples=[(["10"], ["Sum: 10"]), (["100"], ["Sum: 44"]), (["1"], ["Sum: 0"])],
    edge=["The limit itself counts if it is an even Fibonacci number (limit 8 → 2 + 8 = 10)."],
@@ -341,7 +341,7 @@ while (previous <= limit)
 Console.WriteLine($"Sum: {sum}");
 ''')
 
-ex(id="P01", slug="is-it-prime", title="Is it prime?", level="Independent", stars=2, theme="loops-search", recipes=["05"], pre=["A02"],
+ex(id="P01", slug="is-it-prime", title="Is it prime?", level="Independent", stars=2, recipes=["05"], pre=["P06"],
    goal="Read N. Say if it is a prime number (≥ 2 and only divisible by 1 and itself).",
    examples=[(["7"], ["7 is prime"]), (["9"], ["9 is not prime"]), (["1"], ["1 is not prime"]), (["2"], ["2 is prime"]), (["97"], ["97 is prime"])],
    edge=["0 and 1 are not prime.", "2 is the only even prime."],
@@ -366,7 +366,7 @@ for (int d = 2; d * d <= n; d++)
 Console.WriteLine(isPrime ? $"{n} is prime" : $"{n} is not prime");
 ''')
 
-ex(id="P02", slug="primes-up-to-n", title="All primes up to N", level="Challenge", stars=3, theme="loops-search", recipes=["01","05","02"], pre=["P01"],
+ex(id="P02", slug="primes-up-to-n", title="All primes up to N", level="Challenge", stars=3, recipes=["01","05","02"], pre=["P01"],
    goal="Read N. Print all prime numbers from 2 to N on one line, then how many there are.",
    examples=[(["20"], ["2 3 5 7 11 13 17 19","Count: 8"]), (["2"], ["2","Count: 1"]), (["1"], ["Count: 0"])],
    edge=["N < 2 → none."],
@@ -400,7 +400,7 @@ Console.WriteLine();
 Console.WriteLine($"Count: {count}");
 ''')
 
-ex(id="M01", slug="armstrong-number", title="Armstrong number", level="Challenge", stars=3, theme="combine", recipes=["06","02"], pre=["D03","D04","A07"], teacher="Armstrong",
+ex(id="M01", slug="armstrong-number", title="Armstrong number", level="Challenge", stars=3, recipes=["06","02"], pre=["D03","D04","A07"], teacher="Armstrong",
    goal="Read N ≥ 0. An Armstrong number equals the sum of its digits, each raised to the power **number of digits**. Say if N is one.\n\n153 → 3 digits → 1³ + 5³ + 3³ = 153, so yes. 9474 → 4 digits → 9⁴ + 4⁴ + 7⁴ + 4⁴ = 9474 .",
    examples=[(["153"], ["153 is an Armstrong number"]), (["154"], ["154 is not an Armstrong number"]), (["9474"], ["9474 is an Armstrong number"]), (["0"], ["0 is an Armstrong number"]), (["10"], ["10 is not an Armstrong number"])],
    edge=["Every 1-digit number is an Armstrong number (5¹ = 5).", "The power is the number of digits, **not always 3**."],
@@ -448,7 +448,7 @@ else
 }
 ''')
 
-ex(id="M02", slug="armstrong-numbers-in-a-range", title="All Armstrong numbers in a range", level="Challenge", stars=3, theme="combine", recipes=["01","06","02"], pre=["M01"],
+ex(id="M02", slug="armstrong-numbers-in-a-range", title="Armstrong in a range", level="Challenge", stars=3, recipes=["01","06","02"], pre=["M01"],
    goal="Read a lower and an upper bound. Print every Armstrong number between them (both included).",
    examples=[(["100","999"], ["153 370 371 407"]), (["1","9"], ["1 2 3 4 5 6 7 8 9"]), (["1000","9999"], ["1634 8208 9474"])],
    edge=["Bounds included."],

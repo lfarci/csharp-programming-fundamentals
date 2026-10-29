@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // G07 · Arrange the lines: a square
+    // G07 · Arrange: a square
     // Exercise page: exercises/G07-arrange-a-square.md
     public static class G07_ArrangeASquare
     {

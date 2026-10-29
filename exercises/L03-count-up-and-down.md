@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: repeat and count](../themes/loops-repeat.md) › L03
+---
+prev:
+  text: "L02 · Boundaries: < or <="
+  link: /exercises/L02-boundaries
+next:
+  text: "L11 · Count from a to b"
+  link: /exercises/L11-count-from-a-to-b
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L03
 
 # L03 · Count up and down
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: repeat and count](../themes/loops-repeat.md) | [Counter loop](../cookbook/01-counter-loop.md) | [L01](L01-trace-a-loop.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Count** · exercise 3 of 13 in this group (3 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Counter loop](../cookbook/01-counter-loop.md) | [L01](L01-trace-a-loop.md) |
+
+</div>
 
 ## Goal
 
@@ -76,7 +93,7 @@ Loop 2: start `n`, test `i >= 1`, step `i--`.
 
 Solve this variation **alone**, on another day:
 
-Print the odd numbers from N down to 1.
+Print the even numbers from N down to 2 on one line.
 
 ## Solution
 
@@ -84,4 +101,8 @@ Only after a real try: [open the solution for L03](../solutions/L03_CountUpAndDo
 
 ---
 
-Previous: [L02 · Boundaries: < or <= ? (paper)](L02-boundaries.md) · [All exercises](README.md) · Next: [L04 · Multiplication table](L04-multiplication-table.md)
+<div class="gh-only">
+
+Previous: [L02 · Boundaries: < or <=](L02-boundaries.md) · [Loops](../themes/loops.md) · Next: [L11 · Count from a to b](L11-count-from-a-to-b.md)
+
+</div>

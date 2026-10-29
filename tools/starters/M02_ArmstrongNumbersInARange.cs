@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // M02 · All Armstrong numbers in a range
+    // M02 · Armstrong in a range
     // Exercise page: exercises/M02-armstrong-numbers-in-a-range.md
     //
     // Goal: Read a lower and an upper bound. Print every Armstrong number between them (both

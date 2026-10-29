@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: take digits apart](../themes/loops-digits.md) › D09
+---
+prev:
+  text: "D04 · Sum of the digits"
+  link: /exercises/D04-digit-sum
+next:
+  text: "D10 · Count one digit"
+  link: /exercises/D10-count-a-digit
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D09
 
 # D09 · Count the even digits
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: take digits apart](../themes/loops-digits.md) | [Digit extraction](../cookbook/06-digit-extraction.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [D04](D04-digit-sum.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Digits** · exercise 6 of 12 in this group (61 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Digit extraction](../cookbook/06-digit-extraction.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [D04](D04-digit-sum.md) |
+
+</div>
 
 ## Goal
 
@@ -72,4 +89,8 @@ Only after a real try: [open the solution for D09](../solutions/D09_CountEvenDig
 
 ---
 
-Previous: [D04 · Sum of the digits](D04-digit-sum.md) · [All exercises](README.md) · Next: [D10 · Count one digit](D10-count-a-digit.md)
+<div class="gh-only">
+
+Previous: [D04 · Sum of the digits](D04-digit-sum.md) · [Loops](../themes/loops.md) · Next: [D10 · Count one digit](D10-count-a-digit.md)
+
+</div>

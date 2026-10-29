@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A01
+---
+prev:
+  text: "A11 · Arrange: sum of squares"
+  link: /exercises/A11-arrange-sum-of-squares
+next:
+  text: "A13 · Sum from a to b"
+  link: /exercises/A13-sum-from-a-to-b
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A01
 
 # A01 · Sum from 1 to N
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: keep a running result](../themes/loops-running-result.md) | [Counter loop](../cookbook/01-counter-loop.md), [Accumulator](../cookbook/02-accumulator.md) | [L03](L03-count-up-and-down.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Add up** · exercise 3 of 12 in this group (16 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Counter loop](../cookbook/01-counter-loop.md), [Accumulator](../cookbook/02-accumulator.md) | [L03](L03-count-up-and-down.md) |
+
+</div>
 
 ## Goal
 
@@ -79,4 +96,8 @@ Only after a real try: [open the solution for A01](../solutions/A01_Sum1ToN.cs).
 
 ---
 
-Previous: [A11 · Arrange the lines: sum of squares](A11-arrange-sum-of-squares.md) · [All exercises](README.md) · Next: [A02 · Count multiples of 3](A02-count-multiples-of-3.md)
+<div class="gh-only">
+
+Previous: [A11 · Arrange: sum of squares](A11-arrange-sum-of-squares.md) · [Loops](../themes/loops.md) · Next: [A13 · Sum from a to b](A13-sum-from-a-to-b.md)
+
+</div>

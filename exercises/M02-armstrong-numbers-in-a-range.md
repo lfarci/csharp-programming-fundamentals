@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Combine recipes](../themes/combine.md) › M02
+---
+prev:
+  text: "M01 · Armstrong number"
+  link: /exercises/M01-armstrong-number
+next:
+  text: "Next theme: Arrays, text and lists"
+  link: /themes/arrays
+---
 
-# M02 · All Armstrong numbers in a range
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops.md#search-and-combine) › M02
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Challenge | hard | [Combine recipes](../themes/combine.md) | [Counter loop](../cookbook/01-counter-loop.md), [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [M01](M01-armstrong-number.md) | Custom |
+# M02 · Armstrong in a range
+
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Search and combine** · exercise 9 of 9 in this group (81 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Challenge | hard | write code | [Counter loop](../cookbook/01-counter-loop.md), [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [M01](M01-armstrong-number.md) |
+
+</div>
 
 ## Goal
 
@@ -88,4 +105,8 @@ Only after a real try: [open the solution for M02](../solutions/M02_ArmstrongNum
 
 ---
 
-Previous: [M01 · Armstrong number](M01-armstrong-number.md) · [All exercises](README.md) · Next: [R01 · Sum of an array](R01-sum-an-array.md)
+<div class="gh-only">
+
+Previous: [M01 · Armstrong number](M01-armstrong-number.md) · [Loops](../themes/loops.md) · Next: [Next theme: Arrays, text and lists](../themes/arrays.md)
+
+</div>

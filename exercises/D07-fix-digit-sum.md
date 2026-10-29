@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: take digits apart](../themes/loops-digits.md) › D07
+---
+prev:
+  text: "D11 · Largest digit"
+  link: /exercises/D11-largest-digit
+next:
+  text: "D05 · Reverse a number"
+  link: /exercises/D05-reverse-a-number
+---
 
-# D07 · Fix the bugs: digit sum
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D07
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: take digits apart](../themes/loops-digits.md) | [Digit extraction](../cookbook/06-digit-extraction.md) | [D04](D04-digit-sum.md) | Custom |
+# D07 · Fix: digit sum
+
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Digits** · exercise 10 of 12 in this group (65 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | fix the bugs | [Digit extraction](../cookbook/06-digit-extraction.md) | [D04](D04-digit-sum.md) |
+
+</div>
 
 ## Goal
 
@@ -80,4 +97,8 @@ Only after a real try: [open the solution for D07](../solutions/D07_FixDigitSum.
 
 ---
 
-Previous: [D12 · Product of the digits](D12-product-of-digits.md) · [All exercises](README.md) · Next: [D05 · Reverse a number](D05-reverse-a-number.md)
+<div class="gh-only">
+
+Previous: [D11 · Largest digit](D11-largest-digit.md) · [Loops](../themes/loops.md) · Next: [D05 · Reverse a number](D05-reverse-a-number.md)
+
+</div>

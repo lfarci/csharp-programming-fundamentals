@@ -25,10 +25,7 @@ next: false
 
 ## Practise after this
 
-- [Loops: repeat and count](../../themes/loops-repeat.md): start with [L01](../../exercises/L01-trace-a-loop.md), [L02](../../exercises/L02-boundaries.md), [L03](../../exercises/L03-count-up-and-down.md)
-- [Loops: take digits apart](../../themes/loops-digits.md): start with [D01](../../exercises/D01-last-digit.md), [D02](../../exercises/D02-remove-last-digit.md), [D03](../../exercises/D03-count-digits.md)
-- [Loops: remember changing values](../../themes/loops-state.md): start with [S01](../../exercises/S01-trace-updates.md), [S04](../../exercises/S04-doubling.md), [S02](../../exercises/S02-fibonacci.md)
-- [Loops: search](../../themes/loops-search.md): start with [P01](../../exercises/P01-is-it-prime.md), [P02](../../exercises/P02-primes-up-to-n.md)
+- [Loops](../../themes/loops.md): start with [L01](../../exercises/L01-trace-a-loop.md), [L02](../../exercises/L02-boundaries.md), [L03](../../exercises/L03-count-up-and-down.md)
 
 ---
 

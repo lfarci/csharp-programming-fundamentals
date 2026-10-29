@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: take digits apart](../themes/loops-digits.md) › D03
+---
+prev:
+  text: "D02 · Remove the last digit"
+  link: /exercises/D02-remove-last-digit
+next:
+  text: "D08 · First digit"
+  link: /exercises/D08-first-digit
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D03
 
 # D03 · Count the digits
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: take digits apart](../themes/loops-digits.md) | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [D02](D02-remove-last-digit.md), [L05](L05-until-zero.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Digits** · exercise 3 of 12 in this group (58 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | medium | write code | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | [D02](D02-remove-last-digit.md), [L05](L05-until-zero.md) |
+
+</div>
 
 ## Goal
 
@@ -79,4 +96,8 @@ Only after a real try: [open the solution for D03](../solutions/D03_CountDigits.
 
 ---
 
-Previous: [D02 · Remove the last digit](D02-remove-last-digit.md) · [All exercises](README.md) · Next: [D08 · First digit](D08-first-digit.md)
+<div class="gh-only">
+
+Previous: [D02 · Remove the last digit](D02-remove-last-digit.md) · [Loops](../themes/loops.md) · Next: [D08 · First digit](D08-first-digit.md)
+
+</div>

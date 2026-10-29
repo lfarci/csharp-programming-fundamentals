@@ -4,8 +4,9 @@ from data4 import E, X
 from data5 import M, GOALS, RULES, HINTS
 import data6  # noqa: F401  (adds ladder, Parsons and debugging exercises to E and M)
 from data7 import DRILLS  # drill bank: same-pattern repetition
+import data8  # noqa: F401  (search drills, Methods and Errors exercises)
 from data6 import NOTE_P
-from themes import THEMES, BYSLUG
+from themes import THEMES, BYSLUG, GROUP
 import re
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 RECIPES = {"01":("Counter loop","01-counter-loop"),"02":("Accumulator","02-accumulator"),"03":("Conditional accumulator","03-conditional-accumulator"),
@@ -80,11 +81,19 @@ def cs_file(e, starter):
     return "\n".join(L)
 
 byid = {e["id"]: e for e in E}
-for e in E:  # guard: every prerequisite must exist
+for e in E:  # guard: every prerequisite must exist, every exercise sits in exactly one group (themes.py)
     missing = [p for p in e["pre"] if p not in byid]
     if missing: sys.exit(f"{e['id']}: unknown prerequisite(s) {missing}")
-    if e.get("theme") not in BYSLUG: sys.exit(f"{e['id']}: unknown theme {e.get('theme')!r} (see themes.py)")
+    if e["id"] not in GROUP: sys.exit(f"{e['id']}: not listed in any group of tools/generator/themes.py")
+    e["theme"], e["group"] = GROUP[e["id"]][0]["slug"], GROUP[e["id"]][1]["slug"]
+for i_ in GROUP:
+    if i_ not in byid: sys.exit(f"themes.py lists {i_}, which no data file defines")
 def fname(e): return f'{e["id"]}-{e["slug"]}'
+def kind(e):
+    if e.get("paper"): return "paper"
+    if e.get("task") == "parsons": return "arrange the lines"
+    if e.get("task") == "debug": return "fix the bugs"
+    return "write code"
 def stars(n): return {1: "easy", 2: "medium", 3: "hard"}[n]
 def rlinks(e, base="../cookbook/"):
     return ", ".join(f"[{RECIPES[r][0]}]({base}{RECIPES[r][1]}.md)" for r in e["recipes"]) or "—"
@@ -93,27 +102,44 @@ def plinks(e, base=""):
 
 for d in ["exercises", "solutions", "tools/starters", "tests/Practice.Tests"]: os.makedirs(f"{ROOT}/{d}", exist_ok=True)
 for old in glob.glob(f"{ROOT}/solutions/*.cs") + glob.glob(f"{ROOT}/tools/starters/*.cs"): os.remove(old)
-FAMORDER = "BCLAGDSPMRTFEKN"
-def skey(e): k = e.get("sort", e["id"]); return (FAMORDER.index(k[0]), k)
-ORDER = sorted(E, key=skey)
+# Course order = the groups of themes.py, in order. Each `pre` must come earlier.
+ORDER = [byid[i_] for x_ in THEMES for g_ in x_["groups"] for i_ in g_["ids"]]
 POS = {e["id"]: i for i, e in enumerate(ORDER)}
+for e in ORDER:
+    late = [p for p in e["pre"] if POS[p] > POS[e["id"]]]
+    if late: sys.exit(f"{e['id']}: its prerequisite(s) {late} come later in the course order (themes.py)")
+TH_LIST = {x["slug"]: [e for e in ORDER if e["theme"] == x["slug"]] for x in THEMES}
+def where(e):
+    th, gr = GROUP[e["id"]]; lst = TH_LIST[th["slug"]]; gl = [x for x in lst if x["group"] == gr["slug"]]
+    return th, gr, lst.index(e) + 1, len(lst), gl.index(e) + 1, len(gl)
+def gref(th, gr, up="../"): return f"{up}themes/{th['slug']}.md#{gr['slug']}"
+def neighbours(e):
+    """Previous/Next inside the theme, in course order; at the ends, the theme pages."""
+    th = GROUP[e["id"]][0]; lst = TH_LIST[th["slug"]]; i = lst.index(e); k = THEMES.index(th)
+    prev = (f"{lst[i-1]['id']} · {lst[i-1]['title']}", f"{fname(lst[i-1])}.md") if i else (th["title"], f"../themes/{th['slug']}.md")
+    if i < len(lst) - 1: nxt = (f"{lst[i+1]['id']} · {lst[i+1]['title']}", f"{fname(lst[i+1])}.md")
+    elif k < len(THEMES) - 1: nxt = (f"Next theme: {THEMES[k+1]['title']}", f"../themes/{THEMES[k+1]['slug']}.md")
+    else: nxt = ("Roadmap", "../ROADMAP.md")
+    return prev, nxt
 def nav(e):
-    i = POS[e["id"]]; parts = []
-    if i > 0: parts.append(f"Previous: [{ORDER[i-1]['id']} · {ORDER[i-1]['title']}]({fname(ORDER[i-1])}.md)")
-    parts.append("[All exercises](README.md)")
-    if i < len(ORDER) - 1: parts.append(f"Next: [{ORDER[i+1]['id']} · {ORDER[i+1]['title']}]({fname(ORDER[i+1])}.md)")
-    return " · ".join(parts)
+    (pt, pl), (nt, nl) = neighbours(e); th = GROUP[e["id"]][0]
+    return f"Previous: [{pt}]({pl}) · [{th['title']}](../themes/{th['slug']}.md) · Next: [{nt}]({nl})"
+def fm_link(l): return "/" + l.replace("../", "").replace(".md", "") if l.startswith("../") else "/exercises/" + l.replace(".md", "")
 tests = []
 for e in E:
     paper = e.get("paper", False)
     src = "Custom"
     if e.get("teacher"): src += f" · teacher topic: {e['teacher']}"
     if e.get("euler"): src += f" · prepares [Project Euler #{e['euler']}](https://projecteuler.net/problem={e['euler']})"
-    th = BYSLUG[e["theme"]]
-    L = [f"[Home](../README.md) › [Exercises](README.md) › [{th['title']}](../themes/{th['slug']}.md) › " + e["id"], "", f"# {e['id']} · {e['title']}", "",
-         f"| Level | Difficulty | Theme | Recipes | Do these first | Source |", "| --- | --- | --- | --- | --- | --- |",
-         f"| {e['level']} | {stars(e['stars'])} | [{th['title']}](../themes/{th['slug']}.md) | {rlinks(e)} | {plinks(e)} | {src} |", "",
-         "## Goal", "", GOALS.get(e["id"], e["goal"]), ""]
+    th, gr, pos, of, gpos, gof = where(e); (pt, pl), (nt, nl) = neighbours(e)
+    L = ["---", f"prev:\n  text: {json.dumps(pt, ensure_ascii=False)}\n  link: {fm_link(pl)}", f"next:\n  text: {json.dumps(nt, ensure_ascii=False)}\n  link: {fm_link(nl)}", "---", "",
+         f"[Home](../README.md) › [Exercises](README.md) › [{th['title']}](../themes/{th['slug']}.md) › [{gr['title']}]({gref(th, gr)}) › " + e["id"], "", f"# {e['id']} · {e['title']}", "",
+         "<ExerciseHeader />", "", '<div class="gh-only">', "",
+         f"**{th['title']} › {gr['title']}** · exercise {gpos} of {gof} in this group ({pos} of {of} in the theme)", "",
+         "| Level | Effort | Kind | Recipes | Do these first |", "| --- | --- | --- | --- | --- |",
+         f"| {e['level']} | {stars(e['stars'])} | {kind(e)} | {rlinks(e)} | {plinks(e)} |", "", "</div>", ""]
+    if src != "Custom": L += [f"Source: {src.replace('Custom · ', '')}.", ""]
+    L += ["## Goal", "", GOALS.get(e["id"], e["goal"]), ""]
     if paper:
         L += ["## Start and check", "", "This one is on **paper**: no code to write. When you are done, compare with the answer key (link at the bottom).", ""]
     else:
@@ -150,7 +176,7 @@ for e in E:
     L += ["## Mastery check", "", "Solve this variation **alone**, on another day:", "", e["mastery"], ""]
     sol = f"../solutions/{fname(e)}.md" if paper else f"../solutions/{cls(e)}.cs"
     L += ["## Solution", "", f"Only after a real try: [open the solution for {e['id']}]({sol}). Your solution can be different and still correct!", "",
-          "---", "", nav(e), ""]
+          "---", "", '<div class="gh-only">', "", nav(e), "", "</div>", ""]
     open(f"{ROOT}/exercises/{fname(e)}.md","w").write("\n".join(L))
     if paper:
         open(f"{ROOT}/solutions/{fname(e)}.md","w").write(f"[Home](../README.md) › [Solutions](README.md) › {e['id']}\n\n# Answer key · {e['id']} {e['title']}\n\n{e['answer']}\n\n[Back to the exercise](../exercises/{fname(e)}.md)\n")
@@ -165,17 +191,23 @@ cj = [{"id": e["id"], "name": fname(e), "class": cls(e), "title": e["title"], "p
        "methods": [parse_sig(sig)[1] for sig, _, _ in M[e["id"]]["methods"]] if e["id"] in M else [],
        "cases": [jcase(*c) for c in M[e["id"]]["cases"]] if e["id"] in M else [],
        "checkHint": e.get("check_hint", ""),
-       "theme": BYSLUG[e["theme"]]["title"], "themeOrder": [x["slug"] for x in THEMES].index(e["theme"]) + 1, "drills": [n for n, _, ids in DRILLS if e["id"] in ids],
+       "theme": BYSLUG[e["theme"]]["title"], "themeOrder": [x["slug"] for x in THEMES].index(e["theme"]) + 1, "group": GROUP[e["id"]][1]["title"], "drills": [n for n, _, ids in DRILLS if e["id"] in ids],
        "examples": [{"input": inp, "expected": [o for o in out if o.strip()]} for inp, out in (e["examples"] or [])]}
       for e in ORDER]
 json.dump(cj, open(f"{ROOT}/tools/exercises.json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 # data for the website (.vitepress): sidebar, "Mark as done", progress page
 os.makedirs(f"{ROOT}/.vitepress", exist_ok=True)
-site = {"exercises": [{"id": e["id"], "title": e["title"], "link": f"/exercises/{fname(e)}", "theme": e["theme"],
-                       "level": e["level"], "paper": bool(e.get("paper")),
-                       "drills": [n for n, _, ids in DRILLS if e["id"] in ids]} for e in ORDER],
+def site_ex(e):
+    th, gr, pos, of, gpos, gof = where(e)
+    return {"id": e["id"], "title": e["title"], "link": f"/exercises/{fname(e)}", "theme": e["theme"], "group": e["group"],
+            "level": e["level"], "effort": stars(e["stars"]), "kind": kind(e), "paper": bool(e.get("paper")), "pos": gpos, "of": gof,
+            "recipes": [{"title": RECIPES[r][0], "link": f"/cookbook/{RECIPES[r][1]}"} for r in e["recipes"]],
+            "pre": [{"id": p, "link": f"/exercises/{fname(byid[p])}"} for p in e["pre"]],
+            "drills": [n for n, _, ids in DRILLS if e["id"] in ids]}
+site = {"exercises": [site_ex(e) for e in ORDER],
         "drillSets": [{"name": n, "recipe": r, "ids": ids} for n, r, ids in DRILLS],
-        "themes": [{"slug": x["slug"], "title": x["title"], "part": x["part"], "summary": x["summary"], "link": f"/themes/{x['slug']}"} for x in THEMES]}
+        "themes": [{"slug": x["slug"], "title": x["title"], "part": x["part"], "summary": x["summary"], "link": f"/themes/{x['slug']}",
+                    "groups": [{"slug": g_["slug"], "title": g_["title"], "link": f"/themes/{x['slug']}#{g_['slug']}"} for g_ in x["groups"]]} for x in THEMES]}
 json.dump(site, open(f"{ROOT}/.vitepress/course.json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 
 # ---------- tests: one plain xUnit file per exercise ----------

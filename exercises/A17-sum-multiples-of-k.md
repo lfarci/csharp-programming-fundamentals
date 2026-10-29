@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A17
+---
+prev:
+  text: "A03 · Sum of the even numbers"
+  link: /exercises/A03-sum-even-values
+next:
+  text: "A08 · Multiples of 3 or 5"
+  link: /exercises/A08-multiples-of-3-or-5
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops.md#keep-only-some) › A17
 
 # A17 · Sum the multiples of k
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: keep a running result](../themes/loops-running-result.md) | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A03](A03-sum-even-values.md), [A16](A16-count-multiples-of-5.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Keep only some** · exercise 8 of 9 in this group (33 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | [A03](A03-sum-even-values.md), [A16](A16-count-multiples-of-5.md) |
+
+</div>
 
 ## Goal
 
@@ -72,4 +89,8 @@ Only after a real try: [open the solution for A17](../solutions/A17_SumMultiples
 
 ---
 
-Previous: [A16 · Count multiples of 5](A16-count-multiples-of-5.md) · [All exercises](README.md) · Next: [A18 · Sum of cubes](A18-sum-of-cubes.md)
+<div class="gh-only">
+
+Previous: [A03 · Sum of the even numbers](A03-sum-even-values.md) · [Loops](../themes/loops.md) · Next: [A08 · Multiples of 3 or 5](A08-multiples-of-3-or-5.md)
+
+</div>

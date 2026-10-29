@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: repeat and count](../themes/loops-repeat.md) › L19
+---
+prev:
+  text: "L04 · Multiplication table"
+  link: /exercises/L04-multiplication-table
+next:
+  text: "A11 · Arrange: sum of squares"
+  link: /exercises/A11-arrange-sum-of-squares
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › L19
 
 # L19 · Count the turns
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: repeat and count](../themes/loops-repeat.md) | [Counter loop](../cookbook/01-counter-loop.md), [Accumulator](../cookbook/02-accumulator.md) | [L11](L11-count-from-a-to-b.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Add up** · exercise 1 of 12 in this group (14 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Counter loop](../cookbook/01-counter-loop.md), [Accumulator](../cookbook/02-accumulator.md) | [L11](L11-count-from-a-to-b.md) |
+
+</div>
 
 ## Goal
 
@@ -73,4 +90,8 @@ Only after a real try: [open the solution for L19](../solutions/L19_CountTheTurn
 
 ---
 
-Previous: [L18 · Square numbers](L18-squares.md) · [All exercises](README.md) · Next: [A11 · Arrange the lines: sum of squares](A11-arrange-sum-of-squares.md)
+<div class="gh-only">
+
+Previous: [L04 · Multiplication table](L04-multiplication-table.md) · [Loops](../themes/loops.md) · Next: [A11 · Arrange: sum of squares](A11-arrange-sum-of-squares.md)
+
+</div>

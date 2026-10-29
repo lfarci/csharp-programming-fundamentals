@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Exceptions](../themes/exceptions.md) › E01
+---
+prev:
+  text: "E02 · Parse or zero"
+  link: /exercises/E02-parse-or-zero
+next:
+  text: "Roadmap"
+  link: /ROADMAP
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Methods and errors](../themes/methods.md) › [Errors](../themes/methods.md#errors) › E01
 
 # E01 · Safe number reader
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Exceptions](../themes/exceptions.md) | [Input validation](../cookbook/09-input-validation.md) | [L07](L07-ask-until-valid.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Methods and errors › Errors** · exercise 2 of 2 in this group (4 of 4 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [Input validation](../cookbook/09-input-validation.md) | [L07](L07-ask-until-valid.md) |
+
+</div>
 
 ## Goal
 
@@ -72,4 +89,8 @@ Only after a real try: [open the solution for E01](../solutions/E01_SafeNumberRe
 
 ---
 
-Previous: [F01 · Save numbers to a file](F01-numbers-file.md) · [All exercises](README.md) · Next: [K01 · Shopping list](K01-shopping-list.md)
+<div class="gh-only">
+
+Previous: [E02 · Parse or zero](E02-parse-or-zero.md) · [Methods and errors](../themes/methods.md) · Next: [Roadmap](../ROADMAP.md)
+
+</div>

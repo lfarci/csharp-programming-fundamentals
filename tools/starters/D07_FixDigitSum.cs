@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // D07 · Fix the bugs: digit sum
+    // D07 · Fix: digit sum
     // Exercise page: exercises/D07-fix-digit-sum.md
     //
     // Goal: DigitSum(n) should give back the sum of the digits of n (n ≥ 0). The code is

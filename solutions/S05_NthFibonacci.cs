@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // S05 · The n-th Fibonacci number
+    // S05 · N-th Fibonacci
     // Exercise page: exercises/S05-nth-fibonacci.md
     public static class S05_NthFibonacci
     {

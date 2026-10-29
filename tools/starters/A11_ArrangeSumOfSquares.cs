@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // A11 · Arrange the lines: sum of squares
+    // A11 · Arrange: sum of squares
     // Exercise page: exercises/A11-arrange-sum-of-squares.md
     //
     // Goal: Give back 1² + 2² + … + n². SumOfSquares(3) is 1 + 4 + 9 = 14. All the lines are

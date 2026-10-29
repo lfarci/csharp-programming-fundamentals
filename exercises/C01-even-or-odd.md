@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Conditions](../themes/conditions.md) › C01
+---
+prev:
+  text: "B03 · Seconds to h, min, s"
+  link: /exercises/B03-seconds-to-hms
+next:
+  text: "C02 · Largest of three"
+  link: /exercises/C02-largest-of-three
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [Conditions](../themes/basics.md#conditions) › C01
 
 # C01 · Even or odd
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Conditions](../themes/conditions.md) | — | [B02](B02-rectangle-calculator.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Basics › Conditions** · exercise 1 of 4 in this group (4 of 7 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | — | [B02](B02-rectangle-calculator.md) |
+
+</div>
 
 ## Goal
 
@@ -74,4 +91,8 @@ Only after a real try: [open the solution for C01](../solutions/C01_EvenOrOdd.cs
 
 ---
 
-Previous: [B03 · Seconds to hours, minutes, seconds](B03-seconds-to-hms.md) · [All exercises](README.md) · Next: [C02 · Largest of three](C02-largest-of-three.md)
+<div class="gh-only">
+
+Previous: [B03 · Seconds to h, min, s](B03-seconds-to-hms.md) · [Basics](../themes/basics.md) · Next: [C02 · Largest of three](C02-largest-of-three.md)
+
+</div>

@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // R06 · Fix the bugs: largest value
+    // R06 · Fix: largest value
     // Exercise page: exercises/R06-fix-largest-value.md
     //
     // Goal: Largest(values) should give back the largest value of the array (at least 1 value).

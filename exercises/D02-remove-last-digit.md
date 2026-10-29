@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: take digits apart](../themes/loops-digits.md) › D02
+---
+prev:
+  text: "D01 · Last digit"
+  link: /exercises/D01-last-digit
+next:
+  text: "D03 · Count the digits"
+  link: /exercises/D03-count-digits
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D02
 
 # D02 · Remove the last digit
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: take digits apart](../themes/loops-digits.md) | [Digit extraction](../cookbook/06-digit-extraction.md) | [D01](D01-last-digit.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Digits** · exercise 2 of 12 in this group (57 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Digit extraction](../cookbook/06-digit-extraction.md) | [D01](D01-last-digit.md) |
+
+</div>
 
 ## Goal
 
@@ -73,4 +90,8 @@ Only after a real try: [open the solution for D02](../solutions/D02_RemoveLastDi
 
 ---
 
-Previous: [D01 · Last digit](D01-last-digit.md) · [All exercises](README.md) · Next: [D03 · Count the digits](D03-count-digits.md)
+<div class="gh-only">
+
+Previous: [D01 · Last digit](D01-last-digit.md) · [Loops](../themes/loops.md) · Next: [D03 · Count the digits](D03-count-digits.md)
+
+</div>

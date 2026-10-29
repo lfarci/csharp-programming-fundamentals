@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: draw in 2D](../themes/loops-2d.md) › G13
+---
+prev:
+  text: "G04 · Hollow rectangle"
+  link: /exercises/G04-hollow-rectangle
+next:
+  text: "G05 · Checkerboard"
+  link: /exercises/G05-checkerboard
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw shapes](../themes/loops.md#draw-shapes) › G13
 
 # G13 · Diagonal
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: draw in 2D](../themes/loops-2d.md) | [Nested grid](../cookbook/08-nested-grid.md) | [G08](G08-solid-square.md), [G04](G04-hollow-rectangle.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Draw shapes** · exercise 6 of 8 in this group (53 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [Nested grid](../cookbook/08-nested-grid.md) | [G08](G08-solid-square.md), [G04](G04-hollow-rectangle.md) |
+
+</div>
 
 ## Goal
 
@@ -71,4 +88,8 @@ Only after a real try: [open the solution for G13](../solutions/G13_Diagonal.cs)
 
 ---
 
-Previous: [G04 · Hollow rectangle](G04-hollow-rectangle.md) · [All exercises](README.md) · Next: [G05 · Checkerboard](G05-checkerboard.md)
+<div class="gh-only">
+
+Previous: [G04 · Hollow rectangle](G04-hollow-rectangle.md) · [Loops](../themes/loops.md) · Next: [G05 · Checkerboard](G05-checkerboard.md)
+
+</div>

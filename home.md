@@ -28,7 +28,7 @@ features:
     link: /cookbook/
     linkText: Open the cookbook
   - title: Exercises by theme
-    details: 96 small exercises in 15 themes, from Hello World to methods. Each one adds a single new difficulty.
+    details: 103 small exercises in 4 themes, split into small groups of the same pattern. Each one adds a single new difficulty.
     link: /exercises/
     linkText: All exercises
   - title: A checker in your terminal

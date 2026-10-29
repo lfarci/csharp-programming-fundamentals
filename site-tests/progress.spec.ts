@@ -10,27 +10,28 @@ test('Mark as done on an exercise page survives a reload and shows on its theme 
   await page.reload()
   await expect(page.getByLabel('Mark A04 as done')).toBeChecked()
 
-  await page.goto('themes/loops-running-result')
-  await expect(page.locator('.theme-ex .count')).toHaveText(/1 of 22 done/)
+  await page.goto('themes/loops')
+  await expect(page.locator('.theme-ex[data-group="add-up"] .count')).toHaveText(/1 of 12 done/)
   await expect(page.locator('.theme-ex').getByLabel('Mark A04 as done')).toBeChecked()
+  await expect(page.locator('.groups li', { hasText: 'Add up' })).toContainText('1 / 12')
 
   await page.goto('exercises/')
-  await expect(page.locator('.overview .summary')).toContainText('1 of 96')
-  await expect(page.locator('.overview li', { hasText: 'Loops: keep a running result' })).toContainText('1 / 22')
+  await expect(page.locator('.overview .summary')).toContainText('1 of 103')
+  await expect(page.locator('.overview li.item', { hasText: 'Loops' })).toContainText('1 / 81')
 
   await page.goto('progress')
-  await expect(page.locator('.progress .big')).toContainText('1 of 96')
+  await expect(page.locator('.progress .big')).toContainText('1 of 103')
 })
 
 test('Ticking in a theme table updates the count, and unticking removes it', async ({ page }) => {
-  await page.goto('themes/conditions')
+  await page.goto('themes/basics')
   const box = page.locator('.theme-ex').getByLabel('Mark C01 as done')
   await box.check()
-  await expect(page.locator('.theme-ex .count')).toHaveText(/1 of 4 done/)
+  await expect(page.locator('.theme-ex[data-group="conditions"] .count')).toHaveText(/1 of 4 done/)
   await page.reload()
   await expect(page.locator('.theme-ex').getByLabel('Mark C01 as done')).toBeChecked()
   await page.locator('.theme-ex').getByLabel('Mark C01 as done').uncheck()
-  await expect(page.locator('.theme-ex .count')).toHaveText(/0 of 4 done/)
+  await expect(page.locator('.theme-ex[data-group="conditions"] .count')).toHaveText(/0 of 4 done/)
 })
 
 test('Importing a sync code from ./ex progress marks those exercises as done', async ({ page }) => {
@@ -38,9 +39,9 @@ test('Importing a sync code from ./ex progress marks those exercises as done', a
   await page.getByLabel('Sync code or JSON backup').fill('CPF1:A1-4;L11')
   await page.getByRole('button', { name: 'Import' }).click()
   await expect(page.getByRole('status')).toContainText('5 new exercise(s)')
-  await expect(page.locator('.progress .big')).toContainText('5 of 96')
+  await expect(page.locator('.progress .big')).toContainText('5 of 103')
   await page.reload()
-  await expect(page.locator('.progress .big')).toContainText('5 of 96')
+  await expect(page.locator('.progress .big')).toContainText('5 of 103')
   await expect(page.locator('.progress p', { hasText: 'Your sync code for this browser' }).locator('code')).toHaveText('CPF1:A1-4;L11')
 
   await page.goto('exercises/L11-count-from-a-to-b')
@@ -52,7 +53,7 @@ test('A wrong code is refused with a clear message', async ({ page }) => {
   await page.getByLabel('Sync code or JSON backup').fill('hello')
   await page.getByRole('button', { name: 'Import' }).click()
   await expect(page.getByRole('status')).toContainText('Not imported')
-  await expect(page.locator('.progress .big')).toContainText('0 of 96')
+  await expect(page.locator('.progress .big')).toContainText('0 of 103')
 })
 
 test('The home page has the logo, the favicon and a playable demo video', async ({ page, request }) => {
@@ -83,6 +84,27 @@ test('The Videos gallery lists only the kept episodes, and each opens its own pa
 
 test('The Learn overview links every theme to a module, a video and its exercises', async ({ page }) => {
   await page.goto('learn/')
-  await expect(page.locator('.flow .steps > li')).toHaveCount(15)
+  await expect(page.locator('.flow .steps > li')).toHaveCount(4)
   await expect(page.locator('.flow .steps > li').first().locator('a')).toHaveCount(4)
+})
+
+test('An exercise page says where you are, and Previous/Next stay inside the theme', async ({ page }) => {
+  await page.goto('exercises/L11-count-from-a-to-b')
+  await expect(page.locator('.ex-head .cpf-kicker')).toHaveText('Loops › Count')
+  await expect(page.locator('.ex-head .pos')).toHaveText('Exercise 4 of 13')
+  await expect(page.locator('.VPDocFooter .pager-link.prev')).toContainText('L03')
+  await expect(page.locator('.VPDocFooter .pager-link.next')).toContainText('L12')
+})
+
+test('The sidebar shows themes and groups, never one link per exercise', async ({ page }) => {
+  await page.goto('themes/loops')
+  await expect(page.locator('.VPSidebar a[href*="/exercises/"][href$="-"], .VPSidebar a[href*="/exercises/A"], .VPSidebar a[href*="/exercises/L"]')).toHaveCount(0)
+  await expect(page.locator('.VPSidebar').getByRole('link', { name: 'Draw shapes' })).toHaveCount(1)
+})
+
+test('The Learn the theory card has one video, one module and the first exercise', async ({ page }) => {
+  await page.goto('themes/loops')
+  const card = page.locator('.learn-card')
+  await expect(card.locator('.steps > li')).toHaveCount(3)
+  await expect(card.getByRole('link', { name: 'Start L01 · Trace a loop' })).toHaveAttribute('href', /exercises\/L01-trace-a-loop/)
 })

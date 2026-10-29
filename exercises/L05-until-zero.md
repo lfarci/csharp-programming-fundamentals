@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: repeat and count](../themes/loops-repeat.md) › L05
+---
+prev:
+  text: "A08 · Multiples of 3 or 5"
+  link: /exercises/A08-multiples-of-3-or-5
+next:
+  text: "A06 · Average until zero"
+  link: /exercises/A06-average-until-zero
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Until the user stops](../themes/loops.md#until-the-user-stops) › L05
 
 # L05 · Until zero
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: repeat and count](../themes/loops-repeat.md) | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Accumulator](../cookbook/02-accumulator.md) | [L03](L03-count-up-and-down.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Until the user stops** · exercise 1 of 5 in this group (35 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Accumulator](../cookbook/02-accumulator.md) | [L03](L03-count-up-and-down.md) |
+
+</div>
 
 ## Goal
 
@@ -83,4 +100,8 @@ Only after a real try: [open the solution for L05](../solutions/L05_UntilZero.cs
 
 ---
 
-Previous: [L04 · Multiplication table](L04-multiplication-table.md) · [All exercises](README.md) · Next: [L06 · Even numbers](L06-even-numbers.md)
+<div class="gh-only">
+
+Previous: [A08 · Multiples of 3 or 5](A08-multiples-of-3-or-5.md) · [Loops](../themes/loops.md) · Next: [A06 · Average until zero](A06-average-until-zero.md)
+
+</div>

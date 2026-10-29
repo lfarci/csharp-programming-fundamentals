@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: draw in 2D](../themes/loops-2d.md) › G12
+---
+prev:
+  text: "G11 · Counting triangle"
+  link: /exercises/G11-counting-triangle
+next:
+  text: "G04 · Hollow rectangle"
+  link: /exercises/G04-hollow-rectangle
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw shapes](../themes/loops.md#draw-shapes) › G12
 
 # G12 · Upside-down triangle
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Guided | easy | [Loops: draw in 2D](../themes/loops-2d.md) | [Nested grid](../cookbook/08-nested-grid.md) | [G02](G02-right-triangle.md), [L12](L12-count-down.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Draw shapes** · exercise 4 of 8 in this group (51 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Guided | easy | write code | [Nested grid](../cookbook/08-nested-grid.md) | [G02](G02-right-triangle.md), [L12](L12-count-down.md) |
+
+</div>
 
 ## Goal
 
@@ -71,4 +88,8 @@ Only after a real try: [open the solution for G12](../solutions/G12_UpsideDownTr
 
 ---
 
-Previous: [G11 · Counting triangle](G11-counting-triangle.md) · [All exercises](README.md) · Next: [G14 · Numbers in columns](G14-numbers-in-columns.md)
+<div class="gh-only">
+
+Previous: [G11 · Counting triangle](G11-counting-triangle.md) · [Loops](../themes/loops.md) · Next: [G04 · Hollow rectangle](G04-hollow-rectangle.md)
+
+</div>

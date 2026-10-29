@@ -1,6 +1,6 @@
 namespace Practice
 {
-    // R02 · Largest value in an array
+    // R02 · Position of the largest
     // Exercise page: exercises/R02-largest-in-an-array.md
     //
     // Goal: Give back the position (index) of the largest value in the array (the first one if

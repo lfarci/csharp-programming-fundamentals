@@ -24,8 +24,8 @@ next: false
 
 ## Practise after this
 
-- [Conditions](../../themes/conditions.md): start with [C01](../../exercises/C01-even-or-odd.md), [C02](../../exercises/C02-largest-of-three.md), [C03](../../exercises/C03-ticket-price.md)
+- [Basics](../../themes/basics.md): start with [B01](../../exercises/B01-hello-you.md), [B02](../../exercises/B02-rectangle-calculator.md), [B03](../../exercises/B03-seconds-to-hms.md)
 
 ---
 
-Previous: [The if Decision Statement](the-if-decision-statement.md) · [All videos](../videos.md) · Next: [for Iteration Statement](for-iteration-statement.md)
+Previous: [Operators, Expressions, and Statements](operators-expressions-and-statements.md) · [All videos](../videos.md) · Next: [for Iteration Statement](for-iteration-statement.md)

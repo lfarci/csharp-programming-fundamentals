@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: keep a running result](../themes/loops-running-result.md) › A09
+---
+prev:
+  text: "A06 · Average until zero"
+  link: /exercises/A06-average-until-zero
+next:
+  text: "L07 · Ask until valid"
+  link: /exercises/L07-ask-until-valid
+---
 
-# A09 · Smallest and largest until zero
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Until the user stops](../themes/loops.md#until-the-user-stops) › A09
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: keep a running result](../themes/loops-running-result.md) | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Min/max](../cookbook/04-min-max.md) | [A06](A06-average-until-zero.md), [C02](C02-largest-of-three.md) | Custom |
+# A09 · Min and max until zero
+
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Until the user stops** · exercise 3 of 5 in this group (37 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Min/max](../cookbook/04-min-max.md) | [A06](A06-average-until-zero.md), [C02](C02-largest-of-three.md) |
+
+</div>
 
 ## Goal
 
@@ -91,4 +108,8 @@ Only after a real try: [open the solution for A09](../solutions/A09_MinAndMaxUnt
 
 ---
 
-Previous: [A08 · Multiples of 3 or 5](A08-multiples-of-3-or-5.md) · [All exercises](README.md) · Next: [A10 · Sum of a series](A10-sum-of-a-series.md)
+<div class="gh-only">
+
+Previous: [A06 · Average until zero](A06-average-until-zero.md) · [Loops](../themes/loops.md) · Next: [L07 · Ask until valid](L07-ask-until-valid.md)
+
+</div>

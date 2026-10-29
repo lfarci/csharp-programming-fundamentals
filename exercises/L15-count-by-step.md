@@ -1,10 +1,27 @@
-[Home](../README.md) › [Exercises](README.md) › [Loops: repeat and count](../themes/loops-repeat.md) › L15
+---
+prev:
+  text: "L18 · Square numbers"
+  link: /exercises/L18-squares
+next:
+  text: "L04 · Multiplication table"
+  link: /exercises/L04-multiplication-table
+---
+
+[Home](../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L15
 
 # L15 · Count by any step
 
-| Level | Difficulty | Theme | Recipes | Do these first | Source |
-| --- | --- | --- | --- | --- | --- |
-| Independent | medium | [Loops: repeat and count](../themes/loops-repeat.md) | [Counter loop](../cookbook/01-counter-loop.md) | [L14](L14-count-by-5.md) | Custom |
+<ExerciseHeader />
+
+<div class="gh-only">
+
+**Loops › Count** · exercise 12 of 13 in this group (12 of 81 in the theme)
+
+| Level | Effort | Kind | Recipes | Do these first |
+| --- | --- | --- | --- | --- |
+| Independent | medium | write code | [Counter loop](../cookbook/01-counter-loop.md) | [L14](L14-count-by-5.md) |
+
+</div>
 
 ## Goal
 
@@ -72,4 +89,8 @@ Only after a real try: [open the solution for L15](../solutions/L15_CountByStep.
 
 ---
 
-Previous: [L14 · Count by 5](L14-count-by-5.md) · [All exercises](README.md) · Next: [L16 · Odd numbers](L16-odd-numbers.md)
+<div class="gh-only">
+
+Previous: [L18 · Square numbers](L18-squares.md) · [Loops](../themes/loops.md) · Next: [L04 · Multiplication table](L04-multiplication-table.md)
+
+</div>
