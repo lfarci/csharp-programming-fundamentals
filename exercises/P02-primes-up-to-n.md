@@ -10,6 +10,17 @@
 
 Read N. Print all prime numbers from 2 to N on one line, then how many there are.
 
+## ▶️ Start and check
+
+```bash
+./ex start P02     # creates practice/P02_PrimesUpToN.cs (never overwrites your work)
+./ex check P02     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
+
 ## 🧪 Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
@@ -75,7 +86,7 @@ Print the first N primes (not the primes up to N).
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for P02](../solutions/P02-primes-up-to-n.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for P02](../solutions/P02_PrimesUpToN.cs). Your solution can be different and still correct!
 
 ---
 

@@ -8,35 +8,32 @@
 
 ## 🎯 Goal
 
-A cinema ticket costs 5 for children under 12, 7 for people aged 65 or more, and 10 for everyone else. Read an age and print the price.
+A cinema ticket costs 5 for children under 12, 7 for people aged 65 or more, and 10 for everyone else. Give back the price for `age`.
+
+## ▶️ Start and check
+
+```bash
+./ex start C03     # creates practice/C03_TicketPrice.cs (never overwrites your work)
+./ex check C03     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `int Price(int age)`: input = age, an int (whole number); result = an int (whole number), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `11`
-
-```text
-Price: 5
-```
-
-**Example 2** — input: `12`
-
-```text
-Price: 10
-```
-
-**Example 3** — input: `64`
-
-```text
-Price: 10
-```
-
-**Example 4** — input: `65`
-
-```text
-Price: 7
-```
+| Call | Result |
+| --- | --- |
+| `Price(11)` | `5` |
+| `Price(12)` | `10` |
+| `Price(64)` | `10` |
+| `Price(65)` | `7` |
+| `Price(0)` | `5` |
 
 ## ⚠️ Edge cases to test
 
@@ -73,7 +70,7 @@ Add a rule: on Wednesday (ask the day as a number 1-7) everybody pays 6.
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for C03](../solutions/C03-ticket-price.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for C03](../solutions/C03_TicketPrice.cs). Your solution can be different and still correct!
 
 ---
 

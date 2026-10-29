@@ -12,10 +12,11 @@ Deeper reference, reached only when the branch fires:
 
 - `ROADMAP.md`: two tracks aligned to university weeks (W1 Hello World, W2 variables, W3 conditions, W4 loops, W5 files, W6 arrays, 2–6 Nov no class, W7 exceptions, W8 recap, W9 collections, W10 methods, W11–12 objects). It also holds the dated "you are here" callout and the catch-up plan: update both when the date moves on.
 - `cookbook/`: 12 loop **recipes** + decision diagram + `combining-recipes.md`.
-- `exercises/`, `solutions/`, `docs/progress-checklist.md`: **generated**. Never hand-edit them.
-- `tools/generator/`: the single source of truth for every exercise (`data1.py` → `data4.py`, chained imports; `gen.py` renders).
+- `exercises/`, `solutions/*.cs`, `tools/starters/`, `tools/exercises.json`, `tests/Practice.Tests/Generated.cs`, `docs/progress-checklist.md`: **generated**. Never hand-edit them.
+- `tools/generator/`: the single source of truth for every exercise (`data1.py` → `data4.py` statements, chained imports; `data5.py` the method each exercise asks for; `gen.py` renders).
 - `docs/`: learner guides (getting started, reading an exercise, problem solving, practice, glossary) + the writing guide.
-- `practice/`: the one console project she codes in. `Program.cs` stays a neutral placeholder, never a solution.
+- `practice/`: **her** project. `./ex start` copies a starter here and never overwrites; nothing else writes here. `Program.cs` and `Practice.csproj` are plumbing she never edits (they run the current exercise via `tools/ex/Runner.cs`).
+- `./ex` (`ex`, `ex.cmd` → `tools/ex`): start, check, run, next, list. `tests/Practice.Tests`: xUnit v3 tests behind `./ex check`, also visible in Test Explorer (`CSharpFundamentals.sln`).
 
 ## Pedagogy (the rubric)
 
@@ -36,7 +37,11 @@ Deeper reference, reached only when the branch fires:
 
 **IDs**: one family letter + two digits, ordered by difficulty. B basics, C conditions, L loop mechanics, A accumulators, G 2D drawings, D digits, S state, P search & primes, M combine, R arrays, T text, F files, E exceptions, K collections, N methods. Family order and the step it maps to live in `FAM` in `gen.py`. `paper=True` makes a paper exercise with an answer key in `solutions/ID.md`.
 
-**Examples are tests**: each `(inputs, outputs)` pair becomes a case in `solutions/tests.json`. Output lines match as *line endings*, because prompts printed with `Console.Write` share the line; keep printed results on their own `WriteLine`.
+**Exercise shape**: one file, one `public static class ID_PascalName` in namespace `Practice`.
+
+- *Method exercise* (entry in `data5.M`): she fills in the method(s); its parameters are the input, `return` the result. The page shows `GOALS` and a call → result table; the tests call the method by reflection with `cases`. Drawings are `void` methods whose printed text is compared. Add a case the `TODO` starter fails (CI checks this).
+- *Program exercise* (no entry): input loops, menus, files. She writes `public static void Run()`; the tests feed the example input and match printed lines as *line endings* (prompts from `Console.Write` share the line), so results go on their own `WriteLine`.
+- Methods are allowed from week 1, framed as "input = parameters, result = return"; unit-test vocabulary stays behind `./ex check` until week 10.
 
 **Recipe** (`cookbook/NN-name.md`): breadcrumb, `# Recipe N · Name — tagline`, one-line quote, then 🔎 Recognize it, 🧠 The idea (diagram), 📝 Template, 🔬 Trace table, ⚠️ Common mistakes, 🏋️ Mini exercises (linked IDs), ➡️ Next.
 
@@ -49,8 +54,7 @@ Deeper reference, reached only when the branch fires:
 | Check | Local | Gotcha |
 | --- | --- | --- |
 | Generator in sync | `python3 tools/generator/gen.py` then `git diff` | Edit data, regenerate, commit both. |
-| Solutions | `python3 tools/check-solutions.py [ID…]` | Needs .NET 10 (file-based `dotnet build x.cs`); each run gets a temp working dir, so F01's `numbers.txt` stays out of the repo. |
-| Practice | `dotnet build practice` | Targets net8.0 with `RollForward=Major`. |
+| Exercises | `tools/check-exercises.sh` | Reference solutions pass every test (via `EXERCISE_ASSEMBLY`), every starter compiles and fails at least one example, `./ex` runs. Projects target net8.0 with `RollForward=Major`; `global.json` opts `dotnet test` into Microsoft.Testing.Platform (needed on .NET 10 SDK); `./ex` runs the test exe directly, so it works on any SDK. |
 | Mermaid | `tools/check-mermaid.sh` | Renders through mermaid-cli + Chrome (`--no-sandbox`). |
 | Markdown lint | `npx markdownlint-cli2` | Config `.markdownlint-cli2.jsonc`; a heading ending in `C#` trips MD020, so reword it. |
 | Links | `python3 tools/check-links.py [--external]`, `lychee --config lychee.toml .` | doi.org and publishers answer 403 to bots: accepted. |

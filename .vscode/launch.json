@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug the current exercise",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build practice",
+      "program": "${workspaceFolder}/practice/bin/Debug/net8.0/Practice.dll",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}

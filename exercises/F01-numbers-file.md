@@ -10,6 +10,17 @@
 
 Read numbers until 0 and save them (one per line) in `numbers.txt`. Then read the file back and print how many lines it has and the sum.
 
+## ▶️ Start and check
+
+```bash
+./ex start F01     # creates practice/F01_NumbersFile.cs (never overwrites your work)
+./ex check F01     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
+
 ## 🧪 Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
@@ -69,7 +80,7 @@ When the program starts, if the file exists, first print the numbers saved last 
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for F01](../solutions/F01-numbers-file.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for F01](../solutions/F01_NumbersFile.cs). Your solution can be different and still correct!
 
 ---
 

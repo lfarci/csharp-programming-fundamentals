@@ -10,6 +10,17 @@
 
 Read N. With **one** loop compute the sum 1+…+N and the sum of squares 1²+…+N². Print both, then (sum)² − (sum of squares).
 
+## ▶️ Start and check
+
+```bash
+./ex start A05     # creates practice/A05_SumSquareDifference.cs (never overwrites your work)
+./ex check A05     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
+
 ## 🧪 Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
@@ -71,7 +82,7 @@ Now solve [Project Euler #6](https://projecteuler.net/problem=6) (N = 100). Use 
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for A05](../solutions/A05-sum-square-difference.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for A05](../solutions/A05_SumSquareDifference.cs). Your solution can be different and still correct!
 
 ---
 

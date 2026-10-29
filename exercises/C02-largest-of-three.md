@@ -8,29 +8,31 @@
 
 ## 🎯 Goal
 
-Read three whole numbers and print the largest one.
+Give back the largest of the three numbers.
+
+## ▶️ Start and check
+
+```bash
+./ex start C02     # creates practice/C02_LargestOfThree.cs (never overwrites your work)
+./ex check C02     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `int Largest(int a, int b, int c)`: input = a, an int (whole number), b, an int (whole number), c, an int (whole number); result = an int (whole number), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `3`, `9`, `5`
-
-```text
-Largest: 9
-```
-
-**Example 2** — input: `-1`, `-7`, `-3`
-
-```text
-Largest: -1
-```
-
-**Example 3** — input: `4`, `4`, `2`
-
-```text
-Largest: 4
-```
+| Call | Result |
+| --- | --- |
+| `Largest(3, 9, 5)` | `9` |
+| `Largest(-1, -7, -3)` | `-1` |
+| `Largest(4, 4, 2)` | `4` |
+| `Largest(1, 2, 8)` | `8` |
 
 ## ⚠️ Edge cases to test
 
@@ -74,7 +76,7 @@ Print the smallest of four numbers.
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for C02](../solutions/C02-largest-of-three.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for C02](../solutions/C02_LargestOfThree.cs). Your solution can be different and still correct!
 
 ---
 

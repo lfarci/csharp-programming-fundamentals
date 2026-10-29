@@ -10,6 +10,17 @@
 
 Ask the user for their name and greet them.
 
+## ▶️ Start and check
+
+```bash
+./ex start B01     # creates practice/B01_HelloYou.cs (never overwrites your work)
+./ex check B01     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
+
 ## 🧪 Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
@@ -61,7 +72,7 @@ Ask for a first name **and** a city, and print `Ada lives in Brussels.`
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for B01](../solutions/B01-hello-you.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for B01](../solutions/B01_HelloYou.cs). Your solution can be different and still correct!
 
 ---
 

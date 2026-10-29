@@ -1,12 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <!-- Your exercises live in this project: one file per exercise (created by ./ex start).
+       You never need to edit this file or Program.cs. -->
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-    <!-- Also runs if only a newer .NET (9, 10, ...) is installed -->
     <RollForward>Major</RollForward>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <RootNamespace>Practice</RootNamespace>
+    <!-- An unfinished exercise must not stop the others from running. -->
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
   </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Practice.Tests" />
+    <Compile Include="..\tools\ex\Runner.cs" Link="Plumbing\Runner.cs" />
+  </ItemGroup>
 
 </Project>

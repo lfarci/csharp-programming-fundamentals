@@ -1,10 +1,73 @@
-import json, os, sys
+import json, os, sys, textwrap, glob
 from data4 import E, X
+from data5 import M, GOALS, RULES, HINTS
+import re
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 RECIPES = {"01":("Counter loop","01-counter-loop"),"02":("Accumulator","02-accumulator"),"03":("Conditional accumulator","03-conditional-accumulator"),
 "04":("Min/max","04-min-max"),"05":("Flag/search","05-flag-search"),"06":("Digit extraction","06-digit-extraction"),"07":("State update","07-state-update"),
 "08":("Nested grid","08-nested-grid"),"09":("Input validation","09-input-validation"),"10":("Sentinel loop","10-sentinel-loop"),
 "11":("Array traversal","11-array-traversal"),"12":("Build a string","12-string-building")}
+
+def plain(t):  # markdown → plain text for code comments
+    t = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", t)
+    return t.replace("**", "").replace("`", "")
+def pascal(slug): return "".join(w[:1].upper() + w[1:] for w in slug.split("-"))
+def cls(e): return f'{e["id"]}_{pascal(e["slug"])}'
+def ind(code, n):
+    pad = " " * n
+    return "\n".join((pad + l) if l.strip() else "" for l in code.rstrip("\n").split("\n"))
+def parse_sig(sig):
+    m = re.match(r"public static (\S+) (\w+)\((.*)\)", sig)
+    ps = [p.strip().split() for p in m.group(3).split(",") if p.strip()]
+    return m.group(1), m.group(2), ps
+TYPE = {"int": "an int (whole number)", "long": "a long (big whole number)", "double": "a double (decimal number)",
+        "bool": "a bool (true or false)", "string": "a string (text)", "char": "a char (one character)", "int[]": "an int[] (array of whole numbers)"}
+def cslit(v):
+    if isinstance(v, bool): return "true" if v else "false"
+    if isinstance(v, list): return "new int[] { " + ", ".join(map(str, v)) + " }" if v else "new int[0]"
+    if isinstance(v, str): return '"' + v.replace("\n", "\\n") + '"' if len(v) != 1 else "'" + v + "'"
+    return str(v)
+def shown(v):
+    if isinstance(v, str) and "\n" in v: return "prints:<br>" + "<br>".join("`" + l.replace(" ", " ") + "`" for l in v.rstrip("\n").split("\n"))
+    if isinstance(v, str): return f'`"{v}"`'
+    if isinstance(v, float): return f"`{v:.4f}`…"
+    return f"`{cslit(v)}`"
+def method_job(e):
+    """Plain-words description of the method(s) to write (page + starter)."""
+    out = []
+    for sig, _, _ in M[e["id"]]["methods"]:
+        ret, name, ps = parse_sig(sig)
+        ins = ", ".join(f"{p[1]}, {TYPE[p[0]]}" for p in ps) or "nothing"
+        res = "nothing is returned: the method prints with Console.Write / Console.WriteLine" if ret == "void" else f"{TYPE[ret]}, given back with return"
+        out.append((name, sig, ins, res))
+    return out
+def cs_file(e, starter):
+    """One exercise = one file = one static class holding the method(s) to write."""
+    c = cls(e); spec = M.get(e["id"])
+    H = [f"{e['id']} · {e['title']}", f"Exercise page: exercises/{fname(e)}.md"]
+    if starter:
+        goal = plain(GOALS[e["id"]] if spec else e["goal"]).split("\n")[0]
+        H += [""] + textwrap.wrap("Goal: " + goal, 90) + [""]
+        if spec:
+            H += ["YOUR JOB: write the method" + ("s" if len(spec["methods"]) > 1 else "") + " below, where it says TODO."]
+            for name, sig, ins, res in method_job(e):
+                H += [f"  {name}", f"    input  (parameters): {ins}", f"    result (return)    : {res}"]
+        else:
+            H += ["YOUR JOB: write the whole program inside Run(), where it says TODO.",
+                  "Use Console.ReadLine() to read and Console.WriteLine() to print, as usual."]
+        H += ["", f"Check your code:  ./ex check {e['id']}     (Windows: .\\ex check {e['id']})",
+              f"Try it yourself:  ./ex run {e['id']}"]
+    body = []
+    if spec:
+        for i, (sig, code, todo) in enumerate(spec["methods"]):
+            inner = ("// TODO: write your code here.\n" + todo).rstrip() if starter else code
+            body += ([""] if i else []) + [sig, "{", ind(inner, 4), "}"]
+    else:
+        inner = "// TODO: write your code here." if starter else e["code"]
+        body += ["public static void Run()", "{", ind(inner, 4), "}"]
+    L = ["namespace Practice", "{"] + ["    // " + h if h else "    //" for h in H] + [f"    public static class {c}", "    {", ind("\n".join(body), 8), "    }", "}", ""]
+    return "\n".join(L)
+
 byid = {e["id"]: e for e in E}
 for e in E:  # guard: every prerequisite must exist
     missing = [p for p in e["pre"] if p not in byid]
@@ -16,7 +79,8 @@ def rlinks(e, base="../cookbook/"):
 def plinks(e, base=""):
     return ", ".join(f"[{p}]({base}{fname(byid[p])}.md)" for p in e["pre"]) or "—"
 
-os.makedirs(f"{ROOT}/exercises", exist_ok=True); os.makedirs(f"{ROOT}/solutions", exist_ok=True)
+for d in ["exercises", "solutions", "tools/starters", "tests/Practice.Tests"]: os.makedirs(f"{ROOT}/{d}", exist_ok=True)
+for old in glob.glob(f"{ROOT}/solutions/*.cs") + glob.glob(f"{ROOT}/tools/starters/*.cs"): os.remove(old)
 FAMORDER = "BCLAGDSPMRTFEKN"
 ORDER = sorted(E, key=lambda e: (FAMORDER.index(e["id"][0]), e["id"]))
 POS = {e["id"]: i for i, e in enumerate(ORDER)}
@@ -35,32 +99,68 @@ for e in E:
     L = ["🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › " + e["id"], "", f"# {e['id']} · {e['title']}", "",
          f"| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |", "| --- | --- | --- | --- | --- | --- |",
          f"| {e['level']} | {stars(e['stars'])} | {e['step']} | {rlinks(e)} | {plinks(e)} | {src} |", "",
-         "## 🎯 Goal", "", e["goal"], ""]
-    if e["examples"]:
+         "## 🎯 Goal", "", GOALS.get(e["id"], e["goal"]), ""]
+    if paper:
+        L += ["## ✏️ Start and check", "", "This one is on **paper**: no code to write. When you are done, compare with the answer key (link at the bottom).", ""]
+    else:
+        L += ["## ▶️ Start and check", "", "```bash", f"./ex start {e['id']}     # creates practice/{cls(e)}.cs (never overwrites your work)", f"./ex check {e['id']}     # tests your code with the examples below", "```", "",
+              f"On Windows, type `.\\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).", ""]
+        if e["id"] in M:
+            L += ["**Your job:** fill in " + ("these methods" if len(M[e["id"]]["methods"]) > 1 else "this method") + " in the file. The *parameters* are its input; what you `return` is its result.", ""]
+            for name, sig, ins, res in method_job(e):
+                L += [f"- `{sig.replace('public static ', '')}`: input = {ins}; result = {res}."]
+            L += [""]
+        else:
+            L += ["**Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.", ""]
+    if e["id"] in M:
+        L += ["## 🧪 Examples", "", "Your method must give these results. `./ex check` tests all of them.", "", "| Call | Result |", "| --- | --- |"]
+        for name, args, exp in M[e["id"]]["cases"]:
+            L.append(f"| `{name}({', '.join(cslit(a) for a in args)})` | {shown(exp)} |")
+        L += [""]
+    elif e["examples"]:
         L += ["## 🧪 Examples", "", "The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.", ""]
         for i, (inp, out) in enumerate(e["examples"], 1):
             shown_in = ", ".join(f"`{x}`" if x else "*(empty)*" for x in inp)
             L += [f"**Example {i}** — input: {shown_in}", "", "```text"] + (out if any(out) else ["(nothing is printed)"]) + ["```", ""]
     if e.get("note"): L += [f"> ℹ️ {e['note']}", ""]
     L += ["## ⚠️ Edge cases to test", ""] + [f"- {x}" for x in e["edge"]] + [""]
-    L += ["## 📏 Rules", ""] + [f"- {x}" for x in e["constraints"]] + ["- No LINQ and no ready-made helpers: you write every step yourself.", ""]
+    L += ["## 📏 Rules", ""] + [f"- {x}" for x in RULES.get(e["id"], e["constraints"])] + ["- No LINQ and no ready-made helpers: you write every step yourself.", ""]
     L += ["## 🗺️ Before coding", "", ("Fill the [reading worksheet](../docs/reading-an-exercise.md#4-the-worksheet-copy-it): what goes in? what comes out? a tiny example by hand?" if not e["recipes"] else "Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?"), ""]
     L += ["## 💡 Hints (open one at a time)", ""]
-    for i, h in enumerate(e["hints"], 1):
+    for i, h in enumerate(HINTS.get(e["id"], e["hints"]), 1):
         L += [f"<details><summary>Hint {i}</summary>", "", h, "", "</details>", ""]
     L += ["## ✅ Mastery check", "", "Solve this variation **alone**, on another day:", "", e["mastery"], ""]
-    sol = f"../solutions/{fname(e)}.{'md' if paper else 'cs'}"
+    sol = f"../solutions/{fname(e)}.md" if paper else f"../solutions/{cls(e)}.cs"
     L += ["## 🔑 Solution", "", f"Only after a real try: [open the solution for {e['id']}]({sol}). Your solution can be different and still correct!", "",
           "---", "", nav(e), ""]
     open(f"{ROOT}/exercises/{fname(e)}.md","w").write("\n".join(L))
     if paper:
         open(f"{ROOT}/solutions/{fname(e)}.md","w").write(f"🏠 [Home](../README.md) › 🔑 [Solutions](README.md) › {e['id']}\n\n# Answer key · {e['id']} {e['title']}\n\n{e['answer']}\n\n⬅️ [Back to the exercise](../exercises/{fname(e)}.md)\n")
     else:
-        head = f"// {e['id']} · {e['title']}\n// Exercise: exercises/{fname(e)}.md\n// Run: dotnet run solutions/{fname(e)}.cs   (.NET 10+), or paste into practice/Program.cs\n\n"
-        open(f"{ROOT}/solutions/{fname(e)}.cs","w").write(head + e["code"])
-        for inp, out in e["examples"]:
-            tests.append({"file": f"{fname(e)}.cs", "input": inp, "expected": [o for o in out if o.strip()]})
-json.dump(tests, open(f"{ROOT}/solutions/tests.json","w"), indent=1)
+        open(f"{ROOT}/solutions/{cls(e)}.cs", "w").write(cs_file(e, starter=False))
+        open(f"{ROOT}/tools/starters/{cls(e)}.cs", "w").write(cs_file(e, starter=True))
+        if e["id"] not in M: tests += e["examples"]
+# single source for the checker (tools/checker) and CI
+def jcase(name, args, exp): return {"method": name, "args": args, "expected": exp}
+cj = [{"id": e["id"], "name": fname(e), "class": cls(e), "title": e["title"], "paper": bool(e.get("paper")),
+       "kind": "paper" if e.get("paper") else ("method" if e["id"] in M else "output"),
+       "methods": [parse_sig(sig)[1] for sig, _, _ in M[e["id"]]["methods"]] if e["id"] in M else [],
+       "cases": [jcase(*c) for c in M[e["id"]]["cases"]] if e["id"] in M else [],
+       "examples": [{"input": inp, "expected": [o for o in out if o.strip()]} for inp, out in (e["examples"] or [])]}
+      for e in ORDER]
+json.dump(cj, open(f"{ROOT}/tools/exercises.json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+
+T = ["// <auto-generated> by tools/generator/gen.py. Do not edit. </auto-generated>", "namespace Practice.Tests", "{"]
+for e in ORDER:
+    if e.get("paper"): continue
+    T += [f"    public class {cls(e)}", "    {"]
+    if e["id"] in M:
+        T += [f'        [Theory, MemberData(nameof(Data.Cases), "{e["id"]}", MemberType = typeof(Data))]', f'        public void Method(int test) => Check.Method("{e["id"]}", test);', ""]
+    if e["examples"] and e["id"] not in M:
+        T += [f'        [Theory, MemberData(nameof(Data.Examples), "{e["id"]}", MemberType = typeof(Data))]', f'        public void Example(int test) => Check.Example("{e["id"]}", test);']
+    T += ["    }", ""]
+T += ["}", ""]
+open(f"{ROOT}/tests/Practice.Tests/Generated.cs", "w").write("\n".join(T))
 
 # ---------- inventory ----------
 FAM = [("B","Basics: input → compute → output","Step 1–2"),("C","Conditions","Step 3"),("L","Loop mechanics","Step 4a"),
@@ -150,4 +250,4 @@ g += graph([e["id"] for e in E if e["id"][0] in "BC"] + ["L01","L03"], "Before l
 g += graph([e["id"] for e in E if e["id"][0] in "RTFEKN"] + ["A01","A02","C02","L05","L07","M02"], "After loops (steps 5–10)")
 g += ["---", "", "⬅️ [All exercises](README.md) · 🗺️ [Roadmap](../ROADMAP.md)", ""]
 open(f"{ROOT}/exercises/dependency-graph.md","w").write("\n".join(g))
-print("generated", len(E), "exercises,", len(tests), "tests")
+print("generated", len(E), "exercises,", len(tests), "example runs,", sum(len(m["cases"]) for m in M.values()), "method cases")

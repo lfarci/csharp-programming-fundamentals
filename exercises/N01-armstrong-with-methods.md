@@ -8,17 +8,36 @@
 
 ## 🎯 Goal
 
-Rewrite M02 with three small methods: `CountDigits(int n)`, `Power(int b, int e)`, `IsArmstrong(int n)`. The main code only reads the bounds and loops.
+Split the Armstrong check into three small methods: `CountDigits`, `Power` and `IsArmstrong` (which uses the other two).
+
+## ▶️ Start and check
+
+```bash
+./ex start N01     # creates practice/N01_ArmstrongWithMethods.cs (never overwrites your work)
+./ex check N01     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in these methods in the file. The *parameters* are its input; what you `return` is its result.
+
+- `int CountDigits(int n)`: input = n, an int (whole number); result = an int (whole number), given back with return.
+- `int Power(int baseValue, int exponent)`: input = baseValue, an int (whole number), exponent, an int (whole number); result = an int (whole number), given back with return.
+- `bool IsArmstrong(int n)`: input = n, an int (whole number); result = a bool (true or false), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `100`, `999`
-
-```text
-153 370 371 407
-```
+| Call | Result |
+| --- | --- |
+| `CountDigits(352)` | `3` |
+| `CountDigits(0)` | `1` |
+| `Power(3, 4)` | `81` |
+| `Power(5, 0)` | `1` |
+| `IsArmstrong(153)` | `true` |
+| `IsArmstrong(154)` | `false` |
+| `IsArmstrong(9474)` | `true` |
 
 ## ⚠️ Edge cases to test
 
@@ -49,7 +68,7 @@ Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start v
 
 <details><summary>Hint 3</summary>
 
-Test each method alone first: `Console.WriteLine(Power(3, 4));` → 81.
+Test each method alone first: `./ex check` shows which one is wrong, and `./ex run` lets you try your own values.
 
 </details>
 
@@ -61,7 +80,7 @@ Add `IsPalindrome(int n)` and print the numbers in the range that are both (hint
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for N01](../solutions/N01-armstrong-with-methods.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for N01](../solutions/N01_ArmstrongWithMethods.cs). Your solution can be different and still correct!
 
 ---
 

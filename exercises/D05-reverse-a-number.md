@@ -8,29 +8,31 @@
 
 ## 🎯 Goal
 
-Read N ≥ 0. Print the number with its digits in reverse order.
+Give back n with its digits in reverse order (n ≥ 0): 352 → 253.
+
+## ▶️ Start and check
+
+```bash
+./ex start D05     # creates practice/D05_ReverseANumber.cs (never overwrites your work)
+./ex check D05     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `int ReverseNumber(int n)`: input = n, an int (whole number); result = an int (whole number), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `352`
-
-```text
-Reversed: 253
-```
-
-**Example 2** — input: `1200`
-
-```text
-Reversed: 21
-```
-
-**Example 3** — input: `0`
-
-```text
-Reversed: 0
-```
+| Call | Result |
+| --- | --- |
+| `ReverseNumber(352)` | `253` |
+| `ReverseNumber(1200)` | `21` |
+| `ReverseNumber(0)` | `0` |
+| `ReverseNumber(7)` | `7` |
 
 ## ⚠️ Edge cases to test
 
@@ -73,7 +75,7 @@ Explain why 1200 → 21 and not 0021.
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for D05](../solutions/D05-reverse-a-number.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for D05](../solutions/D05_ReverseANumber.cs). Your solution can be different and still correct!
 
 ---
 

@@ -8,29 +8,30 @@
 
 ## 🎯 Goal
 
-Read N. Print the sum 1 + 1/2 + 1/3 + … + 1/N with 4 decimals.
+Give back the sum 1 + 1/2 + 1/3 + … + 1/n as a `double`.
+
+## ▶️ Start and check
+
+```bash
+./ex start A10     # creates practice/A10_SumOfASeries.cs (never overwrites your work)
+./ex check A10     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `double SeriesSum(int n)`: input = n, an int (whole number); result = a double (decimal number), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `1`
-
-```text
-Sum: 1.0000
-```
-
-**Example 2** — input: `2`
-
-```text
-Sum: 1.5000
-```
-
-**Example 3** — input: `4`
-
-```text
-Sum: 2.0833
-```
+| Call | Result |
+| --- | --- |
+| `SeriesSum(1)` | `1.0000`… |
+| `SeriesSum(2)` | `1.5000`… |
+| `SeriesSum(4)` | `2.0833`… |
 
 > ℹ️ On a French/Dutch computer the output is `2,0833`. That is fine.
 
@@ -63,7 +64,7 @@ Each turn adds `1.0 / i`.
 
 <details><summary>Hint 3</summary>
 
-Print with 4 decimals: `{sum:F4}`.
+`1 / i` with two `int`s is 0! Write `1.0 / i` to get a `double` division.
 
 </details>
 
@@ -75,7 +76,7 @@ Compute 1 − 1/2 + 1/3 − 1/4 + … (the sign changes every turn). Hint: a `si
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for A10](../solutions/A10-sum-of-a-series.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for A10](../solutions/A10_SumOfASeries.cs). Your solution can be different and still correct!
 
 ---
 

@@ -8,29 +8,30 @@
 
 ## 🎯 Goal
 
-Read a text, then a letter. Print how many times the letter appears (case-sensitive).
+Give back how many times `letter` appears in `text` (case-sensitive).
+
+## ▶️ Start and check
+
+```bash
+./ex start T01     # creates practice/T01_CountALetter.cs (never overwrites your work)
+./ex check T01     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `int CountLetter(string text, char letter)`: input = text, a string (text), letter, a char (one character); result = an int (whole number), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `banana`, `a`
-
-```text
-a appears 3 times
-```
-
-**Example 2** — input: `BANANA`, `a`
-
-```text
-a appears 0 times
-```
-
-**Example 3** — input: *(empty)*, `a`
-
-```text
-a appears 0 times
-```
+| Call | Result |
+| --- | --- |
+| `CountLetter("banana", 'a')` | `3` |
+| `CountLetter("BANANA", 'a')` | `0` |
+| `CountLetter("", 'a')` | `0` |
 
 ## ⚠️ Edge cases to test
 
@@ -50,7 +51,7 @@ Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start v
 
 <details><summary>Hint 1</summary>
 
-Get the letter with `char letter = Console.ReadLine()![0];`
+`letter` is a `char` (single quotes: `'a'`). Compare each `c` of the text with it: `c == letter`.
 
 </details>
 
@@ -68,7 +69,7 @@ Count all vowels (a, e, i, o, u) in a text.
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for T01](../solutions/T01-count-a-letter.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for T01](../solutions/T01_CountALetter.cs). Your solution can be different and still correct!
 
 ---
 

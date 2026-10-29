@@ -8,23 +8,31 @@
 
 ## 🎯 Goal
 
-Read N ≥ 0. Print N without its last digit.
+Give back n without its last digit (n ≥ 0).
+
+## ▶️ Start and check
+
+```bash
+./ex start D02     # creates practice/D02_RemoveLastDigit.cs (never overwrites your work)
+./ex check D02     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `int RemoveLastDigit(int n)`: input = n, an int (whole number); result = an int (whole number), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `352`
-
-```text
-Without last digit: 35
-```
-
-**Example 2** — input: `7`
-
-```text
-Without last digit: 0
-```
+| Call | Result |
+| --- | --- |
+| `RemoveLastDigit(352)` | `35` |
+| `RemoveLastDigit(7)` | `0` |
+| `RemoveLastDigit(0)` | `0` |
+| `RemoveLastDigit(1000)` | `100` |
 
 ## ⚠️ Edge cases to test
 
@@ -61,7 +69,7 @@ Print the first digit of a 3-digit number using only `/`.
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for D02](../solutions/D02-remove-last-digit.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for D02](../solutions/D02_RemoveLastDigit.cs). Your solution can be different and still correct!
 
 ---
 

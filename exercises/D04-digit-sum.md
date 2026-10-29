@@ -8,29 +8,31 @@
 
 ## 🎯 Goal
 
-Read N ≥ 0. Print the sum of its digits.
+Give back the sum of the digits of n (n ≥ 0).
+
+## ▶️ Start and check
+
+```bash
+./ex start D04     # creates practice/D04_DigitSum.cs (never overwrites your work)
+./ex check D04     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `int DigitSum(int n)`: input = n, an int (whole number); result = an int (whole number), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `352`
-
-```text
-Digit sum: 10
-```
-
-**Example 2** — input: `0`
-
-```text
-Digit sum: 0
-```
-
-**Example 3** — input: `9999`
-
-```text
-Digit sum: 36
-```
+| Call | Result |
+| --- | --- |
+| `DigitSum(352)` | `10` |
+| `DigitSum(0)` | `0` |
+| `DigitSum(9999)` | `36` |
+| `DigitSum(7)` | `7` |
 
 ## ⚠️ Edge cases to test
 
@@ -67,7 +69,7 @@ Repeat the digit sum until one digit is left (9875 → 29 → 11 → 2).
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for D04](../solutions/D04-digit-sum.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for D04](../solutions/D04_DigitSum.cs). Your solution can be different and still correct!
 
 ---
 

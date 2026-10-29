@@ -8,28 +8,29 @@
 
 ## 🎯 Goal
 
-Read a width and a height. Draw only the border of the rectangle with `*`; the inside is spaces.
+Print only the border of a `width` × `height` rectangle with `*`; the inside is spaces.
+
+## ▶️ Start and check
+
+```bash
+./ex start G04     # creates practice/G04_HollowRectangle.cs (never overwrites your work)
+./ex check G04     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `void DrawHollowRectangle(int width, int height)`: input = width, an int (whole number), height, an int (whole number); result = nothing is returned: the method prints with Console.Write / Console.WriteLine.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `5`, `4`
-
-```text
-*****
-*   *
-*   *
-*****
-```
-
-**Example 2** — input: `3`, `3`
-
-```text
-***
-* *
-***
-```
+| Call | Result |
+| --- | --- |
+| `DrawHollowRectangle(5, 4)` | prints:<br>`*****`<br>`*   *`<br>`*   *`<br>`*****` |
+| `DrawHollowRectangle(3, 3)` | prints:<br>`***`<br>`* *`<br>`***` |
 
 ## ⚠️ Edge cases to test
 
@@ -66,7 +67,7 @@ Draw an X inside a square (cells where `row == col` or `row + col == size + 1`).
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for G04](../solutions/G04-hollow-rectangle.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for G04](../solutions/G04_HollowRectangle.cs). Your solution can be different and still correct!
 
 ---
 

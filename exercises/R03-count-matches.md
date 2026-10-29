@@ -8,23 +8,30 @@
 
 ## 🎯 Goal
 
-Read numbers into an array, then a target value. Print how many times the target appears. Input format: first how many numbers, then one number per line. Fill the array with a loop (see [array traversal](../cookbook/11-array-traversal.md)). The last line is the target.
+Give back how many times `target` appears in the array.
+
+## ▶️ Start and check
+
+```bash
+./ex start R03     # creates practice/R03_CountMatches.cs (never overwrites your work)
+./ex check R03     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `int CountMatches(int[] values, int target)`: input = values, an int[] (array of whole numbers), target, an int (whole number); result = an int (whole number), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `5`, `2`, `4`, `2`, `5`, `2`, `2`
-
-```text
-2 appears 3 times
-```
-
-**Example 2** — input: `2`, `1`, `1`, `9`
-
-```text
-9 appears 0 times
-```
+| Call | Result |
+| --- | --- |
+| `CountMatches(new int[] { 2, 4, 2, 5, 2 }, 2)` | `3` |
+| `CountMatches(new int[] { 1, 1 }, 9)` | `0` |
+| `CountMatches(new int[0], 3)` | `0` |
 
 ## ⚠️ Edge cases to test
 
@@ -43,7 +50,7 @@ Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start v
 
 <details><summary>Hint 1</summary>
 
-First read the array like in R01. Then read the target. Which recipe counts only *some* values?
+The array is already filled for you: it is the parameter `values`. Which recipe counts only *some* values?
 
 </details>
 
@@ -61,7 +68,7 @@ Count the values **greater** than the target.
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for R03](../solutions/R03-count-matches.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for R03](../solutions/R03_CountMatches.cs). Your solution can be different and still correct!
 
 ---
 

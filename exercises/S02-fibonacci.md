@@ -10,6 +10,17 @@
 
 Read N. Print the first N Fibonacci numbers on one line, starting with 0 and 1. Each number is the sum of the two before it.
 
+## ▶️ Start and check
+
+```bash
+./ex start S02     # creates practice/S02_Fibonacci.cs (never overwrites your work)
+./ex check S02     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
+
 ## 🧪 Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
@@ -75,7 +86,7 @@ Print the N-th Fibonacci number only (position 0 is 0, position 1 is 1, position
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for S02](../solutions/S02-fibonacci.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for S02](../solutions/S02_Fibonacci.cs). Your solution can be different and still correct!
 
 ---
 

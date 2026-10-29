@@ -35,26 +35,54 @@ Other ways, if you prefer:
 
 > A **terminal** is a window where you type commands. In VS Code: menu **Terminal › New Terminal**. On Windows you can also open **PowerShell**.
 
-## 4. Open the practice project and run it
+## 4. Your first check (2 minutes)
 
-All your code goes in **one file**: `practice/Program.cs`.
+Open a terminal **in the course folder** and type:
 
-- **Visual Studio:** **File › Open › Project/Solution**, choose `practice/Practice.csproj`. Press the green ▶️ button.
-- **VS Code or Codespaces:** **File › Open Folder**, choose the course folder. Open `practice/Program.cs`. In the terminal, type `dotnet run --project practice` and press Enter.
-- **Rider:** **Open**, choose `practice/Practice.csproj`. Press the green ▶️ button.
+```bash
+./ex start A01
+./ex check
+```
 
-You should see `Hello! Replace me with your exercise.` 🎉 Your setup works.
+On **Windows**, type `.\ex` instead of `./ex` (for example `.\ex start A01`).
+
+The first time takes a little longer (it builds everything). You should see 4 lines starting with `❌ NOT YET` or `✅ OK`. That is normal: you have not written any code yet. 🎉 Your setup works.
+
+In **VS Code** or a **codespace** you can also click: menu **Terminal › Run Task…** › **Exercise: start** / **Exercise: check**. **Visual Studio** and **Rider**: open `CSharpFundamentals.sln`. Your exercises are in the **Practice** project, and the **Test Explorer** shows a test for every example.
 
 ## 5. Do one exercise
 
-1. Open an exercise page, for example [L03 · Count up and down](../exercises/L03-count-up-and-down.md).
-2. Read it with [How to read an exercise](reading-an-exercise.md). Fill a trace table on paper.
-3. Delete the code in `practice/Program.cs` and write your own.
-4. Run it. Type the **input** from an example (for example `5`, then Enter).
-5. Compare what your program prints with the **Examples** box of the exercise. The question text (like `N: `) can be different. The **results** must be the same.
-6. Try the **Edge cases** listed on the page too.
-7. Proud of it? Save a copy as `practice/done/L03.cs.txt` (the `.txt` ending keeps it from running) and commit it.
-8. Tick it in your [progress checklist](progress-checklist.md).
+| Command | What it does |
+| --- | --- |
+| `./ex start A04` | Creates **your file** `practice/A04_Factorial.cs` from a starter. It never overwrites a file you already have. A04 becomes your *current* exercise. |
+| `./ex check` | Tests the current exercise with every example of its page. Each example says **OK** or **NOT YET**, and why. |
+| `./ex run` | Runs the current exercise. You type the values yourself, like a normal program. |
+| `./ex next` | Starts the next exercise in the list. |
+| `./ex list` | Shows all exercises, and which ones you started. |
+
+The steps, every time:
+
+1. Open the exercise page, for example [A04 · Factorial](../exercises/A04-factorial.md). Read it with [How to read an exercise](reading-an-exercise.md) and fill a trace table on paper.
+2. `./ex start A04`, then open `practice/A04_Factorial.cs`. The comment at the top says what to do.
+3. Most exercises ask you to fill in **one method**, for example `Factorial(int n)`:
+   - its **input** is the parameter `n`, already filled in for you;
+   - its **result** is what you `return`.
+   You do not read the keyboard or print anything: the tests call your method with the examples. Write your code where it says `TODO`.
+   A few exercises (input loops, menus) are a whole program instead: then you write everything inside `Run()`.
+4. `./ex check`. Read the first **NOT YET**: it shows what was expected and what your code gave. Fix, check again.
+5. All **OK**? Test the edge cases of the page with `./ex run`, then commit your file and tick the exercise in your [progress checklist](progress-checklist.md).
+
+Your work stays in `practice/`. The [solutions](../solutions/README.md) are in another folder, so you never mix them up.
+
+### Why not one big `Main` where you comment lines in and out?
+
+In a project like the Player's Guide challenges, you switch exercises by putting `//` in front of lines in `Program.cs`, then you check the output with your eyes. Here:
+
+- **Nothing to edit to switch:** `./ex start` and `./ex check A04` pick the exercise for you.
+- **No copy-paste plumbing:** no `Run(args)` wrapper, no reading input just to test an idea. You write the part that matters: the method.
+- **A real check:** the computer compares your result with every example, so you know for sure, and it tells you what is different.
+
+These checks are real **unit tests** (xUnit), the tool professional developers use. You do not have to learn them now: `./ex check` runs them for you.
 
 ## 6. Hints and solutions
 

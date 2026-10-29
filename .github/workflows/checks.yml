@@ -21,7 +21,7 @@ env:
 
 jobs:
   solutions:
-    name: Solutions run and match examples
+    name: Exercises (solutions pass the tests, starters compile, ./ex works)
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -32,11 +32,11 @@ jobs:
       - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: ~/.nuget/packages
-          key: nuget-${{ runner.os }}-${{ hashFiles('practice/*.csproj') }}
-      - name: Build practice project
-        run: dotnet build practice
-      - name: Build every solution and run the documented examples
-        run: python3 tools/check-solutions.py
+          key: nuget-${{ runner.os }}-${{ hashFiles('**/*.csproj') }}
+      - name: Run the exercise tests against the reference solutions and the starters
+        run: tools/check-exercises.sh
+      - name: dotnet test works (IDE Test Explorer path)
+        run: dotnet test tests/Practice.Tests
 
   generator:
     name: Generated files are up to date

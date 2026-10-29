@@ -10,6 +10,17 @@
 
 The secret number is 42. The user guesses until correct. After each wrong guess, print `Higher!` or `Lower!`. At the end print `Correct! You needed N tries.`
 
+## ▶️ Start and check
+
+```bash
+./ex start L08     # creates practice/L08_GuessTheNumber.cs (never overwrites your work)
+./ex check L08     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
+
 ## 🧪 Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
@@ -69,7 +80,7 @@ Use a random secret: `int secret = Random.Shared.Next(1, 101);` and allow at mos
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for L08](../solutions/L08-guess-the-number.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for L08](../solutions/L08_GuessTheNumber.cs). Your solution can be different and still correct!
 
 ---
 

@@ -1,0 +1,57 @@
+{
+  "version": "2.0.0",
+  "inputs": [
+    {
+      "id": "exercise",
+      "type": "promptString",
+      "description": "Exercise ID (for example A04). Leave empty for the current one.",
+      "default": ""
+    }
+  ],
+  "tasks": [
+    {
+      "label": "Exercise: start",
+      "type": "shell",
+      "command": "dotnet run --project tools/ex -v q -- start ${input:exercise}",
+      "problemMatcher": []
+    },
+    {
+      "label": "Exercise: check",
+      "type": "shell",
+      "command": "dotnet run --project tools/ex -v q -- check ${input:exercise}",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Exercise: run",
+      "type": "shell",
+      "command": "dotnet run --project tools/ex -v q -- run ${input:exercise}",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Exercise: next",
+      "type": "shell",
+      "command": "dotnet run --project tools/ex -v q -- next",
+      "problemMatcher": []
+    },
+    {
+      "label": "Exercise: list",
+      "type": "shell",
+      "command": "dotnet run --project tools/ex -v q -- list",
+      "problemMatcher": []
+    },
+    {
+      "label": "build practice",
+      "type": "shell",
+      "command": "dotnet build practice -v q",
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}

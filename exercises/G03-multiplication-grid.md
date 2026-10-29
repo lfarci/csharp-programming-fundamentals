@@ -8,20 +8,29 @@
 
 ## 🎯 Goal
 
-Read N. Print an N×N grid where the cell at row `r` and column `c` contains `r × c`. Each number takes 4 characters (right-aligned).
+Print an n×n grid where the cell at row `r` and column `c` contains `r × c`. Each number takes 4 characters (right-aligned).
+
+## ▶️ Start and check
+
+```bash
+./ex start G03     # creates practice/G03_MultiplicationGrid.cs (never overwrites your work)
+./ex check G03     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `void DrawGrid(int n)`: input = n, an int (whole number); result = nothing is returned: the method prints with Console.Write / Console.WriteLine.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `4`
-
-```text
-   1   2   3   4
-   2   4   6   8
-   3   6   9  12
-   4   8  12  16
-```
+| Call | Result |
+| --- | --- |
+| `DrawGrid(4)` | prints:<br>`   1   2   3   4`<br>`   2   4   6   8`<br>`   3   6   9  12`<br>`   4   8  12  16` |
+| `DrawGrid(1)` | prints:<br>`   1` |
 
 ## ⚠️ Edge cases to test
 
@@ -58,7 +67,7 @@ Only print the cells where `c <= r` (a triangle of numbers).
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for G03](../solutions/G03-multiplication-grid.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for G03](../solutions/G03_MultiplicationGrid.cs). Your solution can be different and still correct!
 
 ---
 

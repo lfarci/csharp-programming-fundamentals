@@ -8,25 +8,33 @@
 
 ## 🎯 Goal
 
-Read the width and the height of a rectangle (whole numbers). Print its area and its perimeter.
+`Area` gives back width × height. `Perimeter` gives back 2 × (width + height).
+
+## ▶️ Start and check
+
+```bash
+./ex start B02     # creates practice/B02_RectangleCalculator.cs (never overwrites your work)
+./ex check B02     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in these methods in the file. The *parameters* are its input; what you `return` is its result.
+
+- `int Area(int width, int height)`: input = width, an int (whole number), height, an int (whole number); result = an int (whole number), given back with return.
+- `int Perimeter(int width, int height)`: input = width, an int (whole number), height, an int (whole number); result = an int (whole number), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `4`, `3`
-
-```text
-Area: 12
-Perimeter: 14
-```
-
-**Example 2** — input: `5`, `5`
-
-```text
-Area: 25
-Perimeter: 20
-```
+| Call | Result |
+| --- | --- |
+| `Area(4, 3)` | `12` |
+| `Perimeter(4, 3)` | `14` |
+| `Area(5, 5)` | `25` |
+| `Perimeter(5, 5)` | `20` |
+| `Area(0, 7)` | `0` |
 
 ## ⚠️ Edge cases to test
 
@@ -34,7 +42,7 @@ Perimeter: 20
 
 ## 📏 Rules
 
-- Use `int.Parse` to turn the text into an `int`.
+- Use `*`, `+` and `return`. No `if` needed.
 - No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
@@ -51,7 +59,7 @@ Area = width × height. Perimeter = 2 × (width + height).
 
 <details><summary>Hint 2</summary>
 
-`int width = int.Parse(Console.ReadLine()!);`
+Each method is one line: `return width * height;`.
 
 </details>
 
@@ -63,7 +71,7 @@ Do the same for a circle with a `double` radius (area = π × r², use `Math.PI`
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for B02](../solutions/B02-rectangle-calculator.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for B02](../solutions/B02_RectangleCalculator.cs). Your solution can be different and still correct!
 
 ---
 

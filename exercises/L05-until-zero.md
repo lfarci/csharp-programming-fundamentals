@@ -10,6 +10,17 @@
 
 Read whole numbers one by one. Stop when the user types 0. Print how many **non-zero** numbers were entered.
 
+## ▶️ Start and check
+
+```bash
+./ex start L05     # creates practice/L05_UntilZero.cs (never overwrites your work)
+./ex check L05     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
+
 ## 🧪 Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
@@ -68,7 +79,7 @@ Also print how many of the numbers were negative.
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for L05](../solutions/L05-until-zero.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for L05](../solutions/L05_UntilZero.cs). Your solution can be different and still correct!
 
 ---
 

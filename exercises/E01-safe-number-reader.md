@@ -10,6 +10,17 @@
 
 Ask for a whole number. Use `int.Parse` inside `try`/`catch`: if it fails, print `That is not a number.` and ask again. At the end print `Thanks: X`.
 
+## ▶️ Start and check
+
+```bash
+./ex start E01     # creates practice/E01_SafeNumberReader.cs (never overwrites your work)
+./ex check E01     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
+
 ## 🧪 Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
@@ -57,7 +68,7 @@ Also catch `OverflowException` (try `99999999999`) with its own message.
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for E01](../solutions/E01-safe-number-reader.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for E01](../solutions/E01_SafeNumberReader.cs). Your solution can be different and still correct!
 
 ---
 

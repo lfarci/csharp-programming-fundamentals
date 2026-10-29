@@ -8,29 +8,31 @@
 
 ## 🎯 Goal
 
-Read a whole number and say if it is even or odd.
+Give back `true` if `n` is even, `false` if it is odd.
+
+## ▶️ Start and check
+
+```bash
+./ex start C01     # creates practice/C01_EvenOrOdd.cs (never overwrites your work)
+./ex check C01     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `bool IsEven(int n)`: input = n, an int (whole number); result = a bool (true or false), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `7`
-
-```text
-7 is odd
-```
-
-**Example 2** — input: `0`
-
-```text
-0 is even
-```
-
-**Example 3** — input: `-4`
-
-```text
--4 is even
-```
+| Call | Result |
+| --- | --- |
+| `IsEven(7)` | `false` |
+| `IsEven(0)` | `true` |
+| `IsEven(-4)` | `true` |
+| `IsEven(-3)` | `false` |
 
 ## ⚠️ Edge cases to test
 
@@ -68,7 +70,7 @@ Say if a number is a multiple of 3, of 5, of both, or of none.
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for C01](../solutions/C01-even-or-odd.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for C01](../solutions/C01_EvenOrOdd.cs). Your solution can be different and still correct!
 
 ---
 

@@ -8,43 +8,33 @@
 
 ## 🎯 Goal
 
-Read N ≥ 0. An Armstrong number equals the sum of its digits, each raised to the power **number of digits**. Say if N is one.
+An Armstrong number equals the sum of its digits, each raised to the power **number of digits**. Give back `true` if n is one. Example: 153 → 3 digits → 1³ + 5³ + 3³ = 153 ✅.
 
-153 → 3 digits → 1³ + 5³ + 3³ = 153 ✅. 9474 → 4 digits → 9⁴ + 4⁴ + 7⁴ + 4⁴ = 9474 ✅.
+## ▶️ Start and check
+
+```bash
+./ex start M01     # creates practice/M01_ArmstrongNumber.cs (never overwrites your work)
+./ex check M01     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `bool IsArmstrong(int n)`: input = n, an int (whole number); result = a bool (true or false), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `153`
-
-```text
-153 is an Armstrong number
-```
-
-**Example 2** — input: `154`
-
-```text
-154 is not an Armstrong number
-```
-
-**Example 3** — input: `9474`
-
-```text
-9474 is an Armstrong number
-```
-
-**Example 4** — input: `0`
-
-```text
-0 is an Armstrong number
-```
-
-**Example 5** — input: `10`
-
-```text
-10 is not an Armstrong number
-```
+| Call | Result |
+| --- | --- |
+| `IsArmstrong(153)` | `true` |
+| `IsArmstrong(154)` | `false` |
+| `IsArmstrong(9474)` | `true` |
+| `IsArmstrong(0)` | `true` |
+| `IsArmstrong(10)` | `false` |
+| `IsArmstrong(370)` | `true` |
 
 ## ⚠️ Edge cases to test
 
@@ -88,7 +78,7 @@ Two days later, from a blank file: say if N is a *Disarium* number. Each digit i
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for M01](../solutions/M01-armstrong-number.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for M01](../solutions/M01_ArmstrongNumber.cs). Your solution can be different and still correct!
 
 ---
 

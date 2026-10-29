@@ -10,6 +10,17 @@
 
 Read whole numbers until 0. Print their average. If no number was entered, print `No numbers.`
 
+## ▶️ Start and check
+
+```bash
+./ex start A06     # creates practice/A06_AverageUntilZero.cs (never overwrites your work)
+./ex check A06     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
+
 ## 🧪 Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
@@ -76,7 +87,7 @@ Also print how many numbers were above the average. (Why is that hard without an
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for A06](../solutions/A06-average-until-zero.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for A06](../solutions/A06_AverageUntilZero.cs). Your solution can be different and still correct!
 
 ---
 

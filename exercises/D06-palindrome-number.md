@@ -8,29 +8,32 @@
 
 ## 🎯 Goal
 
-Read N ≥ 0. Say if it reads the same in both directions.
+Give back `true` if n reads the same in both directions (n ≥ 0).
+
+## ▶️ Start and check
+
+```bash
+./ex start D06     # creates practice/D06_PalindromeNumber.cs (never overwrites your work)
+./ex check D06     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `bool IsPalindrome(int n)`: input = n, an int (whole number); result = a bool (true or false), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `1221`
-
-```text
-1221 is a palindrome
-```
-
-**Example 2** — input: `123`
-
-```text
-123 is not a palindrome
-```
-
-**Example 3** — input: `7`
-
-```text
-7 is a palindrome
-```
+| Call | Result |
+| --- | --- |
+| `IsPalindrome(1221)` | `true` |
+| `IsPalindrome(123)` | `false` |
+| `IsPalindrome(7)` | `true` |
+| `IsPalindrome(0)` | `true` |
+| `IsPalindrome(10)` | `false` |
 
 ## ⚠️ Edge cases to test
 
@@ -68,7 +71,7 @@ Find all palindrome numbers between 100 and 200.
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for D06](../solutions/D06-palindrome-number.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for D06](../solutions/D06_PalindromeNumber.cs). Your solution can be different and still correct!
 
 ---
 

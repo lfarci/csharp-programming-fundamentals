@@ -8,29 +8,31 @@
 
 ## 🎯 Goal
 
-Read a number of seconds. Print it as hours, minutes and seconds. This trains `/` and `%`, the key tools of the digit recipe later.
+Turn a number of seconds into text like `1 h 2 min 5 s`. This trains `/` and `%`, the key tools of the digit recipe later.
+
+## ▶️ Start and check
+
+```bash
+./ex start B03     # creates practice/B03_SecondsToHms.cs (never overwrites your work)
+./ex check B03     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `string Format(int totalSeconds)`: input = totalSeconds, an int (whole number); result = a string (text), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `3725`
-
-```text
-1 h 2 min 5 s
-```
-
-**Example 2** — input: `59`
-
-```text
-0 h 0 min 59 s
-```
-
-**Example 3** — input: `7200`
-
-```text
-2 h 0 min 0 s
-```
+| Call | Result |
+| --- | --- |
+| `Format(3725)` | `"1 h 2 min 5 s"` |
+| `Format(59)` | `"0 h 0 min 59 s"` |
+| `Format(7200)` | `"2 h 0 min 0 s"` |
+| `Format(0)` | `"0 h 0 min 0 s"` |
 
 ## ⚠️ Edge cases to test
 
@@ -73,7 +75,7 @@ Turn a number of days into weeks and days (`17` → `2 weeks 3 days`).
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for B03](../solutions/B03-seconds-to-hms.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for B03](../solutions/B03_SecondsToHms.cs). Your solution can be different and still correct!
 
 ---
 

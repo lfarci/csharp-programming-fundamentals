@@ -10,6 +10,17 @@
 
 Ask for a number between 1 and 10. If the text is not a number, or is out of range, print `Invalid, try again.` and ask again. At the end print `You chose X`.
 
+## ▶️ Start and check
+
+```bash
+./ex start L07     # creates practice/L07_AskUntilValid.cs (never overwrites your work)
+./ex check L07     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
+
 ## 🧪 Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
@@ -70,7 +81,7 @@ Ask for a password until it has at least 8 characters (`text.Length`).
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for L07](../solutions/L07-ask-until-valid.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for L07](../solutions/L07_AskUntilValid.cs). Your solution can be different and still correct!
 
 ---
 

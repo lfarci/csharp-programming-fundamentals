@@ -8,25 +8,30 @@
 
 ## 🎯 Goal
 
-Read a text. Count its digit characters and build a string with only those digits, in order.
+Give back a new text with only the digit characters of `text`, in order.
+
+## ▶️ Start and check
+
+```bash
+./ex start T03     # creates practice/T03_CountAndKeepDigits.cs (never overwrites your work)
+./ex check T03     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `string KeepDigits(string text)`: input = text, a string (text); result = a string (text), given back with return.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `a1 b2!`
-
-```text
-Digits: 2
-Kept: 12
-```
-
-**Example 2** — input: `abc`
-
-```text
-Digits: 0
-Kept: 
-```
+| Call | Result |
+| --- | --- |
+| `KeepDigits("a1 b2!")` | `"12"` |
+| `KeepDigits("abc")` | `""` |
+| `KeepDigits("2026")` | `"2026"` |
 
 ## ⚠️ Edge cases to test
 
@@ -63,7 +68,7 @@ Also compute the **sum** of those digits (`c - '0'` turns `'7'` into 7).
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for T03](../solutions/T03-count-and-keep-digits.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for T03](../solutions/T03_CountAndKeepDigits.cs). Your solution can be different and still correct!
 
 ---
 

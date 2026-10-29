@@ -8,25 +8,29 @@
 
 ## 🎯 Goal
 
-Read a height. Draw a centered pyramid of `*`.
+Print a centered pyramid of `*`, `height` rows high.
+
+## ▶️ Start and check
+
+```bash
+./ex start G06     # creates practice/G06_Pyramid.cs (never overwrites your work)
+./ex check G06     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `void DrawPyramid(int height)`: input = height, an int (whole number); result = nothing is returned: the method prints with Console.Write / Console.WriteLine.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `3`
-
-```text
-  *
- ***
-*****
-```
-
-**Example 2** — input: `1`
-
-```text
-*
-```
+| Call | Result |
+| --- | --- |
+| `DrawPyramid(3)` | prints:<br>`  *`<br>` ***`<br>`*****` |
+| `DrawPyramid(1)` | prints:<br>`*` |
 
 ## ⚠️ Edge cases to test
 
@@ -69,7 +73,7 @@ Draw a diamond (a pyramid, then the same pyramid upside down).
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for G06](../solutions/G06-pyramid.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for G06](../solutions/G06_Pyramid.cs). Your solution can be different and still correct!
 
 ---
 

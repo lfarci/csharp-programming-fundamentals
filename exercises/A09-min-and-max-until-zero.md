@@ -10,6 +10,17 @@
 
 Read whole numbers until 0. Print the smallest and the largest. If no number was entered, print `No numbers.`
 
+## ▶️ Start and check
+
+```bash
+./ex start A09     # creates practice/A09_MinAndMaxUntilZero.cs (never overwrites your work)
+./ex check A09     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** write the whole program inside `Run()`: read with `Console.ReadLine()`, print with `Console.WriteLine()`.
+
 ## 🧪 Examples
 
 The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
@@ -76,7 +87,7 @@ Also print the **position** (1st, 2nd, …) of the largest number.
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for A09](../solutions/A09-min-and-max-until-zero.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for A09](../solutions/A09_MinAndMaxUntilZero.cs). Your solution can be different and still correct!
 
 ---
 

@@ -8,26 +8,29 @@
 
 ## 🎯 Goal
 
-Read a height. Draw a right triangle: row 1 has 1 star, row 2 has 2 stars, …
+Print a right triangle of `height` rows: row 1 has 1 star, row 2 has 2 stars, …
+
+## ▶️ Start and check
+
+```bash
+./ex start G02     # creates practice/G02_RightTriangle.cs (never overwrites your work)
+./ex check G02     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `void DrawTriangle(int height)`: input = height, an int (whole number); result = nothing is returned: the method prints with Console.Write / Console.WriteLine.
 
 ## 🧪 Examples
 
-The text of your questions (`N: `, `Width: `…) is up to you. The **results** must match.
+Your method must give these results. `./ex check` tests all of them.
 
-**Example 1** — input: `4`
-
-```text
-*
-**
-***
-****
-```
-
-**Example 2** — input: `1`
-
-```text
-*
-```
+| Call | Result |
+| --- | --- |
+| `DrawTriangle(4)` | prints:<br>`*`<br>`**`<br>`***`<br>`****` |
+| `DrawTriangle(1)` | prints:<br>`*` |
 
 ## ⚠️ Edge cases to test
 
@@ -64,7 +67,7 @@ Draw it upside down (4 stars, then 3, 2, 1).
 
 ## 🔑 Solution
 
-Only after a real try: [open the solution for G02](../solutions/G02-right-triangle.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for G02](../solutions/G02_RightTriangle.cs). Your solution can be different and still correct!
 
 ---
 

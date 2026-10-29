@@ -19,6 +19,10 @@ int k = 10;
 while (k < 5) { Console.WriteLine(k); k++; }         // loop E
 ```
 
+## ✏️ Start and check
+
+This one is on **paper**: no code to write. When you are done, compare with the answer key (link at the bottom).
+
 ## ⚠️ Edge cases to test
 
 - Loop E: can a loop run zero times?
