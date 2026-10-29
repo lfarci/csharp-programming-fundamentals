@@ -6,6 +6,9 @@ RECIPES = {"01":("Counter loop","01-counter-loop"),"02":("Accumulator","02-accum
 "08":("Nested grid","08-nested-grid"),"09":("Input validation","09-input-validation"),"10":("Sentinel loop","10-sentinel-loop"),
 "11":("Array traversal","11-array-traversal"),"12":("Build a string","12-string-building")}
 byid = {e["id"]: e for e in E}
+for e in E:  # guard: every prerequisite must exist
+    missing = [p for p in e["pre"] if p not in byid]
+    if missing: sys.exit(f"{e['id']}: unknown prerequisite(s) {missing}")
 def fname(e): return f'{e["id"]}-{e["slug"]}'
 def stars(n): return "⭐"*n
 def rlinks(e, base="../cookbook/"):

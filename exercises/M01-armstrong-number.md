@@ -84,7 +84,7 @@ The power is a small product loop **inside** the digit loop: `power = 1; for (i 
 
 Solve this variation **alone**, on another day:
 
-Solve it again from a blank file two days later, without looking.
+Two days later, from a blank file: say if N is a *Disarium* number. Each digit is raised to its **position** from the left (89 = 8¹ + 9² = 89, 135 = 1¹ + 3² + 5³ = 135).
 
 ## 🔑 Solution
 

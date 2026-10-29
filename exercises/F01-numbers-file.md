@@ -34,7 +34,7 @@ Sum: 0
 
 ## 📏 Rules
 
-- `File.WriteAllLines` / `File.ReadAllLines`. No LINQ. Use a `List<string>` or build the text yourself.
+- Save with `File.WriteAllText`, read back with `File.ReadAllLines`. Build the text yourself with `+=` (lists come in step 9).
 - No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
@@ -45,7 +45,7 @@ Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start v
 
 <details><summary>Hint 1</summary>
 
-Collect the lines in a `List<string>` (or a string with `\n`), then write once.
+Build one string: start with `string content = "";` and add each number plus `"\n"` (a new line). Write the file once, after the loop.
 
 </details>
 

@@ -20,9 +20,9 @@ Deeper reference, reached only when the branch fires:
 ## Pedagogy (the rubric)
 
 - **One new difficulty** per exercise: everything else in it is covered by its `pre` exercises. Levels fade the help: 🟢 Guided → 🔵 Independent → 🟣 Challenge.
-- **Order holds**: each `pre` sits at the same roadmap step or earlier, and every plan (roadmap sessions, README start, recap) lists an exercise only after its `pre`.
-- **Hand-written loops**: no LINQ, no `Math.Pow`, no `Array.Reverse`/`string.Join`/`.Contains` shortcuts. Solutions use only what the exercise's roadmap step has taught.
-- **Hints** in `<details>`, smallest nudge first; Guided exercises carry at least 2. Every exercise has a **mastery check** (a new variation, alone, another day).
+- **Order holds**: each `pre` sits at the same roadmap step or earlier (one known exception: F01 waits for R01, because `File.ReadAllLines` returns an array), and every plan (roadmap sessions, README start, recap) lists an exercise only after its `pre`.
+- **Hand-written loops**: no LINQ, no `Math.Pow`, no `Array.Reverse`/`string.Join`/`.Contains` shortcuts. Solutions use only what the exercise's roadmap step has taught (files at step 5 build text with `+=`; `List<T>` waits for step 9).
+- **Hints** in `<details>`, smallest nudge first; Guided exercises carry at least 2. Every exercise has a **mastery check**: a *new variation* solved alone another day ("do it again" is not a variation).
 - **Solutions separate**: exercise pages link to `solutions/` only at the bottom.
 - **The book** (*The C# Player's Guide*, 5th ed.) is a **parallel reading track**: name the level to read beside a roadmap step. Its challenges stay out of exercise lists, recipe mini-exercises and plans.
 - **One home per meaning**: the session shape and coach questions live in `docs/how-to-practice.md`, check commands in this file; other pages link there.

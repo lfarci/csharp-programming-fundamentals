@@ -408,7 +408,7 @@ ex(id="M01", slug="armstrong-number", title="Armstrong number", level="Challenge
    hints=["Cut the problem: (1) count the digits, (2) for each digit, (3) compute digit^count, (4) add, (5) compare. See [Combining recipes](../cookbook/combining-recipes.md).",
           "Step (1) empties your copy. Make a **new** copy of `n` for step (2).",
           "The power is a small product loop **inside** the digit loop: `power = 1; for (i = 0; i < digits; i++) power *= digit;`"],
-   mastery="Solve it again from a blank file two days later, without looking.",
+   mastery="Two days later, from a blank file: say if N is a *Disarium* number. Each digit is raised to its **position** from the left (89 = 8¹ + 9² = 89, 135 = 1¹ + 3² + 5³ = 135).",
    code=r'''Console.Write("N: ");
 int n = int.Parse(Console.ReadLine()!);
 
