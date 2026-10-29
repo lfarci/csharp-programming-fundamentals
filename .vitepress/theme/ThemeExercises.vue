@@ -12,29 +12,40 @@ const n = computed(() => list.value.filter((e) => done.value[e.id]).length)
 </script>
 
 <template>
-  <div class="theme-ex">
-    <p class="count"><strong>{{ n }} of {{ list.length }}</strong> done</p>
-    <table>
-      <thead><tr><th>Done</th><th>ID</th><th>Exercise</th><th>Level</th></tr></thead>
-      <tbody>
-        <tr v-for="e in list" :key="e.id" :class="{ isdone: done[e.id] }">
-          <td><input type="checkbox" :checked="!!done[e.id]" :aria-label="`Mark ${e.id} as done`"
-              @change="setDone(e.id, ($event.target as HTMLInputElement).checked)" /></td>
-          <td class="id">{{ e.id }}</td>
-          <td><a :href="withBase(e.link)">{{ e.title }}</a><span v-if="e.paper" class="tag">paper</span></td>
-          <td>{{ e.level }}</td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="theme-ex cpf-card">
+    <div class="head">
+      <p class="count"><strong>{{ n }} of {{ list.length }}</strong> done</p>
+      <span class="cpf-bar" aria-hidden="true"><span :style="{ width: (list.length ? 100 * n / list.length : 0) + '%' }"></span></span>
+    </div>
+    <ol class="rows">
+      <li v-for="(e, i) in list" :key="e.id" :class="{ isdone: done[e.id] }">
+        <input type="checkbox" :checked="!!done[e.id]" :aria-label="`Mark ${e.id} as done`"
+          @change="setDone(e.id, ($event.target as HTMLInputElement).checked)" />
+        <span class="pos" aria-hidden="true">{{ i + 1 }}</span>
+        <a :href="withBase(e.link)">{{ e.title }}</a>
+        <span class="id">{{ e.id }}</span>
+        <span v-if="e.paper" class="tag">paper</span>
+        <span class="level">{{ e.level }}</span>
+      </li>
+    </ol>
   </div>
 </template>
 
 <style scoped>
-.count { margin: 0 0 8px; color: var(--vp-c-text-2); }
-.theme-ex table { display: table; width: 100%; margin: 0; }
-.theme-ex td, .theme-ex th { padding: 6px 12px; }
-.theme-ex input { transform: scale(1.2); cursor: pointer; }
-.id { font-family: var(--vp-font-family-mono); font-size: 13px; color: var(--vp-c-text-2); }
-.isdone a { color: var(--vp-c-text-2); }
-.tag { margin-left: 8px; font-size: 12px; padding: 0 6px; border: 1px solid var(--vp-c-divider); border-radius: 4px; color: var(--vp-c-text-2); }
+.theme-ex { padding: 0; overflow: hidden; margin: 16px 0; }
+.head { display: flex; align-items: center; gap: 16px; padding: 14px 18px; border-bottom: 1px solid var(--vp-c-divider); background: var(--vp-c-bg-soft); }
+.count { margin: 0; white-space: nowrap; color: var(--vp-c-text-2); font-size: 14px; }
+.head .cpf-bar { flex: 1; }
+.rows { list-style: none; padding: 0; margin: 0; }
+.rows li { display: flex; align-items: center; gap: 12px; padding: 9px 18px; margin: 0; border-top: 1px solid var(--vp-c-divider); font-size: 15px; }
+.rows li:first-child { border-top: none; }
+.rows input { width: 16px; height: 16px; accent-color: var(--vp-c-brand-1); cursor: pointer; flex: none; }
+.pos { width: 22px; flex: none; text-align: right; font-size: 13px; color: var(--vp-c-text-3); }
+.rows a { font-weight: 500; text-decoration: none; }
+.rows a:hover { text-decoration: underline; }
+.isdone a { color: var(--vp-c-text-2); text-decoration: line-through; text-decoration-color: var(--vp-c-text-3); }
+.id { font-family: var(--vp-font-family-mono); font-size: 12px; color: var(--vp-c-text-3); }
+.tag { font-size: 12px; padding: 0 6px; border: 1px solid var(--vp-c-divider); border-radius: 4px; color: var(--vp-c-text-2); }
+.level { margin-left: auto; font-size: 12px; color: var(--vp-c-text-2); background: var(--vp-c-default-soft); border-radius: 10px; padding: 1px 10px; white-space: nowrap; }
+@media (max-width: 640px) { .id, .pos { display: none; } }
 </style>

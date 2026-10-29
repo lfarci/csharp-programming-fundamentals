@@ -31,7 +31,15 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 - **C#:** a temporary variable; the order of updates.
 - **Recipes:** [State update](../cookbook/07-state-update.md)
-- **Book (optional):** *The C# Player's Guide*, Level 11.
+
+<div class="learn-box">
+
+**Learn the theory** (before or beside the exercises)
+
+- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 11: Looping
+- **Microsoft Learn:** [Control variable scope and logic using code blocks in C#](https://learn.microsoft.com/en-us/training/modules/csharp-code-blocks/)
+
+</div>
 
 ## Ready for the next theme when
 

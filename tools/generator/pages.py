@@ -1,5 +1,9 @@
 # Pages built from the themes (exec'd by gen.py: uses ORDER, byid, fname, stars, rlinks, RECIPES, DRILLS, X, THEMES).
 # exercises/README.md (overview), themes/<slug>.md, ROADMAP.md, docs/progress-checklist.md, diagrams/roadmap.d2.
+from learn import BOOK, LEVELS, TRACKER, PATHS, CERT, VIDEOS, TOUR, THEORY, level_text
+assert set(THEORY) == {x["slug"] for x in THEMES}, "learn.py THEORY must list every theme exactly once"
+for _t in THEORY.values():
+    for _n in _t["levels"]: assert _n in LEVELS, f"book level {_n} has no verified name in learn.py LEVELS"
 TH_EX = {x["slug"]: [e for e in ORDER if e["theme"] == x["slug"]] for x in THEMES}
 NUM = {x["slug"]: i for i, x in enumerate(THEMES, 1)}
 PARTS = ["Before loops", "Loops", "After loops"]
@@ -47,8 +51,13 @@ for k, x in enumerate(THEMES):
         L.append(f"| {e['id']} | [{e['title']}](../exercises/{fname(e)}.md) | {kind(e)} | {e['level']} | {stars(e['stars'])} |")
     L += ["", "</div>", "", "## What to learn", "", f"- **C#:** {x['learn']}"]
     if x["recipes"]: L.append("- **Recipes:** " + ", ".join(f"[{RECIPES[r][0]}](../cookbook/{RECIPES[r][1]}.md)" for r in x["recipes"]))
-    L.append(f"- **Book (optional):** *The C# Player's Guide*, {x['book']}.")
-    if x["docs"]: L.append("- **Microsoft docs:** " + mdlinks(x["docs"]))
+    th = THEORY[s]
+    L += ["", '<div class="learn-box">', "", "**Learn the theory** (before or beside the exercises)", "",
+          f"- **Book:** [*{BOOK['title']}*](../learn/players-guide.md), {level_text(th['levels'])}"]
+    L.append("- **Microsoft Learn:** " + mdlinks(th["modules"]))
+    if th["videos"]: L.append("- **Video:** " + mdlinks(th["videos"]))
+    if x["docs"]: L.append("- **Reference:** " + mdlinks(x["docs"]))
+    L += ["", "</div>"]
     L += ["", "## Ready for the next theme when", "", f"{x['ready'][0].upper()}{x['ready'][1:]}", "", "---", ""]
     nav_ = []
     if k: nav_.append(f"Previous: [{THEMES[k-1]['title']}]({THEMES[k-1]['slug']}.md)")
@@ -98,3 +107,58 @@ for x in THEMES:
     pc.append("")
 pc += ["---", "", "[Home](../README.md) · [All exercises](../exercises/README.md)", ""]
 open(f"{ROOT}/docs/progress-checklist.md", "w").write("\n".join(pc))
+
+
+# ---------- learn/: the theory comes from existing resources ----------
+os.makedirs(f"{ROOT}/learn", exist_ok=True)
+def theme_link(x, up="../"): return f"[{x['title']}]({up}themes/{x['slug']}.md)"
+LG = ["[Home](../README.md) › Learn", "", "# Learn the theory", "",
+     "This course is for **practice**: exercises, recipes and a checker. The **theory** comes from two free or well-known resources. Read or watch the matching part, then do the exercises of the theme.", "",
+     "<LearnCards />", "", '<div class="gh-only">', "",
+     f"- [The book: *{BOOK['title']}*](players-guide.md): the main theory companion.",
+     "- [Microsoft Learn](microsoft-learn.md): free modules and videos from Microsoft.",
+     f"- [Extra exercises: the {TRACKER['title']}](quest-tracker.md): track the book's own challenges.", "", "</div>", "",
+     "## What to read before each theme", "",
+     "| # | Theme | Book level | Microsoft Learn |", "| ---: | --- | --- | --- |"]
+for x in THEMES:
+    th = THEORY[x["slug"]]
+    LG.append(f"| {NUM[x['slug']]} | {theme_link(x)} | {', '.join(str(n) for n in th['levels'])} | {mdlinks(th['modules'][:1])} |")
+LG += ["", "Each theme page has a *Learn the theory* box with all the links.", "", "---", "", "[Home](../README.md) · Next: [The book](players-guide.md)", ""]
+open(f"{ROOT}/learn/README.md", "w").write("\n".join(LG))
+
+LB = ["[Home](../README.md) › [Learn](README.md) › The book", "", f"# The book: {BOOK['title']}", "",
+     f"*{BOOK['title']}* ({BOOK['edition']}), by {BOOK['author']}, teaches C# from zero, in short **levels**. It is the theory companion of this course: we do not copy it, we point to the right level.", "",
+     "<BuyBook />", "", '<div class="gh-only">', "", f"[Official site]({BOOK['url']}) · [Free sample (PDF)]({BOOK['sample']})", "", "</div>", "",
+     "## How to use it with this course", "",
+     "1. Open the theme you are on.", "2. Read the book level in its *Learn the theory* box.", "3. Do the exercises of the theme here.",
+     f"4. Want more? Do the book's own challenges and tick them in the [{TRACKER['title']}](quest-tracker.md).", "",
+     "## Book levels for each theme", "", "| # | Theme | Read |", "| ---: | --- | --- |"]
+for x in THEMES:
+    LB.append(f"| {NUM[x['slug']]} | {theme_link(x)} | {level_text(THEORY[x['slug']]['levels'])} |")
+LB += ["", f"Level names come from the table of contents of the {BOOK['edition']}. Levels 1 and 2 (what C# is, installing an IDE) are covered by [Getting started](../docs/getting-started.md).", "",
+      "---", "", "[Learn](README.md) · Next: [Microsoft Learn](microsoft-learn.md)", ""]
+open(f"{ROOT}/learn/players-guide.md", "w").write("\n".join(LB))
+
+LM = ["[Home](../README.md) › [Learn](README.md) › Microsoft Learn", "", "# Microsoft Learn", "",
+     "Microsoft has free C# lessons for beginners: short **modules** you read and try in the browser, and a **video** series. Use them for the theory; use this course to practise.", "",
+     "## The free path", "", f"[{CERT[0]}]({CERT[1]}) groups six learning paths. You can follow them without the exam:", ""]
+for i, (t_, u) in enumerate(PATHS, 1): LM.append(f"{i}. [{t_}]({u})")
+LM += ["", "## Videos", "", f"[{VIDEOS[0]}]({VIDEOS[1]}): each video is 15 to 30 minutes.", "",
+      "## The docs", "", f"[{TOUR[0]}]({TOUR[1]}): the official overview, with small tutorials.", "",
+      "## Which module before which theme", "", "| # | Theme | Module | Video |", "| ---: | --- | --- | --- |"]
+for x in THEMES:
+    th = THEORY[x["slug"]]
+    LM.append(f"| {NUM[x['slug']]} | {theme_link(x)} | {mdlinks(th['modules'])} | {mdlinks(th['videos']) or '-'} |")
+LM += ["", "---", "", "[The book](players-guide.md) · Next: [Extra exercises](quest-tracker.md)", ""]
+open(f"{ROOT}/learn/microsoft-learn.md", "w").write("\n".join(LM))
+
+LQ = ["[Home](../README.md) › [Learn](README.md) › Extra exercises", "", f"# Extra exercises: the {TRACKER['title']}", "",
+     f"The book has its own challenges at the end of each level. The [{TRACKER['title']}]({TRACKER['url']}) is a free website to tick them, earn XP and level up, like a game.", "",
+     "## How it works", "",
+     "- Open the tracker in your browser. No account.", "- Tick a challenge when you finish it. Your XP and level go up.",
+     "- Progress is saved in this browser. Use **Settings** to export a backup and import it on another computer.", "",
+     "## When to use it", "",
+     "Finish the exercises of a theme here first. Then, for more practice, do the book's challenges of the same level and track them there.", "",
+     f"[Open the {TRACKER['title']}]({TRACKER['url']}) · [Source code]({TRACKER['repo']})", "",
+     "---", "", "[Microsoft Learn](microsoft-learn.md) · [Learn](README.md)", ""]
+open(f"{ROOT}/learn/quest-tracker.md", "w").write("\n".join(LQ))

@@ -27,8 +27,17 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 - **C#:** `List<T>`: `Add`, `Remove`, `Count`, `foreach`.
 - **Recipes:** [Sentinel loop](../cookbook/10-sentinel-loop.md)
-- **Book (optional):** *The C# Player's Guide*, Level 32.
-- **Microsoft docs:** [Collections tutorial](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/list-collection)
+
+<div class="learn-box">
+
+**Learn the theory** (before or beside the exercises)
+
+- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 32: Some Useful Types
+- **Microsoft Learn:** [Organize data with arrays and lists in C#](https://learn.microsoft.com/en-us/training/modules/csharp-arrays-lists/)
+- **Video:** [Arrays, Lists, Indexing, and Foreach](https://learn.microsoft.com/en-us/shows/csharp-for-beginners/arrays-lists-indexing-and-foreach-csharp-for-beginners/)
+- **Reference:** [Collections tutorial](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/list-collection)
+
+</div>
 
 ## Ready for the next theme when
 

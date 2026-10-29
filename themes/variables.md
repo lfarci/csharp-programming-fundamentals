@@ -28,8 +28,17 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 ## What to learn
 
 - **C#:** `int`, `double`, `string`, `bool`; `+ - * /`; integer division and the remainder `%`; `$"..."`.
-- **Book (optional):** *The C# Player's Guide*, Levels 5 to 8.
-- **Microsoft docs:** [Tutorial: numbers in C#](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp) · [Arithmetic operators](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators)
+
+<div class="learn-box">
+
+**Learn the theory** (before or beside the exercises)
+
+- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 5: Variables, Level 6: The C# Type System, Level 7: Math, Level 8: Console 2.0
+- **Microsoft Learn:** [Store data with variables in C#](https://learn.microsoft.com/en-us/training/modules/csharp-literals-variables/) · [Perform basic operations on numbers in C#](https://learn.microsoft.com/en-us/training/modules/csharp-basic-operations/) · [Convert data types using casting and conversion techniques in C#](https://learn.microsoft.com/en-us/training/modules/csharp-convert-cast/)
+- **Video:** [Numbers, Integers, and Math](https://learn.microsoft.com/en-us/shows/csharp-for-beginners/numbers-integers-and-math-csharp-for-beginners/) · [Numbers, Precision, Casting, Doubles, and More](https://learn.microsoft.com/en-us/shows/csharp-for-beginners/numbers-precision-casting-doubles-and-more-csharp-for-beginners/)
+- **Reference:** [Tutorial: numbers in C#](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp) · [Arithmetic operators](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators)
+
+</div>
 
 ## Ready for the next theme when
 

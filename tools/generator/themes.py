@@ -4,6 +4,7 @@ Keep each field short: the reader is a true beginner. No dates, no weeks: the co
 ML = "https://learn.microsoft.com/en-us/dotnet"
 
 def t(slug, title, part, summary, objectives, learn, book, docs, recipes, ready):
+    # `book` is kept only as a reading note; the book levels, Microsoft Learn modules and videos live in learn.py.
     return dict(slug=slug, title=title, part=part, summary=summary, objectives=objectives, learn=learn,
                 book=book, docs=docs, recipes=recipes, ready=ready)
 

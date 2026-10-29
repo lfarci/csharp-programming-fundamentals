@@ -27,8 +27,16 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 - **C#:** `try` / `catch`, `int.TryParse`.
 - **Recipes:** [Input validation](../cookbook/09-input-validation.md)
-- **Book (optional):** *The C# Player's Guide*, Level 35.
-- **Microsoft docs:** [Exceptions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/)
+
+<div class="learn-box">
+
+**Learn the theory** (before or beside the exercises)
+
+- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 35: Error Handling and Exceptions
+- **Microsoft Learn:** [Implement exception handling in C# console applications](https://learn.microsoft.com/en-us/training/modules/implement-exception-handling-c-sharp/)
+- **Reference:** [Exceptions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/)
+
+</div>
 
 ## Ready for the next theme when
 

@@ -30,8 +30,17 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 ## What to learn
 
 - **C#:** `if` / `else`, comparisons `== != < <= > >=`, `&&`, `||`, `!`, `switch`.
-- **Book (optional):** *The C# Player's Guide*, Levels 9 and 10.
-- **Microsoft docs:** [Selection statements](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements)
+
+<div class="learn-box">
+
+**Learn the theory** (before or beside the exercises)
+
+- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 9: Decision Making, Level 10: Switches
+- **Microsoft Learn:** [Add decision logic to your code in C#](https://learn.microsoft.com/en-us/training/modules/csharp-if-elseif-else/) · [Evaluate Boolean expressions to make decisions in C#](https://learn.microsoft.com/en-us/training/modules/csharp-evaluate-boolean-expressions/) · [Branch the flow of code using the switch-case construct in C#](https://learn.microsoft.com/en-us/training/modules/csharp-switch-case/)
+- **Video:** [Branching, Ifs, and Conditional Logic](https://learn.microsoft.com/en-us/shows/csharp-for-beginners/branching-ifs-and-conditional-logic-csharp-for-beginners/)
+- **Reference:** [Selection statements](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements)
+
+</div>
 
 ## Ready for the next theme when
 

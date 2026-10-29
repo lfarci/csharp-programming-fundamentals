@@ -142,6 +142,10 @@ Want a backup of your code on GitHub? Make your own copy (a **fork**):
 3. Save your code: `git add -f practice`, then `git commit -m "A04 done"`, then `git push`.
 4. To get updates: on your fork's page, click **Sync fork**, then `git pull`.
 
+## Learn the theory
+
+This course is for practice. For the theory, use the book *The C# Player's Guide* or the free Microsoft Learn modules and videos. Each theme page says which part to read. See [Learn](../learn/README.md).
+
 ## Hints and solutions
 
 - Each exercise has **hints**. Open **one**, then try again for 10 minutes before the next.

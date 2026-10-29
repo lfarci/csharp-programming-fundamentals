@@ -15,8 +15,8 @@ test('Mark as done on an exercise page survives a reload and shows on its theme 
   await expect(page.locator('.theme-ex').getByLabel('Mark A04 as done')).toBeChecked()
 
   await page.goto('exercises/')
-  await expect(page.locator('.overview .total')).toContainText('1 of 96')
-  await expect(page.locator('.overview tr', { hasText: 'Loops: keep a running result' })).toContainText('1 / 22')
+  await expect(page.locator('.overview .summary')).toContainText('1 of 96')
+  await expect(page.locator('.overview li', { hasText: 'Loops: keep a running result' })).toContainText('1 / 22')
 
   await page.goto('progress')
   await expect(page.locator('.progress .big')).toContainText('1 of 96')
@@ -53,4 +53,19 @@ test('A wrong code is refused with a clear message', async ({ page }) => {
   await page.getByRole('button', { name: 'Import' }).click()
   await expect(page.getByRole('status')).toContainText('Not imported')
   await expect(page.locator('.progress .big')).toContainText('0 of 96')
+})
+
+test('The home page has the logo, the favicon and a playable demo video', async ({ page, request }) => {
+  await page.goto('')
+  await expect(page.locator('.VPNavBarTitle img.logo')).toBeVisible()
+  const icon = await page.locator('link[rel="icon"][type="image/svg+xml"]').getAttribute('href')
+  expect((await request.get(icon!)).status()).toBe(200)
+  const video = await page.locator('.home-demo video source').getAttribute('src')
+  expect((await request.get(video!)).status()).toBe(200)
+})
+
+test('The book page links to the official site and shows no affiliate note while none is set', async ({ page }) => {
+  await page.goto('learn/players-guide')
+  await expect(page.getByRole('link', { name: 'Buy the book' })).toHaveAttribute('href', /csharpplayersguide\.com|amazon|gumroad/)
+  await expect(page.locator('.disclosure')).toHaveCount(0)
 })

@@ -36,8 +36,17 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 - **C#:** arrays, index from 0, `.Length`, `for` and `foreach`.
 - **Recipes:** [Array traversal](../cookbook/11-array-traversal.md), [Build a string](../cookbook/12-string-building.md)
-- **Book (optional):** *The C# Player's Guide*, Level 12.
-- **Microsoft docs:** [Arrays](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)
+
+<div class="learn-box">
+
+**Learn the theory** (before or beside the exercises)
+
+- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 12: Arrays
+- **Microsoft Learn:** [Organize data with arrays and lists in C#](https://learn.microsoft.com/en-us/training/modules/csharp-arrays-lists/) · [Perform operations on arrays using helper methods in C#](https://learn.microsoft.com/en-us/training/modules/csharp-arrays-operations/) · [Modify the content of strings using built-in string data type methods in C#](https://learn.microsoft.com/en-us/training/modules/csharp-modify-content/)
+- **Video:** [Arrays, Lists, Indexing, and Foreach](https://learn.microsoft.com/en-us/shows/csharp-for-beginners/arrays-lists-indexing-and-foreach-csharp-for-beginners/) · [The Basics of Strings!](https://learn.microsoft.com/en-us/shows/csharp-for-beginners/the-basics-of-strings-csharp-for-beginners/)
+- **Reference:** [Arrays](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays)
+
+</div>
 
 ## Ready for the next theme when
 

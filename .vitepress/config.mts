@@ -51,7 +51,12 @@ const themeItems = course.themes.map((t) => ({
 
 export default defineConfig({
   title: 'C# Fundamentals',
-  head: [['link', { rel: 'icon', href: 'data:,' }]],
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/csharp-programming-fundamentals/favicon.svg' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/csharp-programming-fundamentals/favicon.ico', sizes: '16x16 32x32 48x48' }],
+    ['link', { rel: 'apple-touch-icon', href: '/csharp-programming-fundamentals/apple-touch-icon.png' }],
+    ['meta', { name: 'theme-color', content: '#3451b2' }],
+  ],
   description: 'Loops, step by step: recipes, exercises and drills for beginners.',
   base: '/csharp-programming-fundamentals/',
   srcDir: '.',
@@ -62,12 +67,13 @@ export default defineConfig({
   ignoreDeadLinks: false,
   markdown: { config: githubLinks },
   themeConfig: {
+    logo: { src: '/logo.svg', alt: '' },
     nav: [
       { text: 'Start here', link: '/docs/getting-started' },
       { text: 'Roadmap', link: '/ROADMAP' },
       { text: 'Exercises', link: '/exercises/' },
       { text: 'Cookbook', link: '/cookbook/' },
-      { text: 'My progress', link: '/progress' },
+      { text: 'Learn', link: '/learn/' },
     ],
     search: { provider: 'local' },
     outline: { level: [2, 3], label: 'On this page' },
@@ -79,10 +85,10 @@ export default defineConfig({
         { text: 'Home', link: '/' },
         { text: 'Getting started', link: '/docs/getting-started' },
         { text: 'Roadmap', link: '/ROADMAP' },
-        { text: 'My progress', link: '/progress' },
       ] },
       { text: 'Exercises', items: [
         { text: 'All exercises', link: '/exercises/' },
+        { text: 'My progress', link: '/progress' },
         { text: 'Drill sets', link: '/exercises/#drill-sets-same-pattern-many-times' },
         ...themeItems,
       ] },
@@ -95,7 +101,13 @@ export default defineConfig({
         { text: 'Combining recipes', link: '/cookbook/combining-recipes' },
         { text: 'The maths', link: '/cookbook/the-maths' },
       ] },
-      { text: 'How to learn', items: [
+      { text: 'Learn', items: [
+        { text: 'Learn the theory', link: '/learn/' },
+        { text: "The C# Player's Guide", link: '/learn/players-guide' },
+        { text: 'Microsoft Learn', link: '/learn/microsoft-learn' },
+        { text: 'Extra exercises', link: '/learn/quest-tracker' },
+      ] },
+      { text: 'Study skills', items: [
         { text: 'How to read an exercise', link: '/docs/reading-an-exercise' },
         { text: 'Solving a problem', link: '/docs/problem-solving' },
         { text: 'How to practice', link: '/docs/how-to-practice' },

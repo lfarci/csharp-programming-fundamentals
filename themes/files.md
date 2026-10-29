@@ -27,8 +27,16 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 - **C#:** `File.WriteAllLines`, `File.ReadAllLines`, `File.Exists`.
 - **Recipes:** [Array traversal](../cookbook/11-array-traversal.md), [Accumulator](../cookbook/02-accumulator.md)
-- **Book (optional):** *The C# Player's Guide*, Level 39 (only the file part).
-- **Microsoft docs:** [File class](https://learn.microsoft.com/en-us/dotnet/api/system.io.file)
+
+<div class="learn-box">
+
+**Learn the theory** (before or beside the exercises)
+
+- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 39: Files
+- **Microsoft Learn:** [Read and write files in C#](https://learn.microsoft.com/en-us/training/modules/csharp-read-write-files/)
+- **Reference:** [File class](https://learn.microsoft.com/en-us/dotnet/api/system.io.file)
+
+</div>
 
 ## Ready for the next theme when
 

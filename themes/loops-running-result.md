@@ -49,7 +49,16 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 - **C#:** the accumulator pattern; `+=`, `*=`; an `if` inside a loop.
 - **Recipes:** [Accumulator](../cookbook/02-accumulator.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md), [Min/max](../cookbook/04-min-max.md)
-- **Book (optional):** *The C# Player's Guide*, Level 11.
+
+<div class="learn-box">
+
+**Learn the theory** (before or beside the exercises)
+
+- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 11: Looping
+- **Microsoft Learn:** [Repeat actions with loops in C#](https://learn.microsoft.com/en-us/training/modules/csharp-repeat-actions-loops/)
+- **Video:** [For Loops](https://learn.microsoft.com/en-us/shows/csharp-for-beginners/for-loops-csharp-for-beginners/)
+
+</div>
 
 ## Ready for the next theme when
 

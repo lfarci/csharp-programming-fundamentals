@@ -42,7 +42,15 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 - **C#:** nested loops; `Console.Write` for one row, `Console.WriteLine` to end it.
 - **Recipes:** [Nested grid](../cookbook/08-nested-grid.md)
-- **Book (optional):** *The C# Player's Guide*, Level 11.
+
+<div class="learn-box">
+
+**Learn the theory** (before or beside the exercises)
+
+- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 11: Looping
+- **Microsoft Learn:** [Iterate through a code block using for statement in C#](https://learn.microsoft.com/en-us/training/modules/csharp-for/)
+
+</div>
 
 ## Ready for the next theme when
 
