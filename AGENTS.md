@@ -44,7 +44,7 @@ Deeper reference, reached only when the branch fires:
 
 ## Checks
 
-`tools/verify.sh` runs every check, the same set the CI workflow runs; green before every merge.
+`tools/verify.sh` runs the same checks as CI (`.github/workflows/checks.yml`, one job per row below); all green before every merge.
 
 | Check | Local | Gotcha |
 | --- | --- | --- |

@@ -1,5 +1,6 @@
 # C# Programming Fundamentals 🎮
 
+[![Checks](https://github.com/lfarci/csharp-programming-fundamentals/actions/workflows/checks.yml/badge.svg)](https://github.com/lfarci/csharp-programming-fundamentals/actions/workflows/checks.yml)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/lfarci/csharp-programming-fundamentals?quickstart=1)
 
 A friendly companion for a beginner C# course. You learn **loop recipes** and practise with many small exercises. Each exercise adds **one** new difficulty.
