@@ -122,7 +122,7 @@ int Run(Ex? e)
     if (e == null) return 1;
     if (e.Kind == "paper") { Console.WriteLine($"📝 {e.Id} is a paper exercise: nothing to run. Open exercises/{e.Name}.md"); return 0; }
     if (!File.Exists(MyFile(e))) { Console.WriteLine($"You have not started {e.Id} yet. Start it with:  {ex} start {e.Id}"); return 1; }
-    if (!Build("practice", out _)) return 1;
+    if (!Build("practice", out _, e.Class)) return 1;
     var p = Process.Start(new ProcessStartInfo("dotnet", ["run", "--project", Path.Combine(root, "practice"), "--no-build", "--", e.Id]) { WorkingDirectory = root })!;
     p.WaitForExit();
     return p.ExitCode;
@@ -140,7 +140,7 @@ int Check(Ex? e)
     File.WriteAllText(currentFile, e.Id);
     Console.WriteLine($"🔎 Checking {e.Id} · {e.Title}   ({Rel(MyFile(e))})\n");
 
-    if (!Build(Path.Combine("tests", "Practice.Tests"), out string buildLog))
+    if (!Build(Path.Combine("tests", "Practice.Tests"), out string buildLog, e.Class))
     {
         PrintBuildErrors(buildLog);
         return 1;
@@ -193,11 +193,14 @@ int Check(Ex? e)
     return 1;
 }
 
-bool Build(string project, out string log)
+bool Build(string project, out string log, string? only = null)
 {
     if (!Directory.Exists(Path.Combine(root, project, "obj")))
         Console.WriteLine("⏳ Building (the first time takes up to a minute)…\n");
-    var psi = new ProcessStartInfo("dotnet", ["build", Path.Combine(root, project), "-nologo", "-v", "q", "-clp:NoSummary"])
+    List<string> args = ["build", Path.Combine(root, project), "-nologo", "-v", "q", "-clp:NoSummary"];
+    // Build only this exercise's file (plus the plumbing): other unfinished files cannot block it.
+    if (only != null) args.Add("-p:OnlyExercise=" + only);
+    var psi = new ProcessStartInfo("dotnet", args)
     { WorkingDirectory = root, RedirectStandardOutput = true, RedirectStandardError = true };
     var p = Process.Start(psi)!;
     log = p.StandardOutput.ReadToEnd() + p.StandardError.ReadToEnd();
@@ -210,7 +213,7 @@ void PrintBuildErrors(string log)
 {
     var errors = log.Split('\n').Where(l => l.Contains(": error ")).Select(l => l.Trim()).Distinct().ToList();
     Console.WriteLine("❌ NOT YET: your code does not compile, so it cannot be tested.");
-    Console.WriteLine("   All your exercise files are built together, so an error in any of them stops the check.\n");
+    Console.WriteLine("   Only this exercise's file is built, so the error is in this file.\n");
     foreach (string line in errors.Take(10))
     {
         // "/path/practice/A04_Factorial.cs(12,5): error CS1002: ; expected [project]"

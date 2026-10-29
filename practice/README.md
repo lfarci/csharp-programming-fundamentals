@@ -17,7 +17,7 @@ On Windows, type `.\ex` instead of `./ex`. Full guide: [Getting started](../docs
 - Before typing, fill the [recipe card](../cookbook/README.md) and a trace table on paper.
 - Use the debugger (VS Code: **Run › Start Debugging** on "Debug the current exercise") or a temporary `Console.WriteLine` to *watch* the variables change.
 - You never need to edit `Program.cs` or `Practice.csproj`.
-- All files here are built together: if one exercise does not compile, fix it (or put `//` before the broken lines) to check another one.
+- `./ex check A04` and `./ex run A04` build only `Program.cs` and that exercise's file, so an unfinished file elsewhere never blocks you. (Visual Studio, Rider and Test Explorer build the whole folder, so there a broken file does block the others.)
 - All OK? Commit your file, then compare your idea with the [solutions](../solutions/README.md).
 
 ---

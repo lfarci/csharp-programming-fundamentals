@@ -57,7 +57,7 @@ Deeper reference, reached only when the branch fires:
 | Check | Local | Gotcha |
 | --- | --- | --- |
 | Generator in sync | `python3 tools/generator/gen.py` then `git diff` | Edit data, regenerate, commit both. |
-| Exercises | `tools/check-exercises.sh` | Reference solutions pass every test (via `EXERCISE_ASSEMBLY`), every starter compiles and fails at least one example, `./ex` runs. Projects target net8.0 with `RollForward=Major`; `global.json` opts `dotnet test` into Microsoft.Testing.Platform (needed on .NET 10 SDK); `./ex` runs the test exe directly, so it works on any SDK. |
+| Exercises | `tools/check-exercises.sh` | One exercise builds alone with `-p:OnlyExercise=<Class>` (what `./ex check` uses). Reference solutions pass every test (via `EXERCISE_ASSEMBLY`), every starter compiles and fails at least one example, `./ex` runs. Projects target net8.0 with `RollForward=Major`; `global.json` opts `dotnet test` into Microsoft.Testing.Platform (needed on .NET 10 SDK); `./ex` runs the test exe directly, so it works on any SDK. |
 | Mermaid | `tools/check-mermaid.sh` | Renders through mermaid-cli + Chrome (`--no-sandbox`). |
 | Markdown lint | `npx markdownlint-cli2` | Config `.markdownlint-cli2.jsonc`; a heading ending in `C#` trips MD020, so reword it. |
 | Links | `python3 tools/check-links.py [--external]`, `lychee --config lychee.toml .` | doi.org and publishers answer 403 to bots: accepted. |
