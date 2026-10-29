@@ -5,7 +5,7 @@
 //   run         run the exercise and type the input yourself
 //   next        start the next exercise that is not done yet
 //   list        all exercises, in order
-//   progress    re-run the tests of every started exercise and show what is done
+//   progress    re-run the tests of every started exercise, show what is done, print the website sync code
 //   done L01    mark a paper exercise as done (paper exercises have no tests)
 //
 // Progress is saved in practice/.done (one line per exercise: ID and date) and shown in practice/PROGRESS.md.
@@ -248,7 +248,28 @@ int Progress()
     md.Add(lines[0]);
     File.WriteAllText(Path.Combine(practice, "PROGRESS.md"), string.Join("\n", md) + "\n");
     Console.WriteLine("\nSaved in practice/PROGRESS.md.");
+    Console.WriteLine("\nSync code for the website (My progress > Sync with the terminal):");
+    Console.WriteLine("  " + SyncCode(done.Keys));
     return 0;
+}
+
+// "CPF1:A1-4,7;B1-3" = A01..A04, A07, B01..B03. The website (.vitepress/theme/progress.ts) reads the same format.
+static string SyncCode(IEnumerable<string> ids)
+{
+    var parts = ids.Where(id => id.Length == 3).OrderBy(id => id, StringComparer.Ordinal).GroupBy(id => id[0]).Select(g =>
+    {
+        var ns = g.Select(id => int.Parse(id[1..])).ToList();
+        var runs = new List<string>();
+        for (int i = 0; i < ns.Count; i++)
+        {
+            int j = i;
+            while (j + 1 < ns.Count && ns[j + 1] == ns[j] + 1) j++;
+            runs.Add(j > i ? $"{ns[i]}-{ns[j]}" : $"{ns[i]}");
+            i = j;
+        }
+        return g.Key + string.Join(",", runs);
+    });
+    return "CPF1:" + string.Join(";", parts);
 }
 
 Dictionary<string, string> LoadDone() =>

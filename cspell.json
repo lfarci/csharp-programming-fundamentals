@@ -6,6 +6,8 @@
   ],
   "ignorePaths": [
     "node_modules/**",
+    ".vitepress/cache/**",
+    ".vitepress/dist/**",
     "**/bin/**",
     "**/obj/**"
   ],

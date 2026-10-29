@@ -134,6 +134,8 @@ Progress: 12 of 96 exercises done, 2 started (not done yet).
 
 then a line per roadmap step and a line per drill set, where `x` means done, `o` started and `.` not started. It ends with the exercise to do next.
 
+On the [course website](https://lfarci.github.io/csharp-programming-fundamentals/), every exercise page has a **Mark as done** tick, and [My progress](../progress.md) shows the same counts. To copy your terminal results there, take the last line of `./ex progress`, a **sync code** such as `CPF1:A1-4,7;L3-11`, and paste it under **Sync with the terminal**. The website only remembers ticks in your browser: the real check is always `./ex check`.
+
 ## 6. Hints and solutions
 
 - A **hint** is hidden under a line like **Hint 1**. Click it to open it. Open **one** hint, close the page, and try again for 10 minutes before opening the next one.

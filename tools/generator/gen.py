@@ -1,3 +1,4 @@
+import os
 import json, os, sys, textwrap, glob
 from data4 import E, X
 from data5 import M, GOALS, RULES, HINTS
@@ -165,6 +166,13 @@ cj = [{"id": e["id"], "name": fname(e), "class": cls(e), "title": e["title"], "p
        "examples": [{"input": inp, "expected": [o for o in out if o.strip()]} for inp, out in (e["examples"] or [])]}
       for e in ORDER]
 json.dump(cj, open(f"{ROOT}/tools/exercises.json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+# data for the website (.vitepress): sidebar, "Mark as done", progress page
+os.makedirs(f"{ROOT}/.vitepress", exist_ok=True)
+site = {"exercises": [{"id": e["id"], "title": e["title"], "link": f"/exercises/{fname(e)}", "step": e["step"],
+                       "level": e["level"], "paper": bool(e.get("paper")),
+                       "drills": [n for n, _, ids in DRILLS if e["id"] in ids]} for e in ORDER],
+        "drillSets": [{"name": n, "recipe": r, "ids": ids} for n, r, ids in DRILLS]}
+json.dump(site, open(f"{ROOT}/.vitepress/course.json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)
 
 # ---------- tests: one plain xUnit file per exercise ----------
 def cs_str(v): return '"' + v.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n") + '"'
