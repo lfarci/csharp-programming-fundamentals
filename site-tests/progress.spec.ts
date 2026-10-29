@@ -70,3 +70,11 @@ test('The Microsoft Learn page lists the 6 parts with their themes', async ({ pa
   await expect(page.getByRole('link', { name: 'Add logic to C# console applications' })).toHaveAttribute('href', /get-started-c-sharp-part-3/)
   await expect(page.locator('.steps .theme').first()).toBeVisible()
 })
+
+test('The Videos page lists only the kept episodes, each with themes to practise', async ({ page }) => {
+  await page.goto('learn/videos')
+  await expect(page.locator('.steps > li')).toHaveCount(13)
+  await expect(page.getByRole('link', { name: 'for Iteration Statement' })).toHaveAttribute('href', /csharp-fundamentals-for-absolute-beginners\/for-iteration-statement/)
+  await expect(page.getByText('Working with LINQ')).toHaveCount(0)
+  for (const li of await page.locator('.steps > li').all()) await expect(li.locator('.theme').first()).toBeVisible()
+})

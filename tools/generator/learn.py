@@ -94,16 +94,27 @@ EPISODES = {  # slug: (title, minutes)
     'the-if-decision-statement': ('The if Decision Statement', 23),
 }
 
-# In the order Bob Tabor teaches them (used for the episode list on the Microsoft Learn page).
-EPISODE_ORDER = ["course-introduction", "installing-visual-studio", "creating-your-first-c-program", "understanding-your-first-c-program",
-    "working-with-code-files-projects-and-solutions", "understanding-data-types-and-variables", "the-if-decision-statement",
-    "operators-expressions-and-statements", "for-iteration-statement", "understanding-arrays", "defining-and-calling-methods",
-    "while-iteration-statement", "working-with-strings", "working-with-dates-and-times", "understanding-classes",
-    "more-about-classes-and-methods", "understanding-namespaces-and-working-with-the-dotnet-class-library",
-    "creating-and-adding-references-to-assemblies", "understanding-scope-and-accessibility-modifiers",
-    "enumerations-and-the-switch-decision-statement", "gracefully-handling-exceptions", "working-with-collections",
-    "working-with-linq", "understanding-events-and-event-driven-programming", "where-to-go-from-here"]
-assert sorted(EPISODE_ORDER) == sorted(EPISODES), "EPISODE_ORDER must list every episode once"
+# In the order Bob Tabor teaches them. Selection rule (see AGENTS.md): keep an episode only if it teaches a
+# fundamentals idea that one of our themes practises (it is listed in THEORY below). Everything else is dropped:
+DROPPED = {  # slug: why it is not on the Videos page
+    "course-introduction": "series overview, no idea to practise",
+    "installing-visual-studio": "installs Visual Studio; this course uses VS Code (see Getting started)",
+    "working-with-code-files-projects-and-solutions": "project tooling, not a fundamentals idea",
+    "working-with-dates-and-times": "no theme uses dates",
+    "understanding-classes": "classes and objects come after this course",
+    "more-about-classes-and-methods": "classes and objects come after this course",
+    "understanding-namespaces-and-working-with-the-dotnet-class-library": "too advanced for the fundamentals",
+    "creating-and-adding-references-to-assemblies": "too advanced for the fundamentals",
+    "understanding-scope-and-accessibility-modifiers": "accessibility modifiers belong with classes",
+    "working-with-linq": "LINQ is not used: you write the loops yourself",
+    "understanding-events-and-event-driven-programming": "too advanced for the fundamentals",
+    "where-to-go-from-here": "next steps after the series, no idea to practise",
+}
+EPISODE_ORDER = ["creating-your-first-c-program", "understanding-your-first-c-program", "understanding-data-types-and-variables",
+    "the-if-decision-statement", "operators-expressions-and-statements", "for-iteration-statement", "understanding-arrays",
+    "defining-and-calling-methods", "while-iteration-statement", "working-with-strings",
+    "enumerations-and-the-switch-decision-statement", "gracefully-handling-exceptions", "working-with-collections"]
+assert sorted(EPISODE_ORDER + list(DROPPED)) == sorted(EPISODES), "every episode is either kept (EPISODE_ORDER) or DROPPED, once"
 
 # Extra videos (optional): the newer C# for Beginners series.
 VIDEOS = ("C# for Beginners (Scott Hanselman and David Fowler)", "https://learn.microsoft.com/en-us/shows/csharp-for-beginners/")
@@ -139,7 +150,9 @@ for _s, _t in THEORY.items():
     assert _t["part"] in PARTS, f"{_s}: unknown Microsoft Learn part"
     assert _t["modules"] and _t["episodes"], f"{_s}: every theme needs at least one module and one episode"
     for _m in _t["modules"]: assert _m in MODULE, f"{_s}: module {_m} is not in PARTS"
-    for _e in _t["episodes"]: assert _e in EPISODES, f"{_s}: episode {_e} is not in EPISODES"
+    for _e in _t["episodes"]: assert _e in EPISODE_ORDER, f"{_s}: episode {_e} is not a kept episode (EPISODE_ORDER)"
+_used_eps = {e for t in THEORY.values() for e in t["episodes"]}
+assert _used_eps == set(EPISODE_ORDER), f"kept episodes no theme uses: {set(EPISODE_ORDER) - _used_eps}"
 
 def modules_md(slugs): return " · ".join(f"[{MODULE[m][1]}]({module_url(m)}) (Part {MODULE[m][0]})" for m in slugs)
 def episodes_md(slugs): return " · ".join(f"[{EPISODES[e][0]}]({episode_url(e)})" for e in slugs)

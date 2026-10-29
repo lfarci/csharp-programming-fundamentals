@@ -71,9 +71,10 @@ export default defineConfig({
     nav: [
       { text: 'Start here', link: '/docs/getting-started' },
       { text: 'Roadmap', link: '/ROADMAP' },
-      { text: 'Exercises', link: '/exercises/' },
-      { text: 'Cookbook', link: '/cookbook/' },
       { text: 'Learn', link: '/learn/' },
+      { text: 'Cookbook', link: '/cookbook/' },
+      { text: 'Exercises', link: '/exercises/' },
+      { text: 'Study skills', link: '/docs/reading-an-exercise' },
     ],
     search: { provider: 'local' },
     outline: { level: [2, 3], label: 'On this page' },
@@ -86,11 +87,11 @@ export default defineConfig({
         { text: 'Getting started', link: '/docs/getting-started' },
         { text: 'Roadmap', link: '/ROADMAP' },
       ] },
-      { text: 'Exercises', items: [
-        { text: 'All exercises', link: '/exercises/' },
-        { text: 'My progress', link: '/progress' },
-        { text: 'Drill sets', link: '/exercises/#drill-sets-same-pattern-many-times' },
-        ...themeItems,
+      { text: 'Learn', items: [
+        { text: 'Learn the theory', link: '/learn/' },
+        { text: 'Microsoft Learn modules', link: '/learn/microsoft-learn' },
+        { text: 'Videos', link: '/learn/videos' },
+        { text: 'Extra exercises', link: '/learn/quest-tracker' },
       ] },
       { text: 'Cookbook', collapsed: true, items: [
         { text: 'All recipes', link: '/cookbook/' },
@@ -101,10 +102,11 @@ export default defineConfig({
         { text: 'Combining recipes', link: '/cookbook/combining-recipes' },
         { text: 'The maths', link: '/cookbook/the-maths' },
       ] },
-      { text: 'Learn', items: [
-        { text: 'Learn the theory', link: '/learn/' },
-        { text: 'Microsoft Learn', link: '/learn/microsoft-learn' },
-        { text: 'Extra exercises', link: '/learn/quest-tracker' },
+      { text: 'Exercises', items: [
+        { text: 'All exercises', link: '/exercises/' },
+        { text: 'My progress', link: '/progress' },
+        { text: 'Drill sets', link: '/exercises/#drill-sets-same-pattern-many-times' },
+        ...themeItems,
       ] },
       { text: 'Study skills', items: [
         { text: 'How to read an exercise', link: '/docs/reading-an-exercise' },

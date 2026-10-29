@@ -14,4 +14,4 @@ Want more practice once a theme feels easy? The [C# Quest Tracker](https://lfarc
 
 ---
 
-[Microsoft Learn](microsoft-learn.md) · [Learn](README.md)
+[Videos](videos.md) · [Learn](README.md)

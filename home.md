@@ -19,22 +19,22 @@ hero:
       text: Browse the exercises
       link: /exercises/
 features:
-  - title: Exercises by theme
-    details: 96 small exercises in 15 themes, from Hello World to methods. Each one adds a single new difficulty.
-    link: /exercises/
-    linkText: All exercises
-  - title: A cookbook of loop recipes
-    details: 12 patterns you can recognise and reuse, such as counting, adding up, finding the biggest, and taking digits apart.
-    link: /cookbook/
-    linkText: Open the cookbook
-  - title: A checker in your terminal
-    details: "./ex start opens your file, ./ex check runs the tests and tells you, in plain words, what is still wrong."
-    link: /docs/getting-started#check-your-work
-    linkText: How it works
   - title: Learn the theory
     details: "The theory comes from Microsoft Learn, free: the 6 parts of Get started with C# and the Absolute Beginners videos. Each theme says which module to do first."
     link: /learn/
     linkText: Learn
+  - title: A cookbook of loop recipes
+    details: 12 patterns you can recognise and reuse, such as counting, adding up, finding the biggest, and taking digits apart.
+    link: /cookbook/
+    linkText: Open the cookbook
+  - title: Exercises by theme
+    details: 96 small exercises in 15 themes, from Hello World to methods. Each one adds a single new difficulty.
+    link: /exercises/
+    linkText: All exercises
+  - title: A checker in your terminal
+    details: "./ex start opens your file, ./ex check runs the tests and tells you, in plain words, what is still wrong."
+    link: /docs/getting-started#check-your-work
+    linkText: How it works
   - title: Your progress
     details: Tick exercises as you finish them, see each theme fill up, and copy your results from the terminal.
     link: /progress
@@ -56,11 +56,11 @@ features:
 | Part | What it is for |
 | --- | --- |
 | [Roadmap](ROADMAP.md) | The themes in order. Start at the top, go at your own pace. |
-| [Exercises](exercises/README.md) | Every exercise, grouped by theme, with your progress. |
+| [Learn](learn/README.md) | The theory on Microsoft Learn: modules and videos. |
 | [Cookbook](cookbook/README.md) | The loop recipes, and which loop to use. |
+| [Exercises](exercises/README.md) | Every exercise, grouped by theme, with your progress. |
 | [How to read an exercise](docs/reading-an-exercise.md) | A template to organise your ideas before coding. |
 | [Solving a problem](docs/problem-solving.md) | What an algorithm is, and how to find one. |
-| [Learn](learn/README.md) | The theory on Microsoft Learn, and extra exercises. |
 | [Glossary](docs/glossary.md) | The words of programming, in plain language. |
 
 The website does not run C#. Your code runs on your own computer, in your copy of the course. [Getting started](docs/getting-started.md) shows how to set it up in about 15 minutes.

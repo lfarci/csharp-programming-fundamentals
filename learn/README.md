@@ -8,7 +8,8 @@ This course is for **practice**: exercises, recipes and a checker. The **theory*
 
 <div class="gh-only">
 
-- [Microsoft Learn](microsoft-learn.md): the main companion, the 6 parts, the videos and the free certification.
+- [Microsoft Learn modules](microsoft-learn.md): the main companion, the 6 parts and the free certification.
+- [Videos](videos.md): the C# Fundamentals for Absolute Beginners episodes for each theme.
 - [Extra exercises](quest-tracker.md): more practice in the C# Quest Tracker.
 
 </div>
@@ -37,4 +38,4 @@ Each theme page has a *Learn the theory* box with all its modules and videos.
 
 ---
 
-[Home](../README.md) · Next: [Microsoft Learn](microsoft-learn.md)
+[Home](../README.md) · Next: [Microsoft Learn modules](microsoft-learn.md)

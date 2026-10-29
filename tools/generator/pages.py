@@ -1,6 +1,6 @@
 # Pages built from the themes (exec'd by gen.py: uses ORDER, byid, fname, stars, rlinks, RECIPES, DRILLS, X, THEMES).
 # exercises/README.md (overview), themes/<slug>.md, ROADMAP.md, docs/progress-checklist.md, diagrams/roadmap.d2.
-from learn import TRACKER, PARTS as MSL, MODULE, CERT, SERIES, EPISODES, EPISODE_ORDER, VIDEOS, TOUR, THEORY, path_url, module_url, episode_url, modules_md, episodes_md
+from learn import TRACKER, PARTS as MSL, MODULE, CERT, SERIES, EPISODES, EPISODE_ORDER, DROPPED, VIDEOS, TOUR, THEORY, path_url, module_url, episode_url, modules_md, episodes_md
 assert set(THEORY) == {x["slug"] for x in THEMES}, "learn.py THEORY must list every theme exactly once"
 TH_EX = {x["slug"]: [e for e in ORDER if e["theme"] == x["slug"]] for x in THEMES}
 NUM = {x["slug"]: i for i, x in enumerate(THEMES, 1)}
@@ -120,17 +120,18 @@ for x in THEMES:
 LG = ["[Home](../README.md) › Learn", "", "# Learn the theory", "",
       "This course is for **practice**: exercises, recipes and a checker. The **theory** comes from **Microsoft Learn**, free: six short learning paths and a video series. Read or watch the matching part, then do the exercises of the theme.", "",
       "<LearnCards />", "", '<div class="gh-only">', "",
-      "- [Microsoft Learn](microsoft-learn.md): the main companion, the 6 parts, the videos and the free certification.",
+      "- [Microsoft Learn modules](microsoft-learn.md): the main companion, the 6 parts and the free certification.",
+      f"- [Videos](videos.md): the {SERIES[0]} episodes for each theme.",
       f"- [Extra exercises](quest-tracker.md): more practice in the {TRACKER['title']}.", "", "</div>", "",
       "## What to learn before each theme", "",
       "| # | Theme | Microsoft Learn | Video |", "| ---: | --- | --- | --- |"]
 for x in THEMES:
     th = THEORY[x["slug"]]
     LG.append(f"| {NUM[x['slug']]} | {theme_link(x)} | [Part {th['part']}]({path_url(th['part'])}): [{MODULE[th['modules'][0]][1]}]({module_url(th['modules'][0])}) | {episodes_md(th['episodes'][:1])} |")
-LG += ["", "Each theme page has a *Learn the theory* box with all its modules and videos.", "", "---", "", "[Home](../README.md) · Next: [Microsoft Learn](microsoft-learn.md)", ""]
+LG += ["", "Each theme page has a *Learn the theory* box with all its modules and videos.", "", "---", "", "[Home](../README.md) · Next: [Microsoft Learn modules](microsoft-learn.md)", ""]
 open(f"{ROOT}/learn/README.md", "w").write("\n".join(LG))
 
-LM = ["[Home](../README.md) › [Learn](README.md) › Microsoft Learn", "", "# Microsoft Learn: the main companion", "",
+LM = ["[Home](../README.md) › [Learn](README.md) › Microsoft Learn modules", "", "# Microsoft Learn modules", "",
       "Microsoft Learn teaches C# for free in **6 parts** (learning paths). Each part has short **modules**: you read a little, then try the code. This course follows the same order: after a module, do the themes listed under it.", "",
       "<MsLearnPath />", "", '<div class="gh-only">', ""]
 for n, (title, ms) in MSL.items():
@@ -140,18 +141,32 @@ for n, (title, ms) in MSL.items():
         LM.append(f"- [{t_}]({module_url(slug_)}). Then: {after}")
     LM.append("")
 LM += ["</div>", "",
-       "## The videos", "", f"[{SERIES[0]}]({SERIES[1]}): {len(EPISODES)} videos by Bob Tabor that explain each idea slowly. Watch the episode, then do the theme.", "",
-       "| Episode | Minutes | Then do |", "| --- | ---: | --- |"]
-for e_ in EPISODE_ORDER:
-    t_, mins = EPISODES[e_]
-    LM.append(f"| [{t_}]({episode_url(e_)}) | {mins} | {', '.join(theme_link(x) for x in EP_USED.get(e_, [])) or '-'} |")
-LM += ["", f"More videos, optional: [{VIDEOS[0]}]({VIDEOS[1]}).", "",
+       f"Prefer videos? See [Videos](videos.md): the {SERIES[0]} episodes for each theme.", "",
        "## The free certification", "",
        f"[{CERT[0]}]({CERT[1]}) is a **free** certification by freeCodeCamp and Microsoft. It is made of the same 6 parts above, you finish the 6 parts on Microsoft Learn (a trophy for each), link them to your freeCodeCamp account, then take an exam of 80 questions in one session (pass with 70%). Both accounts are free.", "",
        "You do not need it for this course. If you want it, this course is the practice: do the themes after each part, then take the exam.", "",
        "## The docs", "", f"[{TOUR[0]}]({TOUR[1]}): the official overview of the language, for later.", "",
-       "---", "", "[Learn](README.md) · Next: [Extra exercises](quest-tracker.md)", ""]
+       "---", "", "[Learn](README.md) · Next: [Videos](videos.md)", ""]
 open(f"{ROOT}/learn/microsoft-learn.md", "w").write("\n".join(LM))
+
+# Videos: kept episodes only, grouped like the roadmap (by the group of the first theme that uses them)
+FIRST = {e_: EP_USED[e_][0] for e_ in EPISODE_ORDER}
+VG = []
+for part in PARTS:
+    eps_ = sorted([e_ for e_ in EPISODE_ORDER if FIRST[e_]["part"] == part], key=lambda e_: (NUM[FIRST[e_]["slug"]], EPISODE_ORDER.index(e_)))
+    if eps_: VG.append((part, eps_))
+LV = ["[Home](../README.md) › [Learn](README.md) › Videos", "", f"# Videos: {SERIES[0]}", "",
+      f"[{SERIES[0]}]({SERIES[1]}) is a free video series on Microsoft Learn by Bob Tabor. It explains each idea slowly. Watch an episode, then do the themes under it. Only the episodes about the fundamentals are listed here.", "",
+      "<VideoPath />", "", '<div class="gh-only">', ""]
+k_ = 0
+for part, eps_ in VG:
+    LV += [f"{part.split(': ')[0]}: **{part.split(': ')[1]}**", ""]
+    for e_ in eps_:
+        k_ += 1; t_, mins = EPISODES[e_]
+        LV.append(f"- **{k_}** [{t_}]({episode_url(e_)}) ({mins} min). Then: " + ", ".join(theme_link(x) for x in EP_USED[e_]))
+    LV.append("")
+LV += ["</div>", "", f"More videos, optional: [{VIDEOS[0]}]({VIDEOS[1]}).", "", "---", "", "[Microsoft Learn modules](microsoft-learn.md) · Next: [Extra exercises](quest-tracker.md)", ""]
+open(f"{ROOT}/learn/videos.md", "w").write("\n".join(LV))
 
 LQ = ["[Home](../README.md) › [Learn](README.md) › Extra exercises", "", f"# Extra exercises: the {TRACKER['title']}", "",
       f"Want more practice once a theme feels easy? The [{TRACKER['title']}]({TRACKER['url']}) is a free website where you tick challenges, earn XP and level up, like a game. It follows the challenges of the book [The C# Player's Guide](https://csharpplayersguide.com/).", "",
@@ -159,7 +174,7 @@ LQ = ["[Home](../README.md) › [Learn](README.md) › Extra exercises", "", f"#
       "- Open the tracker in your browser. No account.", "- Tick a challenge when you finish it. Your XP goes up.",
       "- Progress is saved in this browser. Use **Settings** to export a backup and import it on another computer.", "",
       f"[Open the {TRACKER['title']}]({TRACKER['url']}) · [Source code]({TRACKER['repo']})", "",
-      "---", "", "[Microsoft Learn](microsoft-learn.md) · [Learn](README.md)", ""]
+      "---", "", "[Videos](videos.md) · [Learn](README.md)", ""]
 open(f"{ROOT}/learn/quest-tracker.md", "w").write("\n".join(LQ))
 
 # ---------- .vitepress/course.json: add the Microsoft Learn path (MsLearnPath component) ----------
@@ -167,4 +182,7 @@ _site = json.load(open(f"{ROOT}/.vitepress/course.json", encoding="utf-8"))
 _site["mslearn"] = [{"num": n, "title": title, "url": path_url(n),
                      "modules": [{"title": t_, "url": module_url(sl), "themes": [{"title": x["title"], "link": f"/themes/{x['slug']}"} for x in USED.get(sl, [])]} for t_, sl in ms]}
                     for n, (title, ms) in MSL.items()]
+_n = iter(range(1, 100))
+_site["videos"] = [{"group": part, "episodes": [{"num": next(_n), "title": EPISODES[e_][0], "minutes": EPISODES[e_][1], "url": episode_url(e_),
+                     "themes": [{"title": x["title"], "link": f"/themes/{x['slug']}"} for x in EP_USED[e_]]} for e_ in eps_]} for part, eps_ in VG]
 json.dump(_site, open(f"{ROOT}/.vitepress/course.json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)

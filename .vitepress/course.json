@@ -1582,5 +1582,224 @@
     }
    ]
   }
+ ],
+ "videos": [
+  {
+   "group": "MS Learn Part 1: Write your first code",
+   "episodes": [
+    {
+     "num": 1,
+     "title": "Creating Your First C# Program",
+     "minutes": 16,
+     "url": "https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/creating-your-first-c-program/",
+     "themes": [
+      {
+       "title": "Hello World",
+       "link": "/themes/hello-world"
+      }
+     ]
+    },
+    {
+     "num": 2,
+     "title": "Understanding Your First C# Program",
+     "minutes": 17,
+     "url": "https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/understanding-your-first-c-program/",
+     "themes": [
+      {
+       "title": "Hello World",
+       "link": "/themes/hello-world"
+      }
+     ]
+    },
+    {
+     "num": 3,
+     "title": "Understanding Data Types and Variables",
+     "minutes": 28,
+     "url": "https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/understanding-data-types-and-variables/",
+     "themes": [
+      {
+       "title": "Variables and expressions",
+       "link": "/themes/variables"
+      }
+     ]
+    },
+    {
+     "num": 4,
+     "title": "Operators, Expressions, and Statements",
+     "minutes": 15,
+     "url": "https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/operators-expressions-and-statements/",
+     "themes": [
+      {
+       "title": "Variables and expressions",
+       "link": "/themes/variables"
+      },
+      {
+       "title": "Loops: take digits apart",
+       "link": "/themes/loops-digits"
+      }
+     ]
+    },
+    {
+     "num": 5,
+     "title": "The if Decision Statement",
+     "minutes": 23,
+     "url": "https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/the-if-decision-statement/",
+     "themes": [
+      {
+       "title": "Conditions",
+       "link": "/themes/conditions"
+      },
+      {
+       "title": "Combine recipes",
+       "link": "/themes/combine"
+      }
+     ]
+    },
+    {
+     "num": 6,
+     "title": "Enumerations and the Switch Decision Statement",
+     "minutes": 13,
+     "url": "https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/enumerations-and-the-switch-decision-statement/",
+     "themes": [
+      {
+       "title": "Conditions",
+       "link": "/themes/conditions"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "group": "MS Learn Parts 2 and 3: Loops and logic",
+   "episodes": [
+    {
+     "num": 7,
+     "title": "for Iteration Statement",
+     "minutes": 18,
+     "url": "https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/for-iteration-statement/",
+     "themes": [
+      {
+       "title": "Loops: repeat and count",
+       "link": "/themes/loops-repeat"
+      },
+      {
+       "title": "Loops: keep a running result",
+       "link": "/themes/loops-running-result"
+      },
+      {
+       "title": "Loops: draw in 2D",
+       "link": "/themes/loops-2d"
+      },
+      {
+       "title": "Combine recipes",
+       "link": "/themes/combine"
+      }
+     ]
+    },
+    {
+     "num": 8,
+     "title": "While Iteration Statement",
+     "minutes": 18,
+     "url": "https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/while-iteration-statement/",
+     "themes": [
+      {
+       "title": "Loops: repeat and count",
+       "link": "/themes/loops-repeat"
+      },
+      {
+       "title": "Loops: take digits apart",
+       "link": "/themes/loops-digits"
+      },
+      {
+       "title": "Loops: remember changing values",
+       "link": "/themes/loops-state"
+      },
+      {
+       "title": "Loops: search",
+       "link": "/themes/loops-search"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "group": "MS Learn Part 4: Work with variable data",
+   "episodes": [
+    {
+     "num": 9,
+     "title": "Understanding Arrays",
+     "minutes": 17,
+     "url": "https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/understanding-arrays/",
+     "themes": [
+      {
+       "title": "Arrays and text",
+       "link": "/themes/arrays"
+      }
+     ]
+    },
+    {
+     "num": 10,
+     "title": "Working with Strings",
+     "minutes": 23,
+     "url": "https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/working-with-strings/",
+     "themes": [
+      {
+       "title": "Arrays and text",
+       "link": "/themes/arrays"
+      },
+      {
+       "title": "Files",
+       "link": "/themes/files"
+      }
+     ]
+    },
+    {
+     "num": 11,
+     "title": "Working with Collections",
+     "minutes": 23,
+     "url": "https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/working-with-collections/",
+     "themes": [
+      {
+       "title": "Collections",
+       "link": "/themes/collections"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "group": "MS Learn Part 5: Methods",
+   "episodes": [
+    {
+     "num": 12,
+     "title": "Defining and Calling Methods",
+     "minutes": 31,
+     "url": "https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/defining-and-calling-methods/",
+     "themes": [
+      {
+       "title": "Methods",
+       "link": "/themes/methods"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "group": "MS Learn Part 6: Debug and handle exceptions",
+   "episodes": [
+    {
+     "num": 13,
+     "title": "Gracefully Handling Exceptions",
+     "minutes": 21,
+     "url": "https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/gracefully-handling-exceptions/",
+     "themes": [
+      {
+       "title": "Exceptions",
+       "link": "/themes/exceptions"
+      }
+     ]
+    }
+   ]
+  }
  ]
 }
