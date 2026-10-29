@@ -17,12 +17,12 @@ Each custom exercise adds **one** new difficulty. Pick the next one whose prereq
 
 | Source | Exercises |
 | --- | ---: |
-| Custom (this repo) | 55 |
+| Custom (this repo) | 63 |
 | Project Euler | 5 |
 | Teacher topic | 3 |
-| **Total** | **63** |
+| **Total** | **71** |
 
-Custom by level: 🟢 15 guided · 🔵 27 independent · 🟣 13 challenge.
+Custom by level: 🟢 19 guided · 🔵 31 independent · 🟣 13 challenge.
 
 ## Map of the families
 
@@ -64,6 +64,7 @@ See the full [graph of every exercise and its prerequisites](dependency-graph.md
 | C01 | [Even or odd](C01-even-or-odd.md) | 🟢 Guided | ⭐ | — | B02 | Custom |
 | C02 | [Largest of three](C02-largest-of-three.md) | 🔵 Independent | ⭐⭐ | [Min/max](../cookbook/04-min-max.md) | C01 | Custom |
 | C03 | [Ticket price](C03-ticket-price.md) | 🔵 Independent | ⭐⭐ | — | C01 | Custom |
+| C04 | [Grade from a score](C04-grade-from-a-score.md) | 🔵 Independent | ⭐⭐ | — | C03 | Custom |
 
 ### L · Loop mechanics (Step 4a)
 
@@ -77,13 +78,17 @@ See the full [graph of every exercise and its prerequisites](dependency-graph.md
 | L06 | [Even numbers](L06-even-numbers.md) | 🟢 Guided | ⭐ | [Counter loop](../cookbook/01-counter-loop.md) | L03 | Custom |
 | L07 | [Ask until valid](L07-ask-until-valid.md) | 🔵 Independent | ⭐⭐ | [Input validation](../cookbook/09-input-validation.md) | L05, C03 | Custom |
 | L08 | [Guess the number](L08-guess-the-number.md) | 🟣 Challenge | ⭐⭐ | [Input validation](../cookbook/09-input-validation.md), [Accumulator](../cookbook/02-accumulator.md) | L07 | Custom |
+| L09 | [Draw one row](L09-draw-a-row.md) | 🟢 Guided | ⭐ | [Counter loop](../cookbook/01-counter-loop.md), [Nested grid](../cookbook/08-nested-grid.md) | L03 | Custom |
+| L10 | [Numbers on one line](L10-numbers-on-one-line.md) | 🔵 Independent | ⭐⭐ | [Counter loop](../cookbook/01-counter-loop.md), [Nested grid](../cookbook/08-nested-grid.md) | L09 | Custom |
 
 ### A · Accumulators (Step 4b)
 
 | ID | Exercise | Level | ⭐ | Recipes | Before | Source |
 | --- | --- | --- | --- | --- | --- | --- |
+| A11 | [Arrange the lines: sum of squares](A11-arrange-sum-of-squares.md) | 🟢 Guided | ⭐ | [Accumulator](../cookbook/02-accumulator.md) | L03 | Custom · 🧩 arrange the lines |
 | A01 | [Sum from 1 to N](A01-sum-1-to-n.md) | 🟢 Guided | ⭐ | [Counter loop](../cookbook/01-counter-loop.md), [Accumulator](../cookbook/02-accumulator.md) | L03 | Custom |
 | A02 | [Count multiples of 3](A02-count-multiples-of-3.md) | 🟢 Guided | ⭐ | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | A01, C01 | Custom |
+| A12 | [Fix the bugs: count multiples of 7](A12-fix-count-multiples-of-7.md) | 🟢 Guided | ⭐ | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | A02 | Custom · 🐞 fix the bugs |
 | A03 | [Sum of the even numbers](A03-sum-even-values.md) | 🔵 Independent | ⭐ | [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | A02 | Custom |
 | A04 | [Factorial](A04-factorial.md) | 🔵 Independent | ⭐⭐ | [Accumulator](../cookbook/02-accumulator.md) | A01 | Custom · teacher: Factorial |
 | A05 | [Two accumulators: sum and squares](A05-sum-square-difference.md) | 🔵 Independent | ⭐⭐ | [Accumulator](../cookbook/02-accumulator.md) | A01 | Custom → PE #6 |
@@ -97,7 +102,8 @@ See the full [graph of every exercise and its prerequisites](dependency-graph.md
 
 | ID | Exercise | Level | ⭐ | Recipes | Before | Source |
 | --- | --- | --- | --- | --- | --- | --- |
-| G01 | [Draw a rectangle](G01-rectangle.md) | 🟢 Guided | ⭐ | [Nested grid](../cookbook/08-nested-grid.md) | L03 | Custom |
+| G07 | [Arrange the lines: a square](G07-arrange-a-square.md) | 🟢 Guided | ⭐ | [Nested grid](../cookbook/08-nested-grid.md) | L09 | Custom · 🧩 arrange the lines |
+| G01 | [Draw a rectangle](G01-rectangle.md) | 🟢 Guided | ⭐ | [Nested grid](../cookbook/08-nested-grid.md) | L09 | Custom |
 | G02 | [Draw a right triangle](G02-right-triangle.md) | 🔵 Independent | ⭐⭐ | [Nested grid](../cookbook/08-nested-grid.md) | G01 | Custom |
 | G03 | [Multiplication grid](G03-multiplication-grid.md) | 🔵 Independent | ⭐⭐ | [Nested grid](../cookbook/08-nested-grid.md) | G01, L04 | Custom |
 | G04 | [Hollow rectangle](G04-hollow-rectangle.md) | 🔵 Independent | ⭐⭐ | [Nested grid](../cookbook/08-nested-grid.md) | G01 | Custom |
@@ -112,6 +118,7 @@ See the full [graph of every exercise and its prerequisites](dependency-graph.md
 | D02 | [Remove the last digit](D02-remove-last-digit.md) | 🟢 Guided | ⭐ | [Digit extraction](../cookbook/06-digit-extraction.md) | D01 | Custom |
 | D03 | [Count the digits](D03-count-digits.md) | 🔵 Independent | ⭐⭐ | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | D02, L05 | Custom |
 | D04 | [Sum of the digits](D04-digit-sum.md) | 🔵 Independent | ⭐⭐ | [Digit extraction](../cookbook/06-digit-extraction.md), [Accumulator](../cookbook/02-accumulator.md) | D03 | Custom |
+| D07 | [Fix the bugs: digit sum](D07-fix-digit-sum.md) | 🔵 Independent | ⭐⭐ | [Digit extraction](../cookbook/06-digit-extraction.md) | D04 | Custom · 🐞 fix the bugs |
 | D05 | [Reverse a number](D05-reverse-a-number.md) | 🔵 Independent | ⭐⭐ | [Digit extraction](../cookbook/06-digit-extraction.md) | D04 | Custom |
 | D06 | [Palindrome number](D06-palindrome-number.md) | 🟣 Challenge | ⭐⭐⭐ | [Digit extraction](../cookbook/06-digit-extraction.md) | D05 | Custom |
 
@@ -143,6 +150,7 @@ See the full [graph of every exercise and its prerequisites](dependency-graph.md
 | --- | --- | --- | --- | --- | --- | --- |
 | R01 | [Sum of an array](R01-sum-an-array.md) | 🟢 Guided | ⭐ | [Array traversal](../cookbook/11-array-traversal.md), [Accumulator](../cookbook/02-accumulator.md) | A01 | Custom |
 | R02 | [Largest value in an array](R02-largest-in-an-array.md) | 🔵 Independent | ⭐⭐ | [Array traversal](../cookbook/11-array-traversal.md), [Min/max](../cookbook/04-min-max.md) | R01, C02 | Custom |
+| R06 | [Fix the bugs: largest value](R06-fix-largest-value.md) | 🔵 Independent | ⭐⭐ | [Array traversal](../cookbook/11-array-traversal.md), [Min/max](../cookbook/04-min-max.md) | R02 | Custom · 🐞 fix the bugs |
 | R03 | [Count matches in an array](R03-count-matches.md) | 🔵 Independent | ⭐ | [Array traversal](../cookbook/11-array-traversal.md), [Conditional accumulator](../cookbook/03-conditional-accumulator.md) | R01, A02 | Custom |
 | R04 | [Find the position](R04-find-the-position.md) | 🔵 Independent | ⭐⭐ | [Array traversal](../cookbook/11-array-traversal.md), [Flag/search](../cookbook/05-flag-search.md) | R03 | Custom |
 | R05 | [Reverse an array](R05-reverse-an-array.md) | 🟣 Challenge | ⭐⭐ | [Array traversal](../cookbook/11-array-traversal.md) | R01 | Custom |

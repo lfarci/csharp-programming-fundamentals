@@ -4,7 +4,7 @@
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Guided | ⭐ | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [L03](L03-count-up-and-down.md) | Custom |
+| Guided | ⭐ | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [L09](L09-draw-a-row.md) | Custom |
 
 ## 🎯 Goal
 
@@ -77,4 +77,4 @@ Only after a real try: [open the solution for G01](../solutions/G01_Rectangle.cs
 
 ---
 
-⬅️ Previous: [A10 · Sum of a series](A10-sum-of-a-series.md) · 📚 [All exercises](README.md) · Next: [G02 · Draw a right triangle](G02-right-triangle.md) ➡️
+⬅️ Previous: [G07 · Arrange the lines: a square](G07-arrange-a-square.md) · 📚 [All exercises](README.md) · Next: [G02 · Draw a right triangle](G02-right-triangle.md) ➡️

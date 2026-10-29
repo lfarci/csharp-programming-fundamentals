@@ -72,4 +72,4 @@ Only after a real try: [open the solution for R03](../solutions/R03_CountMatches
 
 ---
 
-⬅️ Previous: [R02 · Largest value in an array](R02-largest-in-an-array.md) · 📚 [All exercises](README.md) · Next: [R04 · Find the position](R04-find-the-position.md) ➡️
+⬅️ Previous: [R06 · Fix the bugs: largest value](R06-fix-largest-value.md) · 📚 [All exercises](README.md) · Next: [R04 · Find the position](R04-find-the-position.md) ➡️

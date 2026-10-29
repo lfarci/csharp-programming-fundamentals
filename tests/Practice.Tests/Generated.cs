@@ -42,6 +42,13 @@ namespace Practice.Tests
 
     }
 
+    public class C04_GradeFromAScore
+    {
+        [Theory, MemberData(nameof(Data.Cases), "C04", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("C04", test);
+
+    }
+
     public class L03_CountUpAndDown
     {
         [Theory, MemberData(nameof(Data.Examples), "L03", MemberType = typeof(Data))]
@@ -78,6 +85,13 @@ namespace Practice.Tests
         public void Example(int test) => Check.Example("L08", test);
     }
 
+    public class A11_ArrangeSumOfSquares
+    {
+        [Theory, MemberData(nameof(Data.Cases), "A11", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("A11", test);
+
+    }
+
     public class A01_Sum1ToN
     {
         [Theory, MemberData(nameof(Data.Cases), "A01", MemberType = typeof(Data))]
@@ -89,6 +103,13 @@ namespace Practice.Tests
     {
         [Theory, MemberData(nameof(Data.Cases), "A02", MemberType = typeof(Data))]
         public void Method(int test) => Check.Method("A02", test);
+
+    }
+
+    public class A12_FixCountMultiplesOf7
+    {
+        [Theory, MemberData(nameof(Data.Cases), "A12", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("A12", test);
 
     }
 
@@ -142,6 +163,27 @@ namespace Practice.Tests
     {
         [Theory, MemberData(nameof(Data.Cases), "A10", MemberType = typeof(Data))]
         public void Method(int test) => Check.Method("A10", test);
+
+    }
+
+    public class L09_DrawARow
+    {
+        [Theory, MemberData(nameof(Data.Cases), "L09", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("L09", test);
+
+    }
+
+    public class L10_NumbersOnOneLine
+    {
+        [Theory, MemberData(nameof(Data.Cases), "L10", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("L10", test);
+
+    }
+
+    public class G07_ArrangeASquare
+    {
+        [Theory, MemberData(nameof(Data.Cases), "G07", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("G07", test);
 
     }
 
@@ -215,6 +257,13 @@ namespace Practice.Tests
 
     }
 
+    public class D07_FixDigitSum
+    {
+        [Theory, MemberData(nameof(Data.Cases), "D07", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("D07", test);
+
+    }
+
     public class D05_ReverseANumber
     {
         [Theory, MemberData(nameof(Data.Cases), "D05", MemberType = typeof(Data))]
@@ -279,6 +328,13 @@ namespace Practice.Tests
     {
         [Theory, MemberData(nameof(Data.Cases), "R02", MemberType = typeof(Data))]
         public void Method(int test) => Check.Method("R02", test);
+
+    }
+
+    public class R06_FixLargestValue
+    {
+        [Theory, MemberData(nameof(Data.Cases), "R06", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("R06", test);
 
     }
 

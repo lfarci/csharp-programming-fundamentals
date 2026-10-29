@@ -80,4 +80,4 @@ Only after a real try: [open the solution for A10](../solutions/A10_SumOfASeries
 
 ---
 
-⬅️ Previous: [A09 · Smallest and largest until zero](A09-min-and-max-until-zero.md) · 📚 [All exercises](README.md) · Next: [G01 · Draw a rectangle](G01-rectangle.md) ➡️
+⬅️ Previous: [A09 · Smallest and largest until zero](A09-min-and-max-until-zero.md) · 📚 [All exercises](README.md) · Next: [L09 · Draw one row](L09-draw-a-row.md) ➡️

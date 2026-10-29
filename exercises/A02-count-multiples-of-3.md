@@ -74,4 +74,4 @@ Only after a real try: [open the solution for A02](../solutions/A02_CountMultipl
 
 ---
 
-⬅️ Previous: [A01 · Sum from 1 to N](A01-sum-1-to-n.md) · 📚 [All exercises](README.md) · Next: [A03 · Sum of the even numbers](A03-sum-even-values.md) ➡️
+⬅️ Previous: [A01 · Sum from 1 to N](A01-sum-1-to-n.md) · 📚 [All exercises](README.md) · Next: [A12 · Fix the bugs: count multiples of 7](A12-fix-count-multiples-of-7.md) ➡️

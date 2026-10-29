@@ -1,6 +1,8 @@
 import json, os, sys, textwrap, glob
 from data4 import E, X
 from data5 import M, GOALS, RULES, HINTS
+import data6  # noqa: F401  (adds ladder, Parsons and debugging exercises to E and M)
+from data6 import NOTE_P
 import re
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 RECIPES = {"01":("Counter loop","01-counter-loop"),"02":("Accumulator","02-accumulator"),"03":("Conditional accumulator","03-conditional-accumulator"),
@@ -48,11 +50,15 @@ def cs_file(e, starter):
     if starter:
         goal = plain(GOALS[e["id"]] if spec else e["goal"]).split("\n")[0]
         H += [""] + textwrap.wrap("Goal: " + goal, 90) + [""]
-        if spec:
+        if e.get("task") == "parsons":
+            H += ["YOUR JOB: the right lines are already in the method, but mixed up.", "Put them in order and remove the // in front of them."]
+        elif e.get("task") == "debug":
+            H += ["YOUR JOB: the method below compiles, but it has bugs.", "Run the check, read what fails, trace it on paper, then fix it."]
+        if spec and not e.get("task"):
             H += ["YOUR JOB: write the method" + ("s" if len(spec["methods"]) > 1 else "") + " below, where it says TODO."]
             for name, sig, ins, res in method_job(e):
                 H += [f"  {name}", f"    input  (parameters): {ins}", f"    result (return)    : {res}"]
-        else:
+        elif not spec:
             H += ["YOUR JOB: write the whole program inside Run(), where it says TODO.",
                   "Use Console.ReadLine() to read and Console.WriteLine() to print, as usual."]
         H += ["", f"Check your code:  ./ex check {e['id']}     (Windows: .\\ex check {e['id']})",
@@ -60,7 +66,9 @@ def cs_file(e, starter):
     body = []
     if spec:
         for i, (sig, code, todo) in enumerate(spec["methods"]):
-            inner = ("// TODO: write your code here.\n" + todo).rstrip() if starter else code
+            if not starter: inner = code
+            elif todo.startswith(NOTE_P): inner = "// " + todo[len(NOTE_P):]
+            else: inner = ("// TODO: write your code here.\n" + todo).rstrip()
             body += ([""] if i else []) + [sig, "{", ind(inner, 4), "}"]
     else:
         inner = "// TODO: write your code here." if starter else e["code"]
@@ -82,7 +90,8 @@ def plinks(e, base=""):
 for d in ["exercises", "solutions", "tools/starters", "tests/Practice.Tests"]: os.makedirs(f"{ROOT}/{d}", exist_ok=True)
 for old in glob.glob(f"{ROOT}/solutions/*.cs") + glob.glob(f"{ROOT}/tools/starters/*.cs"): os.remove(old)
 FAMORDER = "BCLAGDSPMRTFEKN"
-ORDER = sorted(E, key=lambda e: (FAMORDER.index(e["id"][0]), e["id"]))
+def skey(e): k = e.get("sort", e["id"]); return (FAMORDER.index(k[0]), k)
+ORDER = sorted(E, key=skey)
 POS = {e["id"]: i for i, e in enumerate(ORDER)}
 def nav(e):
     i = POS[e["id"]]; parts = []
@@ -105,7 +114,11 @@ for e in E:
     else:
         L += ["## ▶️ Start and check", "", "```bash", f"./ex start {e['id']}     # creates practice/{cls(e)}.cs (never overwrites your work)", f"./ex check {e['id']}     # tests your code with the examples below", "```", "",
               f"On Windows, type `.\\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).", ""]
-        if e["id"] in M:
+        if e.get("task") == "parsons":
+            L += ["**Your job:** 🧩 the file already holds **all** the lines you need, mixed up and turned into comments (`//`). Put them in order and remove the `//`. No new code to invent: this trains *reading* the pattern.", ""]
+        elif e.get("task") == "debug":
+            L += ["**Your job:** 🐞 the file already holds code that compiles but gives wrong answers. Run `./ex check`, read which example fails, trace that example on paper, then fix the bug. Change as little as you can.", ""]
+        elif e["id"] in M:
             L += ["**Your job:** fill in " + ("these methods" if len(M[e["id"]]["methods"]) > 1 else "this method") + " in the file. The *parameters* are its input; what you `return` is its result.", ""]
             for name, sig, ins, res in method_job(e):
                 L += [f"- `{sig.replace('public static ', '')}`: input = {ins}; result = {res}."]
@@ -192,13 +205,15 @@ out += ['    B["B · Basics"] --> C["C · Conditions"] --> L["L · Loop mechanic
         "See the full [graph of every exercise and its prerequisites](dependency-graph.md).", ""]
 out += ["## Custom exercises", ""]
 for f, name, step in FAM:
-    rows = [e for e in E if e["id"].startswith(f)]
+    rows = [e for e in ORDER if e["id"].startswith(f)]
     out += [f"### {f} · {name} ({step})", "", "| ID | Exercise | Level | ⭐ | Recipes | Before | Source |", "| --- | --- | --- | --- | --- | --- | --- |"]
     for e in rows:
         s = "Custom"
         if e.get("teacher"): s += f" · teacher: {e['teacher']}"
         if e.get("euler"): s += f" → PE #{e['euler']}"
         if e.get("paper"): s += " · 📝 paper"
+        if e.get("task") == "parsons": s += " · 🧩 arrange the lines"
+        if e.get("task") == "debug": s += " · 🐞 fix the bugs"
         out.append(f"| {e['id']} | [{e['title']}]({fname(e)}.md) | {lvl_icon[e['level']]} | {stars(e['stars'])} | {rlinks(e)} | {', '.join(e['pre']) or '—'} | {s} |")
     out.append("")
 out += ["## Project Euler (milestones, not daily homework)", "", "| ID | Problem | Roadmap step | Skills | Do first | ⭐ |", "| --- | --- | --- | --- | --- | --- |"]
