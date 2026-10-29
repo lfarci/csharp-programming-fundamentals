@@ -401,6 +401,76 @@
   ]
  },
  {
+  "id": "C04",
+  "name": "C04-grade-from-a-score",
+  "class": "C04_GradeFromAScore",
+  "title": "Grade from a score",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "Grade"
+  ],
+  "cases": [
+   {
+    "method": "Grade",
+    "args": [
+     95
+    ],
+    "expected": "A"
+   },
+   {
+    "method": "Grade",
+    "args": [
+     90
+    ],
+    "expected": "A"
+   },
+   {
+    "method": "Grade",
+    "args": [
+     89
+    ],
+    "expected": "B"
+   },
+   {
+    "method": "Grade",
+    "args": [
+     80
+    ],
+    "expected": "B"
+   },
+   {
+    "method": "Grade",
+    "args": [
+     75
+    ],
+    "expected": "C"
+   },
+   {
+    "method": "Grade",
+    "args": [
+     50
+    ],
+    "expected": "D"
+   },
+   {
+    "method": "Grade",
+    "args": [
+     49
+    ],
+    "expected": "F"
+   },
+   {
+    "method": "Grade",
+    "args": [
+     0
+    ],
+    "expected": "F"
+   }
+  ],
+  "examples": []
+ },
+ {
   "id": "L01",
   "name": "L01-trace-a-loop",
   "class": "L01_TraceALoop",
@@ -612,6 +682,48 @@
   ]
  },
  {
+  "id": "A11",
+  "name": "A11-arrange-sum-of-squares",
+  "class": "A11_ArrangeSumOfSquares",
+  "title": "Arrange the lines: sum of squares",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SumOfSquares"
+  ],
+  "cases": [
+   {
+    "method": "SumOfSquares",
+    "args": [
+     3
+    ],
+    "expected": 14
+   },
+   {
+    "method": "SumOfSquares",
+    "args": [
+     1
+    ],
+    "expected": 1
+   },
+   {
+    "method": "SumOfSquares",
+    "args": [
+     0
+    ],
+    "expected": 0
+   },
+   {
+    "method": "SumOfSquares",
+    "args": [
+     10
+    ],
+    "expected": 385
+   }
+  ],
+  "examples": []
+ },
+ {
   "id": "A01",
   "name": "A01-sum-1-to-n",
   "class": "A01_Sum1ToN",
@@ -752,6 +864,48 @@
     ]
    }
   ]
+ },
+ {
+  "id": "A12",
+  "name": "A12-fix-count-multiples-of-7",
+  "class": "A12_FixCountMultiplesOf7",
+  "title": "Fix the bugs: count multiples of 7",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "CountMultiplesOf7"
+  ],
+  "cases": [
+   {
+    "method": "CountMultiplesOf7",
+    "args": [
+     7
+    ],
+    "expected": 1
+   },
+   {
+    "method": "CountMultiplesOf7",
+    "args": [
+     20
+    ],
+    "expected": 2
+   },
+   {
+    "method": "CountMultiplesOf7",
+    "args": [
+     6
+    ],
+    "expected": 0
+   },
+   {
+    "method": "CountMultiplesOf7",
+    "args": [
+     21
+    ],
+    "expected": 3
+   }
+  ],
+  "examples": []
  },
  {
   "id": "A03",
@@ -1218,6 +1372,104 @@
     ]
    }
   ]
+ },
+ {
+  "id": "L09",
+  "name": "L09-draw-a-row",
+  "class": "L09_DrawARow",
+  "title": "Draw one row",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DrawRow"
+  ],
+  "cases": [
+   {
+    "method": "DrawRow",
+    "args": [
+     5
+    ],
+    "expected": "*****\n"
+   },
+   {
+    "method": "DrawRow",
+    "args": [
+     1
+    ],
+    "expected": "*\n"
+   },
+   {
+    "method": "DrawRow",
+    "args": [
+     0
+    ],
+    "expected": "\n"
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "L10",
+  "name": "L10-numbers-on-one-line",
+  "class": "L10_NumbersOnOneLine",
+  "title": "Numbers on one line",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "PrintNumbers"
+  ],
+  "cases": [
+   {
+    "method": "PrintNumbers",
+    "args": [
+     4
+    ],
+    "expected": "1 2 3 4\n"
+   },
+   {
+    "method": "PrintNumbers",
+    "args": [
+     1
+    ],
+    "expected": "1\n"
+   },
+   {
+    "method": "PrintNumbers",
+    "args": [
+     0
+    ],
+    "expected": "\n"
+   }
+  ],
+  "examples": []
+ },
+ {
+  "id": "G07",
+  "name": "G07-arrange-a-square",
+  "class": "G07_ArrangeASquare",
+  "title": "Arrange the lines: a square",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DrawSquare"
+  ],
+  "cases": [
+   {
+    "method": "DrawSquare",
+    "args": [
+     3
+    ],
+    "expected": "###\n###\n###\n"
+   },
+   {
+    "method": "DrawSquare",
+    "args": [
+     1
+    ],
+    "expected": "#\n"
+   }
+  ],
+  "examples": []
  },
  {
   "id": "G01",
@@ -1767,6 +2019,55 @@
     ]
    }
   ]
+ },
+ {
+  "id": "D07",
+  "name": "D07-fix-digit-sum",
+  "class": "D07_FixDigitSum",
+  "title": "Fix the bugs: digit sum",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DigitSum"
+  ],
+  "cases": [
+   {
+    "method": "DigitSum",
+    "args": [
+     123
+    ],
+    "expected": 6
+   },
+   {
+    "method": "DigitSum",
+    "args": [
+     10
+    ],
+    "expected": 1
+   },
+   {
+    "method": "DigitSum",
+    "args": [
+     7
+    ],
+    "expected": 7
+   },
+   {
+    "method": "DigitSum",
+    "args": [
+     0
+    ],
+    "expected": 0
+   },
+   {
+    "method": "DigitSum",
+    "args": [
+     9045
+    ],
+    "expected": 18
+   }
+  ],
+  "examples": []
  },
  {
   "id": "D05",
@@ -2446,6 +2747,62 @@
     ]
    }
   ]
+ },
+ {
+  "id": "R06",
+  "name": "R06-fix-largest-value",
+  "class": "R06_FixLargestValue",
+  "title": "Fix the bugs: largest value",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "Largest"
+  ],
+  "cases": [
+   {
+    "method": "Largest",
+    "args": [
+     [
+      3,
+      7,
+      2
+     ]
+    ],
+    "expected": 7
+   },
+   {
+    "method": "Largest",
+    "args": [
+     [
+      -5,
+      -2,
+      -9
+     ]
+    ],
+    "expected": -2
+   },
+   {
+    "method": "Largest",
+    "args": [
+     [
+      4
+     ]
+    ],
+    "expected": 4
+   },
+   {
+    "method": "Largest",
+    "args": [
+     [
+      1,
+      2,
+      9
+     ]
+    ],
+    "expected": 9
+   }
+  ],
+  "examples": []
  },
  {
   "id": "R03",

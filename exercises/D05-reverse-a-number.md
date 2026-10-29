@@ -79,4 +79,4 @@ Only after a real try: [open the solution for D05](../solutions/D05_ReverseANumb
 
 ---
 
-⬅️ Previous: [D04 · Sum of the digits](D04-digit-sum.md) · 📚 [All exercises](README.md) · Next: [D06 · Palindrome number](D06-palindrome-number.md) ➡️
+⬅️ Previous: [D07 · Fix the bugs: digit sum](D07-fix-digit-sum.md) · 📚 [All exercises](README.md) · Next: [D06 · Palindrome number](D06-palindrome-number.md) ➡️

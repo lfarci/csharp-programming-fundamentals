@@ -6,12 +6,14 @@ description: Review the whole course repo for a struggling beginner and fix what
 A **pass** reads every learner page against the rubric in `AGENTS.md` and `docs/writing-guide.md`. Repeat passes until one finds nothing meaningful.
 
 1. **Run the checks first:** `tools/verify.sh --external`. Every red line is an issue.
-2. **Read every page**, in learner order: README → getting started → roadmap → cookbook → exercises (via generator data) → docs → solutions. For each page, hunt these issue kinds and log each with file and line:
+2. **Read every page as the persona** in `docs/learner-persona.md`, in learner order: README → getting started → roadmap → cookbook → exercises (via generator data) → docs → solutions. For each page, hunt these issue kinds and log each with file and line:
    - *jump*: an exercise adds two new difficulties, or a plan lists an exercise before its `pre`;
    - *mismatch*: an example, trace table or comment that disagrees with the code;
    - *shortcut*: LINQ or a helper doing the loop; a book challenge listed as an exercise;
    - *scaffold gap*: Guided with fewer than 2 hints, missing edge case or mastery check;
-   - *format drift*: a page that leaves the exercise or recipe format in `AGENTS.md`;
+   - *format drift*: a page that leaves the exercise or recipe format in `AGENTS.md` (recipes: all 6 lesson steps, in order, predict and trace on the same code);
+   - *persona*: a page that assumes more than [the persona](../../../docs/learner-persona.md) knows at that step, or a step without 🎯 objectives;
+   - *no retrieval*: a new recipe without predict, complete-it or 🐞 debugging practice;
    - *plain-language*: long sentences, jargon not in the glossary, Git words on learner pages;
    - *access*: missing alt text, `accTitle`/`accDescr`, colour-only meaning, "click here" links, skipped heading levels;
    - *navigation*: missing breadcrumb or Previous/Next, dead ends, a stale "you are here";

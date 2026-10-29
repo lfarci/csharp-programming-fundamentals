@@ -4,11 +4,77 @@
 
 > A string is an array of characters. Visit them like [array traversal](11-array-traversal.md), and grow a result string like an [accumulator](02-accumulator.md).
 
-## 🔎 Recognize it
+🧭 **How this page works:** 1 goal → predict → trace → the pattern → complete it → your turn. Do the steps in order, with a pen. See [why](../docs/writing-guide.md#2-lesson-format).
+
+## 🎯 1 · Goal
+
+Visit every character of a text and count, test or keep characters to build a new string.
+
+## 🔮 2 · Predict
+
+Read this code. **Before** you run it, write down what it prints.
+
+```csharp
+string text = "banana";
+int count = 0;
+foreach (char c in text)
+{
+    if (c == 'a')
+    {
+        count++;
+    }
+}
+Console.WriteLine(count);
+```
+
+<details><summary>Check your prediction</summary>
+
+It prints `3`. Note the single quotes: `'a'` is one `char`, `"a"` is a `string`.
+
+</details>
+
+## 🔬 3 · Trace it
+
+Cover the tables, fill your own, then compare.
+
+Count the letter `'a'` in `"banana"`:
+
+| Index | Character | Is it `'a'`? | `count` after |
+| ---: | --- | --- | ---: |
+| 0 | b | no | 0 |
+| 1 | a | yes | 1 |
+| 2 | n | no | 1 |
+| 3 | a | yes | 2 |
+| 4 | n | no | 2 |
+| 5 | a | yes | **3** |
+
+The loop visits **every** character. The count goes up only on a match.
+
+Remove the spaces from `"a b"`:
+
+| Character | Keep? | `result` after |
+| --- | --- | --- |
+| `a` | yes | `"a"` |
+| space | no | `"a"` |
+| `b` | yes | **`"ab"`** |
+
+## 🧩 4 · The pattern
+
+### Subgoals (the steps, with names you can reuse)
+
+1. **Prepare the result** (`count = 0` or `result = ""`).
+2. **Visit** each character with `foreach`.
+3. **Test** the character.
+4. **Count it or add it** to the result.
+5. **Use the result** after the loop.
+
+Say the subgoal names out loud when you write the code. They are the same in every exercise that uses this recipe.
+
+### 🔎 Recognize it
 
 Trigger words: **"each letter"**, **"count the vowels"**, **"remove the spaces"**, **"reverse the word"**, **"keep only the digits"**, **"build a line of…"**, **"join with commas"**.
 
-## 🧠 The idea
+### 🧠 The idea
 
 ![Character cells with a cursor moving through cat!; positions differ from characters.](../assets/string-traversal.svg)
 
@@ -41,7 +107,7 @@ flowchart TD
     B -- no --> E["print result"]
 ```
 
-## 📝 Template
+### 📝 Template
 
 ```csharp
 string result = "";
@@ -68,41 +134,64 @@ Console.WriteLine(line);   // 1, 2, 3
 
 Reverse: `for (int i = text.Length - 1; i >= 0; i--) result += text[i];`
 
-## 🔬 Trace tables
+## ✍️ 5 · Complete it
 
-Count the letter `'a'` in `"banana"`:
+Part of the code is given. Fill in the rest on paper.
 
-| Index | Character | Is it `'a'`? | `count` after |
-| ---: | --- | --- | ---: |
-| 0 | b | no | 0 |
-| 1 | a | yes | 1 |
-| 2 | n | no | 1 |
-| 3 | a | yes | 2 |
-| 4 | n | no | 2 |
-| 5 | a | yes | **3** |
+```csharp
+// Keep only the upper-case letters: "Hello World" → "HW". Fill the 2 blanks.
+string result = ____;
+foreach (char c in text)
+{
+    if (c >= 'A' && c <= 'Z')
+    {
+        result ____ c;
+    }
+}
+```
 
-The loop visits **every** character. The count goes up only on a match.
+<details><summary>Answer</summary>
 
-Remove the spaces from `"a b"`:
+`""` (the empty string) and `+=`.
 
-| Character | Keep? | `result` after |
-| --- | --- | --- |
-| `a` | yes | `"a"` |
-| space | no | `"a"` |
-| `b` | yes | **`"ab"`** |
+</details>
 
-## ⚠️ Common mistakes
+## 🏋️ 6 · Your turn
+
+Now alone, in a real file (`./ex start ID`, then `./ex check`):
+
+1. [**T01**](../exercises/T01-count-a-letter.md) Count a letter.
+2. [**T02**](../exercises/T02-remove-spaces.md) Remove spaces.
+3. [**T03**](../exercises/T03-count-and-keep-digits.md) Count the digits in a text and keep them.
+
+### 🐞 Debug it
+
+This code has **one** bug. Find it on paper: trace a small example.
+
+```csharp
+// Should remove the spaces: "a b c" → "abc". It gives "c". Why?
+string result = "";
+foreach (char c in text)
+{
+    if (c != ' ')
+    {
+        result = c.ToString();
+    }
+}
+```
+
+<details><summary>The bug</summary>
+
+`result = …` replaces the text each time, like the `sum = i` bug in recipe 2. Use `result += c;`.
+
+</details>
+
+### ⚠️ Common mistakes
 
 - `'a'` (a `char`) vs `"a"` (a `string`).
 - Comparing case: `'A' != 'a'`. Use `char.ToLower(c)` if case does not matter.
 - `text[text.Length]` does not exist: the last index is `Length - 1`.
 - Forgetting the empty text: `""` must give `0` or `""`, not a crash.
 - A trailing separator `1, 2, 3, ` → add the separator only *between* items.
-
-## 🏋️ Mini exercises
-
-1. [**T01**](../exercises/T01-count-a-letter.md) Count a letter.
-2. [**T02**](../exercises/T02-remove-spaces.md) Remove spaces.
-3. [**T03**](../exercises/T03-count-and-keep-digits.md) Count the digits in a text and keep them.
 
 ⬅️ Back to the [cookbook](README.md).

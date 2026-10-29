@@ -73,4 +73,4 @@ Only after a real try: [open the solution for D04](../solutions/D04_DigitSum.cs)
 
 ---
 
-⬅️ Previous: [D03 · Count the digits](D03-count-digits.md) · 📚 [All exercises](README.md) · Next: [D05 · Reverse a number](D05-reverse-a-number.md) ➡️
+⬅️ Previous: [D03 · Count the digits](D03-count-digits.md) · 📚 [All exercises](README.md) · Next: [D07 · Fix the bugs: digit sum](D07-fix-digit-sum.md) ➡️

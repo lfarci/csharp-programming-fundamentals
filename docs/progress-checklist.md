@@ -23,6 +23,8 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
   - [ ] mastered (another day, alone)
 - [ ] [C03 · Ticket price](../exercises/C03-ticket-price.md) solved
   - [ ] mastered (another day, alone)
+- [ ] [C04 · Grade from a score](../exercises/C04-grade-from-a-score.md) solved
+  - [ ] mastered (another day, alone)
 
 ## L · Loop mechanics (Step 4a)
 
@@ -42,12 +44,20 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
   - [ ] mastered (another day, alone)
 - [ ] [L08 · Guess the number](../exercises/L08-guess-the-number.md) solved
   - [ ] mastered (another day, alone)
+- [ ] [L09 · Draw one row](../exercises/L09-draw-a-row.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [L10 · Numbers on one line](../exercises/L10-numbers-on-one-line.md) solved
+  - [ ] mastered (another day, alone)
 
 ## A · Accumulators (Step 4b)
 
+- [ ] [A11 · Arrange the lines: sum of squares](../exercises/A11-arrange-sum-of-squares.md) solved
+  - [ ] mastered (another day, alone)
 - [ ] [A01 · Sum from 1 to N](../exercises/A01-sum-1-to-n.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [A02 · Count multiples of 3](../exercises/A02-count-multiples-of-3.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A12 · Fix the bugs: count multiples of 7](../exercises/A12-fix-count-multiples-of-7.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [A03 · Sum of the even numbers](../exercises/A03-sum-even-values.md) solved
   - [ ] mastered (another day, alone)
@@ -68,6 +78,8 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
 
 ## G · 2D drawings (nested loops) (Step 4c)
 
+- [ ] [G07 · Arrange the lines: a square](../exercises/G07-arrange-a-square.md) solved
+  - [ ] mastered (another day, alone)
 - [ ] [G01 · Draw a rectangle](../exercises/G01-rectangle.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [G02 · Draw a right triangle](../exercises/G02-right-triangle.md) solved
@@ -90,6 +102,8 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
 - [ ] [D03 · Count the digits](../exercises/D03-count-digits.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [D04 · Sum of the digits](../exercises/D04-digit-sum.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [D07 · Fix the bugs: digit sum](../exercises/D07-fix-digit-sum.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [D05 · Reverse a number](../exercises/D05-reverse-a-number.md) solved
   - [ ] mastered (another day, alone)
@@ -124,6 +138,8 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
 - [ ] [R01 · Sum of an array](../exercises/R01-sum-an-array.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [R02 · Largest value in an array](../exercises/R02-largest-in-an-array.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [R06 · Fix the bugs: largest value](../exercises/R06-fix-largest-value.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [R03 · Count matches in an array](../exercises/R03-count-matches.md) solved
   - [ ] mastered (another day, alone)

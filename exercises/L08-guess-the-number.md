@@ -84,4 +84,4 @@ Only after a real try: [open the solution for L08](../solutions/L08_GuessTheNumb
 
 ---
 
-⬅️ Previous: [L07 · Ask until valid](L07-ask-until-valid.md) · 📚 [All exercises](README.md) · Next: [A01 · Sum from 1 to N](A01-sum-1-to-n.md) ➡️
+⬅️ Previous: [L07 · Ask until valid](L07-ask-until-valid.md) · 📚 [All exercises](README.md) · Next: [A11 · Arrange the lines: sum of squares](A11-arrange-sum-of-squares.md) ➡️

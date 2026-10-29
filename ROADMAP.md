@@ -92,10 +92,12 @@ The course is now on **arrays**, but loops are the real gap. The plan: use the f
 
 ## 3. The steps
 
-Each step has: what you learn, the book level to read alongside, the Microsoft Learn docs, the recipes, the exercises, and a **"ready when"** check.
-Exercise IDs link to the [exercise inventory](exercises/README.md). Recipes link to the [cookbook](cookbook/README.md).
+Each step has: its **objectives** (what you can do at the end), what you learn, the book level to read alongside, the Microsoft Learn docs, the recipes, the exercises, and a **"ready when"** check.
+The steps are written for one learner: see [who this course is for](docs/learner-persona.md). Exercise IDs link to the [exercise inventory](exercises/README.md). Recipes link to the [cookbook](cookbook/README.md).
 
 ### Step 1 · Hello World — week 1 (21/9)
+
+- 🎯 **Objectives — after this step you can:** write a program that prints text; read one line the user types; explain the difference between `Write` and `WriteLine`.
 
 - **Learn:** what a program is, `Console.WriteLine`, `Console.Write`, `Console.ReadLine`, running a program.
 - 📖 **Read alongside (PG):** Level 3 (Hello World), Level 4 (comments).
@@ -104,6 +106,8 @@ Exercise IDs link to the [exercise inventory](exercises/README.md). Recipes link
 - ✅ **Ready when:** you can write a program that asks for your name and greets you, from a blank file.
 
 ### Step 2 · Variables, types & expressions — week 2 (28/9)
+
+- 🎯 **Objectives — after this step you can:** store a value in a variable of the right type; turn text into a number with `int.Parse`; predict the result of `/` and `%` on whole numbers.
 
 - **Learn:** `int`, `double`, `string`, `bool`; assigning; `+ - * /`; **integer division** and the **remainder `%`**; converting text to a number (`int.Parse`); string interpolation `$"..."`.
 - 📖 **Read alongside (PG):** Levels 5–8 (Variables, Type system, Math, Console 2.0).
@@ -114,23 +118,27 @@ Exercise IDs link to the [exercise inventory](exercises/README.md). Recipes link
 
 ### Step 3 · Conditions — week 3 (05/10)
 
+- 🎯 **Objectives — after this step you can:** choose between 2 or more cases with `if` / `else if` / `else`; combine tests with `&&` and `||`; list the boundary values to test.
+
 - **Learn:** `if` / `else if` / `else`, comparisons `== != < <= > >=`, `&&`, `||`, `!`, `switch`.
 - 📖 **Read alongside (PG):** Level 9 (Decision making), Level 10 (Switches).
 - **Docs:** [Selection statements (`if`, `switch`)](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements) · [Comparison operators](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/comparison-operators) · [Boolean logical operators](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/boolean-logical-operators) · [Tutorial: branches and loops](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/branches-and-loops)
 - **Recipe:** *classify a value* (even/odd with `% 2`, ranges with `&&`).
-- **Exercises:** [C01](exercises/C01-even-or-odd.md)–[C03](exercises/C03-ticket-price.md)
+- **Exercises:** [C01](exercises/C01-even-or-odd.md)–[C04](exercises/C04-grade-from-a-score.md)
 - ✅ **Ready when:** you can test every branch of your `if`, including the boundary value (for example exactly 18 in an age check).
 
 ### Step 4 · Loops — week 4 (12/10) ⭐ the big one
+
+- 🎯 **Objectives — after this step you can:** predict and trace a loop on paper; name the recipe an exercise needs; write a counter loop, an accumulator and a nested loop from a blank file; find an off-by-one bug.
 
 Loops get **four small sub-steps**. Do not jump to Fibonacci or Armstrong before 4a–4c feel easy.
 
 ```mermaid
 flowchart LR
     accTitle: The four loop sub-steps
-    accDescr: 4a repeat and count (L01 to L08) leads to 4b running result (A01 to A10). 4b leads to 4c draw in 2D and to 4d digits, state and search. Both 4c and 4d lead to Combine (M01, M02).
-    A["4a · Repeat & count<br/>L01-L08"] --> B["4b · Keep a running result<br/>A01-A10"]
-    B --> C["4c · Draw in 2D<br/>G01-G06"]
+    accDescr: 4a repeat and count (L01 to L08) leads to 4b running result (A01 to A12). 4b leads to 4c draw in 2D (one row first with L09 and L10, then G01 to G07) and to 4d digits, state and search. Both 4c and 4d lead to Combine (M01, M02).
+    A["4a · Repeat & count<br/>L01-L08"] --> B["4b · Keep a running result<br/>A01-A12"]
+    B --> C["4c · Draw in 2D<br/>L09-L10 · G01-G07"]
     B --> D["4d · Digits · state · search<br/>D01-D06 · S01-S03 · P01-P02"]
     C --> E["🏆 Combine<br/>M01-M02"]
     D --> E
@@ -140,10 +148,12 @@ flowchart LR
 - 📖 **Read alongside (PG):** Level 11 (Looping).
 - **Docs:** [Iteration statements (`for`, `foreach`, `while`, `do`)](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements) · [Jump statements (`break`, `continue`)](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/jump-statements) · [Learn module: `for` loops](https://learn.microsoft.com/en-us/training/modules/csharp-for/) · [Learn module: `do-while` and `while`](https://learn.microsoft.com/en-us/training/modules/csharp-do-while/) · [Learn path: add logic to console apps](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-3/)
 - **Recipes:** [counter loop](cookbook/01-counter-loop.md), [accumulator](cookbook/02-accumulator.md), [conditional accumulator](cookbook/03-conditional-accumulator.md), [min/max tracker](cookbook/04-min-max.md), [flag/search](cookbook/05-flag-search.md), [digit extraction](cookbook/06-digit-extraction.md), [state update](cookbook/07-state-update.md), [nested grid](cookbook/08-nested-grid.md), [input validation](cookbook/09-input-validation.md), [sentinel loop](cookbook/10-sentinel-loop.md).
-- **Exercises:** [L01](exercises/L01-trace-a-loop.md)–[L08](exercises/L08-guess-the-number.md) · [A01](exercises/A01-sum-1-to-n.md)–[A10](exercises/A10-sum-of-a-series.md) · [G01](exercises/G01-rectangle.md)–[G06](exercises/G06-pyramid.md) · [D01](exercises/D01-last-digit.md)–[D06](exercises/D06-palindrome-number.md) · [S01](exercises/S01-trace-updates.md)–[S03](exercises/S03-even-fibonacci-sum.md) · [P01](exercises/P01-is-it-prime.md)–[P02](exercises/P02-primes-up-to-n.md) · [M01](exercises/M01-armstrong-number.md)–[M02](exercises/M02-armstrong-numbers-in-a-range.md) · Project Euler #1, #6, #2.
+- **Exercises:** [L01](exercises/L01-trace-a-loop.md)–[L08](exercises/L08-guess-the-number.md) · [A01](exercises/A01-sum-1-to-n.md)–[A10](exercises/A10-sum-of-a-series.md) with 🧩 arrange [A11](exercises/A11-arrange-sum-of-squares.md) and 🐞 fix [A12](exercises/A12-fix-count-multiples-of-7.md) · bridge to 2D: [L09](exercises/L09-draw-a-row.md), [L10](exercises/L10-numbers-on-one-line.md), 🧩 arrange [G07](exercises/G07-arrange-a-square.md) · [G01](exercises/G01-rectangle.md)–[G06](exercises/G06-pyramid.md) · [D01](exercises/D01-last-digit.md)–[D06](exercises/D06-palindrome-number.md) with 🐞 fix [D07](exercises/D07-fix-digit-sum.md) · [S01](exercises/S01-trace-updates.md)–[S03](exercises/S03-even-fibonacci-sum.md) · [P01](exercises/P01-is-it-prime.md)–[P02](exercises/P02-primes-up-to-n.md) · [M01](exercises/M01-armstrong-number.md)–[M02](exercises/M02-armstrong-numbers-in-a-range.md) · Project Euler #1, #6, #2.
 - ✅ **Ready when:** you can solve factorial, Fibonacci and the Armstrong check from a blank file **and** explain your trace table.
 
 ### Step 5 · Files — week 5 (19/10)
+
+- 🎯 **Objectives — after this step you can:** write lines to a file and read them back; turn the lines into numbers and add them up.
 
 - **Learn:** write lines to a text file, read them back (`File.WriteAllLines`, `File.ReadAllLines`, `File.Exists`).
 - 📖 **Read alongside (PG):** Level 39 (*The Long Game*). It is late in the book: read only the file part.
@@ -154,11 +164,13 @@ flowchart LR
 
 ### Step 6 · Arrays — week 6 (26/10) ← *you are here*
 
+- 🎯 **Objectives — after this step you can:** create an array and read `values[i]`; visit every element without going out of range; reuse a step-4 recipe on an array or a string.
+
 - **Learn:** create an array, index from `0`, `.Length`, loop over it with `for` and `foreach`.
 - 📖 **Read alongside (PG):** Level 12 (Arrays).
 - **Docs:** [Arrays](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/arrays) · [Iteration statements (`foreach`)](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements)
 - **Recipes:** [array traversal](cookbook/11-array-traversal.md) — *every loop recipe from step 4 works on arrays too!* [string building](cookbook/12-string-building.md) for text.
-- **Exercises:** [R01](exercises/R01-sum-an-array.md)–[R05](exercises/R05-reverse-an-array.md) · [T01](exercises/T01-count-a-letter.md)–[T03](exercises/T03-count-and-keep-digits.md)
+- **Exercises:** [R01](exercises/R01-sum-an-array.md)–[R05](exercises/R05-reverse-an-array.md) with 🐞 fix [R06](exercises/R06-fix-largest-value.md) · [T01](exercises/T01-count-a-letter.md)–[T03](exercises/T03-count-and-keep-digits.md)
 - ✅ **Ready when:** you can explain the difference between `i` (the position) and `values[i]` (the value).
 
 ### 🛟 Catch-up week — 2–6 November (no class)
@@ -166,6 +178,8 @@ flowchart LR
 The best moment to fix loops for good. See [§5](#5-catch-up-plan-29-oct--10-nov).
 
 ### Step 7 · Exceptions — week 7 (09/11)
+
+- 🎯 **Objectives — after this step you can:** explain what a crash (exception) is; stop bad input from crashing your program with `TryParse` or `try` / `catch`.
 
 - **Learn:** what a crash is, `try` / `catch`, `int.TryParse` as a way to avoid crashes.
 - 📖 **Read alongside (PG):** Level 35 (Error handling and exceptions).
@@ -176,9 +190,13 @@ The best moment to fix loops for good. See [§5](#5-catch-up-plan-29-oct--10-nov
 
 ### Step 8 · Recap — week 8 (16/11)
 
+🎯 **Objective:** solve one exercise per recipe from a blank file, without hints, and explain your trace table.
+
 Redo one exercise per recipe **without hints**: [A04](exercises/A04-factorial.md), [G05](exercises/G05-checkerboard.md), [D04](exercises/D04-digit-sum.md), [S02](exercises/S02-fibonacci.md), [R02](exercises/R02-largest-in-an-array.md), [M01](exercises/M01-armstrong-number.md). Then try Project Euler #2. Missed one? Go back to that recipe.
 
 ### Step 9 · Collections — week 9 (23/11)
+
+- 🎯 **Objectives — after this step you can:** create a `List<int>`, add and remove values; choose between an array and a list, and say why.
 
 - **Learn:** `List<T>` that can grow (`Add`, `Remove`, `Count`), loop over it with `foreach`.
 - 📖 **Read alongside (PG):** Level 32 (Generics, `List<T>`).
@@ -189,6 +207,8 @@ Redo one exercise per recipe **without hints**: [A04](exercises/A04-factorial.md
 
 ### Step 10 · Methods — week 10 (30/11)
 
+- 🎯 **Objectives — after this step you can:** write a method with parameters and a `return`; call it with different values; split a long program into small named methods.
+
 - **Learn:** give a recipe a name: parameters, `return`, `void`.
 - 📖 **Read alongside (PG):** Level 13 (Methods).
 - **Docs:** [Methods](https://learn.microsoft.com/en-us/dotnet/csharp/methods) · [Learn path: create methods](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-5/)
@@ -197,6 +217,8 @@ Redo one exercise per recipe **without hints**: [A04](exercises/A04-factorial.md
 - ✅ **Ready when:** you can turn your Armstrong solution into 3 small methods.
 
 ### Step 11 · Objects & classes — weeks 11–12 (07/12, 14/12)
+
+- 🎯 **Objectives — after this step you can:** describe a class and an object in your own words; write a small class with a constructor and a method; create objects with `new`.
 
 - **Learn:** class = a blueprint; object = one thing built from it; fields, constructors, methods, properties.
 - 📖 **Read alongside (PG):** Levels 15–24 (Objects, Enums, Tuples, Classes, Information hiding, Properties, Static…).

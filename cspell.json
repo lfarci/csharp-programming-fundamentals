@@ -18,11 +18,14 @@
     "Kallia",
     "LINQ",
     "Loksa",
+    "PLOS",
     "PRIMM",
     "Paas",
     "Parsons",
     "Renkl",
     "Sentance",
+    "Subgoal",
+    "Subgoals",
     "Tabbers",
     "Tuovinen",
     "WCAG",
@@ -36,6 +39,8 @@
     "lychee",
     "markdownlint",
     "mmdc",
-    "plainlanguage"
+    "plainlanguage",
+    "subgoal",
+    "subgoals"
   ]
 }
