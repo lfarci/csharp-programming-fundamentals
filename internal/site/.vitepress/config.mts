@@ -2,6 +2,7 @@
 import { defineConfig } from 'vitepress'
 import fs from 'node:fs'
 import path from 'node:path'
+import { execSync } from 'node:child_process'
 import course from './course.json' with { type: 'json' }
 
 const REPO = 'https://github.com/lfarci/csharp-programming-fundamentals'
@@ -9,6 +10,9 @@ const REPO = 'https://github.com/lfarci/csharp-programming-fundamentals'
 const REPO_ROOT = path.resolve(__dirname, '../../..')
 const SRC = path.join(REPO_ROOT, 'course')
 // Not part of the site (agent notes, diagram sources, static files). Links to them go to GitHub.
+// The commit this build comes from: in <meta name="build-sha"> on every page and in /version.txt.
+// After a deploy, internal/tools/wait-for-deploy.sh polls it before the live browser tests run.
+const BUILD_SHA = process.env.GITHUB_SHA || (() => { try { return execSync('git rev-parse HEAD', { cwd: REPO_ROOT }).toString().trim() } catch { return 'unknown' } })()
 const EXCLUDE = ['README.md', 'diagrams/**', 'public/**', 'docs/writing-guide.md', 'docs/learner-persona.md']
 // The pages live in course/, the npm packages in internal/node_modules: resolve bare imports
 // from a page (vue, the theme's packages) as if they came from internal/.
@@ -74,10 +78,12 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/csharp-programming-fundamentals/favicon.ico', sizes: '16x16 32x32 48x48' }],
     ['link', { rel: 'apple-touch-icon', href: '/csharp-programming-fundamentals/apple-touch-icon.png' }],
     ['meta', { name: 'theme-color', content: '#3451b2' }],
+    ['meta', { name: 'build-sha', content: BUILD_SHA }],
   ],
   description: 'Loops, step by step: recipes, exercises and drills for beginners.',
   base: '/csharp-programming-fundamentals/',
   srcDir: SRC,
+  buildEnd: (site) => fs.writeFileSync(path.join(site.outDir, 'version.txt'), BUILD_SHA + '\n'),
   vite: { plugins: [fromInternal] },
   cacheDir: path.join(__dirname, 'cache'),
   outDir: path.join(__dirname, 'dist'),
