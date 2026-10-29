@@ -333,7 +333,7 @@ while (n > 0)
 }
 return count;""", [([2468], 4), ([135], 0), ([1234], 2)],
  "Give back how many digits of n are even (n > 0).",
- ["The D04 loop: take `n % 10`, then `n /= 10`.", "Count the digit only if `digit % 2 == 0`."], ["No even digit: 0."],
+ ["The D04 loop: take the last digit with `int digit = n % 10;`, then remove it with `n /= 10;`.", "Between the two, count it only if `digit % 2 == 0`."], ["No even digit: 0."],
  "Count the odd digits.", ["D04"], "D041", recipes=["06", "03"])
 dig("D10", "count-a-digit", "Count one digit", "int CountDigit(int n, int digit)",
 """int count = 0;
@@ -409,3 +409,29 @@ DRILLS = [
  ("🔢 Digits", "06", ["D01", "D02", "D03", "D08", "D04", "D09", "D10", "D11", "D12", "D07", "D05"]),
  ("🎢 Changing state", "07", ["S01", "S04", "S02", "S05", "S03"]),
 ]
+
+# ---------- G14: column formatting alone, before G03 needs it inside a grid ----------
+drill("G14", "numbers-in-columns", "Numbers in columns", "void PrintInColumns(int n)",
+"""for (int i = 1; i <= n; i++)
+{
+    Console.Write($"{i * 10,4}");
+}
+Console.WriteLine();""", [([3], lines("  10  20  30")), ([1], lines("  10")), ([12], lines("  10  20  30  40  50  60  70  80  90 100 110 120"))],
+ "Print 10, 20, …, n × 10 on **one** line, each number in a column 4 characters wide.",
+ ["`$\"{x,4}\"` writes x right-aligned in 4 characters: `10` becomes `  10` (2 spaces + 2 digits).",
+  "L10 with `Console.Write($\"{i * 10,4}\")` and no extra spaces.", "One `Console.WriteLine()` after the loop."],
+ ["n = 12: `100` takes 3 characters, so it gets 1 space."], "Print 1, 4, 9, …, n² in columns 5 wide.",
+ L4C, ["01", "08"], ["L10"], sort="G029")
+for e in E:
+    if e["id"] == "G03" and "G14" not in e["pre"]: e["pre"] = e["pre"] + ["G14"]
+CHECK = {
+ "A11": "every line you need is already in the file. Check the order: the box line before the loop, the update between { and }, the return after the loop. Did you remove every // and the line return -1; ?",
+ "G07": "every line is already in the file. The inner for (col) goes inside the outer for (row). Console.WriteLine(); goes after the inner loop's }, still inside the outer loop. Did you remove every // ?",
+ "A12": "the code has 2 bugs. Trace the failing call on paper. Look at the start value of the box, then at the loop test (< or <=).",
+ "D07": "the code has 2 bugs. Trace DigitSum(123) with a table. Which operator gives the last digit (%) and which removes it (/)? Does the loop run for 10?",
+ "R06": "the code has 2 bugs. The last index is values.Length - 1. And try [-5, -2, -9]: why is 0 a bad start value for max?",
+}
+for e in E:
+    if e["id"] in CHECK: e["check_hint"] = CHECK[e["id"]]
+for i, (name, r, ids) in enumerate(DRILLS):
+    if r == "08": DRILLS[i] = (name, r, ids[:-1] + ["G14", "G03"] + ids[-1:])

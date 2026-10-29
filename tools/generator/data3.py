@@ -51,7 +51,7 @@ ex(id="G03", slug="multiplication-grid", title="Multiplication grid", level="Ind
    edge=["N = 1 → one cell."],
    constraints=["Nested loops."],
    hints=["Same skeleton as G01, but print a number instead of a star.",
-          "Right-align on 4 characters: `Console.Write($\"{row * col,4}\");`"],
+          "Right-align on 4 characters, like in [G14](G14-numbers-in-columns.md): `Console.Write($\"{row * col,4}\");`"],
    mastery="Only print the cells where `c <= r` (a triangle of numbers).",
    code=r'''Console.Write("N: ");
 int n = int.Parse(Console.ReadLine()!);

@@ -132,6 +132,8 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
   - [ ] mastered (another day, alone)
 - [ ] [G12 · Upside-down triangle](../exercises/G12-upside-down-triangle.md) solved
   - [ ] mastered (another day, alone)
+- [ ] [G14 · Numbers in columns](../exercises/G14-numbers-in-columns.md) solved
+  - [ ] mastered (another day, alone)
 - [ ] [G03 · Multiplication grid](../exercises/G03-multiplication-grid.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [G04 · Hollow rectangle](../exercises/G04-hollow-rectangle.md) solved

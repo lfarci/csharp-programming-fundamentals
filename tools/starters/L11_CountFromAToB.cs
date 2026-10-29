@@ -8,7 +8,7 @@ namespace Practice
     // YOUR JOB: write the method below, where it says TODO.
     //   PrintFromTo
     //     input  (parameters): a, an int (whole number), b, an int (whole number)
-    //     result (return)    : nothing is returned: the method prints with Console.Write / Console.WriteLine
+    //     result (prints)     : the lines it writes with Console.Write / Console.WriteLine (no return)
     //
     // Check your code:  ./ex check L11     (Windows: .\ex check L11)
     // Try it yourself:  ./ex run L11

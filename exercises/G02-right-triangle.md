@@ -19,9 +19,9 @@ Print a right triangle of `height` rows: row 1 has 1 star, row 2 has 2 stars, â€
 
 On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
 
-**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+**Your job:** fill in this method in the file. The *parameters* are its input; what it **prints** is its result (it has no `return`).
 
-- `void DrawTriangle(int height)`: input = height, an int (whole number); result = nothing is returned: the method prints with Console.Write / Console.WriteLine.
+- `void DrawTriangle(int height)`: input = height, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
 ## ðŸ§ª Examples
 

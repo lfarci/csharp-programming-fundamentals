@@ -92,6 +92,7 @@ flowchart LR
     D12["D12<br/>Product of the digits"]:::guided
     S04["S04<br/>Doubling"]:::guided
     S05["S05<br/>The n-th Fibonacci number"]:::indep
+    G14["G14<br/>Numbers in columns"]:::guided
     L01 --> L02
     L01 --> L03
     L03 --> L04
@@ -114,6 +115,7 @@ flowchart LR
     G01 --> G02
     G01 --> G03
     L04 --> G03
+    G14 --> G03
     G01 --> G04
     G04 --> G05
     G02 --> G06
@@ -176,6 +178,7 @@ flowchart LR
     D04 --> D12
     L11 --> S04
     S02 --> S05
+    L10 --> G14
 ```
 
 ## Before loops (steps 1–3)

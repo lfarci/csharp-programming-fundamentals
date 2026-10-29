@@ -19,9 +19,9 @@ Print a triangle whose first row has `height` stars, then one less on each row.
 
 On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
 
-**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+**Your job:** fill in this method in the file. The *parameters* are its input; what it **prints** is its result (it has no `return`).
 
-- `void DrawUpsideDown(int height)`: input = height, an int (whole number); result = nothing is returned: the method prints with Console.Write / Console.WriteLine.
+- `void DrawUpsideDown(int height)`: input = height, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
 ## 🧪 Examples
 
@@ -71,4 +71,4 @@ Only after a real try: [open the solution for G12](../solutions/G12_UpsideDownTr
 
 ---
 
-⬅️ Previous: [G11 · Counting triangle](G11-counting-triangle.md) · 📚 [All exercises](README.md) · Next: [G03 · Multiplication grid](G03-multiplication-grid.md) ➡️
+⬅️ Previous: [G11 · Counting triangle](G11-counting-triangle.md) · 📚 [All exercises](README.md) · Next: [G14 · Numbers in columns](G14-numbers-in-columns.md) ➡️

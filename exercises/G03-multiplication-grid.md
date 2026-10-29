@@ -4,7 +4,7 @@
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
 | --- | --- | --- | --- | --- | --- |
-| Independent | ⭐⭐ | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [G01](G01-rectangle.md), [L04](L04-multiplication-table.md) | Custom |
+| Independent | ⭐⭐ | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [G01](G01-rectangle.md), [L04](L04-multiplication-table.md), [G14](G14-numbers-in-columns.md) | Custom |
 
 ## 🎯 Goal
 
@@ -19,9 +19,9 @@ Print an n×n grid where the cell at row `r` and column `c` contains `r × c`. E
 
 On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
 
-**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+**Your job:** fill in this method in the file. The *parameters* are its input; what it **prints** is its result (it has no `return`).
 
-- `void DrawGrid(int n)`: input = n, an int (whole number); result = nothing is returned: the method prints with Console.Write / Console.WriteLine.
+- `void DrawGrid(int n)`: input = n, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
 ## 🧪 Examples
 
@@ -55,7 +55,7 @@ Same skeleton as G01, but print a number instead of a star.
 
 <details><summary>Hint 2</summary>
 
-Right-align on 4 characters: `Console.Write($"{row * col,4}");`
+Right-align on 4 characters, like in [G14](G14-numbers-in-columns.md): `Console.Write($"{row * col,4}");`
 
 </details>
 
@@ -71,4 +71,4 @@ Only after a real try: [open the solution for G03](../solutions/G03_Multiplicati
 
 ---
 
-⬅️ Previous: [G12 · Upside-down triangle](G12-upside-down-triangle.md) · 📚 [All exercises](README.md) · Next: [G04 · Hollow rectangle](G04-hollow-rectangle.md) ➡️
+⬅️ Previous: [G14 · Numbers in columns](G14-numbers-in-columns.md) · 📚 [All exercises](README.md) · Next: [G04 · Hollow rectangle](G04-hollow-rectangle.md) ➡️

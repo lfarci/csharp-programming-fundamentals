@@ -369,6 +369,13 @@ namespace Practice.Tests
 
     }
 
+    public class G14_NumbersInColumns
+    {
+        [Theory, MemberData(nameof(Data.Cases), "G14", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("G14", test);
+
+    }
+
     public class G03_MultiplicationGrid
     {
         [Theory, MemberData(nameof(Data.Cases), "G03", MemberType = typeof(Data))]
