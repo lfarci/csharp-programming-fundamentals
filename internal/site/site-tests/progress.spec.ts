@@ -132,3 +132,11 @@ test('Themes and groups show their names only, without a number', async ({ page 
   await page.goto('exercises/')
   await expect(page.locator('.overview .cpf-num').first()).toHaveText('')
 })
+
+test('Completion tables have no row-number column, only the exercise and its ID', async ({ page }) => {
+  await page.goto('themes/loops-add-up')
+  const row = page.locator('.theme-ex .rows li').first()
+  await expect(row.locator('.pos')).toHaveCount(0)
+  await expect(row.locator('.id')).toHaveText(/^[A-Z]\d\d$/)
+  await expect(row).not.toContainText(/^\s*1\s/)
+})
