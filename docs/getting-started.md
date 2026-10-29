@@ -68,7 +68,6 @@ What one exercise looks like, from start to DONE:
 
 ![Terminal demo, about 70 seconds: clone the course, ./ex start L11, ./ex check says NOT YET with what was expected and what the code printed, a first for loop misses the last number, the fix i <= b makes ./ex check say DONE, then ./ex progress and ./ex next.](assets/demo.gif)
 
-
 | Command | What it does |
 | --- | --- |
 | `./ex start A04` | Creates **your file** `practice/A04_Factorial.cs` from a starter. It never overwrites a file you already have. A04 becomes your *current* exercise. |
