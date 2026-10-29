@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › S02
+
 # S02 · Fibonacci
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -39,11 +41,11 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 ## 📏 Rules
 
 - No array, no recursion. Variables `previous`, `current`, `next`.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -73,6 +75,8 @@ Print the N-th Fibonacci number only (position 0 is 0, position 1 is 1, position
 
 ## 🔑 Solution
 
-Only after a real try: [S02-fibonacci](../solutions/S02-fibonacci.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for S02](../solutions/S02-fibonacci.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [S01 · Trace two changing variables (paper)](S01-trace-updates.md) · 📚 [All exercises](README.md) · Next: [S03 · Even Fibonacci sum](S03-even-fibonacci-sum.md) ➡️

@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › L02
+
 # L02 · Boundaries: < or <= ? (paper)
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -24,11 +26,11 @@ while (k < 5) { Console.WriteLine(k); k++; }         // loop E
 ## 📏 Rules
 
 - Paper first. Then run to check.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -52,6 +54,8 @@ Write 3 different `for` loops that all run exactly 7 times.
 
 ## 🔑 Solution
 
-Only after a real try: [L02-boundaries](../solutions/L02-boundaries.md). Your solution can be different and still correct!
+Only after a real try: [open the solution for L02](../solutions/L02-boundaries.md). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [L01 · Trace a loop (paper)](L01-trace-a-loop.md) · 📚 [All exercises](README.md) · Next: [L03 · Count up and down](L03-count-up-and-down.md) ➡️

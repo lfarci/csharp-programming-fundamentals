@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › L04
+
 # L04 · Multiplication table
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -33,11 +35,11 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 ## 📏 Rules
 
 - One `for` loop.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -61,6 +63,8 @@ Read a second number M and print the table up to M instead of 10.
 
 ## 🔑 Solution
 
-Only after a real try: [L04-multiplication-table](../solutions/L04-multiplication-table.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for L04](../solutions/L04-multiplication-table.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [L03 · Count up and down](L03-count-up-and-down.md) · 📚 [All exercises](README.md) · Next: [L05 · Until zero](L05-until-zero.md) ➡️

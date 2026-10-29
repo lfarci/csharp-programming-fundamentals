@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › K01
+
 # K01 · Shopping list
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -34,11 +36,11 @@ Total: 0 items
 ## 📏 Rules
 
 - `List<string>`, `Add`, `Count`.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -68,6 +70,8 @@ Do not add an item that is already in the list (`items.Contains(item)`).
 
 ## 🔑 Solution
 
-Only after a real try: [K01-shopping-list](../solutions/K01-shopping-list.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for K01](../solutions/K01-shopping-list.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [E01 · Safe number reader](E01-safe-number-reader.md) · 📚 [All exercises](README.md) · Next: [N01 · Armstrong with methods](N01-armstrong-with-methods.md) ➡️

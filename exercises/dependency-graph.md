@@ -1,11 +1,15 @@
+🏠 [Home](../README.md) › 📚 [Exercises](README.md) › Dependency graph
+
 # 🕸️ Exercise dependency graph
 
-An arrow `X → Y` means: do X before Y. Colours: 🟢 guided, 🔵 independent, 🟣 challenge. Thick boxes = teacher topics.
+An arrow `X → Y` means: do X before Y. Colours: green = guided, blue = independent, purple = challenge. Thick border = teacher topic. The same information is in the [inventory](README.md) tables, as text.
 
 ## Loops: from counting to Armstrong (step 4)
 
 ```mermaid
 flowchart LR
+    accTitle: Loops: from counting to Armstrong (step 4)
+    accDescr: Each box is one exercise. An arrow from X to Y means do X before Y. The same order is written as text in the Before column of the inventory.
     classDef guided fill:#d8f5d0,stroke:#2e7d32
     classDef indep fill:#d6e8ff,stroke:#1565c0
     classDef chall fill:#ead9ff,stroke:#6a1b9a
@@ -98,6 +102,8 @@ flowchart LR
 
 ```mermaid
 flowchart LR
+    accTitle: Before loops (steps 1–3)
+    accDescr: Each box is one exercise. An arrow from X to Y means do X before Y. The same order is written as text in the Before column of the inventory.
     classDef guided fill:#d8f5d0,stroke:#2e7d32
     classDef indep fill:#d6e8ff,stroke:#1565c0
     classDef chall fill:#ead9ff,stroke:#6a1b9a
@@ -123,6 +129,8 @@ flowchart LR
 
 ```mermaid
 flowchart LR
+    accTitle: After loops (steps 5–10)
+    accDescr: Each box is one exercise. An arrow from X to Y means do X before Y. The same order is written as text in the Before column of the inventory.
     classDef guided fill:#d8f5d0,stroke:#2e7d32
     classDef indep fill:#d6e8ff,stroke:#1565c0
     classDef chall fill:#ead9ff,stroke:#6a1b9a

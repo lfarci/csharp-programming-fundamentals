@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 4 · Min / max tracker
+
 # Recipe 4 · Min / max tracker — "the best so far"
 
 > Keep a box with **the best value seen so far**. Each new value challenges the champion.
@@ -12,6 +14,8 @@ Think of a **king of the hill** 👑: the first value is king. Each new value fi
 
 ```mermaid
 flowchart TD
+    accTitle: Min max tracker
+    accDescr: Set max to the first value. For each other value, if it is bigger than max, max becomes that value. At the end, max is the biggest.
     A["max = FIRST value"] --> B{"more values?"}
     B -- yes --> C{"value #gt; max ?"}
     C -- yes --> D["max = value 👑"]
@@ -58,8 +62,8 @@ Also want **where** the best value is? Keep a second box `maxIndex` and update b
 
 ## 🏋️ Mini exercises
 
-1. **C02** Largest of three (no loop: just `if`). Good warm-up.
-2. **R02** Largest value of an array.
-3. **A09** Read numbers until 0, print the smallest and the largest.
+1. [**C02**](../exercises/C02-largest-of-three.md) Largest of three (no loop: just `if`). Good warm-up.
+2. [**R02**](../exercises/R02-largest-in-an-array.md) Largest value of an array.
+3. [**A09**](../exercises/A09-min-and-max-until-zero.md) Read numbers until 0, print the smallest and the largest.
 
 ➡️ Next: [Recipe 5 · Flag / search](05-flag-search.md)

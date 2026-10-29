@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › ✏️ Practice project
+
 # ✏️ Practice project
 
 One small console project, so you never have to think about project setup. Work on **one exercise at a time** in `Program.cs`.
@@ -8,7 +10,7 @@ dotnet run --project practice
 
 Or open `practice/Practice.csproj` in Visual Studio / VS Code / Rider and press ▶️.
 
-**Tips**
+## Tips
 
 - Before typing, fill the [recipe card](../cookbook/README.md) and a trace table on paper.
 - Use the debugger (breakpoint + step over) or a temporary `Console.WriteLine` to *watch* the boxes change.

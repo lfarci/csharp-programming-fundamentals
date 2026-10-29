@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 Cookbook
+
 # 🍳 The loop cookbook
 
 A **recipe** is a small piece of code you can recognize and reuse. Almost every beginner exercise is **one recipe**, or **two or three recipes glued together**.
@@ -31,6 +33,8 @@ Read the exercise. Underline the **result** it asks for. Then follow the arrows.
 
 ```mermaid
 flowchart TD
+    accTitle: How to pick a recipe
+    accDescr: Decision tree. A picture of rows and columns: nested loops. Read input until it is OK: input validation. Values until a stop value: sentinel loop plus another recipe. Work on digits: digit extraction plus another recipe. Next value depends on previous ones: state update. Otherwise by kind of answer: a list of values, counter loop; one total, count or product, accumulator, or conditional accumulator if only some values; biggest or smallest, min max; yes or no or a position, flag search; a new text, build a string.
     START(["📄 Read the exercise.<br/>What must I produce?"]) --> Q1{"A picture made of<br/>rows and columns?"}
     Q1 -- yes --> R8["8 · Nested loops"]
     Q1 -- no --> Q2{"Must I read input<br/>until it is OK?"}

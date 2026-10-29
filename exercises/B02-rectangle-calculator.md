@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › B02
+
 # B02 · Rectangle calculator
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -33,11 +35,11 @@ Perimeter: 20
 ## 📏 Rules
 
 - Use `int.Parse` to turn the text into an `int`.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [reading worksheet](../docs/reading-an-exercise.md#4-the-worksheet-copy-it): what goes in? what comes out? a tiny example by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -61,6 +63,8 @@ Do the same for a circle with a `double` radius (area = π × r², use `Math.PI`
 
 ## 🔑 Solution
 
-Only after a real try: [B02-rectangle-calculator](../solutions/B02-rectangle-calculator.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for B02](../solutions/B02-rectangle-calculator.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [B01 · Hello you](B01-hello-you.md) · 📚 [All exercises](README.md) · Next: [B03 · Seconds to hours, minutes, seconds](B03-seconds-to-hms.md) ➡️

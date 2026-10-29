@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › P01
+
 # P01 · Is it prime?
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -50,11 +52,11 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 ## 📏 Rules
 
 - A loop with a `bool` flag. No library.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -84,6 +86,8 @@ Make it faster: stop at `d * d <= n`. Why does that work?
 
 ## 🔑 Solution
 
-Only after a real try: [P01-is-it-prime](../solutions/P01-is-it-prime.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for P01](../solutions/P01-is-it-prime.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [S03 · Even Fibonacci sum](S03-even-fibonacci-sum.md) · 📚 [All exercises](README.md) · Next: [P02 · All primes up to N](P02-primes-up-to-n.md) ➡️

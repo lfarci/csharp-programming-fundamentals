@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › S03
+
 # S03 · Even Fibonacci sum
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -37,11 +39,11 @@ Sum: 0
 ## 📏 Rules
 
 - `while` loop (you do not know how many terms).
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -71,6 +73,8 @@ Solve [Project Euler #2](https://projecteuler.net/problem=2) (limit four million
 
 ## 🔑 Solution
 
-Only after a real try: [S03-even-fibonacci-sum](../solutions/S03-even-fibonacci-sum.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for S03](../solutions/S03-even-fibonacci-sum.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [S02 · Fibonacci](S02-fibonacci.md) · 📚 [All exercises](README.md) · Next: [P01 · Is it prime?](P01-is-it-prime.md) ➡️

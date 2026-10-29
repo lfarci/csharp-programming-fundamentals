@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › D03
+
 # D03 · Count the digits
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -37,11 +39,11 @@ Digits: 4
 ## 📏 Rules
 
 - A loop. No `ToString().Length`, no `Math.Log10`.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -71,6 +73,8 @@ Count how many digits of N are even.
 
 ## 🔑 Solution
 
-Only after a real try: [D03-count-digits](../solutions/D03-count-digits.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for D03](../solutions/D03-count-digits.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [D02 · Remove the last digit](D02-remove-last-digit.md) · 📚 [All exercises](README.md) · Next: [D04 · Sum of the digits](D04-digit-sum.md) ➡️

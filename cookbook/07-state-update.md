@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 7 · State update with several variables
+
 # Recipe 7 · State update with several variables — Fibonacci
 
 > When the next value depends on **more than one** previous value, keep them in boxes and **move them forward** carefully.
@@ -19,6 +21,8 @@ You only need to remember **two** boxes: `previous` and `current`. Each turn doe
 
 ```mermaid
 flowchart LR
+    accTitle: State update
+    accDescr: One turn of the Fibonacci loop. Before: previous 2, current 3. Compute next as previous plus current, 5. After: previous becomes 3 and current becomes 5.
     subgraph Before["Before the turn"]
         P1["previous = 2"]
         C1["current = 3"]
@@ -73,8 +77,8 @@ Output: `0 1 1 2 3 5`.
 
 ## 🏋️ Mini exercises
 
-1. **S01** Trace `a`, `b`, `next` on paper for 3 turns.
-2. **S02** Print the first N Fibonacci numbers.
-3. **S03** Sum the even Fibonacci numbers up to a limit → [Project Euler #2](https://projecteuler.net/problem=2).
+1. [**S01**](../exercises/S01-trace-updates.md) Trace `a`, `b`, `next` on paper for 3 turns.
+2. [**S02**](../exercises/S02-fibonacci.md) Print the first N Fibonacci numbers.
+3. [**S03**](../exercises/S03-even-fibonacci-sum.md) Sum the even Fibonacci numbers up to a limit → [Project Euler #2](https://projecteuler.net/problem=2).
 
 ➡️ Next: [Recipe 8 · Nested loops for 2D grids](08-nested-grid.md)

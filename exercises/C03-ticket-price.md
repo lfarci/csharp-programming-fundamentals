@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › C03
+
 # C03 · Ticket price
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -43,11 +45,11 @@ Price: 7
 ## 📏 Rules
 
 - Use `if` / `else if` / `else`.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [reading worksheet](../docs/reading-an-exercise.md#4-the-worksheet-copy-it): what goes in? what comes out? a tiny example by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -71,6 +73,8 @@ Add a rule: on Wednesday (ask the day as a number 1-7) everybody pays 6.
 
 ## 🔑 Solution
 
-Only after a real try: [C03-ticket-price](../solutions/C03-ticket-price.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for C03](../solutions/C03-ticket-price.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [C02 · Largest of three](C02-largest-of-three.md) · 📚 [All exercises](README.md) · Next: [L01 · Trace a loop (paper)](L01-trace-a-loop.md) ➡️

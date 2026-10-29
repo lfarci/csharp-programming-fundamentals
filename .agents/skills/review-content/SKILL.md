@@ -1,0 +1,23 @@
+---
+name: review-content
+description: Review the whole course repo for a struggling beginner and fix what you find. Use when asked to review, audit, polish or improve the content.
+---
+
+A **pass** reads every learner page against the rubric in `AGENTS.md` and `docs/writing-guide.md`. Repeat passes until one finds nothing meaningful.
+
+1. **Run the checks first:** `tools/verify.sh --external`. Every red line is an issue.
+2. **Read every page**, in learner order: README → getting started → roadmap → cookbook → exercises (via generator data) → docs → solutions. For each page, hunt these issue kinds and log each with file and line:
+   - *jump*: an exercise adds two new difficulties, or a plan lists an exercise before its `pre`;
+   - *mismatch*: an example, trace table or comment that disagrees with the code;
+   - *shortcut*: LINQ or a helper doing the loop; a book challenge listed as an exercise;
+   - *scaffold gap*: Guided with fewer than 2 hints, missing edge case or mastery check;
+   - *format drift*: a page that leaves the exercise or recipe format in `AGENTS.md`;
+   - *plain-language*: long sentences, jargon not in the glossary, Git words on learner pages;
+   - *access*: missing alt text, `accTitle`/`accDescr`, colour-only meaning, "click here" links, skipped heading levels;
+   - *navigation*: missing breadcrumb or Previous/Next, dead ends, a stale "you are here";
+   - *duplicate*: one meaning written in two places that can drift apart.
+   Done when every page is read and the log names a kind for each issue.
+3. **Fix** each logged issue at its source (generator data for exercises).
+4. **Re-verify** with `tools/verify.sh --external`. Done when it ends with `ALL CHECKS PASSED`.
+5. **Sharpen the rules.** A new kind of issue, or one that keeps coming back, becomes a line in `AGENTS.md` or the writing guide.
+6. **Report** the pass: issue count per kind and the main fixes.

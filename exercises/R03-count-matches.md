@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › R03
+
 # R03 · Count matches in an array
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -31,15 +33,21 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 ## 📏 Rules
 
 - No LINQ (`.Count()`).
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
 <details><summary>Hint 1</summary>
+
+First read the array like in R01. Then read the target. Which recipe counts only *some* values?
+
+</details>
+
+<details><summary>Hint 2</summary>
 
 Conditional accumulator: `if (value == target) count++;`
 
@@ -53,6 +61,8 @@ Count the values **greater** than the target.
 
 ## 🔑 Solution
 
-Only after a real try: [R03-count-matches](../solutions/R03-count-matches.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for R03](../solutions/R03-count-matches.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [R02 · Largest value in an array](R02-largest-in-an-array.md) · 📚 [All exercises](README.md) · Next: [R04 · Find the position](R04-find-the-position.md) ➡️

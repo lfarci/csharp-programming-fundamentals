@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › T03
+
 # T03 · Count and keep the digits
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -33,11 +35,11 @@ Kept:
 ## 📏 Rules
 
 - One loop, two boxes. `char.IsDigit(c)` or `c >= '0' && c <= '9'`.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -61,6 +63,8 @@ Also compute the **sum** of those digits (`c - '0'` turns `'7'` into 7).
 
 ## 🔑 Solution
 
-Only after a real try: [T03-count-and-keep-digits](../solutions/T03-count-and-keep-digits.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for T03](../solutions/T03-count-and-keep-digits.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [T02 · Remove spaces](T02-remove-spaces.md) · 📚 [All exercises](README.md) · Next: [F01 · Save numbers to a file](F01-numbers-file.md) ➡️

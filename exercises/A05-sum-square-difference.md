@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › A05
+
 # A05 · Two accumulators: sum and squares
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -35,11 +37,11 @@ Difference: 2640
 ## 📏 Rules
 
 - One loop, two boxes.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -69,6 +71,8 @@ Now solve [Project Euler #6](https://projecteuler.net/problem=6) (N = 100). Use 
 
 ## 🔑 Solution
 
-Only after a real try: [A05-sum-square-difference](../solutions/A05-sum-square-difference.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for A05](../solutions/A05-sum-square-difference.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [A04 · Factorial](A04-factorial.md) · 📚 [All exercises](README.md) · Next: [A06 · Average until zero](A06-average-until-zero.md) ➡️

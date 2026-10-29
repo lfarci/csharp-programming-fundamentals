@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 11 · Array traversal
+
 # Recipe 11 · Array traversal — visit every box
 
 > An array is a row of numbered boxes. Visit them one by one, and **reuse any recipe** (sum, count, max, search…) on the way.
@@ -18,6 +20,8 @@ Trigger words: **"array"**, **"list of values"**, **"for each element"**, **"the
 
 ```mermaid
 flowchart LR
+    accTitle: Position and value
+    accDescr: Three cells: position 0 holds 4, position 1 holds 9, position 2 holds 2. When i reaches 3, which equals Length, the loop stops.
     I0["[0]<br/>4"] --> I1["[1]<br/>9"] --> I2["[2]<br/>2"] --> STOP(["i = 3 = Length<br/>stop"])
 ```
 
@@ -75,9 +79,8 @@ for (int i = 0; i < numbers.Length; i++)
 
 ## 🏋️ Mini exercises
 
-1. **R01** Sum of an array.
-2. **R03** Count how many times a value appears.
-3. **R05** Build a reversed copy of an array.
-4. Book: *The Replicator of D'To* and *The Laws of Freach* (PG level 12).
+1. [**R01**](../exercises/R01-sum-an-array.md) Sum of an array.
+2. [**R03**](../exercises/R03-count-matches.md) Count how many times a value appears.
+3. [**R05**](../exercises/R05-reverse-an-array.md) Build a reversed copy of an array.
 
 ➡️ Next: [Recipe 12 · Build a string](12-string-building.md)

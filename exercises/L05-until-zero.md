@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › L05
+
 # L05 · Until zero
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -32,11 +34,11 @@ You entered 0 numbers.
 ## 📏 Rules
 
 - You do not know how many numbers will come: no `for`.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -66,6 +68,8 @@ Also print how many of the numbers were negative.
 
 ## 🔑 Solution
 
-Only after a real try: [L05-until-zero](../solutions/L05-until-zero.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for L05](../solutions/L05-until-zero.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [L04 · Multiplication table](L04-multiplication-table.md) · 📚 [All exercises](README.md) · Next: [L06 · Even numbers](L06-even-numbers.md) ➡️

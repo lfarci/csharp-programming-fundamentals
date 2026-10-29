@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › L08
+
 # L08 · Guess the number
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -33,11 +35,11 @@ Correct! You needed 1 tries.
 ## 📏 Rules
 
 - Use a loop + a counter.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -67,6 +69,8 @@ Use a random secret: `int secret = Random.Shared.Next(1, 101);` and allow at mos
 
 ## 🔑 Solution
 
-Only after a real try: [L08-guess-the-number](../solutions/L08-guess-the-number.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for L08](../solutions/L08-guess-the-number.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [L07 · Ask until valid](L07-ask-until-valid.md) · 📚 [All exercises](README.md) · Next: [A01 · Sum from 1 to N](A01-sum-1-to-n.md) ➡️

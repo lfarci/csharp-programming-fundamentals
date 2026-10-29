@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › M01
+
 # M01 · Armstrong number
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -52,11 +54,11 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 ## 📏 Rules
 
 - No string, no `Math.Pow`. Reuse D03 (count), D04 (digits) and A07 (power).
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -86,6 +88,8 @@ Solve it again from a blank file two days later, without looking.
 
 ## 🔑 Solution
 
-Only after a real try: [M01-armstrong-number](../solutions/M01-armstrong-number.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for M01](../solutions/M01-armstrong-number.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [P02 · All primes up to N](P02-primes-up-to-n.md) · 📚 [All exercises](README.md) · Next: [M02 · All Armstrong numbers in a range](M02-armstrong-numbers-in-a-range.md) ➡️

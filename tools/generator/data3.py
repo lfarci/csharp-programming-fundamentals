@@ -155,7 +155,7 @@ ex(id="D01", slug="last-digit", title="Last digit", level="Guided", stars=1, ste
    examples=[(["352"], ["Last digit: 2"]), (["7"], ["Last digit: 7"]), (["0"], ["Last digit: 0"])],
    edge=["One-digit number → the number itself."],
    constraints=["No string. Use `%`."],
-   hints=["What is the remainder of 352 divided by 10?"],
+   hints=["What is the remainder of 352 divided by 10? Do it on paper first.", "The remainder operator is `%`: `352 % 10` gives `2`. No loop is needed here."],
    mastery="Print the **second to last** digit (352 → 5).",
    code=r'''Console.Write("N: ");
 int n = int.Parse(Console.ReadLine()!);
@@ -167,7 +167,7 @@ ex(id="D02", slug="remove-last-digit", title="Remove the last digit", level="Gui
    examples=[(["352"], ["Without last digit: 35"]), (["7"], ["Without last digit: 0"])],
    edge=["One digit → 0."],
    constraints=["No string. Use integer `/`."],
-   hints=["352 / 10 with two `int`s gives 35, not 35.2."],
+   hints=["What is 352 divided by 10, if you throw away everything after the decimal point?", "With two `int`s, `/` drops the rest: `352 / 10` gives `35`, not `35.2`."],
    mastery="Print the first digit of a 3-digit number using only `/`.",
    code=r'''Console.Write("N: ");
 int n = int.Parse(Console.ReadLine()!);

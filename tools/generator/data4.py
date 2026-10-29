@@ -54,7 +54,7 @@ ex(id="R03", slug="count-matches", title="Count matches in an array", level="Ind
    examples=[(["5","2","4","2","5","2","2"], ["2 appears 3 times"]), (["2","1","1","9"], ["9 appears 0 times"])],
    edge=["Target not present → 0."],
    constraints=["No LINQ (`.Count()`)."],
-   hints=["Conditional accumulator: `if (value == target) count++;`"],
+   hints=["First read the array like in R01. Then read the target. Which recipe counts only *some* values?", "Conditional accumulator: `if (value == target) count++;`"],
    mastery="Count the values **greater** than the target.",
    code=READ_ARRAY + r'''
 Console.Write("Target: ");

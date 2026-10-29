@@ -1,0 +1,13 @@
+# Link check config (internal + external). See AGENTS.md "Checks".
+max_retries = 3
+retry_wait_time = 5
+timeout = 30
+max_concurrency = 8
+accept = ["200..=299", "403", "429"]   # 403/429: sites that block bots (doi.org, some publishers)
+include_fragments = "anchor-only"
+exclude_path = ["node_modules", "(^|/)bin/", "(^|/)obj/"]
+exclude = [
+  "^https?://(dx\\.)?doi\\.org/",          # DOIs verified with the Crossref API; publishers block bots (403/500)
+  "^https?://(www\\.)?tandfonline\\.com/",
+  "^https://github\\.com/lfarci/csharp-programming-fundamentals/actions",  # badge/status pages
+]

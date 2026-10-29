@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › A06
+
 # A06 · Average until zero
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -40,11 +42,11 @@ No numbers.
 ## 📏 Rules
 
 - Sentinel loop + two boxes (`sum`, `count`).
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -74,6 +76,8 @@ Also print how many numbers were above the average. (Why is that hard without an
 
 ## 🔑 Solution
 
-Only after a real try: [A06-average-until-zero](../solutions/A06-average-until-zero.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for A06](../solutions/A06-average-until-zero.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [A05 · Two accumulators: sum and squares](A05-sum-square-difference.md) · 📚 [All exercises](README.md) · Next: [A07 · Integer power](A07-integer-power.md) ➡️

@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › C01
+
 # C01 · Even or odd
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -38,11 +40,11 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 ## 📏 Rules
 
 - Use `%` and `if`/`else`.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [reading worksheet](../docs/reading-an-exercise.md#4-the-worksheet-copy-it): what goes in? what comes out? a tiny example by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -66,6 +68,8 @@ Say if a number is a multiple of 3, of 5, of both, or of none.
 
 ## 🔑 Solution
 
-Only after a real try: [C01-even-or-odd](../solutions/C01-even-or-odd.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for C01](../solutions/C01-even-or-odd.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [B03 · Seconds to hours, minutes, seconds](B03-seconds-to-hms.md) · 📚 [All exercises](README.md) · Next: [C02 · Largest of three](C02-largest-of-three.md) ➡️

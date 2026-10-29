@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › M02
+
 # M02 · All Armstrong numbers in a range
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -37,11 +39,11 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 ## 📏 Rules
 
 - Your M01 code inside a counter loop. Beware: the inner variables must be reset for every candidate.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -71,6 +73,8 @@ Count how many Armstrong numbers exist below 100000.
 
 ## 🔑 Solution
 
-Only after a real try: [M02-armstrong-numbers-in-a-range](../solutions/M02-armstrong-numbers-in-a-range.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for M02](../solutions/M02-armstrong-numbers-in-a-range.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [M01 · Armstrong number](M01-armstrong-number.md) · 📚 [All exercises](README.md) · Next: [R01 · Sum of an array](R01-sum-an-array.md) ➡️

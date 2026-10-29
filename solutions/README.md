@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🔑 Solutions
+
 # 🔑 Solutions
 
 **Stop!** Did you really try? Did you open the hints? Did you fill a trace table?

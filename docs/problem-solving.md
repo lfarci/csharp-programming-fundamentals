@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › From a problem statement to an algorithm
+
 # From a problem statement to an algorithm
 
 An algorithm is a precise sequence of steps. You can design and test it on paper before choosing a programming language.
@@ -43,6 +45,8 @@ Use a rounded box for start/end, a rectangle for an action, a diamond for a yes/
 
 ```mermaid
 flowchart TD
+    accTitle: Count and total of prices above 10
+    accDescr: Start, receive the prices, set count and total to 0. For each unvisited price: if it is above 10, add 1 to count and add the price to total. When no price is left, report count and total, then end.
     S([Start]) --> I[/Receive prices/]
     I --> A["count = 0; total = 0"]
     A --> B{"Any unvisited price?"}
@@ -88,7 +92,7 @@ Follow the steps literally. Do not silently fix them because you know the intend
 
 For a general trace, include every value that can change, the result of each decision, and any output produced. Record initialization and the final failed loop test. For several assignments in a row, use one row per assignment if update order is confusing.
 
-## 7. Check boundaries, then translate to C#
+## 7. Check boundaries, then write the C# code
 
 | Input | Expected count | Expected total | What it checks |
 | --- | ---: | ---: | --- |

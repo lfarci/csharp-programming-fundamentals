@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › A09
+
 # A09 · Smallest and largest until zero
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -40,11 +42,11 @@ No numbers.
 ## 📏 Rules
 
 - No array, no list.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -74,6 +76,8 @@ Also print the **position** (1st, 2nd, …) of the largest number.
 
 ## 🔑 Solution
 
-Only after a real try: [A09-min-and-max-until-zero](../solutions/A09-min-and-max-until-zero.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for A09](../solutions/A09-min-and-max-until-zero.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [A08 · Multiples of 3 or 5](A08-multiples-of-3-or-5.md) · 📚 [All exercises](README.md) · Next: [A10 · Sum of a series](A10-sum-of-a-series.md) ➡️

@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › A08
+
 # A08 · Multiples of 3 or 5
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -38,11 +40,11 @@ Sum: 0
 ## 📏 Rules
 
 - One loop, one `if` with `||`.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -72,6 +74,8 @@ Solve [Project Euler #1](https://projecteuler.net/problem=1) (N = 1000).
 
 ## 🔑 Solution
 
-Only after a real try: [A08-multiples-of-3-or-5](../solutions/A08-multiples-of-3-or-5.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for A08](../solutions/A08-multiples-of-3-or-5.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [A07 · Integer power](A07-integer-power.md) · 📚 [All exercises](README.md) · Next: [A09 · Smallest and largest until zero](A09-min-and-max-until-zero.md) ➡️

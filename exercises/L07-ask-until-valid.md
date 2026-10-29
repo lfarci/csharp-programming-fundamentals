@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › L07
+
 # L07 · Ask until valid
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -34,11 +36,11 @@ You chose 1
 ## 📏 Rules
 
 - Use `do … while` and `int.TryParse`.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -68,6 +70,8 @@ Ask for a password until it has at least 8 characters (`text.Length`).
 
 ## 🔑 Solution
 
-Only after a real try: [L07-ask-until-valid](../solutions/L07-ask-until-valid.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for L07](../solutions/L07-ask-until-valid.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [L06 · Even numbers](L06-even-numbers.md) · 📚 [All exercises](README.md) · Next: [L08 · Guess the number](L08-guess-the-number.md) ➡️

@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🔑 [Solutions](README.md) › L02
+
 # Answer key · L02 Boundaries: < or <= ? (paper)
 
 | Loop | Runs | Values printed | Last value |

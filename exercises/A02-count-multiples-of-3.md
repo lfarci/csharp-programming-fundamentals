@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › A02
+
 # A02 · Count multiples of 3
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -38,11 +40,11 @@ Count: 3
 ## 📏 Rules
 
 - Loop + `if` + counter. No division trick (`n / 3`) except to check.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -66,6 +68,8 @@ Count the numbers from 1 to N that are divisible by 3 **but not** by 2.
 
 ## 🔑 Solution
 
-Only after a real try: [A02-count-multiples-of-3](../solutions/A02-count-multiples-of-3.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for A02](../solutions/A02-count-multiples-of-3.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [A01 · Sum from 1 to N](A01-sum-1-to-n.md) · 📚 [All exercises](README.md) · Next: [A03 · Sum of the even numbers](A03-sum-even-values.md) ➡️

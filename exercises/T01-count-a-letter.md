@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › T01
+
 # T01 · Count a letter
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -38,11 +40,11 @@ a appears 0 times
 ## 📏 Rules
 
 - `foreach (char c in text)`. No LINQ.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -66,6 +68,8 @@ Count all vowels (a, e, i, o, u) in a text.
 
 ## 🔑 Solution
 
-Only after a real try: [T01-count-a-letter](../solutions/T01-count-a-letter.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for T01](../solutions/T01-count-a-letter.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [R05 · Reverse an array](R05-reverse-an-array.md) · 📚 [All exercises](README.md) · Next: [T02 · Remove spaces](T02-remove-spaces.md) ➡️

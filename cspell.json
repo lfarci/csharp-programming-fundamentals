@@ -1,0 +1,40 @@
+{
+  "version": "0.2",
+  "language": "en,en-GB",
+  "files": [
+    "**/*.md"
+  ],
+  "ignorePaths": [
+    "node_modules/**",
+    "**/bin/**",
+    "**/obj/**"
+  ],
+  "words": [
+    "COGA",
+    "Exercism",
+    "Freach",
+    "Gerven",
+    "Kallia",
+    "LINQ",
+    "Loksa",
+    "PRIMM",
+    "Paas",
+    "Parsons",
+    "Renkl",
+    "Sentance",
+    "Tabbers",
+    "Tuovinen",
+    "WCAG",
+    "accDescr",
+    "accTitle",
+    "chall",
+    "cspell",
+    "gantt",
+    "indep",
+    "lfarci",
+    "lychee",
+    "markdownlint",
+    "mmdc",
+    "plainlanguage"
+  ]
+}

@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 🍳 [Cookbook](README.md) › Recipe 3 · Conditional accumulator
+
 # Recipe 3 · Conditional accumulator — filter, then accumulate
 
 > Recipe 2 + an `if` inside the loop: **only some values** go into the box.
@@ -13,6 +15,8 @@ Every value is **visited**, but only the ones that pass the **filter** change th
 
 ```mermaid
 flowchart TD
+    accTitle: Conditional accumulator
+    accDescr: Set count to 0. For each value, test the filter. If it passes, update the box. Either way, go to the next value. At the end, use the box.
     A["count = 0"] --> B{"more values?"}
     B -- yes --> C{"value passes<br/>the filter?"}
     C -- yes --> D["count++ / sum += value"]
@@ -67,8 +71,8 @@ You can keep **several boxes** in the same loop (count *and* sum, evens *and* od
 
 ## 🏋️ Mini exercises
 
-1. **A02** Count multiples of 3 from 1 to N.
-2. **A03** Sum the even values from 1 to N.
-3. **A08** Sum the multiples of 3 or 5 below N → then [Project Euler #1](https://projecteuler.net/problem=1).
+1. [**A02**](../exercises/A02-count-multiples-of-3.md) Count multiples of 3 from 1 to N.
+2. [**A03**](../exercises/A03-sum-even-values.md) Sum the even values from 1 to N.
+3. [**A08**](../exercises/A08-multiples-of-3-or-5.md) Sum the multiples of 3 or 5 below N → then [Project Euler #1](https://projecteuler.net/problem=1).
 
 ➡️ Next: [Recipe 4 · Min/max tracker](04-min-max.md)

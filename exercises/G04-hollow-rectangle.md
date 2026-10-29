@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › G04
+
 # G04 · Hollow rectangle
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -36,11 +38,11 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 ## 📏 Rules
 
 - Nested loops + one `if` inside.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -64,6 +66,8 @@ Draw an X inside a square (cells where `row == col` or `row + col == size + 1`).
 
 ## 🔑 Solution
 
-Only after a real try: [G04-hollow-rectangle](../solutions/G04-hollow-rectangle.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for G04](../solutions/G04-hollow-rectangle.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [G03 · Multiplication grid](G03-multiplication-grid.md) · 📚 [All exercises](README.md) · Next: [G05 · Checkerboard](G05-checkerboard.md) ➡️

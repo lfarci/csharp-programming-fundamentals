@@ -1,10 +1,18 @@
 # C# Programming Fundamentals 🎮
 
-A friendly, **recipe-first** companion for a beginner C# course: a clear path, reusable loop recipes, and many small exercises that each add **one** new difficulty.
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/lfarci/csharp-programming-fundamentals?quickstart=1)
 
-> 📖 **Parallel track:** *The C# Player's Guide*, 5th edition. Each roadmap step tells you which level to read alongside it. Book challenges are **not** repeated here (track them in [C# Quest Tracker](https://lfarci.github.io/csharp-quest-tracker/)). This repo is about **problem-solving techniques** and **original exercises**.
+A friendly companion for a beginner C# course. You learn **loop recipes** and practise with many small exercises. Each exercise adds **one** new difficulty.
 
-> 🔎 **New here? Start with [How to read an exercise](docs/reading-an-exercise.md)** — what to look for in a statement, how to organize your ideas, and what to do when you are stuck.
+## 🚀 Start here
+
+1. Read [**Getting started**](docs/getting-started.md): clone the repo, run the practice project, and use hints and solutions.
+2. Read [**How to read an exercise**](docs/reading-an-exercise.md) (10 minutes).
+3. Do your first exercises: [L01](exercises/L01-trace-a-loop.md) and [L02](exercises/L02-boundaries.md) on paper, then [L03](exercises/L03-count-up-and-down.md) in code.
+4. Tick them in your [**progress checklist**](docs/progress-checklist.md).
+5. Next time, open the [**Roadmap**](ROADMAP.md) and follow the plan for today.
+
+> 📖 **Book:** *The C# Player's Guide* (5th edition) is a **parallel reading track**. Each roadmap step says which level to read. The book's challenges stay in the book (tracked in [C# Quest Tracker](https://lfarci.github.io/csharp-quest-tracker/)).
 
 ## 🧭 Where do I go?
 
@@ -15,18 +23,18 @@ A friendly, **recipe-first** companion for a beginner C# course: a clear path, r
 | Understand an exercise before coding | 🔎 [**How to read an exercise**](docs/reading-an-exercise.md) (+ fill-in worksheet) |
 | Pick an exercise | 📚 [**Exercise inventory**](exercises/README.md) (55 original + Project Euler + teacher topics) |
 | See which exercise comes before which | 🕸️ [Dependency graph](exercises/dependency-graph.md) |
-| Write and run my code | ✏️ [practice/](practice/README.md) (one console project) |
-| Check my answer (after trying!) | 🔑 [solutions/](solutions/README.md) |
+| Get set up and run my code | 🚀 [Getting started](docs/getting-started.md) · ✏️ [Practice project](practice/README.md) |
+| Check my answer (after trying!) | 🔑 [Solutions](solutions/README.md) |
+| Track what I have done | ✅ [Progress checklist](docs/progress-checklist.md) |
+| Understand a word | 📖 [Glossary](docs/glossary.md) |
 | Learn how to attack a problem | 🧠 [From a problem statement to an algorithm](docs/problem-solving.md) · [How to practice](docs/how-to-practice.md) |
 
-## 🚀 Start here (today)
-
-1. Open the [ROADMAP](ROADMAP.md) and read **§2 "Where are we now?"** and **§5 Catch-up plan**.
-2. Session 1: do [L01](exercises/L01-trace-a-loop.md) and [L02](exercises/L02-boundaries.md) **on paper**, then [A01](exercises/A01-sum-1-to-n.md).
-3. Before each exercise, fill the [reading worksheet](docs/reading-an-exercise.md#4-the-worksheet-copy-it), read its recipe in the [cookbook](cookbook/README.md) and fill a trace table.
+## 🔁 Every session
 
 ```mermaid
 flowchart LR
+    accTitle: How to use this repo
+    accDescr: A loop: pick a roadmap step, read the recipe, trace on paper, code the exercise alone. If stuck, open one hint and try again. If not stuck, do the mastery check another day, then go back to the roadmap.
     R["🗺️ Roadmap<br/>which step?"] --> C["🍳 Cookbook<br/>which recipe?"]
     C --> P["📝 Paper<br/>trace table"]
     P --> X["✏️ Exercise<br/>code it alone"]
@@ -52,3 +60,5 @@ flowchart LR
 - University teacher exercises (factorial, Fibonacci, Armstrong) — used as assessments; statements not copied.
 
 All custom exercises are original. Visuals are Mermaid diagrams (rendered by GitHub) and the SVGs in [`assets/`](assets/).
+
+Working on this repo (coach or AI agent)? Read [AGENTS.md](AGENTS.md).

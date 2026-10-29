@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › How to read an exercise
+
 # 🔎 How to read an exercise
 
 Most "I can't do loops" moments are really "I did not understand the question yet".
@@ -9,6 +11,8 @@ Reading a statement is a **skill**, and you can learn it like a recipe. This pag
 
 ```mermaid
 flowchart TD
+    accTitle: Reading an exercise
+    accDescr: Steps: 1 read once for the story. 2 read again with a pencil for inputs, output, rules and examples. 3 say it in your own words. 4 solve small examples by hand; if you cannot, shrink the problem and try again. 5 find trigger words and recipes. 6 write steps in plain language and a trace table. 7 translate to C#; if the result differs from the paper trace, print variables and find the first different line. 8 test the edge cases. Done.
     S(["📄 New exercise"]) --> R1["1 · Read once, for the story"]
     R1 --> R2["2 · Read again with a pencil:<br/>inputs · output · rules · examples"]
     R2 --> W["3 · Say it in my own words"]
@@ -179,6 +183,8 @@ What did I remember? **the number of digits**, **the running total**, and **what
 
 ```mermaid
 flowchart LR
+    accTitle: From Armstrong statement to recipes
+    accDescr: Count digits with digit extraction, then for each digit compute digit to the power digits with a counter loop and product, add it to the sum with an accumulator, then compare the sum with n.
     A["Count digits<br/>(digit extraction)"] --> B["For each digit<br/>(digit extraction)"]
     B --> C["digit ^ digits<br/>(counter loop + product)"]
     C --> D["add to sum<br/>(accumulator)"]

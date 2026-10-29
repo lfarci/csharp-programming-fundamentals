@@ -1,3 +1,5 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › T02
+
 # T02 · Remove spaces
 
 | Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
@@ -37,11 +39,11 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 ## 📏 Rules
 
 - Build a new string with `+=`. No `Replace`.
-- No LINQ, no ready-made helpers that do the loop for you. The loop **is** the exercise.
+- No LINQ and no ready-made helpers: you write every step yourself.
 
 ## 🗺️ Before coding
 
-Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats / what stops? tiny example traced by hand?
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
 
 ## 💡 Hints (open one at a time)
 
@@ -65,6 +67,8 @@ Reverse the text (`abc` → `cba`).
 
 ## 🔑 Solution
 
-Only after a real try: [T02-remove-spaces](../solutions/T02-remove-spaces.cs). Your solution can be different and still correct!
+Only after a real try: [open the solution for T02](../solutions/T02-remove-spaces.cs). Your solution can be different and still correct!
 
-⬅️ [Back to the inventory](README.md)
+---
+
+⬅️ Previous: [T01 · Count a letter](T01-count-a-letter.md) · 📚 [All exercises](README.md) · Next: [T03 · Count and keep the digits](T03-count-and-keep-digits.md) ➡️
