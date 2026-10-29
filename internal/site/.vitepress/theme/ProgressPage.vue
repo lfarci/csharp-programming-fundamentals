@@ -54,9 +54,9 @@ function copy() { navigator.clipboard?.writeText(code.value); message.value = 'S
 
     <h2 id="by-theme">By theme</h2>
     <div class="themes">
-      <div v-for="(s, i) in themes" :key="s.theme" class="cpf-card th">
+      <div v-for="s in themes" :key="s.theme" class="cpf-card th">
         <div class="th-head">
-          <span class="cpf-num" :class="{ on: s.n === s.list.length }" aria-hidden="true">{{ i + 1 }}</span>
+          <span class="cpf-num mark" :class="{ on: s.n === s.list.length }" aria-hidden="true"></span>
           <a class="th-title" :href="withBase(s.link)">{{ s.theme }}</a>
           <span class="th-n">{{ s.n }} of {{ s.list.length }}</span>
         </div>

@@ -7,7 +7,7 @@ next:
   link: /themes/loops-add-up
 ---
 
-[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Loops](loops.md) › Group 1 of 9
+[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Loops](loops.md) › Count
 
 # Loops · Count
 

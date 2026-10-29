@@ -7,7 +7,7 @@ next:
   link: /themes/arrays
 ---
 
-[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Loops](loops.md) › Group 9 of 9
+[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Loops](loops.md) › Search and combine
 
 # Loops · Search and combine
 

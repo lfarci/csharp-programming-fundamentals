@@ -123,3 +123,12 @@ test('Each group has its own page: theme cards link to it, old anchors still lan
   await page.goto('exercises/L11-count-from-a-to-b')
   await expect(page.locator('.ex-head .cpf-kicker a', { hasText: 'Count' })).toHaveAttribute('href', /\/themes\/loops-count$/)
 })
+
+test('Themes and groups show their names only, without a number', async ({ page }) => {
+  await page.goto('themes/loops')
+  await expect(page.locator('.VPSidebar').getByText('Loops', { exact: true })).toBeVisible()
+  await expect(page.locator('.VPSidebar').getByText(/^\d+\.\s/)).toHaveCount(0)
+  await expect(page.locator('.groups .cpf-num').first()).toHaveText('')
+  await page.goto('exercises/')
+  await expect(page.locator('.overview .cpf-num').first()).toHaveText('')
+})

@@ -7,7 +7,7 @@ next:
   link: /themes/loops-changing-values
 ---
 
-[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Loops](loops.md) › Group 7 of 9
+[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Loops](loops.md) › Digits
 
 # Loops · Digits
 

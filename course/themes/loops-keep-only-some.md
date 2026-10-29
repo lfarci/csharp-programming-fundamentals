@@ -7,7 +7,7 @@ next:
   link: /themes/loops-until-the-user-stops
 ---
 
-[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Loops](loops.md) › Group 3 of 9
+[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Loops](loops.md) › Keep only some
 
 # Loops · Keep only some
 

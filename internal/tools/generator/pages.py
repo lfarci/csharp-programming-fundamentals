@@ -16,9 +16,9 @@ out = ["[Home](../../README.md) › Exercises", "", "# Exercises", "",
        f"{len(ORDER)} small exercises in {len(THEMES)} themes. Each theme is split into small groups of the **same pattern**. Do them in order: each exercise adds **one** new difficulty.", "",
        "Start one with `./ex start A04`, check it with `./ex check`. New here? Read [Getting started](../docs/getting-started.md) first.", "",
        "<ExercisesOverview />", "", '<div class="gh-only">', "",
-       "| # | Theme | Groups | Exercises |", "| ---: | --- | --- | ---: |"]
+       "| Theme | Groups | Exercises |", "| --- | --- | ---: |"]
 for x in THEMES:
-    out.append(f"| {NUM[x['slug']]} | [{x['title']}](../themes/{x['slug']}.md) | " + ", ".join(f"[{g_['title']}](../themes/{gpage(x, g_)}.md) ({len(g_['ids'])})" for g_ in x["groups"]) + f" | {len(TH_EX[x['slug']])} |")
+    out.append(f"| [{x['title']}](../themes/{x['slug']}.md) | " + ", ".join(f"[{g_['title']}](../themes/{gpage(x, g_)}.md) ({len(g_['ids'])})" for g_ in x["groups"]) + f" | {len(TH_EX[x['slug']])} |")
 out += ["", "</div>", "",
         "## Levels", "", "- **Guided**: small steps, the hints help a lot.", "- **Independent**: the same idea, alone.", "- **Challenge**: a new problem; combine recipes.", "",
         "## Drill sets (same pattern, many times)", "",
@@ -55,7 +55,7 @@ os.makedirs(f"{ROOT}/course/themes", exist_ok=True)
 for old in glob.glob(f"{ROOT}/course/themes/*.md"): os.remove(old)
 for k, x in enumerate(THEMES):
     s = x["slug"]; c = LEARN[s]
-    L = [f"[Home](../../README.md) › [Roadmap](../ROADMAP.md) › Theme {k+1} of {len(THEMES)}", "", f"# {x['title']}", "", x["summary"], "",
+    L = [f"[Home](../../README.md) › [Roadmap](../ROADMAP.md) › {x['title']}", "", f"# {x['title']}", "", x["summary"], "",
          f'<LearnCard theme="{s}" />', "", '<div class="gh-only">', "", "**Before you start:**", "",
          f"1. **Watch:** [{c['watch']['title']}](../learn/videos/{THEORY[s]['episodes'][0]}.md) ({c['watch']['minutes']} min)",
          f"2. **Read:** [{c['read']['title']}]({c['read']['url']}) (Microsoft Learn, Part {c['read']['part']})",
@@ -86,7 +86,7 @@ for k, x in enumerate(THEMES):
         else: nx = ("Roadmap", "../ROADMAP.md")
         fm = lambda t_, l_: f"  text: {json.dumps(t_, ensure_ascii=False)}\n  link: /themes/{l_[:-3]}" if not l_.startswith("..") else f"  text: {json.dumps(t_, ensure_ascii=False)}\n  link: /ROADMAP"
         P = ["---", "prev:\n" + fm(*pv), "next:\n" + fm(*nx), "---", "",
-             f"[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [{x['title']}]({s}.md) › Group {i_+1} of {len(G)}", "",
+             f"[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [{x['title']}]({s}.md) › {g_['title']}", "",
              f"# {x['title']} · {g_['title']}", "", g_["about"] + (f" Lesson: {recipe_link(g_['recipe'])}." if g_["recipe"] else ""), ""]
         if i_ == 0: P += [f'<LearnCard theme="{s}" />', ""]
         P += ["Do the exercises from top to bottom. Tick each one when `./ex check` says DONE.", "",
@@ -103,9 +103,9 @@ R = ["[Home](../README.md) › Roadmap", "", "# Roadmap", "",
      "![The roadmap: " + "; ".join(f"{part}: " + ", ".join(f"{x['title']} (" + ", ".join(g_["title"] for g_ in x["groups"]) + ")" for x in THEMES if x["part"] == part) for part in PARTS) + "](diagrams/roadmap.svg)", "", "</div>", "",
      "Before the first theme, read [How to read an exercise](docs/reading-an-exercise.md). You will use it for every exercise.", "",
      "<RoadmapPath />", "", '<div class="gh-only">', ""]
-R += ["| # | Part | Theme | Groups | Exercises |", "| --- | --- | --- | --- | --- |"]
+R += ["| Part | Theme | Groups | Exercises |", "| --- | --- | --- | --- |"]
 for x in THEMES:
-    R.append(f"| {NUM[x['slug']]} | {x['part']} | [{x['title']}](themes/{x['slug']}.md) | " + ", ".join(f"[{g_['title']}](themes/{gpage(x, g_)}.md)" for g_ in x["groups"]) + f" | {len(TH_EX[x['slug']])} |")
+    R.append(f"| {x['part']} | [{x['title']}](themes/{x['slug']}.md) | " + ", ".join(f"[{g_['title']}](themes/{gpage(x, g_)}.md)" for g_ in x["groups"]) + f" | {len(TH_EX[x['slug']])} |")
 R.append("")
 R += ["</div>", "", "## After the roadmap", "", "Objects and classes come next in most courses. There are no exercises for them here yet: follow your course or Microsoft Learn, and come back to the [cookbook](cookbook/README.md) when a method needs a loop.", "",
       "---", "", "[Home](../README.md) · Next: [Getting started](docs/getting-started.md)", ""]
@@ -118,9 +118,9 @@ for p_i, part in enumerate(PARTS):
     D += [f'part{p_i}: "{part}" {{', "  class: part", ""]
     for x in xs:
         gs = x["groups"]; cols = min(3, len(gs))
-        D += [f'  t{NUM[x["slug"]]}: "{NUM[x["slug"]]}. {x["title"]}" {{', "    class: part", f"    grid-rows: {(len(gs) + cols - 1) // cols}", f"    grid-columns: {cols}", "    grid-gap: 16"]
+        D += [f'  t{NUM[x["slug"]]}: "{x["title"]}" {{', "    class: part", f"    grid-rows: {(len(gs) + cols - 1) // cols}", f"    grid-columns: {cols}", "    grid-gap: 16"]
         for j_, g_ in enumerate(gs, 1):
-            D.append(f'    g{j_}: "{NUM[x["slug"]]}.{j_} {g_["title"]}" {{class: step; width: 230; height: 56}}')
+            D.append(f'    g{j_}: "{g_["title"]}" {{class: step; width: 230; height: 56}}')
         D += ["  }"]
     D += ["}", ""]
 D += [f"part{i} -> part{i + 1}" for i in range(len(PARTS) - 1)] + [""]

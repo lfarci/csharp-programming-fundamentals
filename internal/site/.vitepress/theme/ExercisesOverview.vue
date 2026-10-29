@@ -10,7 +10,7 @@ onMounted(load)
 const rows = computed(() => course.themes.map((t, i) => {
   const list = course.exercises.filter((e) => e.theme === t.slug)
   const groups = t.groups.map((g) => { const gl = list.filter((e) => e.group === g.slug); return { ...g, total: gl.length, n: gl.filter((e) => done.value[e.id]).length } })
-  return { ...t, num: i + 1, groups, total: list.length, n: list.filter((e) => done.value[e.id]).length }
+  return { ...t, groups, total: list.length, n: list.filter((e) => done.value[e.id]).length }
 }))
 </script>
 
@@ -19,7 +19,7 @@ const rows = computed(() => course.themes.map((t, i) => {
     <ProgressSummary sync />
     <ol class="grid">
       <li v-for="r in rows" :key="r.slug" class="cpf-card item">
-        <span class="cpf-num" :class="{ on: r.total && r.n === r.total }" aria-hidden="true">{{ r.num }}</span>
+        <span class="cpf-num mark" :class="{ on: r.total && r.n === r.total }" aria-hidden="true"></span>
         <span class="body">
           <a class="title" :href="withBase(r.link)">{{ r.title }}</a>
           <span class="meta"><span class="n">{{ r.n }} / {{ r.total }}</span>
@@ -33,6 +33,7 @@ const rows = computed(() => course.themes.map((t, i) => {
 </template>
 
 <style scoped>
+.cpf-num.mark { width: 14px; height: 14px; min-width: 14px; margin-top: 4px; font-size: 0; }
 .grid { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
 .grid li { margin: 0; }
 .item { display: flex; gap: 14px; align-items: flex-start; }

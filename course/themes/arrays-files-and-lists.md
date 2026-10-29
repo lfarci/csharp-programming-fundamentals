@@ -7,7 +7,7 @@ next:
   link: /themes/methods
 ---
 
-[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Arrays, text and lists](arrays.md) › Group 3 of 3
+[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Arrays, text and lists](arrays.md) › Files and lists
 
 # Arrays, text and lists · Files and lists
 

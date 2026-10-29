@@ -63,7 +63,7 @@ function githubLinks(md: any) {
 // Sidebar: themes and their groups only, never one link per exercise (internal/tools/check-structure.py checks it).
 // Exercises are reached from the theme page tables and the Previous/Next links of each exercise page.
 const themeItems = course.themes.map((t, i) => ({
-  text: `${i + 1}. ${t.title}`, collapsed: true, link: t.link,
+  text: t.title, collapsed: true, link: t.link,
   items: t.groups.map((g) => ({ text: g.title, link: g.link })),
 }))
 

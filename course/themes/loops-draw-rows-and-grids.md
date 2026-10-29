@@ -7,7 +7,7 @@ next:
   link: /themes/loops-draw-shapes
 ---
 
-[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Loops](loops.md) › Group 5 of 9
+[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Loops](loops.md) › Draw rows and grids
 
 # Loops · Draw rows and grids
 

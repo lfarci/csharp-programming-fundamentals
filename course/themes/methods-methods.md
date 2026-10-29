@@ -7,7 +7,7 @@ next:
   link: /themes/methods-errors
 ---
 
-[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Methods and errors](methods.md) › Group 1 of 2
+[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Methods and errors](methods.md) › Methods
 
 # Methods and errors · Methods
 

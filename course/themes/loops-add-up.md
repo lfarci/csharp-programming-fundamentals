@@ -7,7 +7,7 @@ next:
   link: /themes/loops-keep-only-some
 ---
 
-[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Loops](loops.md) › Group 2 of 9
+[Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Loops](loops.md) › Add up
 
 # Loops · Add up
 
