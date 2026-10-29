@@ -7,7 +7,7 @@ next:
   link: /exercises/A22-sum-of-divisors
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops.md#keep-only-some) › A21
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops-keep-only-some.md) › A21
 
 # A21 · Count the divisors
 

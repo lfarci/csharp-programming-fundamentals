@@ -7,7 +7,7 @@ next:
   link: /exercises/D02-remove-last-digit
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D01
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops-digits.md) › D01
 
 # D01 · Last digit
 

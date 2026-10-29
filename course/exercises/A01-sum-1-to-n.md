@@ -7,7 +7,7 @@ next:
   link: /exercises/A13-sum-from-a-to-b
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A01
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops-add-up.md) › A01
 
 # A01 · Sum from 1 to N
 

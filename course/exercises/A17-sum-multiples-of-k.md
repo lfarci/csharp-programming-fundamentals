@@ -7,7 +7,7 @@ next:
   link: /exercises/A08-multiples-of-3-or-5
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops.md#keep-only-some) › A17
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops-keep-only-some.md) › A17
 
 # A17 · Sum the multiples of k
 

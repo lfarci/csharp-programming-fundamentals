@@ -7,7 +7,7 @@ next:
   link: /exercises/L14-count-by-5
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L13
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops-count.md) › L13
 
 # L13 · Count by 3
 

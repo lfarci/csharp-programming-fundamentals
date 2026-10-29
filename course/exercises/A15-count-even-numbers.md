@@ -7,7 +7,7 @@ next:
   link: /exercises/A16-count-multiples-of-5
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops.md#keep-only-some) › A15
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops-keep-only-some.md) › A15
 
 # A15 · Count the even numbers
 

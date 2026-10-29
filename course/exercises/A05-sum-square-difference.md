@@ -7,7 +7,7 @@ next:
   link: /exercises/A10-sum-of-a-series
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A05
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops-add-up.md) › A05
 
 # A05 · Sum and sum of squares
 

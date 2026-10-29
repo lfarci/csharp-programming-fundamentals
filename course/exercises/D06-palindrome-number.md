@@ -7,7 +7,7 @@ next:
   link: /exercises/S01-trace-updates
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D06
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops-digits.md) › D06
 
 # D06 · Palindrome number
 

@@ -7,7 +7,7 @@ next:
   link: /exercises/P03-has-a-multiple-of-7
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Changing values](../themes/loops.md#changing-values) › S03
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Changing values](../themes/loops-changing-values.md) › S03
 
 # S03 · Even Fibonacci sum
 

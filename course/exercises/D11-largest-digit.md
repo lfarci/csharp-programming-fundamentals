@@ -7,7 +7,7 @@ next:
   link: /exercises/D07-fix-digit-sum
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D11
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops-digits.md) › D11
 
 # D11 · Largest digit
 

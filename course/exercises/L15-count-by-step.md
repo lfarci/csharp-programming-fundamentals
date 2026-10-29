@@ -7,7 +7,7 @@ next:
   link: /exercises/L04-multiplication-table
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L15
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops-count.md) › L15
 
 # L15 · Count by any step
 

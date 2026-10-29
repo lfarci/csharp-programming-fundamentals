@@ -18,10 +18,10 @@ Before the first theme, read [How to read an exercise](docs/reading-an-exercise.
 
 | # | Part | Theme | Groups | Exercises |
 | --- | --- | --- | --- | --- |
-| 1 | MS Learn Part 1: Write your first code | [Basics](themes/basics.md) | [First programs](themes/basics.md#first-programs), [Conditions](themes/basics.md#conditions) | 7 |
-| 2 | MS Learn Parts 2 and 3: Loops and logic | [Loops](themes/loops.md) | [Count](themes/loops.md#count), [Add up](themes/loops.md#add-up), [Keep only some](themes/loops.md#keep-only-some), [Until the user stops](themes/loops.md#until-the-user-stops), [Draw rows and grids](themes/loops.md#draw-rows-and-grids), [Draw shapes](themes/loops.md#draw-shapes), [Digits](themes/loops.md#digits), [Changing values](themes/loops.md#changing-values), [Search and combine](themes/loops.md#search-and-combine) | 81 |
-| 3 | MS Learn Parts 2 and 4: Work with variable data | [Arrays, text and lists](themes/arrays.md) | [Arrays](themes/arrays.md#arrays), [Text](themes/arrays.md#text), [Files and lists](themes/arrays.md#files-and-lists) | 11 |
-| 4 | MS Learn Parts 5 and 6: Methods and debugging | [Methods and errors](themes/methods.md) | [Methods](themes/methods.md#methods), [Errors](themes/methods.md#errors) | 4 |
+| 1 | MS Learn Part 1: Write your first code | [Basics](themes/basics.md) | [First programs](themes/basics-first-programs.md), [Conditions](themes/basics-conditions.md) | 7 |
+| 2 | MS Learn Parts 2 and 3: Loops and logic | [Loops](themes/loops.md) | [Count](themes/loops-count.md), [Add up](themes/loops-add-up.md), [Keep only some](themes/loops-keep-only-some.md), [Until the user stops](themes/loops-until-the-user-stops.md), [Draw rows and grids](themes/loops-draw-rows-and-grids.md), [Draw shapes](themes/loops-draw-shapes.md), [Digits](themes/loops-digits.md), [Changing values](themes/loops-changing-values.md), [Search and combine](themes/loops-search-and-combine.md) | 81 |
+| 3 | MS Learn Parts 2 and 4: Work with variable data | [Arrays, text and lists](themes/arrays.md) | [Arrays](themes/arrays-arrays.md), [Text](themes/arrays-text.md), [Files and lists](themes/arrays-files-and-lists.md) | 11 |
+| 4 | MS Learn Parts 5 and 6: Methods and debugging | [Methods and errors](themes/methods.md) | [Methods](themes/methods-methods.md), [Errors](themes/methods-errors.md) | 4 |
 
 </div>
 

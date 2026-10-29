@@ -7,7 +7,7 @@ next:
   link: /exercises/E01-safe-number-reader
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Methods and errors](../themes/methods.md) › [Errors](../themes/methods.md#errors) › E02
+[Home](../../README.md) › [Exercises](README.md) › [Methods and errors](../themes/methods.md) › [Errors](../themes/methods-errors.md) › E02
 
 # E02 · Parse or zero
 

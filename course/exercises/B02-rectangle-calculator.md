@@ -7,7 +7,7 @@ next:
   link: /exercises/B03-seconds-to-hms
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [First programs](../themes/basics.md#first-programs) › B02
+[Home](../../README.md) › [Exercises](README.md) › [Basics](../themes/basics.md) › [First programs](../themes/basics-first-programs.md) › B02
 
 # B02 · Rectangle calculator
 

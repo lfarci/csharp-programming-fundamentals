@@ -7,7 +7,7 @@ next:
   link: /exercises/P07-all-digits-odd
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops.md#search-and-combine) › P04
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops-search-and-combine.md) › P04
 
 # P04 · Has an even digit
 

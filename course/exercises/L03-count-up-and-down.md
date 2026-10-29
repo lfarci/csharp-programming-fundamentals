@@ -7,7 +7,7 @@ next:
   link: /exercises/L11-count-from-a-to-b
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L03
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops-count.md) › L03
 
 # L03 · Count up and down
 

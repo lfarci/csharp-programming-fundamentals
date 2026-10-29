@@ -7,7 +7,7 @@ next:
   link: /exercises/L15-count-by-step
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L18
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops-count.md) › L18
 
 # L18 · Square numbers
 

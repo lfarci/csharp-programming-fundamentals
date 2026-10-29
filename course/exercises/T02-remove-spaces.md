@@ -7,7 +7,7 @@ next:
   link: /exercises/T03-count-and-keep-digits
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Text](../themes/arrays.md#text) › T02
+[Home](../../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Text](../themes/arrays-text.md) › T02
 
 # T02 · Remove spaces
 

@@ -7,7 +7,7 @@ next:
   link: /exercises/A18-sum-of-cubes
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A14
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops-add-up.md) › A14
 
 # A14 · Sum the odd numbers
 

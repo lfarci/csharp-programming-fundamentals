@@ -7,7 +7,7 @@ next:
   link: /exercises/D04-digit-sum
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D08
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops-digits.md) › D08
 
 # D08 · First digit
 

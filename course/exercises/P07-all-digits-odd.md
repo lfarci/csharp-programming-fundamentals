@@ -7,7 +7,7 @@ next:
   link: /exercises/P05-first-multiple
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops.md#search-and-combine) › P07
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops-search-and-combine.md) › P07
 
 # P07 · All digits odd
 

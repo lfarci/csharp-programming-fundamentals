@@ -7,7 +7,7 @@ next:
   link: /exercises/A04-factorial
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops.md#add-up) › A19
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops-add-up.md) › A19
 
 # A19 · Product from a to b
 

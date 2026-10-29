@@ -7,7 +7,7 @@ next:
   link: /exercises/S02-fibonacci
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Changing values](../themes/loops.md#changing-values) › S04
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Changing values](../themes/loops-changing-values.md) › S04
 
 # S04 · Doubling
 

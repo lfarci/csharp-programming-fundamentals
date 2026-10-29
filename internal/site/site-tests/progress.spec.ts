@@ -11,9 +11,11 @@ test('Mark as done on an exercise page survives a reload and shows on its theme 
   await expect(page.getByLabel('Mark A04 as done')).toBeChecked()
 
   await page.goto('themes/loops')
+  await expect(page.locator('.groups li', { hasText: 'Add up' })).toContainText('1 / 12')
+  await page.locator('.groups a', { hasText: 'Add up' }).click()
+  await expect(page).toHaveURL(/themes\/loops-add-up$/)
   await expect(page.locator('.theme-ex[data-group="add-up"] .count')).toHaveText(/1 of 12 done/)
   await expect(page.locator('.theme-ex').getByLabel('Mark A04 as done')).toBeChecked()
-  await expect(page.locator('.groups li', { hasText: 'Add up' })).toContainText('1 / 12')
 
   await page.goto('exercises/')
   await expect(page.locator('.overview .summary')).toContainText('1 of 103')
@@ -24,7 +26,7 @@ test('Mark as done on an exercise page survives a reload and shows on its theme 
 })
 
 test('Ticking in a theme table updates the count, and unticking removes it', async ({ page }) => {
-  await page.goto('themes/basics')
+  await page.goto('themes/basics-conditions')
   const box = page.locator('.theme-ex').getByLabel('Mark C01 as done')
   await box.check()
   await expect(page.locator('.theme-ex[data-group="conditions"] .count')).toHaveText(/1 of 4 done/)
@@ -107,4 +109,17 @@ test('The Learn the theory card has one video, one module and the first exercise
   const card = page.locator('.learn-card')
   await expect(card.locator('.steps > li')).toHaveCount(3)
   await expect(card.getByRole('link', { name: 'Start L01 · Trace a loop' })).toHaveAttribute('href', /exercises\/L01-trace-a-loop/)
+})
+
+test('Each group has its own page: theme cards link to it, old anchors still land on the card, Previous/Next go to the next group', async ({ page }) => {
+  await page.goto('themes/loops')
+  await expect(page.locator('.groups li')).toHaveCount(9)
+  await expect(page.locator('.theme-ex')).toHaveCount(0)
+  await expect(page.locator('#count a')).toHaveAttribute('href', /\/themes\/loops-count$/)
+  await page.goto('themes/loops-count')
+  await expect(page.locator('h1')).toHaveText(/Loops · Count/)
+  await expect(page.locator('.VPDocFooter .pager-link.next')).toContainText('Add up')
+  await expect(page.locator('.VPSidebar').getByRole('link', { name: 'Count', exact: true })).toHaveAttribute('href', /loops-count/)
+  await page.goto('exercises/L11-count-from-a-to-b')
+  await expect(page.locator('.ex-head .cpf-kicker a', { hasText: 'Count' })).toHaveAttribute('href', /\/themes\/loops-count$/)
 })

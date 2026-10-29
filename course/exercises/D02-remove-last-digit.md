@@ -7,7 +7,7 @@ next:
   link: /exercises/D03-count-digits
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D02
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops-digits.md) › D02
 
 # D02 · Remove the last digit
 

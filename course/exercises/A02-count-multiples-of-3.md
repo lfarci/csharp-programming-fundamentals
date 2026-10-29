@@ -7,7 +7,7 @@ next:
   link: /exercises/A15-count-even-numbers
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops.md#keep-only-some) › A02
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops-keep-only-some.md) › A02
 
 # A02 · Count multiples of 3
 

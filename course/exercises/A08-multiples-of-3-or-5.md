@@ -7,7 +7,7 @@ next:
   link: /exercises/L05-until-zero
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops.md#keep-only-some) › A08
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops-keep-only-some.md) › A08
 
 # A08 · Multiples of 3 or 5
 

@@ -2,7 +2,7 @@
 """Course structure rules that a review keeps finding by hand. Fails (exit 1) on an error, prints warnings.
 
 - every exercise title is short (at most 24 characters) and does not repeat its kind ("(paper)", "Fix the bugs:");
-- every exercise sits in exactly one theme group and appears in its theme page table (reachable);
+- every exercise sits in exactly one theme group and appears in its group page table (reachable); every group page is linked from its theme page;
 - inside a group the level never goes back (Guided, then Independent, then Challenge);
 - every drill set lists its exercises in course order;
 - theme size balance: every theme has at least 3 exercises, every group 2 to 14 (warning above that);
@@ -21,10 +21,13 @@ errors, warnings = [], []
 for e in site["exercises"]:
     if len(e["title"]) > MAX_TITLE: errors.append(f"{e['id']}: title {e['title']!r} is longer than {MAX_TITLE} characters")
     if re.search(r"\(paper\)|^Fix the bugs|^Arrange the lines", e["title"]): errors.append(f"{e['id']}: the title repeats the kind ({e['title']!r}); the badge shows it")
-    page = f"{ROOT}/course/themes/{e['theme']}.md"
+    page = f"{ROOT}/course/themes/{e['theme']}-{e['group']}.md"   # its group page
     if f"{e['link'].split('/')[-1]}.md" not in open(page, encoding="utf-8").read(): errors.append(f"{e['id']}: not linked from {os.path.relpath(page, ROOT)}")
 
 for x in THEMES:
+    tp = open(f"{ROOT}/course/themes/{x['slug']}.md", encoding="utf-8").read()
+    for g in x["groups"]:
+        if f"{x['slug']}-{g['slug']}.md" not in tp: errors.append(f"group {x['slug']}/{g['slug']}: its page is not linked from themes/{x['slug']}.md")
     n = sum(len(g["ids"]) for g in x["groups"])
     if n < 3: errors.append(f"theme {x['slug']}: only {n} exercise(s); merge it into a neighbour")
     for g in x["groups"]:

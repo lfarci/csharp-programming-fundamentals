@@ -7,7 +7,7 @@ next:
   link: /exercises/F01-numbers-file
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Text](../themes/arrays.md#text) › T03
+[Home](../../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Text](../themes/arrays-text.md) › T03
 
 # T03 · Keep the digits
 

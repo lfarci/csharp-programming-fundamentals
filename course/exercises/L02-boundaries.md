@@ -7,7 +7,7 @@ next:
   link: /exercises/L03-count-up-and-down
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops.md#count) › L02
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Count](../themes/loops-count.md) › L02
 
 # L02 · Boundaries: < or <=
 

@@ -7,7 +7,7 @@ next:
   link: /exercises/D06-palindrome-number
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops.md#digits) › D05
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops-digits.md) › D05
 
 # D05 · Reverse a number
 

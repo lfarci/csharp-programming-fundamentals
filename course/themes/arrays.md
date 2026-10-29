@@ -39,59 +39,9 @@ Do the groups in order, and the exercises of a group from top to bottom. Tick ea
 
 <div class="gh-only">
 
-1. [Arrays](#arrays): Visit every element with `values[i]`. (6 exercises)
-2. [Text](#text): A string is an array of letters. (3 exercises)
-3. [Files and lists](#files-and-lists): Save values in a file; use a list that grows. (2 exercises)
-
-</div>
-
-## Arrays
-
-Visit every element with `values[i]`. Lesson: [Recipe 11 · Array traversal](../cookbook/11-array-traversal.md).
-
-<ThemeExercises theme="arrays" group="arrays" />
-
-<div class="gh-only">
-
-| ID | Exercise | Kind | Level | Effort |
-| --- | --- | --- | --- | --- |
-| R01 | [Sum of an array](../exercises/R01-sum-an-array.md) | write code | Guided | easy |
-| R03 | [Count matches](../exercises/R03-count-matches.md) | write code | Independent | easy |
-| R02 | [Position of the largest](../exercises/R02-largest-in-an-array.md) | write code | Independent | medium |
-| R06 | [Fix: largest value](../exercises/R06-fix-largest-value.md) | fix the bugs | Independent | medium |
-| R04 | [Find the position](../exercises/R04-find-the-position.md) | write code | Independent | medium |
-| R05 | [Reverse an array](../exercises/R05-reverse-an-array.md) | write code | Challenge | medium |
-
-</div>
-
-## Text
-
-A string is an array of letters. Lesson: [Recipe 12 · Build a string](../cookbook/12-string-building.md).
-
-<ThemeExercises theme="arrays" group="text" />
-
-<div class="gh-only">
-
-| ID | Exercise | Kind | Level | Effort |
-| --- | --- | --- | --- | --- |
-| T01 | [Count a letter](../exercises/T01-count-a-letter.md) | write code | Guided | easy |
-| T02 | [Remove spaces](../exercises/T02-remove-spaces.md) | write code | Independent | easy |
-| T03 | [Keep the digits](../exercises/T03-count-and-keep-digits.md) | write code | Challenge | medium |
-
-</div>
-
-## Files and lists
-
-Save values in a file; use a list that grows. Lesson: [Recipe 11 · Array traversal](../cookbook/11-array-traversal.md).
-
-<ThemeExercises theme="arrays" group="files-and-lists" />
-
-<div class="gh-only">
-
-| ID | Exercise | Kind | Level | Effort |
-| --- | --- | --- | --- | --- |
-| F01 | [Save numbers to a file](../exercises/F01-numbers-file.md) | write code | Independent | medium |
-| K01 | [Shopping list](../exercises/K01-shopping-list.md) | write code | Independent | medium |
+1. [Arrays](arrays-arrays.md): Visit every element with `values[i]`. (6 exercises)
+2. [Text](arrays-text.md): A string is an array of letters. (3 exercises)
+3. [Files and lists](arrays-files-and-lists.md): Save values in a file; use a list that grows. (2 exercises)
 
 </div>
 

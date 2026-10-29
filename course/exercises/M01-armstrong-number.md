@@ -7,7 +7,7 @@ next:
   link: /exercises/M02-armstrong-numbers-in-a-range
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops.md#search-and-combine) › M01
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops-search-and-combine.md) › M01
 
 # M01 · Armstrong number
 

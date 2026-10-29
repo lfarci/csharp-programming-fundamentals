@@ -39,41 +39,8 @@ Do the groups in order, and the exercises of a group from top to bottom. Tick ea
 
 <div class="gh-only">
 
-1. [First programs](#first-programs): Print, read and compute. (3 exercises)
-2. [Conditions](#conditions): Decide with `if`, `else if` and `else`. (4 exercises)
-
-</div>
-
-## First programs
-
-Print, read and compute.
-
-<ThemeExercises theme="basics" group="first-programs" />
-
-<div class="gh-only">
-
-| ID | Exercise | Kind | Level | Effort |
-| --- | --- | --- | --- | --- |
-| B01 | [Hello you](../exercises/B01-hello-you.md) | write code | Guided | easy |
-| B02 | [Rectangle calculator](../exercises/B02-rectangle-calculator.md) | write code | Guided | easy |
-| B03 | [Seconds to h, min, s](../exercises/B03-seconds-to-hms.md) | write code | Independent | medium |
-
-</div>
-
-## Conditions
-
-Decide with `if`, `else if` and `else`.
-
-<ThemeExercises theme="basics" group="conditions" />
-
-<div class="gh-only">
-
-| ID | Exercise | Kind | Level | Effort |
-| --- | --- | --- | --- | --- |
-| C01 | [Even or odd](../exercises/C01-even-or-odd.md) | write code | Guided | easy |
-| C02 | [Largest of three](../exercises/C02-largest-of-three.md) | write code | Independent | medium |
-| C03 | [Ticket price](../exercises/C03-ticket-price.md) | write code | Independent | medium |
-| C04 | [Grade from a score](../exercises/C04-grade-from-a-score.md) | write code | Independent | medium |
+1. [First programs](basics-first-programs.md): Print, read and compute. (3 exercises)
+2. [Conditions](basics-conditions.md): Decide with `if`, `else if` and `else`. (4 exercises)
 
 </div>
 

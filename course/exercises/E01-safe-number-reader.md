@@ -7,7 +7,7 @@ next:
   link: /ROADMAP
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Methods and errors](../themes/methods.md) › [Errors](../themes/methods.md#errors) › E01
+[Home](../../README.md) › [Exercises](README.md) › [Methods and errors](../themes/methods.md) › [Errors](../themes/methods-errors.md) › E01
 
 # E01 · Safe number reader
 

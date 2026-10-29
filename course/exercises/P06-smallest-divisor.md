@@ -7,7 +7,7 @@ next:
   link: /exercises/P01-is-it-prime
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops.md#search-and-combine) › P06
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Search and combine](../themes/loops-search-and-combine.md) › P06
 
 # P06 · Smallest divisor
 

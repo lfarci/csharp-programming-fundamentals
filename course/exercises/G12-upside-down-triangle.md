@@ -7,7 +7,7 @@ next:
   link: /exercises/G04-hollow-rectangle
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw shapes](../themes/loops.md#draw-shapes) › G12
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Draw shapes](../themes/loops-draw-shapes.md) › G12
 
 # G12 · Upside-down triangle
 
