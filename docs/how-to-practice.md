@@ -33,6 +33,16 @@ About 40 minutes: **5 min** recall what you did last time · **10 min** trace on
 
 Ask for **one hint** at a time. A good helper asks you questions, gives you a smaller example, or fills a trace table with you. A good helper does **not** write the code for you.
 
+## Drill sets
+
+A pattern sticks when you use it **many times in a row**, with quick feedback. That is what drill sets are for.
+
+- Pick **one** drill set in the [exercise inventory](../exercises/README.md#-drill-sets-same-pattern-many-times) (for example the counter-loop drill).
+- Do 3 to 5 of its exercises in one short session, in order. Run `./ex check` after each one.
+- Each drill changes only a small detail (count by 3, then by 5). Say the recipe's subgoals out loud each time.
+- Next session, start with the last one you did, then continue. Mix in an older drill set now and then.
+- When the set feels boring, you are ready: do the mastery check of the last exercise.
+
 ## When is a recipe "ready"?
 
 When you solve **two** variations without help, and one of them on **another day**. Not yet? Repeat with smaller inputs, or go back one exercise. Tick it in your [progress checklist](progress-checklist.md).

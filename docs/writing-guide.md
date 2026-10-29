@@ -22,6 +22,9 @@ How we write for a **struggling beginner**. Every rule below comes from a source
 | **Give at least two examples per pattern**, in different contexts. | Learners then see the structure, not the surface. | Worked examples (18) |
 | **Practise debugging on purpose** with small, planted bugs and real failing checks. | Novices spend most of their time fixing mistakes, and textbooks leave this out. | (23 tips 3, 9), RPF principles (16) |
 | **Check understanding often**, with small tasks that each target a known misconception. | Formative assessment finds mistakes before they settle. | (22), RPF "challenge misconceptions" (16) |
+| **Drill a recurrent skill many times.** Each recipe has a drill set: 5–12 *near* variations that change only the target (sum odds vs sum evens, count by 3 vs by 5). | Part-task practice of a recurrent sub-skill, with high repetition and quick feedback, makes it automatic. | Part-task practice (26), deliberate practice (27) |
+| **Vary and space the drills.** Short sessions of several same-pattern drills, then mix in older sets. Not one giant exercise. | Deliberate practice is not rote: vary, distribute and break it into parts. | (27) |
+| **Label loop subgoals the same way in every drill.** | Subgoal labels help most for loops. | (28) |
 | **No "just" or "simply"**, and never imply that some people are born programmers. | There is no "geek gene": skill comes from practice. | (23 tip 1), (15) |
 
 ## 2. Lesson format
@@ -101,6 +104,9 @@ The path also follows the order of two well-known beginner courses. Conditions c
 23. Brown, Wilson (2018). *Ten quick tips for teaching programming.* PLOS Computational Biology. <https://doi.org/10.1371/journal.pcbi.1006023>
 24. University of Helsinki, *Python Programming MOOC 2024* (order of topics). <https://programming-24.mooc.fi/>
 25. Microsoft Learn, *Get started with C#* learning paths (order of topics). <https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-1/>
+26. Learning Design Alliance, *Part-task practice*. <https://wiki.learningdesignalliance.org/elements/part-task-practice/>
+27. American Psychological Association, *How do students become good at a skill? Practice and the acquisition of knowledge.* <https://www.apa.org/education-career/k12/practice-acquisition>
+28. Morrison, Margulieux, Decker (2020). *The Curious Case of Loops* (subgoal labelled worked examples for loops). Computer Science Education. <https://par.nsf.gov/servlets/purl/10171483>
 
 ---
 

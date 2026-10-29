@@ -142,6 +142,8 @@ Now alone, in a real file (`./ex start ID`, then `./ex check`):
 
 Warm-ups before G01: [**L09**](../exercises/L09-draw-a-row.md) one row, [**L10**](../exercises/L10-numbers-on-one-line.md) numbers on one line, [**G07**](../exercises/G07-arrange-a-square.md) arrange a square.
 
+🔁 **Want more of the same?** Do the drill set for this recipe in the [exercise inventory](../exercises/README.md#-drill-sets-same-pattern-many-times): 5 to 12 short exercises that use exactly this pattern.
+
 ### 🐞 Debug it
 
 This code has **one** bug. Find it on paper: trace a small example.

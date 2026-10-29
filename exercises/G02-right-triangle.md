@@ -71,4 +71,4 @@ Only after a real try: [open the solution for G02](../solutions/G02_RightTriangl
 
 ---
 
-⬅️ Previous: [G01 · Draw a rectangle](G01-rectangle.md) · 📚 [All exercises](README.md) · Next: [G03 · Multiplication grid](G03-multiplication-grid.md) ➡️
+⬅️ Previous: [G09 · Rows of numbers](G09-number-rows.md) · 📚 [All exercises](README.md) · Next: [G10 · Triangle of row numbers](G10-row-number-triangle.md) ➡️

@@ -85,6 +85,69 @@ namespace Practice.Tests
         public void Example(int test) => Check.Example("L08", test);
     }
 
+    public class L11_CountFromAToB
+    {
+        [Theory, MemberData(nameof(Data.Cases), "L11", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("L11", test);
+
+    }
+
+    public class L12_CountDown
+    {
+        [Theory, MemberData(nameof(Data.Cases), "L12", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("L12", test);
+
+    }
+
+    public class L13_CountBy3
+    {
+        [Theory, MemberData(nameof(Data.Cases), "L13", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("L13", test);
+
+    }
+
+    public class L14_CountBy5
+    {
+        [Theory, MemberData(nameof(Data.Cases), "L14", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("L14", test);
+
+    }
+
+    public class L15_CountByStep
+    {
+        [Theory, MemberData(nameof(Data.Cases), "L15", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("L15", test);
+
+    }
+
+    public class L16_OddNumbers
+    {
+        [Theory, MemberData(nameof(Data.Cases), "L16", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("L16", test);
+
+    }
+
+    public class L17_CountDownBy2
+    {
+        [Theory, MemberData(nameof(Data.Cases), "L17", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("L17", test);
+
+    }
+
+    public class L18_Squares
+    {
+        [Theory, MemberData(nameof(Data.Cases), "L18", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("L18", test);
+
+    }
+
+    public class L19_CountTheTurns
+    {
+        [Theory, MemberData(nameof(Data.Cases), "L19", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("L19", test);
+
+    }
+
     public class A11_ArrangeSumOfSquares
     {
         [Theory, MemberData(nameof(Data.Cases), "A11", MemberType = typeof(Data))]
@@ -166,6 +229,76 @@ namespace Practice.Tests
 
     }
 
+    public class A13_SumFromAToB
+    {
+        [Theory, MemberData(nameof(Data.Cases), "A13", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("A13", test);
+
+    }
+
+    public class A14_SumOddNumbers
+    {
+        [Theory, MemberData(nameof(Data.Cases), "A14", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("A14", test);
+
+    }
+
+    public class A15_CountEvenNumbers
+    {
+        [Theory, MemberData(nameof(Data.Cases), "A15", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("A15", test);
+
+    }
+
+    public class A16_CountMultiplesOf5
+    {
+        [Theory, MemberData(nameof(Data.Cases), "A16", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("A16", test);
+
+    }
+
+    public class A17_SumMultiplesOfK
+    {
+        [Theory, MemberData(nameof(Data.Cases), "A17", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("A17", test);
+
+    }
+
+    public class A18_SumOfCubes
+    {
+        [Theory, MemberData(nameof(Data.Cases), "A18", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("A18", test);
+
+    }
+
+    public class A19_ProductFromAToB
+    {
+        [Theory, MemberData(nameof(Data.Cases), "A19", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("A19", test);
+
+    }
+
+    public class A20_PowersOf2
+    {
+        [Theory, MemberData(nameof(Data.Cases), "A20", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("A20", test);
+
+    }
+
+    public class A21_CountDivisors
+    {
+        [Theory, MemberData(nameof(Data.Cases), "A21", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("A21", test);
+
+    }
+
+    public class A22_SumOfDivisors
+    {
+        [Theory, MemberData(nameof(Data.Cases), "A22", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("A22", test);
+
+    }
+
     public class L09_DrawARow
     {
         [Theory, MemberData(nameof(Data.Cases), "L09", MemberType = typeof(Data))]
@@ -194,10 +327,45 @@ namespace Practice.Tests
 
     }
 
+    public class G08_SolidSquare
+    {
+        [Theory, MemberData(nameof(Data.Cases), "G08", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("G08", test);
+
+    }
+
+    public class G09_NumberRows
+    {
+        [Theory, MemberData(nameof(Data.Cases), "G09", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("G09", test);
+
+    }
+
     public class G02_RightTriangle
     {
         [Theory, MemberData(nameof(Data.Cases), "G02", MemberType = typeof(Data))]
         public void Method(int test) => Check.Method("G02", test);
+
+    }
+
+    public class G10_RowNumberTriangle
+    {
+        [Theory, MemberData(nameof(Data.Cases), "G10", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("G10", test);
+
+    }
+
+    public class G11_CountingTriangle
+    {
+        [Theory, MemberData(nameof(Data.Cases), "G11", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("G11", test);
+
+    }
+
+    public class G12_UpsideDownTriangle
+    {
+        [Theory, MemberData(nameof(Data.Cases), "G12", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("G12", test);
 
     }
 
@@ -212,6 +380,13 @@ namespace Practice.Tests
     {
         [Theory, MemberData(nameof(Data.Cases), "G04", MemberType = typeof(Data))]
         public void Method(int test) => Check.Method("G04", test);
+
+    }
+
+    public class G13_Diagonal
+    {
+        [Theory, MemberData(nameof(Data.Cases), "G13", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("G13", test);
 
     }
 
@@ -250,10 +425,45 @@ namespace Practice.Tests
 
     }
 
+    public class D08_FirstDigit
+    {
+        [Theory, MemberData(nameof(Data.Cases), "D08", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("D08", test);
+
+    }
+
     public class D04_DigitSum
     {
         [Theory, MemberData(nameof(Data.Cases), "D04", MemberType = typeof(Data))]
         public void Method(int test) => Check.Method("D04", test);
+
+    }
+
+    public class D09_CountEvenDigits
+    {
+        [Theory, MemberData(nameof(Data.Cases), "D09", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("D09", test);
+
+    }
+
+    public class D10_CountADigit
+    {
+        [Theory, MemberData(nameof(Data.Cases), "D10", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("D10", test);
+
+    }
+
+    public class D11_LargestDigit
+    {
+        [Theory, MemberData(nameof(Data.Cases), "D11", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("D11", test);
+
+    }
+
+    public class D12_ProductOfDigits
+    {
+        [Theory, MemberData(nameof(Data.Cases), "D12", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("D12", test);
 
     }
 
@@ -278,10 +488,24 @@ namespace Practice.Tests
 
     }
 
+    public class S04_Doubling
+    {
+        [Theory, MemberData(nameof(Data.Cases), "S04", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("S04", test);
+
+    }
+
     public class S02_Fibonacci
     {
         [Theory, MemberData(nameof(Data.Examples), "S02", MemberType = typeof(Data))]
         public void Example(int test) => Check.Example("S02", test);
+    }
+
+    public class S05_NthFibonacci
+    {
+        [Theory, MemberData(nameof(Data.Cases), "S05", MemberType = typeof(Data))]
+        public void Method(int test) => Check.Method("S05", test);
+
     }
 
     public class S03_EvenFibonacciSum

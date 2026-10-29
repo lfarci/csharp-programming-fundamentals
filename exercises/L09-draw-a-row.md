@@ -72,4 +72,4 @@ Only after a real try: [open the solution for L09](../solutions/L09_DrawARow.cs)
 
 ---
 
-⬅️ Previous: [A10 · Sum of a series](A10-sum-of-a-series.md) · 📚 [All exercises](README.md) · Next: [L10 · Numbers on one line](L10-numbers-on-one-line.md) ➡️
+⬅️ Previous: [A22 · Sum of the divisors](A22-sum-of-divisors.md) · 📚 [All exercises](README.md) · Next: [L10 · Numbers on one line](L10-numbers-on-one-line.md) ➡️

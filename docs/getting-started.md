@@ -16,11 +16,23 @@ Everything can be read on the website you are on now (github.com). No account ne
 
 ## 2. Get the files on your computer
 
-```bash
-git clone https://github.com/lfarci/csharp-programming-fundamentals.git
-```
+Pick **one** way. Both are fine.
 
-Run `git pull` before each session to get the newest exercises.
+| | **A. Clone** (simplest) | **B. Fork, then clone your fork** (optional) |
+| --- | --- | --- |
+| Good for | Practising on your own computer. | Keeping a copy of your work on **your** GitHub account (a backup). |
+| How | `git clone https://github.com/lfarci/csharp-programming-fundamentals.git` | On GitHub, click **Fork** (top right). Then `git clone https://github.com/YOUR-NAME/csharp-programming-fundamentals.git` |
+| Get course updates | `git pull` | On your fork's GitHub page: **Sync fork** › **Update branch**. Then `git pull`. |
+| Save your work | Your files stay on your computer. | `git add -f practice` then `git commit -m "A04 done"` and `git push`. |
+
+Then open the folder in your editor: `cd csharp-programming-fundamentals`.
+
+### What you edit, and what you never touch
+
+- ✏️ **You only write in `practice/`**, in the files that `./ex start` creates (like `practice/A04_Factorial.cs`).
+- 🚫 **You never edit** `Program.cs`, `Practice.csproj`, `tests/`, `solutions/` or `tools/`. That is the course's machinery.
+- Your exercise files are **ignored by Git** in the course repo (see `.gitignore`). So `git pull` never touches them, and they never clash with updates. On a fork, `git add -f practice` saves them anyway.
+- 🔄 Get updates before each session: `git pull` (and **Sync fork** first if you forked).
 
 Other ways, if you prefer:
 
@@ -70,7 +82,7 @@ The steps, every time:
    You do not read the keyboard or print anything: the tests call your method with the examples. Write your code where it says `TODO`.
    A few exercises (input loops, menus) are a whole program instead: then you write everything inside `Run()`.
 4. `./ex check`. Read the first **NOT YET**: it shows what was expected and what your code gave. Fix, check again.
-5. All **OK**? Test the edge cases of the page with `./ex run`, then commit your file and tick the exercise in your [progress checklist](progress-checklist.md).
+5. All **OK**? Test the edge cases of the page with `./ex run`, then tick the exercise in your [progress checklist](progress-checklist.md).
 
 Your work stays in `practice/`. The [solutions](../solutions/README.md) are in another folder, so you never mix them up.
 

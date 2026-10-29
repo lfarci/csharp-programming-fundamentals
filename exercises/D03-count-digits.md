@@ -79,4 +79,4 @@ Only after a real try: [open the solution for D03](../solutions/D03_CountDigits.
 
 ---
 
-⬅️ Previous: [D02 · Remove the last digit](D02-remove-last-digit.md) · 📚 [All exercises](README.md) · Next: [D04 · Sum of the digits](D04-digit-sum.md) ➡️
+⬅️ Previous: [D02 · Remove the last digit](D02-remove-last-digit.md) · 📚 [All exercises](README.md) · Next: [D08 · First digit](D08-first-digit.md) ➡️

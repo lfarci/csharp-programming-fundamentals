@@ -80,4 +80,4 @@ Only after a real try: [open the solution for D07](../solutions/D07_FixDigitSum.
 
 ---
 
-⬅️ Previous: [D04 · Sum of the digits](D04-digit-sum.md) · 📚 [All exercises](README.md) · Next: [D05 · Reverse a number](D05-reverse-a-number.md) ➡️
+⬅️ Previous: [D12 · Product of the digits](D12-product-of-digits.md) · 📚 [All exercises](README.md) · Next: [D05 · Reverse a number](D05-reverse-a-number.md) ➡️

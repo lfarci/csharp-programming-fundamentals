@@ -71,4 +71,4 @@ Only after a real try: [open the solution for G03](../solutions/G03_Multiplicati
 
 ---
 
-⬅️ Previous: [G02 · Draw a right triangle](G02-right-triangle.md) · 📚 [All exercises](README.md) · Next: [G04 · Hollow rectangle](G04-hollow-rectangle.md) ➡️
+⬅️ Previous: [G12 · Upside-down triangle](G12-upside-down-triangle.md) · 📚 [All exercises](README.md) · Next: [G04 · Hollow rectangle](G04-hollow-rectangle.md) ➡️

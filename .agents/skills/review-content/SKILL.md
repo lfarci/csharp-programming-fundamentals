@@ -13,6 +13,7 @@ A **pass** reads every learner page against the rubric in `AGENTS.md` and `docs/
    - *scaffold gap*: Guided with fewer than 2 hints, missing edge case or mastery check;
    - *format drift*: a page that leaves the exercise or recipe format in `AGENTS.md` (recipes: all 6 lesson steps, in order, predict and trace on the same code);
    - *persona*: a page that assumes more than [the persona](../../../docs/learner-persona.md) knows at that step, or a step without 🎯 objectives;
+   - *thin drill*: a recipe whose `DRILLS` row has fewer than 5 exercises, or a drill that changes more than one thing from its neighbour;
    - *no retrieval*: a new recipe without predict, complete-it or 🐞 debugging practice;
    - *plain-language*: long sentences, jargon not in the glossary, Git words on learner pages;
    - *access*: missing alt text, `accTitle`/`accDescr`, colour-only meaning, "click here" links, skipped heading levels;

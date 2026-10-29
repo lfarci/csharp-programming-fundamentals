@@ -77,4 +77,4 @@ Only after a real try: [open the solution for A11](../solutions/A11_ArrangeSumOf
 
 ---
 
-⬅️ Previous: [L08 · Guess the number](L08-guess-the-number.md) · 📚 [All exercises](README.md) · Next: [A01 · Sum from 1 to N](A01-sum-1-to-n.md) ➡️
+⬅️ Previous: [L19 · Count the turns](L19-count-the-turns.md) · 📚 [All exercises](README.md) · Next: [A01 · Sum from 1 to N](A01-sum-1-to-n.md) ➡️

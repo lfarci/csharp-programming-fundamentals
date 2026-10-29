@@ -90,4 +90,4 @@ Only after a real try: [open the solution for S02](../solutions/S02_Fibonacci.cs
 
 ---
 
-⬅️ Previous: [S01 · Trace two changing variables (paper)](S01-trace-updates.md) · 📚 [All exercises](README.md) · Next: [S03 · Even Fibonacci sum](S03-even-fibonacci-sum.md) ➡️
+⬅️ Previous: [S04 · Doubling](S04-doubling.md) · 📚 [All exercises](README.md) · Next: [S05 · The n-th Fibonacci number](S05-nth-fibonacci.md) ➡️

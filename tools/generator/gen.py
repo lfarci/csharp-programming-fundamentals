@@ -2,6 +2,7 @@ import json, os, sys, textwrap, glob
 from data4 import E, X
 from data5 import M, GOALS, RULES, HINTS
 import data6  # noqa: F401  (adds ladder, Parsons and debugging exercises to E and M)
+from data7 import DRILLS  # drill bank: same-pattern repetition
 from data6 import NOTE_P
 import re
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -203,6 +204,13 @@ out += ['    B["B · Basics"] --> C["C · Conditions"] --> L["L · Loop mechanic
         '    A --> R["R · Arrays"] --> T["T · Text"]', '    R --> F["F · Files"]', '    L --> E["E · Exceptions"]',
         '    R --> K["K · Collections"]', '    M --> N["N · Methods"]', "```", "",
         "See the full [graph of every exercise and its prerequisites](dependency-graph.md).", ""]
+out += ["## 🔁 Drill sets (same pattern, many times)", "",
+        "Want to practise one pattern today? Do the exercises of **one row**, in order, in one or two short sessions. They change only small details, so your brain sees the **same pattern** again and again. Check each one with `./ex check` before the next.", "",
+        "| Drill | Recipe | Exercises, in order |", "| --- | --- | --- |"]
+for name, r, ids in DRILLS:
+    for i in ids: assert i in byid, f"drill set lists unknown exercise {i}"
+    out.append(f"| {name} | [{RECIPES[r][0]}](../cookbook/{RECIPES[r][1]}.md) | " + " → ".join(f"[{i}]({fname(byid[i])}.md)" for i in ids) + " |")
+out += ["", "Tip: if one feels hard, do the one before it again. If one feels easy, skip ahead. See [How to practice](../docs/how-to-practice.md#drill-sets).", ""]
 out += ["## Custom exercises", ""]
 for f, name, step in FAM:
     rows = [e for e in ORDER if e["id"].startswith(f)]

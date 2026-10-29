@@ -77,4 +77,4 @@ Only after a real try: [open the solution for G01](../solutions/G01_Rectangle.cs
 
 ---
 
-⬅️ Previous: [G07 · Arrange the lines: a square](G07-arrange-a-square.md) · 📚 [All exercises](README.md) · Next: [G02 · Draw a right triangle](G02-right-triangle.md) ➡️
+⬅️ Previous: [G07 · Arrange the lines: a square](G07-arrange-a-square.md) · 📚 [All exercises](README.md) · Next: [G08 · Solid square](G08-solid-square.md) ➡️

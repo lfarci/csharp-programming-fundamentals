@@ -14,7 +14,7 @@ Deeper reference, reached only when the branch fires:
 - `ROADMAP.md`: two tracks aligned to university weeks (W1 Hello World, W2 variables, W3 conditions, W4 loops, W5 files, W6 arrays, 2–6 Nov no class, W7 exceptions, W8 recap, W9 collections, W10 methods, W11–12 objects). It also holds the dated "you are here" callout and the catch-up plan: update both when the date moves on.
 - `cookbook/`: 12 loop **recipes** + decision diagram + `combining-recipes.md`.
 - `exercises/`, `solutions/*.cs`, `tools/starters/`, `tools/exercises.json`, `tests/Practice.Tests/Generated.cs`, `docs/progress-checklist.md`: **generated**. Never hand-edit them.
-- `tools/generator/`: the single source of truth for every exercise (`data1.py` → `data4.py` statements, chained imports; `data5.py` the method each exercise asks for; `data6.py` ladder, 🧩 Parsons and 🐞 debugging exercises; `gen.py` renders).
+- `tools/generator/`: the single source of truth for every exercise (`data1.py` → `data4.py` statements, chained imports; `data5.py` the method each exercise asks for; `data6.py` ladder, 🧩 Parsons and 🐞 debugging exercises; `data7.py` the drill bank and `DRILLS` (drill-set table in `exercises/README.md`); `gen.py` renders).
 - `docs/`: learner guides (getting started, reading an exercise, problem solving, practice, glossary) + the writing guide.
 - `practice/`: **her** project. `./ex start` copies a starter here and never overwrites; nothing else writes here. `Program.cs` and `Practice.csproj` are plumbing she never edits (they run the current exercise via `tools/ex/Runner.cs`).
 - `./ex` (`ex`, `ex.cmd` → `tools/ex`): start, check, run, next, list. `tests/Practice.Tests`: xUnit v3 tests behind `./ex check`, also visible in Test Explorer (`CSharpFundamentals.sln`).
@@ -23,6 +23,9 @@ Deeper reference, reached only when the branch fires:
 
 - **One new difficulty** per exercise: everything else in it is covered by its `pre` exercises. Levels fade the help: 🟢 Guided → 🔵 Independent → 🟣 Challenge.
 - **Read before write**: every new recipe gets predict → trace → complete (or 🧩 arrange) before a blank file, and a 🐞 debugging task that plants one of its common mistakes.
+- **Drills over challenges**: to add practice, add a same-pattern **drill** (`drill()` in `tools/generator/data7.py`) that changes only the target, never a clever combined challenge. Add its ID to the right `DRILLS` row, in difficulty order. A recipe needs 5–12 drills.
+- **Simple ideas**: goal in 1–2 short sentences; she will come back to it often. The examples table comes from `cases`, so it always matches the method. One new difficulty only.
+- **Her files**: learners write only in `practice/` (`practice/*_*.cs` is gitignored). Never ship a file matching that pattern.
 - **Objectives first**: every ROADMAP step starts with a 🎯 objectives line using checkable verbs (trace, write, find the bug); its exercises must train exactly those.
 - **Order holds**: each `pre` sits at the same roadmap step or earlier (one known exception: F01 waits for R01, because `File.ReadAllLines` returns an array), and every plan (roadmap sessions, README start, recap) lists an exercise only after its `pre`.
 - **Hand-written loops**: no LINQ, no `Math.Pow`, no `Array.Reverse`/`string.Join`/`.Contains` shortcuts. Solutions use only what the exercise's roadmap step has taught (files at step 5 build text with `+=`; `List<T>` waits for step 9).

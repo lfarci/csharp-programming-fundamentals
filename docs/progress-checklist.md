@@ -44,6 +44,24 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
   - [ ] mastered (another day, alone)
 - [ ] [L08 · Guess the number](../exercises/L08-guess-the-number.md) solved
   - [ ] mastered (another day, alone)
+- [ ] [L11 · Count from a to b](../exercises/L11-count-from-a-to-b.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [L12 · Count down](../exercises/L12-count-down.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [L13 · Count by 3](../exercises/L13-count-by-3.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [L14 · Count by 5](../exercises/L14-count-by-5.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [L15 · Count by any step](../exercises/L15-count-by-step.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [L16 · Odd numbers](../exercises/L16-odd-numbers.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [L17 · Count down by 2](../exercises/L17-count-down-by-2.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [L18 · Square numbers](../exercises/L18-squares.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [L19 · Count the turns](../exercises/L19-count-the-turns.md) solved
+  - [ ] mastered (another day, alone)
 - [ ] [L09 · Draw one row](../exercises/L09-draw-a-row.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [L10 · Numbers on one line](../exercises/L10-numbers-on-one-line.md) solved
@@ -75,6 +93,26 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
   - [ ] mastered (another day, alone)
 - [ ] [A10 · Sum of a series](../exercises/A10-sum-of-a-series.md) solved
   - [ ] mastered (another day, alone)
+- [ ] [A13 · Sum from a to b](../exercises/A13-sum-from-a-to-b.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A14 · Sum the odd numbers](../exercises/A14-sum-odd-numbers.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A15 · Count the even numbers](../exercises/A15-count-even-numbers.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A16 · Count multiples of 5](../exercises/A16-count-multiples-of-5.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A17 · Sum the multiples of k](../exercises/A17-sum-multiples-of-k.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A18 · Sum of cubes](../exercises/A18-sum-of-cubes.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A19 · Product from a to b](../exercises/A19-product-from-a-to-b.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A20 · Power of 2](../exercises/A20-powers-of-2.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A21 · Count the divisors](../exercises/A21-count-divisors.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A22 · Sum of the divisors](../exercises/A22-sum-of-divisors.md) solved
+  - [ ] mastered (another day, alone)
 
 ## G · 2D drawings (nested loops) (Step 4c)
 
@@ -82,11 +120,23 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
   - [ ] mastered (another day, alone)
 - [ ] [G01 · Draw a rectangle](../exercises/G01-rectangle.md) solved
   - [ ] mastered (another day, alone)
+- [ ] [G08 · Solid square](../exercises/G08-solid-square.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [G09 · Rows of numbers](../exercises/G09-number-rows.md) solved
+  - [ ] mastered (another day, alone)
 - [ ] [G02 · Draw a right triangle](../exercises/G02-right-triangle.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [G10 · Triangle of row numbers](../exercises/G10-row-number-triangle.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [G11 · Counting triangle](../exercises/G11-counting-triangle.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [G12 · Upside-down triangle](../exercises/G12-upside-down-triangle.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [G03 · Multiplication grid](../exercises/G03-multiplication-grid.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [G04 · Hollow rectangle](../exercises/G04-hollow-rectangle.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [G13 · Diagonal](../exercises/G13-diagonal.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [G05 · Checkerboard](../exercises/G05-checkerboard.md) solved
   - [ ] mastered (another day, alone)
@@ -101,7 +151,17 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
   - [ ] mastered (another day, alone)
 - [ ] [D03 · Count the digits](../exercises/D03-count-digits.md) solved
   - [ ] mastered (another day, alone)
+- [ ] [D08 · First digit](../exercises/D08-first-digit.md) solved
+  - [ ] mastered (another day, alone)
 - [ ] [D04 · Sum of the digits](../exercises/D04-digit-sum.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [D09 · Count the even digits](../exercises/D09-count-even-digits.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [D10 · Count one digit](../exercises/D10-count-a-digit.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [D11 · Largest digit](../exercises/D11-largest-digit.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [D12 · Product of the digits](../exercises/D12-product-of-digits.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [D07 · Fix the bugs: digit sum](../exercises/D07-fix-digit-sum.md) solved
   - [ ] mastered (another day, alone)
@@ -114,7 +174,11 @@ For each exercise: **Solved** = it works and matches the examples. **Mastered** 
 
 - [ ] [S01 · Trace two changing variables (paper)](../exercises/S01-trace-updates.md) solved
   - [ ] mastered (another day, alone)
+- [ ] [S04 · Doubling](../exercises/S04-doubling.md) solved
+  - [ ] mastered (another day, alone)
 - [ ] [S02 · Fibonacci](../exercises/S02-fibonacci.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [S05 · The n-th Fibonacci number](../exercises/S05-nth-fibonacci.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [S03 · Even Fibonacci sum](../exercises/S03-even-fibonacci-sum.md) solved
   - [ ] mastered (another day, alone)

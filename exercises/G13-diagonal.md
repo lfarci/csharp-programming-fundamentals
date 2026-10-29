@@ -1,0 +1,74 @@
+🏠 [Home](../README.md) › 🗺️ [Roadmap](../ROADMAP.md) › 📚 [Exercises](README.md) › G13
+
+# G13 · Diagonal
+
+| Level | Difficulty | Roadmap step | Recipes | Do these first | Source |
+| --- | --- | --- | --- | --- | --- |
+| Independent | ⭐⭐ | 4c · Draw in 2D | [Nested grid](../cookbook/08-nested-grid.md) | [G08](G08-solid-square.md), [G04](G04-hollow-rectangle.md) | Custom |
+
+## 🎯 Goal
+
+Print a `size` × `size` square of `.` with `*` on the diagonal (where row equals column).
+
+## ▶️ Start and check
+
+```bash
+./ex start G13     # creates practice/G13_Diagonal.cs (never overwrites your work)
+./ex check G13     # tests your code with the examples below
+```
+
+On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
+
+**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+
+- `void DrawDiagonal(int size)`: input = size, an int (whole number); result = nothing is returned: the method prints with Console.Write / Console.WriteLine.
+
+## 🧪 Examples
+
+Your method must give these results. `./ex check` tests all of them.
+
+| Call | Result |
+| --- | --- |
+| `DrawDiagonal(3)` | prints:<br>`*..`<br>`.*.`<br>`..*` |
+| `DrawDiagonal(1)` | prints:<br>`*` |
+
+## ⚠️ Edge cases to test
+
+- size = 1: `*`.
+
+## 📏 Rules
+
+- Write the loop yourself.
+- No LINQ and no ready-made helpers: you write every step yourself.
+
+## 🗺️ Before coding
+
+Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?
+
+## 💡 Hints (open one at a time)
+
+<details><summary>Hint 1</summary>
+
+G08 square, with an `if` inside the inner loop.
+
+</details>
+
+<details><summary>Hint 2</summary>
+
+`if (row == col)` print `*`, else `.`.
+
+</details>
+
+## ✅ Mastery check
+
+Solve this variation **alone**, on another day:
+
+Put the `*` on the other diagonal (`row + col == size + 1`).
+
+## 🔑 Solution
+
+Only after a real try: [open the solution for G13](../solutions/G13_Diagonal.cs). Your solution can be different and still correct!
+
+---
+
+⬅️ Previous: [G04 · Hollow rectangle](G04-hollow-rectangle.md) · 📚 [All exercises](README.md) · Next: [G05 · Checkerboard](G05-checkerboard.md) ➡️

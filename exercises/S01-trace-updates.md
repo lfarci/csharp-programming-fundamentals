@@ -67,4 +67,4 @@ Only after a real try: [open the solution for S01](../solutions/S01-trace-update
 
 ---
 
-⬅️ Previous: [D06 · Palindrome number](D06-palindrome-number.md) · 📚 [All exercises](README.md) · Next: [S02 · Fibonacci](S02-fibonacci.md) ➡️
+⬅️ Previous: [D06 · Palindrome number](D06-palindrome-number.md) · 📚 [All exercises](README.md) · Next: [S04 · Doubling](S04-doubling.md) ➡️
