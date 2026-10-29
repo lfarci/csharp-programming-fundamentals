@@ -2,7 +2,7 @@
 ...@_style
 direction: down
 
-part0: Before loops {
+part0: "MS Learn Part 1: Write your first code" {
   class: part
   grid-rows: 1
   grid-columns: 4
@@ -13,7 +13,7 @@ part0: Before loops {
   t3: "3. Conditions" {class: step; width: 270; height: 64}
 }
 
-part1: Loops {
+part1: "MS Learn Parts 2 and 3: Loops and logic" {
   class: part
   grid-rows: 2
   grid-columns: 4
@@ -28,18 +28,36 @@ part1: Loops {
   t10: "10. Combine recipes" {class: step; width: 270; height: 64}
 }
 
-part2: After loops {
+part2: "MS Learn Part 4: Work with variable data" {
   class: part
-  grid-rows: 2
+  grid-rows: 1
   grid-columns: 4
   grid-gap: 24
 
   t11: "11. Arrays and text" {class: step; width: 270; height: 64}
   t12: "12. Files" {class: step; width: 270; height: 64}
-  t13: "13. Exceptions" {class: step; width: 270; height: 64}
-  t14: "14. Collections" {class: step; width: 270; height: 64}
-  t15: "15. Methods" {class: step; width: 270; height: 64}
+  t13: "13. Collections" {class: step; width: 270; height: 64}
+}
+
+part3: "MS Learn Part 5: Methods" {
+  class: part
+  grid-rows: 1
+  grid-columns: 4
+  grid-gap: 24
+
+  t14: "14. Methods" {class: step; width: 270; height: 64}
+}
+
+part4: "MS Learn Part 6: Debug and handle exceptions" {
+  class: part
+  grid-rows: 1
+  grid-columns: 4
+  grid-gap: 24
+
+  t15: "15. Exceptions" {class: step; width: 270; height: 64}
 }
 
 part0 -> part1
 part1 -> part2
+part2 -> part3
+part3 -> part4

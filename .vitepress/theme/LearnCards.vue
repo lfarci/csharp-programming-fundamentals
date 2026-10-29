@@ -1,10 +1,11 @@
 <script setup lang="ts">
-// The three theory resources, as cards (same style as the roadmap).
+// The theory resources, as roadmap-style cards. Microsoft Learn first: it is the main companion.
 import { withBase } from 'vitepress'
 const cards = [
-  { num: 1, title: "The C# Player's Guide", text: 'The book: short levels, from zero. The main theory companion.', link: '/learn/players-guide' },
-  { num: 2, title: 'Microsoft Learn', text: 'Free modules and videos from Microsoft, with a free certification path.', link: '/learn/microsoft-learn' },
-  { num: 3, title: 'Extra exercises', text: "The book's own challenges, tracked with XP in the C# Quest Tracker.", link: '/learn/quest-tracker' },
+  { num: 1, title: 'Microsoft Learn: Get started with C#', text: 'The main companion: 6 free parts of short modules. Each part has its themes here.', link: '/learn/microsoft-learn' },
+  { num: 2, title: 'C# Fundamentals for Absolute Beginners', text: 'The video series on Microsoft Learn: one episode per idea, then the matching theme.', link: '/learn/microsoft-learn#the-videos' },
+  { num: 3, title: 'Foundational C# with Microsoft', text: 'A free certification by freeCodeCamp and Microsoft, built on the same 6 parts.', link: '/learn/microsoft-learn#the-free-certification' },
+  { num: 4, title: 'Extra exercises', text: 'More practice, tracked with XP in the C# Quest Tracker.', link: '/learn/quest-tracker' },
 ]
 </script>
 

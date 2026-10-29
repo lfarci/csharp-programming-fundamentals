@@ -29,6 +29,7 @@ How we write for a **struggling beginner**. Every rule below comes from a source
 | **Show, then tell.** Lead with a diagram, a table, an annotated example or a template; then a few short sentences. | Pictures plus words beat words alone. | Multimedia principle (2) |
 | **One word for one thing.** The path is made of **themes** (never "steps" or "weeks"); IDs never change. Every new word gets a glossary row. | Consistent terms lower load; a glossary helps readers with cognitive disabilities. | COGA (9) |
 | **No calendar.** No week numbers, dates or catch-up plans; the roadmap is a path of themes. Theory (which loop, the maths) lives in the cookbook. | Dated plans go stale and make a learner who is behind feel late. | Learner personas (15) |
+| **Theory comes from Microsoft Learn.** Link the module and video for each theme; never copy its text and never reference the content of a copyrighted book. | One trusted, free source keeps the theory consistent and the course legal. | Course policy |
 | **No "just" or "simply"**, and never imply that some people are born programmers. | There is no "geek gene": skill comes from practice. | (23 tip 1), (15) |
 
 ## 2. Lesson format

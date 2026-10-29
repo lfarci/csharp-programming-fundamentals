@@ -1090,107 +1090,497 @@
   {
    "slug": "hello-world",
    "title": "Hello World",
-   "part": "Before loops",
+   "part": "MS Learn Part 1: Write your first code",
    "summary": "Print text and read what the user types.",
    "link": "/themes/hello-world"
   },
   {
    "slug": "variables",
    "title": "Variables and expressions",
-   "part": "Before loops",
-   "summary": "Store values, compute with them, turn text into numbers.",
+   "part": "MS Learn Part 1: Write your first code",
+   "summary": "Store values in variables, compute with operators, convert text to numbers.",
    "link": "/themes/variables"
   },
   {
    "slug": "conditions",
    "title": "Conditions",
-   "part": "Before loops",
-   "summary": "Choose between cases with `if`.",
+   "part": "MS Learn Part 1: Write your first code",
+   "summary": "Make decisions with Boolean expressions and `if`.",
    "link": "/themes/conditions"
   },
   {
    "slug": "loops-repeat",
    "title": "Loops: repeat and count",
-   "part": "Loops",
-   "summary": "Make the computer repeat something, and trace it on paper.",
+   "part": "MS Learn Parts 2 and 3: Loops and logic",
+   "summary": "Repeat code with iteration statements (`for`, `while`), and trace them on paper.",
    "link": "/themes/loops-repeat"
   },
   {
    "slug": "loops-running-result",
    "title": "Loops: keep a running result",
-   "part": "Loops",
+   "part": "MS Learn Parts 2 and 3: Loops and logic",
    "summary": "Add up, count or multiply while you loop.",
    "link": "/themes/loops-running-result"
   },
   {
    "slug": "loops-2d",
    "title": "Loops: draw in 2D",
-   "part": "Loops",
+   "part": "MS Learn Parts 2 and 3: Loops and logic",
    "summary": "Draw rows and columns with a loop inside a loop.",
    "link": "/themes/loops-2d"
   },
   {
    "slug": "loops-digits",
    "title": "Loops: take digits apart",
-   "part": "Loops",
+   "part": "MS Learn Parts 2 and 3: Loops and logic",
    "summary": "Read the digits of a number one by one with `% 10` and `/ 10`.",
    "link": "/themes/loops-digits"
   },
   {
    "slug": "loops-state",
    "title": "Loops: remember changing values",
-   "part": "Loops",
+   "part": "MS Learn Parts 2 and 3: Loops and logic",
    "summary": "Keep the last values in variables, like Fibonacci.",
    "link": "/themes/loops-state"
   },
   {
    "slug": "loops-search",
    "title": "Loops: search",
-   "part": "Loops",
+   "part": "MS Learn Parts 2 and 3: Loops and logic",
    "summary": "Answer a yes-or-no question with a loop: is it there? is it prime?",
    "link": "/themes/loops-search"
   },
   {
    "slug": "combine",
    "title": "Combine recipes",
-   "part": "Loops",
+   "part": "MS Learn Parts 2 and 3: Loops and logic",
    "summary": "Glue two or three recipes together, like the Armstrong check.",
    "link": "/themes/combine"
   },
   {
    "slug": "arrays",
    "title": "Arrays and text",
-   "part": "After loops",
+   "part": "MS Learn Part 4: Work with variable data",
    "summary": "Keep many values in one variable, and work on text letter by letter.",
    "link": "/themes/arrays"
   },
   {
    "slug": "files",
    "title": "Files",
-   "part": "After loops",
+   "part": "MS Learn Part 4: Work with variable data",
    "summary": "Save lines to a file and read them back.",
    "link": "/themes/files"
   },
   {
-   "slug": "exceptions",
-   "title": "Exceptions",
-   "part": "After loops",
-   "summary": "Stop bad input from crashing your program.",
-   "link": "/themes/exceptions"
-  },
-  {
    "slug": "collections",
    "title": "Collections",
-   "part": "After loops",
+   "part": "MS Learn Part 4: Work with variable data",
    "summary": "Use a `List` that can grow.",
    "link": "/themes/collections"
   },
   {
    "slug": "methods",
    "title": "Methods",
-   "part": "After loops",
-   "summary": "Give a recipe a name: parameters and `return`.",
+   "part": "MS Learn Part 5: Methods",
+   "summary": "Give a recipe a name: a method with parameters and a return value.",
    "link": "/themes/methods"
+  },
+  {
+   "slug": "exceptions",
+   "title": "Exceptions",
+   "part": "MS Learn Part 6: Debug and handle exceptions",
+   "summary": "Stop bad input from crashing your program.",
+   "link": "/themes/exceptions"
+  }
+ ],
+ "mslearn": [
+  {
+   "num": 1,
+   "title": "Write your first code using C#",
+   "url": "https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-1/",
+   "modules": [
+    {
+     "title": "Write your first C# code",
+     "url": "https://learn.microsoft.com/en-us/training/modules/csharp-write-first/",
+     "themes": [
+      {
+       "title": "Hello World",
+       "link": "/themes/hello-world"
+      }
+     ]
+    },
+    {
+     "title": "Store data with variables in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/csharp-literals-variables/",
+     "themes": [
+      {
+       "title": "Variables and expressions",
+       "link": "/themes/variables"
+      }
+     ]
+    },
+    {
+     "title": "Perform basic operations on numbers in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/csharp-basic-operations/",
+     "themes": [
+      {
+       "title": "Variables and expressions",
+       "link": "/themes/variables"
+      },
+      {
+       "title": "Loops: take digits apart",
+       "link": "/themes/loops-digits"
+      }
+     ]
+    },
+    {
+     "title": "Add decision logic to your code in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/csharp-if-elseif-else/",
+     "themes": [
+      {
+       "title": "Conditions",
+       "link": "/themes/conditions"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Create and run simple C# console applications",
+   "url": "https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-2/",
+   "modules": [
+    {
+     "title": "Install and configure Visual Studio Code",
+     "url": "https://learn.microsoft.com/en-us/training/modules/install-configure-visual-studio-code/",
+     "themes": [
+      {
+       "title": "Hello World",
+       "link": "/themes/hello-world"
+      }
+     ]
+    },
+    {
+     "title": "Repeat actions with loops in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/csharp-repeat-actions-loops/",
+     "themes": [
+      {
+       "title": "Loops: repeat and count",
+       "link": "/themes/loops-repeat"
+      }
+     ]
+    },
+    {
+     "title": "Organize data with arrays and lists in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/csharp-arrays-lists/",
+     "themes": [
+      {
+       "title": "Arrays and text",
+       "link": "/themes/arrays"
+      },
+      {
+       "title": "Collections",
+       "link": "/themes/collections"
+      }
+     ]
+    },
+    {
+     "title": "Write reusable code in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/csharp-reusable-code/",
+     "themes": [
+      {
+       "title": "Methods",
+       "link": "/themes/methods"
+      }
+     ]
+    },
+    {
+     "title": "Read and write files in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/csharp-read-write-files/",
+     "themes": [
+      {
+       "title": "Files",
+       "link": "/themes/files"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Add logic to C# console applications",
+   "url": "https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-3/",
+   "modules": [
+    {
+     "title": "Evaluate Boolean expressions to make decisions in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/csharp-evaluate-boolean-expressions/",
+     "themes": [
+      {
+       "title": "Conditions",
+       "link": "/themes/conditions"
+      },
+      {
+       "title": "Loops: search",
+       "link": "/themes/loops-search"
+      }
+     ]
+    },
+    {
+     "title": "Control variable scope and logic using code blocks in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/csharp-code-blocks/",
+     "themes": [
+      {
+       "title": "Loops: draw in 2D",
+       "link": "/themes/loops-2d"
+      },
+      {
+       "title": "Loops: remember changing values",
+       "link": "/themes/loops-state"
+      }
+     ]
+    },
+    {
+     "title": "Branch the flow of code using the switch-case construct in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/csharp-switch-case/",
+     "themes": [
+      {
+       "title": "Conditions",
+       "link": "/themes/conditions"
+      }
+     ]
+    },
+    {
+     "title": "Iterate through a code block using for statement in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/csharp-for/",
+     "themes": [
+      {
+       "title": "Loops: repeat and count",
+       "link": "/themes/loops-repeat"
+      },
+      {
+       "title": "Loops: keep a running result",
+       "link": "/themes/loops-running-result"
+      },
+      {
+       "title": "Loops: draw in 2D",
+       "link": "/themes/loops-2d"
+      }
+     ]
+    },
+    {
+     "title": "Add looping logic to your code using the do-while and while statements in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/csharp-do-while/",
+     "themes": [
+      {
+       "title": "Loops: repeat and count",
+       "link": "/themes/loops-repeat"
+      },
+      {
+       "title": "Loops: take digits apart",
+       "link": "/themes/loops-digits"
+      },
+      {
+       "title": "Loops: remember changing values",
+       "link": "/themes/loops-state"
+      },
+      {
+       "title": "Loops: search",
+       "link": "/themes/loops-search"
+      }
+     ]
+    },
+    {
+     "title": "Guided project - Develop conditional branching and looping structures in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/guided-project-develop-conditional-branching-looping/",
+     "themes": [
+      {
+       "title": "Combine recipes",
+       "link": "/themes/combine"
+      }
+     ]
+    },
+    {
+     "title": "Challenge project - Develop branching and looping structures in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/challenge-project-develop-branching-looping-structures-c-sharp/",
+     "themes": [
+      {
+       "title": "Combine recipes",
+       "link": "/themes/combine"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Work with variable data in C# console applications",
+   "url": "https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-4/",
+   "modules": [
+    {
+     "title": "Choose the correct data type in your C# code",
+     "url": "https://learn.microsoft.com/en-us/training/modules/csharp-choose-data-type/",
+     "themes": [
+      {
+       "title": "Variables and expressions",
+       "link": "/themes/variables"
+      }
+     ]
+    },
+    {
+     "title": "Convert data types using casting and conversion techniques in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/csharp-convert-cast/",
+     "themes": [
+      {
+       "title": "Variables and expressions",
+       "link": "/themes/variables"
+      }
+     ]
+    },
+    {
+     "title": "Perform operations on arrays using helper methods in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/csharp-arrays-operations/",
+     "themes": [
+      {
+       "title": "Arrays and text",
+       "link": "/themes/arrays"
+      }
+     ]
+    },
+    {
+     "title": "Format alphanumeric data for presentation in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/csharp-format-strings/",
+     "themes": [
+      {
+       "title": "Arrays and text",
+       "link": "/themes/arrays"
+      }
+     ]
+    },
+    {
+     "title": "Modify the content of strings using built-in string data type methods in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/csharp-modify-content/",
+     "themes": [
+      {
+       "title": "Arrays and text",
+       "link": "/themes/arrays"
+      }
+     ]
+    },
+    {
+     "title": "Guided project - Work with variable data in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/guided-project-work-variable-data-c-sharp/",
+     "themes": []
+    },
+    {
+     "title": "Challenge project - Work with variable data in C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/challenge-project-work-variable-data-c-sharp/",
+     "themes": []
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Create methods in C# console applications",
+   "url": "https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-5/",
+   "modules": [
+    {
+     "title": "Write your first C# method",
+     "url": "https://learn.microsoft.com/en-us/training/modules/write-first-c-sharp-method/",
+     "themes": [
+      {
+       "title": "Methods",
+       "link": "/themes/methods"
+      }
+     ]
+    },
+    {
+     "title": "Create C# methods with parameters",
+     "url": "https://learn.microsoft.com/en-us/training/modules/create-c-sharp-methods-parameters/",
+     "themes": [
+      {
+       "title": "Methods",
+       "link": "/themes/methods"
+      }
+     ]
+    },
+    {
+     "title": "Create C# methods that return values",
+     "url": "https://learn.microsoft.com/en-us/training/modules/create-c-sharp-methods-return-values/",
+     "themes": [
+      {
+       "title": "Methods",
+       "link": "/themes/methods"
+      }
+     ]
+    },
+    {
+     "title": "Guided project - Plan a Petting Zoo Visit",
+     "url": "https://learn.microsoft.com/en-us/training/modules/guided-project-visit-petting-zoo/",
+     "themes": []
+    },
+    {
+     "title": "Challenge project - Create a mini-game",
+     "url": "https://learn.microsoft.com/en-us/training/modules/challenge-project-create-mini-game/",
+     "themes": []
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "Debug C# console applications",
+   "url": "https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-6/",
+   "modules": [
+    {
+     "title": "Review the principles of code debugging and exception handling",
+     "url": "https://learn.microsoft.com/en-us/training/modules/review-principles-code-debugging-exception-handling-c-sharp/",
+     "themes": [
+      {
+       "title": "Exceptions",
+       "link": "/themes/exceptions"
+      }
+     ]
+    },
+    {
+     "title": "Implement the Visual Studio Code debugging tools for C#",
+     "url": "https://learn.microsoft.com/en-us/training/modules/implement-visual-studio-code-debugging-tools/",
+     "themes": [
+      {
+       "title": "Combine recipes",
+       "link": "/themes/combine"
+      }
+     ]
+    },
+    {
+     "title": "Implement exception handling in C# console applications",
+     "url": "https://learn.microsoft.com/en-us/training/modules/implement-exception-handling-c-sharp/",
+     "themes": [
+      {
+       "title": "Exceptions",
+       "link": "/themes/exceptions"
+      }
+     ]
+    },
+    {
+     "title": "Create and throw exceptions in C# console applications",
+     "url": "https://learn.microsoft.com/en-us/training/modules/create-throw-exceptions-c-sharp/",
+     "themes": [
+      {
+       "title": "Exceptions",
+       "link": "/themes/exceptions"
+      }
+     ]
+    },
+    {
+     "title": "Guided project - Debug and handle exceptions in a C# console application using Visual Studio Code",
+     "url": "https://learn.microsoft.com/en-us/training/modules/guided-project-debug-handle-exceptions-c-sharp-console-application/",
+     "themes": []
+    },
+    {
+     "title": "Challenge project - Debug a C# console application using Visual Studio Code",
+     "url": "https://learn.microsoft.com/en-us/training/modules/challenge-project-debug-c-sharp-console-application/",
+     "themes": []
+    }
+   ]
   }
  ]
 }

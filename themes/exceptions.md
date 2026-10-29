@@ -1,4 +1,4 @@
-[Home](../README.md) › [Roadmap](../ROADMAP.md) › Theme 13 of 15
+[Home](../README.md) › [Roadmap](../ROADMAP.md) › Theme 15 of 15
 
 # Exceptions
 
@@ -30,10 +30,10 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 <div class="learn-box">
 
-**Learn the theory** (before or beside the exercises)
+**Learn the theory on Microsoft Learn** ([Part 6: Debug C# console applications](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-6/))
 
-- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 35: Error Handling and Exceptions
-- **Microsoft Learn:** [Implement exception handling in C# console applications](https://learn.microsoft.com/en-us/training/modules/implement-exception-handling-c-sharp/)
+- **Modules:** [Review the principles of code debugging and exception handling](https://learn.microsoft.com/en-us/training/modules/review-principles-code-debugging-exception-handling-c-sharp/) (Part 6) · [Implement exception handling in C# console applications](https://learn.microsoft.com/en-us/training/modules/implement-exception-handling-c-sharp/) (Part 6) · [Create and throw exceptions in C# console applications](https://learn.microsoft.com/en-us/training/modules/create-throw-exceptions-c-sharp/) (Part 6)
+- **Video (C# Fundamentals for Absolute Beginners):** [Gracefully Handling Exceptions](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/gracefully-handling-exceptions/)
 - **Reference:** [Exceptions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/)
 
 </div>
@@ -44,4 +44,4 @@ Typing `abc` instead of a number does not crash your program.
 
 ---
 
-Previous: [Files](files.md) · [Roadmap](../ROADMAP.md) · Next: [Collections](collections.md)
+Previous: [Methods](methods.md) · [Roadmap](../ROADMAP.md)

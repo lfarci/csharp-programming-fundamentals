@@ -31,10 +31,10 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 <div class="learn-box">
 
-**Learn the theory** (before or beside the exercises)
+**Learn the theory on Microsoft Learn** ([Part 3: Add logic to C# console applications](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-3/))
 
-- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 11: Looping
-- **Microsoft Learn:** [Add looping logic to your code using the do-while and while statements in C#](https://learn.microsoft.com/en-us/training/modules/csharp-do-while/)
+- **Modules:** [Add looping logic to your code using the do-while and while statements in C#](https://learn.microsoft.com/en-us/training/modules/csharp-do-while/) (Part 3) · [Evaluate Boolean expressions to make decisions in C#](https://learn.microsoft.com/en-us/training/modules/csharp-evaluate-boolean-expressions/) (Part 3)
+- **Video (C# Fundamentals for Absolute Beginners):** [While Iteration Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/while-iteration-statement/)
 
 </div>
 

@@ -2,7 +2,7 @@
 
 # Loops: repeat and count
 
-Make the computer repeat something, and trace it on paper.
+Repeat code with iteration statements (`for`, `while`), and trace them on paper.
 
 ## After this theme you can
 
@@ -47,11 +47,10 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 <div class="learn-box">
 
-**Learn the theory** (before or beside the exercises)
+**Learn the theory on Microsoft Learn** ([Part 3: Add logic to C# console applications](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-3/))
 
-- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 11: Looping
-- **Microsoft Learn:** [Iterate through a code block using for statement in C#](https://learn.microsoft.com/en-us/training/modules/csharp-for/) · [Add looping logic to your code using the do-while and while statements in C#](https://learn.microsoft.com/en-us/training/modules/csharp-do-while/)
-- **Video:** [Branching and While Loops](https://learn.microsoft.com/en-us/shows/csharp-for-beginners/branching-and-while-loops-csharp-for-beginners/) · [For Loops](https://learn.microsoft.com/en-us/shows/csharp-for-beginners/for-loops-csharp-for-beginners/)
+- **Modules:** [Iterate through a code block using for statement in C#](https://learn.microsoft.com/en-us/training/modules/csharp-for/) (Part 3) · [Add looping logic to your code using the do-while and while statements in C#](https://learn.microsoft.com/en-us/training/modules/csharp-do-while/) (Part 3) · [Repeat actions with loops in C#](https://learn.microsoft.com/en-us/training/modules/csharp-repeat-actions-loops/) (Part 2)
+- **Video (C# Fundamentals for Absolute Beginners):** [for Iteration Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/for-iteration-statement/) · [While Iteration Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/while-iteration-statement/)
 - **Reference:** [Iteration statements](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements)
 
 </div>

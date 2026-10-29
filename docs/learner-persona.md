@@ -9,7 +9,7 @@ Every page in this repo is written for **one** person. Before you write or revie
 | | |
 | --- | --- |
 | **Background** | First year at university. No programming before September. Good at following steps when they are clear. |
-| **Course** | Weekly university C# course (one topic per week) and *The C# Player's Guide* on the side. |
+| **Course** | Weekly university C# course (one topic per week) and free Microsoft Learn lessons on the side. |
 | **Tools** | A laptop with VS Code and .NET. Knows basic git: clone, pull, commit. Uses a terminal a little. |
 | **Where she is** | Her course is at arrays. Conditions are fine. **Loops are not solid yet**: she can read a simple loop but gets stuck on a blank file. |
 | **Time** | Short sessions, 30–60 minutes, a few times a week. She works at her own pace. |

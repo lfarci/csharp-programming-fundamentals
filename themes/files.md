@@ -30,10 +30,10 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 <div class="learn-box">
 
-**Learn the theory** (before or beside the exercises)
+**Learn the theory on Microsoft Learn** ([Part 2: Create and run simple C# console applications](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-2/))
 
-- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 39: Files
-- **Microsoft Learn:** [Read and write files in C#](https://learn.microsoft.com/en-us/training/modules/csharp-read-write-files/)
+- **Modules:** [Read and write files in C#](https://learn.microsoft.com/en-us/training/modules/csharp-read-write-files/) (Part 2)
+- **Video (C# Fundamentals for Absolute Beginners):** [Working with Strings](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/working-with-strings/)
 - **Reference:** [File class](https://learn.microsoft.com/en-us/dotnet/api/system.io.file)
 
 </div>
@@ -44,4 +44,4 @@ You can save numbers to a file, read them back and add them up.
 
 ---
 
-Previous: [Arrays and text](arrays.md) · [Roadmap](../ROADMAP.md) · Next: [Exceptions](exceptions.md)
+Previous: [Arrays and text](arrays.md) · [Roadmap](../ROADMAP.md) · Next: [Collections](collections.md)

@@ -42,10 +42,10 @@ Do them from top to bottom. Tick each one when `./ex check` says DONE.
 
 <div class="learn-box">
 
-**Learn the theory** (before or beside the exercises)
+**Learn the theory on Microsoft Learn** ([Part 3: Add logic to C# console applications](https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-3/))
 
-- **Book:** [*The C# Player's Guide*](../learn/players-guide.md), Level 7: Math, Level 11: Looping
-- **Microsoft Learn:** [Perform basic operations on numbers in C#](https://learn.microsoft.com/en-us/training/modules/csharp-basic-operations/)
+- **Modules:** [Add looping logic to your code using the do-while and while statements in C#](https://learn.microsoft.com/en-us/training/modules/csharp-do-while/) (Part 3) · [Perform basic operations on numbers in C#](https://learn.microsoft.com/en-us/training/modules/csharp-basic-operations/) (Part 1)
+- **Video (C# Fundamentals for Absolute Beginners):** [While Iteration Statement](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/while-iteration-statement/) · [Operators, Expressions, and Statements](https://learn.microsoft.com/en-us/shows/csharp-fundamentals-for-absolute-beginners/operators-expressions-and-statements/)
 
 </div>
 

@@ -228,11 +228,6 @@ Print this page if you like paper. Tick a box when it is true **without help**. 
 - [ ] [F01 · Save numbers to a file](../exercises/F01-numbers-file.md) solved
   - [ ] mastered (another day, alone)
 
-## Exceptions
-
-- [ ] [E01 · Safe number reader](../exercises/E01-safe-number-reader.md) solved
-  - [ ] mastered (another day, alone)
-
 ## Collections
 
 - [ ] [K01 · Shopping list](../exercises/K01-shopping-list.md) solved
@@ -241,6 +236,11 @@ Print this page if you like paper. Tick a box when it is true **without help**. 
 ## Methods
 
 - [ ] [N01 · Armstrong with methods](../exercises/N01-armstrong-with-methods.md) solved
+  - [ ] mastered (another day, alone)
+
+## Exceptions
+
+- [ ] [E01 · Safe number reader](../exercises/E01-safe-number-reader.md) solved
   - [ ] mastered (another day, alone)
 
 ---
