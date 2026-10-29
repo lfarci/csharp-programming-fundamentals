@@ -50,13 +50,13 @@ Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start v
 
 <details><summary>Hint 1</summary>
 
-The D04 loop: take `n % 10`, then `n /= 10`.
+The D04 loop: take the last digit with `int digit = n % 10;`, then remove it with `n /= 10;`.
 
 </details>
 
 <details><summary>Hint 2</summary>
 
-Count the digit only if `digit % 2 == 0`.
+Between the two, count it only if `digit % 2 == 0`.
 
 </details>
 

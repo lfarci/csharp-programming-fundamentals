@@ -19,9 +19,9 @@ Print a rectangle of `*`, `width` wide and `height` high.
 
 On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
 
-**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+**Your job:** fill in this method in the file. The *parameters* are its input; what it **prints** is its result (it has no `return`).
 
-- `void DrawRectangle(int width, int height)`: input = width, an int (whole number), height, an int (whole number); result = nothing is returned: the method prints with Console.Write / Console.WriteLine.
+- `void DrawRectangle(int width, int height)`: input = width, an int (whole number), height, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
 ## 🧪 Examples
 

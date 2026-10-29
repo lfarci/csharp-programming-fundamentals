@@ -19,9 +19,9 @@ Print `step`, 2×`step`, 3×`step`, … up to n, one per line. (`step` is at lea
 
 On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
 
-**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+**Your job:** fill in this method in the file. The *parameters* are its input; what it **prints** is its result (it has no `return`).
 
-- `void CountByStep(int step, int n)`: input = step, an int (whole number), n, an int (whole number); result = nothing is returned: the method prints with Console.Write / Console.WriteLine.
+- `void CountByStep(int step, int n)`: input = step, an int (whole number), n, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
 ## 🧪 Examples
 

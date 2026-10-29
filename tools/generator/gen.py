@@ -41,7 +41,7 @@ def method_job(e):
     for sig, _, _ in M[e["id"]]["methods"]:
         ret, name, ps = parse_sig(sig)
         ins = ", ".join(f"{p[1]}, {TYPE[p[0]]}" for p in ps) or "nothing"
-        res = "nothing is returned: the method prints with Console.Write / Console.WriteLine" if ret == "void" else f"{TYPE[ret]}, given back with return"
+        res = "the lines it writes with Console.Write / Console.WriteLine (no return)" if ret == "void" else f"{TYPE[ret]}, given back with return"
         out.append((name, sig, ins, res))
     return out
 def cs_file(e, starter):
@@ -58,7 +58,7 @@ def cs_file(e, starter):
         if spec and not e.get("task"):
             H += ["YOUR JOB: write the method" + ("s" if len(spec["methods"]) > 1 else "") + " below, where it says TODO."]
             for name, sig, ins, res in method_job(e):
-                H += [f"  {name}", f"    input  (parameters): {ins}", f"    result (return)    : {res}"]
+                H += [f"  {name}", f"    input  (parameters): {ins}", f"    result ({'prints' if sig.split()[2] == 'void' else 'return'}){' ' if sig.split()[2] == 'void' else ''}    : {res}"]
         elif not spec:
             H += ["YOUR JOB: write the whole program inside Run(), where it says TODO.",
                   "Use Console.ReadLine() to read and Console.WriteLine() to print, as usual."]
@@ -120,7 +120,7 @@ for e in E:
         elif e.get("task") == "debug":
             L += ["**Your job:** 🐞 the file already holds code that compiles but gives wrong answers. Run `./ex check`, read which example fails, trace that example on paper, then fix the bug. Change as little as you can.", ""]
         elif e["id"] in M:
-            L += ["**Your job:** fill in " + ("these methods" if len(M[e["id"]]["methods"]) > 1 else "this method") + " in the file. The *parameters* are its input; what you `return` is its result.", ""]
+            L += ["**Your job:** fill in " + ("these methods" if len(M[e["id"]]["methods"]) > 1 else "this method") + " in the file. The *parameters* are its input; " + ("what it **prints** is its result (it has no `return`)." if all(parse_sig(s_)[0] == "void" for s_, _, _ in M[e["id"]]["methods"]) else "what you `return` is its result."), ""]
             for name, sig, ins, res in method_job(e):
                 L += [f"- `{sig.replace('public static ', '')}`: input = {ins}; result = {res}."]
             L += [""]
@@ -160,6 +160,7 @@ cj = [{"id": e["id"], "name": fname(e), "class": cls(e), "title": e["title"], "p
        "kind": "paper" if e.get("paper") else ("method" if e["id"] in M else "output"),
        "methods": [parse_sig(sig)[1] for sig, _, _ in M[e["id"]]["methods"]] if e["id"] in M else [],
        "cases": [jcase(*c) for c in M[e["id"]]["cases"]] if e["id"] in M else [],
+       "checkHint": e.get("check_hint", ""),
        "examples": [{"input": inp, "expected": [o for o in out if o.strip()]} for inp, out in (e["examples"] or [])]}
       for e in ORDER]
 json.dump(cj, open(f"{ROOT}/tools/exercises.json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)

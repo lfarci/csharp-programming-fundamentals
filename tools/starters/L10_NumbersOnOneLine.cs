@@ -9,7 +9,7 @@ namespace Practice
     // YOUR JOB: write the method below, where it says TODO.
     //   PrintNumbers
     //     input  (parameters): n, an int (whole number)
-    //     result (return)    : nothing is returned: the method prints with Console.Write / Console.WriteLine
+    //     result (prints)     : the lines it writes with Console.Write / Console.WriteLine (no return)
     //
     // Check your code:  ./ex check L10     (Windows: .\ex check L10)
     // Try it yourself:  ./ex run L10

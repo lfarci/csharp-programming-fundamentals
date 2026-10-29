@@ -19,9 +19,9 @@ Print 3, 6, 9, … up to n (included when it is a multiple of 3), one per line.
 
 On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
 
-**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+**Your job:** fill in this method in the file. The *parameters* are its input; what it **prints** is its result (it has no `return`).
 
-- `void CountBy3(int n)`: input = n, an int (whole number); result = nothing is returned: the method prints with Console.Write / Console.WriteLine.
+- `void CountBy3(int n)`: input = n, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
 ## 🧪 Examples
 

@@ -19,9 +19,9 @@ Print the numbers from `a` to `b` (both included), one per line.
 
 On Windows, type `.\ex` instead of `./ex`. More in [Getting started](../docs/getting-started.md#5-do-one-exercise).
 
-**Your job:** fill in this method in the file. The *parameters* are its input; what you `return` is its result.
+**Your job:** fill in this method in the file. The *parameters* are its input; what it **prints** is its result (it has no `return`).
 
-- `void PrintFromTo(int a, int b)`: input = a, an int (whole number), b, an int (whole number); result = nothing is returned: the method prints with Console.Write / Console.WriteLine.
+- `void PrintFromTo(int a, int b)`: input = a, an int (whole number), b, an int (whole number); result = the lines it writes with Console.Write / Console.WriteLine (no return).
 
 ## 🧪 Examples
 

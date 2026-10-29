@@ -8,6 +8,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -80,6 +81,7 @@
     "expected": 0
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -143,6 +145,7 @@
     "expected": "0 h 0 min 0 s"
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -210,6 +213,7 @@
     "expected": false
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -285,6 +289,7 @@
     "expected": 8
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -365,6 +370,7 @@
     "expected": 5
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -468,6 +474,7 @@
     "expected": "F"
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -479,6 +486,7 @@
   "kind": "paper",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -490,6 +498,7 @@
   "kind": "paper",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -501,6 +510,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -531,6 +541,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -561,6 +572,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -592,6 +604,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -626,6 +639,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -658,6 +672,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -717,6 +732,7 @@
     "expected": "-2\n-1\n0\n1\n"
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -745,6 +761,7 @@
     "expected": "1\n"
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -780,6 +797,7 @@
     "expected": "3\n6\n9\n12\n"
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -808,6 +826,7 @@
     "expected": "5\n"
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -846,6 +865,7 @@
     "expected": "1\n2\n3\n"
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -881,6 +901,7 @@
     "expected": "1\n"
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -909,6 +930,7 @@
     "expected": "6\n4\n2\n"
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -937,6 +959,7 @@
     "expected": "1\n"
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -983,6 +1006,7 @@
     "expected": 0
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -1025,6 +1049,7 @@
     "expected": 385
    }
   ],
+  "checkHint": "every line you need is already in the file. Check the order: the box line before the loop, the update between { and }, the return after the loop. Did you remove every // and the line return -1; ?",
   "examples": []
  },
  {
@@ -1067,6 +1092,7 @@
     "expected": 0
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -1142,6 +1168,7 @@
     "expected": 0
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -1209,6 +1236,7 @@
     "expected": 3
    }
   ],
+  "checkHint": "the code has 2 bugs. Trace the failing call on paper. Look at the start value of the box, then at the loop test (< or <=).",
   "examples": []
  },
  {
@@ -1251,6 +1279,7 @@
     "expected": 30
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -1325,6 +1354,7 @@
     "expected": 2432902008176640000
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -1369,6 +1399,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -1401,6 +1432,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -1477,6 +1509,7 @@
     "expected": -8
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -1547,6 +1580,7 @@
     "expected": 60
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -1583,6 +1617,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -1650,6 +1685,7 @@
     "expected": 2.0833333333
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -1721,6 +1757,7 @@
     "expected": 0
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -1763,6 +1800,7 @@
     "expected": 0
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -1798,6 +1836,7 @@
     "expected": 0
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -1833,6 +1872,7 @@
     "expected": 5
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -1871,6 +1911,7 @@
     "expected": 0
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -1913,6 +1954,7 @@
     "expected": 0
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -1959,6 +2001,7 @@
     "expected": 1
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -1994,6 +2037,7 @@
     "expected": 1024
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -2036,6 +2080,7 @@
     "expected": 6
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -2071,6 +2116,7 @@
     "expected": 1
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -2106,6 +2152,7 @@
     "expected": "\n"
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -2141,6 +2188,7 @@
     "expected": "\n"
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -2169,6 +2217,7 @@
     "expected": "#\n"
    }
   ],
+  "checkHint": "every line is already in the file. The inner for (col) goes inside the outer for (row). Console.WriteLine(); goes after the inner loop's }, still inside the outer loop. Did you remove every // ?",
   "examples": []
  },
  {
@@ -2199,6 +2248,7 @@
     "expected": "*\n*\n"
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -2249,6 +2299,7 @@
     "expected": "*\n"
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -2279,6 +2330,7 @@
     "expected": "123\n123\n123\n"
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -2307,6 +2359,7 @@
     "expected": "*\n"
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -2355,6 +2408,7 @@
     "expected": "1\n"
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -2383,6 +2437,7 @@
     "expected": "1\n"
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -2411,6 +2466,43 @@
     "expected": "*\n"
    }
   ],
+  "checkHint": "",
+  "examples": []
+ },
+ {
+  "id": "G14",
+  "name": "G14-numbers-in-columns",
+  "class": "G14_NumbersInColumns",
+  "title": "Numbers in columns",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "PrintInColumns"
+  ],
+  "cases": [
+   {
+    "method": "PrintInColumns",
+    "args": [
+     3
+    ],
+    "expected": "  10  20  30\n"
+   },
+   {
+    "method": "PrintInColumns",
+    "args": [
+     1
+    ],
+    "expected": "  10\n"
+   },
+   {
+    "method": "PrintInColumns",
+    "args": [
+     12
+    ],
+    "expected": "  10  20  30  40  50  60  70  80  90 100 110 120\n"
+   }
+  ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -2439,6 +2531,7 @@
     "expected": "   1\n"
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -2481,6 +2574,7 @@
     "expected": "***\n* *\n***\n"
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -2533,6 +2627,7 @@
     "expected": "*\n"
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -2561,6 +2656,7 @@
     "expected": "#\n"
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -2609,6 +2705,7 @@
     "expected": "*\n"
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -2670,6 +2767,7 @@
     "expected": 0
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -2737,6 +2835,7 @@
     "expected": 100
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -2796,6 +2895,7 @@
     "expected": 1
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -2863,6 +2963,7 @@
     "expected": 9
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -2905,6 +3006,7 @@
     "expected": 7
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -2965,6 +3067,7 @@
     "expected": 2
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -3003,6 +3106,7 @@
     "expected": 3
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -3045,6 +3149,7 @@
     "expected": 6
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -3087,6 +3192,7 @@
     "expected": 1
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -3136,6 +3242,7 @@
     "expected": 18
    }
   ],
+  "checkHint": "the code has 2 bugs. Trace DigitSum(123) with a table. Which operator gives the last digit (%) and which removes it (/)? Does the loop run for 10?",
   "examples": []
  },
  {
@@ -3178,6 +3285,7 @@
     "expected": 7
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -3252,6 +3360,7 @@
     "expected": false
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -3288,6 +3397,7 @@
   "kind": "paper",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -3318,6 +3428,7 @@
     "expected": "3\n6\n12\n"
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -3329,6 +3440,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -3396,6 +3508,7 @@
     "expected": 55
    }
   ],
+  "checkHint": "",
   "examples": []
  },
  {
@@ -3438,6 +3551,7 @@
     "expected": 44
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -3519,6 +3633,7 @@
     "expected": false
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -3571,6 +3686,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -3654,6 +3770,7 @@
     "expected": true
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -3706,6 +3823,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -3775,6 +3893,7 @@
     "expected": 0
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -3862,6 +3981,7 @@
     "expected": 2
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -3943,6 +4063,7 @@
     "expected": 9
    }
   ],
+  "checkHint": "the code has 2 bugs. The last index is values.Length - 1. And try [-5, -2, -9]: why is 0 a bad start value for max?",
   "examples": []
  },
  {
@@ -3990,6 +4111,7 @@
     "expected": 0
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -4074,6 +4196,7 @@
     "expected": -1
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -4150,6 +4273,7 @@
     "expected": []
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -4210,6 +4334,7 @@
     "expected": 0
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -4273,6 +4398,7 @@
     "expected": "no-space"
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -4333,6 +4459,7 @@
     "expected": "2026"
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -4363,6 +4490,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -4396,6 +4524,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -4420,6 +4549,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "checkHint": "",
   "examples": [
    {
     "input": [
@@ -4510,6 +4640,7 @@
     "expected": true
    }
   ],
+  "checkHint": "",
   "examples": [
    {
     "input": [
