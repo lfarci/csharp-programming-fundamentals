@@ -151,6 +151,23 @@ SK = ["[Home](../../README.md) › Study skills", "", "# Study skills", "", "How
       "<CardList list=\"skills\" />", "", '<div class="gh-only">', ""] + [f"{i_}. [{a_}]({b_}.md): {c_}" for i_, (a_, b_, c_) in enumerate(SKILLS, 1)] + ["", "</div>", "",
       "---", "", "[Home](../../README.md) · Next: [How to read an exercise](reading-an-exercise.md)", ""]
 open(f"{ROOT}/course/docs/README.md", "w").write("\n".join(SK))
+
+# ---------- projects/README.md: small programs that mix the themes (pages in course/projects/ are hand-written) ----------
+PROJECTS = [("Guessing game", "guessing-game", "The computer picks a number, you guess it. Loops, conditions, safe input."),
+            ("Expense tracker", "expense-tracker", "Type your expenses, see totals, save them to a file. Lists, methods, files."),
+            ("Text quiz", "text-quiz", "Ask questions, check answers, give a score. Arrays, text, methods.")]
+PJ = ["[Home](../../README.md) › Projects", "", "# Projects", "",
+      "A project is a small program that is **yours**: no tests, no answer key. It mixes what you practised in the exercises. "
+      "Do one after the Loops theme, or keep it for the end of the course.", "",
+      "<CardList list=\"projects\" />", "", '<div class="gh-only">', ""] + [f"{i_}. [{a_}]({b_}.md): {c_}" for i_, (a_, b_, c_) in enumerate(PROJECTS, 1)] + ["", "</div>", "",
+      "## How to work on a project", "",
+      "1. Read the whole page once. Then do the **milestones in order**: each one is a program that runs.",
+      "2. Make a new console app **next to** the course folder, not inside it: `dotnet new console -o GuessingGame`, then `cd GuessingGame` and `dotnet run`. Write your code in its `Program.cs`.",
+      "3. Stuck? Open **one** hint, try again, then the next. There is no full solution on purpose: two different programs can both be right.",
+      "4. Done? Try a stretch goal, or show your program to someone and explain it.", "",
+      "---", "", "[Home](../../README.md) · Next: [Guessing game](guessing-game.md)", ""]
+os.makedirs(f"{ROOT}/course/projects", exist_ok=True)
+open(f"{ROOT}/course/projects/README.md", "w").write("\n".join(PJ))
 RECIPE_CARDS = []
 for r, (name, f_) in RECIPES.items():
     m_ = re.search(r"^# Recipe \d+ · [^—\n]+— (.+)$", open(f"{ROOT}/course/cookbook/{f_}.md", encoding="utf-8").read(), re.M)
@@ -282,5 +299,6 @@ _site["flow"] = [{"num": NUM[x["slug"]], "title": x["title"], "link": f"/themes/
                   "exercises": len(TH_EX[x["slug"]]), "first": {"id": TH_EX[x["slug"]][0]["id"], "link": f"/exercises/{fname(TH_EX[x['slug']][0])}"}} for x in THEMES]
 _site["learn"] = LEARN
 _site["recipes"] = RECIPE_CARDS
+_site["projects"] = [{"num": i_, "title": a_, "text": c_, "link": f"/projects/{b_}"} for i_, (a_, b_, c_) in enumerate(PROJECTS, 1)]
 _site["skills"] = [{"num": i_, "title": a_, "text": c_, "link": f"/docs/{b_}"} for i_, (a_, b_, c_) in enumerate(SKILLS, 1)]
 json.dump(_site, open(f"{ROOT}/internal/site/.vitepress/course.json", "w", encoding="utf-8"), indent=1, ensure_ascii=False)

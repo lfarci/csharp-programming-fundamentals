@@ -96,6 +96,7 @@ export default defineConfig({
       { text: 'Learn', link: '/learn/' },
       { text: 'Cookbook', link: '/cookbook/' },
       { text: 'Exercises', link: '/exercises/' },
+      { text: 'Projects', link: '/projects/' },
       { text: 'Study skills', link: '/docs/' },
     ],
     search: { provider: 'local' },
@@ -130,6 +131,12 @@ export default defineConfig({
         { text: 'My progress', link: '/progress' },
         { text: 'Drill sets', link: '/exercises/#drill-sets-same-pattern-many-times' },
         ...themeItems,
+      ] },
+      { text: 'Projects', items: [
+        { text: 'All projects', link: '/projects/' },
+        { text: 'Guessing game', link: '/projects/guessing-game' },
+        { text: 'Expense tracker', link: '/projects/expense-tracker' },
+        { text: 'Text quiz', link: '/projects/text-quiz' },
       ] },
       { text: 'Study skills', items: [
         { text: 'All study skills', link: '/docs/' },

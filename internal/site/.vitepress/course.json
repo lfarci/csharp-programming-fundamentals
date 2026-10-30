@@ -4412,6 +4412,26 @@
    "link": "/cookbook/12-string-building"
   }
  ],
+ "projects": [
+  {
+   "num": 1,
+   "title": "Guessing game",
+   "text": "The computer picks a number, you guess it. Loops, conditions, safe input.",
+   "link": "/projects/guessing-game"
+  },
+  {
+   "num": 2,
+   "title": "Expense tracker",
+   "text": "Type your expenses, see totals, save them to a file. Lists, methods, files.",
+   "link": "/projects/expense-tracker"
+  },
+  {
+   "num": 3,
+   "title": "Text quiz",
+   "text": "Ask questions, check answers, give a score. Arrays, text, methods.",
+   "link": "/projects/text-quiz"
+  }
+ ],
  "skills": [
   {
    "num": 1,
