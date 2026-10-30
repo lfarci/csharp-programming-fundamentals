@@ -36,5 +36,6 @@ EDGE = {
     "R05": [("Reversed", [[1, 2, 3]], [3, 2, 1], "odd length: the middle value stays in the middle.")],
     "T02": [("RemoveSpaces", [" hi "], "hi", "spaces at the start and at the end go too.")],
     "E02": [("ParseOrZero", ["12x"], 0, "12x is not a whole number: int.TryParse returns false, so give back 0.")],
-    "E01": [(["", "7"], ["That is not a number.", "Thanks: 7"], "an empty line is not a number either: ask again.")],
+    "E01": [(["", "7"], ["That is not a number.", "Thanks: 7"], "an empty line is not a number either: ask again."),
+            (["99999999999", "7"], ["That number is too big.", "Thanks: 7"], "too big for an int: int.Parse throws an OverflowException. Catch it with a second catch block.")],
 }

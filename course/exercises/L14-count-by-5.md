@@ -25,7 +25,7 @@ next:
 
 ## Goal
 
-Print 5, 10, 15, … up to n, one per line.
+Print 5, 10, 15, … up to n (included when it is a multiple of 5), one per line.
 
 ## Start and check
 

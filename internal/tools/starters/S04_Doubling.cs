@@ -3,7 +3,8 @@ namespace Practice
     // S04 · Doubling
     // Exercise page: exercises/S04-doubling.md
     //
-    // Goal: Print count values: start, then each value doubled (3, 6, 12).
+    // Goal: Print count values, one per line: start, then each value doubled (start 3, count 3
+    // prints 3, 6, 12).
     //
     // YOUR JOB: write the method below, where it says TODO.
     //   PrintDoubling

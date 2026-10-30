@@ -3,7 +3,7 @@ namespace Practice
     // L14 · Count by 5
     // Exercise page: exercises/L14-count-by-5.md
     //
-    // Goal: Print 5, 10, 15, … up to n, one per line.
+    // Goal: Print 5, 10, 15, … up to n (included when it is a multiple of 5), one per line.
     //
     // YOUR JOB: write the method below, where it says TODO.
     //   CountBy5

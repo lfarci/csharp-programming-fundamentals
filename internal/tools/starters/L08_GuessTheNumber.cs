@@ -3,8 +3,8 @@ namespace Practice
     // L08 · Guess the number
     // Exercise page: exercises/L08-guess-the-number.md
     //
-    // Goal: The secret number is 42. The user guesses until correct. After each wrong guess,
-    // print Higher! or Lower!. At the end print Correct! You needed N tries.
+    // Goal: The secret number is 42. The user keeps guessing until the guess is right. After
+    // each wrong guess, print Higher! or Lower!. At the end print Correct! You needed N tries.
     //
     // YOUR JOB: write the whole program inside Run(), where it says TODO.
     // Use Console.ReadLine() to read and Console.WriteLine() to print, as usual.

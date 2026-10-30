@@ -5605,7 +5605,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
-  "edge_tests": 1,
+  "edge_tests": 2,
   "checkHint": "",
   "theme": "Methods and errors",
   "themeOrder": 4,

@@ -25,7 +25,7 @@ next:
 
 ## Goal
 
-Give back how many numbers from 1 to n are divisible by 5.
+Give back how many numbers from 1 to n (included) are divisible by 5.
 
 ## Start and check
 

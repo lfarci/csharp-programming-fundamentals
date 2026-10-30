@@ -25,7 +25,7 @@ next:
 
 ## Goal
 
-Print `count` values: `start`, then each value doubled (`3, 6, 12`).
+Print `count` values, one per line: `start`, then each value doubled (start 3, count 3 prints `3`, `6`, `12`).
 
 ## Start and check
 

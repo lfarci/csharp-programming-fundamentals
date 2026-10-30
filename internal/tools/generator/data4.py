@@ -226,13 +226,14 @@ Console.WriteLine($"Sum: {sum}");
 ''')
 
 ex(id="E01", slug="safe-number-reader", title="Safe number reader", level="Independent", stars=2, recipes=["09"], pre=["L07"],
-   goal="Ask for a whole number. Use `int.Parse` inside `try`/`catch`: if it fails, print `That is not a number.` and ask again. At the end print `Thanks: X`.",
+   goal="Ask for a whole number. Use `int.Parse` inside `try`/`catch`: if the text is not a number, print `That is not a number.`; if it is too big for an `int` (like `99999999999`), print `That number is too big.`. Then ask again. At the end print `Thanks: X`.",
    examples=[(["abc","12x","42"], ["That is not a number.","That is not a number.","Thanks: 42"])],
-   edge=["Empty input also fails."],
-   constraints=["Use `try`/`catch (FormatException)` (not `TryParse`, which you used in L07)."],
+   edge=["Empty input also fails.", "`99999999999` is a number, but too big for an `int`: `int.Parse` throws an `OverflowException`, not a `FormatException`."],
+   constraints=["Use `try` with `catch (FormatException)` and `catch (OverflowException)` (not `TryParse`, which you used in L07)."],
    hints=["Loop until it works: `while (true) { try { ... break; } catch (FormatException) { ... } }`.",
-          "`break` goes **after** the `int.Parse` line inside `try`: it only runs if parsing worked."],
-   mastery="Also catch `OverflowException` (try `99999999999`) with its own message.",
+          "`break` goes **after** the `int.Parse` line inside `try`: it only runs if parsing worked.",
+          "One `try` can have two `catch` blocks, one per kind of exception, each with its own message."],
+   mastery="Also refuse negative numbers with `That number is negative.` (no exception here: an `if` after the parse).",
    code=r'''int number;
 while (true)
 {
@@ -245,6 +246,10 @@ while (true)
     catch (FormatException)
     {
         Console.WriteLine("That is not a number.");
+    }
+    catch (OverflowException)
+    {
+        Console.WriteLine("That number is too big.");
     }
 }
 Console.WriteLine($"Thanks: {number}");
