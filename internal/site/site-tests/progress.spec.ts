@@ -146,3 +146,14 @@ test('Completion tables have no row-number column, only the exercise and its ID'
   await expect(row.locator('.id')).toHaveText(/^[A-Z]\d\d$/)
   await expect(row).not.toContainText(/^\s*1\s/)
 })
+
+test('The navbar has Projects between Exercises and Study skills, and the projects index lists 3 project cards', async ({ page }) => {
+  await page.goto('./projects/')
+  const nav = (await page.locator('.VPNavBarMenu .VPNavBarMenuLink').allTextContents()).map((t) => t.trim())
+  expect(nav).toEqual(['Start here', 'Roadmap', 'Learn', 'Cookbook', 'Exercises', 'Projects', 'Study skills'])
+  const cards = page.locator('.cards .item')
+  await expect(cards).toHaveCount(3)
+  await cards.filter({ hasText: 'Guessing game' }).click()
+  await expect(page.locator('h1')).toHaveText('Guessing game')
+  for (const h of ['Milestones', 'Stretch goals', 'Hints (open one at a time)']) await expect(page.locator('h2', { hasText: h })).toBeVisible()
+})

@@ -31,6 +31,10 @@ features:
     details: 110 small exercises in 4 themes, split into small groups of the same pattern. Each one adds a single new difficulty.
     link: /exercises/
     linkText: All exercises
+  - title: Small projects
+    details: Three programs of your own, a guessing game, an expense tracker and a quiz, built step by step with milestones and hints.
+    link: /projects/
+    linkText: See the projects
   - title: A checker in your terminal
     details: "./ex start opens your file, ./ex check runs the tests and tells you, in plain words, what is still wrong."
     link: /docs/getting-started#check-your-work

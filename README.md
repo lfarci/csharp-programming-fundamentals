@@ -25,7 +25,7 @@ On Windows, type `.\ex` instead of `./ex`. Full setup: [Getting started](course/
 | Folder | What it holds | Yours? |
 | --- | --- | --- |
 | [`practice/`](practice/README.md) | **Your code**, one file per exercise (created by `./ex start`, ignored by Git). | Yes, the only folder you edit |
-| [`course/`](course/README.md) | What you read: the [roadmap](course/ROADMAP.md), the [exercises](course/exercises/README.md), [learn](course/learn/README.md) (theory from Microsoft Learn), the [cookbook](course/cookbook/README.md) of loop recipes and the [study skills](course/docs/README.md). | No, read it |
+| [`course/`](course/README.md) | What you read: the [roadmap](course/ROADMAP.md), the [exercises](course/exercises/README.md), [learn](course/learn/README.md) (theory from Microsoft Learn), the [cookbook](course/cookbook/README.md) of loop recipes, small [projects](course/projects/README.md) and the [study skills](course/docs/README.md). | No, read it |
 | [`internal/`](internal/README.md) | Course machinery: the tests behind `./ex check`, the reference solutions, the generator, the website. | No, never needed |
 
 ## Sources

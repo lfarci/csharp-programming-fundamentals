@@ -1,10 +1,10 @@
 <script setup lang="ts">
-// A numbered list of page cards (Roadmap look) for index pages: the cookbook recipes, the study skills.
+// A numbered list of page cards (Roadmap look) for index pages: the cookbook recipes, the projects, the study skills.
 import { computed } from 'vue'
 import { withBase } from 'vitepress'
 import course from '../course.json'
 
-const props = defineProps<{ list: 'recipes' | 'skills' }>()
+const props = defineProps<{ list: 'recipes' | 'skills' | 'projects' }>()
 const items = computed(() => (course as any)[props.list] as { num: number; title: string; text: string; link: string }[])
 </script>
 
