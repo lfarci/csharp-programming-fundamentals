@@ -25,7 +25,7 @@ next:
 
 ## Goal
 
-The secret number is 42. The user guesses until correct. After each wrong guess, print `Higher!` or `Lower!`. At the end print `Correct! You needed N tries.`
+The secret number is 42. The user keeps guessing until the guess is right. After each wrong guess, print `Higher!` or `Lower!`. At the end print `Correct! You needed N tries.`
 
 ## Start and check
 

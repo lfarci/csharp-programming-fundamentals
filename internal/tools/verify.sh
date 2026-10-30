@@ -37,6 +37,7 @@ step "Website (VitePress build, no dead links)" site
 site_test() { [ -d ~/.cache/ms-playwright ] || npmi exec playwright install chromium >/dev/null; npmi run --silent test:site -- --reporter=line; }
 step "Website: progress ticks work in a real browser" site_test
 step "Root folder (only the allowed entries)" python3 internal/tools/check-root.py
+step "Prose (doubled words, stray spaces, code spans)" python3 internal/tools/check-prose.py
 step "Markdown lint" npx -y markdownlint-cli2@0.24.0 --config internal/.markdownlint-cli2.jsonc
 step "Spelling" npx -y cspell@10.4.0 -c internal/cspell.json --no-progress "**/*.md"
 echo; [ $status = 0 ] && echo "OK: ALL CHECKS PASSED" || echo "FAIL: SOME CHECKS FAILED"

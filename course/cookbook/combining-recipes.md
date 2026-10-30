@@ -69,7 +69,7 @@ Trace table for 153 (`digits` = 3):
 
 ## Example 2 · Palindrome number
 
-1221 → reversed is 1221 → same → palindrome .
+1221 → reversed is 1221 → same → palindrome.
 
 | Block | Recipe |
 | --- | --- |

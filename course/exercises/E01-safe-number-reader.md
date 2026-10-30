@@ -25,7 +25,7 @@ next:
 
 ## Goal
 
-Ask for a whole number. Use `int.Parse` inside `try`/`catch`: if it fails, print `That is not a number.` and ask again. At the end print `Thanks: X`.
+Ask for a whole number. Use `int.Parse` inside `try`/`catch`: if the text is not a number, print `That is not a number.`; if it is too big for an `int` (like `99999999999`), print `That number is too big.`. Then ask again. At the end print `Thanks: X`.
 
 ## Start and check
 
@@ -53,12 +53,13 @@ Thanks: 42
 ## Edge cases to test
 
 - Empty input also fails.
+- `99999999999` is a number, but too big for an `int`: `int.Parse` throws an `OverflowException`, not a `FormatException`.
 
-`./ex check` tests these too: input *(empty)*, `7` prints `That is not a number.`, `Thanks: 7`.
+`./ex check` tests these too: input *(empty)*, `7` prints `That is not a number.`, `Thanks: 7`; input `99999999999`, `7` prints `That number is too big.`, `Thanks: 7`.
 
 ## Rules
 
-- Use `try`/`catch (FormatException)` (not `TryParse`, which you used in L07).
+- Use `try` with `catch (FormatException)` and `catch (OverflowException)` (not `TryParse`, which you used in L07).
 - No LINQ and no ready-made helpers: you write every step yourself.
 
 ## Before coding
@@ -79,11 +80,17 @@ Loop until it works: `while (true) { try { ... break; } catch (FormatException) 
 
 </details>
 
+<details><summary>Hint 3</summary>
+
+One `try` can have two `catch` blocks, one per kind of exception, each with its own message.
+
+</details>
+
 ## Mastery check
 
 Solve this variation **alone**, on another day:
 
-Also catch `OverflowException` (try `99999999999`) with its own message.
+Also refuse negative numbers with `That number is negative.` (no exception here: an `if` after the parse).
 
 ## Solution
 

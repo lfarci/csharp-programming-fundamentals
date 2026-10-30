@@ -287,7 +287,7 @@ Console.WriteLine($"You chose {number}");
 ''')
 
 ex(id="L08", slug="guess-the-number", title="Guess the number", level="Challenge", stars=2, recipes=["09","02"], pre=["L07"],
-   goal="The secret number is 42. The user guesses until correct. After each wrong guess, print `Higher!` or `Lower!`. At the end print `Correct! You needed N tries.`",
+   goal="The secret number is 42. The user keeps guessing until the guess is right. After each wrong guess, print `Higher!` or `Lower!`. At the end print `Correct! You needed N tries.`",
    examples=[(["50","30","42"], ["Lower!","Higher!","Correct! You needed 3 tries."]), (["42"], ["Correct! You needed 1 tries."])],
    edge=["Right at the first try."],
    constraints=["Use a loop + a counter."],

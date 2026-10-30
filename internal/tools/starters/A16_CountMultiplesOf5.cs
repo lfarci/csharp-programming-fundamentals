@@ -3,7 +3,7 @@ namespace Practice
     // A16 · Count multiples of 5
     // Exercise page: exercises/A16-count-multiples-of-5.md
     //
-    // Goal: Give back how many numbers from 1 to n are divisible by 5.
+    // Goal: Give back how many numbers from 1 to n (included) are divisible by 5.
     //
     // YOUR JOB: write the method below, where it says TODO.
     //   CountMultiplesOf5

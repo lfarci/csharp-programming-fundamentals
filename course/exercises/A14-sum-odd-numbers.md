@@ -25,7 +25,7 @@ next:
 
 ## Goal
 
-Give back 1 + 3 + 5 + … (the odd numbers up to n).
+Give back the sum of the odd numbers from 1 to n (included): 1 + 3 + 5 + …
 
 ## Start and check
 

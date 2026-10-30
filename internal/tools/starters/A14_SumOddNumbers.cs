@@ -3,7 +3,7 @@ namespace Practice
     // A14 · Sum the odd numbers
     // Exercise page: exercises/A14-sum-odd-numbers.md
     //
-    // Goal: Give back 1 + 3 + 5 + … (the odd numbers up to n).
+    // Goal: Give back the sum of the odd numbers from 1 to n (included): 1 + 3 + 5 + …
     //
     // YOUR JOB: write the method below, where it says TODO.
     //   SumOfOdds

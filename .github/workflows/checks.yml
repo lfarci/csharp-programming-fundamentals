@@ -60,6 +60,8 @@ jobs:
         run: python3 internal/tools/check-structure.py
       - name: Repo root has only the allowed entries (README, ./ex, practice/, course/, internal/, tool files)
         run: python3 internal/tools/check-root.py
+      - name: Prose (doubled words, space before punctuation, unclosed code spans)
+        run: python3 internal/tools/check-prose.py
 
   diagrams:
     name: Diagrams (D2 sources match the committed SVGs)

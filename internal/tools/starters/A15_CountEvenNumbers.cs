@@ -3,7 +3,7 @@ namespace Practice
     // A15 · Count the even numbers
     // Exercise page: exercises/A15-count-even-numbers.md
     //
-    // Goal: Give back how many numbers from 1 to n are even.
+    // Goal: Give back how many numbers from 1 to n (included) are even.
     //
     // YOUR JOB: write the method below, where it says TODO.
     //   CountEvens

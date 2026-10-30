@@ -58,7 +58,7 @@ ploop("L14", "count-by-5", "Count by 5", "void CountBy5(int n)",
 {
     Console.WriteLine(i);
 }""", [([22], [5, 10, 15, 20]), ([5], [5])],
- "Print 5, 10, 15, … up to n, one per line.",
+ "Print 5, 10, 15, … up to n (included when it is a multiple of 5), one per line.",
  ["Same loop as L13: only the start and the step change.", "Start at 5, step `i += 5`."], ["n = 4: nothing."],
  "Count by 10 up to n.", ["L13"])
 ploop("L15", "count-by-step", "Count by any step", "void CountByStep(int step, int n)",
@@ -125,7 +125,7 @@ for (int i = 1; i <= n; i += 2)
     sum += i;
 }
 return sum;""", [([5], 9), ([6], 9), ([1], 1), ([0], 0)],
- "Give back 1 + 3 + 5 + … (the odd numbers up to n).",
+ "Give back the sum of the odd numbers from 1 to n (included): 1 + 3 + 5 + …",
  ["Loop over 1, 3, 5, … with `i += 2` (like L16).", "Add each one to `sum`."], ["n = 0: 0."],
  "Give back the sum of the odd numbers from `a` to `b`.", ["A01", "L16"])
 acc("A15", "count-even-numbers", "Count the even numbers", "int CountEvens(int n)",
@@ -138,7 +138,7 @@ for (int i = 1; i <= n; i++)
     }
 }
 return count;""", [([10], 5), ([7], 3), ([1], 0)],
- "Give back how many numbers from 1 to n are even.",
+ "Give back how many numbers from 1 to n (included) are even.",
  ["Like A02: only the test changes.", "`if (i % 2 == 0) count++;`"], ["n = 1: 0."],
  "Count the odd numbers from 1 to n.", ["A02"], recipes=["03"])
 acc("A16", "count-multiples-of-5", "Count multiples of 5", "int CountMultiplesOf5(int n)",
@@ -151,7 +151,7 @@ for (int i = 1; i <= n; i++)
     }
 }
 return count;""", [([20], 4), ([4], 0), ([26], 5)],
- "Give back how many numbers from 1 to n are divisible by 5.",
+ "Give back how many numbers from 1 to n (included) are divisible by 5.",
  ["A02 with 5 instead of 3.", "`i % 5 == 0` means: divisible by 5."], ["n below 5: 0."],
  "Count the multiples of 7 from 1 to n.", ["A15"], recipes=["03"])
 acc("A17", "sum-multiples-of-k", "Sum the multiples of k", "int SumMultiplesOf(int k, int n)",
@@ -383,7 +383,7 @@ for (int i = 1; i <= count; i++)
     Console.WriteLine(value);
     value = value * 2;
 }""", [([1, 5], lines("1", "2", "4", "8", "16")), ([3, 3], lines("3", "6", "12"))],
- "Print `count` values: `start`, then each value doubled (`3, 6, 12`).",
+ "Print `count` values, one per line: `start`, then each value doubled (start 3, count 3 prints `3`, `6`, `12`).",
  ["One box `value`, starting at `start`.", "Each turn: print it, then `value = value * 2;`."], ["count = 0: nothing."],
  "Each value is the previous one plus 3.", "loops-state", ["07"], ["L11"], sort="S015")
 drill("S05", "nth-fibonacci", "N-th Fibonacci", "long Fibonacci(int n)",

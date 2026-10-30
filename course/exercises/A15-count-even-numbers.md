@@ -25,7 +25,7 @@ next:
 
 ## Goal
 
-Give back how many numbers from 1 to n are even.
+Give back how many numbers from 1 to n (included) are even.
 
 ## Start and check
 

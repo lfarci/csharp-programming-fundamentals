@@ -19,6 +19,10 @@ namespace Practice
                 {
                     Console.WriteLine("That is not a number.");
                 }
+                catch (OverflowException)
+                {
+                    Console.WriteLine("That number is too big.");
+                }
             }
             Console.WriteLine($"Thanks: {number}");
         }
