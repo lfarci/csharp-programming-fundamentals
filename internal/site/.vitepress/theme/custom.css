@@ -23,7 +23,7 @@
 .home-grid .card p { margin: 0; font-size: 14px; color: var(--vp-c-text-2); line-height: 1.5; }
 .home-steps { counter-reset: s; list-style: none; padding: 0; }
 .home-steps li { counter-increment: s; position: relative; padding-left: 40px; margin: 10px 0; }
-.home-steps li::before { content: counter(s); position: absolute; left: 0; top: 0; width: 26px; height: 26px; border-radius: 50%; background: var(--vp-c-brand-1); color: #fff; font-size: 14px; display: flex; align-items: center; justify-content: center; font-weight: 600; }
+.home-steps li::before { content: counter(s); position: absolute; left: 0; top: 0; width: 26px; height: 26px; aspect-ratio: 1; box-sizing: border-box; border-radius: 50%; background: var(--vp-c-brand-1); color: #fff; font-size: 14px; display: flex; align-items: center; justify-content: center; font-weight: 600; }
 /* Home hero: the VS Code screenshot as a framed picture, not a floating logo. */
 .VPHero .image-container { width: 100%; max-width: 560px; height: auto; transform: none; }
 .VPHero .image-bg { display: none; }
@@ -35,7 +35,7 @@
 .cpf-card { display: block; border: 1px solid var(--vp-c-divider); border-radius: 12px; padding: 12px 16px; background: var(--vp-c-bg); }
 a.cpf-link { text-decoration: none !important; color: inherit !important; transition: border-color .2s, box-shadow .2s; }
 a.cpf-link:hover { border-color: var(--vp-c-brand-1); box-shadow: 0 4px 16px rgba(52, 81, 178, .10); }
-.cpf-num { flex: none; width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--vp-c-brand-1); background: var(--vp-c-bg); color: var(--vp-c-brand-1);
+.cpf-num { flex: none; box-sizing: border-box; aspect-ratio: 1; width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--vp-c-brand-1); background: var(--vp-c-bg); color: var(--vp-c-brand-1);
   font-weight: 700; font-size: 14px; display: inline-flex; align-items: center; justify-content: center; }
 .cpf-num.on { background: var(--vp-c-brand-1); color: #fff; }
 .cpf-bar { display: block; height: 6px; border-radius: 3px; background: var(--vp-c-default-soft); overflow: hidden; }

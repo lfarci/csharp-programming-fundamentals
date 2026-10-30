@@ -94,16 +94,13 @@ export default defineConfig({
       { text: 'Start here', link: '/docs/getting-started' },
       { text: 'Roadmap', link: '/ROADMAP' },
       { text: 'Learn', link: '/learn/' },
-      { text: 'Cookbook', link: '/cookbook/' },
-      { text: 'Exercises', link: '/exercises/' },
-      { text: 'Projects', link: '/projects/' },
-      { text: 'Study skills', link: '/docs/' },
     ],
+    // Only 3 top links: Cookbook, Exercises, Projects and Study skills are in the sidebar, the home cards and the home footer.
     search: { provider: 'local' },
     outline: { level: [2, 3], label: 'On this page' },
     socialLinks: [{ icon: 'github', link: REPO }],
     editLink: { pattern: `${REPO}/edit/main/course/:path`, text: 'Edit this page on GitHub' },
-    footer: { message: 'The real check is ./ex check in your own copy of the course. This site does not run C#.' },
+    footer: { message: '<a href="/csharp-programming-fundamentals/cookbook/">Cookbook</a> · <a href="/csharp-programming-fundamentals/exercises/">Exercises</a> · <a href="/csharp-programming-fundamentals/projects/">Projects</a> · <a href="/csharp-programming-fundamentals/docs/">Study skills</a>', copyright: 'The real check is ./ex check in your own copy of the course. This site does not run C#.' },
     sidebar: [
       { text: 'Start here', items: [
         { text: 'Home', link: '/' },
@@ -132,9 +129,9 @@ export default defineConfig({
         { text: 'Drill sets', link: '/exercises/#drill-sets-same-pattern-many-times' },
         ...themeItems,
       ] },
-      { text: 'Projects', collapsed: false, items: [
+      { text: 'Projects', collapsed: true, items: [
         { text: 'All projects', link: '/projects/' },
-        ...(course as any).projects.groups.map((g: any) => ({ text: g.title, collapsed: true, items: g.items.map((p: any) => ({ text: p.title, link: p.link })) })),
+        ...(course as any).projects.groups.flatMap((g: any) => g.items.map((p: any) => ({ text: p.title, link: p.link }))),
       ] },
       { text: 'Study skills', items: [
         { text: 'All study skills', link: '/docs/' },
