@@ -25,7 +25,7 @@ next: false
 
 ## Practise after this
 
-- [Arrays, text and lists](../../themes/arrays.md): start with [R01](../../exercises/R01-sum-an-array.md), [R03](../../exercises/R03-count-matches.md), [R02](../../exercises/R02-largest-in-an-array.md)
+- [Arrays, text and lists](../../themes/arrays.md): start with [R01](../../exercises/R01-sum-an-array.md), [R03](../../exercises/R03-count-matches.md), [R07](../../exercises/R07-count-the-even-values.md)
 
 ---
 

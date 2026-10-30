@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Until the user stops** · exercise 1 of 5 in this group (35 of 81 in the theme)
+**Loops › Until the user stops** · exercise 1 of 5 in this group (37 of 86 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |

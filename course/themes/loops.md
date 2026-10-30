@@ -43,12 +43,12 @@ Do the groups in order, and the exercises of a group from top to bottom. Tick ea
 
 1. [Count](loops-count.md): One loop that prints numbers: change only the start, the test or the step. (13 exercises)
 2. [Add up](loops-add-up.md): A box before the loop, an update inside, the result after. (12 exercises)
-3. [Keep only some](loops-keep-only-some.md): The same box, with an `if` inside the loop. (9 exercises)
+3. [Keep only some](loops-keep-only-some.md): The same box, with an `if` inside the loop. (11 exercises)
 4. [Until the user stops](loops-until-the-user-stops.md): Read values until a stop value, or until the input is valid. (5 exercises)
 5. [Draw rows and grids](loops-draw-rows-and-grids.md): One row, then the same row many times: a loop inside a loop. (8 exercises)
 6. [Draw shapes](loops-draw-shapes.md): The inner loop depends on the row, or an `if` picks the character. (8 exercises)
-7. [Digits](loops-digits.md): `% 10` gives the last digit, `/ 10` removes it. (12 exercises)
-8. [Changing values](loops-changing-values.md): Keep the last values in variables, like Fibonacci. (5 exercises)
+7. [Digits](loops-digits.md): `% 10` gives the last digit, `/ 10` removes it. (13 exercises)
+8. [Changing values](loops-changing-values.md): Keep the last values in variables, like Fibonacci. (7 exercises)
 9. [Search and combine](loops-search-and-combine.md): A `bool` flag that starts false, `break` to stop early, then two recipes together. (9 exercises)
 
 </div>

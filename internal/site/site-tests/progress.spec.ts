@@ -1,4 +1,10 @@
 import { test, expect } from '@playwright/test'
+import { readFileSync } from 'node:fs'
+
+// The number of exercises comes from the generator, so adding an exercise does not break these tests.
+const ALL = JSON.parse(readFileSync(new URL('../../tools/exercises.json', import.meta.url), 'utf8'))
+const TOTAL = ALL.length
+const LOOPS = ALL.filter((e: { theme: string }) => e.theme === 'Loops').length
 
 // Each test starts with an empty browser store (Playwright gives every test a fresh context).
 
@@ -18,11 +24,11 @@ test('Mark as done on an exercise page survives a reload and shows on its theme 
   await expect(page.locator('.theme-ex').getByLabel('Mark A04 as done')).toBeChecked()
 
   await page.goto('exercises/')
-  await expect(page.locator('.overview .summary')).toContainText('1 of 103')
-  await expect(page.locator('.overview li.item', { hasText: 'Loops' })).toContainText('1 / 81')
+  await expect(page.locator('.overview .summary')).toContainText(`1 of ${TOTAL}`)
+  await expect(page.locator('.overview li.item', { hasText: 'Loops' })).toContainText(`1 / ${LOOPS}`)
 
   await page.goto('progress')
-  await expect(page.locator('.progress .big')).toContainText('1 of 103')
+  await expect(page.locator('.progress .big')).toContainText(`1 of ${TOTAL}`)
 })
 
 test('Ticking in a theme table updates the count, and unticking removes it', async ({ page }) => {
@@ -41,9 +47,9 @@ test('Importing a sync code from ./ex progress marks those exercises as done', a
   await page.getByLabel('Sync code or JSON backup').fill('CPF1:A1-4;L11')
   await page.getByRole('button', { name: 'Import' }).click()
   await expect(page.getByRole('status')).toContainText('5 new exercise(s)')
-  await expect(page.locator('.progress .big')).toContainText('5 of 103')
+  await expect(page.locator('.progress .big')).toContainText(`5 of ${TOTAL}`)
   await page.reload()
-  await expect(page.locator('.progress .big')).toContainText('5 of 103')
+  await expect(page.locator('.progress .big')).toContainText(`5 of ${TOTAL}`)
   await expect(page.locator('.progress p', { hasText: 'Your sync code for this browser' }).locator('code')).toHaveText('CPF1:A1-4;L11')
 
   await page.goto('exercises/L11-count-from-a-to-b')
@@ -55,7 +61,7 @@ test('A wrong code is refused with a clear message', async ({ page }) => {
   await page.getByLabel('Sync code or JSON backup').fill('hello')
   await page.getByRole('button', { name: 'Import' }).click()
   await expect(page.getByRole('status')).toContainText('Not imported')
-  await expect(page.locator('.progress .big')).toContainText('0 of 103')
+  await expect(page.locator('.progress .big')).toContainText(`0 of ${TOTAL}`)
 })
 
 test('The home page has the logo, the favicon and a playable demo video', async ({ page, request }) => {

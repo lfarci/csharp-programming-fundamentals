@@ -3,8 +3,8 @@ prev:
   text: "S04 · Doubling"
   link: /exercises/S04-doubling
 next:
-  text: "S05 · N-th Fibonacci"
-  link: /exercises/S05-nth-fibonacci
+  text: "S06 · Collatz steps"
+  link: /exercises/S06-collatz-steps
 ---
 
 [Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Changing values](../themes/loops-changing-values.md) › S02
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Changing values** · exercise 3 of 5 in this group (70 of 81 in the theme)
+**Loops › Changing values** · exercise 3 of 7 in this group (73 of 86 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -113,6 +113,6 @@ Only after a real try: [open the solution for S02](../../internal/solutions/S02_
 
 <div class="gh-only">
 
-Previous: [S04 · Doubling](S04-doubling.md) · [Loops](../themes/loops.md) · Next: [S05 · N-th Fibonacci](S05-nth-fibonacci.md)
+Previous: [S04 · Doubling](S04-doubling.md) · [Loops](../themes/loops.md) · Next: [S06 · Collatz steps](S06-collatz-steps.md)
 
 </div>

@@ -19,8 +19,8 @@ Before the first theme, read [How to read an exercise](docs/reading-an-exercise.
 | Part | Theme | Groups | Exercises |
 | --- | --- | --- | --- |
 | MS Learn Part 1: Write your first code | [Basics](themes/basics.md) | [First programs](themes/basics-first-programs.md), [Conditions](themes/basics-conditions.md) | 7 |
-| MS Learn Parts 2 and 3: Loops and logic | [Loops](themes/loops.md) | [Count](themes/loops-count.md), [Add up](themes/loops-add-up.md), [Keep only some](themes/loops-keep-only-some.md), [Until the user stops](themes/loops-until-the-user-stops.md), [Draw rows and grids](themes/loops-draw-rows-and-grids.md), [Draw shapes](themes/loops-draw-shapes.md), [Digits](themes/loops-digits.md), [Changing values](themes/loops-changing-values.md), [Search and combine](themes/loops-search-and-combine.md) | 81 |
-| MS Learn Parts 2 and 4: Work with variable data | [Arrays, text and lists](themes/arrays.md) | [Arrays](themes/arrays-arrays.md), [Text](themes/arrays-text.md), [Files and lists](themes/arrays-files-and-lists.md) | 11 |
+| MS Learn Parts 2 and 3: Loops and logic | [Loops](themes/loops.md) | [Count](themes/loops-count.md), [Add up](themes/loops-add-up.md), [Keep only some](themes/loops-keep-only-some.md), [Until the user stops](themes/loops-until-the-user-stops.md), [Draw rows and grids](themes/loops-draw-rows-and-grids.md), [Draw shapes](themes/loops-draw-shapes.md), [Digits](themes/loops-digits.md), [Changing values](themes/loops-changing-values.md), [Search and combine](themes/loops-search-and-combine.md) | 86 |
+| MS Learn Parts 2 and 4: Work with variable data | [Arrays, text and lists](themes/arrays.md) | [Arrays](themes/arrays-arrays.md), [Text](themes/arrays-text.md), [Files and lists](themes/arrays-files-and-lists.md) | 13 |
 | MS Learn Parts 5 and 6: Methods and debugging | [Methods and errors](themes/methods.md) | [Methods](themes/methods-methods.md), [Errors](themes/methods-errors.md) | 4 |
 
 </div>

@@ -3,8 +3,8 @@ prev:
   text: "R06 · Fix: largest value"
   link: /exercises/R06-fix-largest-value
 next:
-  text: "R05 · Reverse an array"
-  link: /exercises/R05-reverse-an-array
+  text: "R08 · Is it sorted?"
+  link: /exercises/R08-is-it-sorted
 ---
 
 [Home](../../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Arrays](../themes/arrays-arrays.md) › R04
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Arrays, text and lists › Arrays** · exercise 5 of 6 in this group (5 of 11 in the theme)
+**Arrays, text and lists › Arrays** · exercise 6 of 8 in this group (6 of 13 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -99,6 +99,6 @@ Only after a real try: [open the solution for R04](../../internal/solutions/R04_
 
 <div class="gh-only">
 
-Previous: [R06 · Fix: largest value](R06-fix-largest-value.md) · [Arrays, text and lists](../themes/arrays.md) · Next: [R05 · Reverse an array](R05-reverse-an-array.md)
+Previous: [R06 · Fix: largest value](R06-fix-largest-value.md) · [Arrays, text and lists](../themes/arrays.md) · Next: [R08 · Is it sorted?](R08-is-it-sorted.md)
 
 </div>

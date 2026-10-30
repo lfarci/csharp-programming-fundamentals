@@ -29,6 +29,8 @@ Do the exercises from top to bottom. Tick each one when `./ex check` says DONE.
 | A12 | [Fix: multiples of 7](../exercises/A12-fix-count-multiples-of-7.md) | fix the bugs | Guided | easy |
 | A03 | [Sum of the even numbers](../exercises/A03-sum-even-values.md) | write code | Independent | easy |
 | A17 | [Sum the multiples of k](../exercises/A17-sum-multiples-of-k.md) | write code | Independent | medium |
+| A23 | [FizzBuzz](../exercises/A23-fizzbuzz.md) | write code | Independent | medium |
+| A24 | [Perfect number](../exercises/A24-perfect-number.md) | write code | Independent | medium |
 | A08 | [Multiples of 3 or 5](../exercises/A08-multiples-of-3-or-5.md) | write code | Challenge | medium |
 
 </div>

@@ -1,7 +1,7 @@
 ---
 prev:
-  text: "R03 · Count matches"
-  link: /exercises/R03-count-matches
+  text: "R07 · Count the even values"
+  link: /exercises/R07-count-the-even-values
 next:
   text: "R06 · Fix: largest value"
   link: /exercises/R06-fix-largest-value
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Arrays, text and lists › Arrays** · exercise 3 of 6 in this group (3 of 11 in the theme)
+**Arrays, text and lists › Arrays** · exercise 4 of 8 in this group (4 of 13 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -93,6 +93,6 @@ Only after a real try: [open the solution for R02](../../internal/solutions/R02_
 
 <div class="gh-only">
 
-Previous: [R03 · Count matches](R03-count-matches.md) · [Arrays, text and lists](../themes/arrays.md) · Next: [R06 · Fix: largest value](R06-fix-largest-value.md)
+Previous: [R07 · Count the even values](R07-count-the-even-values.md) · [Arrays, text and lists](../themes/arrays.md) · Next: [R06 · Fix: largest value](R06-fix-largest-value.md)
 
 </div>

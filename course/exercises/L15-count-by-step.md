@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Count** · exercise 12 of 13 in this group (12 of 81 in the theme)
+**Loops › Count** · exercise 12 of 13 in this group (12 of 86 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |

@@ -1,7 +1,7 @@
 ---
 prev:
-  text: "S05 · N-th Fibonacci"
-  link: /exercises/S05-nth-fibonacci
+  text: "S07 · Greatest common divisor"
+  link: /exercises/S07-greatest-common-divisor
 next:
   text: "P03 · Has a multiple of 7"
   link: /exercises/P03-has-a-multiple-of-7
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Changing values** · exercise 5 of 5 in this group (72 of 81 in the theme)
+**Loops › Changing values** · exercise 7 of 7 in this group (77 of 86 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -100,6 +100,6 @@ Only after a real try: [open the solution for S03](../../internal/solutions/S03_
 
 <div class="gh-only">
 
-Previous: [S05 · N-th Fibonacci](S05-nth-fibonacci.md) · [Loops](../themes/loops.md) · Next: [P03 · Has a multiple of 7](P03-has-a-multiple-of-7.md)
+Previous: [S07 · Greatest common divisor](S07-greatest-common-divisor.md) · [Loops](../themes/loops.md) · Next: [P03 · Has a multiple of 7](P03-has-a-multiple-of-7.md)
 
 </div>

@@ -5,6 +5,7 @@ from data5 import M, GOALS, RULES, HINTS
 import data6  # noqa: F401  (adds ladder, Parsons and debugging exercises to E and M)
 from data7 import DRILLS  # drill bank: same-pattern repetition
 import data8  # noqa: F401  (search drills, Methods and Errors exercises)
+import data10  # noqa: F401  (FizzBuzz, perfect number, Collatz, Euclid, digital root, array drills)
 from data9 import EDGE  # edge-case tests with their own hint
 from data6 import NOTE_P
 from themes import THEMES, BYSLUG, GROUP

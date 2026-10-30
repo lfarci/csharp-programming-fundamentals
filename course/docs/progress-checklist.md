@@ -104,6 +104,10 @@ Print this page if you like paper. Tick a box when it is true **without help**. 
   - [ ] mastered (another day, alone)
 - [ ] [A17 · Sum the multiples of k](../exercises/A17-sum-multiples-of-k.md) solved
   - [ ] mastered (another day, alone)
+- [ ] [A23 · FizzBuzz](../exercises/A23-fizzbuzz.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A24 · Perfect number](../exercises/A24-perfect-number.md) solved
+  - [ ] mastered (another day, alone)
 - [ ] [A08 · Multiples of 3 or 5](../exercises/A08-multiples-of-3-or-5.md) solved
   - [ ] mastered (another day, alone)
 
@@ -182,6 +186,8 @@ Print this page if you like paper. Tick a box when it is true **without help**. 
   - [ ] mastered (another day, alone)
 - [ ] [D05 · Reverse a number](../exercises/D05-reverse-a-number.md) solved
   - [ ] mastered (another day, alone)
+- [ ] [D13 · Digital root](../exercises/D13-digital-root.md) solved
+  - [ ] mastered (another day, alone)
 - [ ] [D06 · Palindrome number](../exercises/D06-palindrome-number.md) solved
   - [ ] mastered (another day, alone)
 
@@ -193,7 +199,11 @@ Print this page if you like paper. Tick a box when it is true **without help**. 
   - [ ] mastered (another day, alone)
 - [ ] [S02 · Fibonacci](../exercises/S02-fibonacci.md) solved
   - [ ] mastered (another day, alone)
+- [ ] [S06 · Collatz steps](../exercises/S06-collatz-steps.md) solved
+  - [ ] mastered (another day, alone)
 - [ ] [S05 · N-th Fibonacci](../exercises/S05-nth-fibonacci.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [S07 · Greatest common divisor](../exercises/S07-greatest-common-divisor.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [S03 · Even Fibonacci sum](../exercises/S03-even-fibonacci-sum.md) solved
   - [ ] mastered (another day, alone)
@@ -227,11 +237,15 @@ Print this page if you like paper. Tick a box when it is true **without help**. 
   - [ ] mastered (another day, alone)
 - [ ] [R03 · Count matches](../exercises/R03-count-matches.md) solved
   - [ ] mastered (another day, alone)
+- [ ] [R07 · Count the even values](../exercises/R07-count-the-even-values.md) solved
+  - [ ] mastered (another day, alone)
 - [ ] [R02 · Position of the largest](../exercises/R02-largest-in-an-array.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [R06 · Fix: largest value](../exercises/R06-fix-largest-value.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [R04 · Find the position](../exercises/R04-find-the-position.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [R08 · Is it sorted?](../exercises/R08-is-it-sorted.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [R05 · Reverse an array](../exercises/R05-reverse-an-array.md) solved
   - [ ] mastered (another day, alone)
