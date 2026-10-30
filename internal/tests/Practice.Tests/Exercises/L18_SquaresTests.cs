@@ -19,5 +19,8 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "L18 example 2: PrintSquares(1) prints \"1\"")]
         public void Example2() => Expect.Prints("1", () => L18_Squares.PrintSquares(1));
+
+        [Fact(DisplayName = "L18 example 3: edge case, PrintSquares(0) prints nothing")]
+        public void Edge1() => Expect.Prints("", () => L18_Squares.PrintSquares(0), hint: "PrintSquares(0): the loop runs 0 times.");
     }
 }

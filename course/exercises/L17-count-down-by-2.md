@@ -53,6 +53,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - n = 1: one line.
 
+`./ex check` tests these too: `CountDownBy2(1)` prints `1`.
+
 ## Rules
 
 - Write the loop yourself.

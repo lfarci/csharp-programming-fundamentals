@@ -24,5 +24,12 @@ namespace Practice.Tests
             * *
             ***
             """, () => G04_HollowRectangle.DrawHollowRectangle(3, 3));
+
+        [Fact(DisplayName = "G04 example 3: edge case, DrawHollowRectangle(4, 2) prints 2 lines")]
+        public void Edge1() => Expect.Prints(
+            """
+            ****
+            ****
+            """, () => G04_HollowRectangle.DrawHollowRectangle(4, 2), hint: "height 2: both rows are a top or a bottom row, so there is no inside.");
     }
 }

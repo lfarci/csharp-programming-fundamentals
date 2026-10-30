@@ -55,6 +55,8 @@ Your method must give these results. `./ex check` tests all of them.
 - One element.
 - Odd or even length.
 
+`./ex check` tests these too: `Reversed(new int[] { 1, 2, 3 })` gives `new int[] { 3, 2, 1 }`.
+
 ## Rules
 
 - No `Array.Reverse`. Write into the new array with an index.

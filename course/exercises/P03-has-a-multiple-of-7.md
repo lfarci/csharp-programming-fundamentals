@@ -55,6 +55,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - `a` bigger than `b`: no number, so `false`.
 
+`./ex check` tests these too: `HasMultipleOf7(20, 10)` gives `false`.
+
 ## Rules
 
 - Write the loop yourself.

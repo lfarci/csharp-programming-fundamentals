@@ -60,6 +60,8 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 
 - N = 0 → all results are 0.
 
+`./ex check` tests these too: input `0` prints `0 x 1 = 0`, `0 x 10 = 0`.
+
 ## Rules
 
 - One `for` loop.

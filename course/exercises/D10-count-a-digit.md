@@ -54,6 +54,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - The digit is not there: 0.
 
+`./ex check` tests these too: `CountDigit(100, 0)` gives `2`.
+
 ## Rules
 
 - Write the loop yourself.

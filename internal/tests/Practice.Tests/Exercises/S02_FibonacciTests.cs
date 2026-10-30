@@ -25,5 +25,11 @@ namespace Practice.Tests
             input: ["10"],
             lines: ["0 1 1 2 3 5 8 13 21 34"],
             run: () => S02_Fibonacci.Run());
+
+        [Fact(DisplayName = "S02 example 4: edge case, input 2 prints \"0 1\"")]
+        public void Edge1() => Expect.Output(
+            input: ["2"],
+            lines: ["0 1"],
+            run: () => S02_Fibonacci.Run(), hint: "N = 2: only the two start values.");
     }
 }

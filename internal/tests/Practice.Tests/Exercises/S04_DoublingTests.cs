@@ -25,5 +25,8 @@ namespace Practice.Tests
             6
             12
             """, () => S04_Doubling.PrintDoubling(3, 3));
+
+        [Fact(DisplayName = "S04 example 3: edge case, PrintDoubling(1, 0) prints nothing")]
+        public void Edge1() => Expect.Prints("", () => S04_Doubling.PrintDoubling(1, 0), hint: "count = 0: nothing is printed.");
     }
 }

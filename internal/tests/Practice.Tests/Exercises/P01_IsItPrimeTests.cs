@@ -25,5 +25,11 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "P01 example 6: IsPrime(0) returns false")]
         public void Example6() => Expect.Returns(false, () => P01_IsItPrime.IsPrime(0));
+
+        [Fact(DisplayName = "P01 example 7: edge case, IsPrime(25) returns false")]
+        public void Edge1() => Expect.Returns(false, () => P01_IsItPrime.IsPrime(25), hint: "25 = 5 x 5: test the divisor 5 too (i * i <= n, not i * i < n).");
+
+        [Fact(DisplayName = "P01 example 8: edge case, IsPrime(4) returns false")]
+        public void Edge2() => Expect.Returns(false, () => P01_IsItPrime.IsPrime(4), hint: "4 = 2 x 2: the smallest even number that is not prime.");
     }
 }

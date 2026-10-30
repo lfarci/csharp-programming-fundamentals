@@ -25,5 +25,8 @@ namespace Practice.Tests
             4
             2
             """, () => L17_CountDownBy2.CountDownBy2(6));
+
+        [Fact(DisplayName = "L17 example 3: edge case, CountDownBy2(1) prints \"1\"")]
+        public void Edge1() => Expect.Prints("1\n", () => L17_CountDownBy2.CountDownBy2(1), hint: "start at n itself: CountDownBy2(1) prints 1, then stops.");
     }
 }

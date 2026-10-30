@@ -53,6 +53,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - n = 0: nothing.
 
+`./ex check` tests these too: `PrintSquares(0)` prints nothing.
+
 ## Rules
 
 - Write the loop yourself.

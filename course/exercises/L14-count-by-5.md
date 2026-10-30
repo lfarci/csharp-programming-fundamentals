@@ -53,6 +53,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - n = 4: nothing.
 
+`./ex check` tests these too: `CountBy5(4)` prints nothing.
+
 ## Rules
 
 - Write the loop yourself.

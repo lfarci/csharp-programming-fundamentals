@@ -27,7 +27,7 @@ python3 - "$tmp/sol.xml" <<'PY'
 import json, sys, xml.etree.ElementTree as T
 tests = list(T.parse(sys.argv[1]).getroot().iter("test"))
 bad = [t.get("name") for t in tests if t.get("result") != "Pass"]
-want = sum(len(e["cases"]) or len(e["examples"]) for e in json.load(open("internal/tools/exercises.json")) if e["kind"] != "paper")
+want = sum((len(e["cases"]) or len(e["examples"])) + e.get("edge_tests", 0) for e in json.load(open("internal/tools/exercises.json")) if e["kind"] != "paper")
 if bad: sys.exit("FAIL: the reference solution does not pass:\n  " + "\n  ".join(bad))
 if len(tests) != want: sys.exit(f"FAIL: {len(tests)} tests ran, {want} expected (a test file is missing or not compiled)")
 print(f"OK: reference solutions pass all {len(tests)} tests")

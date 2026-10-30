@@ -16,5 +16,8 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "D10 example 3: CountDigit(555, 5) returns 3")]
         public void Example3() => Expect.Returns(3, () => D10_CountADigit.CountDigit(555, 5));
+
+        [Fact(DisplayName = "D10 example 4: edge case, CountDigit(100, 0) returns 2")]
+        public void Edge1() => Expect.Returns(2, () => D10_CountADigit.CountDigit(100, 0), hint: "zeros are digits too: 100 has two 0s. Look at n % 10 before you remove the digit.");
     }
 }

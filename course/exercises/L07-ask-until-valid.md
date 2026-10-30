@@ -61,6 +61,8 @@ You chose 1
 - `abc` must not crash the program.
 - 1 and 10 are valid; 0 and 11 are not.
 
+`./ex check` tests these too: input `0`, `11`, `10` prints `Invalid, try again.`, `Invalid, try again.`, `You chose 10`.
+
 ## Rules
 
 - Use `do … while` and `int.TryParse`.

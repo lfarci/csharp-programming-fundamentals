@@ -58,6 +58,8 @@ Hello, Sam!
 
 - An empty name: what does your program print? (`Hello, !` is OK for now.)
 
+`./ex check` tests these too: input *(empty)* prints `Hello, !`.
+
 ## Rules
 
 - Use `Console.Write`, `Console.ReadLine` and `Console.WriteLine`.

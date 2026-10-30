@@ -25,5 +25,11 @@ namespace Practice.Tests
             input: ["0"],
             lines: ["No numbers."],
             run: () => A09_MinAndMaxUntilZero.Run());
+
+        [Fact(DisplayName = "A09 example 4: edge case, input 5, 0 prints \"Max: 5\"")]
+        public void Edge1() => Expect.Output(
+            input: ["5", "0"],
+            lines: ["Min: 5", "Max: 5"],
+            run: () => A09_MinAndMaxUntilZero.Run(), hint: "one number is both the smallest and the largest: start min and max at the first value.");
     }
 }

@@ -27,5 +27,8 @@ namespace Practice.Tests
             9
             12
             """, () => L13_CountBy3.CountBy3(12));
+
+        [Fact(DisplayName = "L13 example 4: edge case, CountBy3(2) prints nothing")]
+        public void Edge1() => Expect.Prints("", () => L13_CountBy3.CountBy3(2), hint: "n is smaller than 3: not even the first number fits, so nothing is printed.");
     }
 }

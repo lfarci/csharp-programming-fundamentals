@@ -68,6 +68,8 @@ The text of your questions (`N: `, `Width: `…) is up to you. The **results** m
 - N = 1 → only 0.
 - N = 2 → 0 1.
 
+`./ex check` tests these too: input `2` prints `0 1`.
+
 ## Rules
 
 - No array, no recursion. Variables `previous`, `current`, `next`.

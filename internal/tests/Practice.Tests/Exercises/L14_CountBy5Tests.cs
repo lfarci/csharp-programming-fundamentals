@@ -19,5 +19,8 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "L14 example 2: CountBy5(5) prints \"5\"")]
         public void Example2() => Expect.Prints("5", () => L14_CountBy5.CountBy5(5));
+
+        [Fact(DisplayName = "L14 example 3: edge case, CountBy5(4) prints nothing")]
+        public void Edge1() => Expect.Prints("", () => L14_CountBy5.CountBy5(4), hint: "n is smaller than 5: nothing is printed.");
     }
 }

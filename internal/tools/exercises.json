@@ -8,6 +8,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Basics",
   "themeOrder": 1,
@@ -85,6 +86,7 @@
     "expected": 0
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Basics",
   "themeOrder": 1,
@@ -153,6 +155,7 @@
     "expected": "0 h 0 min 0 s"
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Basics",
   "themeOrder": 1,
@@ -225,6 +228,7 @@
     "expected": false
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Basics",
   "themeOrder": 1,
@@ -305,6 +309,7 @@
     "expected": 8
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Basics",
   "themeOrder": 1,
@@ -390,6 +395,7 @@
     "expected": 5
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Basics",
   "themeOrder": 1,
@@ -498,6 +504,7 @@
     "expected": "F"
    }
   ],
+  "edge_tests": 2,
   "checkHint": "",
   "theme": "Basics",
   "themeOrder": 1,
@@ -514,6 +521,7 @@
   "kind": "paper",
   "methods": [],
   "cases": [],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -530,6 +538,7 @@
   "kind": "paper",
   "methods": [],
   "cases": [],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -546,6 +555,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -610,6 +620,7 @@
     "expected": "-2\n-1\n0\n1\n"
    }
   ],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -645,6 +656,7 @@
     "expected": "1\n"
    }
   ],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -687,6 +699,7 @@
     "expected": "3\n6\n9\n12\n"
    }
   ],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -722,6 +735,7 @@
     "expected": "5\n"
    }
   ],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -764,6 +778,7 @@
     "expected": "1\n"
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -782,6 +797,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -840,6 +856,7 @@
     "expected": "6\n4\n2\n"
    }
   ],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -875,6 +892,7 @@
     "expected": "1\n"
    }
   ],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -920,6 +938,7 @@
     "expected": "1\n2\n3\n"
    }
   ],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -938,6 +957,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1008,6 +1028,7 @@
     "expected": 0
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1055,6 +1076,7 @@
     "expected": 385
    }
   ],
+  "edge_tests": 0,
   "checkHint": "every line you need is already in the file. Check the order: the box line before the loop, the update between { and }, the return after the loop. Did you remove every // and the line return -1; ?",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1104,6 +1126,7 @@
     "expected": 0
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1190,6 +1213,7 @@
     "expected": 0
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1239,6 +1263,7 @@
     "expected": 0
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1288,6 +1313,7 @@
     "expected": 0
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1330,6 +1356,7 @@
     "expected": 1024
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1383,6 +1410,7 @@
     "expected": 1
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1439,6 +1467,7 @@
     "expected": 2432902008176640000
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1525,6 +1554,7 @@
     "expected": -8
    }
   ],
+  "edge_tests": 2,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1571,6 +1601,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1632,6 +1663,7 @@
     "expected": 2.0833333333
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1706,6 +1738,7 @@
     "expected": 0
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1773,6 +1806,7 @@
     "expected": 0
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1815,6 +1849,7 @@
     "expected": 5
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1864,6 +1899,7 @@
     "expected": 6
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1906,6 +1942,7 @@
     "expected": 1
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1955,6 +1992,7 @@
     "expected": 3
    }
   ],
+  "edge_tests": 0,
   "checkHint": "the code has 2 bugs. Trace the failing call on paper. Look at the start value of the box, then at the loop test (< or <=).",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2004,6 +2042,7 @@
     "expected": 30
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2074,6 +2113,7 @@
     "expected": 0
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2123,6 +2163,7 @@
     "expected": 60
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2166,6 +2207,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2202,6 +2244,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2248,6 +2291,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2296,6 +2340,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2333,6 +2378,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2394,6 +2440,7 @@
     "expected": "\n"
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2436,6 +2483,7 @@
     "expected": "\n"
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2471,6 +2519,7 @@
     "expected": "#\n"
    }
   ],
+  "edge_tests": 0,
   "checkHint": "every line is already in the file. The inner for (col) goes inside the outer for (row). Console.WriteLine(); goes after the inner loop's }, still inside the outer loop. Did you remove every // ?",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2506,6 +2555,7 @@
     "expected": "*\n"
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2543,6 +2593,7 @@
     "expected": "*\n*\n"
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2602,6 +2653,7 @@
     "expected": "123\n123\n123\n"
    }
   ],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2644,6 +2696,7 @@
     "expected": "  10  20  30  40  50  60  70  80  90 100 110 120\n"
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2679,6 +2732,7 @@
     "expected": "   1\n"
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2726,6 +2780,7 @@
     "expected": "*\n"
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2781,6 +2836,7 @@
     "expected": "1\n"
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2816,6 +2872,7 @@
     "expected": "1\n"
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2851,6 +2908,7 @@
     "expected": "*\n"
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2888,6 +2946,7 @@
     "expected": "***\n* *\n***\n"
    }
   ],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2947,6 +3006,7 @@
     "expected": "*\n"
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2982,6 +3042,7 @@
     "expected": "#\n"
    }
   ],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -3037,6 +3098,7 @@
     "expected": "*\n"
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -3103,6 +3165,7 @@
     "expected": 0
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -3177,6 +3240,7 @@
     "expected": 100
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -3243,6 +3307,7 @@
     "expected": 1
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -3317,6 +3382,7 @@
     "expected": 9
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -3366,6 +3432,7 @@
     "expected": 7
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -3433,6 +3500,7 @@
     "expected": 2
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -3478,6 +3546,7 @@
     "expected": 3
    }
   ],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -3527,6 +3596,7 @@
     "expected": 1
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -3576,6 +3646,7 @@
     "expected": 6
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -3632,6 +3703,7 @@
     "expected": 18
    }
   ],
+  "edge_tests": 0,
   "checkHint": "the code has 2 bugs. Trace DigitSum(123) with a table. Which operator gives the last digit (%) and which removes it (/)? Does the loop run for 10?",
   "theme": "Loops",
   "themeOrder": 2,
@@ -3681,6 +3753,7 @@
     "expected": 7
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -3762,6 +3835,7 @@
     "expected": false
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -3803,6 +3877,7 @@
   "kind": "paper",
   "methods": [],
   "cases": [],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -3840,6 +3915,7 @@
     "expected": "3\n6\n12\n"
    }
   ],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -3858,6 +3934,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -3932,6 +4009,7 @@
     "expected": 55
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -3981,6 +4059,7 @@
     "expected": 44
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -4059,6 +4138,7 @@
     "expected": false
    }
   ],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -4108,6 +4188,7 @@
     "expected": false
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -4157,6 +4238,7 @@
     "expected": false
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -4214,6 +4296,7 @@
     "expected": 10
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -4263,6 +4346,7 @@
     "expected": 7
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -4326,6 +4410,7 @@
     "expected": false
    }
   ],
+  "edge_tests": 2,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -4385,6 +4470,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -4473,6 +4559,7 @@
     "expected": true
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -4530,6 +4617,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -4604,6 +4692,7 @@
     "expected": 0
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Arrays, text and lists",
   "themeOrder": 3,
@@ -4685,6 +4774,7 @@
     "expected": 0
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Arrays, text and lists",
   "themeOrder": 3,
@@ -4774,6 +4864,7 @@
     "expected": 2
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Arrays, text and lists",
   "themeOrder": 3,
@@ -4860,6 +4951,7 @@
     "expected": 9
    }
   ],
+  "edge_tests": 0,
   "checkHint": "the code has 2 bugs. The last index is values.Length - 1. And try [-5, -2, -9]: why is 0 a bad start value for max?",
   "theme": "Arrays, text and lists",
   "themeOrder": 3,
@@ -4923,6 +5015,7 @@
     "expected": -1
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Arrays, text and lists",
   "themeOrder": 3,
@@ -5004,6 +5097,7 @@
     "expected": []
    }
   ],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Arrays, text and lists",
   "themeOrder": 3,
@@ -5069,6 +5163,7 @@
     "expected": 0
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Arrays, text and lists",
   "themeOrder": 3,
@@ -5137,6 +5232,7 @@
     "expected": "no-space"
    }
   ],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Arrays, text and lists",
   "themeOrder": 3,
@@ -5202,6 +5298,7 @@
     "expected": "2026"
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Arrays, text and lists",
   "themeOrder": 3,
@@ -5237,6 +5334,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Arrays, text and lists",
   "themeOrder": 3,
@@ -5275,6 +5373,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Arrays, text and lists",
   "themeOrder": 3,
@@ -5358,6 +5457,7 @@
     "expected": 0
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Methods and errors",
   "themeOrder": 4,
@@ -5430,6 +5530,7 @@
     "expected": true
    }
   ],
+  "edge_tests": 0,
   "checkHint": "",
   "theme": "Methods and errors",
   "themeOrder": 4,
@@ -5487,6 +5588,7 @@
     "expected": -7
    }
   ],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Methods and errors",
   "themeOrder": 4,
@@ -5503,6 +5605,7 @@
   "kind": "output",
   "methods": [],
   "cases": [],
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Methods and errors",
   "themeOrder": 4,

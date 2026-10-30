@@ -53,6 +53,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - count = 0: nothing.
 
+`./ex check` tests these too: `PrintDoubling(1, 0)` prints nothing.
+
 ## Rules
 
 - Write the loop yourself.

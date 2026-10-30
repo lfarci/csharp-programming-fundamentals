@@ -28,5 +28,8 @@ namespace Practice.Tests
             0
             1
             """, () => L11_CountFromAToB.PrintFromTo(-2, 1));
+
+        [Fact(DisplayName = "L11 example 4: edge case, PrintFromTo(6, 3) prints nothing")]
+        public void Edge1() => Expect.Prints("", () => L11_CountFromAToB.PrintFromTo(6, 3), hint: "when a is bigger than b the loop test is false from the start: the loop runs 0 times.");
     }
 }

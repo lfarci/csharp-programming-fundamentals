@@ -16,5 +16,8 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "T02 example 3: RemoveSpaces(\"no-space\") returns \"no-space\"")]
         public void Example3() => Expect.Returns("no-space", () => T02_RemoveSpaces.RemoveSpaces("no-space"));
+
+        [Fact(DisplayName = "T02 example 4: edge case, RemoveSpaces(\" hi \") returns \"hi\"")]
+        public void Edge1() => Expect.Returns("hi", () => T02_RemoveSpaces.RemoveSpaces(" hi "), hint: "spaces at the start and at the end go too.");
     }
 }

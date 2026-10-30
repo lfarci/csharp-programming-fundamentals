@@ -19,5 +19,11 @@ namespace Practice.Tests
             input: ["1"],
             lines: ["You chose 1"],
             run: () => L07_AskUntilValid.Run());
+
+        [Fact(DisplayName = "L07 example 3: edge case, input 0, 11, 10 prints \"You chose 10\"")]
+        public void Edge1() => Expect.Output(
+            input: ["0", "11", "10"],
+            lines: ["Invalid, try again.", "Invalid, try again.", "You chose 10"],
+            run: () => L07_AskUntilValid.Run(), hint: "0 and 11 are outside 1..10, but 10 is inside: check both borders with <= and >=.");
     }
 }

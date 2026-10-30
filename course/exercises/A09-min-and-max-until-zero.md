@@ -67,6 +67,8 @@ No numbers.
 - Only negative numbers → max must not be 0!
 - Only one number → min = max.
 
+`./ex check` tests these too: input `5`, `0` prints `Min: 5`, `Max: 5`.
+
 ## Rules
 
 - No array, no list.

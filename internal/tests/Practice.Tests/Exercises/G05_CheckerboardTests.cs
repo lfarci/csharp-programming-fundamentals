@@ -19,5 +19,13 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "G05 example 2: DrawCheckerboard(1) prints \"#\"")]
         public void Example2() => Expect.Prints("#", () => G05_Checkerboard.DrawCheckerboard(1));
+
+        [Fact(DisplayName = "G05 example 3: edge case, DrawCheckerboard(3) prints 3 lines")]
+        public void Edge1() => Expect.Prints(
+            """
+            #.#
+            .#.
+            #.#
+            """, () => G05_Checkerboard.DrawCheckerboard(3), hint: "odd size: every row starts with the colour of (row + column) for column 0, not with the end of the row before.");
     }
 }

@@ -64,6 +64,8 @@ Difference: 2640
 
 - N = 1 → 1, 1, 0.
 
+`./ex check` tests these too: input `1` prints `Sum of squares: 1`, `Difference: 0`.
+
 ## Rules
 
 - One loop, two boxes.
