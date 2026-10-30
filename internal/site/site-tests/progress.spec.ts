@@ -147,10 +147,28 @@ test('Completion tables have no row-number column, only the exercise and its ID'
   await expect(row).not.toContainText(/^\s*1\s/)
 })
 
-test('The navbar has Projects between Exercises and Study skills; the overview groups 10 project cards with level, effort and themes', async ({ page }) => {
-  await page.goto('./projects/')
-  const nav = (await page.locator('.VPNavBarMenu .VPNavBarMenuLink').allTextContents()).map((t) => t.trim())
-  expect(nav).toEqual(['Start here', 'Roadmap', 'Learn', 'Cookbook', 'Exercises', 'Projects', 'Study skills'])
+test('The navbar has only Start here, Roadmap and Learn; the other sections are on the home page and in the sidebar', async ({ page }) => {
+  await page.goto('./')
+  const nav = (await page.locator('.VPNavBarMenu > :not(.visually-hidden)').allTextContents()).map((t) => t.trim())
+  expect(nav).toEqual(['Start here', 'Roadmap', 'Learn'])
+  for (const [text, href] of [['Cookbook', 'cookbook/'], ['Exercises', 'exercises/'], ['Projects', 'projects/'], ['Study skills', 'docs/']]) {
+    await expect(page.locator(`.VPFooter a[href$="/${href}"]`)).toHaveText(text)
+    await expect(page.locator(`.VPFeatures a[href$="/${href}"]`).first()).toBeVisible()
+  }
+  await page.goto('./docs/getting-started')
+  for (const s of ['Cookbook', 'Exercises', 'Projects', 'Study skills']) await expect(page.locator('.VPSidebar .VPSidebarItem.level-0 > .item', { hasText: s }).first()).toBeVisible()
+})
+
+test('The projects overview groups 10 project cards with level, effort and themes, and the level dots are round', async ({ page }) => {
+  for (const width of [1280, 390]) {
+    await page.setViewportSize({ width, height: 900 })
+    await page.goto('./projects/')
+    for (const d of await page.locator('.pgroup .dot').all()) {
+      const b = (await d.boundingBox())!
+      expect(Math.abs(b.width - b.height), `dot ${b.width}x${b.height} at width ${width}`).toBeLessThan(0.5)
+    }
+  }
+  await page.setViewportSize({ width: 1280, height: 900 })
   await expect(page.locator('.pgroup h2')).toHaveText(['Terminal games', 'Learn something real', 'Just for fun'])
   const cards = page.locator('.pgroup .item')
   await expect(cards).toHaveCount(10)

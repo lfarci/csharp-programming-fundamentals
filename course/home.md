@@ -35,6 +35,10 @@ features:
     details: 10 programs of your own, from Hangman and tic-tac-toe to a weather station, built step by step with milestones, hints and stretch goals.
     link: /projects/
     linkText: See the projects
+  - title: Study skills
+    details: How to read an exercise, solve a problem step by step and practise well, plus a glossary of every new word.
+    link: /docs/
+    linkText: Study skills
   - title: A checker in your terminal
     details: "./ex start opens your file, ./ex check runs the tests and tells you, in plain words, what is still wrong."
     link: /docs/getting-started#check-your-work

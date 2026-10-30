@@ -40,9 +40,9 @@ const dots: Record<string, number> = { Easy: 1, Medium: 2, Hard: 3 }
 .item { display: flex; flex-direction: column; gap: 6px; height: 100%; }
 .title { font-weight: 600; font-size: 16px; color: var(--vp-c-text-1); }
 .text { font-size: 14px; color: var(--vp-c-text-2); line-height: 1.45; flex: 1; }
-.meta { display: flex; justify-content: space-between; font-size: 13px; color: var(--vp-c-text-2); }
-.level { display: inline-flex; align-items: center; gap: 3px; }
-.dot { width: 9px; height: 9px; border-radius: 50%; border: 2px solid var(--vp-c-brand-1); }
+.meta { display: flex; justify-content: space-between; gap: 8px; font-size: 13px; color: var(--vp-c-text-2); }
+.level { display: inline-flex; align-items: center; gap: 3px; flex: none; white-space: nowrap; }
+.dot { flex: 0 0 auto; box-sizing: border-box; width: 10px; height: 10px; min-width: 10px; aspect-ratio: 1; border-radius: 50%; border: 2px solid var(--vp-c-brand-1); }
 .dot.on { background: var(--vp-c-brand-1); }
 .level { margin-right: 6px; }
 .themes { display: flex; flex-wrap: wrap; gap: 4px; }
