@@ -4412,26 +4412,149 @@
    "link": "/cookbook/12-string-building"
   }
  ],
- "projects": [
-  {
-   "num": 1,
-   "title": "Guessing game",
-   "text": "The computer picks a number, you guess it. Loops, conditions, safe input.",
-   "link": "/projects/guessing-game"
-  },
-  {
-   "num": 2,
-   "title": "Expense tracker",
-   "text": "Type your expenses, see totals, save them to a file. Lists, methods, files.",
-   "link": "/projects/expense-tracker"
-  },
-  {
-   "num": 3,
-   "title": "Text quiz",
-   "text": "Ask questions, check answers, give a score. Arrays, text, methods.",
-   "link": "/projects/text-quiz"
-  }
- ],
+ "projects": {
+  "groups": [
+   {
+    "slug": "games",
+    "title": "Terminal games",
+    "text": "Play them, beat your friends, then make them harder.",
+    "items": [
+     {
+      "title": "Guessing game",
+      "text": "The computer hides a number. Hot or cold? Find it in as few tries as you can.",
+      "level": "Easy",
+      "effort": "1 to 2 hours",
+      "themes": [
+       "Basics",
+       "Loops",
+       "Methods and errors"
+      ],
+      "link": "/projects/guessing-game"
+     },
+     {
+      "title": "Hangman",
+      "text": "Guess the secret word letter by letter before the little man is drawn.",
+      "level": "Medium",
+      "effort": "3 to 4 hours",
+      "themes": [
+       "Loops",
+       "Arrays, text and lists",
+       "Methods and errors"
+      ],
+      "link": "/projects/hangman"
+     },
+     {
+      "title": "Rock paper scissors+",
+      "text": "The classic game, then the 5-weapon version where Spock vaporizes rock.",
+      "level": "Easy",
+      "effort": "2 to 3 hours",
+      "themes": [
+       "Basics",
+       "Loops",
+       "Methods and errors"
+      ],
+      "link": "/projects/rock-paper-scissors-lizard-spock"
+     },
+     {
+      "title": "Pig dice duel",
+      "text": "Roll again or bank your points? One 1 and you lose the whole turn.",
+      "level": "Medium",
+      "effort": "2 to 3 hours",
+      "themes": [
+       "Loops",
+       "Methods and errors"
+      ],
+      "link": "/projects/pig-dice"
+     },
+     {
+      "title": "Tic-tac-toe",
+      "text": "X against O on a 3x3 grid, then against a computer that never loses.",
+      "level": "Hard",
+      "effort": "4 to 6 hours",
+      "themes": [
+       "Loops",
+       "Arrays, text and lists",
+       "Methods and errors"
+      ],
+      "link": "/projects/tic-tac-toe"
+     }
+    ]
+   },
+   {
+    "slug": "real",
+    "title": "Learn something real",
+    "text": "Small tools that teach you a real-world idea while you code.",
+    "items": [
+     {
+      "title": "Weather station",
+      "text": "Turn a week of temperatures into stats, trends and an ASCII chart, like a meteorologist.",
+      "level": "Medium",
+      "effort": "3 to 4 hours",
+      "themes": [
+       "Loops",
+       "Arrays, text and lists",
+       "Methods and errors"
+      ],
+      "link": "/projects/weather-station"
+     },
+     {
+      "title": "What should I wear?",
+      "text": "Convert temperatures, feel the wind chill and get outfit advice from your own program.",
+      "level": "Easy",
+      "effort": "1 to 2 hours",
+      "themes": [
+       "Basics",
+       "Loops",
+       "Methods and errors"
+      ],
+      "link": "/projects/dress-for-the-weather"
+     },
+     {
+      "title": "Expense tracker",
+      "text": "Where does your money go? Track expenses by category and see your budget melt.",
+      "level": "Medium",
+      "effort": "3 to 5 hours",
+      "themes": [
+       "Loops",
+       "Arrays, text and lists",
+       "Methods and errors"
+      ],
+      "link": "/projects/expense-tracker"
+     }
+    ]
+   },
+   {
+    "slug": "fun",
+    "title": "Just for fun",
+    "text": "Stories, quizzes and surprises: the program talks back.",
+    "items": [
+     {
+      "title": "Quiz show",
+      "text": "Host your own TV quiz: jokers, streaks, a timer and a final score.",
+      "level": "Easy",
+      "effort": "2 to 3 hours",
+      "themes": [
+       "Arrays, text and lists",
+       "Methods and errors"
+      ],
+      "link": "/projects/text-quiz"
+     },
+     {
+      "title": "Tiny dungeon",
+      "text": "Explore rooms, fight slimes, find the treasure: a text adventure on a map.",
+      "level": "Hard",
+      "effort": "5 to 8 hours",
+      "themes": [
+       "Loops",
+       "Arrays, text and lists",
+       "Methods and errors"
+      ],
+      "link": "/projects/dungeon-crawler"
+     }
+    ]
+   }
+  ]
+ },
  "skills": [
   {
    "num": 1,

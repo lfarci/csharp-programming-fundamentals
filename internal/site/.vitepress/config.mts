@@ -132,11 +132,9 @@ export default defineConfig({
         { text: 'Drill sets', link: '/exercises/#drill-sets-same-pattern-many-times' },
         ...themeItems,
       ] },
-      { text: 'Projects', items: [
+      { text: 'Projects', collapsed: false, items: [
         { text: 'All projects', link: '/projects/' },
-        { text: 'Guessing game', link: '/projects/guessing-game' },
-        { text: 'Expense tracker', link: '/projects/expense-tracker' },
-        { text: 'Text quiz', link: '/projects/text-quiz' },
+        ...(course as any).projects.groups.map((g: any) => ({ text: g.title, collapsed: true, items: g.items.map((p: any) => ({ text: p.title, link: p.link })) })),
       ] },
       { text: 'Study skills', items: [
         { text: 'All study skills', link: '/docs/' },

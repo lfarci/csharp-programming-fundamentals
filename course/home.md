@@ -32,7 +32,7 @@ features:
     link: /exercises/
     linkText: All exercises
   - title: Small projects
-    details: Three programs of your own, a guessing game, an expense tracker and a quiz, built step by step with milestones and hints.
+    details: 10 programs of your own, from Hangman and tic-tac-toe to a weather station, built step by step with milestones, hints and stretch goals.
     link: /projects/
     linkText: See the projects
   - title: A checker in your terminal

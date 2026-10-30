@@ -57,3 +57,6 @@ a.cpf-link:hover { border-color: var(--vp-c-brand-1); box-shadow: 0 4px 16px rgb
 .vp-doc .cert { padding: 6px 20px 8px; margin: 16px 0 24px; }
 .vp-doc .cert .cert-title { font-size: 19px; font-weight: 600; margin: 0 0 4px; }
 .vp-doc a.cpf-button { color: #fff; }
+
+/* Project pages: group, level and effort under the title */
+.vp-doc p.project-meta { display: inline-block; margin: -4px 0 8px; font-size: 13px; padding: 2px 12px; border-radius: 12px; background: var(--vp-c-brand-soft); color: var(--vp-c-brand-1); }

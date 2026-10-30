@@ -7,6 +7,7 @@ import ExerciseHeader from './ExerciseHeader.vue'
 import ExercisesOverview from './ExercisesOverview.vue'
 import DrillSets from './DrillSets.vue'
 import CardList from './CardList.vue'
+import ProjectCards from './ProjectCards.vue'
 import LearnCard from './LearnCard.vue'
 import RoadmapPath from './RoadmapPath.vue'
 import ProgressSummary from './ProgressSummary.vue'
@@ -20,7 +21,7 @@ export default {
   extends: DefaultTheme,
   Layout: () => h(DefaultTheme.Layout, null, { 'home-features-before': () => h(HomeVideo) }),
   enhanceApp({ app }) {
-    for (const [name, c] of Object.entries({ ProgressPage, ThemeExercises, ThemeGroups, ExerciseHeader, ExercisesOverview, DrillSets, CardList,
+    for (const [name, c] of Object.entries({ ProgressPage, ThemeExercises, ThemeGroups, ExerciseHeader, ExercisesOverview, DrillSets, CardList, ProjectCards,
       LearnCard, RoadmapPath, ProgressSummary, MsLearnPath, VideoGallery, LearnFlow })) app.component(name, c)
   },
 }

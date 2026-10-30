@@ -147,13 +147,21 @@ test('Completion tables have no row-number column, only the exercise and its ID'
   await expect(row).not.toContainText(/^\s*1\s/)
 })
 
-test('The navbar has Projects between Exercises and Study skills, and the projects index lists 3 project cards', async ({ page }) => {
+test('The navbar has Projects between Exercises and Study skills; the overview groups 10 project cards with level, effort and themes', async ({ page }) => {
   await page.goto('./projects/')
   const nav = (await page.locator('.VPNavBarMenu .VPNavBarMenuLink').allTextContents()).map((t) => t.trim())
   expect(nav).toEqual(['Start here', 'Roadmap', 'Learn', 'Cookbook', 'Exercises', 'Projects', 'Study skills'])
-  const cards = page.locator('.cards .item')
-  await expect(cards).toHaveCount(3)
-  await cards.filter({ hasText: 'Guessing game' }).click()
-  await expect(page.locator('h1')).toHaveText('Guessing game')
-  for (const h of ['Milestones', 'Stretch goals', 'Hints (open one at a time)']) await expect(page.locator('h2', { hasText: h })).toBeVisible()
+  await expect(page.locator('.pgroup h2')).toHaveText(['Terminal games', 'Learn something real', 'Just for fun'])
+  const cards = page.locator('.pgroup .item')
+  await expect(cards).toHaveCount(10)
+  for (const c of await cards.all()) {
+    await expect(c.locator('.level')).toHaveText(/Easy|Medium|Hard/)
+    await expect(c.locator('.effort')).toContainText('hours')
+    expect(await c.locator('.tag').count()).toBeGreaterThan(0)
+  }
+  await cards.filter({ hasText: 'Hangman' }).click()
+  await expect(page.locator('h1')).toHaveText('Hangman')
+  for (const h of ['A sample run', 'What you will learn', 'Milestones', 'Stretch goals', 'Hints (open one at a time)']) await expect(page.locator('h2', { hasText: h })).toBeVisible()
+  expect(await page.locator('h2:has-text("Milestones") + p + ol > li').count()).toBeGreaterThanOrEqual(5)
+  expect(await page.locator('h2:has-text("Stretch goals") + p + ul > li').count()).toBeGreaterThanOrEqual(4)
 })
