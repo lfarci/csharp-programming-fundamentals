@@ -21,12 +21,12 @@ test -f practice/L11_CountFromAToB.cs    || fail "./ex start did not create the 
 grep -q "kept as it is" out.txt          || fail "./ex start must never overwrite"
 
 if ./ex check > out.txt; then fail "./ex check must fail before any code is written"; fi
-grep -q "NOT YET  example 1 of 3" out.txt || fail "./ex check does not say NOT YET"
+grep -q "NOT YET  example 1 of 4" out.txt || fail "./ex check does not say NOT YET"
 grep -q "Hint:" out.txt                   || fail "./ex check gives no hint"
 
 cp internal/solutions/L11_CountFromAToB.cs practice/  # the learner writes the code
 ./ex check > out.txt                      || fail "./ex check must pass with the solution"
-grep -q "DONE: all 3 examples are OK" out.txt || fail "./ex check does not say DONE"
+grep -q "DONE: all 4 examples are OK" out.txt || fail "./ex check does not say DONE"
 grep -q "^L11 " practice/.done            || fail "./ex check did not save L11 as done"
 
 grep -q "WARNING" out.txt && fail "./ex check warns although only practice/ changed"

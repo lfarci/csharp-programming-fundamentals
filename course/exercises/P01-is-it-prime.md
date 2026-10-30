@@ -58,6 +58,8 @@ Your method must give these results. `./ex check` tests all of them.
 - 0 and 1 are not prime.
 - 2 is the only even prime.
 
+`./ex check` tests these too: `IsPrime(25)` gives `false`; `IsPrime(4)` gives `false`.
+
 ## Rules
 
 - A loop with a `bool` flag. No library.

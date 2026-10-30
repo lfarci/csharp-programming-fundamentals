@@ -67,6 +67,8 @@ No numbers.
 - First value 0 → never divide by 0!
 - The average can have decimals.
 
+`./ex check` tests these too: input `5`, `0` prints `Average: 5`.
+
 ## Rules
 
 - Sentinel loop + two boxes (`sum`, `count`).

@@ -56,6 +56,8 @@ Your method must give these results. `./ex check` tests all of them.
 - Empty text: 0.
 - A negative number like `-7` is a number.
 
+`./ex check` tests these too: `ParseOrZero("12x")` gives `0`.
+
 ## Rules
 
 - Use `int.TryParse`, not `int.Parse`.

@@ -54,6 +54,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - Only spaces → empty result.
 
+`./ex check` tests these too: `RemoveSpaces(" hi ")` gives `"hi"`.
+
 ## Rules
 
 - Build a new string with `+=`. No `Replace`.

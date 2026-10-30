@@ -25,5 +25,11 @@ namespace Practice.Tests
             input: ["0"],
             lines: ["No numbers."],
             run: () => A06_AverageUntilZero.Run());
+
+        [Fact(DisplayName = "A06 example 4: edge case, input 5, 0 prints \"Average: 5\"")]
+        public void Edge1() => Expect.Output(
+            input: ["5", "0"],
+            lines: ["Average: 5"],
+            run: () => A06_AverageUntilZero.Run(), hint: "one number: the average is that number.");
     }
 }

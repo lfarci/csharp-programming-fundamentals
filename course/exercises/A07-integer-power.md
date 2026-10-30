@@ -56,6 +56,8 @@ Your method must give these results. `./ex check` tests all of them.
 - Exponent 0 → 1.
 - Base 0 → 0 (except 0^0 = 1 by our convention).
 
+`./ex check` tests these too: `Power(0, 3)` gives `0`; `Power(0, 0)` gives `1`.
+
 ## Rules
 
 - No `Math.Pow`. A loop with a product box.

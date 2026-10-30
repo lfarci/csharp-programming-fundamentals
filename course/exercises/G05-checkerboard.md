@@ -53,6 +53,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - Odd size.
 
+`./ex check` tests these too: `DrawCheckerboard(3)` prints `#.#` `.#.` `#.#`.
+
 ## Rules
 
 - Nested loops. No `string` tricks.

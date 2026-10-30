@@ -19,5 +19,11 @@ namespace Practice.Tests
             input: ["10"],
             lines: ["Sum: 55", "Sum of squares: 385", "Difference: 2640"],
             run: () => A05_SumSquareDifference.Run());
+
+        [Fact(DisplayName = "A05 example 3: edge case, input 1 prints \"Difference: 0\"")]
+        public void Edge1() => Expect.Output(
+            input: ["1"],
+            lines: ["Sum of squares: 1", "Difference: 0"],
+            run: () => A05_SumSquareDifference.Run(), hint: "N = 1: the sum is 1, its square is 1, so the difference is 0.");
     }
 }

@@ -54,6 +54,8 @@ Thanks: 42
 
 - Empty input also fails.
 
+`./ex check` tests these too: input *(empty)*, `7` prints `That is not a number.`, `Thanks: 7`.
+
 ## Rules
 
 - Use `try`/`catch (FormatException)` (not `TryParse`, which you used in L07).

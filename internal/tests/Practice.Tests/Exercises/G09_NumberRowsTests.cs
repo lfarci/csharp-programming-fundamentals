@@ -22,5 +22,13 @@ namespace Practice.Tests
             123
             123
             """, () => G09_NumberRows.DrawNumberRows(3, 3));
+
+        [Fact(DisplayName = "G09 example 3: edge case, DrawNumberRows(1, 3) prints 3 lines")]
+        public void Edge1() => Expect.Prints(
+            """
+            1
+            1
+            1
+            """, () => G09_NumberRows.DrawNumberRows(1, 3), hint: "width 1: every row is just 1.");
     }
 }

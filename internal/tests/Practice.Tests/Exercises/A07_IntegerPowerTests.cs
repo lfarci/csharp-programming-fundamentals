@@ -19,5 +19,11 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "A07 example 4: Power(-2, 3) returns -8")]
         public void Example4() => Expect.Returns(-8L, () => A07_IntegerPower.Power(-2, 3));
+
+        [Fact(DisplayName = "A07 example 5: edge case, Power(0, 3) returns 0")]
+        public void Edge1() => Expect.Returns(0L, () => A07_IntegerPower.Power(0, 3), hint: "0 times anything is 0: the box starts at 1 and is multiplied by 0.");
+
+        [Fact(DisplayName = "A07 example 6: edge case, Power(0, 0) returns 1")]
+        public void Edge2() => Expect.Returns(1L, () => A07_IntegerPower.Power(0, 0), hint: "exponent 0: the loop runs 0 times, so the box keeps its start value 1.");
     }
 }

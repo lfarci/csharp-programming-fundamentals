@@ -19,5 +19,11 @@ namespace Practice.Tests
             input: ["Sam"],
             lines: ["Hello, Sam!"],
             run: () => B01_HelloYou.Run());
+
+        [Fact(DisplayName = "B01 example 3: edge case, input (empty) prints \"Hello, !\"")]
+        public void Edge1() => Expect.Output(
+            input: [""],
+            lines: ["Hello, !"],
+            run: () => B01_HelloYou.Run(), hint: "an empty name is still a name: print the greeting around it.");
     }
 }

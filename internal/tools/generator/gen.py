@@ -5,6 +5,7 @@ from data5 import M, GOALS, RULES, HINTS
 import data6  # noqa: F401  (adds ladder, Parsons and debugging exercises to E and M)
 from data7 import DRILLS  # drill bank: same-pattern repetition
 import data8  # noqa: F401  (search drills, Methods and Errors exercises)
+from data9 import EDGE  # edge-case tests with their own hint
 from data6 import NOTE_P
 from themes import THEMES, BYSLUG, GROUP
 import re
@@ -169,6 +170,10 @@ for e in E:
             L += [f"**Example {i}** — input: {shown_in}", "", "```text"] + (out if any(out) else ["(nothing is printed)"]) + ["```", ""]
     if e.get("note"): L += [f"> {e['note']}", ""]
     L += ["## Edge cases to test", ""] + [f"- {x}" for x in e["edge"]] + [""]
+    if e["id"] in EDGE:
+        if e["id"] in M: checked = [f"`{c[0]}({', '.join(cslit(a) for a in c[1])})` {'prints nothing' if c[2] == '' else ('prints ' + ' '.join(chr(96) + l + chr(96) for l in c[2].rstrip(chr(10)).split(chr(10))) if isinstance(c[2], str) and chr(10) in c[2] else 'gives ' + shown(c[2]))}" for c in EDGE[e["id"]]]
+        else: checked = ["input " + (", ".join(f"`{x}`" if x else "*(empty)*" for x in c[0])) + " prints " + ", ".join(f"`{x}`" for x in c[1]) for c in EDGE[e["id"]]]
+        L += ["`./ex check` tests these too: " + "; ".join(checked) + ".", ""]
     L += ["## Rules", ""] + [f"- {x}" for x in RULES.get(e["id"], e["constraints"])] + ["- No LINQ and no ready-made helpers: you write every step yourself.", ""]
     L += ["## Before coding", "", ("Fill the [reading worksheet](../docs/reading-an-exercise.md#the-template): what goes in? what comes out? a tiny example by hand?" if not e["recipes"] else "Fill the [recipe card](../cookbook/README.md): result? recipe? boxes and start values? what repeats and what stops? tiny example traced by hand?"), ""]
     L += ["## Hints (open one at a time)", ""]
@@ -191,6 +196,7 @@ cj = [{"id": e["id"], "name": fname(e), "class": cls(e), "title": e["title"], "p
        "kind": "paper" if e.get("paper") else ("method" if e["id"] in M else "output"),
        "methods": [parse_sig(sig)[1] for sig, _, _ in M[e["id"]]["methods"]] if e["id"] in M else [],
        "cases": [jcase(*c) for c in M[e["id"]]["cases"]] if e["id"] in M else [],
+       "edge_tests": len(EDGE.get(e["id"], [])),
        "checkHint": e.get("check_hint", ""),
        "theme": BYSLUG[e["theme"]]["title"], "themeOrder": [x["slug"] for x in THEMES].index(e["theme"]) + 1, "group": GROUP[e["id"]][1]["title"], "drills": [n for n, _, ids in DRILLS if e["id"] in ids],
        "examples": [{"input": inp, "expected": [o for o in out if o.strip()]} for inp, out in (e["examples"] or [])]}
@@ -254,6 +260,20 @@ def test_file(e):
                 out += [f'        [Fact(DisplayName = "{e["id"]} example {k}: {attr(shown_call)} returns {attr(show(exp, ret))}")]',
                         f"        public void Example{k}() => Expect.Returns({lit(exp, ret)}, () => {call}{hp});"]
             out.append("")
+        for j, (name, args, exp, why) in enumerate(EDGE.get(e["id"], []), 1):
+            ret, _, ps = sigs[name]
+            call = f"{c}.{name}({', '.join(lit(a, p[0]) for a, p in zip(args, ps))})"
+            shown_call = f"{name}({', '.join(show(a, p[0]) for a, p in zip(args, ps))})"
+            if ret == "void":
+                lines_ = exp.rstrip("\n").split("\n") if exp else []
+                what = "prints nothing" if not lines_ else (f'prints "{lines_[0]}"' if len(lines_) == 1 else f"prints {len(lines_)} lines")
+                out += [f'        [Fact(DisplayName = "{e["id"]} example {len(M[e["id"]]["cases"]) + j}: edge case, {attr(shown_call)} {attr(what)}")]', f"        public void Edge{j}() => Expect.Prints("]
+                if len(lines_) <= 1: out[-1] += f'{cs_str((lines_[0] + chr(10)) if lines_ else "")}, () => {call}, hint: {cs_str(why)});'
+                else: out += ['            """'] + ["            " + l.rstrip() for l in lines_] + [f'            """, () => {call}, hint: {cs_str(why)});']
+            else:
+                out += [f'        [Fact(DisplayName = "{e["id"]} example {len(M[e["id"]]["cases"]) + j}: edge case, {attr(shown_call)} returns {attr(show(exp, ret))}")]',
+                        f"        public void Edge{j}() => Expect.Returns({lit(exp, ret)}, () => {call}, hint: {cs_str(why)});"]
+            out.append("")
     else:
         for inp, outl in e["examples"]:
             k += 1; want = [o for o in outl if o.strip()]
@@ -263,6 +283,13 @@ def test_file(e):
                     f"            input: [{', '.join(cs_str(x) for x in inp)}],",
                     f"            lines: [{', '.join(cs_str(x) for x in want)}],",
                     f"            run: () => {c}.Run(){hp});", ""]
+        for j, (inp, want, why) in enumerate(EDGE.get(e["id"], []), 1):
+            shown_in = ", ".join(x if x else "(empty)" for x in inp)
+            out += [f'        [Fact(DisplayName = "{e["id"]} example {len(e["examples"]) + j}: edge case, input {attr(shown_in)} prints {attr(chr(34) + want[-1] + chr(34))}")]',
+                    f"        public void Edge{j}() => Expect.Output(",
+                    f"            input: [{', '.join(cs_str(x) for x in inp)}],",
+                    f"            lines: [{', '.join(cs_str(x) for x in want)}],",
+                    f"            run: () => {c}.Run(), hint: {cs_str(why)});", ""]
     if out[-1] == "": out.pop()
     return "\n".join(out + ["    }", "}", ""])
 TD = f"{ROOT}/internal/tests/Practice.Tests/Exercises"
@@ -272,4 +299,4 @@ for e in ORDER:
     if not e.get("paper"): open(f"{TD}/{cls(e)}Tests.cs", "w").write(test_file(e))
 
 exec(open(os.path.join(os.path.dirname(__file__), 'pages.py'), encoding='utf-8').read())
-print("generated", len(E), "exercises,", len(tests), "example runs,", sum(len(m["cases"]) for m in M.values()), "method cases")
+print("generated", len(E), "exercises,", len(tests), "example runs,", sum(len(m["cases"]) for m in M.values()), "method cases,", sum(map(len, EDGE.values())), "edge cases")

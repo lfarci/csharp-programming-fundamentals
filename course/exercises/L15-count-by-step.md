@@ -54,6 +54,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - `step` bigger than n: nothing.
 
+`./ex check` tests these too: `CountByStep(5, 3)` prints nothing.
+
 ## Rules
 
 - Write the loop yourself.

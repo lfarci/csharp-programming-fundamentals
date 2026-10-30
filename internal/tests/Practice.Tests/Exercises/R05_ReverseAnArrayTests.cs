@@ -16,5 +16,8 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "R05 example 3: Reversed([]) returns []")]
         public void Example3() => Expect.Returns(new int[0], () => R05_ReverseAnArray.Reversed(new int[0]));
+
+        [Fact(DisplayName = "R05 example 4: edge case, Reversed([1, 2, 3]) returns [3, 2, 1]")]
+        public void Edge1() => Expect.Returns(new[] { 3, 2, 1 }, () => R05_ReverseAnArray.Reversed(new[] { 1, 2, 3 }), hint: "odd length: the middle value stays in the middle.");
     }
 }

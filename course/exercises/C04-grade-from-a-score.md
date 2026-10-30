@@ -60,6 +60,8 @@ Your method must give these results. `./ex check` tests all of them.
 - Exactly 90, 80, 70 and 50: which grade? Test the borders.
 - 0 and 100.
 
+`./ex check` tests these too: `Grade(70)` gives `"C"`; `Grade(100)` gives `"A"`.
+
 ## Rules
 
 - Use one `if` / `else if` / `else` chain. Test the biggest border first.

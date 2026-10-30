@@ -55,6 +55,8 @@ Your method must give these results. `./ex check` tests all of them.
 - `a` equal to `b`: one line.
 - `a` bigger than `b`: nothing is printed.
 
+`./ex check` tests these too: `PrintFromTo(6, 3)` prints nothing.
+
 ## Rules
 
 - Write the loop yourself.

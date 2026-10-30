@@ -53,6 +53,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - Height 1 or 2 → no inside.
 
+`./ex check` tests these too: `DrawHollowRectangle(4, 2)` prints `****` `****`.
+
 ## Rules
 
 - Nested loops + one `if` inside.

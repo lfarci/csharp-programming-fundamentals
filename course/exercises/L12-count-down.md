@@ -53,6 +53,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - `CountDown(0)` prints nothing.
 
+`./ex check` tests these too: `CountDown(0)` prints nothing.
+
 ## Rules
 
 - Write the loop yourself.

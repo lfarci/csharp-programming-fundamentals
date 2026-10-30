@@ -54,6 +54,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - n smaller than 3: nothing is printed.
 
+`./ex check` tests these too: `CountBy3(2)` prints nothing.
+
 ## Rules
 
 - Write the loop yourself.

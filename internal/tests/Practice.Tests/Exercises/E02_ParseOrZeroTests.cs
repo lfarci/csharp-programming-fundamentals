@@ -19,5 +19,8 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "E02 example 4: ParseOrZero(\"-7\") returns -7")]
         public void Example4() => Expect.Returns(-7, () => E02_ParseOrZero.ParseOrZero("-7"));
+
+        [Fact(DisplayName = "E02 example 5: edge case, ParseOrZero(\"12x\") returns 0")]
+        public void Edge1() => Expect.Returns(0, () => E02_ParseOrZero.ParseOrZero("12x"), hint: "12x is not a whole number: int.TryParse returns false, so give back 0.");
     }
 }

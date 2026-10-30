@@ -19,5 +19,8 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "P03 example 4: HasMultipleOf7(15, 20) returns false")]
         public void Example4() => Expect.Returns(false, () => P03_HasAMultipleOf7.HasMultipleOf7(15, 20));
+
+        [Fact(DisplayName = "P03 example 5: edge case, HasMultipleOf7(20, 10) returns false")]
+        public void Edge1() => Expect.Returns(false, () => P03_HasAMultipleOf7.HasMultipleOf7(20, 10), hint: "a bigger than b: there is no number to look at, so the answer stays false.");
     }
 }

@@ -19,5 +19,11 @@ namespace Practice.Tests
             input: ["7"],
             lines: ["7 x 7 = 49"],
             run: () => L04_MultiplicationTable.Run());
+
+        [Fact(DisplayName = "L04 example 3: edge case, input 0 prints \"0 x 10 = 0\"")]
+        public void Edge1() => Expect.Output(
+            input: ["0"],
+            lines: ["0 x 1 = 0", "0 x 10 = 0"],
+            run: () => L04_MultiplicationTable.Run(), hint: "N = 0 is allowed: the table still has 10 lines, all results are 0.");
     }
 }

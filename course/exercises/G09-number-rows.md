@@ -53,6 +53,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - width = 1: every row is `1`.
 
+`./ex check` tests these too: `DrawNumberRows(1, 3)` prints `1` `1` `1`.
+
 ## Rules
 
 - Write the loop yourself.

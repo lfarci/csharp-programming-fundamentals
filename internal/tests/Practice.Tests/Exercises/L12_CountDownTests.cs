@@ -19,5 +19,8 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "L12 example 2: CountDown(1) prints \"1\"")]
         public void Example2() => Expect.Prints("1", () => L12_CountDown.CountDown(1));
+
+        [Fact(DisplayName = "L12 example 3: edge case, CountDown(0) prints nothing")]
+        public void Edge1() => Expect.Prints("", () => L12_CountDown.CountDown(0), hint: "CountDown(0): the loop must not run at all. Is your test i >= 1 (or i > 0)?");
     }
 }

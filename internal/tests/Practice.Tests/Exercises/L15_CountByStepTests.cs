@@ -31,5 +31,8 @@ namespace Practice.Tests
             2
             3
             """, () => L15_CountByStep.CountByStep(1, 3));
+
+        [Fact(DisplayName = "L15 example 4: edge case, CountByStep(5, 3) prints nothing")]
+        public void Edge1() => Expect.Prints("", () => L15_CountByStep.CountByStep(5, 3), hint: "step is bigger than n: the first value is already too big, nothing is printed.");
     }
 }

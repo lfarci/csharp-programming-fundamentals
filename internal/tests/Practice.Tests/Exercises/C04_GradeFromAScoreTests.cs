@@ -31,5 +31,11 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "C04 example 8: Grade(0) returns \"F\"")]
         public void Example8() => Expect.Returns("F", () => C04_GradeFromAScore.Grade(0));
+
+        [Fact(DisplayName = "C04 example 9: edge case, Grade(70) returns \"C\"")]
+        public void Edge1() => Expect.Returns("C", () => C04_GradeFromAScore.Grade(70), hint: "70 is exactly on the border: use >= so 70 gets a C.");
+
+        [Fact(DisplayName = "C04 example 10: edge case, Grade(100) returns \"A\"")]
+        public void Edge2() => Expect.Returns("A", () => C04_GradeFromAScore.Grade(100), hint: "the top score is an A too.");
     }
 }
