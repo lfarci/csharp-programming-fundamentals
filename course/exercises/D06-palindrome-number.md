@@ -1,7 +1,7 @@
 ---
 prev:
-  text: "D05 · Reverse a number"
-  link: /exercises/D05-reverse-a-number
+  text: "D13 · Digital root"
+  link: /exercises/D13-digital-root
 next:
   text: "S01 · Trace two variables"
   link: /exercises/S01-trace-updates
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Digits** · exercise 12 of 12 in this group (67 of 81 in the theme)
+**Loops › Digits** · exercise 13 of 13 in this group (70 of 86 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -94,6 +94,6 @@ Only after a real try: [open the solution for D06](../../internal/solutions/D06_
 
 <div class="gh-only">
 
-Previous: [D05 · Reverse a number](D05-reverse-a-number.md) · [Loops](../themes/loops.md) · Next: [S01 · Trace two variables](S01-trace-updates.md)
+Previous: [D13 · Digital root](D13-digital-root.md) · [Loops](../themes/loops.md) · Next: [S01 · Trace two variables](S01-trace-updates.md)
 
 </div>

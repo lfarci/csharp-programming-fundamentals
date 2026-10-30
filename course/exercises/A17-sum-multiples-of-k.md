@@ -3,8 +3,8 @@ prev:
   text: "A03 · Sum of the even numbers"
   link: /exercises/A03-sum-even-values
 next:
-  text: "A08 · Multiples of 3 or 5"
-  link: /exercises/A08-multiples-of-3-or-5
+  text: "A23 · FizzBuzz"
+  link: /exercises/A23-fizzbuzz
 ---
 
 [Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops-keep-only-some.md) › A17
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Keep only some** · exercise 8 of 9 in this group (33 of 81 in the theme)
+**Loops › Keep only some** · exercise 8 of 11 in this group (33 of 86 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -91,6 +91,6 @@ Only after a real try: [open the solution for A17](../../internal/solutions/A17_
 
 <div class="gh-only">
 
-Previous: [A03 · Sum of the even numbers](A03-sum-even-values.md) · [Loops](../themes/loops.md) · Next: [A08 · Multiples of 3 or 5](A08-multiples-of-3-or-5.md)
+Previous: [A03 · Sum of the even numbers](A03-sum-even-values.md) · [Loops](../themes/loops.md) · Next: [A23 · FizzBuzz](A23-fizzbuzz.md)
 
 </div>

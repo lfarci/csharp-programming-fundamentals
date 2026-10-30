@@ -1,10 +1,10 @@
 ---
 prev:
-  text: "S02 · Fibonacci"
-  link: /exercises/S02-fibonacci
+  text: "S06 · Collatz steps"
+  link: /exercises/S06-collatz-steps
 next:
-  text: "S03 · Even Fibonacci sum"
-  link: /exercises/S03-even-fibonacci-sum
+  text: "S07 · Greatest common divisor"
+  link: /exercises/S07-greatest-common-divisor
 ---
 
 [Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Changing values](../themes/loops-changing-values.md) › S05
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Changing values** · exercise 4 of 5 in this group (71 of 81 in the theme)
+**Loops › Changing values** · exercise 5 of 7 in this group (75 of 86 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -92,6 +92,6 @@ Only after a real try: [open the solution for S05](../../internal/solutions/S05_
 
 <div class="gh-only">
 
-Previous: [S02 · Fibonacci](S02-fibonacci.md) · [Loops](../themes/loops.md) · Next: [S03 · Even Fibonacci sum](S03-even-fibonacci-sum.md)
+Previous: [S06 · Collatz steps](S06-collatz-steps.md) · [Loops](../themes/loops.md) · Next: [S07 · Greatest common divisor](S07-greatest-common-divisor.md)
 
 </div>

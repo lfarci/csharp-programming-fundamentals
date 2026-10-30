@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Add up** · exercise 10 of 12 in this group (23 of 81 in the theme)
+**Loops › Add up** · exercise 10 of 12 in this group (23 of 86 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |

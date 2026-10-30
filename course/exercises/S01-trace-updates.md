@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Changing values** · exercise 1 of 5 in this group (68 of 81 in the theme)
+**Loops › Changing values** · exercise 1 of 7 in this group (71 of 86 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |

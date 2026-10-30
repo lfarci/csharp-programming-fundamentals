@@ -32,6 +32,7 @@ Do the exercises from top to bottom. Tick each one when `./ex check` says DONE.
 | D11 | [Largest digit](../exercises/D11-largest-digit.md) | write code | Independent | medium |
 | D07 | [Fix: digit sum](../exercises/D07-fix-digit-sum.md) | fix the bugs | Independent | medium |
 | D05 | [Reverse a number](../exercises/D05-reverse-a-number.md) | write code | Independent | medium |
+| D13 | [Digital root](../exercises/D13-digital-root.md) | write code | Independent | medium |
 | D06 | [Palindrome number](../exercises/D06-palindrome-number.md) | write code | Challenge | hard |
 
 </div>

@@ -864,7 +864,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 1,
-   "of": 9,
+   "of": 11,
    "recipes": [
     {
      "title": "Conditional accumulator",
@@ -896,7 +896,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 2,
-   "of": 9,
+   "of": 11,
    "recipes": [
     {
      "title": "Conditional accumulator",
@@ -924,7 +924,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 3,
-   "of": 9,
+   "of": 11,
    "recipes": [
     {
      "title": "Conditional accumulator",
@@ -952,7 +952,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 4,
-   "of": 9,
+   "of": 11,
    "recipes": [
     {
      "title": "Conditional accumulator",
@@ -980,7 +980,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 5,
-   "of": 9,
+   "of": 11,
    "recipes": [
     {
      "title": "Conditional accumulator",
@@ -1008,7 +1008,7 @@
    "kind": "fix the bugs",
    "paper": false,
    "pos": 6,
-   "of": 9,
+   "of": 11,
    "recipes": [
     {
      "title": "Conditional accumulator",
@@ -1036,7 +1036,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 7,
-   "of": 9,
+   "of": 11,
    "recipes": [
     {
      "title": "Conditional accumulator",
@@ -1064,7 +1064,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 8,
-   "of": 9,
+   "of": 11,
    "recipes": [
     {
      "title": "Conditional accumulator",
@@ -1086,6 +1086,70 @@
    ]
   },
   {
+   "id": "A23",
+   "title": "FizzBuzz",
+   "link": "/exercises/A23-fizzbuzz",
+   "theme": "loops",
+   "group": "keep-only-some",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 9,
+   "of": 11,
+   "recipes": [
+    {
+     "title": "Counter loop",
+     "link": "/cookbook/01-counter-loop"
+    },
+    {
+     "title": "Conditional accumulator",
+     "link": "/cookbook/03-conditional-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L11",
+     "link": "/exercises/L11-count-from-a-to-b"
+    },
+    {
+     "id": "A02",
+     "link": "/exercises/A02-count-multiples-of-3"
+    }
+   ],
+   "drills": [
+    "Count or sum only some values"
+   ]
+  },
+  {
+   "id": "A24",
+   "title": "Perfect number",
+   "link": "/exercises/A24-perfect-number",
+   "theme": "loops",
+   "group": "keep-only-some",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 10,
+   "of": 11,
+   "recipes": [
+    {
+     "title": "Conditional accumulator",
+     "link": "/cookbook/03-conditional-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A22",
+     "link": "/exercises/A22-sum-of-divisors"
+    }
+   ],
+   "drills": [
+    "Count or sum only some values"
+   ]
+  },
+  {
    "id": "A08",
    "title": "Multiples of 3 or 5",
    "link": "/exercises/A08-multiples-of-3-or-5",
@@ -1095,8 +1159,8 @@
    "effort": "medium",
    "kind": "write code",
    "paper": false,
-   "pos": 9,
-   "of": 9,
+   "pos": 11,
+   "of": 11,
    "recipes": [
     {
      "title": "Conditional accumulator",
@@ -1760,7 +1824,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 1,
-   "of": 12,
+   "of": 13,
    "recipes": [
     {
      "title": "Digit extraction",
@@ -1788,7 +1852,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 2,
-   "of": 12,
+   "of": 13,
    "recipes": [
     {
      "title": "Digit extraction",
@@ -1816,7 +1880,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 3,
-   "of": 12,
+   "of": 13,
    "recipes": [
     {
      "title": "Digit extraction",
@@ -1852,7 +1916,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 4,
-   "of": 12,
+   "of": 13,
    "recipes": [
     {
      "title": "Digit extraction",
@@ -1880,7 +1944,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 5,
-   "of": 12,
+   "of": 13,
    "recipes": [
     {
      "title": "Digit extraction",
@@ -1912,7 +1976,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 6,
-   "of": 12,
+   "of": 13,
    "recipes": [
     {
      "title": "Digit extraction",
@@ -1944,7 +2008,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 7,
-   "of": 12,
+   "of": 13,
    "recipes": [
     {
      "title": "Digit extraction",
@@ -1976,7 +2040,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 8,
-   "of": 12,
+   "of": 13,
    "recipes": [
     {
      "title": "Digit extraction",
@@ -2008,7 +2072,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 9,
-   "of": 12,
+   "of": 13,
    "recipes": [
     {
      "title": "Digit extraction",
@@ -2044,7 +2108,7 @@
    "kind": "fix the bugs",
    "paper": false,
    "pos": 10,
-   "of": 12,
+   "of": 13,
    "recipes": [
     {
      "title": "Digit extraction",
@@ -2072,7 +2136,35 @@
    "kind": "write code",
    "paper": false,
    "pos": 11,
-   "of": 12,
+   "of": 13,
+   "recipes": [
+    {
+     "title": "Digit extraction",
+     "link": "/cookbook/06-digit-extraction"
+    }
+   ],
+   "pre": [
+    {
+     "id": "D04",
+     "link": "/exercises/D04-digit-sum"
+    }
+   ],
+   "drills": [
+    "Digits"
+   ]
+  },
+  {
+   "id": "D13",
+   "title": "Digital root",
+   "link": "/exercises/D13-digital-root",
+   "theme": "loops",
+   "group": "digits",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 12,
+   "of": 13,
    "recipes": [
     {
      "title": "Digit extraction",
@@ -2099,8 +2191,8 @@
    "effort": "hard",
    "kind": "write code",
    "paper": false,
-   "pos": 12,
-   "of": 12,
+   "pos": 13,
+   "of": 13,
    "recipes": [
     {
      "title": "Digit extraction",
@@ -2126,7 +2218,7 @@
    "kind": "paper",
    "paper": true,
    "pos": 1,
-   "of": 5,
+   "of": 7,
    "recipes": [
     {
      "title": "State update",
@@ -2154,7 +2246,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 2,
-   "of": 5,
+   "of": 7,
    "recipes": [
     {
      "title": "State update",
@@ -2182,7 +2274,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 3,
-   "of": 5,
+   "of": 7,
    "recipes": [
     {
      "title": "State update",
@@ -2204,6 +2296,38 @@
    ]
   },
   {
+   "id": "S06",
+   "title": "Collatz steps",
+   "link": "/exercises/S06-collatz-steps",
+   "theme": "loops",
+   "group": "changing-values",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 4,
+   "of": 7,
+   "recipes": [
+    {
+     "title": "State update",
+     "link": "/cookbook/07-state-update"
+    }
+   ],
+   "pre": [
+    {
+     "id": "S04",
+     "link": "/exercises/S04-doubling"
+    },
+    {
+     "id": "C01",
+     "link": "/exercises/C01-even-or-odd"
+    }
+   ],
+   "drills": [
+    "Changing state"
+   ]
+  },
+  {
    "id": "S05",
    "title": "N-th Fibonacci",
    "link": "/exercises/S05-nth-fibonacci",
@@ -2213,8 +2337,8 @@
    "effort": "medium",
    "kind": "write code",
    "paper": false,
-   "pos": 4,
-   "of": 5,
+   "pos": 5,
+   "of": 7,
    "recipes": [
     {
      "title": "State update",
@@ -2232,6 +2356,38 @@
    ]
   },
   {
+   "id": "S07",
+   "title": "Greatest common divisor",
+   "link": "/exercises/S07-greatest-common-divisor",
+   "theme": "loops",
+   "group": "changing-values",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 6,
+   "of": 7,
+   "recipes": [
+    {
+     "title": "State update",
+     "link": "/cookbook/07-state-update"
+    }
+   ],
+   "pre": [
+    {
+     "id": "S02",
+     "link": "/exercises/S02-fibonacci"
+    },
+    {
+     "id": "D01",
+     "link": "/exercises/D01-last-digit"
+    }
+   ],
+   "drills": [
+    "Changing state"
+   ]
+  },
+  {
    "id": "S03",
    "title": "Even Fibonacci sum",
    "link": "/exercises/S03-even-fibonacci-sum",
@@ -2241,8 +2397,8 @@
    "effort": "hard",
    "kind": "write code",
    "paper": false,
-   "pos": 5,
-   "of": 5,
+   "pos": 7,
+   "of": 7,
    "recipes": [
     {
      "title": "State update",
@@ -2568,7 +2724,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 1,
-   "of": 6,
+   "of": 8,
    "recipes": [
     {
      "title": "Array traversal",
@@ -2598,7 +2754,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 2,
-   "of": 6,
+   "of": 8,
    "recipes": [
     {
      "title": "Array traversal",
@@ -2622,6 +2778,40 @@
    "drills": []
   },
   {
+   "id": "R07",
+   "title": "Count the even values",
+   "link": "/exercises/R07-count-the-even-values",
+   "theme": "arrays",
+   "group": "arrays",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 3,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Array traversal",
+     "link": "/cookbook/11-array-traversal"
+    },
+    {
+     "title": "Conditional accumulator",
+     "link": "/cookbook/03-conditional-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "R01",
+     "link": "/exercises/R01-sum-an-array"
+    },
+    {
+     "id": "A15",
+     "link": "/exercises/A15-count-even-numbers"
+    }
+   ],
+   "drills": []
+  },
+  {
    "id": "R02",
    "title": "Position of the largest",
    "link": "/exercises/R02-largest-in-an-array",
@@ -2631,8 +2821,8 @@
    "effort": "medium",
    "kind": "write code",
    "paper": false,
-   "pos": 3,
-   "of": 6,
+   "pos": 4,
+   "of": 8,
    "recipes": [
     {
      "title": "Array traversal",
@@ -2665,8 +2855,8 @@
    "effort": "medium",
    "kind": "fix the bugs",
    "paper": false,
-   "pos": 4,
-   "of": 6,
+   "pos": 5,
+   "of": 8,
    "recipes": [
     {
      "title": "Array traversal",
@@ -2695,8 +2885,8 @@
    "effort": "medium",
    "kind": "write code",
    "paper": false,
-   "pos": 5,
-   "of": 6,
+   "pos": 6,
+   "of": 8,
    "recipes": [
     {
      "title": "Array traversal",
@@ -2716,6 +2906,40 @@
    "drills": []
   },
   {
+   "id": "R08",
+   "title": "Is it sorted?",
+   "link": "/exercises/R08-is-it-sorted",
+   "theme": "arrays",
+   "group": "arrays",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 7,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Array traversal",
+     "link": "/cookbook/11-array-traversal"
+    },
+    {
+     "title": "Flag/search",
+     "link": "/cookbook/05-flag-search"
+    }
+   ],
+   "pre": [
+    {
+     "id": "R02",
+     "link": "/exercises/R02-largest-in-an-array"
+    },
+    {
+     "id": "P03",
+     "link": "/exercises/P03-has-a-multiple-of-7"
+    }
+   ],
+   "drills": []
+  },
+  {
    "id": "R05",
    "title": "Reverse an array",
    "link": "/exercises/R05-reverse-an-array",
@@ -2725,8 +2949,8 @@
    "effort": "medium",
    "kind": "write code",
    "paper": false,
-   "pos": 6,
-   "of": 6,
+   "pos": 8,
+   "of": 8,
    "recipes": [
     {
      "title": "Array traversal",
@@ -3048,6 +3272,8 @@
     "A12",
     "A03",
     "A17",
+    "A23",
+    "A24",
     "A08"
    ]
   },
@@ -3086,7 +3312,8 @@
     "D12",
     "D11",
     "D07",
-    "D05"
+    "D05",
+    "D13"
    ]
   },
   {
@@ -3096,7 +3323,9 @@
     "S01",
     "S04",
     "S02",
+    "S06",
     "S05",
+    "S07",
     "S03"
    ]
   },
@@ -3764,7 +3993,7 @@
    "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-for/",
    "video": "for Iteration Statement",
    "videoPage": "/learn/videos/for-iteration-statement",
-   "exercises": 81,
+   "exercises": 86,
    "first": {
     "id": "L01",
     "link": "/exercises/L01-trace-a-loop"
@@ -3780,7 +4009,7 @@
    "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-arrays-lists/",
    "video": "Understanding Arrays",
    "videoPage": "/learn/videos/understanding-arrays",
-   "exercises": 11,
+   "exercises": 13,
    "first": {
     "id": "R01",
     "link": "/exercises/R01-sum-an-array"

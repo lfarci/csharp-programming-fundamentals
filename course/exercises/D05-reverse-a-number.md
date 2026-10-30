@@ -3,8 +3,8 @@ prev:
   text: "D07 · Fix: digit sum"
   link: /exercises/D07-fix-digit-sum
 next:
-  text: "D06 · Palindrome number"
-  link: /exercises/D06-palindrome-number
+  text: "D13 · Digital root"
+  link: /exercises/D13-digital-root
 ---
 
 [Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Digits](../themes/loops-digits.md) › D05
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Digits** · exercise 11 of 12 in this group (66 of 81 in the theme)
+**Loops › Digits** · exercise 11 of 13 in this group (68 of 86 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -98,6 +98,6 @@ Only after a real try: [open the solution for D05](../../internal/solutions/D05_
 
 <div class="gh-only">
 
-Previous: [D07 · Fix: digit sum](D07-fix-digit-sum.md) · [Loops](../themes/loops.md) · Next: [D06 · Palindrome number](D06-palindrome-number.md)
+Previous: [D07 · Fix: digit sum](D07-fix-digit-sum.md) · [Loops](../themes/loops.md) · Next: [D13 · Digital root](D13-digital-root.md)
 
 </div>

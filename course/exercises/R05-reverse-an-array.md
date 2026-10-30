@@ -1,7 +1,7 @@
 ---
 prev:
-  text: "R04 · Find the position"
-  link: /exercises/R04-find-the-position
+  text: "R08 · Is it sorted?"
+  link: /exercises/R08-is-it-sorted
 next:
   text: "T01 · Count a letter"
   link: /exercises/T01-count-a-letter
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Arrays, text and lists › Arrays** · exercise 6 of 6 in this group (6 of 11 in the theme)
+**Arrays, text and lists › Arrays** · exercise 8 of 8 in this group (8 of 13 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -94,6 +94,6 @@ Only after a real try: [open the solution for R05](../../internal/solutions/R05_
 
 <div class="gh-only">
 
-Previous: [R04 · Find the position](R04-find-the-position.md) · [Arrays, text and lists](../themes/arrays.md) · Next: [T01 · Count a letter](T01-count-a-letter.md)
+Previous: [R08 · Is it sorted?](R08-is-it-sorted.md) · [Arrays, text and lists](../themes/arrays.md) · Next: [T01 · Count a letter](T01-count-a-letter.md)
 
 </div>

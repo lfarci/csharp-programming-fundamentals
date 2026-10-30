@@ -1,7 +1,7 @@
 ---
 prev:
-  text: "A17 · Sum the multiples of k"
-  link: /exercises/A17-sum-multiples-of-k
+  text: "A24 · Perfect number"
+  link: /exercises/A24-perfect-number
 next:
   text: "L05 · Until zero"
   link: /exercises/L05-until-zero
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Keep only some** · exercise 9 of 9 in this group (34 of 81 in the theme)
+**Loops › Keep only some** · exercise 11 of 11 in this group (36 of 86 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -101,6 +101,6 @@ Only after a real try: [open the solution for A08](../../internal/solutions/A08_
 
 <div class="gh-only">
 
-Previous: [A17 · Sum the multiples of k](A17-sum-multiples-of-k.md) · [Loops](../themes/loops.md) · Next: [L05 · Until zero](L05-until-zero.md)
+Previous: [A24 · Perfect number](A24-perfect-number.md) · [Loops](../themes/loops.md) · Next: [L05 · Until zero](L05-until-zero.md)
 
 </div>

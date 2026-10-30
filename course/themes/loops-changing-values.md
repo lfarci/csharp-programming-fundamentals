@@ -24,7 +24,9 @@ Do the exercises from top to bottom. Tick each one when `./ex check` says DONE.
 | S01 | [Trace two variables](../exercises/S01-trace-updates.md) | paper | Guided | easy |
 | S04 | [Doubling](../exercises/S04-doubling.md) | write code | Guided | easy |
 | S02 | [Fibonacci](../exercises/S02-fibonacci.md) | write code | Independent | hard |
+| S06 | [Collatz steps](../exercises/S06-collatz-steps.md) | write code | Independent | medium |
 | S05 | [N-th Fibonacci](../exercises/S05-nth-fibonacci.md) | write code | Independent | medium |
+| S07 | [Greatest common divisor](../exercises/S07-greatest-common-divisor.md) | write code | Independent | medium |
 | S03 | [Even Fibonacci sum](../exercises/S03-even-fibonacci-sum.md) | write code | Challenge | hard |
 
 </div>

@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Arrays, text and lists › Files and lists** · exercise 2 of 2 in this group (11 of 11 in the theme)
+**Arrays, text and lists › Files and lists** · exercise 2 of 2 in this group (13 of 13 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |

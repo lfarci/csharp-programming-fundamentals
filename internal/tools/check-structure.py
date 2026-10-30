@@ -45,6 +45,9 @@ for d in site["drillSets"]:
 cfg = open(f"{ROOT}/internal/site/.vitepress/config.mts", encoding="utf-8").read()
 if re.search(r"course\.exercises|/exercises/[A-Z]\d\d", cfg): errors.append("internal/site/.vitepress/config.mts: the sidebar must not list exercises (themes and groups only)")
 
+import re as _re  # the home page states the number of exercises by hand
+_m = _re.search(r"(\d+) small exercises", open("course/home.md", encoding="utf-8").read())
+if _m and int(_m.group(1)) != len(ex): errors.append(f"course/home.md says {_m.group(1)} exercises, there are {len(ex)}")
 for w in warnings: print("WARN:", w)
 for m in errors: print("FAIL:", m)
 if errors: sys.exit(1)

@@ -3,8 +3,8 @@ prev:
   text: "R01 · Sum of an array"
   link: /exercises/R01-sum-an-array
 next:
-  text: "R02 · Position of the largest"
-  link: /exercises/R02-largest-in-an-array
+  text: "R07 · Count the even values"
+  link: /exercises/R07-count-the-even-values
 ---
 
 [Home](../../README.md) › [Exercises](README.md) › [Arrays, text and lists](../themes/arrays.md) › [Arrays](../themes/arrays-arrays.md) › R03
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Arrays, text and lists › Arrays** · exercise 2 of 6 in this group (2 of 11 in the theme)
+**Arrays, text and lists › Arrays** · exercise 2 of 8 in this group (2 of 13 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -91,6 +91,6 @@ Only after a real try: [open the solution for R03](../../internal/solutions/R03_
 
 <div class="gh-only">
 
-Previous: [R01 · Sum of an array](R01-sum-an-array.md) · [Arrays, text and lists](../themes/arrays.md) · Next: [R02 · Position of the largest](R02-largest-in-an-array.md)
+Previous: [R01 · Sum of an array](R01-sum-an-array.md) · [Arrays, text and lists](../themes/arrays.md) · Next: [R07 · Count the even values](R07-count-the-even-values.md)
 
 </div>

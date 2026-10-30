@@ -39,7 +39,7 @@ Do the groups in order, and the exercises of a group from top to bottom. Tick ea
 
 <div class="gh-only">
 
-1. [Arrays](arrays-arrays.md): Visit every element with `values[i]`. (6 exercises)
+1. [Arrays](arrays-arrays.md): Visit every element with `values[i]`. (8 exercises)
 2. [Text](arrays-text.md): A string is an array of letters. (3 exercises)
 3. [Files and lists](arrays-files-and-lists.md): Save values in a file; use a list that grows. (2 exercises)
 
