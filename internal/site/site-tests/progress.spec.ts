@@ -5,6 +5,12 @@ import { readFileSync } from 'node:fs'
 const ALL = JSON.parse(readFileSync(new URL('../../tools/exercises.json', import.meta.url), 'utf8'))
 const TOTAL = ALL.length
 const LOOPS = ALL.filter((e: { theme: string }) => e.theme === 'Loops').length
+// The group of A04 and its size, and the number of Loops groups, also come from the generator.
+const COURSE = JSON.parse(readFileSync(new URL('../.vitepress/course.json', import.meta.url), 'utf8'))
+const LOOP_GROUPS = COURSE.themes.find((t: { slug: string }) => t.slug === 'loops').groups
+const A04_GROUP = ALL.find((e: { id: string }) => e.id === 'A04').group
+const A04_SLUG = LOOP_GROUPS.find((g: { title: string }) => g.title === A04_GROUP).slug
+const A04_SIZE = ALL.filter((e: { theme: string, group: string }) => e.theme === 'Loops' && e.group === A04_GROUP).length
 
 // Each test starts with an empty browser store (Playwright gives every test a fresh context).
 
@@ -17,10 +23,10 @@ test('Mark as done on an exercise page survives a reload and shows on its theme 
   await expect(page.getByLabel('Mark A04 as done')).toBeChecked()
 
   await page.goto('themes/loops')
-  await expect(page.locator('.groups li', { hasText: 'Add up' })).toContainText('1 / 12')
-  await page.locator('.groups a', { hasText: 'Add up' }).click()
-  await expect(page).toHaveURL(/themes\/loops-add-up$/)
-  await expect(page.locator('.theme-ex[data-group="add-up"] .count')).toHaveText(/1 of 12 done/)
+  await expect(page.locator('.groups li', { hasText: A04_GROUP })).toContainText(`1 / ${A04_SIZE}`)
+  await page.locator('.groups a', { hasText: A04_GROUP }).click()
+  await expect(page).toHaveURL(new RegExp(`themes/loops-${A04_SLUG}$`))
+  await expect(page.locator(`.theme-ex[data-group="${A04_SLUG}"] .count`)).toHaveText(new RegExp(`1 of ${A04_SIZE} done`))
   await expect(page.locator('.theme-ex').getByLabel('Mark A04 as done')).toBeChecked()
 
   await page.goto('exercises/')
@@ -119,7 +125,7 @@ test('The Learn the theory card has one video, one module and the first exercise
 
 test('Each group has its own page: theme cards link to it, old anchors still land on the card, Previous/Next go to the next group', async ({ page }) => {
   await page.goto('themes/loops')
-  await expect(page.locator('.groups li')).toHaveCount(9)
+  await expect(page.locator('.groups li')).toHaveCount(LOOP_GROUPS.length)
   await expect(page.locator('.theme-ex')).toHaveCount(0)
   await expect(page.locator('#count a')).toHaveAttribute('href', /\/themes\/loops-count$/)
   await page.goto('themes/loops-count')
