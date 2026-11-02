@@ -30,6 +30,8 @@ jobs:
         run: node internal/tools/check-site-sync.ts
       - name: Build the site (fails on dead links)
         run: npm run --prefix internal docs:build
+      - name: Links between built pages land on a page (rewrites included)
+        run: python3 internal/tools/check-built-links.py
       - name: Install the test browser
         run: npm exec --prefix internal -- playwright install --with-deps chromium
       - name: Progress ticks work in a real browser (Mark as done, reload, import)
