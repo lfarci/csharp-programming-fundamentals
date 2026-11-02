@@ -39,6 +39,12 @@ function githubLinks(md: any) {
         t.attrSet('href', '/' + (hash ? '#' + hash : ''))
         return base ? base(tokens, idx, opts, env, self) : self.renderToken(tokens, idx, opts)
       }
+      // answer-keys/ is served at /solutions/ (see rewrites): VitePress does not follow a rewrite in a relative link.
+      const key = rel.match(/^answer-keys\/(.+)\.md$/)
+      if (key) {
+        t.attrSet('href', `/solutions/${key[1] === 'README' ? '' : key[1]}${hash ? '#' + hash : ''}`)
+        return base ? base(tokens, idx, opts, env, self) : self.renderToken(tokens, idx, opts)
+      }
       const abs = path.join(REPO_ROOT, repo)
       if (repo.startsWith('../')) throw new Error(`${env.relativePath}: link ${href} leaves the repo`)
       if (rel.startsWith('../')) {

@@ -32,7 +32,7 @@ lychee_check() {
 if [ "${1:-}" = "--external" ]; then step "Links (external)" lychee_check; fi
 step "Diagrams (D2 sources match the SVGs)" internal/tools/diagrams.sh --check
 npmi() { npm --prefix internal "$@"; }   # the website tools live in internal/ (package.json)
-site() { [ -d internal/node_modules ] || npmi ci --silent; node internal/tools/check-site-sync.ts && npmi run --silent docs:build >/dev/null && echo "OK: website builds"; }
+site() { [ -d internal/node_modules ] || npmi ci --silent; node internal/tools/check-site-sync.ts && npmi run --silent docs:build >/dev/null && echo "OK: website builds" && python3 internal/tools/check-built-links.py; }
 step "Website (VitePress build, no dead links)" site
 site_test() { [ -d ~/.cache/ms-playwright ] || npmi exec playwright install chromium >/dev/null; npmi run --silent test:site -- --reporter=line; }
 step "Website: progress ticks work in a real browser" site_test
