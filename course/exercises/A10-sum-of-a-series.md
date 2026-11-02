@@ -3,8 +3,8 @@ prev:
   text: "A05 · Sum and sum of squares"
   link: /exercises/A05-sum-square-difference
 next:
-  text: "A02 · Count multiples of 3"
-  link: /exercises/A02-count-multiples-of-3
+  text: "A20 · Power of 2"
+  link: /exercises/A20-powers-of-2
 ---
 
 [Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops-add-up.md) › A10
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Add up** · exercise 12 of 12 in this group (25 of 86 in the theme)
+**Loops › Add up** · exercise 14 of 14 in this group (27 of 96 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -99,6 +99,6 @@ Only after a real try: [open the solution for A10](../../internal/solutions/A10_
 
 <div class="gh-only">
 
-Previous: [A05 · Sum and sum of squares](A05-sum-square-difference.md) · [Loops](../themes/loops.md) · Next: [A02 · Count multiples of 3](A02-count-multiples-of-3.md)
+Previous: [A05 · Sum and sum of squares](A05-sum-square-difference.md) · [Loops](../themes/loops.md) · Next: [A20 · Power of 2](A20-powers-of-2.md)
 
 </div>

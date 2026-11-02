@@ -400,10 +400,112 @@ return previous;""", [([0], 0), ([1], 1), ([6], 8), ([10], 55)],
  ["S02 without printing: do the same 3 moves n times.", "After the loop, `previous` holds the answer."], ["n = 0: 0."],
  "Give back the sum of the first n Fibonacci numbers.", "loops-state", ["07"], ["S02"], level="Independent", stars=2, sort="S025")
 
+# ---------- A25-A34: more accumulator drills (2026-11-02): the same box, one change at a time ----------
+acc("A25", "add-the-same-number", "Add the same number", "int AddRepeated(int value, int times)",
+"""int total = 0;
+for (int i = 1; i <= times; i++)
+{
+    total += value;
+}
+return total;""", [([4, 3], 12), ([7, 1], 7), ([5, 0], 0), ([2, 10], 20)],
+ "Give back `value` + `value` + … (`times` times), with a loop. `AddRepeated(4, 3)` is 4 + 4 + 4 = 12.",
+ ["A01, but each turn adds `value`, not `i`.", "The loop only counts the turns: `for (int i = 1; i <= times; i++)`."], ["`times` = 0: 0 (nothing was added)."],
+ "Start the total at `start` instead of 0, then add `value`, `times` times.", ["A01"])
+acc("A26", "sum-of-tens", "Sum of tens", "int SumOfTens(int n)",
+"""int sum = 0;
+for (int i = 1; i <= n; i++)
+{
+    sum += i * 10;
+}
+return sum;""", [([3], 60), ([1], 10), ([0], 0), ([5], 150)],
+ "Give back 10 + 20 + … + n × 10. `SumOfTens(3)` is 10 + 20 + 30 = 60.",
+ ["A01, but each turn adds `i * 10`.", "Box before, add inside, return after."], ["n = 0: 0."],
+ "Give back 5 + 10 + … + n × 5.", ["A25"])
+acc("A34", "sum-of-a-times-table", "Sum of a times table", "int SumOfTable(int k, int n)",
+"""int sum = 0;
+for (int i = 1; i <= n; i++)
+{
+    sum += k * i;
+}
+return sum;""", [([3, 10], 165), ([10, 3], 60), ([4, 1], 4), ([5, 0], 0)],
+ "Give back k × 1 + k × 2 + … + k × n: the sum of the first n lines of the k times table.",
+ ["A26 with `k` instead of 10.", "`sum += k * i;`"], ["n = 0: 0."],
+ "Give back the sum of the k times table from k × a to k × b.", ["A26", "L04"])
+acc("A29", "first-n-odd-numbers", "First n odd numbers", "int SumFirstOdds(int n)",
+"""int sum = 0;
+for (int i = 1; i <= n; i++)
+{
+    sum += 2 * i - 1;
+}
+return sum;""", [([3], 9), ([1], 1), ([0], 0), ([5], 25)],
+ "Give back the sum of the **first n** odd numbers: 1 + 3 + 5 + … (n numbers). `SumFirstOdds(3)` is 1 + 3 + 5 = 9.",
+ ["Not like A14: here n is **how many** numbers, so the loop runs n times.", "Turn i adds the i-th odd number: `2 * i - 1` (1, 3, 5, …)."],
+ ["n = 0: 0."], "Give back the sum of the first n even numbers: 2 + 4 + 6 + …", ["A14"])
+acc("A27", "sum-by-any-step", "Sum by any step", "int SumByStep(int a, int b, int step)",
+"""int sum = 0;
+for (int i = a; i <= b; i += step)
+{
+    sum += i;
+}
+return sum;""", [([1, 10, 3], 22), ([2, 10, 4], 18), ([5, 5, 2], 5), ([6, 5, 1], 0)],
+ "Give back a + (a + step) + (a + 2 × step) + … while the number is at most b (step ≥ 1). `SumByStep(1, 10, 3)` is 1 + 4 + 7 + 10 = 22.",
+ ["A13 with the step of L15: `i += step`.", "The test stays `i <= b`."], ["`a` bigger than `b`: 0."],
+ "Count the numbers instead of adding them.", ["A13", "L15"])
+acc("A28", "sum-of-pairs", "Sum of i × (i + 1)", "int SumOfPairs(int n)",
+"""int sum = 0;
+for (int i = 1; i <= n; i++)
+{
+    sum += i * (i + 1);
+}
+return sum;""", [([3], 20), ([1], 2), ([0], 0), ([4], 40)],
+ "Give back 1 × 2 + 2 × 3 + … + n × (n + 1). `SumOfPairs(3)` is 2 + 6 + 12 = 20.",
+ ["A18 with `i * (i + 1)` instead of `i * i * i`.", "Keep the brackets: `i * i + 1` is not the same."], ["n = 0: 0."],
+ "Give back 1 × 3 + 2 × 4 + … + n × (n + 2).", ["A18"])
+acc("A30", "power-of-10", "Power of 10", "long PowerOf10(int n)",
+"""long result = 1;
+for (int i = 1; i <= n; i++)
+{
+    result *= 10;
+}
+return result;""", [([3], 1000), ([0], 1), ([1], 10), ([9], 1000000000)],
+ "Give back 10 to the power n (0 ≤ n ≤ 18), by multiplying by 10, n times.",
+ ["A20 with 10 instead of 2.", "The product box starts at 1: `long result = 1;`."], ["n = 0: 1."],
+ "Give back 5 to the power n.", ["A20"])
+acc("A31", "double-k-times", "Double k times", "long DoubleTimes(int start, int times)",
+"""long result = start;
+for (int i = 1; i <= times; i++)
+{
+    result *= 2;
+}
+return result;""", [([5, 3], 40), ([7, 0], 7), ([1, 10], 1024), ([3, 1], 6)],
+ "Start with `start` and double it `times` times. `DoubleTimes(5, 3)`: 5, 10, 20, 40, so 40.",
+ ["A20, but the box starts at `start`, not at 1.", "`result *= 2;` inside the loop."], ["`times` = 0: `start` (nothing changed)."],
+ "Triple the value `times` times instead.", ["A20"])
+acc("A32", "product-of-odd-numbers", "Product of odd numbers", "long ProductOfOdds(int n)",
+"""long product = 1;
+for (int i = 1; i <= n; i += 2)
+{
+    product *= i;
+}
+return product;""", [([5], 15), ([6], 15), ([1], 1), ([0], 1)],
+ "Give back 1 × 3 × 5 × … with every odd number up to n (included). If there is none, give back 1.",
+ ["A14 with a product: the box starts at 1 and does `product *= i;`.", "Loop over 1, 3, 5, … with `i += 2`."], ["n = 0: 1 (nothing was multiplied)."],
+ "Multiply the even numbers 2 × 4 × … up to n.", ["A19", "A14"])
+acc("A33", "product-of-squares", "Product of squares", "long ProductOfSquares(int n)",
+"""long product = 1;
+for (int i = 1; i <= n; i++)
+{
+    product *= i * i;
+}
+return product;""", [([3], 36), ([1], 1), ([0], 1), ([4], 576)],
+ "Give back 1² × 2² × … × n² (0 ≤ n ≤ 10). `ProductOfSquares(3)` is 1 × 4 × 9 = 36.",
+ ["A19 from 1 to n, multiplying by `i * i`.", "The product box starts at 1."], ["n = 0: 1."],
+ "Give back 1³ × 2³ × … × n³ (n ≤ 6).", ["A19"])
+
 # ---------- drill sets (shown in exercises/README.md) ----------
 DRILLS = [
  ("Counter loop (print, count, step)", "01", ["L03", "L11", "L12", "L13", "L14", "L16", "L06", "L17", "L18", "L15"]),
- ("Accumulator (sum, product)", "02", ["A11", "A01", "A13", "A14", "A18", "A20", "A19", "A04", "A07", "A10"]),
+ ("Accumulator (sum, product)", "02", ["A11", "A01", "A25", "A26", "A34", "A13", "A14", "A29", "A27", "A18", "A28", "A10", "A20", "A30", "A31", "A19", "A32", "A33", "A04", "A07"]),
  ("Count or sum only some values", "03", ["A02", "A15", "A16", "A21", "A22", "A12", "A03", "A17", "A23", "A24", "A08"]),
  ("Nested loops (draw)", "08", ["L09", "L10", "G07", "G08", "G01", "G09", "G14", "G03", "G02", "G10", "G11", "G12", "G04", "G13", "G05"]),
  ("Digits", "06", ["D01", "D02", "D03", "D08", "D04", "D09", "D10", "D12", "D11", "D07", "D05", "D13"]),

@@ -516,7 +516,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 1,
-   "of": 12,
+   "of": 14,
    "recipes": [
     {
      "title": "Counter loop",
@@ -546,7 +546,7 @@
    "kind": "arrange the lines",
    "paper": false,
    "pos": 2,
-   "of": 12,
+   "of": 14,
    "recipes": [
     {
      "title": "Accumulator",
@@ -574,7 +574,7 @@
    "kind": "write code",
    "paper": false,
    "pos": 3,
-   "of": 12,
+   "of": 14,
    "recipes": [
     {
      "title": "Counter loop",
@@ -596,6 +596,94 @@
    ]
   },
   {
+   "id": "A25",
+   "title": "Add the same number",
+   "link": "/exercises/A25-add-the-same-number",
+   "theme": "loops",
+   "group": "add-up",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 4,
+   "of": 14,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A01",
+     "link": "/exercises/A01-sum-1-to-n"
+    }
+   ],
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A26",
+   "title": "Sum of tens",
+   "link": "/exercises/A26-sum-of-tens",
+   "theme": "loops",
+   "group": "add-up",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 5,
+   "of": 14,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A25",
+     "link": "/exercises/A25-add-the-same-number"
+    }
+   ],
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A34",
+   "title": "Sum of a times table",
+   "link": "/exercises/A34-sum-of-a-times-table",
+   "theme": "loops",
+   "group": "add-up",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 6,
+   "of": 14,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A26",
+     "link": "/exercises/A26-sum-of-tens"
+    },
+    {
+     "id": "L04",
+     "link": "/exercises/L04-multiplication-table"
+    }
+   ],
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
    "id": "A13",
    "title": "Sum from a to b",
    "link": "/exercises/A13-sum-from-a-to-b",
@@ -605,8 +693,8 @@
    "effort": "easy",
    "kind": "write code",
    "paper": false,
-   "pos": 4,
-   "of": 12,
+   "pos": 7,
+   "of": 14,
    "recipes": [
     {
      "title": "Accumulator",
@@ -633,8 +721,8 @@
    "effort": "easy",
    "kind": "write code",
    "paper": false,
-   "pos": 5,
-   "of": 12,
+   "pos": 8,
+   "of": 14,
    "recipes": [
     {
      "title": "Accumulator",
@@ -656,6 +744,66 @@
    ]
   },
   {
+   "id": "A29",
+   "title": "First n odd numbers",
+   "link": "/exercises/A29-first-n-odd-numbers",
+   "theme": "loops",
+   "group": "add-up",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 9,
+   "of": 14,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A14",
+     "link": "/exercises/A14-sum-odd-numbers"
+    }
+   ],
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A27",
+   "title": "Sum by any step",
+   "link": "/exercises/A27-sum-by-any-step",
+   "theme": "loops",
+   "group": "add-up",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 10,
+   "of": 14,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A13",
+     "link": "/exercises/A13-sum-from-a-to-b"
+    },
+    {
+     "id": "L15",
+     "link": "/exercises/L15-count-by-step"
+    }
+   ],
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
    "id": "A18",
    "title": "Sum of cubes",
    "link": "/exercises/A18-sum-of-cubes",
@@ -665,8 +813,8 @@
    "effort": "easy",
    "kind": "write code",
    "paper": false,
-   "pos": 6,
-   "of": 12,
+   "pos": 11,
+   "of": 14,
    "recipes": [
     {
      "title": "Accumulator",
@@ -684,17 +832,17 @@
    ]
   },
   {
-   "id": "A20",
-   "title": "Power of 2",
-   "link": "/exercises/A20-powers-of-2",
+   "id": "A28",
+   "title": "Sum of i × (i + 1)",
+   "link": "/exercises/A28-sum-of-pairs",
    "theme": "loops",
    "group": "add-up",
    "level": "Guided",
    "effort": "easy",
    "kind": "write code",
    "paper": false,
-   "pos": 7,
-   "of": 12,
+   "pos": 12,
+   "of": 14,
    "recipes": [
     {
      "title": "Accumulator",
@@ -703,96 +851,8 @@
    ],
    "pre": [
     {
-     "id": "A01",
-     "link": "/exercises/A01-sum-1-to-n"
-    }
-   ],
-   "drills": [
-    "Accumulator (sum, product)"
-   ]
-  },
-  {
-   "id": "A19",
-   "title": "Product from a to b",
-   "link": "/exercises/A19-product-from-a-to-b",
-   "theme": "loops",
-   "group": "add-up",
-   "level": "Guided",
-   "effort": "easy",
-   "kind": "write code",
-   "paper": false,
-   "pos": 8,
-   "of": 12,
-   "recipes": [
-    {
-     "title": "Accumulator",
-     "link": "/cookbook/02-accumulator"
-    }
-   ],
-   "pre": [
-    {
-     "id": "A20",
-     "link": "/exercises/A20-powers-of-2"
-    },
-    {
-     "id": "A13",
-     "link": "/exercises/A13-sum-from-a-to-b"
-    }
-   ],
-   "drills": [
-    "Accumulator (sum, product)"
-   ]
-  },
-  {
-   "id": "A04",
-   "title": "Factorial",
-   "link": "/exercises/A04-factorial",
-   "theme": "loops",
-   "group": "add-up",
-   "level": "Independent",
-   "effort": "medium",
-   "kind": "write code",
-   "paper": false,
-   "pos": 9,
-   "of": 12,
-   "recipes": [
-    {
-     "title": "Accumulator",
-     "link": "/cookbook/02-accumulator"
-    }
-   ],
-   "pre": [
-    {
-     "id": "A01",
-     "link": "/exercises/A01-sum-1-to-n"
-    }
-   ],
-   "drills": [
-    "Accumulator (sum, product)"
-   ]
-  },
-  {
-   "id": "A07",
-   "title": "Integer power",
-   "link": "/exercises/A07-integer-power",
-   "theme": "loops",
-   "group": "add-up",
-   "level": "Independent",
-   "effort": "medium",
-   "kind": "write code",
-   "paper": false,
-   "pos": 10,
-   "of": 12,
-   "recipes": [
-    {
-     "title": "Accumulator",
-     "link": "/cookbook/02-accumulator"
-    }
-   ],
-   "pre": [
-    {
-     "id": "A04",
-     "link": "/exercises/A04-factorial"
+     "id": "A18",
+     "link": "/exercises/A18-sum-of-cubes"
     }
    ],
    "drills": [
@@ -809,8 +869,8 @@
    "effort": "medium",
    "kind": "write code",
    "paper": false,
-   "pos": 11,
-   "of": 12,
+   "pos": 13,
+   "of": 14,
    "recipes": [
     {
      "title": "Accumulator",
@@ -835,8 +895,8 @@
    "effort": "medium",
    "kind": "write code",
    "paper": false,
-   "pos": 12,
-   "of": 12,
+   "pos": 14,
+   "of": 14,
    "recipes": [
     {
      "title": "Accumulator",
@@ -847,6 +907,238 @@
     {
      "id": "A01",
      "link": "/exercises/A01-sum-1-to-n"
+    }
+   ],
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A20",
+   "title": "Power of 2",
+   "link": "/exercises/A20-powers-of-2",
+   "theme": "loops",
+   "group": "multiply",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 1,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A01",
+     "link": "/exercises/A01-sum-1-to-n"
+    }
+   ],
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A30",
+   "title": "Power of 10",
+   "link": "/exercises/A30-power-of-10",
+   "theme": "loops",
+   "group": "multiply",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 2,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A20",
+     "link": "/exercises/A20-powers-of-2"
+    }
+   ],
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A31",
+   "title": "Double k times",
+   "link": "/exercises/A31-double-k-times",
+   "theme": "loops",
+   "group": "multiply",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 3,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A20",
+     "link": "/exercises/A20-powers-of-2"
+    }
+   ],
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A19",
+   "title": "Product from a to b",
+   "link": "/exercises/A19-product-from-a-to-b",
+   "theme": "loops",
+   "group": "multiply",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 4,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A20",
+     "link": "/exercises/A20-powers-of-2"
+    },
+    {
+     "id": "A13",
+     "link": "/exercises/A13-sum-from-a-to-b"
+    }
+   ],
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A32",
+   "title": "Product of odd numbers",
+   "link": "/exercises/A32-product-of-odd-numbers",
+   "theme": "loops",
+   "group": "multiply",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 5,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A19",
+     "link": "/exercises/A19-product-from-a-to-b"
+    },
+    {
+     "id": "A14",
+     "link": "/exercises/A14-sum-odd-numbers"
+    }
+   ],
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A33",
+   "title": "Product of squares",
+   "link": "/exercises/A33-product-of-squares",
+   "theme": "loops",
+   "group": "multiply",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 6,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A19",
+     "link": "/exercises/A19-product-from-a-to-b"
+    }
+   ],
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A04",
+   "title": "Factorial",
+   "link": "/exercises/A04-factorial",
+   "theme": "loops",
+   "group": "multiply",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 7,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A01",
+     "link": "/exercises/A01-sum-1-to-n"
+    }
+   ],
+   "drills": [
+    "Accumulator (sum, product)"
+   ]
+  },
+  {
+   "id": "A07",
+   "title": "Integer power",
+   "link": "/exercises/A07-integer-power",
+   "theme": "loops",
+   "group": "multiply",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 8,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "A04",
+     "link": "/exercises/A04-factorial"
     }
    ],
    "drills": [
@@ -3250,14 +3542,24 @@
    "ids": [
     "A11",
     "A01",
+    "A25",
+    "A26",
+    "A34",
     "A13",
     "A14",
+    "A29",
+    "A27",
     "A18",
+    "A28",
+    "A10",
     "A20",
+    "A30",
+    "A31",
     "A19",
+    "A32",
+    "A33",
     "A04",
-    "A07",
-    "A10"
+    "A07"
    ]
   },
   {
@@ -3378,6 +3680,11 @@
      "slug": "add-up",
      "title": "Add up",
      "link": "/themes/loops-add-up"
+    },
+    {
+     "slug": "multiply",
+     "title": "Multiply",
+     "link": "/themes/loops-multiply"
     },
     {
      "slug": "keep-only-some",
@@ -3993,7 +4300,7 @@
    "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-for/",
    "video": "for Iteration Statement",
    "videoPage": "/learn/videos/for-iteration-statement",
-   "exercises": 86,
+   "exercises": 96,
    "first": {
     "id": "L01",
     "link": "/exercises/L01-trace-a-loop"

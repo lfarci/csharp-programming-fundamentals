@@ -1,7 +1,7 @@
 ---
 prev:
-  text: "A07 · Integer power"
-  link: /exercises/A07-integer-power
+  text: "A28 · Sum of i × (i + 1)"
+  link: /exercises/A28-sum-of-pairs
 next:
   text: "A10 · Sum of a series"
   link: /exercises/A10-sum-of-a-series
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Add up** · exercise 11 of 12 in this group (24 of 86 in the theme)
+**Loops › Add up** · exercise 13 of 14 in this group (26 of 96 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -109,6 +109,6 @@ Only after a real try: [open the solution for A05](../../internal/solutions/A05_
 
 <div class="gh-only">
 
-Previous: [A07 · Integer power](A07-integer-power.md) · [Loops](../themes/loops.md) · Next: [A10 · Sum of a series](A10-sum-of-a-series.md)
+Previous: [A28 · Sum of i × (i + 1)](A28-sum-of-pairs.md) · [Loops](../themes/loops.md) · Next: [A10 · Sum of a series](A10-sum-of-a-series.md)
 
 </div>

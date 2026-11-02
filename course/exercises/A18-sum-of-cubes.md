@@ -1,10 +1,10 @@
 ---
 prev:
-  text: "A14 · Sum the odd numbers"
-  link: /exercises/A14-sum-odd-numbers
+  text: "A27 · Sum by any step"
+  link: /exercises/A27-sum-by-any-step
 next:
-  text: "A20 · Power of 2"
-  link: /exercises/A20-powers-of-2
+  text: "A28 · Sum of i × (i + 1)"
+  link: /exercises/A28-sum-of-pairs
 ---
 
 [Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops-add-up.md) › A18
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Add up** · exercise 6 of 12 in this group (19 of 86 in the theme)
+**Loops › Add up** · exercise 11 of 14 in this group (24 of 96 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -92,6 +92,6 @@ Only after a real try: [open the solution for A18](../../internal/solutions/A18_
 
 <div class="gh-only">
 
-Previous: [A14 · Sum the odd numbers](A14-sum-odd-numbers.md) · [Loops](../themes/loops.md) · Next: [A20 · Power of 2](A20-powers-of-2.md)
+Previous: [A27 · Sum by any step](A27-sum-by-any-step.md) · [Loops](../themes/loops.md) · Next: [A28 · Sum of i × (i + 1)](A28-sum-of-pairs.md)
 
 </div>

@@ -1170,6 +1170,164 @@
   ]
  },
  {
+  "id": "A25",
+  "name": "A25-add-the-same-number",
+  "class": "A25_AddTheSameNumber",
+  "title": "Add the same number",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "AddRepeated"
+  ],
+  "cases": [
+   {
+    "method": "AddRepeated",
+    "args": [
+     4,
+     3
+    ],
+    "expected": 12
+   },
+   {
+    "method": "AddRepeated",
+    "args": [
+     7,
+     1
+    ],
+    "expected": 7
+   },
+   {
+    "method": "AddRepeated",
+    "args": [
+     5,
+     0
+    ],
+    "expected": 0
+   },
+   {
+    "method": "AddRepeated",
+    "args": [
+     2,
+     10
+    ],
+    "expected": 20
+   }
+  ],
+  "edge_tests": 0,
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Add up",
+  "drills": [
+   "Accumulator (sum, product)"
+  ],
+  "examples": []
+ },
+ {
+  "id": "A26",
+  "name": "A26-sum-of-tens",
+  "class": "A26_SumOfTens",
+  "title": "Sum of tens",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SumOfTens"
+  ],
+  "cases": [
+   {
+    "method": "SumOfTens",
+    "args": [
+     3
+    ],
+    "expected": 60
+   },
+   {
+    "method": "SumOfTens",
+    "args": [
+     1
+    ],
+    "expected": 10
+   },
+   {
+    "method": "SumOfTens",
+    "args": [
+     0
+    ],
+    "expected": 0
+   },
+   {
+    "method": "SumOfTens",
+    "args": [
+     5
+    ],
+    "expected": 150
+   }
+  ],
+  "edge_tests": 0,
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Add up",
+  "drills": [
+   "Accumulator (sum, product)"
+  ],
+  "examples": []
+ },
+ {
+  "id": "A34",
+  "name": "A34-sum-of-a-times-table",
+  "class": "A34_SumOfATimesTable",
+  "title": "Sum of a times table",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SumOfTable"
+  ],
+  "cases": [
+   {
+    "method": "SumOfTable",
+    "args": [
+     3,
+     10
+    ],
+    "expected": 165
+   },
+   {
+    "method": "SumOfTable",
+    "args": [
+     10,
+     3
+    ],
+    "expected": 60
+   },
+   {
+    "method": "SumOfTable",
+    "args": [
+     4,
+     1
+    ],
+    "expected": 4
+   },
+   {
+    "method": "SumOfTable",
+    "args": [
+     5,
+     0
+    ],
+    "expected": 0
+   }
+  ],
+  "edge_tests": 0,
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Add up",
+  "drills": [
+   "Accumulator (sum, product)"
+  ],
+  "examples": []
+ },
+ {
   "id": "A13",
   "name": "A13-sum-from-a-to-b",
   "class": "A13_SumFromAToB",
@@ -1274,6 +1432,114 @@
   "examples": []
  },
  {
+  "id": "A29",
+  "name": "A29-first-n-odd-numbers",
+  "class": "A29_FirstNOddNumbers",
+  "title": "First n odd numbers",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SumFirstOdds"
+  ],
+  "cases": [
+   {
+    "method": "SumFirstOdds",
+    "args": [
+     3
+    ],
+    "expected": 9
+   },
+   {
+    "method": "SumFirstOdds",
+    "args": [
+     1
+    ],
+    "expected": 1
+   },
+   {
+    "method": "SumFirstOdds",
+    "args": [
+     0
+    ],
+    "expected": 0
+   },
+   {
+    "method": "SumFirstOdds",
+    "args": [
+     5
+    ],
+    "expected": 25
+   }
+  ],
+  "edge_tests": 0,
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Add up",
+  "drills": [
+   "Accumulator (sum, product)"
+  ],
+  "examples": []
+ },
+ {
+  "id": "A27",
+  "name": "A27-sum-by-any-step",
+  "class": "A27_SumByAnyStep",
+  "title": "Sum by any step",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "SumByStep"
+  ],
+  "cases": [
+   {
+    "method": "SumByStep",
+    "args": [
+     1,
+     10,
+     3
+    ],
+    "expected": 22
+   },
+   {
+    "method": "SumByStep",
+    "args": [
+     2,
+     10,
+     4
+    ],
+    "expected": 18
+   },
+   {
+    "method": "SumByStep",
+    "args": [
+     5,
+     5,
+     2
+    ],
+    "expected": 5
+   },
+   {
+    "method": "SumByStep",
+    "args": [
+     6,
+     5,
+     1
+    ],
+    "expected": 0
+   }
+  ],
+  "edge_tests": 0,
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Add up",
+  "drills": [
+   "Accumulator (sum, product)"
+  ],
+  "examples": []
+ },
+ {
   "id": "A18",
   "name": "A18-sum-of-cubes",
   "class": "A18_SumOfCubes",
@@ -1324,147 +1590,43 @@
   "examples": []
  },
  {
-  "id": "A20",
-  "name": "A20-powers-of-2",
-  "class": "A20_PowersOf2",
-  "title": "Power of 2",
+  "id": "A28",
+  "name": "A28-sum-of-pairs",
+  "class": "A28_SumOfPairs",
+  "title": "Sum of i × (i + 1)",
   "paper": false,
   "kind": "method",
   "methods": [
-   "PowerOf2"
+   "SumOfPairs"
   ],
   "cases": [
    {
-    "method": "PowerOf2",
+    "method": "SumOfPairs",
     "args": [
      3
     ],
-    "expected": 8
+    "expected": 20
    },
    {
-    "method": "PowerOf2",
-    "args": [
-     0
-    ],
-    "expected": 1
-   },
-   {
-    "method": "PowerOf2",
-    "args": [
-     10
-    ],
-    "expected": 1024
-   }
-  ],
-  "edge_tests": 0,
-  "checkHint": "",
-  "theme": "Loops",
-  "themeOrder": 2,
-  "group": "Add up",
-  "drills": [
-   "Accumulator (sum, product)"
-  ],
-  "examples": []
- },
- {
-  "id": "A19",
-  "name": "A19-product-from-a-to-b",
-  "class": "A19_ProductFromAToB",
-  "title": "Product from a to b",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "ProductFromTo"
-  ],
-  "cases": [
-   {
-    "method": "ProductFromTo",
-    "args": [
-     2,
-     4
-    ],
-    "expected": 24
-   },
-   {
-    "method": "ProductFromTo",
-    "args": [
-     3,
-     3
-    ],
-    "expected": 3
-   },
-   {
-    "method": "ProductFromTo",
-    "args": [
-     1,
-     5
-    ],
-    "expected": 120
-   },
-   {
-    "method": "ProductFromTo",
-    "args": [
-     5,
-     4
-    ],
-    "expected": 1
-   }
-  ],
-  "edge_tests": 0,
-  "checkHint": "",
-  "theme": "Loops",
-  "themeOrder": 2,
-  "group": "Add up",
-  "drills": [
-   "Accumulator (sum, product)"
-  ],
-  "examples": []
- },
- {
-  "id": "A04",
-  "name": "A04-factorial",
-  "class": "A04_Factorial",
-  "title": "Factorial",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "Factorial"
-  ],
-  "cases": [
-   {
-    "method": "Factorial",
-    "args": [
-     5
-    ],
-    "expected": 120
-   },
-   {
-    "method": "Factorial",
-    "args": [
-     0
-    ],
-    "expected": 1
-   },
-   {
-    "method": "Factorial",
+    "method": "SumOfPairs",
     "args": [
      1
     ],
-    "expected": 1
+    "expected": 2
    },
    {
-    "method": "Factorial",
+    "method": "SumOfPairs",
     "args": [
-     12
+     0
     ],
-    "expected": 479001600
+    "expected": 0
    },
    {
-    "method": "Factorial",
+    "method": "SumOfPairs",
     "args": [
-     20
+     4
     ],
-    "expected": 2432902008176640000
+    "expected": 40
    }
   ],
   "edge_tests": 0,
@@ -1475,122 +1637,7 @@
   "drills": [
    "Accumulator (sum, product)"
   ],
-  "examples": [
-   {
-    "input": [
-     "5"
-    ],
-    "expected": [
-     "5! = 120"
-    ]
-   },
-   {
-    "input": [
-     "0"
-    ],
-    "expected": [
-     "0! = 1"
-    ]
-   },
-   {
-    "input": [
-     "12"
-    ],
-    "expected": [
-     "12! = 479001600"
-    ]
-   },
-   {
-    "input": [
-     "20"
-    ],
-    "expected": [
-     "20! = 2432902008176640000"
-    ]
-   }
-  ]
- },
- {
-  "id": "A07",
-  "name": "A07-integer-power",
-  "class": "A07_IntegerPower",
-  "title": "Integer power",
-  "paper": false,
-  "kind": "method",
-  "methods": [
-   "Power"
-  ],
-  "cases": [
-   {
-    "method": "Power",
-    "args": [
-     3,
-     4
-    ],
-    "expected": 81
-   },
-   {
-    "method": "Power",
-    "args": [
-     2,
-     10
-    ],
-    "expected": 1024
-   },
-   {
-    "method": "Power",
-    "args": [
-     5,
-     0
-    ],
-    "expected": 1
-   },
-   {
-    "method": "Power",
-    "args": [
-     -2,
-     3
-    ],
-    "expected": -8
-   }
-  ],
-  "edge_tests": 2,
-  "checkHint": "",
-  "theme": "Loops",
-  "themeOrder": 2,
-  "group": "Add up",
-  "drills": [
-   "Accumulator (sum, product)"
-  ],
-  "examples": [
-   {
-    "input": [
-     "3",
-     "4"
-    ],
-    "expected": [
-     "3^4 = 81"
-    ]
-   },
-   {
-    "input": [
-     "2",
-     "10"
-    ],
-    "expected": [
-     "2^10 = 1024"
-    ]
-   },
-   {
-    "input": [
-     "5",
-     "0"
-    ],
-    "expected": [
-     "5^0 = 1"
-    ]
-   }
-  ]
+  "examples": []
  },
  {
   "id": "A05",
@@ -1694,6 +1741,479 @@
     ],
     "expected": [
      "Sum: 2.0833"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A20",
+  "name": "A20-powers-of-2",
+  "class": "A20_PowersOf2",
+  "title": "Power of 2",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "PowerOf2"
+  ],
+  "cases": [
+   {
+    "method": "PowerOf2",
+    "args": [
+     3
+    ],
+    "expected": 8
+   },
+   {
+    "method": "PowerOf2",
+    "args": [
+     0
+    ],
+    "expected": 1
+   },
+   {
+    "method": "PowerOf2",
+    "args": [
+     10
+    ],
+    "expected": 1024
+   }
+  ],
+  "edge_tests": 0,
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Multiply",
+  "drills": [
+   "Accumulator (sum, product)"
+  ],
+  "examples": []
+ },
+ {
+  "id": "A30",
+  "name": "A30-power-of-10",
+  "class": "A30_PowerOf10",
+  "title": "Power of 10",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "PowerOf10"
+  ],
+  "cases": [
+   {
+    "method": "PowerOf10",
+    "args": [
+     3
+    ],
+    "expected": 1000
+   },
+   {
+    "method": "PowerOf10",
+    "args": [
+     0
+    ],
+    "expected": 1
+   },
+   {
+    "method": "PowerOf10",
+    "args": [
+     1
+    ],
+    "expected": 10
+   },
+   {
+    "method": "PowerOf10",
+    "args": [
+     9
+    ],
+    "expected": 1000000000
+   }
+  ],
+  "edge_tests": 0,
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Multiply",
+  "drills": [
+   "Accumulator (sum, product)"
+  ],
+  "examples": []
+ },
+ {
+  "id": "A31",
+  "name": "A31-double-k-times",
+  "class": "A31_DoubleKTimes",
+  "title": "Double k times",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "DoubleTimes"
+  ],
+  "cases": [
+   {
+    "method": "DoubleTimes",
+    "args": [
+     5,
+     3
+    ],
+    "expected": 40
+   },
+   {
+    "method": "DoubleTimes",
+    "args": [
+     7,
+     0
+    ],
+    "expected": 7
+   },
+   {
+    "method": "DoubleTimes",
+    "args": [
+     1,
+     10
+    ],
+    "expected": 1024
+   },
+   {
+    "method": "DoubleTimes",
+    "args": [
+     3,
+     1
+    ],
+    "expected": 6
+   }
+  ],
+  "edge_tests": 0,
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Multiply",
+  "drills": [
+   "Accumulator (sum, product)"
+  ],
+  "examples": []
+ },
+ {
+  "id": "A19",
+  "name": "A19-product-from-a-to-b",
+  "class": "A19_ProductFromAToB",
+  "title": "Product from a to b",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "ProductFromTo"
+  ],
+  "cases": [
+   {
+    "method": "ProductFromTo",
+    "args": [
+     2,
+     4
+    ],
+    "expected": 24
+   },
+   {
+    "method": "ProductFromTo",
+    "args": [
+     3,
+     3
+    ],
+    "expected": 3
+   },
+   {
+    "method": "ProductFromTo",
+    "args": [
+     1,
+     5
+    ],
+    "expected": 120
+   },
+   {
+    "method": "ProductFromTo",
+    "args": [
+     5,
+     4
+    ],
+    "expected": 1
+   }
+  ],
+  "edge_tests": 0,
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Multiply",
+  "drills": [
+   "Accumulator (sum, product)"
+  ],
+  "examples": []
+ },
+ {
+  "id": "A32",
+  "name": "A32-product-of-odd-numbers",
+  "class": "A32_ProductOfOddNumbers",
+  "title": "Product of odd numbers",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "ProductOfOdds"
+  ],
+  "cases": [
+   {
+    "method": "ProductOfOdds",
+    "args": [
+     5
+    ],
+    "expected": 15
+   },
+   {
+    "method": "ProductOfOdds",
+    "args": [
+     6
+    ],
+    "expected": 15
+   },
+   {
+    "method": "ProductOfOdds",
+    "args": [
+     1
+    ],
+    "expected": 1
+   },
+   {
+    "method": "ProductOfOdds",
+    "args": [
+     0
+    ],
+    "expected": 1
+   }
+  ],
+  "edge_tests": 0,
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Multiply",
+  "drills": [
+   "Accumulator (sum, product)"
+  ],
+  "examples": []
+ },
+ {
+  "id": "A33",
+  "name": "A33-product-of-squares",
+  "class": "A33_ProductOfSquares",
+  "title": "Product of squares",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "ProductOfSquares"
+  ],
+  "cases": [
+   {
+    "method": "ProductOfSquares",
+    "args": [
+     3
+    ],
+    "expected": 36
+   },
+   {
+    "method": "ProductOfSquares",
+    "args": [
+     1
+    ],
+    "expected": 1
+   },
+   {
+    "method": "ProductOfSquares",
+    "args": [
+     0
+    ],
+    "expected": 1
+   },
+   {
+    "method": "ProductOfSquares",
+    "args": [
+     4
+    ],
+    "expected": 576
+   }
+  ],
+  "edge_tests": 0,
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Multiply",
+  "drills": [
+   "Accumulator (sum, product)"
+  ],
+  "examples": []
+ },
+ {
+  "id": "A04",
+  "name": "A04-factorial",
+  "class": "A04_Factorial",
+  "title": "Factorial",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "Factorial"
+  ],
+  "cases": [
+   {
+    "method": "Factorial",
+    "args": [
+     5
+    ],
+    "expected": 120
+   },
+   {
+    "method": "Factorial",
+    "args": [
+     0
+    ],
+    "expected": 1
+   },
+   {
+    "method": "Factorial",
+    "args": [
+     1
+    ],
+    "expected": 1
+   },
+   {
+    "method": "Factorial",
+    "args": [
+     12
+    ],
+    "expected": 479001600
+   },
+   {
+    "method": "Factorial",
+    "args": [
+     20
+    ],
+    "expected": 2432902008176640000
+   }
+  ],
+  "edge_tests": 0,
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Multiply",
+  "drills": [
+   "Accumulator (sum, product)"
+  ],
+  "examples": [
+   {
+    "input": [
+     "5"
+    ],
+    "expected": [
+     "5! = 120"
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "0! = 1"
+    ]
+   },
+   {
+    "input": [
+     "12"
+    ],
+    "expected": [
+     "12! = 479001600"
+    ]
+   },
+   {
+    "input": [
+     "20"
+    ],
+    "expected": [
+     "20! = 2432902008176640000"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "A07",
+  "name": "A07-integer-power",
+  "class": "A07_IntegerPower",
+  "title": "Integer power",
+  "paper": false,
+  "kind": "method",
+  "methods": [
+   "Power"
+  ],
+  "cases": [
+   {
+    "method": "Power",
+    "args": [
+     3,
+     4
+    ],
+    "expected": 81
+   },
+   {
+    "method": "Power",
+    "args": [
+     2,
+     10
+    ],
+    "expected": 1024
+   },
+   {
+    "method": "Power",
+    "args": [
+     5,
+     0
+    ],
+    "expected": 1
+   },
+   {
+    "method": "Power",
+    "args": [
+     -2,
+     3
+    ],
+    "expected": -8
+   }
+  ],
+  "edge_tests": 2,
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Multiply",
+  "drills": [
+   "Accumulator (sum, product)"
+  ],
+  "examples": [
+   {
+    "input": [
+     "3",
+     "4"
+    ],
+    "expected": [
+     "3^4 = 81"
+    ]
+   },
+   {
+    "input": [
+     "2",
+     "10"
+    ],
+    "expected": [
+     "2^10 = 1024"
+    ]
+   },
+   {
+    "input": [
+     "5",
+     "0"
+    ],
+    "expected": [
+     "5^0 = 1"
     ]
    }
   ]

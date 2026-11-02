@@ -1,7 +1,7 @@
 ---
 prev:
-  text: "Add up"
-  link: /themes/loops-add-up
+  text: "Multiply"
+  link: /themes/loops-multiply
 next:
   text: "Until the user stops"
   link: /themes/loops-until-the-user-stops
@@ -37,4 +37,4 @@ Do the exercises from top to bottom. Tick each one when `./ex check` says DONE.
 
 ---
 
-Previous: [Add up](loops-add-up.md) · [Loops](loops.md) · Next: [Until the user stops](loops-until-the-user-stops.md)
+Previous: [Multiply](loops-multiply.md) · [Loops](loops.md) · Next: [Until the user stops](loops-until-the-user-stops.md)

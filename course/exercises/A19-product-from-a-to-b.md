@@ -1,13 +1,13 @@
 ---
 prev:
-  text: "A20 · Power of 2"
-  link: /exercises/A20-powers-of-2
+  text: "A31 · Double k times"
+  link: /exercises/A31-double-k-times
 next:
-  text: "A04 · Factorial"
-  link: /exercises/A04-factorial
+  text: "A32 · Product of odd numbers"
+  link: /exercises/A32-product-of-odd-numbers
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops-add-up.md) › A19
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Multiply](../themes/loops-multiply.md) › A19
 
 # A19 · Product from a to b
 
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Add up** · exercise 8 of 12 in this group (21 of 86 in the theme)
+**Loops › Multiply** · exercise 4 of 8 in this group (31 of 96 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -92,6 +92,6 @@ Only after a real try: [open the solution for A19](../../internal/solutions/A19_
 
 <div class="gh-only">
 
-Previous: [A20 · Power of 2](A20-powers-of-2.md) · [Loops](../themes/loops.md) · Next: [A04 · Factorial](A04-factorial.md)
+Previous: [A31 · Double k times](A31-double-k-times.md) · [Loops](../themes/loops.md) · Next: [A32 · Product of odd numbers](A32-product-of-odd-numbers.md)
 
 </div>

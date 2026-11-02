@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Digits** · exercise 13 of 13 in this group (70 of 86 in the theme)
+**Loops › Digits** · exercise 13 of 13 in this group (80 of 96 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |

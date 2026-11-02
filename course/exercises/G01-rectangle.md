@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Draw rows and grids** · exercise 5 of 8 in this group (46 of 86 in the theme)
+**Loops › Draw rows and grids** · exercise 5 of 8 in this group (56 of 96 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |

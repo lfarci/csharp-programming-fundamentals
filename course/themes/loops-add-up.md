@@ -3,8 +3,8 @@ prev:
   text: "Count"
   link: /themes/loops-count
 next:
-  text: "Keep only some"
-  link: /themes/loops-keep-only-some
+  text: "Multiply"
+  link: /themes/loops-multiply
 ---
 
 [Home](../../README.md) › [Roadmap](../ROADMAP.md) › [Loops](loops.md) › Add up
@@ -24,13 +24,15 @@ Do the exercises from top to bottom. Tick each one when `./ex check` says DONE.
 | L19 | [Count the turns](../exercises/L19-count-the-turns.md) | write code | Guided | easy |
 | A11 | [Arrange: sum of squares](../exercises/A11-arrange-sum-of-squares.md) | arrange the lines | Guided | easy |
 | A01 | [Sum from 1 to N](../exercises/A01-sum-1-to-n.md) | write code | Guided | easy |
+| A25 | [Add the same number](../exercises/A25-add-the-same-number.md) | write code | Guided | easy |
+| A26 | [Sum of tens](../exercises/A26-sum-of-tens.md) | write code | Guided | easy |
+| A34 | [Sum of a times table](../exercises/A34-sum-of-a-times-table.md) | write code | Guided | easy |
 | A13 | [Sum from a to b](../exercises/A13-sum-from-a-to-b.md) | write code | Guided | easy |
 | A14 | [Sum the odd numbers](../exercises/A14-sum-odd-numbers.md) | write code | Guided | easy |
+| A29 | [First n odd numbers](../exercises/A29-first-n-odd-numbers.md) | write code | Guided | easy |
+| A27 | [Sum by any step](../exercises/A27-sum-by-any-step.md) | write code | Guided | easy |
 | A18 | [Sum of cubes](../exercises/A18-sum-of-cubes.md) | write code | Guided | easy |
-| A20 | [Power of 2](../exercises/A20-powers-of-2.md) | write code | Guided | easy |
-| A19 | [Product from a to b](../exercises/A19-product-from-a-to-b.md) | write code | Guided | easy |
-| A04 | [Factorial](../exercises/A04-factorial.md) | write code | Independent | medium |
-| A07 | [Integer power](../exercises/A07-integer-power.md) | write code | Independent | medium |
+| A28 | [Sum of i × (i + 1)](../exercises/A28-sum-of-pairs.md) | write code | Guided | easy |
 | A05 | [Sum and sum of squares](../exercises/A05-sum-square-difference.md) | write code | Independent | medium |
 | A10 | [Sum of a series](../exercises/A10-sum-of-a-series.md) | write code | Challenge | medium |
 
@@ -38,4 +40,4 @@ Do the exercises from top to bottom. Tick each one when `./ex check` says DONE.
 
 ---
 
-Previous: [Count](loops-count.md) · [Loops](loops.md) · Next: [Keep only some](loops-keep-only-some.md)
+Previous: [Count](loops-count.md) · [Loops](loops.md) · Next: [Multiply](loops-multiply.md)
