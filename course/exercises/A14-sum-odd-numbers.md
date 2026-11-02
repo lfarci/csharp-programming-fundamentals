@@ -3,8 +3,8 @@ prev:
   text: "A13 · Sum from a to b"
   link: /exercises/A13-sum-from-a-to-b
 next:
-  text: "A18 · Sum of cubes"
-  link: /exercises/A18-sum-of-cubes
+  text: "A29 · First n odd numbers"
+  link: /exercises/A29-first-n-odd-numbers
 ---
 
 [Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops-add-up.md) › A14
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Add up** · exercise 5 of 12 in this group (18 of 86 in the theme)
+**Loops › Add up** · exercise 8 of 14 in this group (21 of 96 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -92,6 +92,6 @@ Only after a real try: [open the solution for A14](../../internal/solutions/A14_
 
 <div class="gh-only">
 
-Previous: [A13 · Sum from a to b](A13-sum-from-a-to-b.md) · [Loops](../themes/loops.md) · Next: [A18 · Sum of cubes](A18-sum-of-cubes.md)
+Previous: [A13 · Sum from a to b](A13-sum-from-a-to-b.md) · [Loops](../themes/loops.md) · Next: [A29 · First n odd numbers](A29-first-n-odd-numbers.md)
 
 </div>

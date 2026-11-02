@@ -3,8 +3,8 @@ prev:
   text: "A11 · Arrange: sum of squares"
   link: /exercises/A11-arrange-sum-of-squares
 next:
-  text: "A13 · Sum from a to b"
-  link: /exercises/A13-sum-from-a-to-b
+  text: "A25 · Add the same number"
+  link: /exercises/A25-add-the-same-number
 ---
 
 [Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops-add-up.md) › A01
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Add up** · exercise 3 of 12 in this group (16 of 86 in the theme)
+**Loops › Add up** · exercise 3 of 14 in this group (16 of 96 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -98,6 +98,6 @@ Only after a real try: [open the solution for A01](../../internal/solutions/A01_
 
 <div class="gh-only">
 
-Previous: [A11 · Arrange: sum of squares](A11-arrange-sum-of-squares.md) · [Loops](../themes/loops.md) · Next: [A13 · Sum from a to b](A13-sum-from-a-to-b.md)
+Previous: [A11 · Arrange: sum of squares](A11-arrange-sum-of-squares.md) · [Loops](../themes/loops.md) · Next: [A25 · Add the same number](A25-add-the-same-number.md)
 
 </div>

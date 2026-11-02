@@ -1,13 +1,13 @@
 ---
 prev:
-  text: "A18 · Sum of cubes"
-  link: /exercises/A18-sum-of-cubes
+  text: "A10 · Sum of a series"
+  link: /exercises/A10-sum-of-a-series
 next:
-  text: "A19 · Product from a to b"
-  link: /exercises/A19-product-from-a-to-b
+  text: "A30 · Power of 10"
+  link: /exercises/A30-power-of-10
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops-add-up.md) › A20
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Multiply](../themes/loops-multiply.md) › A20
 
 # A20 · Power of 2
 
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Add up** · exercise 7 of 12 in this group (20 of 86 in the theme)
+**Loops › Multiply** · exercise 1 of 8 in this group (28 of 96 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -91,6 +91,6 @@ Only after a real try: [open the solution for A20](../../internal/solutions/A20_
 
 <div class="gh-only">
 
-Previous: [A18 · Sum of cubes](A18-sum-of-cubes.md) · [Loops](../themes/loops.md) · Next: [A19 · Product from a to b](A19-product-from-a-to-b.md)
+Previous: [A10 · Sum of a series](A10-sum-of-a-series.md) · [Loops](../themes/loops.md) · Next: [A30 · Power of 10](A30-power-of-10.md)
 
 </div>

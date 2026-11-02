@@ -1,13 +1,13 @@
 ---
 prev:
-  text: "A19 · Product from a to b"
-  link: /exercises/A19-product-from-a-to-b
+  text: "A33 · Product of squares"
+  link: /exercises/A33-product-of-squares
 next:
   text: "A07 · Integer power"
   link: /exercises/A07-integer-power
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops-add-up.md) › A04
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Multiply](../themes/loops-multiply.md) › A04
 
 # A04 · Factorial
 
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Add up** · exercise 9 of 12 in this group (22 of 86 in the theme)
+**Loops › Multiply** · exercise 7 of 8 in this group (34 of 96 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -102,6 +102,6 @@ Only after a real try: [open the solution for A04](../../internal/solutions/A04_
 
 <div class="gh-only">
 
-Previous: [A19 · Product from a to b](A19-product-from-a-to-b.md) · [Loops](../themes/loops.md) · Next: [A07 · Integer power](A07-integer-power.md)
+Previous: [A33 · Product of squares](A33-product-of-squares.md) · [Loops](../themes/loops.md) · Next: [A07 · Integer power](A07-integer-power.md)
 
 </div>

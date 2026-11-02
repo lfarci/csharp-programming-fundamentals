@@ -1,7 +1,7 @@
 ---
 prev:
-  text: "A10 · Sum of a series"
-  link: /exercises/A10-sum-of-a-series
+  text: "A07 · Integer power"
+  link: /exercises/A07-integer-power
 next:
   text: "A15 · Count the even numbers"
   link: /exercises/A15-count-even-numbers
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Keep only some** · exercise 1 of 11 in this group (26 of 86 in the theme)
+**Loops › Keep only some** · exercise 1 of 11 in this group (36 of 96 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -93,6 +93,6 @@ Only after a real try: [open the solution for A02](../../internal/solutions/A02_
 
 <div class="gh-only">
 
-Previous: [A10 · Sum of a series](A10-sum-of-a-series.md) · [Loops](../themes/loops.md) · Next: [A15 · Count the even numbers](A15-count-even-numbers.md)
+Previous: [A07 · Integer power](A07-integer-power.md) · [Loops](../themes/loops.md) · Next: [A15 · Count the even numbers](A15-count-even-numbers.md)
 
 </div>

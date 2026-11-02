@@ -1,7 +1,7 @@
 ---
 prev:
-  text: "A01 · Sum from 1 to N"
-  link: /exercises/A01-sum-1-to-n
+  text: "A34 · Sum of a times table"
+  link: /exercises/A34-sum-of-a-times-table
 next:
   text: "A14 · Sum the odd numbers"
   link: /exercises/A14-sum-odd-numbers
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Add up** · exercise 4 of 12 in this group (17 of 86 in the theme)
+**Loops › Add up** · exercise 7 of 14 in this group (20 of 96 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -92,6 +92,6 @@ Only after a real try: [open the solution for A13](../../internal/solutions/A13_
 
 <div class="gh-only">
 
-Previous: [A01 · Sum from 1 to N](A01-sum-1-to-n.md) · [Loops](../themes/loops.md) · Next: [A14 · Sum the odd numbers](A14-sum-odd-numbers.md)
+Previous: [A34 · Sum of a times table](A34-sum-of-a-times-table.md) · [Loops](../themes/loops.md) · Next: [A14 · Sum the odd numbers](A14-sum-odd-numbers.md)
 
 </div>

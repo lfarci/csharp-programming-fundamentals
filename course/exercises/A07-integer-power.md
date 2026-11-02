@@ -3,11 +3,11 @@ prev:
   text: "A04 · Factorial"
   link: /exercises/A04-factorial
 next:
-  text: "A05 · Sum and sum of squares"
-  link: /exercises/A05-sum-square-difference
+  text: "A02 · Count multiples of 3"
+  link: /exercises/A02-count-multiples-of-3
 ---
 
-[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Add up](../themes/loops-add-up.md) › A07
+[Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Multiply](../themes/loops-multiply.md) › A07
 
 # A07 · Integer power
 
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Add up** · exercise 10 of 12 in this group (23 of 86 in the theme)
+**Loops › Multiply** · exercise 8 of 8 in this group (35 of 96 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -101,6 +101,6 @@ Only after a real try: [open the solution for A07](../../internal/solutions/A07_
 
 <div class="gh-only">
 
-Previous: [A04 · Factorial](A04-factorial.md) · [Loops](../themes/loops.md) · Next: [A05 · Sum and sum of squares](A05-sum-square-difference.md)
+Previous: [A04 · Factorial](A04-factorial.md) · [Loops](../themes/loops.md) · Next: [A02 · Count multiples of 3](A02-count-multiples-of-3.md)
 
 </div>

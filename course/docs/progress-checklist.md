@@ -67,23 +67,46 @@ Print this page if you like paper. Tick a box when it is true **without help**. 
   - [ ] mastered (another day, alone)
 - [ ] [A01 · Sum from 1 to N](../exercises/A01-sum-1-to-n.md) solved
   - [ ] mastered (another day, alone)
+- [ ] [A25 · Add the same number](../exercises/A25-add-the-same-number.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A26 · Sum of tens](../exercises/A26-sum-of-tens.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A34 · Sum of a times table](../exercises/A34-sum-of-a-times-table.md) solved
+  - [ ] mastered (another day, alone)
 - [ ] [A13 · Sum from a to b](../exercises/A13-sum-from-a-to-b.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [A14 · Sum the odd numbers](../exercises/A14-sum-odd-numbers.md) solved
   - [ ] mastered (another day, alone)
+- [ ] [A29 · First n odd numbers](../exercises/A29-first-n-odd-numbers.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A27 · Sum by any step](../exercises/A27-sum-by-any-step.md) solved
+  - [ ] mastered (another day, alone)
 - [ ] [A18 · Sum of cubes](../exercises/A18-sum-of-cubes.md) solved
   - [ ] mastered (another day, alone)
-- [ ] [A20 · Power of 2](../exercises/A20-powers-of-2.md) solved
-  - [ ] mastered (another day, alone)
-- [ ] [A19 · Product from a to b](../exercises/A19-product-from-a-to-b.md) solved
-  - [ ] mastered (another day, alone)
-- [ ] [A04 · Factorial](../exercises/A04-factorial.md) solved
-  - [ ] mastered (another day, alone)
-- [ ] [A07 · Integer power](../exercises/A07-integer-power.md) solved
+- [ ] [A28 · Sum of i × (i + 1)](../exercises/A28-sum-of-pairs.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [A05 · Sum and sum of squares](../exercises/A05-sum-square-difference.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [A10 · Sum of a series](../exercises/A10-sum-of-a-series.md) solved
+  - [ ] mastered (another day, alone)
+
+### Loops: Multiply
+
+- [ ] [A20 · Power of 2](../exercises/A20-powers-of-2.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A30 · Power of 10](../exercises/A30-power-of-10.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A31 · Double k times](../exercises/A31-double-k-times.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A19 · Product from a to b](../exercises/A19-product-from-a-to-b.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A32 · Product of odd numbers](../exercises/A32-product-of-odd-numbers.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A33 · Product of squares](../exercises/A33-product-of-squares.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A04 · Factorial](../exercises/A04-factorial.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [A07 · Integer power](../exercises/A07-integer-power.md) solved
   - [ ] mastered (another day, alone)
 
 ### Loops: Keep only some

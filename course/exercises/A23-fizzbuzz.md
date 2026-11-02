@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Keep only some** · exercise 9 of 11 in this group (34 of 86 in the theme)
+**Loops › Keep only some** · exercise 9 of 11 in this group (44 of 96 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
