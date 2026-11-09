@@ -1778,7 +1778,7 @@
     "expected": 1024
    }
   ],
-  "edge_tests": 0,
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1828,7 +1828,7 @@
     "expected": 1000000000
    }
   ],
-  "edge_tests": 0,
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1882,7 +1882,7 @@
     "expected": 6
    }
   ],
-  "edge_tests": 0,
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1936,7 +1936,7 @@
     "expected": 1
    }
   ],
-  "edge_tests": 0,
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -1986,7 +1986,7 @@
     "expected": 1
    }
   ],
-  "edge_tests": 0,
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2036,7 +2036,7 @@
     "expected": 576
    }
   ],
-  "edge_tests": 0,
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -2180,7 +2180,7 @@
     "expected": -8
    }
   ],
-  "edge_tests": 2,
+  "edge_tests": 3,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -4736,7 +4736,7 @@
     "expected": 55
    }
   ],
-  "edge_tests": 0,
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,
@@ -4848,7 +4848,7 @@
     "expected": 44
    }
   ],
-  "edge_tests": 0,
+  "edge_tests": 1,
   "checkHint": "",
   "theme": "Loops",
   "themeOrder": 2,

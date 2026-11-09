@@ -19,5 +19,8 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "A31 example 4: DoubleTimes(3, 1) returns 6")]
         public void Example4() => Expect.Returns(6L, () => A31_DoubleKTimes.DoubleTimes(3, 1));
+
+        [Fact(DisplayName = "A31 example 5: edge case, DoubleTimes(3, 40) returns 3298534883328")]
+        public void Edge1() => Expect.Returns(3298534883328L, () => A31_DoubleKTimes.DoubleTimes(3, 40), hint: "the result is too big for an int (about 2.1 billion at most): use a long for the running result, like the return type.");
     }
 }

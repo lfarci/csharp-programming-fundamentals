@@ -25,5 +25,8 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "A07 example 6: edge case, Power(0, 0) returns 1")]
         public void Edge2() => Expect.Returns(1L, () => A07_IntegerPower.Power(0, 0), hint: "exponent 0: the loop runs 0 times, so the box keeps its start value 1.");
+
+        [Fact(DisplayName = "A07 example 7: edge case, Power(2, 40) returns 1099511627776")]
+        public void Edge3() => Expect.Returns(1099511627776L, () => A07_IntegerPower.Power(2, 40), hint: "the result is too big for an int (about 2.1 billion at most): use a long for the running result, like the return type.");
     }
 }

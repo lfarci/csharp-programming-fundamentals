@@ -19,5 +19,8 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "S03 example 4: EvenFibonacciSum(34) returns 44")]
         public void Example4() => Expect.Returns(44L, () => S03_EvenFibonacciSum.EvenFibonacciSum(34L));
+
+        [Fact(DisplayName = "S03 example 5: edge case, EvenFibonacciSum(10000000000) returns 6293134512")]
+        public void Edge1() => Expect.Returns(6293134512L, () => S03_EvenFibonacciSum.EvenFibonacciSum(10000000000L), hint: "the result is too big for an int (about 2.1 billion at most): use a long for the running result, like the return type.");
     }
 }

@@ -19,5 +19,8 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "A30 example 4: PowerOf10(9) returns 1000000000")]
         public void Example4() => Expect.Returns(1000000000L, () => A30_PowerOf10.PowerOf10(9));
+
+        [Fact(DisplayName = "A30 example 5: edge case, PowerOf10(12) returns 1000000000000")]
+        public void Edge1() => Expect.Returns(1000000000000L, () => A30_PowerOf10.PowerOf10(12), hint: "the result is too big for an int (about 2.1 billion at most): use a long for the running result, like the return type.");
     }
 }

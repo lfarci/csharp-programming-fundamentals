@@ -19,5 +19,8 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "S05 example 4: Fibonacci(10) returns 55")]
         public void Example4() => Expect.Returns(55L, () => S05_NthFibonacci.Fibonacci(10));
+
+        [Fact(DisplayName = "S05 example 5: edge case, Fibonacci(60) returns 1548008755920")]
+        public void Edge1() => Expect.Returns(1548008755920L, () => S05_NthFibonacci.Fibonacci(60), hint: "the result is too big for an int (about 2.1 billion at most): use a long for the running result, like the return type.");
     }
 }

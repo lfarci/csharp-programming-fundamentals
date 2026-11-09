@@ -55,6 +55,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - n = 0: 1 (nothing was multiplied).
 
+`./ex check` tests these too: `ProductOfOdds(25)` gives `7905853580625`.
+
 ## Rules
 
 - Write the loop yourself.

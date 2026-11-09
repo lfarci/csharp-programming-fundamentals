@@ -55,6 +55,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - n = 0: 1.
 
+`./ex check` tests these too: `PowerOf10(12)` gives `1000000000000`.
+
 ## Rules
 
 - Write the loop yourself.

@@ -55,6 +55,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - `times` = 0: `start` (nothing changed).
 
+`./ex check` tests these too: `DoubleTimes(3, 40)` gives `3298534883328`.
+
 ## Rules
 
 - Write the loop yourself.

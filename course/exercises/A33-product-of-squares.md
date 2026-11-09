@@ -55,6 +55,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - n = 0: 1.
 
+`./ex check` tests these too: `ProductOfSquares(10)` gives `13168189440000`.
+
 ## Rules
 
 - Write the loop yourself.

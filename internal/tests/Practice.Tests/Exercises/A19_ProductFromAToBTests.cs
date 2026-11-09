@@ -19,5 +19,8 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "A19 example 4: ProductFromTo(5, 4) returns 1")]
         public void Example4() => Expect.Returns(1L, () => A19_ProductFromAToB.ProductFromTo(5, 4));
+
+        [Fact(DisplayName = "A19 example 5: edge case, ProductFromTo(10, 20) returns 6704425728000")]
+        public void Edge1() => Expect.Returns(6704425728000L, () => A19_ProductFromAToB.ProductFromTo(10, 20), hint: "the result is too big for an int (about 2.1 billion at most): use a long for the running result, like the return type.");
     }
 }

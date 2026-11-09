@@ -55,6 +55,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - n = 0: 0.
 
+`./ex check` tests these too: `Fibonacci(60)` gives `1548008755920`.
+
 ## Rules
 
 - Write the loop yourself.

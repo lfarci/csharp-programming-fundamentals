@@ -19,5 +19,8 @@ namespace Practice.Tests
 
         [Fact(DisplayName = "A32 example 4: ProductOfOdds(0) returns 1")]
         public void Example4() => Expect.Returns(1L, () => A32_ProductOfOddNumbers.ProductOfOdds(0));
+
+        [Fact(DisplayName = "A32 example 5: edge case, ProductOfOdds(25) returns 7905853580625")]
+        public void Edge1() => Expect.Returns(7905853580625L, () => A32_ProductOfOddNumbers.ProductOfOdds(25), hint: "the result is too big for an int (about 2.1 billion at most): use a long for the running result, like the return type.");
     }
 }
