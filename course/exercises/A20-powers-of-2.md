@@ -54,6 +54,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - n = 0: 1.
 
+`./ex check` tests these too: `PowerOf2(40)` gives `1099511627776`.
+
 ## Rules
 
 - Write the loop yourself.

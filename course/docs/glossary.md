@@ -38,6 +38,7 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **Level** | How much help an exercise gives: Guided, Independent, Challenge. | Guided |
 | **LINQ** | A C# toolbox that does loops for you (`.Sum()`, `.Max()`…). Not used here: you learn to write the loop yourself. | |
 | **List** | Like an *array*, but it can grow: `Add` puts a new item at the end. | `var names = new List<string>();` |
+| **`long`** | A whole-number *type* like `int`, but much bigger: up to a number with 19 digits. Use it for a running result that can grow past what an `int` holds, like a product or a power. See [recipe 2](../cookbook/02-accumulator.md). | `long product = 1;` |
 | **Loop** | Code that repeats: `for`, `while`, `do … while`, `foreach`. | `for (int i = 1; i <= n; i++)` |
 | **Mastery check** | A new variation of an exercise you solve alone, on another day, to prove you learned it. | |
 | **Method** | A named piece of code you can call again and again. It gets its **input** through *parameters* and gives back its **result** with `return`. Most exercises ask you to fill in one. | `static int SumTo(int n) { … return sum; }` |
@@ -46,6 +47,7 @@ Short meanings of the words used in this course, in alphabetical order. A word i
 | **Modulo (`%`)** | The remainder of a division. | `17 % 5` is `2`, `352 % 10` is `2` |
 | **Nested loop** | A *loop* inside another loop. See [recipe 8](../cookbook/08-nested-grid.md). | rows and columns |
 | **Output** | What the program shows (prints). | `Console.WriteLine("Hi")` |
+| **Overflow** | A value grows past the largest number its *type* can hold. An `int` stops at 2 147 483 647; one more wraps around to a negative number, with no error. Fix it with a `long`. | `int x = 2147483647; x++;` gives `-2147483648` |
 | **Parameter** | An input of a *method*, written between the brackets. The caller gives its value. | `n` in `SumTo(int n)` |
 | **Parsons problem** | An exercise where all the lines of code are given, mixed up. You put them in the right order. The exercises are Parsons problems. | |
 | **Predict** | Say what code will print **before** you run it. Then run it and compare. | |

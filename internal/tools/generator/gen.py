@@ -110,6 +110,13 @@ POS = {e["id"]: i for i, e in enumerate(ORDER)}
 for e in ORDER:
     late = [p for p in e["pre"] if POS[p] > POS[e["id"]]]
     if late: sys.exit(f"{e['id']}: its prerequisite(s) {late} come later in the course order (themes.py)")
+# A method that returns long must be tested with a result bigger than an int can hold: otherwise an int
+# running result (which wraps around past 2 147 483 647) passes every test. Expect.cs then shows the IntOverflow hint.
+for id_, m_ in M.items():
+    longs = {sig.split("(")[0].split()[-1] for sig, *_ in m_["methods"] if sig.split("(")[0].split()[-2] == "long"}
+    tested = [c[2] for c in m_.get("cases", []) + [x for x in EDGE.get(id_, []) if len(x) == 4] if c[0] in longs]
+    if longs and not any(isinstance(v, int) and abs(v) > 2147483647 for v in tested):
+        sys.exit(f"{id_}: {sorted(longs)} return long, but no case or EDGE result is bigger than an int (2147483647). Add one to EDGE in data9.py.")
 TH_LIST = {x["slug"]: [e for e in ORDER if e["theme"] == x["slug"]] for x in THEMES}
 def where(e):
     th, gr = GROUP[e["id"]]; lst = TH_LIST[th["slug"]]; gl = [x for x in lst if x["group"] == gr["slug"]]

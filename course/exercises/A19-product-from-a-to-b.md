@@ -55,6 +55,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - `a` bigger than `b`: 1 (nothing was multiplied).
 
+`./ex check` tests these too: `ProductFromTo(10, 20)` gives `6704425728000`.
+
 ## Rules
 
 - Write the loop yourself.

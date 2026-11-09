@@ -65,7 +65,7 @@ Deeper reference, reached only when the branch fires:
 
 **Exercise shape**: one file, one `public static class ID_PascalName` in namespace `Practice`.
 
-- *Method exercise* (entry in `data5.M`): she fills in the method(s); its parameters are the input, `return` the result. The page shows `GOALS` and a call → result table; the tests call the method by reflection with `cases`. Drawings are `void` methods whose printed text is compared. Add a case the `TODO` starter fails (CI checks this).
+- *Method exercise* (entry in `data5.M`): she fills in the method(s); its parameters are the input, `return` the result. The page shows `GOALS` and a call → result table; the tests call the method by reflection with `cases`. Drawings are `void` methods whose printed text is compared. Add a case the `TODO` starter fails (CI checks this). A method that returns `long` needs one case or `EDGE` result above 2 147 483 647, so an `int` running result that wraps around fails with the `IntOverflow` hint of `Expect.cs` (`gen.py` stops otherwise).
 - *Program exercise* (no entry): input loops, menus, files. She writes `public static void Run()`; the tests feed the example input and match printed lines as *line endings* (prompts from `Console.Write` share the line), so results go on their own `WriteLine`.
 - Methods are allowed from the first theme, framed as "input = parameters, result = return"; unit-test vocabulary stays behind `./ex check` until the Methods theme.
 

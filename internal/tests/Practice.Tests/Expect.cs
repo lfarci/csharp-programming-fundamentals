@@ -18,7 +18,7 @@ namespace Practice.Tests
             Capture("", () => got = call());
             if (Same(expected, got)) return;
             string msg = $"{Call(code)} should return {Show(expected)}, but your method returned {Show(got)}.";
-            Fail(msg, hint ?? ReturnHint(expected, got));
+            Fail(msg, Overflowed(expected, got) ? IntOverflow : hint ?? ReturnHint(expected, got));
         }
 
         /// <summary>Your method must print exactly <paramref name="expected"/> (spaces at the end of a line do not count).</summary>
@@ -63,6 +63,15 @@ namespace Practice.Tests
         }
 
         // ---------- the rest is plumbing ----------
+
+        /// <summary>Shown when the result is bigger than an int can hold but the method gave back a number that fits in an int:
+        /// the running total was an int and wrapped around (the classic factorial bug).</summary>
+        public const string IntOverflow = "the result is too big for an int (the largest int is 2 147 483 647, about 2.1 billion). " +
+            "An int box that grows past it wraps around and gives a wrong, often negative, number. " +
+            "Make the variable that holds the running result a long, like the return type: long result = 1;";
+
+        static bool Overflowed(object? want, object? got) =>
+            want is long w && got is long g && (w > int.MaxValue || w < int.MinValue) && g >= int.MinValue && g <= int.MaxValue;
 
         static string ReturnHint(object? want, object? got) => (want, got) switch
         {

@@ -39,3 +39,15 @@ EDGE = {
     "E01": [(["", "7"], ["That is not a number.", "Thanks: 7"], "an empty line is not a number either: ask again."),
             (["99999999999", "7"], ["That number is too big.", "Thanks: 7"], "too big for an int: int.Parse throws an OverflowException. Catch it with a second catch block.")],
 }
+
+# Results bigger than an int: an int accumulator wraps around (Expect.cs shows the IntOverflow hint).
+BIG = 'the result is too big for an int (about 2.1 billion at most): use a long for the running result, like the return type.'
+EDGE.setdefault('A07', []).append(('Power', [2, 40], 1099511627776, BIG))
+EDGE.setdefault('A19', []).append(('ProductFromTo', [10, 20], 6704425728000, BIG))
+EDGE.setdefault('A20', []).append(('PowerOf2', [40], 1099511627776, BIG))
+EDGE.setdefault('A30', []).append(('PowerOf10', [12], 1000000000000, BIG))
+EDGE.setdefault('A31', []).append(('DoubleTimes', [3, 40], 3298534883328, BIG))
+EDGE.setdefault('A32', []).append(('ProductOfOdds', [25], 7905853580625, BIG))
+EDGE.setdefault('A33', []).append(('ProductOfSquares', [10], 13168189440000, BIG))
+EDGE.setdefault('S05', []).append(('Fibonacci', [60], 1548008755920, BIG))
+EDGE.setdefault('S03', []).append(('EvenFibonacciSum', [10000000000], 6293134512, BIG))

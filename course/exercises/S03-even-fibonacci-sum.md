@@ -57,6 +57,8 @@ Your method must give these results. `./ex check` tests all of them.
 
 - The limit itself counts if it is an even Fibonacci number (limit 8 → 2 + 8 = 10).
 
+`./ex check` tests these too: `EvenFibonacciSum(10000000000)` gives `6293134512`.
+
 ## Rules
 
 - `while` loop (you do not know how many terms).
