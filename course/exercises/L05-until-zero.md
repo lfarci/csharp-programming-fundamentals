@@ -1,10 +1,10 @@
 ---
 prev:
-  text: "A08 · Multiples of 3 or 5"
-  link: /exercises/A08-multiples-of-3-or-5
+  text: "L21 · Sum until -1"
+  link: /exercises/L21-sum-until-minus-one
 next:
-  text: "A06 · Average until zero"
-  link: /exercises/A06-average-until-zero
+  text: "L22 · Words until stop"
+  link: /exercises/L22-words-until-stop
 ---
 
 [Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Until the user stops](../themes/loops-until-the-user-stops.md) › L05
@@ -15,11 +15,11 @@ next:
 
 <div class="gh-only">
 
-**Loops › Until the user stops** · exercise 1 of 5 in this group (47 of 96 in the theme)
+**Loops › Until the user stops** · exercise 3 of 8 in this group (49 of 99 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
-| Independent | medium | write code | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Accumulator](../cookbook/02-accumulator.md) | [L03](L03-count-up-and-down.md) |
+| Independent | medium | write code | [Sentinel loop](../cookbook/10-sentinel-loop.md), [Accumulator](../cookbook/02-accumulator.md) | [L20](L20-echo-until-zero.md) |
 
 </div>
 
@@ -102,6 +102,6 @@ Only after a real try: [open the solution for L05](../../internal/solutions/L05_
 
 <div class="gh-only">
 
-Previous: [A08 · Multiples of 3 or 5](A08-multiples-of-3-or-5.md) · [Loops](../themes/loops.md) · Next: [A06 · Average until zero](A06-average-until-zero.md)
+Previous: [L21 · Sum until -1](L21-sum-until-minus-one.md) · [Loops](../themes/loops.md) · Next: [L22 · Words until stop](L22-words-until-stop.md)
 
 </div>

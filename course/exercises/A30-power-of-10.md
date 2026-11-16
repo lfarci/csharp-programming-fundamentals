@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Multiply** · exercise 2 of 8 in this group (29 of 96 in the theme)
+**Loops › Multiply** · exercise 2 of 8 in this group (29 of 99 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |

@@ -136,7 +136,13 @@ Print this page if you like paper. Tick a box when it is true **without help**. 
 
 ### Loops: Until the user stops
 
+- [ ] [L20 · Echo until zero](../exercises/L20-echo-until-zero.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [L21 · Sum until -1](../exercises/L21-sum-until-minus-one.md) solved
+  - [ ] mastered (another day, alone)
 - [ ] [L05 · Until zero](../exercises/L05-until-zero.md) solved
+  - [ ] mastered (another day, alone)
+- [ ] [L22 · Words until stop](../exercises/L22-words-until-stop.md) solved
   - [ ] mastered (another day, alone)
 - [ ] [A06 · Average until zero](../exercises/A06-average-until-zero.md) solved
   - [ ] mastered (another day, alone)

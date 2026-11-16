@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Draw shapes** · exercise 4 of 8 in this group (63 of 96 in the theme)
+**Loops › Draw shapes** · exercise 4 of 8 in this group (66 of 99 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |

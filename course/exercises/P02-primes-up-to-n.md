@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Search and combine** · exercise 7 of 9 in this group (94 of 96 in the theme)
+**Loops › Search and combine** · exercise 7 of 9 in this group (97 of 99 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |

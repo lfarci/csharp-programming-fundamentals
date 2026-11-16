@@ -3,8 +3,8 @@ prev:
   text: "A24 · Perfect number"
   link: /exercises/A24-perfect-number
 next:
-  text: "L05 · Until zero"
-  link: /exercises/L05-until-zero
+  text: "L20 · Echo until zero"
+  link: /exercises/L20-echo-until-zero
 ---
 
 [Home](../../README.md) › [Exercises](README.md) › [Loops](../themes/loops.md) › [Keep only some](../themes/loops-keep-only-some.md) › A08
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Keep only some** · exercise 11 of 11 in this group (46 of 96 in the theme)
+**Loops › Keep only some** · exercise 11 of 11 in this group (46 of 99 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -101,6 +101,6 @@ Only after a real try: [open the solution for A08](../../internal/solutions/A08_
 
 <div class="gh-only">
 
-Previous: [A24 · Perfect number](A24-perfect-number.md) · [Loops](../themes/loops.md) · Next: [L05 · Until zero](L05-until-zero.md)
+Previous: [A24 · Perfect number](A24-perfect-number.md) · [Loops](../themes/loops.md) · Next: [L20 · Echo until zero](L20-echo-until-zero.md)
 
 </div>

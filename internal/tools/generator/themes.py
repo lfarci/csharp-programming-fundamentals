@@ -42,7 +42,7 @@ THEMES = [
       "The same box, but it starts at 1 and each turn does `*=`."),
     g("keep-only-some", "Keep only some", "03", ["A02", "A15", "A16", "A21", "A22", "A12", "A03", "A17", "A23", "A24", "A08"],
       "The same box, with an `if` inside the loop."),
-    g("until-the-user-stops", "Until the user stops", "10", ["L05", "A06", "A09", "L07", "L08"],
+    g("until-the-user-stops", "Until the user stops", "10", ["L20", "L21", "L05", "L22", "A06", "A09", "L07", "L08"],
       "Read values until a stop value, or until the input is valid."),
     g("draw-rows-and-grids", "Draw rows and grids", "08", ["L09", "L10", "G07", "G08", "G01", "G09", "G14", "G03"],
       "One row, then the same row many times: a loop inside a loop."),

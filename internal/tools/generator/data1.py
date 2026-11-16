@@ -213,7 +213,7 @@ for (int i = 1; i <= 10; i++)
 }
 ''')
 
-ex(id="L05", slug="until-zero", title="Until zero", level="Independent", stars=2, recipes=["10","02"], pre=["L03"],
+ex(id="L05", slug="until-zero", title="Until zero", level="Independent", stars=2, recipes=["10","02"], pre=["L20"],
    goal="Read whole numbers one by one. Stop when the user types 0. Print how many **non-zero** numbers were entered.",
    examples=[(["5","-2","8","0"], ["You entered 3 numbers."]), (["0"], ["You entered 0 numbers."])],
    edge=["The first number is already 0.", "Negative numbers count too."],
