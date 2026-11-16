@@ -21,7 +21,10 @@ Do the exercises from top to bottom. Tick each one when `./ex check` says DONE.
 
 | ID | Exercise | Kind | Level | Effort |
 | --- | --- | --- | --- | --- |
+| L20 | [Echo until zero](../exercises/L20-echo-until-zero.md) | write code | Guided | easy |
+| L21 | [Sum until -1](../exercises/L21-sum-until-minus-one.md) | write code | Guided | easy |
 | L05 | [Until zero](../exercises/L05-until-zero.md) | write code | Independent | medium |
+| L22 | [Words until stop](../exercises/L22-words-until-stop.md) | write code | Independent | medium |
 | A06 | [Average until zero](../exercises/A06-average-until-zero.md) | write code | Independent | medium |
 | A09 | [Min and max until zero](../exercises/A09-min-and-max-until-zero.md) | write code | Independent | medium |
 | L07 | [Ask until valid](../exercises/L07-ask-until-valid.md) | write code | Independent | medium |

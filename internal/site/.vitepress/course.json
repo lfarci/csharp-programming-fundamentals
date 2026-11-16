@@ -1470,17 +1470,45 @@
    ]
   },
   {
-   "id": "L05",
-   "title": "Until zero",
-   "link": "/exercises/L05-until-zero",
+   "id": "L20",
+   "title": "Echo until zero",
+   "link": "/exercises/L20-echo-until-zero",
    "theme": "loops",
    "group": "until-the-user-stops",
-   "level": "Independent",
-   "effort": "medium",
+   "level": "Guided",
+   "effort": "easy",
    "kind": "write code",
    "paper": false,
    "pos": 1,
-   "of": 5,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Sentinel loop",
+     "link": "/cookbook/10-sentinel-loop"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L03",
+     "link": "/exercises/L03-count-up-and-down"
+    }
+   ],
+   "drills": [
+    "Sentinel loop (read until a stop value)"
+   ]
+  },
+  {
+   "id": "L21",
+   "title": "Sum until -1",
+   "link": "/exercises/L21-sum-until-minus-one",
+   "theme": "loops",
+   "group": "until-the-user-stops",
+   "level": "Guided",
+   "effort": "easy",
+   "kind": "write code",
+   "paper": false,
+   "pos": 2,
+   "of": 8,
    "recipes": [
     {
      "title": "Sentinel loop",
@@ -1493,11 +1521,77 @@
    ],
    "pre": [
     {
-     "id": "L03",
-     "link": "/exercises/L03-count-up-and-down"
+     "id": "L20",
+     "link": "/exercises/L20-echo-until-zero"
+    },
+    {
+     "id": "A01",
+     "link": "/exercises/A01-sum-1-to-n"
     }
    ],
-   "drills": []
+   "drills": [
+    "Sentinel loop (read until a stop value)"
+   ]
+  },
+  {
+   "id": "L05",
+   "title": "Until zero",
+   "link": "/exercises/L05-until-zero",
+   "theme": "loops",
+   "group": "until-the-user-stops",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 3,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Sentinel loop",
+     "link": "/cookbook/10-sentinel-loop"
+    },
+    {
+     "title": "Accumulator",
+     "link": "/cookbook/02-accumulator"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L20",
+     "link": "/exercises/L20-echo-until-zero"
+    }
+   ],
+   "drills": [
+    "Sentinel loop (read until a stop value)"
+   ]
+  },
+  {
+   "id": "L22",
+   "title": "Words until stop",
+   "link": "/exercises/L22-words-until-stop",
+   "theme": "loops",
+   "group": "until-the-user-stops",
+   "level": "Independent",
+   "effort": "medium",
+   "kind": "write code",
+   "paper": false,
+   "pos": 4,
+   "of": 8,
+   "recipes": [
+    {
+     "title": "Sentinel loop",
+     "link": "/cookbook/10-sentinel-loop"
+    }
+   ],
+   "pre": [
+    {
+     "id": "L05",
+     "link": "/exercises/L05-until-zero"
+    }
+   ],
+   "drills": [
+    "Sentinel loop (read until a stop value)"
+   ]
   },
   {
    "id": "A06",
@@ -1509,8 +1603,8 @@
    "effort": "medium",
    "kind": "write code",
    "paper": false,
-   "pos": 2,
-   "of": 5,
+   "pos": 5,
+   "of": 8,
    "recipes": [
     {
      "title": "Sentinel loop",
@@ -1531,7 +1625,9 @@
      "link": "/exercises/A01-sum-1-to-n"
     }
    ],
-   "drills": []
+   "drills": [
+    "Sentinel loop (read until a stop value)"
+   ]
   },
   {
    "id": "A09",
@@ -1543,8 +1639,8 @@
    "effort": "medium",
    "kind": "write code",
    "paper": false,
-   "pos": 3,
-   "of": 5,
+   "pos": 6,
+   "of": 8,
    "recipes": [
     {
      "title": "Sentinel loop",
@@ -1565,7 +1661,9 @@
      "link": "/exercises/C02-largest-of-three"
     }
    ],
-   "drills": []
+   "drills": [
+    "Sentinel loop (read until a stop value)"
+   ]
   },
   {
    "id": "L07",
@@ -1577,8 +1675,8 @@
    "effort": "medium",
    "kind": "write code",
    "paper": false,
-   "pos": 4,
-   "of": 5,
+   "pos": 7,
+   "of": 8,
    "recipes": [
     {
      "title": "Input validation",
@@ -1607,8 +1705,8 @@
    "effort": "medium",
    "kind": "write code",
    "paper": false,
-   "pos": 5,
-   "of": 5,
+   "pos": 8,
+   "of": 8,
    "recipes": [
     {
      "title": "Input validation",
@@ -3580,6 +3678,18 @@
    ]
   },
   {
+   "name": "Sentinel loop (read until a stop value)",
+   "recipe": "10",
+   "ids": [
+    "L20",
+    "L21",
+    "L05",
+    "L22",
+    "A06",
+    "A09"
+   ]
+  },
+  {
    "name": "Nested loops (draw)",
    "recipe": "08",
    "ids": [
@@ -4300,7 +4410,7 @@
    "moduleUrl": "https://learn.microsoft.com/en-us/training/modules/csharp-for/",
    "video": "for Iteration Statement",
    "videoPage": "/learn/videos/for-iteration-statement",
-   "exercises": 96,
+   "exercises": 99,
    "first": {
     "id": "L01",
     "link": "/exercises/L01-trace-a-loop"

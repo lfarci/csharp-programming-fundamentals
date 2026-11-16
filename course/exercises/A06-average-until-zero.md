@@ -1,7 +1,7 @@
 ---
 prev:
-  text: "L05 · Until zero"
-  link: /exercises/L05-until-zero
+  text: "L22 · Words until stop"
+  link: /exercises/L22-words-until-stop
 next:
   text: "A09 · Min and max until zero"
   link: /exercises/A09-min-and-max-until-zero
@@ -15,7 +15,7 @@ next:
 
 <div class="gh-only">
 
-**Loops › Until the user stops** · exercise 2 of 5 in this group (48 of 96 in the theme)
+**Loops › Until the user stops** · exercise 5 of 8 in this group (51 of 99 in the theme)
 
 | Level | Effort | Kind | Recipes | Do these first |
 | --- | --- | --- | --- | --- |
@@ -112,6 +112,6 @@ Only after a real try: [open the solution for A06](../../internal/solutions/A06_
 
 <div class="gh-only">
 
-Previous: [L05 · Until zero](L05-until-zero.md) · [Loops](../themes/loops.md) · Next: [A09 · Min and max until zero](A09-min-and-max-until-zero.md)
+Previous: [L22 · Words until stop](L22-words-until-stop.md) · [Loops](../themes/loops.md) · Next: [A09 · Min and max until zero](A09-min-and-max-until-zero.md)
 
 </div>

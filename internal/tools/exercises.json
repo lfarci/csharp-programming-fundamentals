@@ -2812,6 +2812,106 @@
   ]
  },
  {
+  "id": "L20",
+  "name": "L20-echo-until-zero",
+  "class": "L20_EchoUntilZero",
+  "title": "Echo until zero",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "edge_tests": 0,
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Until the user stops",
+  "drills": [
+   "Sentinel loop (read until a stop value)"
+  ],
+  "examples": [
+   {
+    "input": [
+     "5",
+     "8",
+     "0"
+    ],
+    "expected": [
+     "You typed 5",
+     "You typed 8",
+     "Bye."
+    ]
+   },
+   {
+    "input": [
+     "-3",
+     "0"
+    ],
+    "expected": [
+     "You typed -3",
+     "Bye."
+    ]
+   },
+   {
+    "input": [
+     "0"
+    ],
+    "expected": [
+     "Bye."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "L21",
+  "name": "L21-sum-until-minus-one",
+  "class": "L21_SumUntilMinusOne",
+  "title": "Sum until -1",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "edge_tests": 0,
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Until the user stops",
+  "drills": [
+   "Sentinel loop (read until a stop value)"
+  ],
+  "examples": [
+   {
+    "input": [
+     "4",
+     "7",
+     "1",
+     "-1"
+    ],
+    "expected": [
+     "Sum: 12"
+    ]
+   },
+   {
+    "input": [
+     "10",
+     "0",
+     "5",
+     "-1"
+    ],
+    "expected": [
+     "Sum: 15"
+    ]
+   },
+   {
+    "input": [
+     "-1"
+    ],
+    "expected": [
+     "Sum: 0"
+    ]
+   }
+  ]
+ },
+ {
   "id": "L05",
   "name": "L05-until-zero",
   "class": "L05_UntilZero",
@@ -2825,7 +2925,9 @@
   "theme": "Loops",
   "themeOrder": 2,
   "group": "Until the user stops",
-  "drills": [],
+  "drills": [
+   "Sentinel loop (read until a stop value)"
+  ],
   "examples": [
    {
     "input": [
@@ -2849,6 +2951,55 @@
   ]
  },
  {
+  "id": "L22",
+  "name": "L22-words-until-stop",
+  "class": "L22_WordsUntilStop",
+  "title": "Words until stop",
+  "paper": false,
+  "kind": "output",
+  "methods": [],
+  "cases": [],
+  "edge_tests": 0,
+  "checkHint": "",
+  "theme": "Loops",
+  "themeOrder": 2,
+  "group": "Until the user stops",
+  "drills": [
+   "Sentinel loop (read until a stop value)"
+  ],
+  "examples": [
+   {
+    "input": [
+     "cat",
+     "dog",
+     "stop"
+    ],
+    "expected": [
+     "You typed 2 words."
+    ]
+   },
+   {
+    "input": [
+     "red",
+     "green",
+     "blue",
+     "stop"
+    ],
+    "expected": [
+     "You typed 3 words."
+    ]
+   },
+   {
+    "input": [
+     "stop"
+    ],
+    "expected": [
+     "You typed 0 words."
+    ]
+   }
+  ]
+ },
+ {
   "id": "A06",
   "name": "A06-average-until-zero",
   "class": "A06_AverageUntilZero",
@@ -2862,7 +3013,9 @@
   "theme": "Loops",
   "themeOrder": 2,
   "group": "Until the user stops",
-  "drills": [],
+  "drills": [
+   "Sentinel loop (read until a stop value)"
+  ],
   "examples": [
    {
     "input": [
@@ -2909,7 +3062,9 @@
   "theme": "Loops",
   "themeOrder": 2,
   "group": "Until the user stops",
-  "drills": [],
+  "drills": [
+   "Sentinel loop (read until a stop value)"
+  ],
   "examples": [
    {
     "input": [

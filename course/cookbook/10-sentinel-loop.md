@@ -134,9 +134,12 @@ while (true)
 
 Now alone, in a real file (`./ex start ID`, then `./ex check`):
 
-1. [**L05**](../exercises/L05-until-zero.md) Count the non-zero numbers until 0.
-2. [**A06**](../exercises/A06-average-until-zero.md) Average of numbers until 0.
-3. [**A09**](../exercises/A09-min-and-max-until-zero.md) Smallest and largest until 0 (combine with [recipe 4](04-min-max.md)).
+1. [**L20**](../exercises/L20-echo-until-zero.md) Print each number back until 0.
+2. [**L21**](../exercises/L21-sum-until-minus-one.md) Sum of the points until -1.
+3. [**L05**](../exercises/L05-until-zero.md) Count the non-zero numbers until 0.
+4. [**L22**](../exercises/L22-words-until-stop.md) Count the words until `stop`.
+5. [**A06**](../exercises/A06-average-until-zero.md) Average of numbers until 0.
+6. [**A09**](../exercises/A09-min-and-max-until-zero.md) Smallest and largest until 0 (combine with [recipe 4](04-min-max.md)).
 
 ### Debug it
 
