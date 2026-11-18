@@ -104,7 +104,7 @@ The first check takes a little longer, because it builds everything.
 | `./ex start A04` | Creates your file for A04. It never overwrites your work. |
 | `./ex check` | Tests your code with every example. |
 | `./ex run` | Runs your code; you type the values yourself. |
-| `./ex next` | Starts the next exercise. |
+| `./ex next` | Starts the next exercise that is not done yet. At the end of the list, it goes back to one you skipped. |
 | `./ex list` | Lists the exercises: done, started, not started. |
 | `./ex progress` | Shows what is done in each theme and group, and a sync code for the website. |
 | `./ex done L01` | Marks a paper exercise as done (paper exercises have no tests). |

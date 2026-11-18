@@ -3,7 +3,7 @@
 //   start A04   copy the starter to practice/A04_Factorial.cs (never overwrites)
 //   check       build + run the tests of one exercise (internal/tests/Practice.Tests/Exercises/A04_FactorialTests.cs)
 //   run         run the exercise and type the input yourself
-//   next        start the next exercise that is not done yet
+//   next        start the next exercise that is not done yet (at the end, goes back to one you skipped)
 //   list        all exercises, in order
 //   progress    re-run the tests of every started exercise, show what is done, print the website sync code
 //   done L01    mark a paper exercise as done (paper exercises have no tests)
@@ -50,7 +50,7 @@ int Help()
       {ex} start A04    create your file for exercise A04 (practice/A04_....cs) and make it the current one
       {ex} check        test the current exercise ({ex} check A04 for another one)
       {ex} run          run the current exercise and type the input yourself
-      {ex} next         start the next exercise that is not done yet
+      {ex} next         start the next exercise that is not done yet (at the end, goes back to one you skipped)
       {ex} list         show all exercises
       {ex} progress     see what is done, per theme, group and drill set
       {ex} done L01     mark a paper exercise as done
@@ -119,10 +119,32 @@ int Start(Ex? e)
 int Next()
 {
     var done = LoadDone();
-    int i = Math.Max(-1, all.FindIndex(e => e.Id == Current()));
-    Ex? next = all.Skip(i + 1).FirstOrDefault(e => !done.ContainsKey(e.Id));
-    if (next == null) { Console.WriteLine("That was the last exercise. Well done!"); return 0; }
+    string? currentId = Current();
+    Ex? next = NextNotDone(currentId, done, out bool wrapped);
+    if (next == null) { Console.WriteLine("Well done, every exercise is done!"); return 0; }
+    if (currentId != null && currentId != next.Id && !done.ContainsKey(currentId))
+        Console.WriteLine($"{currentId} isn't done yet, you can come back to it later with {ex} start {currentId}.");
+    if (wrapped)
+        Console.WriteLine($"You reached the end of the list. Going back to {next.Id}, which isn't done yet.");
+    if (next.Id == currentId)
+    {
+        Console.WriteLine($"{next.Id} · {next.Title} is the only exercise that isn't done yet. Keep going with it ({ex} check).");
+        return 0;
+    }
     return Start(next);
+}
+
+// The next exercise that is not done yet: the first after the current one, or the first
+// earlier one if the list has ended (wrapped = true). Null when every exercise is done.
+Ex? NextNotDone(string? currentId, IReadOnlyDictionary<string, string> done, out bool wrapped)
+{
+    wrapped = false;
+    int i = currentId == null ? -1 : all.FindIndex(e => e.Id == currentId);
+    Ex? after = all.Skip(i + 1).FirstOrDefault(e => !done.ContainsKey(e.Id));
+    if (after != null) return after;
+    Ex? fromStart = all.FirstOrDefault(e => !done.ContainsKey(e.Id));
+    if (fromStart != null) wrapped = fromStart.Id != currentId;
+    return fromStart;
 }
 
 int List()
@@ -274,7 +296,7 @@ int Progress()
         lines.Add($"  {set} ({ids.Count(e => done.ContainsKey(e.Id))} of {ids.Count})");
         lines.Add("    " + string.Join("  ", ids.Select(e => (done.ContainsKey(e.Id) ? "x " : Started(e) ? "o " : ". ") + e.Id)));
     }
-    Ex? next = all.Skip(Math.Max(0, all.FindIndex(e => e.Id == Current()))).FirstOrDefault(e => !done.ContainsKey(e.Id));
+    Ex? next = NextNotDone(Current(), done, out _);
     lines.Add("");
     if (next != null) lines.Add($"Next suggestion: {next.Id} · {next.Title}   ({ex} next)");
     foreach (string l in lines) Console.WriteLine(l);
