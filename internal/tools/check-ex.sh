@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # End-to-end test of ./ex, the way the learner uses it, on a fresh copy of the repo:
-# start -> check fails (NOT YET) -> write the solution -> check passes (DONE) -> progress -> next.
+# start -> check fails (NOT YET) -> write the solution -> check passes (DONE) -> progress -> next (including wrap).
 set -euo pipefail
 cd "$(dirname "$0")/../.."  # the repo root
 tmp=$(mktemp -d)
@@ -53,3 +53,72 @@ test -f practice/PROGRESS.md              || fail "./ex progress did not write p
 ./ex next > out.txt                       || fail "./ex next"
 grep -q "^Started " out.txt              || fail "./ex next did not start an exercise"
 echo "OK: ./ex start, check (NOT YET, then DONE), progress, done and next work"
+
+# ./ex next wraps to a skipped exercise at the end, and only says well done when every exercise is done.
+# These cases write practice/.current and practice/.done directly (no need to run the tests).
+ids=($(python3 -c "import json; print(' '.join(e['id'] for e in json.load(open('internal/tools/exercises.json'))))"))
+first=${ids[0]}; second=${ids[1]}; third=${ids[2]}; last=${ids[-1]}
+reset_practice() { rm -f practice/*_*.cs practice/.done practice/.current practice/PROGRESS.md; }
+
+reset_practice
+./ex start "$first" > out.txt            || fail "./ex start $first"
+./ex next > out.txt                      || fail "./ex next after $first"
+grep -q "^Started $second " out.txt      || fail "./ex next after $first did not start $second"
+grep -q "$first isn't done yet, you can come back to it later with" out.txt || fail "./ex next after an unfinished exercise has no come-back note"
+grep -q "Going back" out.txt && fail "./ex next after $first should not wrap"
+./ex next > out.txt                      || fail "./ex next after $second"
+grep -q "^Started $third " out.txt       || fail "./ex next after $second did not start $third"
+echo "OK: ./ex next walks forward and notes an unfinished current exercise"
+
+reset_practice
+./ex start "$last" > out.txt             || fail "./ex start $last"
+./ex next > out.txt                      || fail "./ex next after the last exercise (earlier ones still open)"
+grep -q "You reached the end of the list. Going back to $first, which isn't done yet." out.txt || fail "./ex next after the last exercise did not wrap to $first"
+grep -q "$last isn't done yet, you can come back to it later with" out.txt || fail "./ex next after an unfinished last exercise has no come-back note"
+grep -q "^Started $first " out.txt       || fail "./ex next after the last exercise did not start $first"
+echo "OK: ./ex next wraps to a skipped exercise at the end of the list"
+
+reset_practice
+python3 -c "
+import json
+ids=[e['id'] for e in json.load(open('internal/tools/exercises.json'))]
+open('practice/.done','w').write(''.join(f'{i} 2026-01-01\n' for i in ids))
+"
+printf '%s\n' "$last" > practice/.current
+./ex next > out.txt                      || fail "./ex next when every exercise is done"
+grep -q "Well done, every exercise is done!" out.txt || fail "./ex next did not celebrate when every exercise is done"
+grep -q "Started " out.txt && fail "./ex next started an exercise although every one is done"
+grep -q "That was the last exercise" out.txt && fail "./ex next still uses the old end-of-list message"
+echo "OK: ./ex next celebrates only when every exercise is done"
+
+reset_practice
+python3 -c "
+import json, sys
+ids=[e['id'] for e in json.load(open('internal/tools/exercises.json'))]
+open('practice/.done','w').write(''.join(f'{i} 2026-01-01\n' for i in ids if i != sys.argv[1]))
+" "$first"
+printf '%s\n' "$first" > practice/.current
+./ex next > out.txt                      || fail "./ex next when only the current exercise is left"
+grep -q "$first " out.txt                || fail "./ex next did not name the only remaining exercise"
+grep -q "is the only exercise that isn't done yet" out.txt || fail "./ex next did not stay on the only remaining exercise"
+grep -q "Started " out.txt && fail "./ex next re-started the only remaining exercise"
+grep -q "Well done, every exercise is done!" out.txt && fail "./ex next celebrated although $first is not done"
+echo "OK: ./ex next stays on the current exercise when it is the only one left"
+
+reset_practice
+printf '%s\n' "$last" > practice/.current
+./ex progress > out.txt                  || fail "./ex progress (wrap suggestion)"
+grep -q "Next suggestion: $first " out.txt || fail "./ex progress did not suggest $first after the last exercise"
+reset_practice
+printf '%s\n' "$first" > practice/.current
+./ex progress > out.txt                  || fail "./ex progress (forward suggestion)"
+grep -q "Next suggestion: $second " out.txt || fail "./ex progress did not suggest $second while $first is still open"
+reset_practice
+python3 -c "
+import json
+ids=[e['id'] for e in json.load(open('internal/tools/exercises.json'))]
+open('practice/.done','w').write(''.join(f'{i} 2026-01-01\n' for i in ids))
+"
+./ex progress > out.txt                  || fail "./ex progress when every exercise is done"
+grep -q "Next suggestion:" out.txt && fail "./ex progress still suggested a next exercise although every one is done"
+echo "OK: ./ex progress uses the same next-exercise logic"
